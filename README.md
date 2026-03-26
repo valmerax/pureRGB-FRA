@@ -2,89 +2,90 @@
 
 ![covers](/box_art/PureRGB_Covers.png?raw=true)
 
-A purist's enhancement of Pokémon Red, Green, and Blue based on the pokered disassembly.
+Une amélioration puriste de Pokémon Rouge, Vert et Bleu basée sur la décompilation de pokered.
 
-To download the latest version of this romhack, [**go here**](https://github.com/Vortyne/pureRGB/releases/latest)
+Pour télécharger la dernière version de ce romhack, [**allez ici**](https://github.com/Vortyne/pureRGB/releases/latest)
 
-To see the full list of features, bugfixes, and everything else, see [**FEATURES.md**](FEATURES.md)
+Pour voir la liste complète des fonctionnalités, corrections de bugs et tout le reste, consultez [**FEATURES.md**](FEATURES.md)
 
-If you want info on the game while playing it (learnsets, for example), see [**The Wiki**](https://github.com/Vortyne/pureRGB/wiki)
+Si vous voulez des informations sur le jeu pendant que vous le jouez (par exemple, les attaques disponibles), consultez [**Le Wiki**](https://github.com/Vortyne/pureRGB/wiki)
 
-If you experience a bug or have an issue while playing, report it [**Here**](https://github.com/Vortyne/pureRGB/issues/new?assignees=&labels=&template=blank_issue.md)
+Si vous rencontrez un bug ou un problème en jouant, signalez-le [**ici**](https://github.com/Vortyne/pureRGB/issues/new?assignees=&labels=&template=blank_issue.md)
 
-If you played through the romhack and want to leave a review, you can review it [**Here**](https://github.com/Vortyne/pureRGB/issues/new?assignees=&labels=review&projects=&template=review.yml&title=%5BReview%5D%3A+Summarize+your+review+here)
+Si vous avez terminer le romhack et voulez laisser un avis, vous pouvez le faire [**ici**](https://github.com/Vortyne/pureRGB/issues/new?assignees=&labels=review&projects=&template=review.yml&title=%5BReview%5D%3A+Summarize+your+review+here)
 
-This is a purist's enhancement of Pokemon Red/Blue/Green. The goal is to enhance the original games for excellent replayability without bringing in mechanics, moves, sprites, visuals, type matchups, or pokemon that were introduced in later games. 
-- It makes the bulk of the 151 original pokemon all more obtainable and usable in the early game, with better movesets and more balanced stats. 
-- Many moves in the game were rebalanced or modified. When I say "rebalanced", I mean "the useless things were made more useful!" 
-- There are more bug, poison, and ghost type moves available. The focus is on getting a useful set of moves available for every single pokemon in the game. 
-- Front sprites were updated to be just about the best set of sprites from Red/Green/Blue/Spaceworld 1997 overall.
-- All 151 pokemon are obtainable in all versions of this hack.
-- HMs are deletable anytime you like and new code to prevent softlocks by deleting them was introduced.
-- Some pokemon have additional types, for example, Ninetales is now FIRE/GHOST instead of FIRE. If you don't like specific type changes, you can change any specific pokemon or all of them back to normal type-wise at an NPC in indigo plateau route 23.
-- [Many small quality-of-life tweaks and bugfixes](https://github.com/Vortyne/pureRGB/blob/master/FEATURES.md#quality-of-life-enhancements) were made. 
-- Game bugs that can be used to your own advantage (like the leech seed/toxic bug, the hyper beam no recharge on faint bug, etc.) are unchanged, because they are quirks of the battle engine that you can use as your own tool. 
-- Mew is under the truck as expected!
-- Missingno and the item duplication glitch are intact - but won't corrupt your save anymore!
-- Multiple entirely new pokedex modes were added, such as the MOVEDEX, unlockable learnsets, and town map wild pokemon data were added! You can unlock the MOVEDEX in viridian city, and can upgrade your town map with wild data in fuchsia city.
-- CINNABAR VOLCANO was added (an area based on unused map data). It's accessible from Route 21. You can turn it off from your PC if you don't want this new area.
-- In CERULEAN CITY, you can meet the POKE BALL DESIGNER! She needs help designing new POKE BALLs! Take pictures with her CAMERA of interesting things, and help her design new poke balls! Then, with the most in depth poke ball designing system in a pokemon game, design your own custom poke balls with their own custom audiovisual effects! Switch your pokemon's poke balls around if you want! Reuse your great balls and ultra balls if you want!
-- There is an arena to rematch gym leaders and other important trainers after becoming CHAMP.
-- Train up low level pokemon to a level cap quickly at CLUBS! You can find these in Vermilion City, Celadon City, and Saffron City. You can turn off this feature.
-- There are multiple secret areas to be found after becoming CHAMP. Bills Garden, Team Rocket / Mewtwo lore, and more...
-- [Many options to enhance the game visually and mechanically were added.](https://github.com/Vortyne/pureRGB/blob/master/FEATURES.md#new-options-in-the-options-menu) **(You must turn them on via the options in-game!)** Including:
-  - Switchable color palettes (Choose between original colors, Super Gameboy Colors, or Pokemon Yellow Colors in-game whenever you like! Works on GBC and Super Gameboy. Yes, this romhack has GBC support!)
-  - Optional Spaceworld 1997 Back Sprites
-  - Optional enhanced menu sprites/overworld icons
-  - Optional enhanced music (Add in cut content music like Giovanni's theme) 
-  - Optional stereo panned audio (Similar to the Earphone1 option in Pokemon Yellow)
-  - Optional alternate color palette pokemon based on region (catch differently colored pokemon depending on where they appear in Kanto)
-  - Option to turn off the bicycle song (plays in cycling road still)
-  - Option to turn on smoother higher framerate fade animations while on the GBC
-  - Tweak the type matchups to be exactly like gen 1, gen 2, or a cross between them if you like directly in-game.
-  - Optional in-battle experience bar
-  - Option to give trainers some Stat EXP to their pokemon based on level. Makes the game a little bit harder.
-  - Option to have the game track the PP of opponents (the original game they had infinite PP). Makes the game a little bit easier.
-  - Option for metric or imperial units in the pokedex
-  - Option for less flashing in battles
-  - Option to skip the intro animation when booting up the game and go straight to the title screen
-  - Option to switch to an entirely new PureRGB title screen instead of the original game's title screen
-- If you're playing on GBC and have the palettes set to SGB or GBC mode, move animations will have colors! Surf will be blue, ember will be red, etc.
-- There are a couple entirely new things added into the game to facilitate quality of life fixes. Including:
-  - An NPC who can permanently remove CUT trees.
-  - An NPC who can revive fossils for you in SAFFRON CITY so you can get fossil pokemon a bit earlier.
-  - An NPC who will give you LAPRAS a bit earlier in the game.
-  - An NPC who will teach you how to DIG in between towns just like you can FLY in between towns.
-  
-![blue gb](/screenshots/blue_title_gb_no_color.png?raw=true) ![blue gbc default](/screenshots/blue_title_default_gbc_color.png?raw=true) ![blue sgb colors](/screenshots/blue_title_sgb_colors_on_gbc.png?raw=true) ![blue sgb2 colors](/screenshots/blue_title_sgb2_colors_on_gbc.png?raw=true) ![blue gbc colors](/screenshots/blue_title_gbc_colors_on_gbc.png?raw=true) 
+Ceci est une amélioration puriste de Pokemon Rouge/Bleu/Vert. L'objectif est d'améliorer les jeux originaux pour une excellente rejouabilité sans introduire de mécaniques, attaques, sprites, visuels, types ou pokémon qui ont été introduits dans les jeux ultérieurs.
 
-![red gb](/screenshots/red_title_gb_no_color.png?raw=true) ![red gbc default](/screenshots/red_title_default_gbc_color.png?raw=true)  ![red sgb colors](/screenshots/red_title_sgb_colors_on_gbc.png?raw=true) ![red sgb2 colors](/screenshots/red_title_sgb2_colors_on_gbc.png?raw=true) ![red gbc colors](/screenshots/red_title_gbc_colors_on_gbc.png?raw=true) 
+- Cela rend la majorité des 151 pokémon originaux beaucoup plus accessibles et utilisables en début de jeu, avec de meilleurs ensembles d'attaques et des statistiques plus équilibrées.
+- Beaucoup de d'attaques du jeu ont été rééquilibrés ou modifiés. Quand je dis « rééquilibré », je veux dire « les choses inutiles ont été rendues plus utiles ! »
+- Il y a plus d'attaques de type insecte, poison et spectre disponibles. L'accent est mis sur l'obtention d'un ensemble utile d'attaques disponibles pour chaque pokémon du jeu.
+- Les sprites de face ont été mis à jour pour être pratiquement le meilleur ensemble de sprites de Rouge/Vert/Bleu/Spaceworld 1997.
+- Les 151 pokémon sont tous accessibles dans toutes les versions de ce hack.
+- Les CS peuvent être supprimées à tout moment et un nouveau code a été introduit pour prévenir les blocages en les supprimant.
+- Certains pokémon ont des types supplémentaires, par exemple, Feunard est maintenant FEU/SPECTRE au lieu de FEU. Si vous n'appréciez pas certains changements de type, vous pouvez modifier le type de n'importe quel Pokémon ou de tous auprès d'un PNJ sur la route 23 du Plateau Indigo.
+- [Nombreux petits réglages de qualité de vie et corrections de bugs](https://github.com/Vortyne/pureRGB/blob/master/FEATURES.md#quality-of-life-enhancements) ont été apportés.
+- Les bugs du jeu qui peuvent être utilisés à votre avantage (comme le bug vampigraine/toxic, le bug d'Ultralaser sans tour de recharge du rayon hyper en cas de KO, etc.) sont inchangés, car ce sont des bizarreries du moteur de combat que vous pouvez utiliser à votre avantage.
+- Mew est sous le camion comme prévu !
+- Missingno et le glitch de duplication d'objets sont intacts - mais ne corrompront plus votre sauvegarde !
+- De nombreux nouveaux modes ont été ajoutés au pokédex, comme le MOVEDEX, des ensembles d'attaques déverrouillables et les données de pokémon sauvages de la carte de la ville ont été ajoutées ! Vous pouvez déverrouiller le MOVEDEX à Jadielle, et pouvez mettre à niveau votre carte de ville avec des données sauvages à Céladopole.
+- Le VOLCAN DE CRAMOIS’ILE a été ajouté (une zone basée sur les données de carte inutilisées). Il est accessible depuis la Route 21. Vous pouvez le désactiver sur votre PC si vous ne voulez pas cette nouvelle zone.
+- À AZURIA, vous pouvez rencontrer le DESIGNER DE POKÉ BALL ! Il a besoin d'aide pour concevoir de nouvelles POKÉ BALLS ! Prenez des photos avec son APPAREIL PHOTO de choses intéressantes et aidez-le à concevoir de nouvelles poké balls ! Ensuite, avec le système de conception de poké ball le plus détaillé d'un jeu pokémon, concevez vos propres poké balls personnalisées avec leurs propres effets audiovisuels personnalisés ! Changez les poké balls de votre pokémon comme vous le souhaitez ! Réutilisez vos super balls et hyper balls si vous le souhaitez !
+- Il y a une arène pour affronter à nouveau les champions d'arène et d'autres dresseurs importants après être devenu CHAMPION.
+- Entraînez rapidement vos Pokémon de bas niveau jusqu'au niveau maximum dans les CLUBS ! Vous pouvez les trouver à Carmin-sur-Mer, Céladopole et Safrania. Vous pouvez désactiver cette fonction.
+- Il y a de multiples zones secrètes à découvrir après être devenu CHAMPION. Le Jardin de Bills, l'histoire de la Team Rocket / Mewtwo, et bien d'autres...
+- [De nombreuses options pour améliorer le jeu visuellement et mécaniquement ont été ajoutées.](https://github.com/Vortyne/pureRGB/blob/master/FEATURES.md#new-options-in-the-options-menu) **(Vous devez les activer via les options en jeu !)** Notamment :
+  - Palettes de couleurs commutables (Choisissez entre les couleurs originales, les couleurs Super Gameboy ou les couleurs Pokemon Jaune dans le jeu quand vous le souhaitez ! Fonctionne sur GBC et Super Gameboy. Oui, ce romhack a un support GBC !)
+  - Sprites de dos Spaceworld 1997 optionnels
+  - Sprites de menu améliorés/icônes optionnels
+  - Musique améliorée optionnelle (Ajoutez la musique du contenu coupé comme le thème de Blue)
+  - Audio stéréo optionnel (Similaire à l'option CASQUE 1 dans Pokemon Jaune)
+  - Palette de couleurs pokémon alternative optionnelle basée sur la région (attrapez des pokémon de couleurs différentes selon où ils apparaissent à Kanto)
+  - Option pour désactiver la chanson du vélo (joue toujours sur la route du vélo)
+  - Option pour activer des animations de fondu plus lisses et à fréquence d'images plus élevée sur la GBC
+  - Ajustez les matchups de types pour qu'ils soient exactement comme la gen 1, la gen 2, ou un entre-deux si vous le souhaitez directement en jeu.
+  - Barre d'expérience optionnelle en combat
+  - Option pour donner aux dresseurs un peu d'Exp. Stat à leurs pokémon en fonction du niveau. Rend le jeu un peu plus difficile.
+  - Option pour que le jeu suive les PP des adversaires (dans le jeu original, ils avaient des PP infinis). Rend le jeu un peu plus facile.
+  - Option pour les unités métriques ou impériales dans le Pokédex
+  - Option pour moins de scintillement en combats
+  - Option pour sauter l'animation d'introduction au démarrage du jeu et aller directement à l'écran titre
+  - Option pour passer à un écran titre PureRGB entièrement nouveau au lieu de celui du jeu original
+- Si vous jouez sur GBC et avez définie les palettes en mode SGB ou GBC, les animations des attaques auront des couleurs ! Surf sera bleu, Brûlûre sera rouge, etc.
+- Quelques nouvelles fonctionnalitées ont été ajoutées au jeu pour faciliter la manière de jouer. Notamment :
+  - Un PNJ qui peut supprimer définitivement COUPE.
+  - Un PNJ qui peut ressusciter des fossiles pour vous à SAFRANIA afin que vous puissiez obtenir des pokémon fossiles un peu plus tôt.
+  - Un PNJ qui vous donnera LOKHLASS un peu plus tôt dans le jeu.
+  - Un PNJ qui vous enseignera comment utiliser TUNNEL entre les villes tout comme vous pouvez utiliser VOL entre les villes.
 
-![green gb](/screenshots/green_title_gb_no_color.png?raw=true) ![green gbc default](/screenshots/green_title_default_gbc_color.png?raw=true)  ![green sgb colors](/screenshots/green_title_sgb_colors_on_gbc.png?raw=true) ![green sgb2 colors](/screenshots/green_title_sgb2_colors_on_gbc.png?raw=true) ![green gbc colors](/screenshots/green_title_gbc_colors_on_gbc.png?raw=true) 
+![blue gb](/screenshots/blue_title_gb_no_color.png?raw=true) ![blue gbc default](/screenshots/blue_title_default_gbc_color.png?raw=true) ![blue sgb colors](/screenshots/blue_title_sgb_colors_on_gbc.png?raw=true) ![blue sgb2 colors](/screenshots/blue_title_sgb2_colors_on_gbc.png?raw=true) ![blue gbc colors](/screenshots/blue_title_gbc_colors_on_gbc.png?raw=true)
 
-Pictured: GB Monochrome, Original GBC color, SGB Colors, Alternate SGB Colors, GBC Colors (can choose between the 4 color options on GBC in-game)
+![red gb](/screenshots/red_title_gb_no_color.png?raw=true) ![red gbc default](/screenshots/red_title_default_gbc_color.png?raw=true) ![red sgb colors](/screenshots/red_title_sgb_colors_on_gbc.png?raw=true) ![red sgb2 colors](/screenshots/red_title_sgb2_colors_on_gbc.png?raw=true) ![red gbc colors](/screenshots/red_title_gbc_colors_on_gbc.png?raw=true)
 
-## Contact the creator
+![green gb](/screenshots/green_title_gb_no_color.png?raw=true) ![green gbc default](/screenshots/green_title_default_gbc_color.png?raw=true) ![green sgb colors](/screenshots/green_title_sgb_colors_on_gbc.png?raw=true) ![green sgb2 colors](/screenshots/green_title_sgb2_colors_on_gbc.png?raw=true) ![green gbc colors](/screenshots/green_title_gbc_colors_on_gbc.png?raw=true)
 
-**DO NOT contact me directly in order to ask me how to write assembly code. Contact me with questions or comments on this romhack.**
-- **Reddit:** [send a direct message to user Vortiene](https://old.reddit.com/message/compose/?to=Vortiene)
-- **Discord:** [send a direct message to user Vortiene](https://discord.com/channels/@me/)
+Illustrations : GB Monochrome, Couleurs originales GBC, Couleurs SGB, Couleurs SGB alternatives, Couleurs GBC (possibilité de choisir parmi les 4 options de couleur sur GBC en jeu)
 
-If you want to learn gameboy assembly code, join the **[pret discord.](https://discord.gg/d5dubZ3)**
+## Contacter le créateur
 
-If you'd like to make your own romhack based on this one, fork the repository and see [**INSTALL.md**](INSTALL.md).
+**NE ME CONTACTEZ PAS directement pour me demander comment écrire du code assembleur. Contactez-moi avec des questions ou des commentaires sur ce romhack.**
 
-## Credits
+- **Reddit:** [envoyer un message direct à l'utilisateur Vortiene](https://old.reddit.com/message/compose/?to=Vortiene)
+- **Discord:** [envoyer un message direct à l'utilisateur Vortiene](https://discord.com/channels/@me/)
 
-Jojobear13 - Tons of code snippets and help via the shinpokered romhack codebase, direct support regarding the pokemon yellow gbc enhancements porting
+Si vous voulez apprendre le code assembleur de la Game Boy, rejoignez le **[discord pret.](https://discord.gg/d5dubZ3)**
 
-Danny-E 33 - Larger back sprites code snippets, EXP Bar code snippets, various support regarding game audio and questions about rgbasm/gbz80 answered
+Si vous souhaitez créer votre propre romhack basé sur celui-ci, forkez le référentiel et consultez [**INSTALL.md**](INSTALL.md).
 
-Mechanicalpen - enhanced menu icons code
+## Crédits
 
-LJSTAR - Most of the work creating the type icons used in the movedex
+Jojobear13 - Des tonnes d'extraits de code et d'aide via la base de code romhack de shinpokered, un support direct concernant le portage des améliorations de Pokémon Jaune sur GBC
 
-Mord - Most of the work creating LT.Surge and Erika overworld sprites
+Danny-E 33 - Extraits de code de sprites arrière plus grands, extraits de code de barre d'expérience, divers supports concernant l'audio du jeu et questions sur rgbasm/gbz80 répondues
 
-pret discord and pret in general for their original disassembly work on Red / Blue
+Mechanicalpen - code des icônes de menu améliorées
 
+LJSTAR - La majeure partie du travail de création des icônes de type utilisées dans le movedex
+
+Mord - La majeure partie du travail de création des sprites de Major Bob et Erika.
+
+pret discord et pret en général pour leur travail de décompilation sur Rouge / Bleu
