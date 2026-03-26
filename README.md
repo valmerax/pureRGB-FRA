@@ -4,6 +4,8 @@
 
 Une amélioration puriste de Pokémon Rouge, Vert et Bleu basée sur la décompilation de pokered.
 
+Cette version sera traduite en français en se basant sur les traductions de einstein95/pokered-fr (WIP), aucune autre modification sera faite, l'idée étant de rester fidèle au projet d'origine.
+
 Pour télécharger la dernière version de ce romhack, [**allez ici**](https://github.com/Vortyne/pureRGB/releases/latest)
 
 Pour voir la liste complète des fonctionnalités, corrections de bugs et tout le reste, consultez [**FEATURES.md**](FEATURES.md)
