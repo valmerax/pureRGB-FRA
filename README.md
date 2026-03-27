@@ -10,17 +10,17 @@ Pour télécharger la dernière version de ce romhack, [**allez ici**](https://g
 
 Pour voir la liste complète des fonctionnalités, corrections de bugs et tout le reste, consultez [**FEATURES.md**](FEATURES.md)
 
-Si vous voulez des informations sur le jeu pendant que vous le jouez (par exemple, les attaques disponibles), consultez [**Le Wiki**](https://github.com/Vortyne/pureRGB/wiki)
+Si vous voulez des informations sur le jeu pendant que vous le jouez (par exemple, les capacités disponibles), consultez [**Le Wiki**](https://github.com/Vortyne/pureRGB/wiki)
 
 Si vous rencontrez un bug ou un problème en jouant, signalez-le [**ici**](https://github.com/Vortyne/pureRGB/issues/new?assignees=&labels=&template=blank_issue.md)
 
 Si vous avez terminer le romhack et voulez laisser un avis, vous pouvez le faire [**ici**](https://github.com/Vortyne/pureRGB/issues/new?assignees=&labels=review&projects=&template=review.yml&title=%5BReview%5D%3A+Summarize+your+review+here)
 
-Ceci est une amélioration puriste de Pokemon Rouge/Bleu/Vert. L'objectif est d'améliorer les jeux originaux pour une excellente rejouabilité sans introduire de mécaniques, attaques, sprites, visuels, types ou pokémon qui ont été introduits dans les jeux ultérieurs.
+Ceci est une amélioration puriste de Pokemon Rouge/Bleu/Vert. L'objectif est d'améliorer les jeux originaux pour une excellente rejouabilité sans introduire de mécaniques, capacités, sprites, visuels, types ou pokémon qui ont été introduits dans les jeux ultérieurs.
 
-- Cela rend la majorité des 151 pokémon originaux beaucoup plus accessibles et utilisables en début de jeu, avec de meilleurs ensembles d'attaques et des statistiques plus équilibrées.
-- Beaucoup de d'attaques du jeu ont été rééquilibrés ou modifiés. Quand je dis « rééquilibré », je veux dire « les choses inutiles ont été rendues plus utiles ! »
-- Il y a plus d'attaques de type insecte, poison et spectre disponibles. L'accent est mis sur l'obtention d'un ensemble utile d'attaques disponibles pour chaque pokémon du jeu.
+- Cela rend la majorité des 151 pokémon originaux beaucoup plus accessibles et utilisables en début de jeu, avec de meilleurs ensembles de capacités et des statistiques plus équilibrées.
+- Beaucoup de capacités du jeu ont été rééquilibrés ou modifiés. Quand je dis « rééquilibré », je veux dire « les choses inutiles ont été rendues plus utiles ! »
+- Il y a plus de capacités de type insecte, poison et spectre disponibles. L'accent est mis sur l'obtention d'un ensemble utile de capacités disponibles pour chaque pokémon du jeu.
 - Les sprites de face ont été mis à jour pour être pratiquement le meilleur ensemble de sprites de Rouge/Vert/Bleu/Spaceworld 1997.
 - Les 151 pokémon sont tous accessibles dans toutes les versions de ce hack.
 - Les CS peuvent être supprimées à tout moment et un nouveau code a été introduit pour prévenir les blocages en les supprimant.
@@ -29,8 +29,8 @@ Ceci est une amélioration puriste de Pokemon Rouge/Bleu/Vert. L'objectif est d'
 - Les bugs du jeu qui peuvent être utilisés à votre avantage (comme le bug vampigraine/toxic, le bug d'Ultralaser sans tour de recharge du rayon hyper en cas de KO, etc.) sont inchangés, car ce sont des bizarreries du moteur de combat que vous pouvez utiliser à votre avantage.
 - Mew est sous le camion comme prévu !
 - Missingno et le glitch de duplication d'objets sont intacts - mais ne corrompront plus votre sauvegarde !
-- De nombreux nouveaux modes ont été ajoutés au pokédex, comme le MOVEDEX, des ensembles d'attaques déverrouillables et les données de pokémon sauvages de la carte de la ville ont été ajoutées ! Vous pouvez déverrouiller le MOVEDEX à Jadielle, et pouvez mettre à niveau votre carte de ville avec des données sauvages à Céladopole.
-- Le VOLCAN DE CRAMOIS’ILE a été ajouté (une zone basée sur les données de carte inutilisées). Il est accessible depuis la Route 21. Vous pouvez le désactiver sur votre PC si vous ne voulez pas cette nouvelle zone.
+- De nombreux nouveaux modes ont été ajoutés au pokédex, comme le MOVEDEX, des ensembles de capacités déverrouillables et les données de pokémon sauvages de la carte de la ville ont été ajoutées ! Vous pouvez déverrouiller le MOVEDEX à Jadielle, et pouvez mettre à niveau votre carte de ville avec des données sauvages à Céladopole.
+- Le VOLCAN CRAMOIS’ILE a été ajouté (une zone basée sur les données de carte inutilisées). Il est accessible depuis la Route 21. Vous pouvez le désactiver sur votre PC si vous ne voulez pas cette nouvelle zone.
 - À AZURIA, vous pouvez rencontrer le DESIGNER DE POKÉ BALL ! Il a besoin d'aide pour concevoir de nouvelles POKÉ BALLS ! Prenez des photos avec son APPAREIL PHOTO de choses intéressantes et aidez-le à concevoir de nouvelles poké balls ! Ensuite, avec le système de conception de poké ball le plus détaillé d'un jeu pokémon, concevez vos propres poké balls personnalisées avec leurs propres effets audiovisuels personnalisés ! Changez les poké balls de votre pokémon comme vous le souhaitez ! Réutilisez vos super balls et hyper balls si vous le souhaitez !
 - Il y a une arène pour affronter à nouveau les champions d'arène et d'autres dresseurs importants après être devenu CHAMPION.
 - Entraînez rapidement vos Pokémon de bas niveau jusqu'au niveau maximum dans les CLUBS ! Vous pouvez les trouver à Carmin-sur-Mer, Céladopole et Safrania. Vous pouvez désactiver cette fonction.
@@ -52,7 +52,7 @@ Ceci est une amélioration puriste de Pokemon Rouge/Bleu/Vert. L'objectif est d'
   - Option pour moins de scintillement en combats
   - Option pour sauter l'animation d'introduction au démarrage du jeu et aller directement à l'écran titre
   - Option pour passer à un écran titre PureRGB entièrement nouveau au lieu de celui du jeu original
-- Si vous jouez sur GBC et avez définie les palettes en mode SGB ou GBC, les animations des attaques auront des couleurs ! Surf sera bleu, Brûlûre sera rouge, etc.
+- Si vous jouez sur GBC et avez définie les palettes en mode SGB ou GBC, les animations des capacités auront des couleurs ! Surf sera bleu, Brûlûre sera rouge, etc.
 - Quelques nouvelles fonctionnalitées ont été ajoutées au jeu pour faciliter la manière de jouer. Notamment :
   - Un PNJ qui peut supprimer définitivement COUPE.
   - Un PNJ qui peut ressusciter des fossiles pour vous à SAFRANIA afin que vous puissiez obtenir des pokémon fossiles un peu plus tôt.
