@@ -1,1854 +1,1863 @@
 ; PureRGBnote: ADDED: text pointers for the descriptions that show up in the movedex.
 
 _PoundDexEntry::
-	text "Pounds the foe"
-	next "with a leg, tail"
-	next "or hand."
+	text "Ecrase l'ennemi"
+	next "avec les pattes"
+	next "avant ou la queue."
 	; fall through
 _GenericNoAdditionalEffectText::
-	bage "No additional"
-	next "effect"
+	bage "Aucun effet"
+	next "supplémentaire"
 	dex
 
 _KarateChopDexEntry::
-	text "A martial arts"
-	next "vertical chop"
-	next "with hand or paw."
+	text "Frappe l'ennemi"
+	next "avec un coup"
+	next "tranchant."
 	; fall through
 _GenericOftenLandsCriticalHitsText::
-	bage "Often lands"
-	next "critical hits"
+	bage "Inflige souvent"
+	next "des coups"
+	next "critiques"
 	dex
 
 _DoubleslapDexEntry::
-	text "Repeatedly slaps"
-	next "the <opponent> with"
-	next "two hands."
+	text "Gifle l'ennemi"
+	next "à plusieurs"
+	next "reprises."
 
-	bage "Power doubles if"
-	next "foe is asleep, but"
-	next "foe will wake up."
+	bage "Puissance doublée"
+	next "si ennemi endormi,"
+	next "mais le réveille."
 	; fall through
 _Generic2To5HitsText::
-	bage "Hits 2-5 times in"
-	next "succession."
-	next "2 hits → 37.5%"
+	bage "Frappe 2 à 5 fois"
+	next "de suite."
+	next "2 coups → 37.5%"
 
-	bage "3 hits → 37.5%"
-	next "4 hits → 12.5%"
-	next "5 hits → 12.5%@"
+	bage "3 coups → 37.5%"
+	next "4 coups → 12.5%"
+	next "5 coups → 12.5%@"
 	text_end
 
 _CometPunchDexEntry::
-	text "Delivers a"
-	next "lightning speed"
-	next "punch."
+	text "Frappe l'ennemi"
+	next "avec une rafale de"
+	next "coups de poing."
 	; fall through
 _GenericAlwaysGoesFirstText::
-	bage "Always goes"
-	next "first"
+	bage "Toujours en"
+	next "premier"
 	dex
 
 _MegaPunchDexEntry::
-	text "A titanic punch"
-	next "that can stun"
-	next "the <opponent>.@"
+	text "Un coup de poing"
+	next "puissant porté"
+	next "avec force.@"
 	text_call _Generic10PercentFlinchText
-	bage "Flinch chance goes"
-	next "up to 30% if used"
-	next "by FIGHTING-types"
+	bage "30% de chance"
+	next "d'apeurer si lancé"
+	next "par un type COMBAT"
 	dex
 
 _PayDayDexEntry::
-	text "Throws many coins"
-	next "at the foe."
-	next "Picking the coins"
+	text "Lance des pièces"
+	next "sur l'ennemi."
+	next "L'argent est"
 
-	bage "up after battle"
-	next "will earn you"
-	next "some extra money"
+	bage "récupéré après le"
+	next "combat"
 	dex
 
 _FirePunchDexEntry::
-	text "Punches the foe"
-	next "with a burning"
-	next "fist."
+	text "Frappe l'ennemi"
+	next "avec un poing"
+	next "enflammé."
 	; fall through
 _Generic10PercentBurnText::
-	bage "10% chance of"
-	next "burning the foe"
+	bage "10% de chance de"
+	next "brûler l'ennemi"
 	dex
 
 _IcePunchDexEntry::
-	text "Punches the foe"
-	next "with a freezing"
-	next "fist."
+	text "Frappe l'ennemi"
+	next "avec un poing"
+	next "glacé."
 
-	bage "10% chance of"
-	next "freezing the foe"
-	next "solid"
+	bage "10% de chance de"
+	next "geler l'ennemi"
 	dex
 
 _ThunderPunchDexEntry::
-	text "Zaps the foe with"
-	next "an electrically"
-	next "charged fist."
+	text "Frappe l'ennemi"
+	next "avec un poing"
+	next "électrifié."
 	; fall through
 _Generic10PercentParalysisText::
-	bage "10% chance of"
-	next "paralyzing the"
-	next "<opponent>"
+	bage "10% de chance de"
+	next "paralyser l'ennemi"
 	dex
 
 _ScratchDexEntry::
-	text "Scratches the foe"
-	next "with claws or"
-	next "barbs.@"
+	text "Griffe l'ennemi"
+	next "avec des griffes"
+	next "acérées.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _VicegripDexEntry::
-	text "Crushes the foe"
-	next "between claws,"
-	next "hands, or jaws."
+	text "Saisit l'ennemi"
+	next "avec de grandes et"
+	next "puissantes pinces."
 	; fall through
 _Generic30PercentParalysisText::
-	bage "30% chance of"
-	next "paralyzing the"
-	next "<opponent>"
+	bage "30% de chance de"
+	next "paralyser l'ennemi"
 	dex
 
 _GuillotineDexEntry::
-	text "Giant claws"
-	next "violently crush"
-	next "the <opponent>."
+	text "Une puissante"
+	next "attaque en"
+	next "tenaille."
 	; fall through
 _GenericOHKOText::
-	bage "Always KOs the"
-	next "<opponent>, but"
-	next "misses a lot."
+	bage "Met toujours"
+	next "l'ennemi KO, mais"
+	next "rate souvent."
 
-	bage "Doesn't work on"
-	next "<opponent>s with"
-	next "higher SPEED"
+	bage "Ne marche pas sur"
+	next "les ennemies ayant"
+	next "une VIT supérieure"
 	dex
 
 _RazorWindDexEntry::
-	text "The <user> lands"
-	next "from flying and"
-	next "rests."
+	text "Le lanceur atterit"
+	next "après son vol et"
+	next "se repose."
 	; fall through
 _GenericHealsHalfText::
-	bage "Heals half of"
-	next "<user>'s max HP"
+	bage "Restore la moitié"
+	next "des PV max du"
+	next "lanceur"
 	dex
 
 _SwordsDanceDexEntry::
-	text "A frenetic dance"
-	next "to raise fighting"
-	next "spirit."
+	text "Danse frénétique"
+	next "pour augmenter"
+	next "l'esprit combatif."
 
-	bage "Greatly raises"
-	next "<user>'s ATTACK."
-	next "(+2 ATTACK)"
+	bage "Booste l'ATTAQUE"
+	next "du lanceur."
+	next "(+2 FOR)"
 	dex
 
 _CutDexEntry::
-	text "Slices the foe"
-	next "with a claw, barb"
-	next "tooth, wing, etc.@"
+	text "Coupe l'ennemi"
+	next "avec des griffes,"
+	next "des faux, etc.@"
 
 	text_call _GenericNoAdditionalEffectText
 
-	bage "Usable outside"
-	next "battle to cut down"
-	next "shrubs or clear"
+	bage "Utilisable à"
+	next "l'extérieur pour"
+	next "couper des arbres"
 	
-	bage "patches of tall"
-	next "grass"
+	bage "ou dégager les"
+	next "hautes herbes"
 	dex
 
 _GustDexEntry::
-	text "Kicks up a gust"
-	next "of wind towards"
-	next "the <opponent>.@"
+	text "Envoie une rafale"
+	next "de vent vers"
+	next "l'ennemi.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _WingAttackDexEntry::
-	text "Strikes and slaps"
-	next "the foe with"
-	next "wings.@"
+	text "Frappe et gifle"
+	next "l'ennemi avec les"
+	next "ailes.@"
 
 	text_jump _GenericAlwaysGoesFirstText
 
 _WhirlwindDexEntry::
-	text "A massive tornado"
-	next "is summoned and"
-	next "hurled at foe."
+	text "Tornade massive"
+	next "invoquée et lancée"
+	next "sur l'ennemi."
 	; fall through
 _Generic30PercentConfusionText::
-	bage "Causes confusion"
-	next "30% of the time"
+	bage "Provoque la"
+	next "confusion dans"
+	next "30% des cas"
 	dex
 
 _FlyDexEntry::
-	text "The #MON flies"
-	next "up high and then"
-	next "dive-bombs foe."
+	text "Le #MON s'envole"
+	next "puis plonge sur"
+	next "l'ennemi."
 
-	bage "Avoids most"
-	next "attacks while"
-	next "flying high."
+	bage "Evite la plupart"
+	next "des attaques en"
+	next "volant en hauteur."
 
-	bage "Usable outside"
-	next "battle to fly to"
-	next "other places"
+	bage "Utilisable en"
+	next "dehors des combats"
+	next "pour se déplacer"
 	dex
 
 _BindDexEntry::
-	text "Entraps the foe"
-	next "in a rock-hard"
-	next "grip.@"
+	text "Immobilise et"
+	next "serre l'ennemi.@"
 
 	text_jump _GenericTrappingMoveText
 
 _SlamDexEntry::
-	text "Slams the foe"
-	next "with a dirty tail"
-	next "leg, arm, etc. "
+	text "Frappe l'ennemi"
+	next "avec une queue ou"
+	next "patte toxique."
 
-	bage "Power increases to"
-	next "130 if opponent is"
-	next "poisoned"
+	bage "La puissance monte"
+	next "à 130 si l'ennemi"
+	next "est empoisonné"
 	dex
 
 
 _VineWhipDexEntry::
-	text "Whips the foe"
-	next "with a plant"
-	next "vine.@"
+	text "Fouette l'ennemi"
+	next "avec une liane.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _StompDexEntry::
-	text "Stomps on the foe"
-	next "with feet/hooves."
+	text "Ecrase l'ennemi"
+	next "avec les pieds"
+	next "ou sabots."
 	; fall through
 _Generic30PercentFlinchText::
-	bage "Causes <opponent>"
-	next "to flinch 30% of"
-	next "the time"
+	bage "Peut apeurer"
+	next "l'ennemi dans"
+	next "30% des cas"
 	dex
 
 _DoubleKickDexEntry::
-	text "Delivers two"
-	next "kicks in quick"
-	next "succession."
+	text "Donne rapidement"
+	next "2 coups de pied à"
+	next "la suite."
 	; fall through
 _GenericHitsTwiceText::
-	bage "Hits twice"
+	bage "Frappe deux fois"
 	dex
 
 _MegaKickDexEntry::
-	text "A gigantic kick"
-	next "usually with both"
-	next "legs, and a huge"
-
-	bage "weight behind it.@"
+	text "Coup de pied très"
+	next "puissant, d'une"
+	next "force intense.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _JumpKickDexEntry::
-	text "Jumps through the"
-	next "air to deliver a"
-	next "big kick."
+	text "Saute très haut"
+	next "puis donne un coup"
+	next "de pied puissant."
 	; fall through
 _GenericKeptGoingCrashedText::
-	bage "Does damage to"
-	next "<user> on missing."
+	bage "Inflige des dégâts"
+	next "au lanceur s'il"
+	next "échoue."
 
-	bage "25% of the damage"
-	next "it would have"
-	next "done to the foe"
+	bage "25% des dégâts"
+	next "qu'il aurait"
+	next "causés à l'ennemi"
 	dex
 
 _RollingKickDexEntry::
-	text "Rolls like a"
-	next "stone to deliver"
-	next "a rock-hard kick.@"
+	text "Coup de pied"
+	next "porté après une"
+	next "rotation rapide.@"
 
 	text_jump _Generic30PercentFlinchText
 
 _SandAttackDexEntry::
-	text "Blinds the foe"
-	next "with a spray of"
-	next "sand.@"
+	text "Aveugle l'ennemi"
+	next "avec un jet de"
+	next "sable.@"
 
 	text_call _GenericLowerAccuracyText
 
-	bage "GROUND-types live"
-	next "in earth, so they"
-	next "are unaffected."
+	bage "Les #MON de type"
+	next "SOL sont"
+	next "immunisés."
 
-	bage "FLYING #MON's"
-	next "keen eyes are"
-	next "also unaffected"
+	bage "Les #MON de type"
+	next "vol ne sont pas"
+	next "affectés."
 	dex
 	; fall through
 _GenericLowerAccuracyText::
-	bage "Lowers the foe's"
-	next "ACCURACY."
-	next "(-1 ACCURACY)"
+	bage "Baisse la"
+	next "PRECISION de"
+	next "l'ennemi. (-1 PRE)"
 	dex
 
 _HeadbuttDexEntry::
-	text "Rams the foe"
-	next "with the <user>'s"
-	next "big head.@"
+	text "Le lanceur charge"
+	next "l'ennemi avec sa"
+	next "tête.@"
 
 	text_jump _Generic30PercentFlinchText
 
 _HornAttackDexEntry::
-	text "Jabs the foe with"
-	next "a rock-hard horn.@"
+	text "Transperce l'ennemi"
+	next "avec une corne"
+	next "acérée.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _FuryAttackDexEntry::
-	text "Angrily jabs the"
-	next "foe with beak or"
-	next "horn rapidly.@"
+	text "Pique l'ennemi"
+	next "avec rage via un"
+	next "bec ou une corne.@"
 
 	text_jump _GenericHitsTwiceText
 
 _HornDrillDexEntry::
-	text "Violently drills"
-	next "into foe with a"
-	next "razor-sharp horn.@"
+	text "Transperce l'ennemi"
+	next "avec violence via"
+	next "une corne acérée.@"
 
 	text_jump _GenericOHKOText
 
 _TackleDexEntry::
-	text "Charges the foe"
-	next "with a full-body"
-	next "tackle.@"
+	text "Charge l'ennemi en"
+	next "le plaquant de"
+	next "tout son poids.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _BodySlamDexEntry::
-	text "The <user>'s full"
-	next "body weight is"
-	next "slammed on foe.@"
+	text "Tout le poids du"
+	next "lanceur s'abat sur"
+	next "l'ennemi.@"
 
 	text_jump _Generic30PercentParalysisText
 
 _WrapDexEntry::
-	text "Wraps around foe"
-	next "with a long"
-	next "appendage/body."
+	text "Enroule l'ennemi à"
+	next "l'aide de lianes"
+	next "ou de son corps."
 	; fall through
 _GenericTrappingMoveText::
-	bage "The foe can't"
-	next "move for 2-3"
-	next "turns"
+	bage "L'ennemi ne peut"
+	next "pas bouger pendant"
+	next "2-3 tours"
 	dex
 
 _TakeDownDexEntry::
-	text "Tackles the foe"
-	next "while alight with"
-	next "raging flames."
+	text "Charge l'ennemi en"
+	next "étant enveloppé de"
+	next "flammes ardentes."
 
-	bage "30% chance of"
-	next "burning the foe."
+	bage "30% de chances de"
+	next "brûler l'ennemi."
 
-	bage "If used by a FIRE"
-	next "type #MON,"
+	bage "Si utilisé par un"
+	next "#MON de type FEU,"
 
-	bage "also has a 40%"
-	next "chance of raising"
-	next "SPECIAL 1 stage"
+	bage "a aussi 40% de"
+	next "chances de monter"
+	next "le SPE d'un cran"
 	dex
 
 _ThrashDexEntry::
-	text "Angrily flails"
-	next "around hitting"
-	next "anything nearby."
+	text "Se débat avec rage"
+	next "frappant tout ce"
+	next "qui est proche."
 	; fall through
 _GenericThrashEffectText::
-	bage "Lasts 2-3 turns."
-	next "Causes confusion"
-	next "to <user> after"
+	bage "Dure 2-3 tours."
+	next "Le lanceur est"
+	next "ensuite confus."
 	dex
 
 _DoubleEdgeDexEntry::
-	text "A life-risking"
-	next "tackle that hurts"
-	next "the <user> as well."
+	text "Un tacle dangereux"
+	next "qui blesse aussi"
+	next "l' utilisateur."
 	; fall through
 _Generic25PercentRecoilText::
-	bage "User takes 25%"
-	next "of damage done"
-	next "to foe as recoil"
+	bage "Le lanceur subit"
+	next "25% des dégâts"
+	next "infligés en recul"
 	dex
 
 _TailWhipDexEntry::
-	text "The <user> whips its"
-	next "tail around cutely"
-	next "to trick the foe"
+	text "Le lanceur remue"
+	next "sa queue de façon"
+	next "mignonne pour"
 
-	bage "into lowering its"
-	next "guard."
+	bage "amener l'ennemi à"
+	next "baisser sa garde."
 	; fall through
 _GenericLowersDefense1StageText::
-	bage "Lowers foe's"
-	next "DEFENSE."
-	next "(-1 DEFENSE)"
+	bage "Baisse la DEFENSE"
+	next "de l'ennemi."
+	next "(-1 DEF)"
 	dex
 
 _PoisonStingDexEntry::
-	text "Jabs the foe with"
-	next "a small poison-"
-	next "tipped barb."
+	text "Pique l'ennemi"
+	next "avec un petit"
+	next "dard empoisonnée."
 	; fall through
 _Generic40PercentPoisonText::
-	bage "40% chance of"
-	next "poisoning the"
-	next "foe"
+	bage "40% de chances"
+	next "d'empoisonner"
+	next "l'ennemi"
 	dex
 
 _TwineedleDexEntry::
-	text "Jabs the foe with"
-	next "two barbs, claws,"
-	next "beaks, or spikes.@"
+	text "Pique l'ennemi avec"
+	next "deux dards, becs,"
+	next "griffes, épines.@"
 
 	text_call _GenericHitsTwiceText
 	; fall through
 _Generic20PercentPoisonText::
-	bage "20% chance of"
-	next "poisoning the"
-	next "foe"
+	bage "20% de chances"
+	next "d'empoisonner"
+	next "l'ennemi"
 	dex
 
 _PinMissileDexEntry::
-	text "A rapid barrage of"
-	next "pins or needles"
-	next "flurry the foe.@"
+	text "Une rafale de"
+	next "dards s'abat sur"
+	next "sur l'ennemi.@"
 	
 	text_jump _Generic2To5HitsText
 
 _LeerDexEntry::
-	text "The <user> glowers"
-	next "at the foe to"
-	next "intimidate it.@"
+	text "Fixe l'ennemi avec"
+	next "un regard noir"
+	next "pour l'intimider.@"
 
 	text_jump _GenericLowersDefense1StageText
 
 _BiteDexEntry::
-	text "Bites the foe"
-	next "with sharp teeth."
+	text "Mord l'ennemi avec"
+	next "des dents acérées."
 	; fall through
 _Generic10PercentFlinchText::
-	bage "Causes <opponent>"
-	next "to flinch 10% of"
-	next "the time"
+	bage "Appeure l'ennemi"
+	next "dans 10% des cas"
 	dex
 
 _GrowlDexEntry::
-	text "Growls cutely,"
-	next "causing the foe"
-	next "to be less wary."
+	text "Grogne gentiment,"
+	next "rend l'ennemi"
+	next "moins méfiant."
 
-	bage "Lowers <opponent>'s"
-	next "ATTACK."
-	next "(-1 ATTACK)"
+	bage "Baisse l'ATTAQUE"
+	next "de l'ennemi."
+	next "(-1 FOR)"
 	dex
 
 _RoarDexEntry::
-	text "A loud scary"
-	next "roar or bark that"
-	next "hurts the ears."
+	text "Rugissement ou"
+	next "aboiement qui fait"
+	next "mal aux oreilles."
 	; fall through
 _Generic33PercentLowerAttackText::
-	bage "33% chance to"
-	next "lower foe's ATTACK."
-	next "(-1 ATTACK)"
+	bage "33% de chances de"
+	next "baisser l'ATTAQUE"
+	next "ennemie. (-1 FOR)"
 	dex
 
 _SingDexEntry::
-	text "A soothing song"
-	next "lulls the foe"
-	next "into deep sleep."
+	text "Berceuse plongeant"
+	next "l'ennemi dans un"
+	next "profond sommeil."
 	; fall through
 _GenericPutsFoeAsleepText::
-	bage "Puts the foe to"
-	next "sleep if it"
-	next "works"
+	bage "Peut endormir"
+	next "l'ennemi"
 	dex
 
 _SupersonicDexEntry::
-	text "High frequency"
-	next "waves are emitted"
-	next "that may confuse."
+	text "Ondes étranges"
+	next "émises dans le but"
+	next "de désorienter."
 
-	bage "Causes confusion"
-	next "if it works"
+	bage "Peut rendre"
+	next "l'ennemi confus"
 	dex
 
 _SonicboomDexEntry::
-	text "A loud sonic bang"
-	next "generates a "
-	next "shockwave."
+	text "Forte détonation"
+	next "sonique génèrant"
+	next "une onde de choc."
 
-	bage "Always goes first."
-	next "If it's the <user>'s"
-	next "1st turn out in"
+	bage "Agit en premier."
+	next "Si c'est le"
+	next "premier tour du"
 
-	bage "battle, this move"
-	next "will make the foe"
-	next "flinch"
+	bage "lanceur en combat,"
+	next "cette attaque"
+	next "appeure l'ennemi"
 	dex
 
 _DisableDexEntry::
-	text "The <user> mentally"
-	next "disables one of"
-	next "the foe's moves."
+	text "Désactive"
+	next "mentalement une"
+	next "attaque ennemie."
 
-	bage "Disables the last"
-	next "move used by foe"
-	next "for 2-8 turns,"
+	bage "Désactive la"
+	next "dernière attaque"
+	next "utilisée pendant"
 
-	bage "or a random move"
-	next "if the foe didn't"
-	next "use any yet"
+	bage "2-8 tours, ou une"
+	next "attaque aléatoire"
+	next "si aucune utilisée"
 	dex
 
 _AcidDexEntry::
-	text "A spray of acid"
-	next "is unleashed on"
-	next "the <opponent>."
+	text "Jet d'acide"
+	next "projeté sur"
+	next "l'ennemi."
 
-	bage "Always lowers"
-	next "either foe's"
-	next "ATTACK or DEFENSE"
+	bage "Réduit toujours"
+	next "l'ATTAQUE ou la"
+	next "DEFENSE de l'ennemi"
 	dex
 
 _EmberDexEntry::
-	text "Sparks ignite"
-	next "small flames to"
-	next "scorch the foe.@"
+	text "Attaque l'ennemi"
+	next "avec de petites"
+	next "flammes.@"
 
 	text_jump _Generic10PercentBurnText
 
 _FlamethrowerDexEntry::
-	text "A jet of searing"
-	next "flame is blown"
-	next "at the <opponent>."
+	text "Un puissant jet de"
+	next "flammes soufflé"
+	next "sur l'ennemi."
 
-	bage "A famous and"
-	next "beloved FIRE move"
-	next "for its power.@"
+	bage "Attaque FEU"
+	next "appréciée pour sa"
+	next "puissance.@"
 
 	text_jump _Generic10PercentBurnText
 
 _MistDexEntry::
-	text "The <user> releases"
-	next "sparkling white"
-	next "mist composed of"
+	text "Le lanceur libère"
+	next "une brume blanche"
+	next "scintillante faite"
 
-	bage "ice crystals,"
-	next "enshrouding it in"
-	next "ethereal vapor."
+	bage "de cristaux de"
+	next "glace, l'entourant"
+	next "d'un voile éthéré."
 
-	bage "The <user> becomes"
-	next "ethereal; immune"
-	next "to NORMAL and"
+	bage "Le lanceur devient"
+	next "éthéré, immunisé"
+	next "aux types NORMAL"
 
-	bage "FIGHTING-type"
-	next "moves until it"
-	next "switches out."
+	bage "et COMBAT jusqu'à"
+	next "son retrait du"
+	next "combat."
 
-	bage "Prevents stats"
-	next "from decreasing"
-	next "from moves such"
+	bage "Empêche la baisse"
+	next "des stats due à"
+	next "des attaques comme"
 
-	bage "as GROWL, SCREECH"
-	next "SMOKESCREEN, etc."
-	next "as well"
+	bage "RUGISSEMENT,"
+	next "GRINCEMENT,"
+	next "BROUILLARD, etc."
 	dex
 
 _WaterGunDexEntry::
-	text "Shoots a small"
-	next "pressurized jet"
-	next "of water at foe.@"
+	text "Lance un petit jet"
+	next "d'eau pressurisée"
+	next "sur l'ennemi.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _HydroPumpDexEntry::
-	text "A huge column of"
-	next "superpressurized"
-	next "water is blasted"
+	text "Une énorme colonne"
+	next "d'eau pressurisée"
+	next "est projetée sur"
 
-	bage "at the <opponent>.@"
+	bage "l'ennemi.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 
 _SurfDexEntry::
-	text "The whole area"
-	next "is flooded with"
-	next "deep water.@"
+	text "Toute la zone est"
+	next "inondée d'eau"
+	next "profonde.@"
 
 	text_call _GenericNoAdditionalEffectText
 
-	bage "Usable outside"
-	next "battle to travel"
-	next "over water"
+	bage "Utilisable hors"
+	next "des combats pour"
+	next "naviguer sur l'eau"
 	dex
 
 _IceBeamDexEntry::
-	text "A frigid beam"
-	next "of glacial ice"
-	next "is shot at the"
+	text "Un rayon de glace"
+	next "est projeté sur"
+	next "l'ennemi."
 
-	bage "<opponent>."
-	next "10% chance of"
-	next "freezing the foe"
+	bage "10% de chances de"
+	next "geler l'ennemi"
 	dex
 
 _BlizzardDexEntry::
-	text "The <user> whips up"
-	next "a powerful winter"
-	next "storm that"
+	text "Le lanceur invoque"
+	next "une forte tempête"
+	next "hivernale qui"
 
-	bage "batters the foe."
-	next "10% chance of"
-	next "freezing the foe"
+	bage "terrasse l'ennemi."
+	next "10% de chances de"
+	next "geler l'ennemi"
 	dex
 
 _PsybeamDexEntry::
-	text "Psychic power"
-	next "of the <user> is"
-	next "focused into a"
+	text "Le pouvoir psy"
+	next "du lanceur se"
+	next "concentre en un"
 
-	bage "strange beam."
+	bage "étrange faisceau."
 	; fall through
 _Generic10PercentConfusionText::
-	bage "Causes confusion"
-	next "10% of the time"
+	bage "Provoque la"
+	next "confusion dans"
+	next "30% des cas"
 	dex
 
 _BubblebeamDexEntry::
-	text "A jet of bubbles"
-	next "is fired at the"
-	next "foe."
+	text "Projette un jet de"
+	next "bulles sur"
+	next "l'ennemi."
 	; fall through
 _Generic33PercentLowerSpeedText::
-	bage "33% chance to"
-	next "lower foe's SPEED."
-	next "(-1 SPEED)"
+	bage "33% de chances de"
+	next "baisser la VITESSE"
+	next "ennemie. (-1 VIT)"
 	dex
 
 _AuroraBeamDexEntry::
-	text "A beautiful"
-	next "multicolored beam"
-	next "of light is shot"
+	text "Un magnifique"
+	next "faisceau lumineux"
+	next "multicolore est"
 
-	bage "at the <opponent>.@"
+	bage "projeté sur"
+	next "l'ennemi.@"
 
 	text_jump _Generic33PercentLowerAttackText
 
 _HyperBeamDexEntry::
-	text "A powerful beam;"
-	next "the pure essence"
-	next "of destruction"
+	text "Un puissant rayon,"
+	next "essence même de la"
+	next "destruction, est"
 
-	bage "is fired mightily"
-	next "at the foe in"
-	next "exalted glory."
+	bage "projeté avec force"
+	next "sur l'ennemi dans"
+	next "une gloire sublime."
 
-	bage "After usage,"
-	next "the <user> rests"
-	next "the next turn."
+	bage "Après usage, le"
+	next "lanceur se repose"
+	next "le tour suivant."
 
-	bage "If the <opponent>"
-	next "faints, no rest"
-	next "is necessary"
+	bage "Si l'ennemi est"
+	next "KO, aucun repos"
+	next "n'est nécessaire"
 	dex
 
 _PeckDexEntry::
-	text "The <user> pecks"
-	next "the foe with"
-	next "a beak or horn.@"
+	text "Le lanceur picore"
+	next "l'ennemi avec un"
+	next "bec ou une corne.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _DrillPeckDexEntry::
-	text "A spinning drill"
-	next "pecking attack"
-	next "with a beak/horn.@"
+	text "Une attaque en"
+	next "vrille avec un"
+	next "un bec ou corne.@"
 
 	text_jump _Generic30PercentFlinchText
 
 _SubmissionDexEntry::
-	text "The <user> puts"
-	next "the foe in a"
-	next "grappling hold"
+	text "Le lanceur place"
+	next "l'ennemi dans"
+	next "une prise de lutte"
 
-	bage "that leaves the"
-	next "<user> at a big"
-	next "advantage."
+	bage "qui lui confère un"
+	next "net avantage."
 	; fall through
 _GenericRaisesAttack1StageText::
-	bage "Raises the <user>'s"
-	next "ATTACK."
-	next "(+1 ATTACK)"
+	bage "Augmente l'ATTAQUE"
+	next "du lanceur."
+	next "(+1 FOR)"
 	dex
 
 _LowKickDexEntry::
-	text "A low-sweeping"
-	next "kick that can"
-	next "trip up the foe.@"
+	text "Coup de pied bas"
+	next "capable de faire"
+	next "tomber l'ennemi.@"
 
 	text_jump _Generic30PercentFlinchText
 
 _CounterDexEntry::
-	text "A secret fighting"
-	next "technique that"
-	next "drains energy"
+	text "Une technique de"
+	next "combat secrète qui"
+	next "draine l'énergie de"
 
-	bage "from the foe's"
-	next "fighting spirit."
+	bage "l'esprit combatif"
+	next "de l'ennemi."
 	; fall through
 _GenericAbsorbMoveText::
-	bage "Restores 50% of"
-	next "inflicted damage"
-	next "to the <user>'s HP"
+	bage "Restaure 50% des"
+	next "dégâts infligés"
+	next "aux PV du lanceur"
 	dex
 
 _SeismicTossDexEntry::
-	text "The <user> suplexes"
-	next "the foe in a"
-	next "dramatic spinning"
+	text "Le lanceur projète"
+	next "l'ennemi dans une"
+	next "chute aérienne"
 
-	bage "air drop aided"
-	next "by the power of"
-	next "gravity."
+	bage "vrillée aidé par"
+	next "la puissance de"
+	next "la gravité."
 
-	bage "Does damage equal"
-	next "to the current"
-	next "level of <user>"
+	bage "Inflige des dégâts"
+	next "égaux au niveau"
+	next "actuel du lanceur"
 	dex
 
 _StrengthDexEntry::
-	text "Slugs the foe"
-	next "with a massive"
-	next "built up power.@"
+	text "Terrasse l'ennemi"
+	next "avec une puissance"
+	next "accumulée massive.@"
 
 	text_call _GenericNoAdditionalEffectText
 
-	bage "Usable outside of"
-	next "battle to push"
-	next "heavy objects"
+	bage "Hors combat,"
+	next "permet de pousser"
+	next "des objets lourds"
 	dex
 
 _AbsorbDexEntry::
-	text "Drains nutrients"
-	next "from the foe.@"
+	text "Absorbe les"
+	next "nutriments de"
+	next "l'ennemi.@"
 
 	text_jump _GenericAbsorbMoveText
 
 _MegaDrainDexEntry::
-	text "Rapidly drains"
-	next "many nutrients"
-	next "from the foe.@"
+	text "Absorde rapidement"
+	next "les nutriments"
+	next "de l'ennemi.@"
 
 	text_jump _GenericAbsorbMoveText
 
 _LeechSeedDexEntry::
-	text "Drops seeds that"
-	next "sprout and slowly"
-	next "drain energy."
+	text "Lâche des graines"
+	next "qui germent et"
+	next "drainent l'énergie."
 
-	bage "Saps health from"
-	next "the <opponent> each"
-	next "of their turns."
+	bage "Vole la vie de"
+	next "l'ennemi à chaque"
+	next "tour."
 
-	bage "Restores 50% of"
-	next "inflicted damage"
-	next "to the <user>'s HP."
+	bage "Restaure 50% des"
+	next "dégâts infligés"
+	next "aux PV du lanceur."
 
-	bage "The seeds stay"
-	next "until the foe"
-	next "faints/switches."
+	bage "Les graines"
+	next "restent tant que"
+	next "l'ennemi combat."
 
-	bage "Seed damage goes"
-	next "up if the foe is"
-	next "weak to GRASS."
+	bage "Dégâts montent si"
+	next "l'ennemi est faible"
+	next "au type PLANTE."
 
-	bage "RESIST: 1/16 HP"
-	next "NORMAL:  1/8 HP"
-	next "WEAK:   3/16 HP"
+	bage "RESISTE: 1/16 PV"
+	next "NORMAL:  1/8  PV"
+	next "FAIBLE:  3/16 PV"
 
-	bage "Doesn't work on"
-	next "GRASS-type"
-	next "#MON"
+	bage "Ne fonctionne pas"
+	next "sur les #MON de"
+	next "type PLANTE"
 	dex
 
 _GrowthDexEntry::
-	text "The <user> grows"
-	next "larger or heals"
-	next "its body,"
+	text "Le lanceur grandit"
+	next "ou régénère son"
+	next "corps,"
 
-	bage "usually with"
-	next "photosynthesis."
+	bage "généralement par"
+	next "photosynthèse."
 
-	bage "Heals 33% of max"
-	next "HP and raises"
-	next "SPECIAL. (+1)"
+	bage "Soigne 33% des PV"
+	next "max et augmente le"
+	next "SPECIAL. (+1 SPE)"
 
-	bage "Does nothing if"
-	next "at full HP"
+	bage "Ne fait rien si"
+	next "les PV sont au max"
 	dex
 
 _RazorLeafDexEntry::
-	text "A flurry of razor"
-	next "sharp leaves are"
-	next "hurled at foe.@"
+	text "Pluie de feuilles"
+	next "acérées projetées"
+	next "sur l'ennemi.@"
 
 	text_jump _GenericOftenLandsCriticalHitsText
 
 _SolarbeamDexEntry::
-	text "Focuses sunlight"
-	next "into a powerful"
-	next "searing beam.@"
+	text "Concentre la"
+	next "lumière et tire un"
+	next "puissant faisceau.@"
 
 	text_jump _Generic10PercentBurnText
 
 _PoisonPowderDexEntry::
-	text "A poisonous dust"
-	next "cloud is spread"
-	next "around the foe."
+	text "Un nuage de poudre"
+	next "toxique se répand"
+	next "autour de l'ennemi."
 
-	bage "Poisons the foe"
-	next "if it works."
+	bage "Peut empoisonner"
+	next "l'ennemi."
 
-	bage "Doesn't work on"
-	next "POISON-type"
-	next "#MON"
+	bage "Ne fonctionne pas"
+	next "sur les #MON de"
+	next "type POISON"
 	dex
 
 _StunSporeDexEntry::
-	text "A numbing powder"
-	next "cloud is spread"
-	next "around the foe."
+	text "Nuage de poudre"
+	next "paralysante envoyé"
+	next "autour de l'ennemi."
 
-	bage "Paralyzes the foe"
-	next "if it works"
+	bage "Peut paralyser"
+	next "l'ennemi"
 	dex
 
 _SleepPowderDexEntry::
-	text "A big cloud of"
-	next "sleep-inducing"
-	next "dust is spread.@"
+	text "Un épais nuage de"
+	next "poudre soporifique"
+	next "se répand.@"
 
 	text_jump _GenericPutsFoeAsleepText
 
 
 _PetalDanceDexEntry::
-	text "The <user> attacks"
-	next "by spreading"
-	next "petals all over."
+	text "Le lanceur attaque"
+	next "en répandant des"
+	next "pétales partout."
 
-	bage "It then becomes"
-	next "fixated on this"
-	next "flowery dance.@"
+	bage "Il se se focalise"
+	next "alors sur cette"
+	next "danse fleurie.@"
 
 	text_jump _GenericThrashEffectText
 
 _StringShotDexEntry::
-	text "Fires thick"
-	next "sticky ropes of"
-	next "silk at the foe."
+	text "Tire sur l'ennemi"
+	next "d'épais cordons de"
+	next "soie collants."
 
-	bage "Lowers foe's"
-	next "SPEED stat."
-	next "(-1 SPEED)"
+	bage "Baisse la VITESSE"
+	next "de l'ennemi."
+	next "(-1 VIT)"
 	dex
 
 _DragonRageDexEntry::
-	text "The foe is hit"
-	next "by a shockwave of"
-	next "draconic rage.@"
+	text "L'ennemi subit une"
+	next "onde de choc de"
+	next "rage draconique.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _FireSpinDexEntry::
-	text "A swirling pillar"
-	next "of fire surrounds"
-	next "the <opponent>.@"
+	text "Une colonne de feu"
+	next "tourbillonnante"
+	next "entoure l'ennemi.@"
 
 	text_jump _GenericTrappingMoveText
 
 _ThundershockDexEntry::
-	text "A basic electric"
-	next "shock move.@"
+	text "Une attaque de"
+	next "choc électrique"
+	next "basique.@"
 
 	text_jump _Generic10PercentParalysisText
 
 _ThunderboltDexEntry::
-	text "Unleashes over"
-	next "100,000 volts of"
-	next "electricity."
+	text "Libère plus de"
+	next "100 000 volts"
+	next "d'électricité."
 
-	bage "A move with many"
-	next "fans due to its"
-	next "power/flashiness.@"
+	bage "Une attaque très"
+	next "appréciée pour sa"
+	next "puissance.@"
 
 	text_jump _Generic10PercentParalysisText
 
 _ThunderWaveDexEntry::
-	text "Discharges an"
-	next "electromagnetic"
-	next "wave that rapidly"
+	text "Décharge une onde"
+	next "électromagnétique"
+	next "qui paralyse"
 
-	bage "paralyzes the"
-	next "<opponent>."
+	bage "rapidement"
+	next "l'ennemi."
 
-	bage "Useful due to its"
-	next "great accuracy"
+	bage "Utile grâce à sa"
+	next "grande précision"
 	dex
 
 _ThunderDexEntry::
-	text "A thunderstorm"
-	next "is conjured up,"
-	next "dropping a"
+	text "Un orage éclate,"
+	next "déchaînant un"
+	next "éclair titanesque"
 
-	bage "titanic lightning"
-	next "bolt on the foe.@"
+	bage "sur l'ennemi.@"
 
 	text_jump _Generic10PercentParalysisText
 
 _RockThrowDexEntry::
-	text "Rocks are dropped"
-	next "on the foe.@"
+	text "Lâche des pierres"
+	next "sur l'ennemi.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _EarthquakeDexEntry::
-	text "The <user> sets"
-	next "off a powerful"
-	next "earthquake."
+	text "Le lanceur"
+	next "déclenche un"
+	next "puissant séisme."
 
-	bage "Commonly referred"
-	next "to by trainers as"
-	next "“Old Reliable”@"
+	bage "Souvent appelé"
+	next "“La valeur sûre”"
+	next "par les dresseurs@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _FissureDexEntry::
-	text "The <user> creates"
-	next "a wide split in"
-	next "the earth's crust"
+	text "Le lanceur crée"
+	next "une large faille"
+	next "dans la croûte"
 
-	bage "that swallows the"
-	next "foe completely.@"
+	bage "terrestre qui"
+	next "avale complètement"
+	next "l'ennemi.@"
 
 	text_jump _GenericOHKOText
 
 _DigDexEntry::
-	text "Digs underground"
-	next "for 1 turn, then"
-	next "suddenly emerges"
+	text "Creuse sous terre"
+	next "pendant un tour,"
+	next "puis surgit"
 
-	bage "to strike the foe"
-	next "the next turn."
+	bage "soudainement pour"
+	next "frapper l'ennemi"
+	next "au tour suivant."
 
-	bage "While underground"
-	next "the <user> cannot"
-	next "be hit by moves."
+	bage "Sous terre, le"
+	next "lanceur ne peut"
+	next "pas être attaqué."
 
-	bage "Usable outside"
-	next "battle to dig out"
-	next "of caves"
+	bage "Utilisable hors"
+	next "combats pour"
+	next "sortir des grottes"
 	dex
 
 _ToxicDexEntry::
-	text "Excessive amounts"
-	next "of poison are"
-	next "sprayed all over."
+	text "Pulvérise partout"
+	next "des quantités"
+	next "énormes de poison."
 
-	bage "Badly poisons the"
-	next "foe if it hits."
+	bage "Empoisonne "
+	next "gravement l'ennemi"
+	next "s'il est touché."
 
-	bage "The damage poison"
-	next "does to the foe"
-	next "grows each turn."
+	bage "Les dégâts du"
+	next "poison augmentent"
+	next "à chaque tour."
 
-	bage "Accuracy increases"
-	next "to 100% when used"
-	next "by POISON #MON"
+	bage "PRECISION max si"
+	next "lancé par un #MON"
+	next "de type POISON"
 	dex
 
 _ConfusionDexEntry::
-	text "Uses psychic"
-	next "powers to confuse"
-	next "the foe's mind.@"
+	text "Utilise un pouvoir"
+	next "psy pour perturber"
+	next "l'esprit ennemi.@"
 
 	text_jump _Generic10PercentConfusionText
 
 _PsychicDexEntry::
-	text "Telekinetic power"
-	next "is unleashed,"
-	next "striking the foe."
+	text "Un pouvoir psy se"
+	next "déchaîne et frappe"
+	next "l'ennemi."
 
-	bage "Few foes resist"
-	next "this fantastic"
-	next "psychic move.@"
+	bage "Peu d'ennemis"
+	next "resistent à cette"
+	next "attaque PSY.@"
 
 	text_jump _Generic33PercentLowerSpecialText
 
 _HypnosisDexEntry::
-	text "The foe is hypno-"
-	next "tized into a deep"
-	next "sleep.@"
+	text "Hypnotise l'ennemi"
+	next "et le plonge dans"
+	next "un sommeil lourd.@"
 
 	text_jump _GenericPutsFoeAsleepText
 
 _MeditateDexEntry::
-	text "Assuming a pose"
-	next "meant for deep"
-	next "contemplation,"
+	text "Adopte une posture"
+	next "propice à la"
+	next "méditation,"
 
-	bage "the <user> relaxes,"
-	next "raising many of"
-	next "its abilities."
+	bage "le lanceur se"
+	next "détend et accroît"
+	next "ses capacités."
 
-	bage "Raises ATTACK,"
-	next "SPECIAL, and"
-	next "SPEED. (+1 Each)"
+	bage "Augmente l'ATTAQUE,"
+	next "le SPECIAL, et"
+	next "la VITESSE. (+1)"
 	dex
 
 _AgilityDexEntry::
-	text "A burst of"
-	next "adrenaline enters"
-	next "the <user>'s system"
+	text "Une poussée"
+	next "d'adrénaline"
+	next "envahit le lanceur"
 
-	bage "letting it move"
-	next "with a newfound"
-	next "blinding speed."
+	bage "lui permettant de"
+	next "se déplacer avec"
+	next "une vitesse folle."
 
-	bage "Greatly raises"
-	next "<user>'s SPEED."
-	next "(+2 SPEED)"
+	bage "Monte la VITESSE"
+	next "du lanceur à fond."
+	next "(+2 VIT)"
 	dex
 
 _QuickAttackDexEntry::
-	text "A super fast"
-	next "lunging attack.@"
+	text "Une attaque éclair"
+	next "ultra-rapide.@"
 
 	text_jump _GenericAlwaysGoesFirstText
 
 _RageDexEntry::
-	text "The <user> releases"
-	next "pent up anger on"
-	next "the foe.@"
+	text "Le lanceur libère"
+	next "sa colère refoulée"
+	next "sur l'ennemi.@"
 
 	text_jump _GenericRaisesAttack1StageText
 
 _TeleportDexEntry::
-	text "The <user> teleports"
-	next "away from battle."
+	text "Le lanceur se"
+	next "téléporte loin du"
+	next "combat."
 
-	bage "Wild #MON can"
-	next "run from battle"
-	next "by using it."
+	bage "Les #MON sauvages"
+	next "fuient le combat"
+	next "en l'utilisant."
 
-	bage "In trainer battles"
-	next "the <user> switches"
-	next "and heals 25% HP."
+	bage "En combat, le"
+	next "lanceur change et"
+	next "soigne 25% des PV."
 
-	bage "Fails if there are"
-	next "no #MON left to"
-	next "switch with."
+	bage "Echoue s'il n'y a"
+	next "plus de #MON à"
+	next "envoyer."
 
-	bage "Usable outside of"
-	next "battle to travel"
-	next "back to the last"
+	bage "Utilisable hors"
+	next "combat pour"
+	next "retourner au"
 
-	bage "#MON CENTER"
+	bage "dernier CENTRE"
+	next "#MON"
 	dex
 
 _NightShadeDexEntry::
-	text "A pervasive dark"
-	next "engulfs the foe,"
-	next "scaring them.@"
-
+	text "Une obscurité"
+	next "envahit l'ennemi,"
+	next "le terrifiant.@"
 	text_jump _GenericNoAdditionalEffectText
 
 _MimicDexEntry::
-	text "The <user> mimics"
-	next "one of the foe's"
-	next "moves."
+	text "Le lanceur copie"
+	next "une des attaques"
+	next "de l'ennemi."
 
-	bage "The move can be"
-	next "chosen, and is"
-	next "learned for the"
+	bage "L'attaque peut"
+	next "être choisie, et"
+	next "est apprise pour"
 
-	bage "rest of the"
-	next "battle."
+	bage "le reste du"
+	next "combat."
 
-	bage "It is used right"
-	next "away after being"
-	next "mimicked"
+	bage "L'attaque est"
+	next "utilisé juste"
+	next "après l'avoir copié"
 	dex
 
 _ScreechDexEntry::
-	text "A loud screeching"
-	next "noise is emitted"
-	next "by the <user>."
+	text "Le lanceur émet"
+	next "un crissement "
+	next "strident."
 
-	bage "Greatly lowers"
-	next "foe's DEFENSE."
-	next "(-2 DEFENSE)"
+	bage "Baisse la DEFENSE"
+	next "de l'ennemi à fond."
+	next "(-2 DEF)"
 
-	bage "This weird screech"
-	next "will echo for the"
-	next "rest of battle."
+	bage "Ce cri étrange"
+	next "résonnera jusqu'à"
+	next "la fin du combat."
 
-	bage "These echoes wake"
-	next "all #MON from"
-	next "sleep."
+	bage "Ces échos"
+	next "réveillent tous"
+	next "les #MON endormis."
 
-	bage "This move is auto-"
-	next "used if the <user>"
-	next "is put to sleep."
+	bage "Utilisée auto-"
+	next "matiquement si le"
+	next "lanceur s'endort."
 
-	bage "Never misses"
+	bage "Ne rate jamais"
 	dex
 
 _DoubleTeamDexEntry::
-	text "The <user> creates"
-	next "many afterimages"
-	next "of itself to"
+	text "Crée de nombreuses"
+	next "images rémanentes"
+	next "de soi pour duper"
 
-	bage "decrease chances"
-	next "of being hit and"
-	next "tricks the foe."
+	bage "l'ennemi et réduire"
+	next "les chances d'être"
+	next "touché."
 	; fall through
 _GenericRaisesEvasion1StageText::	
-	bage "Raises <user>'s"
-	next "EVASION."
-	next "(+1 EVASION)"
+	bage "Augmente l'ESQUIVE"
+	next "du lanceur."
+	next "(+1 ESQ)"
 	dex
 
 _RecoverDexEntry::
-	text "Regenerates"
-	next "cells to heal"
-	next "<user>'s damage.@"
+	text "Régénère les"
+	next "cellules afin de"
+	next "guérir le lanceur.@"
 
 	text_jump _GenericHealsHalfText
 
 _HardenDexEntry::
-	text "The exterior of"
-	next "the <user> gets"
-	next "harder."
+	text "L'extérieur du"
+	next "lanceur se durcit."
 
-	bage "Raises <user>'s"
-	next "DEFENSE."
-	next "(+1 DEFENSE)"
+	bage "Monte la DEFENSE"
+	next "du lanceur."
+	next "(+1 DEF)"
 	dex
 
 _MinimizeDexEntry::
-	text "The <user> shrinks"
-	next "to a tiny size to"
-	next "avoid being hit.@"
+	text "Réduit la taille"
+	next "du lanceur pour"
+	next "monter l'esquive.@"
 
 	text_jump _GenericRaisesEvasion1StageText
 
 _SmokescreenDexEntry::
-	text "Black smoke is"
-	next "shot everywhere,"
-	next "blinding the foe.@"
+	text "De la fumée noire"
+	next "jaillit partout et"
+	next "aveugle l'ennemi.@"
 
 	text_call _GenericLowerAccuracyText
 
-	bage "FIRE types are"
-	next "unaffected by this"
-	next "smoke"
+	bage "Le type FEU n'est"
+	next "pas affecté par"
+	next "cette fumée"
 	dex
 
 _ConfuseRayDexEntry::
-	text "Strange rays of"
-	next "light confuse the"
-	next "<opponent>."
+	text "D'étranges rayons"
+	next "lumineux troublent"
+	next "l'ennemi."
 
-	bage "Causes confusion"
+	bage "Provoque la"
+	next "confusion"
 	dex
 
 _WithdrawDexEntry::
-	text "The <user> hides in"
-	next "its shell/cover"
-	next "of any kind."
+	text "Le lanceur se"
+	next "rétracte dans sa"
+	next "carapace."
 
-	bage "Heals 33% of max"
-	next "HP and raises"
-	next "DEFENSE. (+1)"
+	bage "Soigne 33% des PV"
+	next "max et augmente la"
+	next "DEFENSE. (+1 DEF)"
 
-	bage "Does nothing if"
-	next "at full HP"
+	bage "Ne fait rien si"
+	next "les PV sont au max"
 	dex
 
 _DefenseCurlDexEntry::
-	text "Curls up into a"
-	next "ball that raises"
-	next "defensibility."
+	text "Se recroqueville"
+	next "en boule pour"
+	next "mieux se protéger."
 
-	bage "The <user> won't take"
-	next "super effective"
-	next "hits from moves"
+	bage "Le lanceur est"
+	next "immunisé aux coups"
+	next "super efficaces"
 	dex
 
 _BarrierDexEntry::
-	text "A sturdy energy"
-	next "barrier is raised"
-	next "by the <user>."
+	text "Le lanceur érige"
+	next "une forte barrière"
+	next "énergétique."
 
-	bage "Greatly raises"
-	next "<user>'s DEFENSE."
-	next "(+2 DEFENSE)"
+	bage "Monte la DEFENSE"
+	next "du lanceur à fond."
+	next "(+2 DEF)"
 	dex
 
 _LightScreenDexEntry::
-	text "A wondrous wall"
-	next "of light is risen"
-	next "by the <user>."
+	text "Le lanceur érige"
+	next "un merveilleux mur"
+	next "de lumière."
 
-	bage "Cuts SPECIAL"
-	next "attack damage"
-	next "in half."
+	bage "Réduit de moitié"
+	next "les dégâts des"
+	next "attaques SPE."
 	; fall through
 _GenericThisEffectOnlyAppliesToOriginalUser::
-	bage "This effect only"
-	next "applies to the"
-	next "original <user>"
+	bage "Cet effet ne"
+	next "s'applique qu'au"
+	next "lanceur d'origine"
 	dex
 
 _HazeDexEntry::
-	text "Black haze that"
-	next "disrupts psychic"
-	next "powers is spread"
+	text "Une brume noire"
+	next "qui perturbe les"
+	next "pouvoirs psy se"
 
-	bage "all over."
-	next "The <user> becomes"
-	next "immune to PSYCHIC"
+	bage "répand partout."
+	next "Le lanceur devient"
+	next "immunisé contre"
 
-	bage "-type moves until"
-	next "it switches out."
+	bage "les attaques PSY"
+	next "jusqu'à ce qu'il"
+	next "soit remplacé."
 
-	bage "Resets all stat"
-	next "changes and cures"
-	next "confusion."
+	bage "Réinitialise les"
+	next "stats et soigne"
+	next "la confusion."
 
-	bage "Also resets these"
-	next "effects: MIST,"
-	next "FOCUS ENERGY,"
+	bage "Annule aussi les"
+	next "effets suivants:"
+	next "BRUME, PUISSANCE,"
 	
-	bage "LEECH SEED,"
-	next "DISABLE, DIRE HIT"
-	next "GUARD SPEC"
+	bage "VAMPIGRAINE,"
+	next "ENTRAVE, MUSCLE +,"
+	next "GARDE-STATS"
 	dex
 
 _ReflectDexEntry::
-	text "A reflective wall"
-	next "of light is risen"
-	next "by the <user>."
+	text "Le lanceur érige"
+	next "un mur de lumière"
+	next "réfléchissant."
 
-	bage "Cuts physical"
-	next "attack damage"
-	next "in half.@"
+	bage "Réduit de moitié"
+	next "les dégâts des"
+	next "attaques FOR.@"
 	text_jump _GenericThisEffectOnlyAppliesToOriginalUser
 
 _FocusEnergyDexEntry::
-	text "The <user> takes a"
-	next "deep breath and"
-	next "focuses, raising"
+	text "Le lanceur prend"
+	next "une grande inspi-"
+	next "ration et se pose."
 
-	bage "its fighting"
-	next "spirit with sheer"
-	next "power of will."
+	bage "Renforce son"
+	next "esprit combatif"
+	next "par sa volonté."
 
-	bage "Raises chance of"
-	next "landing critical"
-	next "hits by 4×"
+	bage "Augmente les"
+	next "chances de coups"
+	next "critiques (×4)"
 	dex
 
 _BideDexEntry::
-	text "The <user> steels"
-	next "itself, raising"
-	next "physical prowess."
+	text "Se prépare"
+	next "mentalement pour"
+	next "augmenter sa force."
 
-	bage "Raises ATTACK"
-	next "and DEFENSE."
-	next "(+1 Each)"
+	bage "Augmente l'ATTAQUE"
+	next "et la DEFENSE."
+	next "(+1 FOR, +1 DEF)"
 	dex
 
 _MetronomeDexEntry::
-	text "The <user> waves"
-	next "a finger, and"
-	next "otherworldly"
+	text "Le lanceur agite"
+	next "un doigt, et une"
+	next "magie surnaturelle"
 
-	bage "magic causes a"
-	next "random attack to"
-	next "suddenly occur"
+	bage "provoque"
+	next "soudainement une"
+	next "attaque aléatoire."
 	dex
 
 _MirrorMoveDexEntry::
-	text "Uses the last"
-	next "move any foe"
-	next "used.@"
+	text "Utilise la"
+	next "dernière attaque"
+	next "de l'ennemi.@"
 
 	text_call _GenericAlwaysGoesFirstText
 
-	bage "Fails if no foe"
-	next "has attacked yet"
+	bage "Echoue si l'ennemi"
+	next "n'a pas encore"
+	next "attaqué"
 	dex
 
 _SelfdestructDexEntry::
-	text "The <user> explodes"
-	next "in a giant fiery"
-	next "fulmination."
+	text "Le lanceur explose"
+	next "dans une violente"
+	next "déflagration."
 	; fall through
 _GenericExplodeDexEntry::
-	bage "Does heavy recoil"
-	next "damage to the"
-	next "<user>;"
+	bage "Inflige de lourds"
+	next "dégâts de recul au"
+	next "lanceur, la moitié"
 
-	bage "half the damage"
-	next "inflicted. If it"
-	next "misses, the <user>"
+	bage "des dégâts"
+	next "infligés. Si le"
+	next "lanceur échoue,"
 
-	bage "will still take"
-	next "1/4 of it's full"
-	next "HP in damage."
+	bage "il subira tout de"
+	next "même 1/4 de ses"
+	next "PV max."
 
-	bage "If the <user> has"
-	next "less than 1/3 of"
-	next "it's HP left,"
+	bage "Si le lanceur a"
+	next "moins d'1/3 de"
+	next "ses PV restants,"
 
-	bage "the explosion will"
-	next "become extremely"
-	next "powerful;"
+	bage "l'explosion sera"
+	next "extrêmement"
+	next "puissante, sa"
 
-	bage "power increases"
-	next "to 500! But <user>"
-	next "always faints"
+	bage "puissance montera"
+	next "à 500! Mais mettra"
+	next "KO le lanceur"
 	dex
 
 _EggBombDexEntry::
-	text "A bomb in an"
-	next "egg or an egg-"
-	next "shaped bomb is"
+	text "Une bombe cachée"
+	next "dans un oeuf ou"
+	next "en forme d'oeuf"
 
-	bage "hurled at the"
-	next "<opponent>, causing"
-	next "an explosion.@"
+	bage "est projetée sur"
+	next "l'ennemi et cause"
+	next "une explosion.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _LickDexEntry::
-	text "The <user> licks"
-	next "the <opponent> with"
-	next "a long tongue.@"
+	text "Le lanceur lèche"
+	next "l'ennemi avec une"
+	next "longue langue.@"
 
 	text_jump _Generic10PercentParalysisText
 
 _SmogDexEntry::
-	text "A puff of thick"
-	next "toxic smog wafts"
-	next "toward the foe.@"
+	text "Un nuage de gaz"
+	next "épais et toxique"
+	next "attaque l'ennemi.@"
 
 	text_jump _Generic40PercentPoisonText
 
 _SludgeDexEntry::
-	text "Corrosive toxic"
-	next "sludge covers the"
-	next "foe's body."
+	text "Une boue toxique"
+	next "est projetée sur"
+	next "l'ennemi."
 
-	bage "Its acidity can"
-	next "melt surfaces"
-	next "easily.@"
+	bage "Son acidité peut"
+	next "facilement ronger"
+	next "les surfaces.@"
 
 	text_jump _Generic40PercentPoisonText
 
 _BoneClubDexEntry::
-	text "A bone is used"
-	next "to club the"
-	next "<opponent>.@"
+	text "Un os est utilisé"
+	next "pour frapper"
+	next "l'ennemi.@"
 
 	text_jump _Generic10PercentFlinchText
 
 _FireBlastDexEntry::
-	text "An intense blast"
-	next "of all-consuming"
-	next "fire engulfs the"
+	text "Une intense "
+	next "explosion de feu"
+	next "dévastatrice"
 
-	bage "<opponent>."
-	next "30% chance to"
-	next "burn the foe"
+	bage "engloutit l'ennemi."
+	next "30% de chances de"
+	next "brûler l'ennemi"
 	dex
 
 _WaterfallDexEntry::
-	text "A charge powered"
-	next "up by rushing"
-	next "water."
+	text "Une charge"
+	next "alimentée par le"
+	next "courant d'eau."
 
-	bage "Has enough power"
-	next "behind it to"
-	next "climb waterfalls.@"
+	bage "Suffisamment"
+	next "puissant pour"
+	next "gravir les chutes.@"
 
 	text_jump _Generic30PercentFlinchText
 
 _ClampDexEntry::
-	text "Clamps the foe"
-	next "with a valved"
-	next "shell, jaws,"
+	text "Immobilise l'ennemi"
+	next "avec une coquille"
+	next "munie d'une valve,"
 
-	bage "or powerful"
-	next "magnetism.@"
+	bage "de mâchoires ou"
+	next "d'un puissant"
+	next "champ magnétique.@"
 
 	text_jump _GenericTrappingMoveText
 
 
 _SwiftDexEntry::
-	text "Star shaped rays"
-	next "of light are shot"
-	next "at the foe."
+	text "Des rayons étoilés"
+	next "lumineux sont"
+	next "tirés sur l'ennemi."
 
-	bage "Nicknamed"
-	next "“Speed Star”"
-	next "by trainers."
+	bage "Surnommé"
+	next "“Météores”"
+	next "par les dresseurs."
 
-	bage "Always goes"
-	next "first and"
-	next "never misses"
+	bage "Passe toujours en"
+	next "premier et ne rate"
+	next "jamais"
 	dex
 
 _SkullBashDexEntry::
-	text "Charges like a"
-	next "rocket and slams"
-	next "the foe with a"
+	text "Charge comme une"
+	next "fusée et frappe"
+	next "l'ennemi avec un"
 
-	bage "rock-hard skull.@"
+	bage "crâne dur comme la"
+	next "pierre.@"
 
 	text_call _GenericKeptGoingCrashedText
 	
-	bage "Accuracy increases"
-	next "to 100% when used"
-	next "by ROCK #MON"
+	bage "Précision de 100%"
+	next "si utilisé par un"
+	next "#MON de type ROCHE"
 	dex
 
 _SpikeCannonDexEntry::
-	text "Rock-hard spikes"
-	next "are fired at a"
-	next "high velocity."
+	text "Des pointes dures"
+	next "sont projetées à"
+	next "grande vitesse."
 
-	bage "Hits 2 or 3 times."
-	next "50% chance of"
-	next "each outcome"
+	bage "Frappe 2-3 fois."
+	next "50% de chances"
+	next "pour chaque cas"
 	dex
 
 _ConstrictDexEntry::
-	text "The <opponent> is"
-	next "snared with a"
-	next "tail or tendril,"
+	text "L'ennemi est pris"
+	next "au piège par une"
+	next "queue/tentacule,"
 
-	bage "electrostatically"
-	next "siphoning energy"
-	next "from the foe."
+	bage "qui lui aspire son"
+	next "énergie par effet"
+	next "électrostatique."
 
-	bage "Heals the user's"
-	next "abnormal status,"
+	bage "Guérit l'état"
+	next "anormal du lanceur"
+	next "ou d'un membre de"
 
-	bage "or a party member's"
-	next "abnormal status if"
-	next "the user has none"
+	bage "l'équipe si le"
+	next "lanceur est OK"
 	dex
 
 _AmnesiaDexEntry::
-	text "The <user> empties"
-	next "its mind to"
-	next "forget concerns."
+	text "Le lanceur se vide"
+	next "l'esprit pour"
+	next "oublier ses soucis"
 
-	bage "Greatly raises"
-	next "<user>'s SPECIAL."
-	next "(+2 SPECIAL)"
+	bage "Augmente beaucoup"
+	next "le SPECIAL du"
+	next "lanceur. (+2 SPE)"
 	dex
 
 _KinesisDexEntry::
-	text "A wall of fire"
-	next "scorches the foe."
+	text "Un mur de feu"
+	next "consume l'ennemi."
 
-	bage "Causes burn if"
-	next "it hits. Can't"
-	next "burn FIRE-types."
+	bage "Cause la brûlure"
+	next "en cas de contact,"
+	next "sauf le type FEU."
 
-	bage "Each time the move"
-	next "hits a burned foe,"
-	next "the fire wall gets"
+	bage "A chaque fois que"
+	next "l'attaque touche"
+	next "un ennemi brûlé,"
 
-	bage "larger; move power"
-	next "increases by 30"
-	next "points each hit,"
+	bage "le mur de feu"
+	next "s'agrandit, sa"
+	next "puissance augmente"
 
-	bage "to max 80 power."
-	next "If the <user> is at"
-	next "least level 50,"
+	bage "de 30 par coup,"
+	next "jusqu'à 80 max."
+	next "Si lanceur niv.50"
 
-	bage "power raises by 60"
-	next "points each hit to"
-	next "maximum 140 power"
+	bage "ou +, la puissance"
+	next "augmente de 60 par"
+	next "coup, jusqu'à 140"
 	dex
 
 _SoftboiledDexEntry::
-	text "A delicious egg"
-	next "heals the <user>."
+	text "Un délicieux oeuf"
+	next "soigne le lanceur."
 
-	bage "Heals half of"
-	next "<user>'s max HP."
+	bage "Restaure la moitié"
+	next "des PV max du"
+	next "lanceur."
 
-	bage "Usable outside"
-	next "battle to heal"
-	next "other #MON"
+	bage "Utilisable hors"
+	next "combat pour guérir"
+	next "d'autres #MON"
 	dex
 
 _HiJumpKickDexEntry::
-	text "The <user> jumps"
-	next "high in the air"
-	next "to deliver a"
+	text "Le lanceur saute"
+	next "haut dans les airs"
+	next "pour asséner un"
 
-	bage "world-shattering"
-	next "hyper-kick.@"
+	bage "coup de pied"
+	next "dévastateur.@"
 
 	text_jump _GenericKeptGoingCrashedText
 
 _GlareDexEntry::
-	text "The <opponent> is"
-	next "transfixed by"
-	next "terrifying eyes,"
+	text "L'ennemi est"
+	next "dévisagé par des"
+	next "yeux terrifiants,"
 
-	bage "scaring it into"
-	next "being unable"
-	next "to move."
+	bage "ce qui l'effraie"
+	next "et l'empêche de"
+	next "bouger."
 
-	bage "Paralyzes the"
-	next "<opponent>"
+	bage "Paralyse l'ennemi"
 	dex
 
 _DreamEaterDexEntry::
-	text "Eats a sleeping"
-	next "foe's dreams to"
-	next "regain HP."
+	text "Dévore le rêve de"
+	next "l'ennemi endormi et"
+	next "récupère des PV."
 
-	bage "Only works when"
-	next "the <opponent> is"
-	next "asleep.@"
+	bage "Ne fonctionne que"
+	next "lorsque l'ennemi"
+	next "est endormi.@"
 
 	text_jump _GenericAbsorbMoveText
 
 _PoisonGasDexEntry::
-	text "Releases a cloud"
-	next "of corrosive"
-	next "choking gas."
+	text "Libère un nuage de"
+	next "gaz corrosif et"
+	next "suffocant."
 
-	bage "Often lands"
-	next "critical hits.@"
+	bage "Inflige souvent"
+	next "des coups"
+	next "critiques.@"
 
 	text_jump _Generic20PercentPoisonText
 
 _BarrageDexEntry::
-	text "Hurls orbs of"
-	next "strange energy"
-	next "at the foe."
+	text "Lance des orbes"
+	next "d'énergie étrange"
+	next "sur l'ennemi."
 
-	bage "Where these"
-	next "ghostly orbs come"
-	next "from is unknown.@"
+	bage "On ignore d'où"
+	next "viennent ces orbes"
+	next "fantomatiques.@"
 
 	text_jump _GenericHitsTwiceText
 
 _LeechLifeDexEntry::
-	text "Bites and sucks"
-	next "energy from the"
-	next "foe's life force.@"
+	text "Mord et aspire"
+	next "l'énergie vitale"
+	next "de l'ennemi.@"
 
 	text_jump _GenericAbsorbMoveText
 
 _LovelyKissDexEntry::
-	text "A magic kiss is"
-	next "bestowed on the"
-	next "foe, lulling it"
+	text "Un baiser magique"
+	next "est prodigué à"
+	next "l'ennemi, le"
 
-	bage "into a deep sleep"
-	next "if it works"
+	bage "plongeant dans un"
+	next "profond sommeil si"
+	next "cela fonctionne"
 	dex
 
 _SkyAttackDexEntry::
-	text "A supersonic"
-	next "speed attack"
-	next "in which the <user>"
+	text "Attaque à vitesse"
+	next "supersonique où le"
+	next "lanceur s'envole"
 
-	bage "flies into the"
-	next "stratosphere in"
-	next "seconds for the"
+	bage "rapidement dans la"
+	next "stratosphère pour"
+	next "effectuer un piqué"
 
-	bage "ultimate glowing"
-	next "meteor dive-bomb.@"
+	bage "météoritique"
+	next "ultime et"
+	next "lumineux.@"
 
 	text_jump _Generic25PercentRecoilText
 
 _TransformDexEntry::
-	text "Transforms into"
-	next "the <opponent>"
-	next "#MON."
+	text "Se transforme en"
+	next "#MON ennemi."
 
-	bage "All stats and"
-	next "moves are copied."
-	next "(Except HP)"
+	bage "Toutes les stats"
+	next "et capacités sont"
+	next "copiées. (Sauf PV)"
 
-	bage "Lasts until the"
-	next "end of battle.@"
+	bage "Dure jusqu'à la"
+	next "fin du combat.@"
 
 	text_jump _GenericAlwaysGoesFirstText
 
 _BubbleDexEntry::
-	text "Blows a bubble"
-	next "that bursts in"
-	next "the foe's face.@"
+	text "Souffle une bulle"
+	next "qui éclate au"
+	next "visage de l'ennemi.@"
 	
 	text_jump _Generic33PercentLowerSpeedText
 
 _DizzyPunchDexEntry::
-	text "A rhythmic punch"
-	next "that leaves the"
-	next "foe reeling.@"
+	text "Un coup de poing"
+	next "rythmé qui fait"
+	next "vaciller l'ennemi.@"
 
 	text_jump _Generic30PercentConfusionText
 
 _SporeDexEntry::
-	text "Potent mushroom"
-	next "spores densely"
-	next "fill the air,"
+	text "L'air est envahi"
+	next "de puissantes"
+	next "spores de"
 
-	bage "tranquilizing"
-	next "the <opponent>."
+	bage "champignons qui"
+	next "tranquillisent"
+	next "l'ennemi."
 
-	bage "Causes the foe"
-	next "to fall asleep"
+	bage "Endort l'ennemi"
 	dex
 
 _FlashDexEntry::
-	text "An instantaneous"
-	next "flash blinds the"
-	next "foe."
+	text "Un flash"
+	next "instantané aveugle"
+	next "l'ennemi."
 
-	bage "Usually caused"
-	next "by a powerful"
-	next "electric arc.@"
+	bage "Généralement causé"
+	next "par un puissant"
+	next "arc électrique.@"
 
 	text_call _GenericAlwaysGoesFirstText
 	text_end
 	text_jump _Generic10PercentFlinchText
 
 _PsywaveDexEntry::
-	text "A small psychic"
-	next "wave hits the"
-	next "<opponent>."
+	text "Une petite vague"
+	next "psychique frappe"
+	next "l'ennemi."
 	; fall through
 _Generic33PercentLowerSpecialText::
-	bage "33% chance to"
-	next "lower SPECIAL."
-	next "(-1 SPECIAL)"
+	bage "33% de chances de"
+	next "baisser le"
+	next "SPECIAL. (-1 SPE)"
 	dex
 
 _SplashDexEntry::
-	text "The <user> flops"
-	next "around"
-	next "pointlessly."
+	text "Le lanceur s'agite"
+	next "dans tous les sens"
+	next "sans raison."
 
-	bage "No effect at all"
+	bage "Aucun effet"
 	dex
 
 _AcidArmorDexEntry::
-	text "The <user> alters"
-	next "its cellular"
-	next "structure causing"
+	text "Le lanceur modifie"
+	next "sa structure"
+	next "cellulaire,"
 
-	bage "it to liquefy for"
-	next "additional"
+	bage "ce qui le liquéfie"
+	next "pour une meilleure"
 	next "protection."
 
-	bage "Cuts all damage"
-	next "(Physical/Special)"
-	next "in half"
+	bage "Réduit de moitié"
+	next "tous les dégâts"
+	next "(physique/spécial)"
 	dex
 	
 _CrabhammerDexEntry::
-	text "The <user> hammers"
-	next "down mercilessly"
-	next "on the <opponent>"
+	text "Le lanceur frappe"
+	next "sans pitié l'ennemi"
+	next "avec une pince,"
 
-	bage "with a pincer,"
-	next "fist, or blunt"
-	next "edge.@"
+	bage "un poing, ou un "
+	next "objet contondant.@"
 
 	text_jump _GenericOftenLandsCriticalHitsText
 
 _ExplosionDexEntry::
-	text "The <user> explodes"
-	next "like a giant bomb"
-	next "that sends rocky"
+	text "Le lanceur explose"
+	next "comme une bombe"
+	next "géante qui lance"
 
-	bage "shrapnel out at"
-	next "supersonic speed.@"
+	bage "des éclats rocheux"
+	next "à vitesse "
+	next "supersonique.@"
+
 	text_jump _GenericExplodeDexEntry
 
 _FurySwipesDexEntry::
-	text "Scratches the foe"
-	next "with dust-ridden"
-	next "claws.@"
+	text "Griffe l'ennemi"
+	next "avec des griffes"
+	next "poussiéreuses.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _BonemerangDexEntry::
-	text "Throws a bone"
-	next "like a boomerang"
-	next "to strike the foe"
+	text "Lance un os comme"
+	next "un boomerang pour"
+	next "frapper l'ennemi"
 
-	bage "2 times in quick"
-	next "succession. Unlike"
-	next "other GROUND-type"
+	bage "2 fois de suite."
+	next "Contrairement aux"
+	next "autres attaques de"
 
-	bage "moves, it can hit"
-	next "#MON that are"
-	next "FLYING-type.@"
+	bage "type SOL, celle-ci"
+	next "peut toucher les"
+	next "#MON de type VOL.@"
 
 	text_jump _Generic33PercentLowerSpeedText
 
 _RestDexEntry::
-	text "The <user> falls"
-	next "asleep, healing"
-	next "all damage."
+	text "Le lanceur dort"
+	next "afin de soigner"
+	next "tous ses dégâts."
 
-	bage "Heals to full"
-	next "HP and heals all"
-	next "status ailments."
+	bage "Restaure tous les"
+	next "PV et soigne tous"
+	next "les statuts."
 
-	bage "The <user> sleeps"
-	next "for exactly 2"
-	next "turns"
+	bage "Le lanceur dort"
+	next "pendant exactement"
+	next "2 tours"
 	dex
 
 _RockSlideDexEntry::
-	text "An avalanche of"
-	next "rocks rain on"
-	next "top of the foe.@"
+	text "Une avalanche de"
+	next "rochers s'abat"
+	next "sur l'ennemi.@"
 
 	text_jump _Generic10PercentFlinchText
 
 _HyperFangDexEntry::
-	text "Giant teeth gnash"
-	next "the <opponent>.@"
+	text "Des dents géantes"
+	next "broient l'ennemi.@"
 
 	text_jump _Generic10PercentFlinchText
 
 _SharpenDexEntry::
-	text "The <user> sharpens"
-	next "its claws or"
-	next "edges."
+	text "Le lanceur affûte"
+	next "ses griffes ou"
+	next "ses facettes."
 
-	bage "Raises ATTACK"
-	next "and ACCURACY."
-	next "(+1 Each)"
+	bage "Augmente l'ATTAQUE"
+	next "et la PRECISION."
+	next "(+1 FOR, +1 PRE)"
 	dex
 
 _ConversionDexEntry::
-	text "The <user> analyzes"
-	next "the <opponent> and"
-	next "upgrades its body"
+	text "Le lanceur analyse"
+	next "l'ennemi et"
+	next "améliore son"
 
-	bage "to be better"
-	next "suited for taking"
-	next "down its enemy."
+	bage "corps pour mieux"
+	next "s'adapter et le"
+	next "vaincre en combat."
 
-	bage "The <user> converts"
-	next "to either ATTACK"
-	next "or DEFENSE mode."
+	bage "Le lanceur passe"
+	next "en mode ATTAQUE ou"
+	next "en mode DÉFENSE."
 
-	bage "In ATTACK mode"
-	next "the <user> queries"
-	next "a move that will"
+	bage "Mode ATTAQUE:"
+	next "le lanceur examine"
+	next "sa base de données"
 
-	bage "always work well"
-	next "on the foe from"
-	next "its data banks."
+	bage "pour trouver une"
+	next "attaque qui sera"
+	next "toujours efficace."
 
-	bage "In DEFENSE mode,"
-	next "damage from foe's"
-	next "moves is halved"
+	bage "Mode DEFENSE: les"
+	next "dégâts subis sont"
+	next "réduits de moitié."
 	dex
 
 _TriAttackDexEntry::
-	text "Shoots triangles"
-	next "with properties"
-	next "of 3 elements:"
+	text "Tire des triangles"
+	next "aux propriétés"
+	next "de 3 éléments:"
 
-	bage "Fire, ice, and"
-	next "electricity."
+	bage "Feu, glace et"
+	next "électricité."
 
-	bage "10% chance each"
-	next "of burn, freeze"
-	next "or paralysis"
+	bage "10% de chances de"
+	next "brûlure, de gel"
+	next "ou de paralysie"
 	dex
 
 _SuperFangDexEntry::
-	text "The <user> chomps"
-	next "hard on the"
-	next "foe with razor"
+	text "Le lanceur mord"
+	next "violemment l'ennemi"
+	next "avec des crocs"
 
-	bage "-sharp front"
-	next "fangs."
+	bage "acérés comme des"
+	next "lames de rasoir."
 
-	bage "Always does 2/3"
-	next "of the <opponent>'s"
-	next "current HP"
+	bage "Inflige toujours"
+	next "2/3 des PV actuels"
+	next "de l'ennemi"
 	dex
 
 _SlashDexEntry::
-	text "User heavily"
-	next "slashes the foe"
-	next "with claws or"
+	text "Le lanceur"
+	next "lacère violemment"
+	next "l'ennemi avec ses"
 
-	bage "anything sharp.@"
+	bage "griffes, ou tout"
+	next "autre objet"
+	next "tranchant.@"
 
 	text_jump _GenericOftenLandsCriticalHitsText
 
 _SubstituteDexEntry::
-	text "Sacrifices 1/4"
-	next "of <user>'s HP to"
-	next "make a decoy doll"
+	text "Sacrifie 1/4 des"
+	next "PV du lanceur pour"
+	next "créer un leurre"
 
-	bage "that takes damage"
-	next "instead of the"
-	next "<user>"
+	bage "qui encaisse les"
+	next "dégâts à sa place"
 	dex
 
 _StruggleDexEntry::
-	text "A last ditch"
-	next "move only usable"
-	next "when all moves"
+	text "Une attaque de la"
+	next "dernière chance,"
+	next "utilisable que"
 
-	bage "have 0 PP left."
-	next "Does heavy recoil"
-	next "to the <user>"
+	bage "lorsque toutes les"
+	next "capacités ont 0PP."
+	next "Blesse le lanceur"
 	dex

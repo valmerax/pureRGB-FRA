@@ -39,15 +39,15 @@ TextBoxTextAndCoordTable:
 	text_box_text AMOUNT_LEFT_BOX_TEMPLATE,          7,  0, 19,  2, ColorChangesText,        8,  0
 
 BuySellQuitText:
-	db   "BUY"
-	next "SELL"
-	next "QUIT@"
+	db   "ACHETER"
+	next "VENDRE"
+	next "SALUT!@"
 
 	db "@" ; unused
 
 UseTossText:
-	db   "USE"
-	next "TOSS@"
+	db   "UTIL."
+	next "JETER@"
 
 JapaneseSaveMessageText:
 	db   "きろく"
@@ -58,10 +58,10 @@ JapaneseSpeedOptionsText:
 	next "おそい@"
 
 MoneyText:
-	db "MONEY@"
+	db "ARG.@"
 
 ColorChangesText:
-	db "COLOR SWAPS@"
+	db "CHANG. COULEUR@"
 
 JapaneseMochimonoText:
 	db "もちもの@"
@@ -71,17 +71,17 @@ JapaneseMainMenuText:
 	next "さいしょから@"
 
 BattleMenuText:
-	db   "FIGHT <PK><MN>"
-	next "ITEM  RUN@"
+	db   "ATTAQ <PK><MN>"
+	next "OBJET FUITE@"
 
 SafariZoneBattleMenuText:
-	db   "BALL×       BAIT"
-	next "THROW ROCK  RUN@"
+	db   "BALL×      APPAT"
+	next "CAILLOU    FUITE@"
 
 SwitchStatsCancelText:
-	db   "SWITCH"
+	db   "ORDRE"
 	next "STATS"
-	next "CANCEL@"
+	next "RETOUR@"
 
 JapaneseAhText:
 	db "アッ！@"

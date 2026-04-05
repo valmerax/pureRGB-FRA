@@ -168,333 +168,333 @@ MoveNameJumpTable::
 	assert_table_length NUM_ATTACKS
 
 POUNDName:
-	db "POUND@"
+	db "ECRAS'FACE@"
 KARATECHOPName:
-	db "KARATE CHOP@"
+	db "POING-KARATE@"
 DOUBLESLAPName:
-	db "DOUBLESLAP@"
+	db "TORGNOLES@"
 COMETPUNCHName:
-	db "COMET PUNCH@"
+	db "POING COMETE@"
 MEGAPUNCHName:
-	db "MEGA PUNCH@"
+	db "ULTIMAPOING@"
 PAYDAYName:
-	db "PAY DAY@"
+	db "JACKPOT@"
 FIREPUNCHName:
-	db "FIRE PUNCH@"
+	db "POING DE FEU@"
 ICEPUNCHName:
-	db "ICE PUNCH@"
+	db "POINGLACE@"
 THUNDERPUNCHName:
-	db "THUNDERPUNCH@"
+	db "POING-ECLAIR@"
 SCRATCHName:
-	db "SCRATCH@"
+	db "GRIFFE@"
 VICEGRIPName:
-	db "VICEGRIP@"
+	db "FORCE POIGNE@"
 GUILLOTINEName:
 	db "GUILLOTINE@"
 RAZORWINDName:
-	db "ROOST@" ; changed from RAZOR WIND
+	db "ATTERRISSAGE@" ; changed from RAZOR WIND
 SWORDSDANCEName:
-	db "SWORDS DANCE@"
+	db "DANSE-LAMES@"
 CUTName:
-	db "CUT@"
+	db "COUPE@"
 GUSTName:
-	db "GUST@"
+	db "TORNADE@"
 WINGATTACKName:
-	db "WING ATTACK@"
+	db "CRU-AILE@"
 WHIRLWINDName:
-	db "WHIRLWIND@"
+	db "CYCLONE@"
 FLYName:
-	db "FLY@"
+	db "VOL@"
 BINDName:
-	db "BIND@"
+	db "ETREINTE@"
 SLAMName:
-	db "FILTHY SLAM@" ; changed from SLAM
+	db "FRAP'TOXIK@" ; changed from SLAM
 VINEWHIPName:
-	db "VINE WHIP@"
+	db "FOUET LIANES@"
 STOMPName:
-	db "STOMP@"
+	db "ECRASEMENT@"
 DOUBLEKICKName:
-	db "DOUBLE KICK@"
+	db "DOUBLE PIED@"
 MEGAKICKName:
-	db "MEGA KICK@"
+	db "ULTIMAWASHI@"
 JUMPKICKName:
-	db "JUMP KICK@"
+	db "PIED SAUTE@"
 ROLLINGKICKName:
-	db "ROLLING KICK@"
+	db "MAWASHI GERI@"
 SANDATTACKName:
-	db "SAND-ATTACK@"
+	db "JET DE SABLE@"
 HEADBUTTName:
-	db "HEADBUTT@"
+	db "COUP D'BOULE@"
 HORNATTACKName:
-	db "HORN ATTACK@"
+	db "KOUD'KORNE@"
 FURYATTACKName:
-	db "FURY ATTACK@"
+	db "FURIE@"
 HORNDRILLName:
-	db "HORN DRILL@"
+	db "EMPAL'KORNE@"
 TACKLEName:
-	db "TACKLE@"
+	db "CHARGE@"
 BODYSLAMName:
-	db "BODY SLAM@"
+	db "PLAQUAGE@"
 WRAPName:
-	db "WRAP@"
+	db "LIGOTAGE@"
 TAKEDOWNName:
-	db "HEAT RUSH@" ; changed from TAKE DOWN
+	db "COUP D’CHAUD@" ; changed from TAKE DOWN
 THRASHName:
-	db "THRASH@"
+	db "MANIA@"
 DOUBLEEDGEName:
-	db "DOUBLE-EDGE@"
+	db "DAMOCLES@"
 TAILWHIPName:
-	db "TAIL WHIP@"
+	db "MIMI-QUEUE@"
 POISONSTINGName:
-	db "POISON STING@"
+	db "DARD-VENIN@"
 TWINEEDLEName:
-	db "TWINEEDLE@"
+	db "DOUBLE-DARD@"
 PINMISSILEName:
-	db "PIN MISSILE@"
+	db "DARD-NUEE@"
 LEERName:
-	db "LEER@"
+	db "GROZ'YEUX@"
 BITEName:
-	db "BITE@"
+	db "MORSURE@"
 GROWLName:
-	db "GROWL@"
+	db "RUGISSEMENT@"
 ROARName:
-	db "ROAR@"
+	db "HURLEMENT@"
 SINGName:
-	db "SING@"
+	db "BERCEUSE@"
 SUPERSONICName:
-	db "SUPERSONIC@"
+	db "ULTRASON@"
 SONICBOOMName:
 	db "SONICBOOM@"
 DISABLEName:
-	db "DISABLE@"
+	db "ENTRAVE@"
 ACIDName:
-	db "ACID@"
+	db "ACIDE@"
 EMBERName:
-	db "EMBER@"
+	db "FLAMMECHE@"
 FLAMETHROWERName:
-	db "FLAMETHROWER@"
+	db "LANCE-FLAMME@"
 MISTName:
-	db "MIST@"
+	db "BRUME@"
 WATERGUNName:
-	db "WATER GUN@"
+	db "PISTOLET A O@"
 HYDROPUMPName:
-	db "HYDRO PUMP@"
+	db "HYDROCANON@"
 SURFName:
 	db "SURF@"
 ICEBEAMName:
-	db "ICE BEAM@"
+	db "LASER GLACE@"
 BLIZZARDName:
 	db "BLIZZARD@"
 PSYBEAMName:
-	db "PSYBEAM@"
+	db "RAFALE PSY@"
 BUBBLEBEAMName:
-	db "BUBBLEBEAM@"
+	db "BULLES D'O@"
 AURORABEAMName:
-	db "AURORA BEAM@"
+	db "ONDE BOREALE@"
 HYPERBEAMName:
-	db "HYPER BEAM@"
+	db "ULTRALASER@"
 PECKName:
-	db "PECK@"
+	db "PICPIC@"
 DRILLPECKName:
-	db "DRILL PECK@"
+	db "BEC VRILLE@"
 SUBMISSIONName:
-	db "SUBMISSION@"
+	db "SACRIFICE@"
 LOWKICKName:
-	db "LOW KICK@"
+	db "BALAYAGE@"
 COUNTERName:
-	db "DRAIN PUNCH@" ; changed from COUNTER
+	db "VAMPI-POING@" ; changed from COUNTER
 SEISMICTOSSName:
-	db "SEISMIC TOSS@"
+	db "FRAPPE ATLAS@"
 STRENGTHName:
-	db "STRENGTH@"
+	db "FORCE@"
 ABSORBName:
-	db "ABSORB@"
+	db "VOL-VIE@"
 MEGADRAINName:
-	db "MEGA DRAIN@"
+	db "MEGA-SANGSUE@"
 LEECHSEEDName:
-	db "LEECH SEED@"
+	db "VAMPIGRAINE@"
 GROWTHName:
-	db "GROWTH@"
+	db "CROISSANCE@"
 RAZORLEAFName:
-	db "RAZOR LEAF@"
+	db "TRANCH'HERBE@"
 SOLARBEAMName:
-	db "SOLARBEAM@"
+	db "LANCE-SOLEIL@"
 POISONPOWDERName:
-	db "POISONPOWDER@"
+	db "POUDRE TOXIK@"
 STUNSPOREName:
-	db "STUN SPORE@"
+	db "PARA-SPORE@"
 SLEEPPOWDERName:
-	db "SLEEP POWDER@"
+	db "POUDRE DODO@"
 PETALDANCEName:
-	db "PETAL DANCE@"
+	db "DANSE-FLEUR@"
 STRINGSHOTName:
-	db "STRING SHOT@"
+	db "SECRETION@"
 DRAGONRAGEName:
-	db "DRAGON RAGE@"
+	db "DRACO-RAGE@"
 FIRESPINName:
-	db "FIRE SPIN@"
+	db "DANSEFLAMME@"
 THUNDERSHOCKName:
-	db "THUNDERSHOCK@"
+	db "ECLAIR@"
 THUNDERBOLTName:
-	db "THUNDERBOLT@"
+	db "TONNERRE@"
 THUNDERWAVEName:
-	db "THUNDER WAVE@"
+	db "CAGE-ECLAIR@"
 THUNDERName:
-	db "THUNDER@"
+	db "FATAL-FOUDRE@"
 ROCKTHROWName:
-	db "ROCK THROW@"
+	db "JET-PIERRES@"
 EARTHQUAKEName:
-	db "EARTHQUAKE@"
+	db "SEISME@"
 FISSUREName:
-	db "FISSURE@"
+	db "ABIME@"
 DIGName:
-	db "DIG@"
+	db "TUNNEL@"
 TOXICName:
-	db "TOXIC@"
+	db "TOXIK@"
 CONFUSIONName:
-	db "CONFUSION@"
+	db "CHOC MENTAL@"
 PSYCHICName:
-	db "PSYCHIC@"
+	db "PSYKO@"
 HYPNOSISName:
-	db "HYPNOSIS@"
+	db "HYPNOSE@"
 MEDITATEName:
-	db "MEDITATE@"
+	db "YOGA@"
 AGILITYName:
-	db "AGILITY@"
+	db "HATE@"
 QUICKATTACKName:
-	db "QUICK ATTACK@"
+	db "VIVE-ATTAQUE@"
 RAGEName:
-	db "RAGE@"
+	db "FRENESIE@"
 TELEPORTName:
 	db "TELEPORT@"
 NIGHTSHADEName:
-	db "NIGHT SHADE@"
+	db "TENEBRES@"
 MIMICName:
-	db "MIMIC@"
+	db "COPIE@"
 SCREECHName:
-	db "SCREECH@"
+	db "GRINCEMENT@"
 DOUBLETEAMName:
-	db "DOUBLE TEAM@"
+	db "REFLET@"
 RECOVERName:
-	db "RECOVER@"
+	db "SOIN@"
 HARDENName:
-	db "HARDEN@"
+	db "ARMURE@"
 MINIMIZEName:
-	db "MINIMIZE@"
+	db "LILLIPUT@"
 SMOKESCREENName:
-	db "SMOKESCREEN@"
+	db "BROUILLARD@"
 CONFUSERAYName:
-	db "CONFUSE RAY@"
+	db "ONDE FOLIE@"
 WITHDRAWName:
-	db "WITHDRAW@"
+	db "REPLI@"
 DEFENSECURLName:
-	db "DEFENSE CURL@"
+	db "BOUL'ARMURE@"
 BARRIERName:
-	db "BARRIER@"
+	db "BOUCLIER@"
 LIGHTSCREENName:
-	db "LIGHT SCREEN@"
+	db "MUR LUMIERE@"
 HAZEName:
-	db "HAZE@"
+	db "BUEE NOIRE@"
 REFLECTName:
-	db "REFLECT@"
+	db "PROTECTION@"
 FOCUSENERGYName:
-	db "FOCUS ENERGY@"
+	db "PUISSANCE@"
 BIDEName:
-	db "BIDE@"
+	db "PATIENCE@"
 METRONOMEName:
 	db "METRONOME@"
 MIRRORMOVEName:
-	db "MIRROR MOVE@"
+	db "MIMIQUE@"
 SELFDESTRUCTName:
-	db "SELFDESTRUCT@"
+	db "DESTRUCTION@"
 EGGBOMBName:
-	db "EGG BOMB@"
+	db "BOMB'OEUF@"
 LICKName:
-	db "LICK@"
+	db "LECHOUILLE@"
 SMOGName:
-	db "SMOG@"
+	db "PUREDPOIS@"
 SLUDGEName:
-	db "SLUDGE@"
+	db "DETRITUS@"
 BONECLUBName:
-	db "BONE CLUB@"
+	db "MASSD'OS@"
 FIREBLASTName:
-	db "FIRE BLAST@"
+	db "DEFLAGRATION@"
 WATERFALLName:
-	db "WATERFALL@"
+	db "CASCADE@"
 CLAMPName:
-	db "CLAMP@"
+	db "CLAQUOIR@"
 SWIFTName:
-	db "SWIFT@"
+	db "METEORES@"
 SKULLBASHName:
-	db "SKULL BASH@"
+	db "COUD'KRANE@"
 SPIKECANNONName:
-	db "SPIKE CANNON@"
+	db "PICANON@"
 CONSTRICTName:
-	db "SIPHON SNAG@" ; changed from CONSTRICT
+	db "VAMPI-STATIK@" ; changed from CONSTRICT
 AMNESIAName:
-	db "AMNESIA@"
+	db "AMNESIE@"
 KINESISName:
-	db "FIREWALL@" ; changed from KINESIS
+	db "MUR DE FEU@" ; changed from KINESIS
 SOFTBOILEDName:
-	db "SOFTBOILED@"
+	db "E-COQUE@"
 HIJUMPKICKName:
-	db "HI JUMP KICK@"
+	db "PIED VOLTIGE@"
 GLAREName:
-	db "GLARE@"
+	db "INTIMIDATION@"
 DREAMEATERName:
-	db "DREAM EATER@"
+	db "DEVOREVE@"
 POISONGASName:
-	db "POISON GAS@"
+	db "GAZ TOXIK@"
 BARRAGEName:
-	db "BARRAGE@"
+	db "PILONNAGE@"
 LEECHLIFEName:
-	db "LEECH LIFE@"
+	db "VAMPIRISME@"
 LOVELYKISSName:
-	db "LOVELY KISS@"
+	db "GROBISOU@"
 SKYATTACKName:
-	db "SKY ATTACK@"
+	db "PIQUE@"
 TRANSFORMName:
-	db "TRANSFORM@"
+	db "MORPHING@"
 BUBBLEName:
-	db "BUBBLE@"
+	db "ECUME@"
 DIZZYPUNCHName:
-	db "DIZZY PUNCH@"
+	db "UPPERCUT@"
 SPOREName:
 	db "SPORE@"
 FLASHName:
 	db "FLASH@"
 PSYWAVEName:
-	db "PSYWAVE@"
+	db "VAGUE PSY@"
 SPLASHName:
-	db "SPLASH@"
+	db "TREMPETTE@"
 ACIDARMORName:
-	db "ACID ARMOR@"
+	db "ACIDARMURE@"
 CRABHAMMERName:
-	db "CRABHAMMER@"
+	db "PINCE-MASSE@"
 EXPLOSIONName:
 	db "EXPLOSION@"
 FURYSWIPESName:
-	db "DUST CLAW@" ; changed from FURY SWIPES
+	db "POUSSI-GRIFF@" ; changed from FURY SWIPES
 BONEMERANGName:
-	db "BONEMERANG@"
+	db "OSMERANG@"
 RESTName:
-	db "REST@"
+	db "REPOS@"
 ROCKSLIDEName:
-	db "ROCK SLIDE@"
+	db "EBOULEMENT@"
 HYPERFANGName:
-	db "HYPER FANG@"
+	db "CROC DE MORT@"
 SHARPENName:
-	db "SHARPEN@"
+	db "AFFUTAGE@"
 CONVERSIONName:
-	db "CONVERSION@"
+	db "ADAPTATION@"
 TRIATTACKName:
-	db "TRI ATTACK@"
+	db "TRIPLATTAQUE@"
 SUPERFANGName:
-	db "SUPER FANG@"
+	db "CROC FATAL@"
 SLASHName:
-	db "SLASH@"
+	db "TRANCHE@"
 SUBSTITUTEName:
-	db "SUBSTITUTE@"
+	db "CLONAGE@"
 STRUGGLEName:
-	db "STRUGGLE@"
+	db "LUTTE@"
 

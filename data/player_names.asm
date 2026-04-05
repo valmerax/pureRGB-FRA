@@ -1,47 +1,47 @@
 IF DEF(_RED)
 DefaultNamesPlayer:
-	db   "NEW NAME"
+	db   "NOM"
 	next "RED"
-	next "ASH"
-	next "JACK"
+	next "SACHA"
+	next "PAUL"
 	db   "@"
 
 DefaultNamesRival:
-	db   "NEW NAME"
+	db   "NOM"
 	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "REGIS"
+	next "JEAN"
 	db   "@"
 ENDC
 
 IF DEF(_BLUE)
 DefaultNamesPlayer:
-	db   "NEW NAME"
+	db   "NOM"
 	next "BLUE"
-	next "GARY"
-	next "JOHN"
+	next "REGIS"
+	next "JEAN"
 	db   "@"
 
 DefaultNamesRival:
-	db   "NEW NAME"
+	db   "NOM"
 	next "RED"
-	next "ASH"
-	next "JACK"
+	next "SACHA"
+	next "PAUL"
 	db   "@"
 ENDC
 
 IF DEF(_GREEN) ; PureRGBnote: GREENBUILD: default names specific to pokemon green
 DefaultNamesPlayer:
-	db   "NEW NAME"
+	db   "NOM"
 	next "GREEN"
-	next "ASH"
-	next "MIKE"
+	next "SACHA"
+	next "JEAN"
 	db   "@"
 
 DefaultNamesRival:
-	db   "NEW NAME"
+	db   "NOM"
 	next "BLUE"
-	next "GARY"
-	next "GABE"
+	next "REGIS"
+	next "PAUL"
 	db   "@"
 ENDC

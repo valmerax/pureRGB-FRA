@@ -2,82 +2,81 @@
 ; Separated into two files because it doesn't fit in a single bank.
 
 _SharpenDexEntry::
-	text "The user sharpens"
-	next "its claws or"
-	next "edges."
+	text "Le lanceur affûte"
+	next "ses griffes ou"
+	next "ses facettes."
 
-	bage "Raises ATTACK"
-	next "and ACCURACY."
-	next "(+1 Each)"
+	bage "Augmente l'ATTAQUE"
+	next "et la PRECISION."
+	next "(+1 FOR, +1 PRE)"
 	dex
 
 _ConversionDexEntry::
-	text "The user analyzes"
-	next "the opponent and"
-	next "upgrades its body"
+	text "Le lanceur analyse"
+	next "l'ennemi et"
+	next "améliore son"
 
-	bage "to be better"
-	next "suited for taking"
-	next "down its enemy."
+	bage "corps pour mieux"
+	next "s'adapter et le"
+	next "vaincre en combat."
 
-	bage "Greatly raises"
-	next "user's SPECIAL."
-	next "(+2 SPECIAL)"
+	bage "Booste le SPECIAL"
+	next "du lanceur à fond."
+	next "(+2 SPE)"
 	dex
 
 _TriAttackDexEntry::
-	text "Shoots triangles"
-	next "with properties"
-	next "of 3 elements:"
+	text "Tire des triangles"
+	next "aux propriétés"
+	next "de 3 éléments:"
 
-	bage "Fire, ice, and"
-	next "electricity."
+	bage "Feu, glace et"
+	next "électricité."
 
-	bage "10% chance each"
-	next "of burn, freeze"
-	next "or paralysis"
+	bage "10% de chances de"
+	next "brûlure, de gel"
+	next "ou de paralysie"
 	dex
 
 _SuperFangDexEntry::
-	text "The user chomps"
-	next "hard on the"
-	next "foe with razor"
+	text "Le lanceur mord"
+	next "violemment l'ennemi"
+	next "avec des crocs"
 
-	bage "-sharp front"
-	next "fangs."
+	bage "acérés comme des"
+	next "lames de rasoir."
 
-	bage "Always does 2/3"
-	next "of the opponent's"
-	next "current HP"
+	bage "Inflige toujours"
+	next "2/3 des PV actuels"
+	next "de l'ennemi"
 	dex
 
 _SlashDexEntry::
-	text "User heavily"
-	next "slashes the foe"
-	next "with claws or"
+	text "Le lanceur"
+	next "lacère violemment"
+	next "l'ennemi avec ses"
 
-	bage "anything sharp."
-	next "Often lands"
-	next "critical hits"
+	bage "griffes, etc."
+	next "Taux de coups"
+	next "critiques élevé"
 	dex
 
 _SubstituteDexEntry::
-	text "A decoy doll"
-	next "replaces the user"
-	next "and takes damage"
+	text "Crée un leurre en"
+	next "utilisant 1/4 des"
+	next "PV max du lanceur"
 
-	bage "instead of it."
-	next "Need to sacrifice"
-	next "1/4 HP to use"
+	bage "et prend les"
+	next "dégâts à sa place"
 	dex
 
 _StruggleDexEntry::
-	text "A last ditch"
-	next "move only usable"
-	next "when all moves"
+	text "Une attaque de la"
+	next "dernière chance,"
+	next "utilisable que"
 
-	bage "have 0 PP left."
-	next "Does heavy recoil"
-	next "to the user"
+	bage "lorsque toutes les"
+	next "capacités ont 0PP."
+	next "Blesse le lanceur"
 	dex
 
