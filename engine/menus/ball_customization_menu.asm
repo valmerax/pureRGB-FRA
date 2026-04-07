@@ -106,17 +106,17 @@ CustomBallHandleInputInitMaxItems:
 	ret
 
 BallCustomizationMenuText:
-	db "Tile@"
-	db "Color@"
-	db "Throw@"
-	db "Sound@"
-	db "Poof@"
-	db "Special@"
-	db "Rename@"
+	db "Motif@"
+	db "Couleur@"
+	db "Lancer@"
+	db "Son@"
+	db "Effet@"
+	db "Spécial@"
+	db "Renommer@"
 
 BallCustomizationPressText:
-	db "Press SELECT@"
-	db "to visualize!@"
+	db "Appuyez sur SELECT@"
+	db "pour visualiser!@"
 
 
 GetBallNameSRAM:
@@ -523,22 +523,22 @@ PlaceChildMenuStrings:
 	ret
 
 BallTileCustomizationMenuText::
-	db "Sphere@"
-	db "Sparkle@"
-	db "Rock@"
-	db "Droplet@"
-	db "Leaf@"
-	db "Fire@"
-	db "Crystal@"
-	db "Shine@"
-	db "Sword@"
-	db "Skull@"
-	db "Bolt@"
-	db "Tri@"
-	db "Heart@"
-	db "Eye@"
-	db "Ghost@"
-	db "Cone@"
+	db "Sphère@"
+	db "Etoile@"
+	db "Rocher@"
+	db "Goutte@"
+	db "Feuille@"
+	db "Flamme@"
+	db "Cristal@"
+	db "Lueur@"
+	db "Epée@"
+	db "Crâne@"
+	db "Eclair@"
+	db "Triangle@"
+	db "Coeur@"
+	db "Oeil@"
+	db "Spectre@"
+	db "Cône@"
 
 BallTileCustomizationMenu:
 	ld a, [wCurrentMenuItem]
@@ -667,23 +667,23 @@ CustomBallLoadBottomNybble:
 
 
 BallColorCustomizationMenuText::
-	db "Red@"
-	db "Yellow@"
-	db "Pale@"
-	db "Green@"
+	db "Rouge@"
+	db "Jaune@"
+	db "Pâle@"
+	db "Vert@"
 	db "Cyan@"
-	db "Blue@"
+	db "Bleu@"
 	db "Indigo@"
-	db "Purple@"
-	db "Pink@"
+	db "Violet@"
+	db "Rose@"
 GrayText:
-	db "Gray@"
-	db "Black@"
-	db "White@"
-	db "Pepper@"
-	db "Lime@"
-	db "Crimson@"
-	db "Prismatic@"
+	db "Gris@"
+	db "Noir@"
+	db "Blanc@"
+	db "Poivre@"
+	db "Citron@"
+	db "Cramoisi@"
+	db "Prisme@"
 
 InitChildMenu:
 	ld [wCurrentMenuItem], a ; put cursor at currently selected option
@@ -751,22 +751,22 @@ ChangeCustomBallColor:
 	jp LoadBallAnimPaletteWithInvertCheck
 
 BallThrowAnimCustomizationMenuText::
-	db "None@"
-	db "Appear@"
-	db "Flash@"
-	db "Shake@"
-	db "Vibrate@"
-	db "Throw@"
-	db "Drop@"
-	db "Bounce@"
-	db "Roll@"
+	db "Aucune@"
+	db "Surgit@"
+	db "Brille@"
+	db "Secoue@"
+	db "Vibre@"
+	db "Jet@"
+	db "Chute@"
+	db "Rebond@"
+	db "Roule@"
 	db "ZigZag@"
-	db "Fakeout@"
+	db "Feinte@"
 	db "Emotion@"
-	db "The Merge@"
-	db "Slice@"
-	db "Angelic@"
-	db "Random@"
+	db "Fusion@"
+	db "Tranche@"
+	db "Illumine@"
+	db "Aléatoire@"
 
 BallThrowAnimCustomizationMenu:
 	ld a, [wCurrentMenuItem]
@@ -812,23 +812,23 @@ BallThrowAnimCustomizationMenu:
 	jp IsCustomBallMenuItemUnlocked
 
 BallPoofAnimCustomizationMenuText::
-	db "OG Poof@"
-	db "Spread@"
-	db "Circle@"
-	db "Spin Out@"
-	db "Spiral@"
-	db "Gravity@"
-	db "Weave@"
+	db "Classique@"
+	db "Diffus@"
+	db "Cercle@"
+	db "Eclaté@"
+	db "Spirale@"
+	db "Pesanteur@"
+	db "Entrelacé@"
 	db "Scan@"
-	db "Windmill@"
-	db "Strike@"
-	db "Speckle@"
+	db "Moulin@"
+	db "Impact@"
+	db "Grains@"
 	db "Confetti@"
-	db "Helix@"
-	db "Tornado@"
+	db "Hélice@"
+	db "Tornade@"
 ExplodeText:
-	db "Explode@"
-	db "Random@"
+	db "Explosion@"
+	db "Aléatoire@"
 
 BallPoofAnimCustomizationMenu:
 	ld a, [wCurrentMenuItem]
@@ -877,22 +877,22 @@ BallPoofAnimCustomizationMenu:
 
 
 BallSFXCustomizationMenuText::
-	db "OG Poof@"
-	db "Wind@"
-	db "Shwing@"
-	db "Whoosh@"
-	db "Smash@"
-	db "Cute@"
-	db "Squirt@"
-	db "Power Up@"
+	db "Classique@"
+	db "Vent@"
+	db "Charme@"
+	db "Rafale@"
+	db "Impact@"
+	db "Mignon@"
+	db "Jet@"
+	db "Boost@"
 	db "Psy@"
-	db "Evil@"
-	db "Icy@"
+	db "Démon@"
+	db "Glacial@"
 	db "Machine@"
-	db "Flood@"
-	db "Explode@"
-	db "Thunder@"
-	db "Sparkle@"
+	db "Flot@"
+	db "Explosion@"
+	db "Tonnerre@"
+	db "Eclat@"
 
 BallSFXCustomizationMenu:
 	ld a, [wCurrentMenuItem]
@@ -1126,14 +1126,14 @@ LoadBallAnimPaletteWithInvertCheck:
 	jp LoadBallAnimPalette
 
 VisualizationTitle:
-	db "BALL  VISUALIZER@"
+	db "VISUALISEUR BALL@"
 
 VisualizationMenu:
-	db "A - Replay@"
-	db "B - Back@"
+	db "A - Rejouer@"
+	db "B - Retour@"
 
 CustomBallText:
-	db "CUSTOM #BALL@"
+	db "#BALL CUSTOM@"
 
 CustomPokeballRename::
 	hlcoord 4, 1
@@ -1370,7 +1370,7 @@ CeruleanBallDesignerPhotoHintMenu::
 CeruleanBallDesignerPhotoText:
 	db "Photo @"
 CeruleanBallDesignerHintText:
-	db "HINTS@"
+	db "ASTUCES@"
 
 ; Each ref is expected to be 5 bytes long with a single text far and then text end and in the correct order
 ; Do not separate the below entries or change order

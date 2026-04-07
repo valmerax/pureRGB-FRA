@@ -85,13 +85,13 @@ DrawOptions2Menu:
 
 Options2Text:
 	db   "OPTIONS 2"
-	next " COLOR: OG SGB  Y "
-	next " ALT PKMN COLORS:"
+	next " COULEUR: OG SGB J"
+	next " COLORIS PKMN ALT:"
 	next "    OFF    ON"
-	next " MUSIC:     OG OG+"
-	next " AUDIO PAN: OFF ON"
-	next " BIKE SONG: ON OFF"
-	next " GBC FADE:  OFF ON@"
+	next " MUSIQUE:   OG OG+"
+	next " PAN AUDIO: OFF ON"
+	next " SON VELO:  ON OFF"
+	next " FONDU GBC: OFF ON@"
 
 OptionsPage2AorSelectButton:
 	ld a, [hJoy5]

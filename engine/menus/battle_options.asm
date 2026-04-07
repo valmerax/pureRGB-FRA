@@ -63,14 +63,14 @@ BattleOptionsSetCursorPositionActions:
 	dw SetCursorPositionFromBattleOptions
 
 BattleOptionText:
-	db   "BATTLE OPTIONS"
-	next " GHST→PSY: 0× 2×"
-	next " ICE→FIRE: 1× 0.5×"
-	next " BUG→PSN:  2× 0.5×"
-	next " PSN→BUG:  2× 1×"
-	next " EXP BAR:  ON OFF"
-	next " NPC EVs:  ON OFF"
-	next " NPC PP:   ON OFF@"
+	db   "OPTIONS COMBAT"
+	next " SPE→PSY:  ×0 ×2"
+	next " GLA→FEU:  ×1 ×0.5"
+	next " INS→PSN:  ×2 ×0.5"
+	next " PSN→INS:  ×2 ×1"
+	next " BAR EXP:  ON OFF"
+	next " PNJ EV:   ON OFF"
+	next " PNJ PP:   ON OFF@"
 
 DrawBattleOptionsMenu:
 	hlcoord 0, 0

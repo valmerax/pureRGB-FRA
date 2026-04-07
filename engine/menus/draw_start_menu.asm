@@ -76,22 +76,22 @@ CheckSavedStartMenuIndex:
 	ret
 
 StartMenuPokedexText:
-	db "POKéDEX@"
+	db "#DEX@"
 
 StartMenuPokemonText:
-	db "POKéMON@"
+	db "#MON@"
 
 StartMenuItemText:
-	db "ITEM@"
+	db "OBJET@"
 
 StartMenuSaveText:
-	db "SAVE@"
+	db "SAUVER@"
 
 StartMenuResetText:
-	db "RESET@"
+	db "QUITTER@"
 
 StartMenuExitText:
-	db "EXIT@"
+	db "RETOUR@"
 
 StartMenuOptionText:
 	db "OPTION@"

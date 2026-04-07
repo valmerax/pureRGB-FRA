@@ -41,14 +41,14 @@ FrontSpriteOptions4Data:
 	dw SevenOptionMenuGenericYCoordXVariableOffsetList
 
 FrontSpriteOptions4Text:
-	db   "SPRITES→FRONT 4"
-	next " ONIX:       RB RG"
-	next " VOLTORB:    RB RG"
-	next " EXEGGCUTE:  RB Y "
-	next " EXEGGUTOR:  Y  RB"
-	next " KOFFING:    RG RB"
-	next " STARMIE:    RB RG"
-	next " SCYTHER:    RB RG@"
+	db   "SPRITES→FACE 4"
+	next " ONIX:       RB RV"
+	next " VOLTORBE:   RB RV"
+	next " NOEUNOEUF:  RB J "
+	next " NOADKOKO:   J  RB"
+	next " SMOGO:      RV RB"
+	next " STAROSS:    RB RV"
+	next " INSECATEUR: RB RV@"
 
 DrawFrontSpriteOptions4Menu:
 	hlcoord 0, 0

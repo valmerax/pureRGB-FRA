@@ -113,18 +113,18 @@ SpriteTypeMapping:
 	db -1 
 
 RedBlueText:
-	db "International"
-	next "Red/Blue Sprite@"
+	db "Sprite Rouge/Bleue"
+	next "International@"
 
 RedGreenText:
-	db "Japanese Red /"
-	next "Green Sprite@"
+	db "Sprite Rouge/Vert"
+	next "Japonais@"
 
 YellowText:
-	db "Yellow Version"
-	next "Sprite@"
+	db "Sprite"
+	next "Version Jaune@"
 
 SpaceworldText:
-	db "Spaceworld '97"
-	next "Sprite@"
+	db "Sprite"
+	next "Spaceworld '97@"
 

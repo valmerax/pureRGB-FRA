@@ -522,25 +522,25 @@ DrawPokedexVerticalLine:
 	ret
 
 PokedexSeenText:
-	db "SEEN@"
+	db "VUS@"
 
 PokedexOwnText:
-	db "OWN@"
+	db "PRIS@"
 
 PokedexContentsText:
-	db "CONTENTS@"
+	db "SOMMAIRE@"
 
 
 PokedexDataText:
-	db  "DATA@"
+	db  "INFO@"
 
 PokedexMoveText:
-	db  "MOVE@"
+	db  "ATQ@"
 
 PokedexMenuItemsText:
-	db   "CRY "
-	next "AREA"
-	next "QUIT@"
+	db   "CRI"
+	next "ZONE"
+	next "RET@"
 
 ; tests if a pokemon's bit is set in the seen or owned pokemon bit fields
 ; INPUT:
@@ -1102,11 +1102,11 @@ ShowNextPokemonData:
 	jp ShowNextPokemonData
 
 HeightWeightText:
-	db   "HT  ?′??″"
-	next "WT   ???lb@"
+	db   "TAI ?′??″"
+	next "PDS  ???lb@"
 HeightWeightTextMetric:
-	db   "HT   ???<M>"
-	next "WT   ???<K><G>@"
+	db   "TAI  ???<M>"
+	next "PDS  ???<K><G>@"
 
 ; XXX does anything point to this? ; PureRGBnote: CHANGED: no, so comment out
 ;PokeText:
@@ -1212,22 +1212,22 @@ DexType2Text:
 	db "TYPE2/@"
 
 BaseStatsText:
-	db "BASE STATS@"
+	db "STATS@"
 
 HPText:
-	db "HP@"
+	db "PV@"
 
 AtkText:
-	db "ATK@"
+	db "FOR@"
 
 DefText:
 	db "DEF@"
 
 SpdText:
-	db "SPD@"
+	db "VIT@"
 
 SpcText:
-	db "SPC@"
+	db "SPE@"
 
 TotalText:
 	db "TOTAL@"

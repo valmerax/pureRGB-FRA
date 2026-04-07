@@ -6,12 +6,12 @@ _GetBadgeName::
 	
 BadgeNames:
 	table_width ITEM_NAME_LENGTH
-	db "BOULDERBADGE@"
-	db "CASCADEBADGE@"
-	db "THUNDERBADGE@"
-	db "RAINBOWBADGE@"
-	db "SOULBADGE@@@@"
-	db "MARSHBADGE@@@"
-	db "VOLCANOBADGE@"
-	db "EARTHBADGE@@@"
+	db "BADGE ROCHE@@"
+	db "BADGECASCADE@"
+	db "BADGE FOUDRE@"
+	db "BADGE PRISME@"
+	db "BADGE AME@@@@"
+	db "BADGE MARAIS@"
+	db "BADGE VOLCAN@"
+	db "BADGE TERRE@@"
 	assert_table_length NUM_BADGES

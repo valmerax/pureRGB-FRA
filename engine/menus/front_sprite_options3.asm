@@ -41,14 +41,14 @@ FrontSpriteOptions3Data:
 	dw SevenOptionMenuGenericYCoordXVariableOffsetList
 
 FrontSpriteOptions3Text:
-	db   "SPRITES→FRONT 3"
-	next " KADABRA:    RB RG"
-	next " MACHOP:     RB RG"
-	next " TENTACRUEL: RB RG"
-	next " GRAVELER:   RB RG"
-	next " FARFETCHD:  RG RB"
-	next " CLOYSTER:   RB RG"
-	next " GENGAR:     RB Y@"
+	db   "SPRITES→FACE 3"
+	next " KADABRA:    RB RV"
+	next " MACHOC:     RB RV"
+	next " TENTACRUEL: RB RV"
+	next " GRAVALANCH: RB RV"
+	next " CANARTICHO: RV RB"
+	next " CRUSTABRI:  RB RV"
+	next " ECTOPLASMA: RB J@"
 
 DrawFrontSpriteOptions3Menu:
 	hlcoord 0, 0

@@ -278,10 +278,10 @@ SafariBallText:
 	db "BALL×× @"
 
 RangersLeftText:
-	db "RANGERs@"
+	db "RANGERS@"
 
 RangersLeftText2:
-	db "Left: @"
+	db "Reste: @"
 
 GetTileAndCoordsInFrontOfPlayer:
 	call GetPredefRegisters

@@ -56,7 +56,7 @@ PewterCityPokecenterBenchGuyText::
 	text_end
 
 BenchGuyName:
-	db "BENCH GUY@"
+	db "FLEMMARD@"
 
 CeruleanCityPokecenterBenchGuyText::
 	text_far _CeruleanPokecenterGuyText

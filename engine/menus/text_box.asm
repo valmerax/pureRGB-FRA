@@ -163,7 +163,7 @@ DisplayAmountLeftBox:
 	ret
 
 AmountLeftString:
-	db "× Left@"
+	db "× Reste@"
 
 DoBuySellQuitMenu:
 	ld a, [wStatusFlags5]
@@ -531,8 +531,8 @@ INCLUDE "data/moves/field_move_names.asm"
 
 PokemonMenuEntries:
 	db   "STATS"
-	next "SWITCH"
-	next "CANCEL@"
+	next "ORDRE"
+	next "RETOUR@"
 
 GetMonFieldMoves:
 	ld a, [wWhichPokemon]

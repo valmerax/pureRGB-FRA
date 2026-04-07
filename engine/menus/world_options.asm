@@ -52,11 +52,11 @@ WorldOptionsYCoordXVariableOffsetList:
 	db PAGE_CONTROLS_Y_COORD, MAX_OPTIONS_PER_PAGE
 
 WorldOptionsText:
-	db   "WORLD OPTIONS"
-	next " VOLCANO:   ON OFF"
+	db   "OPTIONS MONDE"
+	next " VOLCAN:    ON OFF"
 	next " CLUBS:     ON OFF"
-	next " BALLDESIGN ON OFF"
-	next " MOVEMYSTIC ON OFF@"
+	next " DESIGNBALL ON OFF"
+	next " ATQ SIGN.: ON OFF@"
 
 DrawWorldOptionsMenu:
 	hlcoord 0, 0

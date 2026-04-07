@@ -151,7 +151,7 @@ PrintPrizePrice:
 	jp PrintBCDNumber
 
 .CoinString:
-	db "COIN@"
+	db "JETONS@"
 
 LoadCoinsToSubtract:
 	ld a, [wWhichPrize]

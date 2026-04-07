@@ -285,14 +285,14 @@ GetInGameTradeTrainerName:
 
 InGameTrade_TrainerStrings:
 	db "BOBO@@@@@@@"
-	db "GABE@@@@@@@"
+	db "GABRIEL@@@@"
 	db "CROCKET@@@@"
-	db "DRGREEN@@@@"
+	db "DRVERT@@@@@"
 	db "MIMI@@@@@@@"
-	db "SHEEN@@@@@@"
-	db "EDMUND@@@@@"
-	db "MIKE@@@@@@@"
-	db "GRACIE@@@@@"
+	db "LUCIEN@@@@@"
+	db "EDMOND@@@@@"
+	db "MICHAEL@@@@"
+	db "ANNA@@@@@@@"
 	db "LILIAN@@@@@"
 
 

@@ -139,11 +139,11 @@ BillsHousePokemonInfo::
 	text_end
 
 BillsMonListText:
-	db   "EEVEE"
-	next "FLAREON"
-	next "JOLTEON"
-	next "VAPOREON"
-	next "CANCEL@"
+	db   "EVOLI"
+	next "PYROLI"
+	next "VOLTALI"
+	next "AQUALI"
+	next "RETOUR@"
 
 BillsHousePokemonListText2:
 	text_far _BillsHousePokemonListText2

@@ -41,14 +41,14 @@ FrontSpriteOptions5Data:
 	dw SevenOptionMenuGenericYCoordXVariableOffsetList
 
 FrontSpriteOptions5Text:
-	db   "SPRITES→FRONT 5"
-	next " JYNX:       RG SW"
-	next " ELECTABUZZ: RB RG"
-	next " PINSIR:     RB RG"
-	next " OMANYTE:    RB RG"
-	next " ARTICUNO:   RB Y"
-	next " ZAPDOS:     RB RG"
-	next " MEWTWO:     RB RG@"
+	db   "SPRITES→FACE 5"
+	next " LIPPOUTOU:  RV SW"
+	next " ELEKTEK:    RB RV"
+	next " SCARABRUTE: RB RV"
+	next " AMONITA:    RB RV"
+	next " ARTIKODIN:  RB J"
+	next " ELECTHOR:   RB RV"
+	next " MEWTWO:     RB RV@"
 
 DrawFrontSpriteOptions5Menu:
 	hlcoord 0, 0

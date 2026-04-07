@@ -82,14 +82,14 @@ FrontSpriteOptionsSetCursorPositionActions:
 	dw SetCursorPositionFromFrontSpriteOptions
 
 FrontSpriteOptionsText:
-	db   "SPRITES→FRONT 1"
-	next " BULBASAUR:  RB RG"
-	next " SQUIRTLE:   RB RG"
-	next " BLASTOISE:  RB RG"
-	next " BUTTERFREE: RB RG"
-	next " PIDGEOTTO:  RB RG"
-	next " PIDGEOT:    RB RG"
-	next " RATICATE:   RB RG@"
+	db   "SPRITES→FACE 1"
+	next " BULBIZARRE: RB RV"
+	next " CARAPUCE:   RB RV"
+	next " TORTANK:    RB RV"
+	next " PAPILUSION: RB RV"
+	next " ROUCOUPS:   RB RV"
+	next " ROUCARNAGE: RB RV"
+	next " RATTATAC:   RB RV@"
 
 DrawChildMenuDigit:
 	add NUMBER_CHAR_OFFSET

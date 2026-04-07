@@ -129,4 +129,4 @@ AlreadyOnThatFloorText:
 	text_end
 
 CurrentFloorText:
-	db "Current: @"
+	db "Actuel: @"

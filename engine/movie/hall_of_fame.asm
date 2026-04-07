@@ -114,7 +114,7 @@ StoreHoFAltPaletteFlag:
 
 
 HallOfFameText:
-	db "HALL OF FAME@"
+	db "CELEBRITE@"
 
 HoFShowMonOrPlayer:
 	call ClearScreen
@@ -198,7 +198,7 @@ HoFDisplayMonInfo:
 	jp PlayCry
 
 HoFMonInfoText:
-	db   "LEVEL/"
+	db   "NIVEAU/"
 	next "TYPE1/"
 	next "TYPE2/@"
 
@@ -281,10 +281,10 @@ HoFPrintTextAndDelay:
 	ret
 
 HoFPlayTimeText:
-	db "PLAY TIME@"
+	db "DUREE JEU@"
 
 HoFMoneyText:
-	db "MONEY@"
+	db "ARGENT@"
 
 DexSeenOwnedText:
 	text_far _DexSeenOwnedText

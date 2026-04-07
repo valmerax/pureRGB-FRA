@@ -15,7 +15,7 @@ ArrowYcoordXVariableOffsetList:
 	db PAGE_CONTROLS_Y_COORD, MAX_OPTIONS_PER_PAGE
 
 OptionsNextBackText::
-	db "  NEXT  PREV  @"
+	db " SUIV.  PREC. @"
 
 OptionsDoNothing:
 	ret
@@ -416,16 +416,16 @@ GetYCoordAndXVariable:
 	ret
 
 TextSpeedOptionText:
-	db   "TEXT SPEED"
-	next " INSTANT FAST SLOW@"
+	db   "VIT. TEXTE"
+	next " 3     2      1   @"
 
 BattleAnimationOptionText:
-	db   "BATTLE ANIMATION"
-	next " ON       OFF@"
+	db   "ANIMATION COMBAT"
+	next " OUI      NON@"
 
 BattleStyleOptionText:
-	db   "BATTLE STYLE"
-	next " SHIFT    SET@"
+	db   "STYLE COMBAT"
+	next " CHOIX    DEFINI@"
 
 ; sets the options variable according to the current placement of the menu cursors in the options menu
 SetOptionsFromCursorPositions:

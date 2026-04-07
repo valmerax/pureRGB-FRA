@@ -156,8 +156,9 @@ DisplayWildLocations:
 	ld [wTownMapAreaTypeFlags], a
 
 	call GetMonName
-	hlcoord 1, 0
+	hlcoord 8, 0
 	call PlaceString
+	hlcoord 1, 0
 	ld h, b
 	ld l, c
 	ld de, MonsNestText
@@ -485,17 +486,17 @@ TownMapCoordsToOAMCoords2:
 
 
 MonsNestText:
-	db "'s NEST@"
+	db "NID DE @"
 
 AreaUnknownText:
-	db " AREA UNKNOWN@"
+	db " ZONE INCONNUE@"
 
 AnyWaterText:
-	db "Any Water@"
+	db "Toutes Eaux@"
 
 FreshWaterText:
-	db "Any Fresh Water@"
+	db "Eaux Douces@"
 
 SaltWaterText:
-	db "Any Salt Water@"
+	db "Eaux Salées@"
 

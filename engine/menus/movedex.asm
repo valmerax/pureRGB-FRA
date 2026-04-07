@@ -1023,10 +1023,10 @@ MoveTypeText:
 	db "TYPE/@"
 
 MovePowerText:
-	db "POWER:@"
+	db "PUISSANCE:@"
 
 MoveAccuracyText:
-	db "ACCURACY:@"
+	db "PRECISION:@"
 
 MovePPText:
 	db "PP:@"

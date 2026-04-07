@@ -41,14 +41,14 @@ FrontSpriteOptions2Data:
 	dw SevenOptionMenuGenericYCoordXVariableOffsetList
 
 FrontSpriteOptions2Text:
-	db   "SPRITES→FRONT 2"
-	next " SPEAROW:    RB RG"
-	next " NIDORINO:   RB RG"
-	next " GOLBAT:     Y  RB"
-	next " GOLDUCK:    RB RG"
-	next " MANKEY:     RB RG"
-	next " ARCANINE:   RB RG"
-	next " ABRA:       RB RG@"
+	db   "SPRITES→FACE 2"
+	next " PIAFABEC:   RB RV"
+	next " NIDORINO:   RB RV"
+	next " NOSFERALTO: J  RB"
+	next " AKWAKWAK:   RB RV"
+	next " FEROSINGE:  RB RV"
+	next " ARCANIN:    RB RV"
+	next " ABRA:       RB RV@"
 
 DrawFrontSpriteOptions2Menu:
 	hlcoord 0, 0

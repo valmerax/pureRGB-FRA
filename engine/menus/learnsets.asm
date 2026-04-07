@@ -326,16 +326,16 @@ ShowLevelUpLearnset:
 	ret
 
 LvText:
-	db "Lv@"
+	db "Niv@"
 
 LevelUpText:
-	db "LevelUp@"
+	db "Niveau sup@"
 
 LearnsetText:
-	db "Learnset@"
+	db "Capacités@"
 
 TMPlusHMText:
-	db "TM+HM@"
+	db "CT+CS@"
 
 TMLearnsetListPrint:
 	push hl
@@ -505,28 +505,28 @@ CheckPageLeftRight:
 	ret
 
 WaysToText:
-	db "Ways to@"
+	db "Comment@"
 
 EvolveText:
-	db "Evolve@"
+	db "Evolution@"
 
 WithItemText:
-	db "with item:@"
+	db "avec l'objet:@"
 
 TradeText:
-	db "by trading@"
+	db "par échange@"
 
 AtLevelText:
-	db "at Lvl@"
+	db "au Niv@"
 
 DoesNotText:
-	db "Does Not @"
+	db "Ne pas @"
 
 NoneText:
-	db "None@"
+	db "Aucun@"
 
 IntoLearnsetText:
-	db "into @"
+	db "en @"
 
 
 ShowEvolutions:

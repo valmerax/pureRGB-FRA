@@ -59,12 +59,12 @@ Options3SetCursorPositionActions:
 
 OptionsMenu3Text:
 	db   "OPTIONS 3"
-	next " REDO SONG: ON OFF"
-	next " LEARNSETS: ON OFF"
-	next " TITLE:    OG Pure"
+	next " REJ. MUS.: ON OFF"
+	next " CAPACITES: ON OFF"
+	next " TITRE:    OG Pure"
 	next " INTRO:    ON SKIP"
-	next " FLASHING: OG LESS"
-	next " UNITS:    IMP MET@"
+	next " CLIGNOT.: OG LESS"
+	next " UNITES:   IMP MET@"
 
 DrawOptionsMenu3:
 	hlcoord 0, 0

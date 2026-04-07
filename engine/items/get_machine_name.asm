@@ -39,6 +39,6 @@ GetMachineName::
 	ret
 
 TechnicalPrefix::
-	db "TM"
+	db "CT"
 HiddenPrefix::
-	db "HM"
+	db "CS"

@@ -83,4 +83,4 @@ CheckDrawItemCount::
 	jp TextBoxBorderUpdateSprites
 
 ItemsText:
-	db"<BOLD_I><BOLD_T><BOLD_E><BOLD_M><SMALL_S>@"
+	db"OBJETS@"

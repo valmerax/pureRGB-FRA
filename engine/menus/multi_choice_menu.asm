@@ -241,127 +241,127 @@ ChampArenaMusicSelectMenu::
 
 MoveDexQuestion1::
 	dw FourOptionMenu
-	db   "FLYING"
+	db   "VOL"
 	next "NORMAL"
-	next "GRASS"
-	next "ICE@"
+	next "PLANTE"
+	next "GLACE@"
 
 MoveDexQuestion2::
 	dw FourOptionMenu
-	db   "AGILITY"
-	next "QUICK ATTACK"
-	next "WHIRLWIND"
-	next "PIN MISSILE@"
+	db   "HATE"
+	next "VIVE-ATTAQUE"
+	next "CYCLONE"
+	next "DARD-NUEE@"
 
 MoveDexQuestion3::
 	dw FourOptionMenu
-	db   "BURN"
-	next "PARALYZE"
+	db   "BRULURE"
+	next "PARALYSIE"
 	next "POISON"
-	next "FREEZE@"
+	next "GEL@"
 
 MoveDexQuestion4::
 	dw FourOptionMenu
-	db   "DOUBLE KICK"
-	next "TRI ATTACK"
-	next "TWINEEDLE"
-	next "DOUBLESLAP@"
+	db   "DOUBLE PIED"
+	next "TRIPLATTAQUE"
+	next "DOUBLE-DARD"
+	next "TORGNOLES@"
 
 MoveDexQuestion5::
 	dw FourOptionMenu
-	db   "TACKLE"
-	next "GROWL"
-	next "TAIL WHIP"
-	next "WATER GUN@"
+	db   "CHARGE"
+	next "RUGISSEMENT"
+	next "MIMI-QUEUE"
+	next "PISTOLET A O@"
 
 StatTextList::
 	dw FiveOptionMenu
-	db "HP"
-	next "ATTACK"
+	db "PV"
+	next "FORCE"
 	next "DEFENSE"
-	next "SPEED"
+	next "VITESSE"
 	next "SPECIAL@"
 	
 YesNoHide::
 	dw ThreeOptionMenuSmall
-	db "YES"
-	next "NO"
-	next "HIDE@"
+	db "OUI"
+	next "NON"
+	next "CACHER@"
 
 YesNoHideTM::
 	dw ThreeOptionMenuSmallLower
-	db "YES"
-	next "NO"
-	next "HIDE@"
+	db "OUI"
+	next "NON"
+	next "CACHER@"
 
 YesNoSmall::
 	dw TwoOptionSmallMenu
-	db "YES"
-	next "NO@"
+	db "OUI"
+	next "NON@"
 
 CeladonMartPhoneList::
 	dw ThreeOptionMenu
-	db "HOME"
-	next "PROF.OAK"
+	db "MAISON"
+	next "PROF.CHEN"
 	next "<RIVAL>@"
 
 CeladonMartCallMomQuestion1::
 	dw ThreeOptionMenu
-	db "Great!"
-	next "Bored"
-	next "Homesick@"
+	db "Super!"
+	next "Ennuyé"
+	next "Nostalgique@"
 	
 CeladonMartCallMomQuestion2::
 	dw TwoOptionMenu
-	db "Good idea!"
-	next "It's gambling!@"
+	db "Bonne idée!"
+	next "C'est du jeu!@"
 
 CeladonMartCallMomQuestion3::
 	dw FourOptionMenu
-	db "Rice Balls"
-	next "Jelly Donuts"
-	next "Brisket"
-	next "Lasagna@"
+	db "Boulettes de riz"
+	next "Beignets confiture"
+	next "Poitrine de boeuf"
+	next "Lasagnes@"
 	
 CeladonMartCallMomQuestion4::
 	dw ThreeOptionMenu
-	db "See ya!"
+	db "A bientôt!"
 	next "Sayonara!"
-	next "Love you!@"
+	next "Je t'aime!@"
 	
 CeladonMartCallOakQuestion1::
 	dw TwoOptionMenu
-	db "It evolved!"
-	next "I love it!@"
+	db "Ca a évolué!"
+	next "J'adore!@"
 
 CeladonMartCallOakQuestion2::
 	dw TwoOptionMenu
-	db "How's the lab?"
-	next "How's DAISY?@"
+	db "Comment va le lab?"
+	next "Comment va DAISY?@"
 
 BillsGardenBlueThanks::
 	dw TwoOptionMenu
-	db "Thank you!"
-	next "You wish.@"
+	db "Merci!"
+	next "Tu rêves.@"
 
 TreeDeleterOptions::
 	dw FourOptionMenuBig
 	db "ROUTE 2"
-	next "CERULEAN CITY"
+	next "AZURIA"
 	next "ROUTE 9"
-	next "FUCHSIA CITY@"
+	next "PARMANIE@"
 
 SafariTypeOptions::
 	dw ThreeOptionMenu
-	db "CLASSIC"
-	next "RANGER HUNT"
-	next "FREE ROAM@"
+	db "CLASSIQUE"
+	next "CHASSE AU RANGER"
+	next "EXPLORATION LIBRE@"
 
 ClassicText:
-	db "CLASSIC@"
+	db "CLASSIQUE@"
 
 TitleText:
-	db "TITLE@"
+	db "TITRE@"
 
 ChampArenaMusicSelectErika::
 	dw ChampArenaMusicSelectMenu
@@ -413,10 +413,10 @@ ChampArenaMusicSelectGymGuide::
 
 ChampArenaMusicSelectBlue::
 	dw FourOptionMenu
-	db "CLASSIC"
+	db "CLASSIQUE"
 	next "COOL"
-	next "FRIENDLY"
-	next "TITLE@"
+	next "AMICAL"
+	next "TITRE@"
 
 GetChampArenaMusicNameIntoWRAM:
 	ld a, [wNamedObjectIndex]
@@ -455,30 +455,30 @@ GetChampArenaMusicName:
 	jr .loop
 
 ChampArenaMusicTextData::
-	li "FRIENDLY"
-	li "CUTE"
+	li "AMICAL"
+	li "MIGNON"
 	li "MACHO"
-	li "JAZZY"
+	li "JAZZ"
 	li "COOL"
-	li "ROCKIN"
-	li "ANTHEMIC"
-	li "GENIUS"
-	li "SERIOUS"
-	li "INSPIRING"
-	li "TENSE"
+	li "ROCK"
+	li "HYMNE"
+	li "GENIE"
+	li "SERIEUX"
+	li "INSPIRANT"
+	li "TENDU"
 	db -1
 
 ConversionMenu::
 	dw TwoOptionMenu
-	db "ATTACK"
+	db "ATTAQUE"
 	next "DEFENSE@"
 
 SSAnneFoodMenu::
 	dw FourOptionMenu
-	db "Barbecue Eel"
-	next "Prime Steak"
-	next "Salmon Salad"
-	next "Cherry Pie@"
+	db "Anguille grillée"
+	next "Steak de qualité"
+	next "Salade de saumon"
+	next "Tarte aux cerises@"
 
 RocketPasswordMenu::
 	dw FourOptionMenu
@@ -489,10 +489,10 @@ RocketPasswordMenu::
 
 SaveFileUpdaterMenu::
 	dw TwoOptionMenu
-	db "Before v2.6.0"
-	next "Original Game@"
+	db "Avant la v2.6.0"
+	next "Jeu original@"
 
 ScytherPinsirMenu::
 	dw TwoOptionMenu
-	db "SCYTHER"
-	next "PINSIR@"
+	db "INSECATEUR"
+	next "SCARABRUTE@"

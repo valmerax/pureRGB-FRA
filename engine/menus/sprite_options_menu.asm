@@ -47,9 +47,9 @@ SpriteOptionsSetCursorPositionActions:
 
 SpritesOptionText:
 	db   "SPRITES"
-	next " BACK:   OG SW97"
-	next " ICONS:  OG OG+"
-	next " FRONT:  @"
+	next " DOS:    OG SW97"
+	next " ICONES: OG OG+"
+	next " FACE:   @"
 
 DrawSpriteOptionsMenu:
 	hlcoord 0, 0

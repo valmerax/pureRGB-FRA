@@ -319,21 +319,21 @@ PrintCurrentWildDataType:
 	ret
 
 WildPokemonText:
-	db "Wild <PKMN>:@"
+	db "<PKMN> sauvages:@"
 WildDataGrassText:
-	db "Grass@"
+	db "Herbe@"
 WildDataSurfingText:
-	db "Surfing@"
+	db "Surf@"
 WildDataSuperRodText:
-	db "SuperRod@"
+	db "Méga Canne@"
 WildDataWalkingText:
-	db "Walking@"
+	db "Marche@"
 WildDataLavaText:
-	db "Lava@"
+	db "Lave@"
 WildDataFloorText:
-	db "Floor:@"
+	db "Etage:@"
 WildDataAreaText:
-	db "Area:@"
+	db "Zone:@"
 
 PrintWildMonNamesAndLevels:
 	hlcoord 0, 6
@@ -546,10 +546,10 @@ PrintFloorText:
 	jp PlaceString
 
 SafariZoneAreasText:
-	db "EAST@@@"
-	db "CENTER@"
-	db "NORTH@@"
-	db "WEST@@@"
+	db "EST@@@@"
+	db "CENTRE@"
+	db "NORD@@@"
+	db "OUEST@@"
 
 GetWildDataFloorData:
 	ld a, [wCurTownMapWildDataMap]

@@ -503,12 +503,12 @@ PrintNamingText:
 	jpfar CustomPokeballRename
 
 YourTextString:
-	db "YOUR @"
+	db "VOTRE NOM?@"
 
 RivalsTextString:
-	db "RIVAL's @"
+	db "NOM DU RIVAL?@"
 
 NicknameTextString:
-	db "NICK"
+	db "SURNOM?@"
 NameTextString:
-	db "NAME?@"
+	db "NOM?@"
