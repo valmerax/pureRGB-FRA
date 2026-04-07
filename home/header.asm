@@ -34,7 +34,7 @@ _DelayFrames::
 	jp DelayFrames
 
 ; PureRGBnote: MOVED: 5 extra bytes of space left here, may as well move something here that puts the space to some use	
-UserText::        db "user@"
+UserText::        db "lanceur@"
 
 SECTION "rst20", ROM0[$0020]
 _CopyData::

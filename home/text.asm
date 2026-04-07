@@ -226,14 +226,14 @@ OrChar:: print_name OrText
 IsChar:: print_name IsText
 
 
-TrainerCharText:: db "TRAINER@"
-TMCharText::      db "TM@"
+TrainerCharText:: db "DRES.@"
+TMCharText::      db "CT@"
 TeamCharText::    db "TEAM @"
 RocketCharText::  db "ROCKET@"
-EnemyText::       db "Enemy @"
+EnemyText::       db " ennemi@"
 ThreeDotsText::   db "...@"
-TrainerTipsText:: db "<TRAINER> TIPS@"
-OpponentText::    db "opponent@"
+TrainerTipsText:: db "ASTUCES <TRAINER>@"
+OpponentText::    db "ennemi@"
 TheText::         db "t","he@" ; have to separate with a comma to avoid it entering the same macro again
 YouText::         db "y","ou@" ; have to separate with a comma to avoid it entering the same macro again
 IngText::         db "i","ng@" ; have to separate with a comma to avoid it entering the same macro again

@@ -587,4 +587,4 @@ PrintListMenuEntries::
 
 
 ListMenuCancelText::
-	db "CANCEL@"
+	db "RETOUR@"
