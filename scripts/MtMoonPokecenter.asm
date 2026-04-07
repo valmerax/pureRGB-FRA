@@ -101,7 +101,7 @@ MtMoonPokecenterMagikarpSalesmanText:
 
 
 SalesManName:
-	db "SALESMAN@"
+	db "VENDEUR@"
 
 MtMoonPokecenterLinkReceptionistText:
 	script_cable_club_receptionist

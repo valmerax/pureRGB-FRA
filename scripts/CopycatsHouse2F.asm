@@ -110,7 +110,7 @@ CopycatsHouse2FDoduoText:
 	text_end
 
 CopycatName:
-	db "COPYCAT@"
+	db "COPIEUSE@"
 
 
 CopycatsHouse2FRareDollText:

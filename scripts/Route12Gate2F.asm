@@ -54,7 +54,7 @@ Route12Gate2FBrunetteGirlText:
 	text_end
 
 .mourningGirl
-	db "SAD GIRL@"
+	db "FILLE TRISTE@"
 
 Route12Gate2FLeftBinocularsText:
 	text_asm

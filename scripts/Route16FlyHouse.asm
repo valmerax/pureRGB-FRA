@@ -65,4 +65,4 @@ Route16FlyHouseFearowText:
 	text_far _Route16FlyHouseFearow2Text
 	text_end
 .famousGirlName
-	db "FAMOUS GIRL@"
+	db "FILLE CONNUE@"

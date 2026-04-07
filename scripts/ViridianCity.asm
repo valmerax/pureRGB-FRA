@@ -280,7 +280,7 @@ ViridianCityFisherText:
 	text_end
 
 SleeperName:
-	db "SLEEPY GUY@"
+	db "GARS ENDORMI@"
 
 ViridianCityOldManText:
 	text_asm

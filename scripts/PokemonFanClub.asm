@@ -58,7 +58,7 @@ PokemonFanClubPikachuFanText:
 	text_end
 
 FanName:
-	db "SUPERFAN@"
+	db "SUPER FAN@"
 
 PokemonFanClubSeelFanText:
 	text_asm
@@ -217,7 +217,7 @@ PokemonFanClubChairmanText:
 	text_end
 
 ChairName::
-	db "CLUB CHAIR@"
+	db "PRESIDENT@"
 
 PokemonFanClubReceptionistText:
 	text_far _PokemonFanClubReceptionistText

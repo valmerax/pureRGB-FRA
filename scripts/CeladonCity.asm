@@ -235,7 +235,7 @@ CeladonCityFisherText:
 	text_far _LetsDoThis
 	text_end
 .bigGuyName
-	db "BIG GUY@"
+	db "GROS DUR@"
 
 PoliwrathAnimation::
 	ld a, POLIWRATH

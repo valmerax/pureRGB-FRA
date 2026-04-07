@@ -273,10 +273,10 @@ ShowBeforeAfterImages:
 	jp MaxVolume
 
 BeforeString:
-	db "BEFORE@"
+	db "AVANT@"
 
 AfterString:
-	db "AFTER@"
+	db "APRES@"
 
 
 DoColorSwap:

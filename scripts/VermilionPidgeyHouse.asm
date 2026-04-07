@@ -20,7 +20,7 @@ VermilionPidgeyHouseYoungsterText:
 	predef_jump LearnsetTrainerScriptMain
 
 YoungsterName:
-	db "PEN PAL@"
+	db "AMI DE PLUME@"
 
 VermilionPidgeyHousePidgeyText:
 	text_far _VermilionPidgeyHousePidgeyText

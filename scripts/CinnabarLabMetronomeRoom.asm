@@ -97,4 +97,4 @@ CinnabarLabMetronomeRoomScientist3Text:
 	text_end
 
 ResearcherLadyName:
-	db "RESEARCHER@"
+	db "CHERCHEUSE@"

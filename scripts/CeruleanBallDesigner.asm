@@ -528,9 +528,9 @@ CeruleanBallDesignerClipboard2Text:
 	jr .loopMenu
 
 WorkbenchInfoText:
-	db   "Basic Info"
-	next "Changing"
-	next "Customizing@"
+	db   "Infos Basiques"
+	next "Changement"
+	next "Personnalisation@"
 
 ;;;; keep these 3 text references in the same order with nothing in between
 WorkbenchInfoBasic::
@@ -941,7 +941,7 @@ CeruleanBallDesignerSwitchBallMenu:
 	text_far _ChangeIntoWarning
 	text_end
 .chooseNewBall
-	db "Choose a BALL!@"
+	db "Choisis une BALL!@"
 .customBallOptionText
 	db "CUSTOM BALL@"
 
@@ -1102,22 +1102,22 @@ BallDesignerGamblerReaction::
 	text_end
 
 InitialCustomBallNames::
-	db "FOREST@" 
-	db "DRENCH@" 
-	db "BLAZE@"  
-	db "CUTE@"   
-	db "BOLT@"   
+	db "FORET@" 
+	db "GOUTTE@" 
+	db "BRAISE@"  
+	db "MIGNON@"   
+	db "ECLAIR@"   
 	db "TRI@"   
-	db "BOULDER@"
-	db "SUBZERO@"
-	db "MIND@"   
-	db "TORNADO@"
-	db "VENOM@"  
-	db "SPOOKY@" 
-	db "CLEAVE@" 
-	db "ANGEL@"  
-	db "BOMB@"   
-	db "PRISM@"  
+	db "ROCHER@"
+	db "GLACIAL@"
+	db "ESPRIT@"   
+	db "TORNADE@"
+	db "VENIN@"  
+	db "SPECTRE@" 
+	db "TAILLE@" 
+	db "ANGE@"  
+	db "BOMBE@"   
+	db "PRISME@"  
 
 ; c = which nybble
 ; d = which property to look for

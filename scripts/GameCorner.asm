@@ -575,10 +575,10 @@ GameCornerDrawCoinBox:
 	jp ClearScreenArea
 
 GameCornerMoneyText:
-	db "MONEY@"
+	db "ARG.@"
 
 GameCornerCoinText:
-	db "COIN@"
+	db "JETONS@"
 
 Has9990Coins:
 	ld a, $99

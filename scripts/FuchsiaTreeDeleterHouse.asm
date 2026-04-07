@@ -99,7 +99,7 @@ TreeDeleterText:
 	predef_jump LearnsetTrainerScriptMain
 
 TreeDeleterName:
-	db "TREE DELETER@"
+	db "BUCHERON@"
 
 FuchsiaTreeDeleterDoneText:
 	text_far _FuchsiaTreeDeleterDoneText

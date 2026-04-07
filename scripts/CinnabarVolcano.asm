@@ -2352,9 +2352,9 @@ CinnabarVolcanoProspectorText:
 	rst TextScriptEnd
 
 VolcanoHelpMenu:
-	db "Nah."
-	next "DRILL"
-	next "Blockages@"
+	db "Nan."
+	next "PERCER"
+	next "Blocages@"
 
 BlaineWalksOut:
 	db NPC_MOVEMENT_DOWN

@@ -56,7 +56,7 @@ LavenderCuboneHouseBrunetteGirlText:
 	text_end
 
 LadyName:
-	db "KIND GIRL@"
+	db "FILLE SYMPA@"
 
 LightChannelerText:
 	text_asm

@@ -48,7 +48,7 @@ PokemonTower1FGirlText:
 	predef_jump LearnsetTrainerScriptMain
 
 .pensivegirl
-	db "SAD LADY@"
+	db "DAME TRISTE@"
 
 PokemonTower1FChannelerText:
 	text_far _PokemonTower1FChannelerText

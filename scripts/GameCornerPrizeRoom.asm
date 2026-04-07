@@ -102,7 +102,7 @@ GameCornerPrizeRoomPrizeKingText:
 	text_end
 
 PrizeKingName:
-	db "PRIZE PRO@"
+	db "EXPERT PRIX@"
 
 PrizeKingTextPointers:
 	dbw JYNX, JynxPrizeKingText
