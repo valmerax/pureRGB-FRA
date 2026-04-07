@@ -54,8 +54,8 @@ Ceci est une amélioration puriste de Pokemon Rouge/Bleu/Vert. L'objectif est d'
   - Option pour passer à un écran titre PureRGB entièrement nouveau au lieu de celui du jeu original
 - Si vous jouez sur GBC et avez définie les palettes en mode SGB ou GBC, les animations des capacités auront des couleurs ! Surf sera bleu, Brûlûre sera rouge, etc.
 - Quelques nouvelles fonctionnalitées ont été ajoutées au jeu pour faciliter la manière de jouer. Notamment :
-  - Un PNJ qui peut supprimer définitivement COUPE.
-  - Un PNJ qui peut ressusciter des fossiles pour vous à SAFRANIA afin que vous puissiez obtenir des pokémon fossiles un peu plus tôt.
+  - Un PNJ capable de supprimer définitivement les arbres (Ceux pouvant être coupés via la CS COUPE).
+  - Un PNJ capable de ressusciter des fossiles pour vous à SAFRANIA afin que vous puissiez obtenir des pokémon fossiles un peu plus tôt.
   - Un PNJ qui vous donnera LOKHLASS un peu plus tôt dans le jeu.
   - Un PNJ qui vous enseignera comment utiliser TUNNEL entre les villes tout comme vous pouvez utiliser VOL entre les villes.
 
