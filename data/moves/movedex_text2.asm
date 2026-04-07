@@ -6,7 +6,7 @@ _SharpenDexEntry::
 	next "ses griffes ou"
 	next "ses facettes."
 
-	bage "Augmente l'ATTAQUE"
+	bage "Augmente la FORCE"
 	next "et la PRECISION."
 	next "(+1 FOR, +1 PRE)"
 	dex
