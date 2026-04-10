@@ -22,10 +22,9 @@ DisplayLinkBattleVersusTextBox:
 	ld [hli], a
 	ld a, "R"
 	ld [hli], a
-	ld a, "E"
-	ld [hl], a
+	ld [hl], "E"
 	xor a
 	ld [wUpdateSpritesEnabled], a
-	callfar SetupPlayerAndEnemyPokeballs
+	call SetupPlayerAndEnemyPokeballs
 	ld c, 150
 	jp DelayFrames
