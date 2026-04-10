@@ -319,7 +319,7 @@ CeladonMartCallMomQuestion2::
 CeladonMartCallMomQuestion3::
 	dw FourOptionMenu
 	db "Boulettes de riz"
-	next "Beignets confiture"
+	next "Beignets fourrés"
 	next "Poitrine de boeuf"
 	next "Lasagnes@"
 	
