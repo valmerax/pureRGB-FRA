@@ -4,21 +4,21 @@
 
 	charmap "<NULL>",    $00
 	DEF FIRST_TEXT_SHORCUT_ID EQU $3F
-	charmap "or",        $3F ; PureRGBnote: ADDED: single byte version of or
-	charmap "ing",       $40 ; PureRGBnote: ADDED: single byte version of ing
-	charmap "the",       $41 ; PureRGBnote: ADDED: single byte version of the
-	charmap "you",       $42 ; PureRGBnote: ADDED: single byte version of you
-	charmap "<opponent>",$43 ; PureRGBnote: ADDED: single byte version of opponent
-	charmap "<user>",    $44 ; PureRGBnote: ADDED: single byte version of user
+	charmap "est",       $3F ; PureRGBnote: ADDED: single byte version of "est"
+	charmap "que",       $40 ; PureRGBnote: ADDED: single byte version of "que"
+	charmap "ent",       $41 ; PureRGBnote: ADDED: single byte version of "ent"
+	charmap "ion",       $42 ; PureRGBnote: ADDED: single byte version of "ion"
+	charmap "<ennemi>",  $43 ; PureRGBnote: ADDED: single byte version of "ennemi"
+	charmap "<lanceur>", $44 ; PureRGBnote: ADDED: single byte version of "lanceur"
 	charmap "#MON",      $45 ; POKéMON
-	charmap "<TIPS>",    $46 ; PureRGBnote: ADDED: single byte version of TRAINER TIPS
-	charmap "<TEAM>",    $47 ; PureRGBnote: ADDED: single byte version of TEAM
+	charmap "<ASTUCE>",  $46 ; PureRGBnote: ADDED: single byte version of "ASTUCE"
+	charmap "<TEAM>",    $47 ; PureRGBnote: ADDED: single byte version of "TEAM"
 	charmap "<BAGE>",    $48 ; PureRGBnote: ADDED: same as PAGE, but can watch more buttons than just A or B for being pressed
 	charmap "<PAGE>",    $49
 	charmap "<PKMN>",    $4a ; "<PK><MN>"
 	charmap "<_CONT>",   $4b ; implements "<CONT>"
 	charmap "<SCROLL>",  $4c
-	charmap "is",        $4d ; PureRGBnote: ADDED: single byte version of is
+	charmap " de",       $4d ; PureRGBnote: ADDED: single byte version of " de"
 	charmap "<NEXT>",    $4e
 	charmap "<LINE>",    $4f
 	charmap "@",         $50 ; string terminator
@@ -33,7 +33,7 @@
 	charmap "<TARGET>",  $59
 	charmap "<USER>",    $5a
 	charmap "<PC>",      $5b ; "PC"
-	charmap "<TM>",      $5c ; "TM"
+	charmap "<CT>",      $5c ; "CT"
 	charmap "<TRAINER>", $5d ; "TRAINER"
 	charmap "<ROCKET>",  $5e ; "ROCKET"
 	charmap "<DEXEND>",  $5f
@@ -202,13 +202,13 @@
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
 	charmap "-",         $e3
-	charmap "+",         $e4
 
 	charmap "?",         $e6
 	charmap "!",         $e7
 	charmap ".",         $e8
 
 	charmap "→",         $e9 ; PureRGBnote: ADDED: right facing arrow character
+	charmap "+",         $ea ; PureRGBnote: ADDED: plus sign
 	charmap "%",         $eb ; PureRGBnote: ADDED: percent sign
 
 	charmap "▷",         $ec
