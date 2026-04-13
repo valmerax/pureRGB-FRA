@@ -84,10 +84,10 @@ DisplayPCMainMenu::
 	ldh [hAutoBGTransferEnabled], a
 	ret
 
-SomeonesPCText:   db "PC DE ???@"
-BillsPCText:      db "PC DE LEO@"
-PlayersPCText:    db "PC DE @"
-OaksPCText:       db "PC DE CHEN@"
+SomeonesPCText:   db "<PC> DE ???@"
+BillsPCText:      db "<PC> DE LEO@"
+PlayersPCText:    db "<PC> DE @"
+OaksPCText:       db "<PC> DE CHEN@"
 PKMNLeaguePCText: db "LIGUE <PKMN>@"
 LogOffPCText:     db "DECONNEXION@"
 

@@ -193,7 +193,7 @@ _LavenderPokecenterGuyText::
 _MtMoonPokecenterBenchGuyText::
 	text "Tu devrais ranger"
 	line "tes #MON en"
-	cont "trop via un PC!"
+	cont "trop via un <PC>!"
 	done
 
 _RockTunnelPokecenterGuyText::
@@ -500,12 +500,12 @@ _JustAMomentText::
 
 TMNotebookText::
 	text "C'est un rapport"
-	line "sur les CT."
+	line "sur les <CT>."
 
 	para "<...>"
 
 	para "Il existe en tout"
-	line "50 CT (Capsule"
+	line "50 <CT> (Capsule"
 	cont "Technique)."
 
 	para "5 CS (Capsule"
@@ -657,7 +657,7 @@ _KabutopsFossilText::
 	done
 
 _LinkCableHelpText1::
-	text "ASTUCE"
+	text "<ASTUCE>"
 
 	para "Le Câble Link"
 	prompt
@@ -1515,11 +1515,11 @@ _RareCandyText::
 
 _TurnedOnPC1Text::
 	text "<PLAYER> allume"
-	line "le PC."
+	line "le <PC>."
 	prompt
 
 _AccessedBillsPCText::
-	text "Connexion au PC"
+	text "Connexion au <PC>"
 	line "de LEO."
 
 	para "Accès au système"
@@ -1528,7 +1528,7 @@ _AccessedBillsPCText::
 	prompt
 
 _AccessedSomeonesPCText::
-	text "Connexion au PC"
+	text "Connexion au <PC>"
 	line "inconnu."
 
 	para "Accès au système"
@@ -1537,7 +1537,7 @@ _AccessedSomeonesPCText::
 	prompt
 
 _AccessedMyPCText::
-	text "PC personnel"
+	text "<PC> personnel"
 	line "connecté."
 
 	para "Accès au système"
@@ -1547,7 +1547,7 @@ _AccessedMyPCText::
 
 _TurnedOnPC2Text::
 	text "<PLAYER> allume"
-	line "le PC."
+	line "le <PC>."
 	prompt
 
 _WhatDoYouWantText::
@@ -1769,12 +1769,12 @@ _GetDexRatedText::
 	done
 
 _ClosedOaksPCText::
-	text "PC du PROF. CHEN,"
+	text "<PC> du PROF. CHEN,"
 	line "Déconnexion<...>@"
 	text_end
 
 _AccessedOaksPCText::
-	text "Connexion au PC"
+	text "Connexion au <PC>"
 	line "du PROF. CHEN."
 
 	para "Accès au système"

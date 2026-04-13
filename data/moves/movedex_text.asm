@@ -1,7 +1,7 @@
 ; PureRGBnote: ADDED: text pointers for the descriptions that show up in the movedex.
 
 _PoundDexEntry::
-	text "Ecrase l'ennemi"
+	text "Ecrase l'<ennemi>"
 	next "avec les pattes"
 	next "avant ou la queue."
 	; fall through
@@ -11,7 +11,7 @@ _GenericNoAdditionalEffectText::
 	dex
 
 _KarateChopDexEntry::
-	text "Frappe l'ennemi"
+	text "Frappe l'<ennemi>"
 	next "avec un coup"
 	next "tranchant."
 	; fall through
@@ -22,12 +22,12 @@ _GenericOftenLandsCriticalHitsText::
 	dex
 
 _DoubleslapDexEntry::
-	text "Gifle l'ennemi"
+	text "Gifle l'<ennemi>"
 	next "à plusieurs"
 	next "reprises."
 
 	bage "Puissance doublée"
-	next "si ennemi endormi,"
+	next "si <ennemi> endormi,"
 	next "mais le réveille."
 	; fall through
 _Generic2To5HitsText::
@@ -41,7 +41,7 @@ _Generic2To5HitsText::
 	text_end
 
 _CometPunchDexEntry::
-	text "Frappe l'ennemi"
+	text "Frappe l'<ennemi>"
 	next "avec une rafale de"
 	next "coups de poing."
 	; fall through
@@ -62,7 +62,7 @@ _MegaPunchDexEntry::
 
 _PayDayDexEntry::
 	text "Lance des pièces"
-	next "sur l'ennemi."
+	next "sur l'<ennemi>."
 	next "L'argent est"
 
 	bage "récupéré après le"
@@ -70,49 +70,49 @@ _PayDayDexEntry::
 	dex
 
 _FirePunchDexEntry::
-	text "Frappe l'ennemi"
+	text "Frappe l'<ennemi>"
 	next "avec un poing"
 	next "enflammé."
 	; fall through
 _Generic10PercentBurnText::
 	bage "10% de chance de"
-	next "brûler l'ennemi"
+	next "brûler l'<ennemi>"
 	dex
 
 _IcePunchDexEntry::
-	text "Frappe l'ennemi"
+	text "Frappe l'<ennemi>"
 	next "avec un poing"
 	next "glacé."
 
 	bage "10% de chance de"
-	next "geler l'ennemi"
+	next "geler l'<ennemi>"
 	dex
 
 _ThunderPunchDexEntry::
-	text "Frappe l'ennemi"
+	text "Frappe l'<ennemi>"
 	next "avec un poing"
 	next "électrifié."
 	; fall through
 _Generic10PercentParalysisText::
 	bage "10% de chance de"
-	next "paralyser l'ennemi"
+	next "paralyser l'<ennemi>"
 	dex
 
 _ScratchDexEntry::
-	text "Griffe l'ennemi"
+	text "Griffe l'<ennemi>"
 	next "avec des griffes"
 	next "acérées.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _VicegripDexEntry::
-	text "Saisit l'ennemi"
+	text "Saisit l'<ennemi>"
 	next "avec de grandes et"
 	next "puissantes pinces."
 	; fall through
 _Generic30PercentParalysisText::
 	bage "30% de chance de"
-	next "paralyser l'ennemi"
+	next "paralyser l'<ennemi>"
 	dex
 
 _GuillotineDexEntry::
@@ -122,23 +122,23 @@ _GuillotineDexEntry::
 	; fall through
 _GenericOHKOText::
 	bage "Met toujours"
-	next "l'ennemi KO, mais"
+	next "l'<ennemi> KO, mais"
 	next "rate souvent."
 
 	bage "Ne marche pas sur"
-	next "les ennemies ayant"
+	next "les ennemis ayant"
 	next "une VIT supérieure"
 	dex
 
 _RazorWindDexEntry::
-	text "Le lanceur atterit"
+	text "Le <lanceur> atterit"
 	next "après son vol et"
 	next "se repose."
 	; fall through
 _GenericHealsHalfText::
 	bage "Restore la moitié"
 	next "des PV max du"
-	next "lanceur"
+	next "<lanceur>"
 	dex
 
 _SwordsDanceDexEntry::
@@ -147,12 +147,12 @@ _SwordsDanceDexEntry::
 	next "l'esprit combatif."
 
 	bage "Booste la FORCE du"
-	next "lanceur."
+	next "<lanceur>."
 	next "(+2 FOR)"
 	dex
 
 _CutDexEntry::
-	text "Coupe l'ennemi"
+	text "Coupe l'<ennemi>"
 	next "avec des griffes,"
 	next "des faux, etc.@"
 
@@ -169,13 +169,13 @@ _CutDexEntry::
 _GustDexEntry::
 	text "Envoie une rafale"
 	next "de vent vers"
-	next "l'ennemi.@"
+	next "l'<ennemi>.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _WingAttackDexEntry::
 	text "Frappe et gifle"
-	next "l'ennemi avec les"
+	next "l'<ennemi> avec les"
 	next "ailes.@"
 
 	text_jump _GenericAlwaysGoesFirstText
@@ -183,7 +183,7 @@ _WingAttackDexEntry::
 _WhirlwindDexEntry::
 	text "Tornade massive"
 	next "invoquée et lancée"
-	next "sur l'ennemi."
+	next "sur l'<ennemi>."
 	; fall through
 _Generic30PercentConfusionText::
 	bage "Provoque la"
@@ -194,7 +194,7 @@ _Generic30PercentConfusionText::
 _FlyDexEntry::
 	text "Le #MON s'envole"
 	next "puis plonge sur"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "Evite la plupart"
 	next "des attaques en"
@@ -207,35 +207,35 @@ _FlyDexEntry::
 
 _BindDexEntry::
 	text "Immobilise et"
-	next "serre l'ennemi.@"
+	next "serre l'<ennemi>.@"
 
 	text_jump _GenericTrappingMoveText
 
 _SlamDexEntry::
-	text "Frappe l'ennemi"
+	text "Frappe l'<ennemi>"
 	next "avec une queue ou"
 	next "patte toxique."
 
 	bage "La puissance monte"
-	next "à 130 si l'ennemi"
+	next "à 130 si l'<ennemi>"
 	next "est empoisonné"
 	dex
 
 
 _VineWhipDexEntry::
-	text "Fouette l'ennemi"
+	text "Fouette l'<ennemi>"
 	next "avec une liane.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _StompDexEntry::
-	text "Ecrase l'ennemi"
+	text "Ecrase l'<ennemi>"
 	next "avec les pieds"
 	next "ou sabots."
 	; fall through
 _Generic30PercentFlinchText::
 	bage "Peut apeurer"
-	next "l'ennemi dans"
+	next "l'<ennemi> dans"
 	next "30% des cas"
 	dex
 
@@ -262,12 +262,12 @@ _JumpKickDexEntry::
 	; fall through
 _GenericKeptGoingCrashedText::
 	bage "Inflige des dégâts"
-	next "au lanceur s'il"
+	next "au <lanceur> s'il"
 	next "échoue."
 
 	bage "25% des dégâts"
 	next "qu'il aurait"
-	next "causés à l'ennemi"
+	next "causés à l'<ennemi>"
 	dex
 
 _RollingKickDexEntry::
@@ -278,7 +278,7 @@ _RollingKickDexEntry::
 	text_jump _Generic30PercentFlinchText
 
 _SandAttackDexEntry::
-	text "Aveugle l'ennemi"
+	text "Aveugle l'<ennemi>"
 	next "avec un jet de"
 	next "sable.@"
 
@@ -296,39 +296,39 @@ _SandAttackDexEntry::
 _GenericLowerAccuracyText::
 	bage "Baisse la"
 	next "PRECISION de"
-	next "l'ennemi. (-1 PRE)"
+	next "l'<ennemi>. (-1 PRE)"
 	dex
 
 _HeadbuttDexEntry::
-	text "Le lanceur charge"
-	next "l'ennemi avec sa"
+	text "Le <lanceur> charge"
+	next "l'<ennemi> avec sa"
 	next "tête.@"
 
 	text_jump _Generic30PercentFlinchText
 
 _HornAttackDexEntry::
-	text "Transperce l'ennemi"
+	text "Transperce l'<ennemi>"
 	next "avec une corne"
 	next "acérée.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _FuryAttackDexEntry::
-	text "Pique l'ennemi"
+	text "Pique l'<ennemi>"
 	next "avec rage via un"
 	next "bec ou une corne.@"
 
 	text_jump _GenericHitsTwiceText
 
 _HornDrillDexEntry::
-	text "Transperce l'ennemi"
+	text "Transperce l'<ennemi>"
 	next "avec violence via"
 	next "une corne acérée.@"
 
 	text_jump _GenericOHKOText
 
 _TackleDexEntry::
-	text "Charge l'ennemi en"
+	text "Charge l'<ennemi> en"
 	next "le plaquant de"
 	next "tout son poids.@"
 
@@ -336,29 +336,29 @@ _TackleDexEntry::
 
 _BodySlamDexEntry::
 	text "Tout le poids du"
-	next "lanceur s'abat sur"
-	next "l'ennemi.@"
+	next "<lanceur> s'abat sur"
+	next "l'<ennemi>.@"
 
 	text_jump _Generic30PercentParalysisText
 
 _WrapDexEntry::
-	text "Enroule l'ennemi à"
+	text "Enroule l'<ennemi> à"
 	next "l'aide de lianes"
 	next "ou de son corps."
 	; fall through
 _GenericTrappingMoveText::
-	bage "L'ennemi ne peut"
+	bage "L'<ennemi> ne peut"
 	next "pas bouger pendant"
 	next "2-3 tours"
 	dex
 
 _TakeDownDexEntry::
-	text "Charge l'ennemi en"
+	text "Charge l'<ennemi> en"
 	next "étant enveloppé de"
 	next "flammes ardentes."
 
 	bage "30% de chances de"
-	next "brûler l'ennemi."
+	next "brûler l'<ennemi>."
 
 	bage "Si utilisé par un"
 	next "#MON de type FEU,"
@@ -375,48 +375,48 @@ _ThrashDexEntry::
 	; fall through
 _GenericThrashEffectText::
 	bage "Dure 2-3 tours."
-	next "Le lanceur est"
+	next "Le <lanceur> est"
 	next "ensuite confus."
 	dex
 
 _DoubleEdgeDexEntry::
 	text "Un tacle dangereux"
 	next "qui blesse aussi"
-	next "l' utilisateur."
+	next "le <lanceur>."
 	; fall through
 _Generic25PercentRecoilText::
-	bage "Le lanceur subit"
+	bage "Le <lanceur> subit"
 	next "25% des dégâts"
 	next "infligés en recul"
 	dex
 
 _TailWhipDexEntry::
-	text "Le lanceur remue"
+	text "Le <lanceur> remue"
 	next "sa queue de façon"
 	next "mignonne pour"
 
-	bage "amener l'ennemi à"
+	bage "amener l'<ennemi> à"
 	next "baisser sa garde."
 	; fall through
 _GenericLowersDefense1StageText::
 	bage "Baisse la DEFENSE"
-	next "de l'ennemi."
+	next "de l'<ennemi>."
 	next "(-1 DEF)"
 	dex
 
 _PoisonStingDexEntry::
-	text "Pique l'ennemi"
+	text "Pique l'<ennemi>"
 	next "avec un petit"
 	next "dard empoisonnée."
 	; fall through
 _Generic40PercentPoisonText::
 	bage "40% de chances"
 	next "d'empoisonner"
-	next "l'ennemi"
+	next "l'<ennemi>"
 	dex
 
 _TwineedleDexEntry::
-	text "Pique l'ennemi avec"
+	text "Pique l'<ennemi> avec"
 	next "deux dards, becs,"
 	next "griffes, épines.@"
 
@@ -425,39 +425,39 @@ _TwineedleDexEntry::
 _Generic20PercentPoisonText::
 	bage "20% de chances"
 	next "d'empoisonner"
-	next "l'ennemi"
+	next "l'<ennemi>"
 	dex
 
 _PinMissileDexEntry::
 	text "Une rafale de"
 	next "dards s'abat sur"
-	next "sur l'ennemi.@"
+	next "sur l'<ennemi>.@"
 	
 	text_jump _Generic2To5HitsText
 
 _LeerDexEntry::
-	text "Fixe l'ennemi avec"
+	text "Fixe l'<ennemi> avec"
 	next "un regard noir"
 	next "pour l'intimider.@"
 
 	text_jump _GenericLowersDefense1StageText
 
 _BiteDexEntry::
-	text "Mord l'ennemi avec"
+	text "Mord l'<ennemi> avec"
 	next "des dents acérées."
 	; fall through
 _Generic10PercentFlinchText::
-	bage "Appeure l'ennemi"
+	bage "Appeure l'<ennemi>"
 	next "dans 10% des cas"
 	dex
 
 _GrowlDexEntry::
 	text "Grogne gentiment,"
-	next "rend l'ennemi"
+	next "rend l'<ennemi>"
 	next "moins méfiant."
 
 	bage "Baisse la FORCE de"
-	next "l'ennemi."
+	next "l'<ennemi>."
 	next "(-1 FOR)"
 	dex
 
@@ -474,12 +474,12 @@ _Generic33PercentLowerAttackText::
 
 _SingDexEntry::
 	text "Berceuse plongeant"
-	next "l'ennemi dans un"
+	next "l'<ennemi> dans un"
 	next "profond sommeil."
 	; fall through
 _GenericPutsFoeAsleepText::
 	bage "Peut endormir"
-	next "l'ennemi"
+	next "l'<ennemi>"
 	dex
 
 _SupersonicDexEntry::
@@ -488,7 +488,7 @@ _SupersonicDexEntry::
 	next "de désorienter."
 
 	bage "Peut rendre"
-	next "l'ennemi confus"
+	next "l'<ennemi> confus"
 	dex
 
 _SonicboomDexEntry::
@@ -500,9 +500,9 @@ _SonicboomDexEntry::
 	next "Si c'est le"
 	next "premier tour du"
 
-	bage "lanceur en combat,"
+	bage "<lanceur> en combat,"
 	next "cette attaque"
-	next "appeure l'ennemi"
+	next "appeure l'<ennemi>"
 	dex
 
 _DisableDexEntry::
@@ -522,15 +522,15 @@ _DisableDexEntry::
 _AcidDexEntry::
 	text "Jet d'acide"
 	next "projeté sur"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "Réduit toujours"
 	next "la FORCE ou la"
-	next "DEFENSE de l'ennemi"
+	next "DEFENSE de l'<ennemi>"
 	dex
 
 _EmberDexEntry::
-	text "Attaque l'ennemi"
+	text "Attaque l'<ennemi>"
 	next "avec de petites"
 	next "flammes.@"
 
@@ -539,7 +539,7 @@ _EmberDexEntry::
 _FlamethrowerDexEntry::
 	text "Un puissant jet de"
 	next "flammes soufflé"
-	next "sur l'ennemi."
+	next "sur l'<ennemi>."
 
 	bage "Attaque FEU"
 	next "appréciée pour sa"
@@ -548,7 +548,7 @@ _FlamethrowerDexEntry::
 	text_jump _Generic10PercentBurnText
 
 _MistDexEntry::
-	text "Le lanceur libère"
+	text "Le <lanceur> libère"
 	next "une brume blanche"
 	next "scintillante faite"
 
@@ -556,7 +556,7 @@ _MistDexEntry::
 	next "glace, l'entourant"
 	next "d'un voile éthéré."
 
-	bage "Le lanceur devient"
+	bage "Le <lanceur> devient"
 	next "éthéré, immunisé"
 	next "aux types NORMAL"
 
@@ -576,7 +576,7 @@ _MistDexEntry::
 _WaterGunDexEntry::
 	text "Lance un petit jet"
 	next "d'eau pressurisée"
-	next "sur l'ennemi.@"
+	next "sur l'<ennemi>.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
@@ -585,7 +585,7 @@ _HydroPumpDexEntry::
 	next "d'eau pressurisée"
 	next "est projetée sur"
 
-	bage "l'ennemi.@"
+	bage "l'<ennemi>.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
@@ -605,25 +605,25 @@ _SurfDexEntry::
 _IceBeamDexEntry::
 	text "Un rayon de glace"
 	next "est projeté sur"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "10% de chances de"
-	next "geler l'ennemi"
+	next "geler l'<ennemi>"
 	dex
 
 _BlizzardDexEntry::
-	text "Le lanceur invoque"
+	text "Le <lanceur> invoque"
 	next "une forte tempête"
 	next "hivernale qui"
 
-	bage "terrasse l'ennemi."
+	bage "terrasse l'<ennemi>."
 	next "10% de chances de"
-	next "geler l'ennemi"
+	next "geler l'<ennemi>"
 	dex
 
 _PsybeamDexEntry::
 	text "Le pouvoir psy"
-	next "du lanceur se"
+	next "du <lanceur> se"
 	next "concentre en un"
 
 	bage "étrange faisceau."
@@ -637,7 +637,7 @@ _Generic10PercentConfusionText::
 _BubblebeamDexEntry::
 	text "Projette un jet de"
 	next "bulles sur"
-	next "l'ennemi."
+	next "l'<ennemi>."
 	; fall through
 _Generic33PercentLowerSpeedText::
 	bage "33% de chances de"
@@ -651,7 +651,7 @@ _AuroraBeamDexEntry::
 	next "multicolore est"
 
 	bage "projeté sur"
-	next "l'ennemi.@"
+	next "l'<ennemi>.@"
 
 	text_jump _Generic33PercentLowerAttackText
 
@@ -661,21 +661,21 @@ _HyperBeamDexEntry::
 	next "destruction, est"
 
 	bage "projeté avec force"
-	next "sur l'ennemi dans"
+	next "sur l'<ennemi> dans"
 	next "une gloire sublime."
 
 	bage "Après usage, le"
-	next "lanceur se repose"
+	next "<lanceur> se repose"
 	next "le tour suivant."
 
-	bage "Si l'ennemi est"
+	bage "Si l'<ennemi> est"
 	next "KO, aucun repos"
 	next "n'est nécessaire"
 	dex
 
 _PeckDexEntry::
-	text "Le lanceur picore"
-	next "l'ennemi avec un"
+	text "Le <lanceur> picore"
+	next "l'<ennemi> avec un"
 	next "bec ou une corne.@"
 
 	text_jump _GenericNoAdditionalEffectText
@@ -688,8 +688,8 @@ _DrillPeckDexEntry::
 	text_jump _Generic30PercentFlinchText
 
 _SubmissionDexEntry::
-	text "Le lanceur place"
-	next "l'ennemi dans"
+	text "Le <lanceur> place"
+	next "l'<ennemi> dans"
 	next "une prise de lutte"
 
 	bage "qui lui confère un"
@@ -697,14 +697,14 @@ _SubmissionDexEntry::
 	; fall through
 _GenericRaisesAttack1StageText::
 	bage "Augmente la FORCE"
-	next "du lanceur."
+	next "du <lanceur>."
 	next "(+1 FOR)"
 	dex
 
 _LowKickDexEntry::
 	text "Coup de pied bas"
 	next "capable de faire"
-	next "tomber l'ennemi.@"
+	next "tomber l'<ennemi>.@"
 
 	text_jump _Generic30PercentFlinchText
 
@@ -714,17 +714,17 @@ _CounterDexEntry::
 	next "draine l'énergie de"
 
 	bage "l'esprit combatif"
-	next "de l'ennemi."
+	next "de l'<ennemi>."
 	; fall through
 _GenericAbsorbMoveText::
 	bage "Restaure 50% des"
 	next "dégâts infligés"
-	next "aux PV du lanceur"
+	next "aux PV du <lanceur>"
 	dex
 
 _SeismicTossDexEntry::
-	text "Le lanceur projète"
-	next "l'ennemi dans une"
+	text "Le <lanceur> projète"
+	next "l'<ennemi> dans une"
 	next "chute aérienne"
 
 	bage "vrillée aidé par"
@@ -733,11 +733,11 @@ _SeismicTossDexEntry::
 
 	bage "Inflige des dégâts"
 	next "égaux au niveau"
-	next "actuel du lanceur"
+	next "actuel du <lanceur>"
 	dex
 
 _StrengthDexEntry::
-	text "Terrasse l'ennemi"
+	text "Terrasse l'<ennemi>"
 	next "avec une puissance"
 	next "accumulée massive.@"
 
@@ -751,14 +751,14 @@ _StrengthDexEntry::
 _AbsorbDexEntry::
 	text "Absorbe les"
 	next "nutriments de"
-	next "l'ennemi.@"
+	next "l'<ennemi>.@"
 
 	text_jump _GenericAbsorbMoveText
 
 _MegaDrainDexEntry::
 	text "Absorde rapidement"
 	next "les nutriments"
-	next "de l'ennemi.@"
+	next "de l'<ennemi>.@"
 
 	text_jump _GenericAbsorbMoveText
 
@@ -768,19 +768,19 @@ _LeechSeedDexEntry::
 	next "drainent l'énergie."
 
 	bage "Vole la vie de"
-	next "l'ennemi à chaque"
+	next "l'<ennemi> à chaque"
 	next "tour."
 
 	bage "Restaure 50% des"
 	next "dégâts infligés"
-	next "aux PV du lanceur."
+	next "aux PV du <lanceur>."
 
 	bage "Les graines"
 	next "restent tant que"
-	next "l'ennemi combat."
+	next "l'<ennemi> combat."
 
 	bage "Dégâts montent si"
-	next "l'ennemi est faible"
+	next "l'<ennemi> est faible"
 	next "au type PLANTE."
 
 	bage "RESISTE: 1/16 PV"
@@ -793,7 +793,7 @@ _LeechSeedDexEntry::
 	dex
 
 _GrowthDexEntry::
-	text "Le lanceur grandit"
+	text "Le <lanceur> grandit"
 	next "ou régénère son"
 	next "corps,"
 
@@ -811,7 +811,7 @@ _GrowthDexEntry::
 _RazorLeafDexEntry::
 	text "Pluie de feuilles"
 	next "acérées projetées"
-	next "sur l'ennemi.@"
+	next "sur l'<ennemi>.@"
 
 	text_jump _GenericOftenLandsCriticalHitsText
 
@@ -825,10 +825,10 @@ _SolarbeamDexEntry::
 _PoisonPowderDexEntry::
 	text "Un nuage de poudre"
 	next "toxique se répand"
-	next "autour de l'ennemi."
+	next "autour de l'<ennemi>."
 
 	bage "Peut empoisonner"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "Ne fonctionne pas"
 	next "sur les #MON de"
@@ -838,10 +838,10 @@ _PoisonPowderDexEntry::
 _StunSporeDexEntry::
 	text "Nuage de poudre"
 	next "paralysante envoyé"
-	next "autour de l'ennemi."
+	next "autour de l'<ennemi>."
 
 	bage "Peut paralyser"
-	next "l'ennemi"
+	next "l'<ennemi>"
 	dex
 
 _SleepPowderDexEntry::
@@ -853,7 +853,7 @@ _SleepPowderDexEntry::
 
 
 _PetalDanceDexEntry::
-	text "Le lanceur attaque"
+	text "Le <lanceur> attaque"
 	next "en répandant des"
 	next "pétales partout."
 
@@ -864,17 +864,17 @@ _PetalDanceDexEntry::
 	text_jump _GenericThrashEffectText
 
 _StringShotDexEntry::
-	text "Tire sur l'ennemi"
+	text "Tire sur l'<ennemi>"
 	next "d'épais cordons de"
 	next "soie collants."
 
 	bage "Baisse la VITESSE"
-	next "de l'ennemi."
+	next "de l'<ennemi>."
 	next "(-1 VIT)"
 	dex
 
 _DragonRageDexEntry::
-	text "L'ennemi subit une"
+	text "L'<ennemi> subit une"
 	next "onde de choc de"
 	next "rage draconique.@"
 
@@ -883,7 +883,7 @@ _DragonRageDexEntry::
 _FireSpinDexEntry::
 	text "Une colonne de feu"
 	next "tourbillonnante"
-	next "entoure l'ennemi.@"
+	next "entoure l'<ennemi>.@"
 
 	text_jump _GenericTrappingMoveText
 
@@ -911,7 +911,7 @@ _ThunderWaveDexEntry::
 	next "qui paralyse"
 
 	bage "rapidement"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "Utile grâce à sa"
 	next "grande précision"
@@ -922,18 +922,18 @@ _ThunderDexEntry::
 	next "déchaînant un"
 	next "éclair titanesque"
 
-	bage "sur l'ennemi.@"
+	bage "sur l'<ennemi>.@"
 
 	text_jump _Generic10PercentParalysisText
 
 _RockThrowDexEntry::
 	text "Lâche des pierres"
-	next "sur l'ennemi.@"
+	next "sur l'<ennemi>.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _EarthquakeDexEntry::
-	text "Le lanceur"
+	text "Le <lanceur>"
 	next "déclenche un"
 	next "puissant séisme."
 
@@ -944,13 +944,13 @@ _EarthquakeDexEntry::
 	text_jump _GenericNoAdditionalEffectText
 
 _FissureDexEntry::
-	text "Le lanceur crée"
+	text "Le <lanceur> crée"
 	next "une large faille"
 	next "dans la croûte"
 
 	bage "terrestre qui"
 	next "avale complètement"
-	next "l'ennemi.@"
+	next "l'<ennemi>.@"
 
 	text_jump _GenericOHKOText
 
@@ -960,11 +960,11 @@ _DigDexEntry::
 	next "puis surgit"
 
 	bage "soudainement pour"
-	next "frapper l'ennemi"
+	next "frapper l'<ennemi>"
 	next "au tour suivant."
 
 	bage "Sous terre, le"
-	next "lanceur ne peut"
+	next "<lanceur> ne peut"
 	next "pas être attaqué."
 
 	bage "Utilisable hors"
@@ -978,7 +978,7 @@ _ToxicDexEntry::
 	next "énormes de poison."
 
 	bage "Empoisonne "
-	next "gravement l'ennemi"
+	next "gravement l'<ennemi>"
 	next "s'il est touché."
 
 	bage "Les dégâts du"
@@ -993,14 +993,14 @@ _ToxicDexEntry::
 _ConfusionDexEntry::
 	text "Utilise un pouvoir"
 	next "psy pour perturber"
-	next "l'esprit ennemi.@"
+	next "l'esprit <ennemi>.@"
 
 	text_jump _Generic10PercentConfusionText
 
 _PsychicDexEntry::
 	text "Un pouvoir psy se"
 	next "déchaîne et frappe"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "Peu d'ennemis"
 	next "resistent à cette"
@@ -1009,7 +1009,7 @@ _PsychicDexEntry::
 	text_jump _Generic33PercentLowerSpecialText
 
 _HypnosisDexEntry::
-	text "Hypnotise l'ennemi"
+	text "Hypnotise l'<ennemi>"
 	next "et le plonge dans"
 	next "un sommeil lourd.@"
 
@@ -1020,7 +1020,7 @@ _MeditateDexEntry::
 	next "propice à la"
 	next "méditation,"
 
-	bage "le lanceur se"
+	bage "le <lanceur> se"
 	next "détend et accroît"
 	next "ses capacités."
 
@@ -1032,14 +1032,14 @@ _MeditateDexEntry::
 _AgilityDexEntry::
 	text "Une poussée"
 	next "d'adrénaline"
-	next "envahit le lanceur"
+	next "envahit le <lanceur>"
 
 	bage "lui permettant de"
 	next "se déplacer avec"
 	next "une vitesse folle."
 
 	bage "Monte la VITESSE"
-	next "du lanceur à fond."
+	next "du <lanceur> à fond."
 	next "(+2 VIT)"
 	dex
 
@@ -1050,14 +1050,14 @@ _QuickAttackDexEntry::
 	text_jump _GenericAlwaysGoesFirstText
 
 _RageDexEntry::
-	text "Le lanceur libère"
+	text "Le <lanceur> libère"
 	next "sa colère refoulée"
-	next "sur l'ennemi.@"
+	next "sur l'<ennemi>.@"
 
 	text_jump _GenericRaisesAttack1StageText
 
 _TeleportDexEntry::
-	text "Le lanceur se"
+	text "Le <lanceur> se"
 	next "téléporte loin du"
 	next "combat."
 
@@ -1066,7 +1066,7 @@ _TeleportDexEntry::
 	next "en l'utilisant."
 
 	bage "En combat, le"
-	next "lanceur change et"
+	next "<lanceur> change et"
 	next "soigne 25% des PV."
 
 	bage "Echoue s'il n'y a"
@@ -1083,14 +1083,14 @@ _TeleportDexEntry::
 
 _NightShadeDexEntry::
 	text "Une obscurité"
-	next "envahit l'ennemi,"
+	next "envahit l'<ennemi>,"
 	next "le terrifiant.@"
 	text_jump _GenericNoAdditionalEffectText
 
 _MimicDexEntry::
-	text "Le lanceur copie"
+	text "Le <lanceur> copie"
 	next "une des attaques"
-	next "de l'ennemi."
+	next "de l'<ennemi>."
 
 	bage "L'attaque peut"
 	next "être choisie, et"
@@ -1105,12 +1105,12 @@ _MimicDexEntry::
 	dex
 
 _ScreechDexEntry::
-	text "Le lanceur émet"
+	text "Le <lanceur> émet"
 	next "un crissement "
 	next "strident."
 
 	bage "Baisse la DEFENSE"
-	next "de l'ennemi à fond."
+	next "de l'<ennemi> à fond."
 	next "(-2 DEF)"
 
 	bage "Ce cri étrange"
@@ -1123,7 +1123,7 @@ _ScreechDexEntry::
 
 	bage "Utilisée auto-"
 	next "matiquement si le"
-	next "lanceur s'endort."
+	next "<lanceur> s'endort."
 
 	bage "Ne rate jamais"
 	dex
@@ -1133,35 +1133,35 @@ _DoubleTeamDexEntry::
 	next "images rémanentes"
 	next "de soi pour duper"
 
-	bage "l'ennemi et réduire"
+	bage "l'<ennemi> et réduire"
 	next "les chances d'être"
 	next "touché."
 	; fall through
 _GenericRaisesEvasion1StageText::	
 	bage "Augmente l'ESQUIVE"
-	next "du lanceur."
+	next "du <lanceur>."
 	next "(+1 ESQ)"
 	dex
 
 _RecoverDexEntry::
 	text "Régénère les"
 	next "cellules afin de"
-	next "guérir le lanceur.@"
+	next "guérir le <lanceur>.@"
 
 	text_jump _GenericHealsHalfText
 
 _HardenDexEntry::
 	text "L'extérieur du"
-	next "lanceur se durcit."
+	next "<lanceur> se durcit."
 
 	bage "Monte la DEFENSE"
-	next "du lanceur."
+	next "du <lanceur>."
 	next "(+1 DEF)"
 	dex
 
 _MinimizeDexEntry::
 	text "Réduit la taille"
-	next "du lanceur pour"
+	next "du <lanceur> pour"
 	next "monter l'esquive.@"
 
 	text_jump _GenericRaisesEvasion1StageText
@@ -1169,7 +1169,7 @@ _MinimizeDexEntry::
 _SmokescreenDexEntry::
 	text "De la fumée noire"
 	next "jaillit partout et"
-	next "aveugle l'ennemi.@"
+	next "aveugle l'<ennemi>.@"
 
 	text_call _GenericLowerAccuracyText
 
@@ -1181,14 +1181,14 @@ _SmokescreenDexEntry::
 _ConfuseRayDexEntry::
 	text "D'étranges rayons"
 	next "lumineux troublent"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "Provoque la"
 	next "confusion"
 	dex
 
 _WithdrawDexEntry::
-	text "Le lanceur se"
+	text "Le <lanceur> se"
 	next "rétracte dans sa"
 	next "carapace."
 
@@ -1205,23 +1205,23 @@ _DefenseCurlDexEntry::
 	next "en boule pour"
 	next "mieux se protéger."
 
-	bage "Le lanceur est"
+	bage "Le <lanceur> est"
 	next "immunisé aux coups"
 	next "super efficaces"
 	dex
 
 _BarrierDexEntry::
-	text "Le lanceur érige"
+	text "Le <lanceur> érige"
 	next "une forte barrière"
 	next "énergétique."
 
 	bage "Monte la DEFENSE"
-	next "du lanceur à fond."
+	next "du <lanceur> à fond."
 	next "(+2 DEF)"
 	dex
 
 _LightScreenDexEntry::
-	text "Le lanceur érige"
+	text "Le <lanceur> érige"
 	next "un merveilleux mur"
 	next "de lumière."
 
@@ -1232,7 +1232,7 @@ _LightScreenDexEntry::
 _GenericThisEffectOnlyAppliesToOriginalUser::
 	bage "Cet effet ne"
 	next "s'applique qu'au"
-	next "lanceur d'origine"
+	next "<lanceur> d'origine"
 	dex
 
 _HazeDexEntry::
@@ -1241,7 +1241,7 @@ _HazeDexEntry::
 	next "pouvoirs psy se"
 
 	bage "répand partout."
-	next "Le lanceur devient"
+	next "Le <lanceur> devient"
 	next "immunisé contre"
 
 	bage "les attaques PSY"
@@ -1262,7 +1262,7 @@ _HazeDexEntry::
 	dex
 
 _ReflectDexEntry::
-	text "Le lanceur érige"
+	text "Le <lanceur> érige"
 	next "un mur de lumière"
 	next "réfléchissant."
 
@@ -1272,7 +1272,7 @@ _ReflectDexEntry::
 	text_jump _GenericThisEffectOnlyAppliesToOriginalUser
 
 _FocusEnergyDexEntry::
-	text "Le lanceur prend"
+	text "Le <lanceur> prend"
 	next "une grande inspi-"
 	next "ration et se pose."
 
@@ -1296,7 +1296,7 @@ _BideDexEntry::
 	dex
 
 _MetronomeDexEntry::
-	text "Le lanceur agite"
+	text "Le <lanceur> agite"
 	next "un doigt, et une"
 	next "magie surnaturelle"
 
@@ -1308,34 +1308,34 @@ _MetronomeDexEntry::
 _MirrorMoveDexEntry::
 	text "Utilise la"
 	next "dernière attaque"
-	next "de l'ennemi.@"
+	next "de l'<ennemi>.@"
 
 	text_call _GenericAlwaysGoesFirstText
 
-	bage "Echoue si l'ennemi"
+	bage "Echoue si l'<ennemi>"
 	next "n'a pas encore"
 	next "attaqué"
 	dex
 
 _SelfdestructDexEntry::
-	text "Le lanceur explose"
+	text "Le <lanceur> explose"
 	next "dans une violente"
 	next "déflagration."
 	; fall through
 _GenericExplodeDexEntry::
 	bage "Inflige de lourds"
 	next "dégâts de recul au"
-	next "lanceur, la moitié"
+	next "<lanceur>, la moitié"
 
 	bage "des dégâts"
 	next "infligés. Si le"
-	next "lanceur échoue,"
+	next "<lanceur> échoue,"
 
 	bage "il subira tout de"
 	next "même 1/4 de ses"
 	next "PV max."
 
-	bage "Si le lanceur a"
+	bage "Si le <lanceur> a"
 	next "moins d'1/3 de"
 	next "ses PV restants,"
 
@@ -1345,7 +1345,7 @@ _GenericExplodeDexEntry::
 
 	bage "puissance montera"
 	next "à 500! Mais mettra"
-	next "KO le lanceur"
+	next "KO le <lanceur>"
 	dex
 
 _EggBombDexEntry::
@@ -1354,14 +1354,14 @@ _EggBombDexEntry::
 	next "en forme d'oeuf"
 
 	bage "est projetée sur"
-	next "l'ennemi et cause"
+	next "l'<ennemi> et cause"
 	next "une explosion.@"
 
 	text_jump _GenericNoAdditionalEffectText
 
 _LickDexEntry::
-	text "Le lanceur lèche"
-	next "l'ennemi avec une"
+	text "Le <lanceur> lèche"
+	next "l'<ennemi> avec une"
 	next "longue langue.@"
 
 	text_jump _Generic10PercentParalysisText
@@ -1369,14 +1369,14 @@ _LickDexEntry::
 _SmogDexEntry::
 	text "Un nuage de gaz"
 	next "épais et toxique"
-	next "attaque l'ennemi.@"
+	next "attaque l'<ennemi>.@"
 
 	text_jump _Generic40PercentPoisonText
 
 _SludgeDexEntry::
 	text "Une boue toxique"
 	next "est projetée sur"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "Son acidité peut"
 	next "facilement ronger"
@@ -1387,7 +1387,7 @@ _SludgeDexEntry::
 _BoneClubDexEntry::
 	text "Un os est utilisé"
 	next "pour frapper"
-	next "l'ennemi.@"
+	next "l'<ennemi>.@"
 
 	text_jump _Generic10PercentFlinchText
 
@@ -1396,9 +1396,9 @@ _FireBlastDexEntry::
 	next "explosion de feu"
 	next "dévastatrice"
 
-	bage "engloutit l'ennemi."
+	bage "engloutit l'<ennemi>."
 	next "30% de chances de"
-	next "brûler l'ennemi"
+	next "brûler l'<ennemi>"
 	dex
 
 _WaterfallDexEntry::
@@ -1413,7 +1413,7 @@ _WaterfallDexEntry::
 	text_jump _Generic30PercentFlinchText
 
 _ClampDexEntry::
-	text "Immobilise l'ennemi"
+	text "Immobilise l'<ennemi>"
 	next "avec une coquille"
 	next "munie d'une valve,"
 
@@ -1427,7 +1427,7 @@ _ClampDexEntry::
 _SwiftDexEntry::
 	text "Des rayons étoilés"
 	next "lumineux sont"
-	next "tirés sur l'ennemi."
+	next "tirés sur l'<ennemi>."
 
 	bage "Surnommé"
 	next "“Météores”"
@@ -1441,7 +1441,7 @@ _SwiftDexEntry::
 _SkullBashDexEntry::
 	text "Charge comme une"
 	next "fusée et frappe"
-	next "l'ennemi avec un"
+	next "l'<ennemi> avec un"
 
 	bage "crâne dur comme la"
 	next "pierre.@"
@@ -1464,7 +1464,7 @@ _SpikeCannonDexEntry::
 	dex
 
 _ConstrictDexEntry::
-	text "L'ennemi est pris"
+	text "L'<ennemi> est pris"
 	next "au piège par une"
 	next "queue/tentacule,"
 
@@ -1473,26 +1473,26 @@ _ConstrictDexEntry::
 	next "électrostatique."
 
 	bage "Guérit l'état"
-	next "anormal du lanceur"
+	next "anormal du <lanceur>"
 	next "ou d'un membre de"
 
 	bage "l'équipe si le"
-	next "lanceur est OK"
+	next "<lanceur> est OK"
 	dex
 
 _AmnesiaDexEntry::
-	text "Le lanceur se vide"
+	text "Le <lanceur> se vide"
 	next "l'esprit pour"
 	next "oublier ses soucis"
 
 	bage "Augmente beaucoup"
 	next "le SPECIAL du"
-	next "lanceur. (+2 SPE)"
+	next "<lanceur>. (+2 SPE)"
 	dex
 
 _KinesisDexEntry::
 	text "Un mur de feu"
-	next "consume l'ennemi."
+	next "consume l'<ennemi>."
 
 	bage "Cause la brûlure"
 	next "en cas de contact,"
@@ -1500,7 +1500,7 @@ _KinesisDexEntry::
 
 	bage "A chaque fois que"
 	next "l'attaque touche"
-	next "un ennemi brûlé,"
+	next "un <ennemi> brûlé,"
 
 	bage "le mur de feu"
 	next "s'agrandit, sa"
@@ -1508,7 +1508,7 @@ _KinesisDexEntry::
 
 	bage "de 30 par coup,"
 	next "jusqu'à 80 max."
-	next "Si lanceur niv.50"
+	next "Si <lanceur> niv.50"
 
 	bage "ou +, la puissance"
 	next "augmente de 60 par"
@@ -1517,11 +1517,11 @@ _KinesisDexEntry::
 
 _SoftboiledDexEntry::
 	text "Un délicieux oeuf"
-	next "soigne le lanceur."
+	next "soigne le <lanceur>."
 
 	bage "Restaure la moitié"
 	next "des PV max du"
-	next "lanceur."
+	next "<lanceur>."
 
 	bage "Utilisable hors"
 	next "combat pour guérir"
@@ -1529,7 +1529,7 @@ _SoftboiledDexEntry::
 	dex
 
 _HiJumpKickDexEntry::
-	text "Le lanceur saute"
+	text "Le <lanceur> saute"
 	next "haut dans les airs"
 	next "pour asséner un"
 
@@ -1539,7 +1539,7 @@ _HiJumpKickDexEntry::
 	text_jump _GenericKeptGoingCrashedText
 
 _GlareDexEntry::
-	text "L'ennemi est"
+	text "L'<ennemi> est"
 	next "dévisagé par des"
 	next "yeux terrifiants,"
 
@@ -1547,16 +1547,16 @@ _GlareDexEntry::
 	next "et l'empêche de"
 	next "bouger."
 
-	bage "Paralyse l'ennemi"
+	bage "Paralyse l'<ennemi>"
 	dex
 
 _DreamEaterDexEntry::
 	text "Dévore le rêve de"
-	next "l'ennemi endormi et"
+	next "l'<ennemi> endormi et"
 	next "récupère des PV."
 
 	bage "Ne fonctionne que"
-	next "lorsque l'ennemi"
+	next "lorsque l'<ennemi>"
 	next "est endormi.@"
 
 	text_jump _GenericAbsorbMoveText
@@ -1575,7 +1575,7 @@ _PoisonGasDexEntry::
 _BarrageDexEntry::
 	text "Lance des orbes"
 	next "d'énergie étrange"
-	next "sur l'ennemi."
+	next "sur l'<ennemi>."
 
 	bage "On ignore d'où"
 	next "viennent ces orbes"
@@ -1586,14 +1586,14 @@ _BarrageDexEntry::
 _LeechLifeDexEntry::
 	text "Mord et aspire"
 	next "l'énergie vitale"
-	next "de l'ennemi.@"
+	next "de l'<ennemi>.@"
 
 	text_jump _GenericAbsorbMoveText
 
 _LovelyKissDexEntry::
 	text "Un baiser magique"
 	next "est prodigué à"
-	next "l'ennemi, le"
+	next "l'<ennemi>, le"
 
 	bage "plongeant dans un"
 	next "profond sommeil si"
@@ -1603,7 +1603,7 @@ _LovelyKissDexEntry::
 _SkyAttackDexEntry::
 	text "Attaque à vitesse"
 	next "supersonique où le"
-	next "lanceur s'envole"
+	next "<lanceur> s'envole"
 
 	bage "rapidement dans la"
 	next "stratosphère pour"
@@ -1617,7 +1617,7 @@ _SkyAttackDexEntry::
 
 _TransformDexEntry::
 	text "Se transforme en"
-	next "#MON ennemi."
+	next "#MON <ennemi>."
 
 	bage "Toutes les stats"
 	next "et capacités sont"
@@ -1631,14 +1631,14 @@ _TransformDexEntry::
 _BubbleDexEntry::
 	text "Souffle une bulle"
 	next "qui éclate au"
-	next "visage de l'ennemi.@"
+	next "visage de l'<ennemi>.@"
 	
 	text_jump _Generic33PercentLowerSpeedText
 
 _DizzyPunchDexEntry::
 	text "Un coup de poing"
 	next "rythmé qui fait"
-	next "vaciller l'ennemi.@"
+	next "vaciller l'<ennemi>.@"
 
 	text_jump _Generic30PercentConfusionText
 
@@ -1649,15 +1649,15 @@ _SporeDexEntry::
 
 	bage "champignons qui"
 	next "tranquillisent"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
-	bage "Endort l'ennemi"
+	bage "Endort l'<ennemi>"
 	dex
 
 _FlashDexEntry::
 	text "Un flash"
 	next "instantané aveugle"
-	next "l'ennemi."
+	next "l'<ennemi>."
 
 	bage "Généralement causé"
 	next "par un puissant"
@@ -1670,7 +1670,7 @@ _FlashDexEntry::
 _PsywaveDexEntry::
 	text "Une petite vague"
 	next "psychique frappe"
-	next "l'ennemi."
+	next "l'<ennemi>."
 	; fall through
 _Generic33PercentLowerSpecialText::
 	bage "33% de chances de"
@@ -1679,7 +1679,7 @@ _Generic33PercentLowerSpecialText::
 	dex
 
 _SplashDexEntry::
-	text "Le lanceur s'agite"
+	text "Le <lanceur> s'agite"
 	next "dans tous les sens"
 	next "sans raison."
 
@@ -1687,7 +1687,7 @@ _SplashDexEntry::
 	dex
 
 _AcidArmorDexEntry::
-	text "Le lanceur modifie"
+	text "Le <lanceur> modifie"
 	next "sa structure"
 	next "cellulaire,"
 
@@ -1701,8 +1701,8 @@ _AcidArmorDexEntry::
 	dex
 	
 _CrabhammerDexEntry::
-	text "Le lanceur frappe"
-	next "sans pitié l'ennemi"
+	text "Le <lanceur> frappe"
+	next "sans pitié l'<ennemi>"
 	next "avec une pince,"
 
 	bage "un poing, ou un "
@@ -1711,7 +1711,7 @@ _CrabhammerDexEntry::
 	text_jump _GenericOftenLandsCriticalHitsText
 
 _ExplosionDexEntry::
-	text "Le lanceur explose"
+	text "Le <lanceur> explose"
 	next "comme une bombe"
 	next "géante qui lance"
 
@@ -1722,7 +1722,7 @@ _ExplosionDexEntry::
 	text_jump _GenericExplodeDexEntry
 
 _FurySwipesDexEntry::
-	text "Griffe l'ennemi"
+	text "Griffe l'<ennemi>"
 	next "avec des griffes"
 	next "poussiéreuses.@"
 
@@ -1731,7 +1731,7 @@ _FurySwipesDexEntry::
 _BonemerangDexEntry::
 	text "Lance un os comme"
 	next "un boomerang pour"
-	next "frapper l'ennemi"
+	next "frapper l'<ennemi>"
 
 	bage "2 fois de suite."
 	next "Contrairement aux"
@@ -1744,7 +1744,7 @@ _BonemerangDexEntry::
 	text_jump _Generic33PercentLowerSpeedText
 
 _RestDexEntry::
-	text "Le lanceur dort"
+	text "Le <lanceur> dort"
 	next "afin de soigner"
 	next "tous ses dégâts."
 
@@ -1752,7 +1752,7 @@ _RestDexEntry::
 	next "PV et soigne tous"
 	next "les statuts."
 
-	bage "Le lanceur dort"
+	bage "Le <lanceur> dort"
 	next "pendant exactement"
 	next "2 tours"
 	dex
@@ -1760,18 +1760,18 @@ _RestDexEntry::
 _RockSlideDexEntry::
 	text "Une avalanche de"
 	next "rochers s'abat"
-	next "sur l'ennemi.@"
+	next "sur l'<ennemi>.@"
 
 	text_jump _Generic10PercentFlinchText
 
 _HyperFangDexEntry::
 	text "Des dents géantes"
-	next "broient l'ennemi.@"
+	next "broient l'<ennemi>.@"
 
 	text_jump _Generic10PercentFlinchText
 
 _SharpenDexEntry::
-	text "Le lanceur affûte"
+	text "Le <lanceur> affûte"
 	next "ses griffes ou"
 	next "ses facettes."
 
@@ -1781,20 +1781,20 @@ _SharpenDexEntry::
 	dex
 
 _ConversionDexEntry::
-	text "Le lanceur analyse"
-	next "l'ennemi et"
+	text "Le <lanceur> analyse"
+	next "l'<ennemi> et"
 	next "améliore son"
 
 	bage "corps pour mieux"
 	next "s'adapter et le"
 	next "vaincre en combat."
 
-	bage "Le lanceur passe"
+	bage "Le <lanceur> passe"
 	next "en mode ATTAQUE ou"
 	next "en mode DEFENSE."
 
 	bage "Mode ATTAQUE:"
-	next "le lanceur examine"
+	next "le <lanceur> examine"
 	next "sa base de données"
 
 	bage "pour trouver une"
@@ -1820,8 +1820,8 @@ _TriAttackDexEntry::
 	dex
 
 _SuperFangDexEntry::
-	text "Le lanceur mord"
-	next "violemment l'ennemi"
+	text "Le <lanceur> mord"
+	next "violemment l'<ennemi>"
 	next "avec des crocs"
 
 	bage "acérés comme des"
@@ -1829,13 +1829,13 @@ _SuperFangDexEntry::
 
 	bage "Inflige toujours"
 	next "2/3 des PV actuels"
-	next "de l'ennemi"
+	next "de l'<ennemi>"
 	dex
 
 _SlashDexEntry::
-	text "Le lanceur"
+	text "Le <lanceur>"
 	next "lacère violemment"
-	next "l'ennemi avec ses"
+	next "l'<ennemi> avec ses"
 
 	bage "griffes, ou tout"
 	next "autre objet"
@@ -1845,7 +1845,7 @@ _SlashDexEntry::
 
 _SubstituteDexEntry::
 	text "Sacrifie 1/4 des"
-	next "PV du lanceur pour"
+	next "PV du <lanceur> pour"
 	next "créer un leurre"
 
 	bage "qui encaisse les"
@@ -1859,5 +1859,5 @@ _StruggleDexEntry::
 
 	bage "lorsque toutes les"
 	next "capacités ont 0PP."
-	next "Blesse le lanceur"
+	next "Blesse le <lanceur>"
 	dex

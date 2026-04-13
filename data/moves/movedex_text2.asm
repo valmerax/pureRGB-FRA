@@ -2,7 +2,7 @@
 ; Separated into two files because it doesn't fit in a single bank.
 
 _SharpenDexEntry::
-	text "Le lanceur affûte"
+	text "Le <lanceur> affûte"
 	next "ses griffes ou"
 	next "ses facettes."
 
@@ -12,8 +12,8 @@ _SharpenDexEntry::
 	dex
 
 _ConversionDexEntry::
-	text "Le lanceur analyse"
-	next "l'ennemi et"
+	text "Le <lanceur> analyse"
+	next "l'<ennemi> et"
 	next "améliore son"
 
 	bage "corps pour mieux"
@@ -21,7 +21,7 @@ _ConversionDexEntry::
 	next "vaincre en combat."
 
 	bage "Booste le SPECIAL"
-	next "du lanceur à fond."
+	next "du <lanceur> à fond."
 	next "(+2 SPE)"
 	dex
 
@@ -39,8 +39,8 @@ _TriAttackDexEntry::
 	dex
 
 _SuperFangDexEntry::
-	text "Le lanceur mord"
-	next "violemment l'ennemi"
+	text "Le <lanceur> mord"
+	next "violemment l'<ennemi>"
 	next "avec des crocs"
 
 	bage "acérés comme des"
@@ -48,13 +48,13 @@ _SuperFangDexEntry::
 
 	bage "Inflige toujours"
 	next "2/3 des PV actuels"
-	next "de l'ennemi"
+	next "de l'<ennemi>"
 	dex
 
 _SlashDexEntry::
-	text "Le lanceur"
+	text "Le <lanceur>"
 	next "lacère violemment"
-	next "l'ennemi avec ses"
+	next "l'<ennemi> avec ses"
 
 	bage "griffes, etc."
 	next "Taux de coups"
@@ -64,7 +64,7 @@ _SlashDexEntry::
 _SubstituteDexEntry::
 	text "Crée un leurre en"
 	next "utilisant 1/4 des"
-	next "PV max du lanceur"
+	next "PV max du <lanceur>"
 
 	bage "et prend les"
 	next "dégâts à sa place"
@@ -77,6 +77,6 @@ _StruggleDexEntry::
 
 	bage "lorsque toutes les"
 	next "capacités ont 0PP."
-	next "Blesse le lanceur"
+	next "Blesse le <lanceur>"
 	dex
 

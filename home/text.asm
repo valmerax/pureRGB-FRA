@@ -227,13 +227,13 @@ IsChar:: print_name IsText
 
 
 TrainerCharText:: db "DRES.@"
-TMCharText::      db "CT@"
-TeamCharText::    db "TEAM @"
-RocketCharText::  db "ROCKET@"
-EnemyText::       db " ennemi@"
+TMCharText::      db "<CT>@"
+TeamCharText::    db "<TEAM> @"
+RocketCharText::  db "<ROCKET>@"
+EnemyText::       db " <ennemi>@"
 ThreeDotsText::   db "...@"
-TrainerTipsText:: db "ASTUCES <TRAINER>@"
-OpponentText::    db "ennemi@"
+TrainerTipsText:: db "<ASTUCE> <TRAINER>@"
+OpponentText::    db "<ennemi>@"
 TheText::         db "t","he@" ; have to separate with a comma to avoid it entering the same macro again
 YouText::         db "y","ou@" ; have to separate with a comma to avoid it entering the same macro again
 IngText::         db "i","ng@" ; have to separate with a comma to avoid it entering the same macro again
