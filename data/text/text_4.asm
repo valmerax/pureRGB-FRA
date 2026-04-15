@@ -190,8 +190,8 @@ _NeedYourPokemonText::
 	done
 
 _PokemonCenterFastWelcomeText::
-	text "Nous soignons les"
-	line "#MON rapidement."
+	text "Nous soignons vite"
+	line "vos #MON."
 	done
 
 _PokemonFightingFitText::

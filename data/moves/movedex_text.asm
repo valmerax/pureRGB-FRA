@@ -284,13 +284,13 @@ _SandAttackDexEntry::
 
 	text_call _GenericLowerAccuracyText
 
-	bage "Les #MON de type"
-	next "SOL sont"
+	bage "Les #MON de"
+	next "type SOL sont"
 	next "immunisés."
 
-	bage "Les #MON de type"
-	next "vol ne sont pas"
-	next "affectés."
+	bage "Les #MON de"
+	next "type vol ne sont"
+	next "pas affectés."
 	dex
 	; fall through
 _GenericLowerAccuracyText::
@@ -361,7 +361,7 @@ _TakeDownDexEntry::
 	next "brûler l'<ennemi>."
 
 	bage "Si utilisé par un"
-	next "#MON de type FEU,"
+	next "#MON type FEU,"
 
 	bage "a aussi 40% de"
 	next "chances de monter"
@@ -986,8 +986,8 @@ _ToxicDexEntry::
 	next "à chaque tour."
 
 	bage "PRECISION max si"
-	next "lancé par un #MON"
-	next "de type POISON"
+	next "lancé par un"
+	next "#MON POISON"
 	dex
 
 _ConfusionDexEntry::
@@ -1061,13 +1061,13 @@ _TeleportDexEntry::
 	next "téléporte loin du"
 	next "combat."
 
-	bage "Les #MON sauvages"
-	next "fuient le combat"
-	next "en l'utilisant."
+	bage "Permet aux #MON"
+	next "sauvages de fuir"
+	next "un combat."
 
-	bage "En combat, le"
-	next "<lanceur> change et"
-	next "soigne 25% des PV."
+	bage "En combat dresseur"
+	next "le <lanceur> change"
+	next "et récupère 25% PV"
 
 	bage "Echoue s'il n'y a"
 	next "plus de #MON à"
@@ -1118,8 +1118,8 @@ _ScreechDexEntry::
 	next "la fin du combat."
 
 	bage "Ces échos"
-	next "réveillent tous"
-	next "les #MON endormis."
+	next "réveillent les"
+	next "#MON endormis."
 
 	bage "Utilisée auto-"
 	next "matiquement si le"
@@ -1450,7 +1450,7 @@ _SkullBashDexEntry::
 	
 	bage "Précision de 100%"
 	next "si utilisé par un"
-	next "#MON de type ROCHE"
+	next "#MON ROCHE"
 	dex
 
 _SpikeCannonDexEntry::
@@ -1739,7 +1739,7 @@ _BonemerangDexEntry::
 
 	bage "type SOL, celle-ci"
 	next "peut toucher les"
-	next "#MON de type VOL.@"
+	next "#MON VOL.@"
 
 	text_jump _Generic33PercentLowerSpeedText
 
