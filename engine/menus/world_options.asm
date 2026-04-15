@@ -55,7 +55,7 @@ WorldOptionsText:
 	db   "OPTIONS MONDE"
 	next " VOLCAN:    ON OFF"
 	next " CLUBS:     ON OFF"
-	next " DESIGNBALL ON OFF"
+	next " BALLDESIGN ON OFF"
 	next " ATQ SIGN.: ON OFF@"
 
 DrawWorldOptionsMenu:
