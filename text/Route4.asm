@@ -92,7 +92,7 @@ _Route4AfterBattleText4::
 	done
 
 _Route4Text8::
-	text "<TIPS>"
+	text "<ASTUCE>"
 	para "Press LEFT D-PAD"
 	line "at the top of the"
 	cont "ITEM menu to"
@@ -104,7 +104,7 @@ _Route4Text8::
 	done
 
 _Route4Text9::
-	text "<TIPS>"
+	text "<ASTUCE>"
 	para "You can hold up"
 	line "to 30 items."
 	para "If you run out"

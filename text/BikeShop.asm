@@ -1,138 +1,147 @@
 _BikeShopClerkWelcomeText::
-	text "Hi! Welcome to"
-	line "our BIKE SHOP."
+	text "Bienvenue au"
+	line "CYCLES A GOGO."
 
-	para "Have we got just"
-	line "the BIKE for you!"
+	para "Nous avons"
+	line "justement une"
+	cont "belle bicyclette!"
 	prompt
 
 _BikeShopClerkDoYouLikeItText::
-	text "It's a cool BIKE!"
-	line "Do you want it?"
+	text "C'est un super"
+	line "vélo, le veux-tu?"
 	done
 
 _BikeShopCantAffordText::
-	text "Sorry! You can't"
-	line "afford it!"
+	text "Oh! Tu n'as pas"
+	line "assez d'argent!"
 	prompt
 
 _BikeShopClerkOhThatsAVoucherText::
-	text "Oh, that's<...>"
+	text "Oh! Mais c'est..."
 
-	para "A BIKE VOUCHER!"
+	para "Un BON pour"
+	line "une BICYCLETTE!"
 
-	para "OK! Here you go!"
+	para "OK! Voilà ta"
+	line "BICYCLETTE!"
 	prompt
 
 _BikeShopExchangedVoucherText::
-	text "<PLAYER> exchanged"
-	line "the BIKE VOUCHER"
-	cont "for a BICYCLE.@"
+	text "<PLAYER> échange"
+	line "le BON contre"
+	cont "une BICYCLETTE.@"
 	text_end
 
 _BikeShopComeAgainText::
-	text "Come back again"
-	line "some time!"
+	text "Reviens quand tu"
+	line "veux!"
 	done
 
 _BikeShopClerkHowDoYouLikeYourBicycleText::
-	text "How do you like"
-	line "your new BICYCLE?"
+	text "Comment se porte"
+	line "ta BICYCLETTE?"
 
-	para "You can take it"
-	line "on CYCLING ROAD"
-	cont "and in caves!"
+	para "Tu peux aller sur"
+	line "la PISTE CYCLABLE"
+	cont "et dans les"
+	cont "GROTTES!"
 	done
 
 _CeruleanGymMistyTM11NoRoomText::
 _BikeShopBagFullText::
-	text "You better make"
-	line "room for this!"
+	text "Ton inventaire"
+	line "est plein!"
 	done
 
 _BikeShopMiddleAgedWomanText::
-	text "A plain city BIKE"
-	line "is good enough"
-	cont "for me!"
+	text "Un VELO de ville,"
+	line "c'est ce qu'il y"
+	cont "a de mieux!"
 
-	para "You can't put a"
-	line "shopping basket"
-	cont "on an MTB!"
+	para "Il n'y a pas de"
+	line "porte-bagages sur"
+	cont "un VTT!"
 	done
 
 _BikeShopYoungsterTheseBikesAreExpensiveText::
-	text "These BIKEs are"
-	line "cool, but they're"
-	cont "way expensive!"
+	text "Ces VELOS sont"
+	line "super mais ils"
+	cont "sont très chers!"
 	done
 
 _BikeShopYoungsterCoolBikeText::
-	text "Wow. Your BIKE is"
-	line "really cool!"
+	text "Waou! "
+	line "Ta BICYCLETTE est"
+	cont "super cool!"
 	done
 
 _BikeShopBasketBikeText::
-	text "This BIKE has a"
-	line "basket attached."
-	para "Very practical!"
+	text "Cette BICYCLETTE a"
+	line "un panier."
+	para "Très pratique!"
 	done
 
 _BikeShopToolboxText::
-	text "A toolbox for"
-	line "repairing BIKEs!"
-	para "Tire patches,"
-	line "a pump, hex keys,"
-	cont "tools galore!"
+	text "Une boîte à outils"
+	line "pour réparer les"
+	cont "BICYCLETTES!"
+	para "Rustines, pompe,"
+	line "clés Allen, des"
+	cont "outils en masse!"
 	done
 
 _BikeShopSignRightText::
-	text "WELCOME TO"
-	line "MIRACLE CYCLE!"
+	text "BIENVENUE AU"
+	line "CYCLES A GOGO!"
 	done
 
 
 _BikeShopSignLeftText::
-	text "MIRACLE CYCLE"
-	para "The trendsetter of"
-	line "the bicycle boom!"
+	text "CYCLES A GOGO"
+	para "Le pionnier du"
+	line "boom du vélo!"
 	done
 
 _BikeShopStatsText::
-	text "Graphs and data"
-	line "comparing many"
-	cont "different BIKEs!"
-	para "Number of gears,"
-	line "shock absorption,"
-	cont "reliability<...>"
+	text "Graphiques et"
+	line "données comparant"
+	cont "de nombreux"
+	cont "vélos!"
+	para "Nombre de pignons,"
+	line "suspension,"
+	cont "fiabilité<...>"
 	done
 
 _BikeShopArcade1Text::
-	text "Whoa!"
-	para "It's EXCITEBIKE!"
-	para "This game's a"
-	line "classic!"
-	para "It's one of Dad's"
-	line "favorites!"
-	para "There's an arcade"
-	line "version?!"
-	para "And it has two-"
-	line "player mode too!"
+	text "Waouh!"
+	para "C'est EXCITEBIKE!"
+	para "Ce jeu est un"
+	line "classique!"
+	para "C'est l'un des"
+	line "préférés de papa!"
+	para "Il existe une"
+	line "version arcade?!"
+	para "Et il y a même un"
+	line "mode deux joueurs!"
 	done
 
 _BikeShopArcade2Text::
-	text "A freestyle BMX"
-	line "arcade game!"
-	para "Wow, the biker"
-	line "did a backflip!"
+	text "Un jeu d'arcade de"
+	line "BMX freestyle!"
+	para "Wow, le cycliste a"
+	line "fait un backflip!"
 	done
 
 _BikeShopArcade3Text::
-	text "An 8-bit arcade"
-	line "game starring a"
-	cont "paper delivery"
-	cont "boy on a bicycle!"
-	para "Hah!"
-	para "He threw a"
-	line "newspaper through"
-	cont "someone's window!"
+	text "Un jeu d'arcade"
+	line "8-bit mettant en"
+	cont "vedette un garçon"
+	cont "qui livre des"
+	cont "journaux à vélo!"
+	para "Hé!"
+	para "Il a jeté un"
+	line "journal par la"
+	cont "fenêtre de"
+	cont "quelqu'un!"
 	done

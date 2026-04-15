@@ -1,64 +1,68 @@
 _CeladonChiefHouseChiefText::
-	text "Hehehe! The slots"
-	line "just reel in the"
-	cont "dough, big time!"
+	text "Yahahaha!"
+	line "Triple 7!!!"
+	cont "Par ici l'pognon!"
 	done
 
 _CeladonChiefHouseRocketText::
-	text "CHIEF!"
+	text "CHEF!"
 
-	para "We just shipped"
-	line "2000 #MON as"
-	cont "slot prizes!"
+	para "2000 #MON ont"
+	line "été envoyés comme"
+	cont "prix de casino!"
 	done
 
 _CeladonChiefHouseSailorText::
-	text "Don't touch the"
-	line "poster at the"
-	cont "GAME CORNER!"
+	text "Ne touche pas au"
+	line "bouton sur le"
+	cont "poster du CASINO!"
 
-	para "There's no secret"
-	line "switch behind it!"
+	para "Hein? Mais non"
+	line "j'l'ai pas dit!"
 	done
 
 _CeladonChiefHouseBookCaseLeftText::
-	text "LICKITUNG's"
-	line "SUSHI SHOP"
-	para "A comic book about"
-	line "a LICKITUNG that"
-	cont "makes sushi.@"
+	text "BOUTIQUE DE SUSHI"
+	line "D'EXCELANGUE"
+	para "Une BD sur un"
+	line "EXCELANGUE qui"
+	cont "fait des sushis.@"
 	text_end
 
 _CeladonChiefHouseBookCaseLeft2Text::
-	text "<PARA>LICKITUNG sweats"
-	line "as a master chef"
-	cont "analyzes its"
-	cont "every move."
+	text "<PARA>EXCELANGUE"
+	line "transpire tandis"
+	cont "qu'un grand chef"
+	cont "scrute chacun de"
+	cont "ses gestes."
 	done
 
 _CeladonChiefHouseBookCaseRightText::
-	text "MIMING FOR DUMMIES"
-	para "A starter's guide"
-	line "to miming."
-	para "Starring MR MIME!@"
+	text "LE MIME POUR LES"
+	line "NULS"
+	para "Un guide d'initia-"
+	line "tion au mime."
+	para "Avec M.MIME!@"
 	text_end
 
 _CeladonChiefHouseBookCaseRight2Text::
-	text "<PARA>MR MIME is miming"
-	line "pulling someone"
-	cont "toward it as if"
-	cont "it had thrown a"
-	cont "lasso onto them."
+	text "<PARA>M.MIME mime le"
+	line "fait d'attirer"
+	cont "quelqu'un vers"
+	cont "lui comme s'il"
+	cont "lui avait lancé"
+	cont "un lasso."
 	para "Hahaha!"
-	para "The person looks"
-	line "weirded out."
+	para "La personne a l'air"
+	line "déconcertée."
 	done
 
 _CeladonChiefHousePlaqueText::
-	text "A gold plaque"
-	line "that reads:"
-	para "WHAT THE CHIEF"
-	line "SAYS GOES!"
-	para "THE HOUSE ALWAYS"
-	line "WINS!"
+	text "Une plaque en or"
+	line "sur laquelle on"
+	cont "peut lire:"
+	para "CE QUE DIT LE CHEF"
+	line "EST LOI!"
+	para "LA MAISON GAGNE"
+	line "TOUJOURS!"
 	done

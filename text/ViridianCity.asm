@@ -74,16 +74,16 @@ ViridianCityFisherYouCanHaveThisText::
 	line "about a GASTLY"
 	cont "eating my dream."
 	cont "What's this?"
-	cont "Where did this <TM>"
+	cont "Where did this <CT>"
 	cont "come from?"
 
 	para "This is spooky!"
 	line "Here, you can"
-	cont "have this <TM>."
+	cont "have this <CT>."
 	prompt
 
 _ViridianCityFisherTM42ExplanationText::
-	text "<TM>42 contains"
+	text "<CT>42 contains"
 	line "LOVELY KISS<...>"
 	cont "<...>Snore<...>"
 	done
@@ -152,7 +152,7 @@ _ViridianCitySignText::
 	done
 
 _ViridianCityTrainerTips1Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "Catch #MON"
 	line "and expand your"
@@ -164,7 +164,7 @@ _ViridianCityTrainerTips1Text::
 	done
 
 _ViridianCityTrainerTips2Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "The battle moves"
 	line "of #MON are"

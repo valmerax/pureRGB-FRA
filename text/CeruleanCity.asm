@@ -98,7 +98,7 @@ _CeruleanCityRocketIGiveUpText::
 
 _CeruleanCityRocketIllReturnTheTMText::
 	text "OK! I'll return"
-	line "the <TM> I stole!"
+	line "the <CT> I stole!"
 	prompt
 
 _CeruleanCityCooltrainerMText::
@@ -230,7 +230,7 @@ _CeruleanCitySignText::
 	done
 
 _CeruleanCityTrainerTipsText::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "Pressing B Button"
 	line "during evolution"

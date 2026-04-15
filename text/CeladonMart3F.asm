@@ -8,7 +8,7 @@ _CeladonMart3FClerkTM18PreReceiveText::
 	prompt
 
 _CeladonMart3FClerkTM18ExplanationText::
-	text "<TM>35 is AGILITY!"
+	text "<CT>35 is AGILITY!"
 	para "Use speed to your"
 	line "advantage!"
 	para "If you go first,"
@@ -111,14 +111,14 @@ _CeladonMartTMKidFlavor::
 	cont "CORNER."
 
 	para "For once the"
-	line "MART here has <TM>s"
+	line "MART here has <CT>s"
 	cont "so I'm not selling"
 	cont "any of my own!"
 
 	para "I think I'll use"
 	line "some of the cash"
 	cont "I made selling"
-	cont "<TM>s to buy a"
+	cont "<CT>s to buy a"
 	cont "GAME BOY COLOR."
 	
 	para "I heard that"

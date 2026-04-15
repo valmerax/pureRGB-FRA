@@ -3,7 +3,7 @@ _SafariZoneNorthRestHouseSignText::
 	done
 
 _SafariZoneNorthTrainerTips1Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "The SECRET HOUSE"
 	line "is still ahead!"
@@ -14,7 +14,7 @@ _SafariZoneNorthSignText::
 	done
 
 _SafariZoneNorthTrainerTips2Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "GHOST type moves"
 	line "are dynamic!"
@@ -34,7 +34,7 @@ _SafariZoneNorthTrainerTips2Text::
 	done
 
 _SafariZoneNorthTrainerTips3Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "Win a free HM for"
 	line "finding the"

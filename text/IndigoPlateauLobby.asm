@@ -9,7 +9,7 @@ _IndigoPlateauLobbyGymGuideText::
 	cont "over again! This"
 	cont "is it! Go for it!"
 
-	para "If you need <TM>s"
+	para "If you need <CT>s"
 	line "just talk to"
 	cont "my son!"
 
@@ -72,7 +72,7 @@ _IndigoPlateauApexChipsAfterChamp::
 	text_end
 
 _IndigoPlateauGymGuideSonText::
-	text "It's me! The <TM>"
+	text "It's me! The <CT>"
 	line "Pirate and Gym"
 	cont "Guide in making!"
 	prompt
@@ -80,7 +80,7 @@ _IndigoPlateauGymGuideSonText::
 _IndigoPlateauGymGuideSonChampText::
 	text "Yo! Champ!!"
 
-	para "It's me! The <TM>"
+	para "It's me! The <CT>"
 	line "Pirate and Gym"
 	cont "Guide in making!"
 	prompt
@@ -92,10 +92,10 @@ _IndigoPlateauGymGuideSonIntro::
 	cont "day!"
 
 	para "I'm a certified"
-	line "<TM> engineer now!"
+	line "<CT> engineer now!"
 
 	para "Got some powerful"
-	line "<TM>s copied from"
+	line "<CT>s copied from"
 	cont "dad's originals!"
 
 	para "Want some?"
@@ -103,7 +103,7 @@ _IndigoPlateauGymGuideSonIntro::
 
 _IndigoPlateauGymGuideSonMoreTMs::
 	text "I've got every"
-	line "single <TM> copied"
+	line "single <CT> copied"
 	cont "and ready for you"
 	cont "now! Want some?"
 	done

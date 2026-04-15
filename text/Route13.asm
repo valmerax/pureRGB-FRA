@@ -172,14 +172,14 @@ _FearowLearnset::
 	prompt
 
 _Route13TrainerTips1Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "Look to the left"
 	line "of that post!"
 	done
 
 _Route13TrainerTips2Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "Use SELECT to"
 	line "switch items in"

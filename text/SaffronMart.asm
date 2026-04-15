@@ -18,7 +18,7 @@ _SaffronMartTMKidFlavor::
 	cont "when <TEAM><ROCKET>"
 	cont "wasn't looking!"
 
-	para "I'm selling <TM>s"
+	para "I'm selling <CT>s"
 	line "to <TEAM><ROCKET>"
 	cont "actually."
 

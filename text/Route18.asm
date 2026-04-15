@@ -106,7 +106,7 @@ _Route18CyclingRoadSignText::
 	done
 
 _Route18TipsSign::
-	text "<TIPS>"
+	text "<ASTUCE>"
 	para "Press SELECT"
 	line "when viewing a"
 	cont "#MON's STATS"

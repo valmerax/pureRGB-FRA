@@ -10,7 +10,7 @@ _CinnabarMartScientistText::
 	done
 
 _TMKidBringingTMsAnyCost::
-	text "Bringing <TM>s to"
+	text "Bringing <CT>s to"
 	line "the place they"
 	cont "should be, at"
 	cont "any cost!@"
@@ -32,7 +32,7 @@ _CinnabarMartTMKidFlavor::
 	text_end
 
 _TMKidSellingTMsCopiedDadOriginals::
-	text "<PARA>I'm selling <TM>s"
+	text "<PARA>I'm selling <CT>s"
 	line "that I copied"
 	cont "from my dad's"
 	cont "originals!@"

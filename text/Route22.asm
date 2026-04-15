@@ -104,7 +104,7 @@ _Route22PokemonLeagueSignText::
 	done
 
 _Route22TrainerTipsText::
-	text "<TIPS>"
+	text "<ASTUCE>"
 	para "Hold B while"
 	line "moving to run."
 	done

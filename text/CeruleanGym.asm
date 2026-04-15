@@ -18,7 +18,7 @@ _CeruleanGymMistyPreBattleText::
 	done
 
 _CeruleanGymMistyTM11ExplanationText::
-	text "<TM>11 teaches"
+	text "<CT>11 teaches"
 	line "BUBBLEBEAM!"
 
 	para "Use it on an"
@@ -42,7 +42,7 @@ _CeruleanGymMistyCascadeBadgeInfoText::
 	cont "open new paths!"
 
 	para "You can also have"
-	line "my favorite <TM>!"
+	line "my favorite <CT>!"
 	done
 
 _CeruleanGymMistyReceivedCascadeBadgeText::

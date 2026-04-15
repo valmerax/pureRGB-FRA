@@ -48,7 +48,7 @@ _VictoryRoad3FCooltrainerM2AfterBattleText::
 _VictoryRoad3FCooltrainerF2BattleText::
 	text "Trainers live to"
 	line "seek stronger"
-	cont "<opponent>s!"
+	cont "<ennemi>s!"
 	done
 
 _VictoryRoad3FCooltrainerF2EndBattleText::

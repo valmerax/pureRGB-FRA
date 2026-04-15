@@ -110,7 +110,7 @@ _SaffronCityGymSignText::
 	done
 
 _SaffronCityTrainerTips1Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "FULL HEAL cures"
 	line "all ailments like"
@@ -122,7 +122,7 @@ _SaffronCityTrainerTips1Text::
 	done
 
 _SaffronCityTrainerTips2Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "New GREAT BALL"
 	line "offers improved"

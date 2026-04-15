@@ -10,7 +10,7 @@ SilphCo2FSilphWorkerFPleaseTakeThisText::
 	prompt
 
 _SilphCo2FSilphWorkerFTM50ExplanationText::
-	text "<TM>50 is"
+	text "<CT>50 is"
 	line "SUBSTITUTE!"
 
 	para "A decoy will"

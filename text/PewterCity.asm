@@ -77,7 +77,7 @@ _PewterCityYoungsterGoTakeOnBrockText::
 	done
 
 _PewterCityTrainerTipsText::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "Any #MON that"
 	line "takes part in"

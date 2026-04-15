@@ -6,7 +6,7 @@ _MrPsychicsHouseMrPsychicYouWantedThisText::
 	prompt
 
 _MrPsychicsHouseMrPsychicTM29ExplanationText::
-	text "<TM>29 is PSYCHIC!"
+	text "<CT>29 is PSYCHIC!"
 	
 	para "It uses powerful"
 	line "psychic waves to"

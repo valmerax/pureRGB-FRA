@@ -52,7 +52,7 @@ _SaffronGymSabrinaMarshBadgeInfoText::
 	cont "much!"
 
 	para "Wait, please take"
-	line "this <TM> with you!"
+	line "this <CT> with you!"
 	done
 
 _TM46ExplanationText::

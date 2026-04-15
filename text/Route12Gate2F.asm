@@ -4,12 +4,12 @@ _Route12Gate2FBrunetteGirlYouCanHaveThisText::
 	cont "in #MON TOWER."
 
 	para "You can have this"
-	line "<TM>. I don't need"
+	line "<CT>. I don't need"
 	cont "it any more<...>"
 	prompt
 
 _Route12Gate2FBrunetteGirlTM39ExplanationText::
-	text "<TM>39 is"
+	text "<CT>39 is"
 	line "FILTHY SLAM."
 
 	para "It's a strong"

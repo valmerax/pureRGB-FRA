@@ -25,14 +25,14 @@ _VermilionMartCooltrainerFText::
 _VermilionMartTMKidFlavor::
 	text "<PARA>The clerk here"
 	line "thinks copying"
-	cont "and selling <TM>s"
+	cont "and selling <CT>s"
 	cont "is wrong!"
 
 	para "Little do they"
 	line "know that my dad"
 	cont "helped create"
 	cont "the software for"
-	cont "<TM>s!"
+	cont "<CT>s!"
 
 	para "He gave my little"
 	line "“business” his"
@@ -40,5 +40,5 @@ _VermilionMartTMKidFlavor::
 	text_end
 
 _TMKidWantSomeTMsText::
-	text "<PARA>Want some <TM>s?"
+	text "<PARA>Want some <CT>s?"
 	done

@@ -43,7 +43,7 @@ _VermilionFitnessClubSign::
 	done
 
 _FitnessClubClerkSelectLevelText::
-	text "Choose <opponent>'s"
+	text "Choose <ennemi>'s"
 	line "#MON level."
 	done
 

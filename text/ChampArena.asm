@@ -31,7 +31,7 @@ _ChampArenaAssistantSeeYa::
 _ChampArenaAssistantInviteIn::
 	text "Perfect!"
 	para "Let's invite in"
-	line "another <opponent>!"
+	line "another <ennemi>!"
 	para "This is so"
 	line "exciting!"
 	done
@@ -432,11 +432,11 @@ _GymGuideIntroText2::
 	prompt
 
 _ChampArenaGymGuideSonText::
-	text "<TM> KID: I'm here"
+	text "<CT> KID: I'm here"
 	line "too!"
 	para "Our #MON team"
 	line "learned lots of"
-	cont "great <TM>s!"
+	cont "great <CT>s!"
 	para "Okay dad, I'll"
 	line "help strategize"
 	cont "in the battle!"
@@ -445,14 +445,14 @@ _ChampArenaGymGuideSonText::
 _GymGuideLostText::
 	text "Guess"
 	line "even with all"
-	cont "those <TM>s we"
+	cont "those <CT>s we"
 	cont "couldn't win!"
 	prompt
 
 _GymGuideWonText::
 	text "You"
 	line "picked great"
-	cont "<TM>s, son!"
+	cont "<CT>s, son!"
 	prompt
 
 _RivalIntroText::
@@ -509,7 +509,7 @@ _ChampArenaAssistantDefeatedText::
 	prompt
 
 _ChampArenaAssistantStillOpponentsLeft::
-	text "More <opponent>s"
+	text "More <ennemi>s"
 	line "are waiting to"
 	cont "battle you!"
 	prompt
@@ -669,7 +669,7 @@ _ChampArenaGymGuideBeforeLeaves::
 	line "had 5 #MON!"
 	para "Where'd that last"
 	line "one come from?!"
-	para "<TM> KID: That was"
+	para "<CT> KID: That was"
 	line "spooky!"
 	done
 

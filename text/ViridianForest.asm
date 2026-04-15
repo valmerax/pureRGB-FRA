@@ -108,7 +108,7 @@ _ViridianForestYoungster5Text::
 	done
 
 _ViridianForestTrainerTips1Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "If you want to"
 	line "avoid battles,"
@@ -123,7 +123,7 @@ _ViridianForestUseAntidoteSignText::
 	done
 
 _ViridianForestTrainerTips2Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "Contact PROF.OAK"
 	line "via <PC> to get"
@@ -132,7 +132,7 @@ _ViridianForestTrainerTips2Text::
 	done
 
 _ViridianForestTrainerTips3Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "No stealing of"
 	line "#MON from"
@@ -142,7 +142,7 @@ _ViridianForestTrainerTips3Text::
 	done
 
 _ViridianForestTrainerTips4Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "Weaken #MON"
 	line "before attempting"

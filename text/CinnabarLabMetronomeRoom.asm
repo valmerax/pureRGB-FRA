@@ -1,6 +1,6 @@
 _CinnabarLabMetronomeRoomScientist1Text::
 	text "Tch-tch-tch!"
-	line "I made a cool <TM>!"
+	line "I made a cool <CT>!"
 
 	para "It can cause all"
 	line "kinds of fun!"
@@ -17,7 +17,7 @@ _CinnabarLabMetronomeRoomScientist1TM35ExplanationText::
 
 	para "I love that move"
 	line "so much, I made a"
-	cont "<TM> to teach it to"
+	cont "<CT> to teach it to"
 	cont "other #MON!"
 
 	para "When in doubt:"

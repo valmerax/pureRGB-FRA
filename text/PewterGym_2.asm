@@ -20,12 +20,12 @@ _PewterGymBrockWaitTakeThisText::
 _TM34ExplanationText::
 	text_start
 
-	para "A <TM> contains a"
+	para "A <CT> contains a"
 	line "technique that"
 	cont "can be taught to"
 	cont "#MON!"
 
-	para "A <TM> is good only"
+	para "A <CT> is good only"
 	line "once! So when you"
 	cont "use one to teach"
 	cont "a new technique,"

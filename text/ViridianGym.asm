@@ -60,7 +60,7 @@ _ViridianGymGiovanniEarthBadgeInfoText::
 	line "your #MON"
 	cont "LEAGUE challenge!"
 
-	para "Take this <TM>"
+	para "Take this <CT>"
 	line "as well!"
 	done
 

@@ -123,7 +123,7 @@ _Route12Gate2FBrunetteGirlReceivedTM39Text::
 
 ; PureRGBnote: CHANGED: he is now a tutor
 ;_CeladonCityGramps3TM41ExplanationText::
-;	text "<TM>41 teaches"
+;	text "<CT>41 teaches"
 ;	line "MEDITATE!"
 ;
 ;	para "It raises ATTACK,"
@@ -176,7 +176,7 @@ _CeladonCityRocket2Text::
 	done
 
 _CeladonCityTrainerTips1Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "X ACCURACY boosts"
 	line "the accuracy of"
@@ -218,7 +218,7 @@ _CeladonCityDeptStoreSignText::
 	done
 
 _CeladonCityTrainerTips2Text::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "GUARD SPEC."
 	line "protects #MON"
@@ -241,7 +241,7 @@ _CeladonCityGameCornerSignText::
 	done
 
 _CeladonCityText19::
-	text "<TIPS>"
+	text "<ASTUCE>"
 	para "Open the START"
 	line "menu and scroll"
 	cont "down to the SAVE"

@@ -33,7 +33,7 @@ _ViridianMartCooltrainerMText::
 _ViridianMartTMKid::
 	text "Yo! Can you"
 	line "believe they don't"
-	cont "sell <TM>s?" 
+	cont "sell <CT>s?" 
 
 	para "How are trainers"
 	line "supposed to get"
@@ -56,7 +56,7 @@ _TMKidStockingUp::
 	para "Look for me in"
 	line "another MART,"
 	cont "I should have"
-	cont "plenty of <TM>s!" 
+	cont "plenty of <CT>s!" 
 	done
 
 _TMKidBigStockIndigo::
@@ -64,7 +64,7 @@ _TMKidBigStockIndigo::
 	line "are you?"
 
 	para "I'm all out of"
-	line "copied <TM>s!"
+	line "copied <CT>s!"
 
 	para "Listen. Look"
 	line "for me at"
@@ -72,7 +72,7 @@ _TMKidBigStockIndigo::
 
 	para "I'm putting"
 	line "together the best"
-	cont "stock of <TM>s yet!"
+	cont "stock of <CT>s yet!"
 
 	para "I'll be waiting!"
 	line "Catch you later!"

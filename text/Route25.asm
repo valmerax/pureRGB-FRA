@@ -169,7 +169,7 @@ _Route25BillSignText::
 	done
 
 _Route25Text12::
-	text "<TIPS>"
+	text "<ASTUCE>"
 	para "Hold both the"
 	line "A and B Buttons" 
 	cont "while standing"

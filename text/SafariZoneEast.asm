@@ -3,7 +3,7 @@ _SafariZoneEastRestHouseSignText::
 	done
 
 _SafariZoneEastTrainerTipsText::
-	text "<TIPS>"
+	text "<ASTUCE>"
 
 	para "The remaining time"
 	line "declines only"

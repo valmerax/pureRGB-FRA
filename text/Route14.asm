@@ -1,6 +1,6 @@
 _Route14CooltrainerM1BattleText::
 	text "You need to use"
-	line "<TM>s to teach good"
+	line "<CT>s to teach good"
 	cont "moves to #MON!"
 	done
 
@@ -37,7 +37,7 @@ _Route14CooltrainerM2AfterBattleText::
 	done
 
 _Route14CooltrainerM3BattleText::
-	text "<TM>s are on sale"
+	text "<CT>s are on sale"
 	line "in CELADON!"
 	cont "But, only a few"
 	cont "people have HMs!"
@@ -239,7 +239,7 @@ _Route14SignText::
 	done
 
 _Route14Text12::
-	text "<TIPS>"
+	text "<ASTUCE>"
 	para "Press SELECT to"
 	line "use your BICYCLE."
 	para "Make sure to keep"

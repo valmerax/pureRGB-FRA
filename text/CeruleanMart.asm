@@ -20,12 +20,12 @@ _CeruleanMartCooltrainerFText::
 
 _TMKidGreet::
 	text "Yo! It's me!"
-	line "The <TM> Pirate!"
+	line "The <CT> Pirate!"
 	prompt
 
 _IndigoPlateauGymGuideSonShopStart::
 _TMKidQuick::
-	text "Want some <TM>s?"
+	text "Want some <CT>s?"
 	done
 
 _CeruleanMartTMKidFlavor::

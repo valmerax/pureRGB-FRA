@@ -18,7 +18,7 @@ _PewterMartSuperNerdText::
 
 _PewterMartTMKid::
 	text "Yo! There aren't"
-	line "any <TM>s here"
+	line "any <CT>s here"
 	cont "either! Why are"
 	cont "MARTs so lame?"
 
@@ -34,6 +34,6 @@ _PewterMartTMKid::
 
 	para "I'll need a cool"
 	line "name too! Let's"
-	cont "see<...>the <TM> Kid?"
+	cont "see<...>the <CT> Kid?"
 	cont "No<...>not that<...>"
 	done

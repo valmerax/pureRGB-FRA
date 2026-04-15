@@ -162,7 +162,7 @@ _Route6UndergroundPathSignText::
 	done
 
 _Route6TrainerTipsText::
-	text "<TIPS>"
+	text "<ASTUCE>"
 	para "In the PC, scroll"
 	line "to WITHDRAW, then"
 	cont "press SELECT."
