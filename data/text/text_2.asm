@@ -273,11 +273,11 @@ _SaffronCityPokecenterGuyText1::
 	line "CONSEIL des 4 ne"
 	cont "vient pas casser"
 	cont "les dents de la"
-	cont "TEAM ROCKET?"
+	cont "<TEAM><ROCKET>?"
 	done
 
 _SaffronCityPokecenterGuyText2::
-	text "La TEAM ROCKET"
+	text "La <TEAM><ROCKET>"
 	line "est partie! Alors"
 	cont "c'est la fête!"
 	cont "Youpi!"
@@ -633,11 +633,7 @@ _RedBedroomSNESText::
 	done
 
 _Route15UpstairsBinocularsText::
-	text "Vous regardez"
-	line "dans les"
-	cont "jumelles<...>"
-
-	para "Un grand et bel"
+	text "Un grand et bel"
 	line "oiseau vole vers"
 	cont "la mer."
 	done
@@ -916,7 +912,7 @@ _EnemyRanText::
 	text "Le @"
 	text_ram wEnemyMonNick
 	text_start
-	line "ennemi s'enfuit!"
+	line "<ennemi> s'enfuit!"
 	prompt
 
 _HurtByPoisonText::
@@ -939,7 +935,7 @@ _EnemyMonFaintedText::
 	text "Le @"
 	text_ram wEnemyMonNick
 	text_start
-	line "ennemi est K.O.!"
+	line "<ennemi> est K.O.!"
 	prompt
 
 _MoneyForWinningText::
@@ -1057,7 +1053,7 @@ _NoMovesLeftText::
 	done
 
 _MultiHitText::
-	text "L'ennemi est"
+	text "L'<ennemi> est"
 	line "touché @"
 	text_decimal wPlayerNumHits,1,1
 	text " fois!"

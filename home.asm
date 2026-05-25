@@ -14,7 +14,7 @@ INCLUDE "home/copy.asm"
 INCLUDE "home/array.asm"
 INCLUDE "home/math.asm"
 INCLUDE "home/copy_string.asm"
-PCCharText::      db "PC@"
+PCCharText::      db "<PC>@"
 
 
 SECTION "Home", ROM0

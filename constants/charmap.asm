@@ -4,8 +4,8 @@
 
 	charmap "<NULL>",    $00
 	DEF FIRST_TEXT_SHORCUT_ID EQU $3F
-	charmap "est",       $3F ; PureRGBnote: ADDED: single byte version of "est"
-	charmap "que",       $40 ; PureRGBnote: ADDED: single byte version of "que"
+	charmap "que",       $3F ; PureRGBnote: ADDED: single byte version of "que"
+	charmap "est",       $40 ; PureRGBnote: ADDED: single byte version of "est"
 	charmap "ent",       $41 ; PureRGBnote: ADDED: single byte version of "ent"
 	charmap "ion",       $42 ; PureRGBnote: ADDED: single byte version of "ion"
 	charmap "<ennemi>",  $43 ; PureRGBnote: ADDED: single byte version of "ennemi"
@@ -18,7 +18,7 @@
 	charmap "<PKMN>",    $4a ; "<PK><MN>"
 	charmap "<_CONT>",   $4b ; implements "<CONT>"
 	charmap "<SCROLL>",  $4c
-	charmap " de",       $4d ; PureRGBnote: ADDED: single byte version of " de"
+	charmap "de",        $4d ; PureRGBnote: ADDED: single byte version of "de"
 	charmap "<NEXT>",    $4e
 	charmap "<LINE>",    $4f
 	charmap "@",         $50 ; string terminator

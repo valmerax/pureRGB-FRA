@@ -1126,14 +1126,14 @@ LoadBallAnimPaletteWithInvertCheck:
 	jp LoadBallAnimPalette
 
 VisualizationTitle:
-	db "VISUALISEUR BALL@"
+	db "VISIONNEUR DE BALL@"
 
 VisualizationMenu:
 	db "A - Rejouer@"
 	db "B - Retour@"
 
 CustomBallText:
-	db "#BALL CUSTOM@"
+	db "# BALL CUSTOM@"
 
 CustomPokeballRename::
 	hlcoord 4, 1
@@ -1370,7 +1370,7 @@ CeruleanBallDesignerPhotoHintMenu::
 CeruleanBallDesignerPhotoText:
 	db "Photo @"
 CeruleanBallDesignerHintText:
-	db "ASTUCES@"
+	db "<ASTUCE>@"
 
 ; Each ref is expected to be 5 bytes long with a single text far and then text end and in the correct order
 ; Do not separate the below entries or change order

@@ -181,7 +181,7 @@ _SentToBoxText::
 	cont "transféré à la"
 	cont "BOITE @"
 	text_ram wStringBuffer
-	text " du PC!"
+	text " du <PC>!"
 	done
 
 _BoxIsFullText::

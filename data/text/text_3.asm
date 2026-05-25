@@ -76,7 +76,7 @@ _IsEvolvingText::
 	done
 
 _YoureAnExpertText::
-	text "Tu est un expert"
+	text "Tu es un expert"
 	line "avec @"
 	text_ram_namebuffer
 	text "!@"

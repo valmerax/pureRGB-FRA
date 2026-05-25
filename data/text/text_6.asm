@@ -35,14 +35,14 @@ _ItemUseBallText05::
 _ItemUseBallText07::
 	text_ram wBoxMonNicks
 	text " est"
-	line "transféré au PC"
+	line "transféré au <PC>"
 	cont "de LEO!"
 	prompt
 
 _ItemUseBallText08::
 	text_ram wBoxMonNicks
 	text " est"
-	line "transféré au PC"
+	line "transféré au <PC>"
 	cont "inconnu!"
 	prompt
 
@@ -237,7 +237,7 @@ _PPRestoredText::
 	prompt
 
 _BootedUpTMText::
-	text "CT enclenchée!"
+	text "<CT> enclenchée!"
 	prompt
 
 _BootedUpHMText::
@@ -305,7 +305,7 @@ _ItemUseFossilText::
 	line "agréable à"
 	cont "regarder!"
 	para "Peut-être le"
-	line "mettre dans le PC"
+	line "mettre dans le <PC>"
 	cont "en attendant de"
 	cont "lui trouver une"
 	cont "utilité."

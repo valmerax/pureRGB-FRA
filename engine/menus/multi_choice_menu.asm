@@ -475,8 +475,8 @@ ConversionMenu::
 
 SSAnneFoodMenu::
 	dw FourOptionMenu
-	db "Anguille grillée"
-	next "Steak de qualité"
+	db "Pâté d'anguilles"
+	next "Côtes de boeuf"
 	next "Salade de saumon"
 	next "Tarte aux cerises@"
 

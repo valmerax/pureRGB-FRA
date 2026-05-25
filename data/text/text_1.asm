@@ -68,13 +68,13 @@ _StrengthActive::
 _MartSignText::
 	text "Faites le plein"
 	line "d'objets!"
-	para "BOUTIQUE PKMN"
+	para "BOUTIQUE <PKMN>"
 	done
 
 _PokeCenterSignText::
 	text "Soignez vos"
 	line "#MON!"
-	para "CENTRE PKMN"
+	para "CENTRE <PKMN>"
 	done
 
 _FoundItemText::

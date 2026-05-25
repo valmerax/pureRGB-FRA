@@ -637,7 +637,7 @@ _DittoDexEntry::
 	next "copier le code"
 	next "génétique d'un"
 
-	bage "ennemi pour se"
+	bage "<ennemi> pour se"
 	next "transformer en"
 	next "son double."
 	dex
@@ -1368,7 +1368,7 @@ _AerodactylDexEntry::
 	next "préhistorique qui"
 	next "attaque son"
 
-	bage "ennemi à la gorge"
+	bage "<ennemi> à la gorge"
 	next "avec ses crocs"
 	next "acérés."
 	dex

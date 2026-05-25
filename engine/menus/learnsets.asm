@@ -335,7 +335,7 @@ LearnsetText:
 	db "Capacités@"
 
 TMPlusHMText:
-	db "CT+CS@"
+	db "<CT>+CS@"
 
 TMLearnsetListPrint:
 	push hl

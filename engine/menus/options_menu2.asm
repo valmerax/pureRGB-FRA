@@ -86,7 +86,7 @@ DrawOptions2Menu:
 Options2Text:
 	db   "OPTIONS 2"
 	next " COULEUR: OG SGB J"
-	next " COLORIS PKMN ALT:"
+	next " COLORIS <PKMN> ALT:"
 	next "    OFF    ON"
 	next " MUSIQUE:   OG OG+"
 	next " PAN AUDIO: OFF ON"

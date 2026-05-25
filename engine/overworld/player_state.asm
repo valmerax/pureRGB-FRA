@@ -278,7 +278,7 @@ SafariBallText:
 	db "BALL×× @"
 
 RangersLeftText:
-	db "RANGERS@"
+	db "RANGERs@"
 
 RangersLeftText2:
 	db "Reste: @"

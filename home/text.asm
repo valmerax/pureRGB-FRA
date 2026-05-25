@@ -105,10 +105,10 @@ NextChar::
 ; because it greatly reduces text data size if certain commonly used phrases are parameterized.
 ; must match the order of the charmap shortcuts and no gaps are allowed
 TextShortcutCommandJumpTable:
-	dw OrChar
-	dw IngChar
-	dw TheChar
-	dw YouChar
+	dw QueChar
+	dw EstChar
+	dw EntChar
+	dw IonChar
 	dw OpponentChar
 	dw UserChar
 	dw PokemonChar
@@ -119,7 +119,7 @@ TextShortcutCommandJumpTable:
 	dw PlacePKMN
 	dw _ContText
 	dw _ContTextNoPause
-	dw IsChar
+	dw DeChar
 	dw NextCharCmd
 	dw LineChar
 	dw DoRet ; string terminator
@@ -219,26 +219,26 @@ TrainerTipsChar:: print_name TrainerTipsText
 PokemonChar:: print_name PlaceMonText
 OpponentChar:: print_name OpponentText
 UserChar:: print_name UserText
-TheChar:: print_name TheText
-YouChar:: print_name YouText
-IngChar:: print_name IngText
-OrChar:: print_name OrText
-IsChar:: print_name IsText
+QueChar:: print_name QueText
+EstChar:: print_name EstText
+EntChar:: print_name EntText
+IonChar:: print_name IonText
+DeChar:: print_name DeText
 
 
 TrainerCharText:: db "DRES.@"
-TMCharText::      db "<CT>@"
-TeamCharText::    db "<TEAM> @"
-RocketCharText::  db "<ROCKET>@"
-EnemyText::       db " <ennemi>@"
+TMCharText::      db "CT@"
+TeamCharText::    db "TEAM @"
+RocketCharText::  db "ROCKET@"
+EnemyText::       db " ennemi@"
 ThreeDotsText::   db "...@"
-TrainerTipsText:: db "<ASTUCE> <TRAINER>@"
-OpponentText::    db "<ennemi>@"
-TheText::         db "t","he@" ; have to separate with a comma to avoid it entering the same macro again
-YouText::         db "y","ou@" ; have to separate with a comma to avoid it entering the same macro again
-IngText::         db "i","ng@" ; have to separate with a comma to avoid it entering the same macro again
-OrText::          db "o","r@" ; have to separate with a comma to avoid it entering the same macro again
-IsText::          db "i","s@" ; have to separate with a comma to avoid it entering the same macro again
+TrainerTipsText:: db "ASTUCE@"
+OpponentText::    db "adversaire@"
+QueText::         db "q","ue@" ; have to separate with a comma to avoid it entering the same macro again
+EstText::         db "e","st@" ; have to separate with a comma to avoid it entering the same macro again
+EntText::         db "e","nt@" ; have to separate with a comma to avoid it entering the same macro again
+IonText::         db "i","on@" ; have to separate with a comma to avoid it entering the same macro again
+DeText::          db "d","e@" ; have to separate with a comma to avoid it entering the same macro again
 
 ;TextIDErrorText:: ; "[hTextID] ERROR."
 ;	text_far _TextIDErrorText

@@ -122,8 +122,8 @@ _GuillotineDexEntry::
 	; fall through
 _GenericOHKOText::
 	bage "Met toujours"
-	next "l'<ennemi> KO, mais"
-	next "rate souvent."
+	next "l'<ennemi> K.O.,"
+	next "mais rate souvent."
 
 	bage "Ne marche pas sur"
 	next "les ennemis ayant"
@@ -669,7 +669,7 @@ _HyperBeamDexEntry::
 	next "le tour suivant."
 
 	bage "Si l'<ennemi> est"
-	next "KO, aucun repos"
+	next "K.O., aucun repos"
 	next "n'est nécessaire"
 	dex
 
@@ -1345,7 +1345,7 @@ _GenericExplodeDexEntry::
 
 	bage "puissance montera"
 	next "à 500! Mais mettra"
-	next "KO le <lanceur>"
+	next "K.O. le <lanceur>"
 	dex
 
 _EggBombDexEntry::

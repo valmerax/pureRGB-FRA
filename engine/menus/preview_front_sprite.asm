@@ -108,7 +108,7 @@ ShowWhichSpriteList:
 ; based on what character is +2 x-index from the cursor, we choose what text will display when viewing the sprite
 SpriteTypeMapping:
 	dbw "B", RedBlueText
-	dbw "G", RedGreenText
+	dbw "V", RedGreenText
 	dbw "W", SpaceworldText
 	db -1 
 
