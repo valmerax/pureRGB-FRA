@@ -1,226 +1,260 @@
 _VermilionFitnessClubClerkText::
-	text "This is VERMILION"
-	line "FITNESS CLUB!"
-	para "Let's get that"
-	line "butt moving!"
+	text "Bienvenue au"
+	line "CLUB FITNESS DE"
+	cont "CARMIN SUR MER!"
+	para "Ici, on se bouge!"
 	prompt
 
 _VermilionFitnessClubClerkIntroText::
-	text "Caught a new"
-	line "#MON?"
-	para "Does it need some"
-	line "light exercise?"
-	para "This is the place!"
-	para "We've got special"
-	line "training weights"
-	cont "for #MON under"
-	cont "level 20!"
-	para "They'll gain"
-	line "triple EXP!"
+	text "Tu viens d'attraper"
+	line "un nouveau"
+	cont "#MON?"
+	para "Il a besoin d'un"
+	line "peu d'exercice?"
+	para "Tu es au bon"
+	line "endroit!"
+	para "Nous avons des"
+	line "des haltères"
+	cont "spéciales pour"
+	cont "l'entraînement"
+	cont "des #MON de"
+	cont "niveau inférieur"
+	cont "à 20!"
+	para "Ils gagneront"
+	line "trois fois plus"
+	cont "d'EXP!"
 	prompt
 
 _VermilionFitnessClubClerkBattleText::
-	text "Are your #MON"
-	line "ready to sweat?"
+	text "Tes #MON"
+	line "sont-ils prêts"
+	cont "à transpirer?"
 	done
 
 _VermilionFitnessClubClerkBattleStartText::
-	text "All set!"
-	line "Get in there!"
+	text "C'est parti!"
+	line "On y va!"
 	done
 
 _VermilionFitnessClubSign::
-	text "VERMILION FITNESS"
-	line "CLUB"
-	para "We specialize in"
-	line "light exercise"
-	cont "for your #MON!"
-	para "Battle pokemon up"
-	line "to level 20 with"
-	cont "triple EXP gain!"
-	para "#MON over level"
-	line "20 get zero EXP."
+	text "CLUB FITNESS DE"
+	line "CARMIN SUR MER"
+	para "Nous sommes"
+	line "spécialisés dans"
+	cont "les entraînements"
+	cont "légers des"
+	cont "#MON!"
+	para "Faites combattre"
+	line "vos #MON"
+	cont "jusqu'au niveau"
+	cont "20 en gagnant le"
+	cont "triple d'EXP!"
+	para "Les #MON de"
+	line "niveau supérieur"
+	cont "à 20 ne gagnent"
+	cont "pas d'EXP."
 	done
 
 _FitnessClubClerkSelectLevelText::
-	text "Choose <ennemi>'s"
-	line "#MON level."
+	text "Choisissez le"
+	line "niveau des"
+	cont "#MON de votre"
+	cont "adversaire."
 	done
 
 _FitnessClubClerkSelectMonAmountText::
-	text "How many #MON"
-	line "should they have?"
+	text "Combien de #MON"
+	line "doit-il avoir?"
 	done
 
 _FitnessClubLevel::
-	text "Please have a"
-	line "#MON under"
-	cont "level @"
+	text "Veuillez avoir un"
+	line "#MON de niveau"
+	cont "inférieur à @"
 	text_decimal wLevelLimit, 1, 2
-	text " at your"
-	cont "team's start."
+	text " au"
+	cont "début de votre"
+	cont "équipe."
 	done
 
 _FitnessClubBattleAgain::
-	text "Battle again? We'll"
-	line "heal your #MON."
+	text "Un autre combat?"
+	line "Vos #MON vont"
+	cont "être soignés."
 	done
 
 _FitnessClubChangeSettings::
-	text "Same settings?"
+	text "Mêmes paramètres?"
 	done
 
 _FitnessClubAllLevelLimit::
-	text "Your #MON are"
-	line "all above lvl @"
+	text "Vos #MON ont"
+	line "tous dépassé le"
+	cont "niveau "
 	text_decimal wLevelLimit, 1, 2
 	text "!<PARA>@"
 	text_end
 
 _FitnessClubDone::
-	text "See ya next time."
+	text "A la prochaine."
 	done
 
 _VermilionFitnessClubMuscular1::
 	text "ROARGH!"
-	para "Fifteen, sixteen!"
-	para "Come on kid, add"
-	line "more weights!"
+	para "Quinze, seize!"
+	para "Allez petit,"
+	line "ajoute des poids!"
 	done
 
 _VermilionFitnessClubMuscular2::
-	text "The babes love"
-	line "this place!"
-	para "I think the one"
-	line "over there is"
-	cont "staring!"
+	text "Les filles adorent"
+	line "cet endroit!"
+	para "Je crois que"
+	line "celle-là là-bas"
+	cont "me mate!"
 	done
 
 _VermilionFitnessClubGirl2::
-	text "Here to work out?"
-	para "Smooth move!"
-	para "Girls love guys"
-	line "with muscles!"
+	text "Tu es là pour"
+	line "t'entraîner?"
+	para "Bien vu!"
+	para "Les filles adorent"
+	line "les mecs musclés!"
 	done
 
 _VermilionFitnessClubGirl1::
-	text "Cycling is great"
-	line "for toning your"
-	cont "legs!"
-	para "Hop on an"
-	line "exercise bike!"
-	para "Get that heart"
-	line "pumping!"
-	para "Ba-dump!"
-	line "Ba-dump!"
+	text "Le vélo, c'est top"
+	line "pour tonifier les"
+	cont "jambes!"
+	para "Enfourche un vélo"
+	line "d'exercise!"
+	para "Fais battre ton"
+	line "coeur à fond!"
+	para "Boum!"
+	line "Boum!"
 	done
 
 _VermilionFitnessClubFitnessGirlOpponentIntro1::
-	text "Hey! Don't stare!"
-	para "Give me a high"
-	line "energy battle!"
+	text "Hé! Arrête de me"
+	line "fixer!"
+	para "Donne-moi un"
+	line "combat intense!"
 	done
 
 _VermilionFitnessClubFitnessGirlOpponentIntro2::
-	text "Fight on!"
-	line "Fight on!"
-	para "Gooooo #MON!"
+	text "Combattez!"
+	line "Combattez!"
+	para "Allez mes #MON!"
 	done
 
 _VermilionFitnessClubFitnessGirlOpponentIntro3::
-	text "I can do the"
-	line "splits! See?"
-	para "Impressed?"
+	text "Je peux faire le"
+	line "grand écart!"
+	para "Tu vois?"
+	line "Impressionné?"
 	done
 
 _VermilionFitnessClubFitnessGirlOpponentIntro4::
-	text "I'm a cheerleader!"
-	line "Total girl power!"
+	text "Je suis pom-pom"
+	line "girl!"
+	para "Vive les filles!"
 	done
 
 _VermilionFitnessClubSprinterOpponentIntro1::
-	text "I just got new"
-	line "running spikes!"
+	text "Je viens de"
+	line "recevoir de nouv-"
+	cont "elles chaussures"
+	cont "de course!"
 	done
 
 _VermilionFitnessClubSprinterOpponentIntro2::
-	text "SPEED and POWER"
-	line "solve many things!"
+	text "La VITESSE et la"
+	line "PUISSANCE règlent"
+	cont "bien des soucis!"
 	done
 
 _VermilionFitnessClubSprinterOpponentIntro3::
-	text "A workout, then"
-	line "a battle! Perfect!"
+	text "Une séance de"
+	line "sport puis un"
+	cont "combat! Parfait!"
 	done
 
 _VermilionFitnessClubSprinterOpponentIntro4::
-	text "Let me just zoom"
-	line "into this battle!"
+	text "Laisse moi me"
+	line "concentrer sur"
+	cont "cette bataille!"
 	done
 
 _VermilionFitnessClubSailorOpponentIntro1::
-	text "Ya little"
-	line "landlubber!"
-	para "Have at you!"
+	text "Espèce de marin"
+	line "d’eau douce!"
+	para "A toi de jouer!"
 	done
 
 _VermilionFitnessClubSailorOpponentIntro2::
-	text "Buffin' up in the"
-	line "salty sea air!"
-	para "Nothin' better!"
+	text "Se muscler tout en"
+	line "respirant l'air"
+	cont "marin!"
+	para "Y a rien d'mieux!"
 	done
 
 _VermilionFitnessClubSailorOpponentIntro3::
-	text "We's gots shrimps"
-	line "in here now?!"
-	para "Who'da thunk it!"
+	text "On a des crevettes"
+	line "ici maintenant?!"
+	para "Qui l'eût cru!"
 	done
 
 _VermilionFitnessClubSailorOpponentIntro4::
-	text "Drop and give me"
-	line "50!"
+	text "A terre et fais-"
+	line "moi 50 pompes!"
 	done
 
 _VermilionFitnessClubBeautyOpponentIntro1::
-	text "This'll be my"
-	line "cardio for today!"
+	text "Ca fera mon cardio"
+	line "pour aujourd’hui!"
 	done
 
 _VermilionFitnessClubBeautyOpponentIntro2::
-	text "Huh? I wanted to"
-	line "fight a hunky guy!"
+	text "Hein? Je voulais"
+	line "me battre avec un"
+	cont "beau gosse!"
 	done
 
 _VermilionFitnessClubBeautyOpponentIntro3::
-	text "I'm off to suntan"
-	line "after this!"
+	text "Après ça, je vais"
+	line "aller bronzer!"
 	done
 
 _VermilionFitnessClubBeautyOpponentIntro4::
-	text "This is my #MON"
-	line "battling dress!"
-	para "How's it look?"
+	text "C'est ma tenue de"
+	line "combat #MON!"
+	para "Qu'en pense-tu?"
 	done
 
 _VermilionFitnessClubExerciseBikes::
-	text "Exercise bikes!"
+	text "Des vélos"
+	line "d'exercice!"
 	done
 
 _VermilionFitnessClubDumbbells::
-	text "Lots of dumbbells"
-	line "and weights!"
+	text "Il y a plein"
+	line "d'haltères et de"
+	cont "poids!"
 	done
 
 _VermilionFitnessClubJanitorText::
-	text "Hello! The FITNESS"
-	line "CLUB is closed!"
-	para "Everyone is off"
-	line "partying on the"
-	cont "S.S.ANNE!"
-	para "Oh, me? Haha,"
-	line "I'm the janitor!"
-	para "Once the party's"
-	line "done, we'll be"
-	cont "open again!"
-	para "Come back then!"
+	text "Bonjour!"
+	para "Le CLUB FITNESS"
+	line "est fermé!"
+	para "Tout le monde fait"
+	line "la fête sur"
+	cont "L'OCEANE!"
+	para "Oh, moi?"
+	para "Haha, je suis le"
+	line "concierge!"
+	para "Quand la fête sera"
+	line "finie, on ouvrira"
+	cont "à nouveau!"
+	para "Reviens à ce"
+	line "moment-là!"
 	done

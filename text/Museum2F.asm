@@ -1,106 +1,112 @@
 _Museum2FYoungsterText::
-	text "MOON STONE?"
+	text "PIERRE LUNE?"
 
-	para "What's so special"
-	line "about it?"
+	para "Ouais? Et alors?"
 	done
 
 _Museum2FGrampsText::
-	text "July 20, 1969!"
+	text "20 Juillet 1969!"
 
-	para "The 1st lunar"
-	line "landing!"
+	para "L'homme a marché"
+	line "sur la lune!"
 
-	para "I bought a color"
-	line "TV to watch it!"
+	para "J'ai acheté une"
+	line "télé couleur!"
 	done
 
 _Museum2FScientistText::
-	text "We have a space"
-	line "exhibit now."
+	text "Nous faisons une"
+	line "exposition sur"
+	cont "l'espace."
 	done
 
 _Museum2FBrunetteGirlText::
-	text "I want a PIKACHU!"
-	line "It's so cute!"
+	text "Je veux un"
+	line "PIKACHU!"
 
-	para "I asked my Daddy"
-	line "to catch me one!"
+	para "Pôpa va m'en"
+	line "trouver un!"
 	done
 
 _Museum2FHikerText::
-	text "Yeah, a PIKACHU"
-	line "soon, I promise!"
+	text "Oui, oui, tu vas"
+	line "l'avoir ton"
+	cont "PIKACHU<...>"
+	cont "C'est ça."
 	done
 
 _Museum2FSpaceShuttleSignText::
-	text "SPACE SHUTTLE"
+	text "NAVETTE SPATIALE"
 	line "COLUMBIA"
 	done
 
 _Museum2FMoonStoneSignText::
-	text "Meteorite that"
-	line "fell on MT.MOON."
-	cont "(MOON STONE?)"
+	text "Des météores sont"
+	line "tombés sur le"
+	cont "MONT SELENITE."
+	cont "(PIERRE LUNE?)"
 	done
 
 _Museum2FWalletKid1::
-	text "What's this?"
-	line "A wallet? Huh!"
-	cont "Whoever dropped"
-	cont "it was loaded!"
+	text "C'est quoi ça?"
+	line "Un portefeuille?"
+	cont "Hein! Celui qui"
+	cont "l'a perdu était"
+	cont "blindé!"
 
-	para "I could buy a"
-	line "MAGIKARP with"
-	cont "this much!@"
+	para "Je pourrais"
+	line "m'acheter un"
+	cont "MAGICARPE avec ça!@"
 	text_end
 
 _Museum2FWalletKidBattle::
-	text "Give it back?"
-	line "Yeah right!"
+	text "Le rendre?"
+	line "Tu parles!"
 	
-	para "How do I know"
-	line "it's your wallet?"
+	para "Comment je sais"
+	line "que c'est ton"
+	cont "portefeuille?"
 
-	para "Tell you what,"
-	line "if you beat me"
-	cont "in a battle,"
-	cont "it's yours."
+	para "Ecoute, si tu me"
+	line "bats au combat,"
+	cont "il est à toi."
 	done
 
 _Museum2FWalletKidBattleAfter::
-	text "Not"
+	text "Pas"
 	line "cool!"
 	prompt
 
 _Museum2FWalletKidWalletGive::
-	text "Alright alright!"
-	line "Just take it!"
+	text "D'accord, d'accord!"
+	line "Prends-le!"
 
-	para "Wish I was old"
-	line "enough to get"
-	cont "one of those"
-	cont "starter #MON!@"
+	para "J'aimerais être"
+	line "assez vieux pour"
+	cont "avoir un de ces"
+	cont "#MON de départ!@"
 	text_end
 
 _GenericReceivedTheText::
 _Museum2FReceivedLostWalletText::
-	text "<PLAYER> received"
-	line "the @"
+	text "<PLAYER> reçoit:"
+	line "@"
 	text_ram_stringbuffer
 	text "!"
 	done
 
 _Museum2FWalletKidEnd::
-	text "My mom wouldn't"
-	line "have let me keep"
-	cont "someone else's"
-	cont "wallet anyway."
+	text "De toute façon, ma"
+	line "mère ne m'aurait"
+	cont "pas laissé garder"
+	cont "le portefeuille"
+	cont "de quelqu'un"
+	cont "d'autre."
 
-	para "I had a great"
-	line "battle though."
+	para "Mais je me suis"
+	line "bien battu."
 
-	para "So I consider"
-	line "this adventure"
-	cont "a win!"
+	para "Je considère donc"
+	line "cette aventure"
+	cont "comme un succès!"
 	done

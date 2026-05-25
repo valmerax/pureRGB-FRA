@@ -1,35 +1,39 @@
 _CeruleanOldRodHouseImTheFishingGuruText::
-	text "I'm the FISHING"
-	line "GURU!@"
+	text "Je suis le GOUROU"
+	line "DE LA PECHE!@"
 	text_end
 
 _CeruleanOldRodHouseFishingIsAWayOfLifeText::
 	text_start
 
-	para "Fishing is a way"
-	line "of life!"
+	para "La pêche, c'est un"
+	line "art de vivre!"
 
-	para "From the seas to"
-	line "rivers, go out"
-	cont "and land the big"
-	cont "one, young one!"
+	para "De la mer aux"
+	line "rivières, sors et"
+	cont "attrape le gros"
+	cont "poisson, petit!"
 	done
 
 _CeruleanOldRodHouseOldRodInfo::
-	text "<PARA>My trusty OLD ROD"
-	line "is perfect for"
-	cont "hooking MAGIKARP"
-	cont "and GOLDEEN!"
+	text "<PARA>Ma fidèle"
+	line "VIEILLE CANNE est"
+	cont "parfaite pour"
+	cont "attraper des"
+	cont "MAGICARPE et des"
+	cont "POISSIRENE!"
 	done
 
 _CeruleanOldRodHouseFoodText::
-	text "Wow! Quite a"
-	line "fancy fishy dish!"
+	text "Woah! Un plat de"
+	line "poisson vraiment"
+	cont "raffiné!"
 	prompt
 
 _CeruleanOldRodHouseFoodText2::
-	text "What can I say!"
-	para "I love cooking"
-	line "fish as much as I"
-	cont "do catching them!"
+	text "Que dire de plus!"
+	para "J’aime autant"
+	line "cuisiner le"
+	cont "poisson que le"
+	cont "pêcher!"
 	done

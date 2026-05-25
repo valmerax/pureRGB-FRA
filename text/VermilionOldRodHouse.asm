@@ -1,43 +1,44 @@
 _VermilionOldRodHouseFishingGuruDoYouLikeToFishText::
-	text "I'm the FISHING"
-	line "GURU's older"
-	cont "brother!@"
+	text "Je suis le<...>"
+	line "grand frère"
+	cont "MAITRE PECHEUR!"
 	text_end
 
 _VermilionOldRodHouseISimplyLoveFishing::
-	text "<PARA>I simply Looove"
-	line "fishing!"
+	text "<PARA>La pêche<...>moi<...>"
+	line "J'adore ça!"
 
-	para "Do you like to"
-	line "fish?"
+	para "Et toi, p'tite"
+	line "tête?"
 	done
 
 _VermilionOldRodHouseFishingGuruTakeThisText::
-	text "Grand! I like"
-	line "your style!"
+	text "Terrib'! Toi,"
+	line "j't'aime bien!"
 
-	para "Take this and"
-	line "fish, young one!<PARA>@"
+	para "Prends ça et<...>"
+	line "Pêche! Pêche!<PARA>"
 	text_end
 
 _VermilionOldRodHouseFishingGuruHowAreTheFishBitingText::
-	text "Hello there,"
+	text "B'jour à toi,"
 	line "<PLAYER>!"
 
-	para "How are the fish"
-	line "biting?@"
+	para "Ca mord?"
+	line "Hein? Hein?"
 	text_end
 
 _VermilionOldRodHouseGoodRodInfo::
-	text "<PARA>That GOOD ROD I"
-	line "gave you is a"
-	cont "reliable piece!"
+	text "<PARA>Cette SUPER CANNE I"
+	line "que je t'ai donnée"
+	cont "est très fiable!"
 
-	para "Try using it"
-	line "in lakes or"
-	cont "the ocean."
+	para "Essaie de l'utili-"
+	line "ser dans les lacs"
+	cont "ou en mer."
 
-	para "It can hook lots"
-	line "of different"
-	cont "#MON!"
+	para "Elle permet"
+	line "d'attraper plein"
+	cont "de #MON"
+	cont "différents!"
 	done

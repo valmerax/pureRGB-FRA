@@ -1,69 +1,66 @@
 _UndergroundPathNorthSouthBattleText1::
-	text "I've got a"
-	line "business trip"
-	cont "in CERULEAN CITY!"
+	text "J'ai un voyage"
+	line "d'affaires à"
+	cont "AZURIA!"
 	done
 
 _UndergroundPathNorthSouthEndBattleText1::
-	text "Not"
-	line "bad!"
+	text "Pas mal!"
 	prompt
 
 _UndergroundPathNorthSouthAfterBattleText1::
-	text "I've been taking"
-	line "this path between"
-	cont "CERULEAN CITY and"
-	cont "VERMILION CITY"
-	cont "for years."
-	para "Walking is great"
-	line "exercise!"
+	text "Je prends ce"
+	line "chemin entre"
+	cont "AZURIA et CARMIN"
+	cont "SUR MER depuis"
+	cont "des années."
+	para "La marche est un"
+	line "super exercice!"
 	done
 
 _UndergroundPathNorthSouthBattleText2::
-	text "Underground fight"
-	line "club!"
-	para "Challenge start!"
+	text "Club de combat"
+	line "clandestin!"
+	para "Défi lancé!"
 	done
 
 _UndergroundPathNorthSouthEndBattleText2::
-	text "Knock-"
-	line "out!"
+	text "K.O.!"
 	prompt
  
 _UndergroundPathNorthSouthAfterBattleText2::
-	text "Battling in low-"
-	line "light conditions"
-	cont "is one of the"
-	cont "coolest things!"
-	para "Don't you agree?"
+	text "Combattre dans la"
+	line "pénombre, c'est"
+	cont "vraiment génial!"
+	para "Tu ne trouves pas?"
 	done
 
 _UndergroundPathNorthSouthBattleText3::
-	text "Underground fight"
-	line "club!"
-	para "Invitational!"
-	para "Let's go!"
+	text "Club de combat"
+	line "clandestin!"
+	para "Sur invitation!"
+	para "C'est parti!"
 	done
 
 _UndergroundPathNorthSouthEndBattleText3::
-	text "You're"
-	line "good!"
+	text "Tu es doué!"
 	prompt
 
 _UndergroundPathNorthSouthAfterBattleText3::
-	text "We need strong"
-	line "trainers to join"
-	cont "our club."
-	para "Are you in or are"
-	line "you out?"
+	text "Nous recherchons"
+	line "des dresseurs"
+	cont "balères pour"
+	cont "rejoindre notre"
+	cont "club."
+	para "T'es partant"
+	line "ou pas?"
 	done
 
 _LearnsetKrabbyKid::
-	text "My @"
+	text "Mon @"
 	text_ram_namebuffer
-	text " always"
-	line "likes a good"
-	cont "scrap!"
-	para "What a great"
-	line "little guy!"
+	text " adore"
+	line "se battre!"
+	para "Quel super petit"
+	line "gars!"
 	prompt

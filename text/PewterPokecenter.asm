@@ -1,16 +1,16 @@
 _PewterPokecenterGentlemanText::
-	text "What!?"
+	text "Quoi!?"
 
-	para "<TEAM><ROCKET> is"
-	line "at MT.MOON? Huh?"
-	cont "I'm on the phone!"
+	para "La <TEAM><ROCKET>"
+	line "a investi le"
+	cont "MONT SELENITE!"
 
-	para "Scram!"
+	para "Damnation!"
 	done
 
 _PewterPokecenterJigglypuffText::
-	text "JIGGLYPUFF: Puu"
-	line "pupuu!"
+	text "RONDOUDOU: Dou!"
+	line "Doudouuuu!"
 	done
 
 _PewterPokecenterBenchGuyLearnsetText1::
@@ -18,16 +18,17 @@ _PewterPokecenterBenchGuyLearnsetText1::
 	done
 
 _PewterPokecenterBenchGuyLearnsetText2::
-	text "You have a"
+	text "Tu as ton propre"
 	line "@"
 	text_ram_namebuffer
-	text " of"
-	cont "your own?"
-	para "This one keeps"
-	line "SINGing me to"
-	cont "sleep."
-	para "I've been having"
-	line "weird dreams."
-	para "Maybe you can make"
-	line "sense of them."
+	text "?"
+	para "Celui-là n'arrête"
+	line "pas de me chanter"
+	cont "une berceuse pour"
+	cont "m'endormir."
+	para "Je fais des rêves"
+	line "bizarres."
+	para "Tu pourrais peut-"
+	line "être m'aider à les"
+	cont "comprendre."
 	prompt

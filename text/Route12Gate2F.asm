@@ -1,49 +1,53 @@
 _Route12Gate2FBrunetteGirlYouCanHaveThisText::
-	text "My #MON's"
-	line "ashes are stored"
-	cont "in #MON TOWER."
+	text "Les cendres de"
+	line "mes #MON"
+	cont "sont dans la"
+	cont "TOUR #MON."
 
-	para "You can have this"
-	line "<CT>. I don't need"
-	cont "it any more<...>"
+	para "Tiens! Prends"
+	line "cette <CT>. Je n'en"
+	cont "ai plus besoin<...>"
 	prompt
 
 _Route12Gate2FBrunetteGirlTM39ExplanationText::
-	text "<CT>39 is"
-	line "FILTHY SLAM."
+	text "La <CT>39 s'appelle"
+	line "METEORES."
 
-	para "It's a strong"
-	line "POISON type move."
-	para "Use it in battles"
-	line "you can't afford"
-	cont "to lose."
+	para "Cette attaque est"
+	line "très précise."
+	cont "Utilise-la pour"
+	cont "ne pas rater ton"
+	cont "coup!"
 	done
 
 _ArbokLearnset::
-	text "What #MON"
-	line "did I have?"
-	para "Ah<...>my lovely"
+	text "Quels #MON"
+	line "j'avais?"
+	para "Ah<...>mon adorable"
 	line "@"
 	text_ram_namebuffer
 	text "<...>"
-	para "I'll miss you"
-	line "QUEENIE<...>"
+	para "Tu vas me manquer,"
+	line "NAGINI<...>"
 	prompt
 
 _Route12Gate2FBrunetteGirlTM39NoRoomText::
-	text "You don't have"
-	line "room for this."
+	text "Ton inventaire"
+	line "est plein!"
 	done
 
 _GenericLookedIntoTheBinocularsText::
-	text "Looked into the" 
-	line "binoculars<...><PARA>@"
+	text "Vous regardez"
+	line "dans les"
+	cont "jumelles<...><PARA>@"
 	text_end
 
 _Route12Gate2FLeftBinocularsText::
-	text "A man fishing!"
+	text "Vous voyez un"
+	line "pêcheur!"
 	done
 
 _Route12Gate2FRightBinocularsText::
-	text "It's #MON TOWER!"
+	text "Vous voyez la"
+	line "TOUR #MON!"
 	done

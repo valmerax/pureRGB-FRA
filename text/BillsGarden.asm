@@ -87,7 +87,7 @@ _BillsGardenErikaText3::
 	para "Il semblerait que"
 	line "tu doives"
 	cont "t'abstenir,"
-	cont "<JOUEUR>!"
+	cont "<PLAYER>!"
 	done
 
 _BillsGardenSabrinaText::
@@ -151,7 +151,7 @@ _BillsGardenBlueDaisyOverheardText::
 	done
 
 _BillsGardenBlueText::
-	text "<RIVAL>: Waouh."
+	text "<RIVAL>: Woah."
 	para "Justement celui"
 	line "que je ne voulais"
 	cont "pas voir."
@@ -271,7 +271,7 @@ _BillsGardenBikeShopOwnerMistyOverheardText::
 	cont "ECUME."
 	para "VENDEUR DE VELOS:"
 	line "Impressionnant!"
-	para "Ça me rappelle"
+	para "Ca me rappelle"
 	line "quand je roule"
 	cont "sur la PISTE"
 	cont "CYCLABLE pour"
@@ -283,7 +283,7 @@ _BillsGardenBikeShopOwnerMistyOverheardText::
 
 _BillsGardenBikeShopOwnerText::
 	text "VENDEUR DE VELOS:" 
-	line "Salut! Ça fait un"
+	line "Salut! Ca fait un"
 	cont "bail!"
 	para "Comment va la"
 	line "BICYCLETTE?"
@@ -334,7 +334,7 @@ _BillsGardenAgathaOakOverheardText::
 	para "Peut-être que tu"
 	line "n'as pas perdu la"
 	cont "main, après tout!"
-	para "PROF.CHEN: Je"
+	para "CHEN: Je"
 	line "m'entraîne encore"
 	cont "un peu quand j'ai"
 	cont "le temps."
@@ -347,7 +347,7 @@ _BillsGardenAgathaOakOverheardText::
 	line "le nez de tes"
 	cont "recherches un peu"
 	cont "plus souvent!"
-	para "PROF.CHEN: Je ne"
+	para "CHEN: Je ne"
 	line "vais pas prendre"
 	cont "ma retraite, si"
 	cont "c'est ce que tu"
@@ -382,7 +382,7 @@ _BillsGardenAgathaText::
 	done
 
 _BillsGardenOakText::
-	text "PROF.CHEN: Salut"
+	text "CHEN: Salut"
 	line "<PLAYER>!"
 	para "Non non, AGATHA va"
 	line "piquer une crise"
@@ -391,11 +391,11 @@ _BillsGardenOakText::
 	prompt
 
 _BillsGardenOakText2::
-	text "AGATHA: Épargne-"
+	text "AGATHA: Epargne-"
 	line "moi tes blagues,"
 	cont "SAMUEL."
-	para "PROF.CHEN: AGATHA"
-	line "et moi étions en"
+	para "CHEN: AGATHA et"
+	line "moi étions en"
 	cont "quelque sorte"
 	cont "rivaux, comme toi"
 	cont "et <RIVAL>."
@@ -416,8 +416,8 @@ _BillsGardenOakText2::
 	prompt
 
 _BillsGardenOakText3::
-	text "PROF.CHEN: Oui"
-	line "oui. Très drôle."
+	text "CHEN: Oui oui."
+	line "Très drôle."
 	para "Pourraient-ils te"
 	line "donner quelques"
 	cont "mouchoirs?"
@@ -545,7 +545,8 @@ _BillsGardenGiovanniMewtwoText::
 	cont "MEW."
 	para "Nous avons mené"
 	line "nos expériences"
-	cont "sous le MANOIR de"
+	cont "sous le vieux"
+	cont "manoir de la"
 	cont "CRAMOIS'ILE."
 	para "Ce labo doit être"
 	line "à l'abandon"
@@ -556,7 +557,7 @@ _BillsGardenGiovanniMewtwoText::
 	line "une, jette un"
 	cont "oeil dans les"
 	cont "profondeurs du"
-	cont "MANOIR."
+	cont "vieux manoir."
 	done
 
 _BillsGardenGiovanniArmoredMewtwoText::

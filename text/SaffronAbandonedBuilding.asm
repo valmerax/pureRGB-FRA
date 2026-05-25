@@ -1,103 +1,107 @@
 _SaffronCityBusinessSpaceForLease::
-	text "BUSINESS SPACE"
-	line "FOR LEASE"
+	text "ESPACE COMMERCIAL"
+	line "A LOUER"
 	done
 
 _SaffronAbandonedBuildingRocket1::
-	text "Password?"
+	text "Mot de passe?"
 	prompt
 
 _SaffronAbandonedBuildingRocket1Seriously::
-	text "Seriously?"
-	para "Why would it be"
-	line "so easy?!"
+	text "Sérieusement?"
+	para "Pourquoi ça serait"
+	line "si facile?!"
 	prompt
 
 _SaffronAbandonedBuildingRocket1Brocket::
-	text "What does that"
-	line "even mean?!"
+	text "Mais ça veut dire"
+	line "quoi, ça?!"
 	prompt
 
 _SaffronAbandonedBuildingRocket1Sprocket::
-	text "Correct!"
-	para "Get in here!"
+	text "Exact!"
+	para "Viens par ici!"
 	done
 
 _SaffronAbandonedBuildingRocket1Dennis::
-	text "Don't use my"
-	line "real name you"
-	cont "fool!"
-	para "Come back with"
-	line "the password!"
+	text "N'utilise pas mon"
+	line "vrai nom,"
+	cont "imbécile!"
+	para "Reviens avec le"
+	line "mot de passe!"
 	prompt
 
 _SaffronAbandonedBuildingRocket1GetOut::
-	text "Get out!"
+	text "Dégage!"
 	done
 
 _SaffronAbandonedBuildingRocket1Guess::
-	text "Guess we're"
-	line "recruiting"
-	cont "pipsqueaks now!"
+	text "On dirait qu'on"
+	line "recrute des"
+	cont "p'tits morveux"
+	cont "maintenant!"
 	done
 
 _SaffronAbandonedBuildingRocket2::
-	text "This abandoned"
-	line "building was our"
-	cont "ticket to taking"
-	cont "SILPH CO!"
-	para "SAFFRON POLICE"
-	line "never expected a"
-	cont "thing!"
-	para "Hah!"
+	text "Ce bâtiment"
+	line "abandonné nous a"
+	cont "permis de prendre"
+	cont "le contrôle de la"
+	cont "SYLPHE SARL!"
+	para "La POLICE de"
+	line "SAFRANIA n'a rien"
+	cont "vu venir!"
+	para "Haha!"
 	done
 
 _SaffronAbandonedBuildingRocket3::
-	text "The boss's idea"
-	line "to DIG a tunnel"
-	cont "was a stroke of"
-	cont "genius!"
-	para "We've got a secret"
-	line "passage right"
-	cont "into the heart of"
-	cont "SAFFRON CITY!"
+	text "L'idée du patron"
+	line "de creuser un"
+	cont "TUNNEL était un"
+	cont "coup de génie!"
+	para "On a désormais un"
+	line "passage secret"
+	cont "qui mène tout"
+	cont "droit au coeur"
+	cont "de SAFRANIA!"
 	done
 
 _SaffronAbandonedBuildingStairs::
-	text "The stairs have"
-	line "collapsed."
-	para "No one's getting"
-	line "up there."
+	text "L'escalier s'est"
+	line "effondré."
+	para "Personne ne peut"
+	line "monter."
 	done
 
 _SaffronAbandonedBuildingSteamPipe::
-	text "Gas is billowing"
-	line "out of this pipe."
-	para "It says HELIUM"
-	line "on the side."
+	text "Du gaz s'échappe"
+	line "de ce tuyau."
+	para "Il est écrit"
+	line "HELIUM sur le"
+	cont "côté."
 	prompt
 
 _SaffronAbandonedBuildingKoffing::
-	text "It's not ready for"
-	line "so much gas yet."
+	text "Il n'est pas encore"
+	line "prêt à recevoir"
+	cont "autant de gaz."
 	done
 
 _SaffronAbandonedBuildingAlready::
-	text "It's already full"
-	line "of HELIUM."
+	text "Il est déjà rempli"
+	line "d'HELIUM."
 	done
 
 _SaffronAbandonedBuildingWeezing::
 	text_ram_namebuffer
-	text " inhaled"
-	line "the gas coming"
-	cont "from the pipe."
+	text " aspire"
+	line "le gaz sortant"
+	cont "du tuyau."
 	done
 
 _SaffronAbandonedBuildingWeezing2::
 	text_ram_namebuffer
-	text ""
-	line "was filled with"
-	cont "super-light"
-	cont "HELIUM!"
+	text " est"
+	line "rempli d'HELIUM"
+	cont "ultra-léger!"
 	done

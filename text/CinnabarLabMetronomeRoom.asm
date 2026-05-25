@@ -1,74 +1,79 @@
 _CinnabarLabMetronomeRoomScientist1Text::
-	text "Tch-tch-tch!"
-	line "I made a cool <CT>!"
+	text "Tiens tiens!"
+	line "Je viens de créer"
+	cont "une <CT> sympa!"
 
-	para "It can cause all"
-	line "kinds of fun!"
+	para "Elle provoque des"
+	line "trucs étranges!"
 	prompt
 
 _CinnabarLabMetronomeRoomScientist1TM35ExplanationText::
 	text "Tch-tch-tch!"
-	line "That's the sound"
-	cont "a KINGLER makes!"
+	line "C'est le son que"
+	cont "fait un KRABBOSS!"
 
-	para "CRABHAMMER is"
-	line "its signature"
-	cont "move!"
+	para "PINCE-MASSE est"
+	line "son attaque"
+	cont "signature!"
 
-	para "I love that move"
-	line "so much, I made a"
-	cont "<CT> to teach it to"
-	cont "other #MON!"
+	para "J'adore tellement"
+	line "cette attaque que"
+	cont "j'ai créé une <CT>"
+	cont "pour l'apprendre"
+	cont "à d'autres"
+	cont "#MON!"
 
-	para "When in doubt:"
-	para "Drop a HAMMER on"
-	line "'em!"
+	para "En cas de doute:"
+	para "Martèle-les avec"
+	line "une pince!"
 	done
 
 _CinnabarLabMetronomeRoomScientist1TM35NoRoomText::
-	text "Your pack is"
-	line "crammed full!"
+	text "Votre inventaire"
+	line "est plein!"
 	done
 
 _CinnabarLabMetronomeRoomScientist2Text::
-	text "EEVEE can evolve"
-	line "into 1 of 3 kinds"
-	cont "of #MON."
+	text "EVOLI évolue en"
+	line "3 #MON de"
+	cont "type différent."
 	done
 
 _CinnabarLabMetronomeRoomPCText::
-	text "There's an e-mail"
-	line "message!"
+	text "Il y a un e-mail!"
 
 	para "<...>"
 
-	para "The 3 legendary"
-	line "bird #MON are"
-	cont "ARTICUNO, ZAPDOS"
-	cont "and MOLTRES."
+	para "Les 3 #MON"
+	line "légendaires sont:"
+	cont "ARTIKODIN,"
+	cont "ELECTHOR et"
+	cont "SULFURA."
 
-	para "Their whereabouts"
-	line "are unknown."
+	para "On ne sait rien"
+	line "d'eux."
 
-	para "We plan to explore"
-	line "the cavern close"
-	cont "to CERULEAN."
+	para "Nous allons"
+	line "explorer les"
+	cont "grottes près de"
+	cont "AZURIA."
 
-	para "From: #MON"
-	line "RESEARCH <TEAM>"
+	para "De : L'EQUIPE DE"
+	line "RECHERCHE #MON"
 
 	para "<...>"
 	done
 
 _CinnabarLabMetronomeRoomAmberPipeText::
-	text "An amber pipe!"
+	text "Un tuyau à ambre!"
 	done
 
 _CinnabarLabKinglerLearnset::
-	text "I think I'll HAMMER"
-	line "some awesome"
+	text "Je pense que je"
+	line "vais te marteler"
+	cont "le crâne de faits"
+	cont "incroyables sur"
 	cont "@"
 	text_ram_namebuffer
-	text " facts"
-	cont "into your skull!"
+	text "!"
 	prompt

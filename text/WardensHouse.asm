@@ -1,101 +1,104 @@
 _WardensHouseWardenGibberish1Text::
-	text "WARDEN: Hif fuff"
-	line "hefifoo!"
+	text "GARDIEN: Hif fuff"
+	line "hefifou!"
 
-	para "Ha lof ha feef ee"
+	para "Ha fof ha fif eu"
 	line "hafahi ho. Heff"
-	cont "hee fwee!"
+	cont "hi fwi!"
 	done
 
 _WardensHouseWardenGibberish2Text::
-	text "Ah howhee ho hoo!"
+	text "Ah hahee ho hoo!"
 	line "Eef ee hafahi ho!"
 	done
 
 _WardensHouseWardenGibberish3Text::
-	text "Ha? He ohay heh"
-	line "ha hoo ee haheh!"
+	text "Ha? Hai fou heh"
+	line "ha hoo ih haheh!"
 	done
 
 _WardensHouseWardenGaveTheGoldTeethText::
-	text "<PLAYER> gave the"
-	line "GOLD TEETH to the"
-	cont "WARDEN!@"
+	text "<PLAYER> donne la"
+	line "DENT D'OR au"
+	cont "GARDIEN!@"
 	text_end
 
 _WardensHouseWardenTeethPoppedInHisTeethText::
 	text_start
 
-	para "The WARDEN popped"
-	line "in his teeth!"
+	para "Le GARDIEN peut"
+	line "remettre son"
+	cont "dentier!"
 	prompt
 
 _WardensHouseWardenThanksText::
-	text "WARDEN: Thanks,"
-	line "kid!"
-	para "No one could"
-	line "understand a word"
-	cont "that I said."
+	text "GARDIEN: Merci,"
+	line "gamin! C'est un"
+	cont "peu dur de me"
+	cont "faire comprendre."
 
-	para "I couldn't work"
-	line "that way."
-	para "Let me give you"
-	line "something for"
-	cont "your trouble."
+	para "J'pouvais plus"
+	line "travailler!"
+	cont "Quelle horreur!"
+	cont "Tiens, voilà pour"
+	cont "te remercier."
 	prompt
 
 _WardensHouseWardenHM04ExplanationText::
-	text "WARDEN: HM04"
-	line "teaches STRENGTH!"
+	text "GARDIEN: CS04<...>"
+	line "FORCE!"
 
-	para "It lets #MON"
-	line "move boulders"
-	cont "when you're out-"
-	cont "side of battle."
+	para "Tes #MON"
+	line "pourront déplacer"
+	cont "des rochers."
 	prompt
 
 _WardensHouseWardenHM03ExplanationText::
-	text "Oh yes,"
-	line "Did you find the"
-	cont "SECRET HOUSE in"
-	cont "the SAFARI ZONE?"
+	text "Au fait, as-tu"
+	line "trouvé la CABANE"
+	cont "SECRETE dans le"
+	cont "PARC SAFARI?"
 
-	para "If you do, you"
-	line "win an HM!"
+	para "Trouve-la et"
+	line "gagne une CS!"
 
-	para "I hear it's the"
-	line "rare SURF HM."
+	para "On raconte que"
+	line "cette CS est<...> "
+	cont "SURF!"
 	done
 
 _WardensHouseWardenHM03AlreadyText::
-	text "Oh! You found the"
-	line "SECRET HOUSE in"
-	cont "the SAFARI ZONE?"
+	text "Oh! Tu as trouvé"
+	line "la CABANE SECRETE"
+	cont "dans le PARC"
+	cont "SAFARI?"
 
-	para "Congratulations!"
+	para "Félicitations!"
 	
-	para "Have fun with"
-	line "that SURF HM too!"
+	para "Amuse-toi bien"
+	line "avec cette CS"
+	cont "SURF!"
 	done
 
 _WardensHouseWardenHM04NoRoomText::
-	text "Your pack is"
-	line "stuffed full!"
+	text "Ton sac est"
+	line "plein!"
 	done
 
 _WardensHouseDisplayPhotosAndFossilsText::
-	text "#MON photos"
-	line "and fossils."
+	text "Photos et"
+	line "fossiles de"
+	cont "#MON."
 	done
 
 _WardensHouseDisplayMerchandiseText::
-	text "Old #MON"
-	line "merchandise."
+	text "Tout plein de"
+	line "trucs #MON!"
 	done
 
 _WardensHouseDeskPapersText::
-	text "A document that"
-	line "reads:"
-	para "DENTAL IMPLANTS"
-	line "REQUISITION"
+	text "Un document"
+	line "intitulé:"
+	para "DEMANDE D'IMPLANTS"
+	line "DENTAIRES"
 	done

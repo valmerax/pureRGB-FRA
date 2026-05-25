@@ -1,32 +1,34 @@
 _PokemonTowerCatacombsTorchedGraveText::
-	text "HERE LIES KOKO"
-	line "THE EXEGGUTOR"
-	para "KOKO tragically"
-	line "perished in a"
-	cont "house fire."
+	text "ICI REPOSE KOKO"
+	line "LE NOADKOKO"
+	para "KOKO a"
+	line "tragiquement péri"
+	cont "dans un incendie"
+	cont "de maison."
 	; fall through
 _PokemonTowerCatacombsWavedStaff::
-	para "<PLAYER> waved the"
-	line "CHANNELER's STAFF."
+	para "<PLAYER> brandit le"
+	line "BATON d'EXORCISTE."
 	prompt 
 
 _PokemonTowerCatacombsTorchedGraveText2::
-	text "NEED@"
+	text "BESOIN@"
 	text_dots 3
 	text ""
-	para "WATER@"
+	para "D'EAU@"
 	text_dots 3
 	text ""
-	para "NOW!@"
+	para "MAINTENANT!@"
 	text_dots 3
 	text ""
 	done
 
 _PokemonTowerCatacombsMonSpeaksText::
-	text "Listen, child!"
-	para "The #MON's"
-	line "spirit speaks"
-	cont "through me:"
+	text "Ecoute, mon"
+	line "enfant!"
+	para "L'esprit du"
+	line "#MON s'exprime"
+	cont "à travers moi:"
 	para "@"
 	text_dots 3
 	text ""
@@ -34,365 +36,396 @@ _PokemonTowerCatacombsMonSpeaksText::
 
 _PokemonTowerCatacombsTorchedAfterText::
 	text ""
-	para "My trainer didn't"
-	line "own a fire"
-	cont "extinguisher!"
-	para "Why were they so"
-	line "short sighted??"
+	para "Mon dresseur"
+	line "n'avait pas"
+	cont "d'extincteur!"
+	para "Pourquoi a-t-il"
+	line "été si négligent?"
 	; fall through
 _PokemonTowerCatacombsSpiritDissipatedText::
 	para "@"
 	text_dots 3
 	text ""
-	para "The spirit"
-	line "seems satisfied."
-	para "It departed to"
-	line "the afterlife!"
+	para "L'esprit semble"
+	line "apaisé."
+	para "Il est parti dans"
+	line "l'au-delà!"
 	done
 
 _PokemonTowerCatacombsChunkyGraveText::
-	text "HERE LIES ZAPPY"
-	line "THE RAICHU"
-	para "ZAPPY had a sudden"
-	line "heart attack"
-	cont "while sleeping.@"
+	text "ICI REPOSE VOLTY"
+	line "LE RAICHU"
+	para "VOLTY a été"
+	line "victime d'une"
+	cont "crise cardiaque"
+	cont "soudaine durant"
+	cont "son sommeil.@"
 	text_jump _PokemonTowerCatacombsWavedStaff
 
 _PokemonTowerCatacombsChunkyGraveText2::
-	text "I HUNGER@"
+	text "J'AI FAIM@"
 	text_dots 3
 	text ""
 	done
 
 _PokemonTowerCatacombsChunkyAfterText::
 	text ""
-	para "I loved my trainer"
-	line "very much!"
-	para "She gave me lots"
-	line "of yummy food!"
-	para "But I ate too"
-	line "much I think!"
-	para "Whoops!"
-	para "Do you have"
-	line "anything to eat?"
-	para "No?"
-	para "Oh well!"
-	para "I'll wait for my"
-	line "trainer in the"
-	cont "great beyond!@"
+	para "J'aimais beaucoup"
+	line "ma dresseuse!"
+	para "Elle me donnait"
+	line "plein de bonnes"
+	cont "choses à manger!"
+	para "Mais je crois que"
+	line "j'ai trop mangé!"
+	para "Oups!"
+	para "Tu as quelque"
+	line "chose à manger?"
+	para "Non?"
+	para "Tant pis!"
+	para "J'attendrai ma"
+	line "dresseuse dans"
+	cont "l'au-delà!@"
 	text_jump _PokemonTowerCatacombsSpiritDissipatedText
 
 _PokemonTowerCatacombsPainlessGraveText::
-	text "HERE LIES TUFF"
-	line "THE WIGGLYTUFF"
-	para "TUFF passed away"
-	line "due to blunt"
-	cont "force trauma.@" 
+	text "ICI REPOSE DOUDOU"
+	line "LE GRODOUDOU"
+	para "DOUDOU est décédé"
+	line "des suites d'un"
+	cont "traumatisme"
+	cont "crânien.@" 
 	text_jump _PokemonTowerCatacombsWavedStaff
 
 _PokemonTowerCatacombsPainlessGraveText2::
-	text "MUST@"
+	text "JE DOIS@"
 	text_dots 3
 	text ""
-	para "FIGHT@"
+	para "ME BATTRE@"
 	text_dots 3
 	text ""
-	para "HARDER@"
+	para "PLUS FORT@"
 	text_dots 3
 	text ""
 	done
 
 _PokemonTowerCatacombsPainlessAfterText::
 	text ""
-	para "My trainer made me"
-	line "fight so hard,"
-	cont "I got permanent"
-	cont "brain damage!"
-	para "I just wanted to"
-	line "make him happy!"
-	para "We should have"
-	line "known our limits!@"
+	para "Mo dresseur m'a"
+	line "fait combattre si"
+	cont "fort que j'ai subi"
+	cont "des lésions"
+	cont "cérébrales"
+	cont "irréversibles!"
+	para "Je voulais juste"
+	line "lui faire"
+	cont "plaisir!"
+	para "On aurait dû"
+	line "connaître nos"
+	cont "limites!@"
 	text_jump _PokemonTowerCatacombsSpiritDissipatedText
 
 _PokemonTowerCatacombsIrradiatedGraveText::
-	text "HERE LIES BOB"
-	line "THE HITMONCHAN"
-	para "BOB perished with"
-	line "their trainer"
-	cont "due to radiation"
-	cont "sickness.@"
+	text "ICI REPOSE BOB"
+	line "LE TYGNON"
+	para "BOB a péri avec"
+	line "son dresseur des"
+	cont "suites d'une"
+	cont "maladie due aux"
+	cont "radiations.@"
 	text_jump _PokemonTowerCatacombsWavedStaff
 
 _PokemonTowerCatacombsIrradiatedGraveText2::
-	text "WHAT IS"
-	line "HAPPENING@"
+	text "QU'EST-CE QUI@"
 	text_dots 3
 	text ""
-	cont "TO ME??@"
+	line "M'ARRIVE??@"
 	text_dots 3
 	text ""
 	done
 
 _PokemonTowerCatacombsIrradiatedAfterText::
 	text ""
-	para "My trainer and I"
-	line "trespassed in a"
-	cont "restricted cave!"
-	para "We had no idea"
-	line "it was nuclear"
-	cont "waste storage!"
-	para "We shouldn't"
-	line "have gone there!@"
+	para "Mon dresseur et"
+	line "moi avons péri"
+	cont "dans une grotte"
+	cont "interdite au"
+	cont "public!"
+	para "On n'avait aucune"
+	line "idée qu'il"
+	cont "s'agissait d'un"
+	cont "site de stockage"
+	cont "de déchets"
+	cont "nucléaires!"
+	para "Nous n'aurions pas"
+	line "dû y aller!@"
 	text_jump _PokemonTowerCatacombsSpiritDissipatedText
 
 _PokemonTowerCatacombsDarkChannelerText::
-	text "Kekeke, are you"
-	line "getting a bit too"
-	cont "spooked out?"
-	para "Want to go back"
-	line "upstairs?"
+	text "Kekeke, tu as un"
+	line "peu trop peur?"
+	para "Tu veux remonter?"
 	done
 
 _PokemonTowerCatacombsDarkChannelerTextYes::
-	text "Follow me, child!"
+	text "Suis-moi, mon"
+	line "enfant!"
 	done
 
 _GhostMarowakAfterGiovanniText::
 	text "<PLAYER>!"
-	para "This is GHOST"
-	line "MAROWAK speaking"
-	cont "through the"
-	cont "KARATE KING."
-	para "Thank you for"
-	line "defeating <TEAM>"
+	para "C'est le SPECTRE"
+	line "d'OSSATUEUR qui"
+	cont "te parle par"
+	cont "l'intermédiaire du"
+	cont "ROI du KARATE."
+	para "Merci d'avoir"
+	line "vaincu la <TEAM>"
 	cont "<ROCKET>."
-	para "It was my last"
-	line "wish to help get"
-	cont "rid of them."
-	para "If you could,"
-	line "please take me"
-	cont "to the basement"
-	cont "of #MON TOWER."
-	para "There I can"
-	line "finally be laid"
-	cont "to rest."
+	para "Mon dernier"
+	line "souhait était de"
+	cont "contribuer à leur"
+	cont "chute."
+	para "Si tu le peux,"
+	line "emmène-moi s'il"
+	cont "te plaît au"
+	cont "sous-sol de la"
+	cont "TOUR #MON."
+	para "Là-bas, je pourrai"
+	line "enfin reposer en"
+	cont "paix."
 	done
 
 _ViridianGymHiker3WhatText::
-	text "Huh??"
-	para "What happened?"
-	para "How'd I get over"
-	line "here?"
+	text "Hein??"
+	para "Que s'est-il passé?"
+	para "Comment suis-je"
+	line "arrivé ici?"
 	done
 
 _DarkChannelerGoDownText::
-	text "Hmm? I sense a"
-	line "spirit among your"
+	text "Hmm? Je perçois un"
+	line "esprit parmi vos"
 	cont "#MON."
-	para "Hoho! The mother"
-	line "MAROWAK?"
-	para "She wishes to be"
-	line "laid to rest at"
-	cont "her grave now,"
-	cont "is that it?"
-	para "It's downstairs"
-	line "in the catacombs."
-	para "I'll let you go"
-	line "down for this one"
-	cont "special case."
-	para "Want to go?"
+	para "Hoho! La mère"
+	line "OSSATUEUR?"
+	para "Elle souhaite"
+	line "reposer en paix"
+	cont "dans sa tombe,"
+	cont "c'est bien ça?"
+	para "C'est en bas, dans"
+	line "les catacombes."
+	para "Je vais te laisser"
+	line "descendre, juste"
+	cont "pour cette fois."
+	para "Tu veux y aller?"
 	done
 
 _DarkChannelerCatacombsIntroText::
-	text "Just follow the"
-	line "path to reach"
-	cont "MAROWAK's grave!"
-	para "But you'll probably"
-	line "encounter some"
-	cont "restless spirits"
-	cont "along the way."
-	para "Here! Use my"
-	line "CHANNELER's STAFF."
-	para "It'll reveal and"
-	line "purify spirits"
-	cont "better than a"
-	cont "SILPH SCOPE!"
-	para "All because of the"
-	line "special hexes I"
-	cont "put on it!"
-	para "<PLAYER> borrowed"
-	line "CHANNELER's STAFF!"
+	text "Suis le chemin"
+	line "jusqu'à la tombe"
+	cont "de OSSATUEUR!"
+	para "Mais tu croiseras"
+	line "sûrement des"
+	cont "esprits errants"
+	cont "en chemin."
+	para "Tiens! Utilise mon"
+	line "BATON d'EXORCISTE."
+	para "Il révèle et"
+	line "purifie les"
+	cont "esprits mieux"
+	cont "qu'un SCOPE"
+	cont "SYLPHE!"
+	para "Tout ça grâce aux"
+	line "sorts spéciaux"
+	cont "que j'y ai jetés!"
+	para "<PLAYER> obtient le"
+	line "BATON d'EXORCISTE!"
 	done
 
 _TorchedOnFire::
 	text "@"
 	text_ram wEnemyMonNick
 	text_start
-	line "is consumed by"
-	cont "scorching flames!"
+	line "est consumé par"
+	cont "des flammes"
+	cont "ardentes!"
 	prompt
 
 _PainlessBattleInitText::
-	text "PAINLESS won't feel"
-	line "any pain from"
-	cont "your attacks!"
+	text "INDOLORE ne"
+	line "ressentira aucune"
+	cont "douleur face à"
+	cont "vos attaques!"
 	prompt
 
 _IrradiatedBattleInitText::
-	text "Radiation spreads"
-	line "everywhere!"
+	text "Des radiations se"
+	line "répandent partout!"
 	prompt
 
 _IrradiatedGrowsLarger::
-	text "IRRADIATED twists"
-	line "and contorts,"
-	para "its body morphing"
-	line "strangely!"
+	text "IRRADIE se tord et"
+	line "se contorsionne,"
+	para "son corps se"
+	line "métamorphose de"
+	cont "manière étrange!"
 	prompt
 
 _CatacombsCuboneText::
-	text "Looks like CUBONE"
-	line "is visiting its"
-	cont "mother's grave."
+	text "On dirait que"
+	line "OSSELAIT se"
+	cont "recueille sur la"
+	cont "tombe de sa mère."
 	done
 
 _CatacombsMarowakTouchedText::
 	text "@"
 	text_ram_namebuffer
-	text " seems"
-	line "really happy!"
+	text " a l'air"
+	line "vraiment heureux!"
 	done
 
 _DarkChannelerReunionText::
-	text "What a touching"
-	line "reunion!"
-	para "But @"
+	text "Quelles"
+	line "retrouvailles"
+	cont "émouvantes!"
+	para "Mais @"
 	text_ram_namebuffer
 	text ""
-	line "can't be laid to"
-	cont "rest yet!"
-	para "There's still a"
-	line "dark presence"
-	cont "around here!"
-	para "Once it's gone"
-	line "everything should"
-	cont "be ready!"
+	line "ne peut pas"
+	cont "encore reposer"
+	cont "en paix!"
+	para "Une présence"
+	line "maléfique rôde"
+	cont "dans les parages!"
+	para "Une fois qu'elle"
+	line "aura disparu,"
+	cont "tout sera prêt!"
 	done
 
 _PokemonTowerCatacombsTheMawGraveText::
-	text "HERE LIES A"
-	line "NOTORIOUS GOLBAT"
-	para "This GOLBAT killed"
-	line "its own trainer"
-	cont "and continued on"
-	cont "a violent spree."
-	para "It is unknown"
-	line "whether it had a"
-	cont "nickname.@"
+	text "ICI REPOSE UN"
+	line "NOSFERALTO CONNU"
+	para "Ce NOSFERALTO a"
+	line "tué son propre"
+	cont "dresseur et s'est"
+	cont "ensuite livré à"
+	cont "une de crimes"
+	cont "violents."
+	para "On ignore s'il"
+	line "avait un surnom.@"
 	text_jump _PokemonTowerCatacombsWavedStaff
 
 _PokemonTowerCatacombsTheMawGraveText2::
-	text "YOU DIE NOW"
+	text "TU MEURS"
+	line "MAINTENANT"
 	done
 
 _PokemonTowerB1FTheMawUsedHyperBeamText::
-	text "The dark spirit"
-	line "used HYPER BEAM!"
+	text "L'esprit maléfique"
+	line "lance ULTRALASER!"
 	done
 
 _PokemonTowerB1FMarowakBlockedHyperBeamText::
 	text "@"
 	text_ram_namebuffer
-	text " blocked"
-	line "the HYPER BEAM"
-	cont "from hitting"
-	cont "CUBONE!"
-	para "But the beam was"
-	line "too powerful!"
+	text " empêche"
+	line "ULTRALASER"
+	cont "d'atteindre"
+	cont "OSSELAIT!"
+	para "Mais le rayon est"
+	line "trop puissant!"
 	para "@"
 	text_ram_namebuffer
-	text " can't"
-	line "maintain its"
-	cont "physical form"
-	cont "anymore!"
+	text " ne peut"
+	line "plus maintenir sa"
+	cont "forme physique!"
 	done
 
 _PokemonTowerB1FMarowakBuffedCubone::
-	text "@"
+	text "L'esprit de"
+	line "@"
 	text_ram_namebuffer
-	text "'s spirit"
-	line "cradled CUBONE,"
-	cont "and transferred"
-	cont "all of its power!"
-	para "CUBONE joined"
-	line "your party."
+	text " prend"
+	line "OSSELAIT dans ces"
+	cont "bras et lui"
+	cont "transmet toute"
+	cont "sa puissance!"
+	para "OSSELAIT rejoint"
+	line "votre équipe."
 	prompt
 
 _PokemonTowerB1FTheMawAttacked::
-	text "It's time to"
-	line "fight!"
-	para "The dark spirit"
-	line "attacked!"
+	text "Il est temps de"
+	line "combattre!"
+	para "L'esprit maléfique"
+	line "attaque!"
 	done
 
 _CubonePoweredUp::
-	text "@"
+	text "L'esprit de"
+	line "@"
 	text_ram wTrainerName
-	text "'s spirit"
-	line "bestowed divine"
-	cont "energy on CUBONE!"
+	text " a"
+	cont "conféré une"
+	cont "énergie divine"
+	cont "à OSSELAIT!"
 	prompt
 
 _CuboneGainedUltimateProtection::
-	text "CUBONE gained"
-	line "ultimate"
-	cont "protection!"
+	text "OSSELAIT a obtenu"
+	line "une protection"
+	cont "ultime!"
 	prompt
 
 _TheMawMeltedIntoShadows::
-	text "The dark spirit"
-	line "faded into the"
-	cont "shadows, never to"
-	cont "return."
+	text "L'esprit maléfique"
+	line "s'est évanoui dans"
+	cont "les ténèbres,"
+	cont "pour ne plus"
+	cont "jamais revenir."
 	done
 
 _GhostMarowakOneLastTime::
 	text "@"
 	text_ram wTrainerName
-	text " used"
-	line "the remnants of"
-	cont "its energy to"
-	cont "show itself one"
-	cont "last time."
+	text " puise"
+	line "dans ses forces"
+	cont "restantes pour se"
+	cont "montrer une toute"
+	cont "dernière fois."
 	prompt
 
 _PokemonTowerGhostMarowakAfterText::
 	text ""
-	para "Thank you"
-	line "<PLAYER>!"
-	para "I can finally"
-	line "rest in peace!"
-	para "I love you CUBONE!"
-	para "But it's time for"
-	line "mother to go."
-	para "Don't be sad."
-	para "Enjoy life while"
-	line "you can-"
-	para "Goodbye<...>"
+	para "Merci <PLAYER>!"
+	para "Je peux enfin"
+	line "reposer en paix!"
+	para "Je t'aime,"
+	line "OSSELAIT!"
+	para "Mais il est temps"
+	line "pour maman de"
+	cont "partir."
+	para "Ne sois pas"
+	line "triste."
+	para "Profite de la vie"
+	line "tant que tu le"
+	cont "peux<...>"
+	para "Au revoir<...>"
 	prompt
 
 _PokemonTowerCatacombsDoneText::
-	text "Well, thanks for"
-	line "doing my job for"
-	cont "me!"
-	para "The DARK CHANNELER"
-	line "took back her"
-	cont "CHANNELER's STAFF."
-	para "Time to go back"
-	line "upstairs!"
+	text "Eh bien, merci"
+	line "d'avoir fait ce"
+	cont "travail pour moi!"
+	para "L'EXORCISTE SOMBRE"
+	line "récupère son"
+	cont "BATON d'EXORCISTE."
+	para "Il est temps de"
+	line "remonter!"
 	done
 
 _PokemonTowerCatacombsGoBackDown::
-	text "Want to go"
-	line "back downstairs?"
+	text "Tu veux"
+	line "redescendre?"
 	done

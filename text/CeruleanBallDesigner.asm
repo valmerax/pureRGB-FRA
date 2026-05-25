@@ -1,227 +1,249 @@
 _CeruleanBallDesignerSwitchBallMenuStart::
-	text "Change a #MON's"
-	line "#BALL?"
+	text "Changer la"
+	line "# BALL d'un"
+	cont "#MON?"
 	done
 
 _CeruleanBallDesignerCustomizeBallMenuStart::
-	text "Edit custom"
-	line "#BALLs?"
+	text "Modifier des"
+	line "# BALL"
+	cont "personnalisées?"
 	done
 
 _NoBallsToSwitch::
-	text "No BALLs"
-	line "available in bag!"
+	text "Pas de BALL"
+	line "dans le sac!"
 	done
 
 _CurrentlyInABall::
-	text "Currently in:"
+	text "Actuellement dans:"
 	line "@"
 	text_ram_namebuffer
 	text_end
 
 _AlreadyInThatBall::
-	text "It's already in"
-	line "that type of BALL."
+	text "C'est déjà dans ce"
+	line "type de BALL."
 	done
 
 _NoRoomForBall::
-	text "No room for the"
-	line "previous #BALL!"
+	text "Plus de place pour"
+	line "l'ancienne"
+	cont "# BALL!"
 	done
 
 _ChangedBallText1::
-	text "Put @"
+	text "@"
 	text_ram_namebuffer
 	text ""
-	line "into a pristine"
+	line "est placé dans"
+	cont "une magnifique"
 	cont "@"
 	text_ram_stringbuffer
 	text "!"
 	done
 
 _ChangedBallText2::
-	text "Put the old"
+	text "L'ancienne"
 	line "@"
 	text_ram_namebuffer
-	text " into"
-	cont "your bag."
+	text " est"
+	cont "rangé dans le sac."
 	done
 
 _ChangeIntoWarning::
-	text "If you put it"
-	line "in a @"
+	text "Si vous la mettez"
+	line "dans une"
+	cont "@"
 	text_ram_stringbuffer
 	text ","
-	para "you can't get the"
-	line "@"
+	para "vous ne pourrez"
+	line "plus récupérer la"
+	cont "@"
 	text_ram_stringbuffer
-	text " back."
-	para "Due to a powerful"
-	line "catch mechanism,"
-	para "@"
+	text "."
+	para "Dû à son puissant"
+	line "mécanisme de"
+	cont "capture,"
+	para "la @"
 	text_ram_stringbuffer
-	text "s can't"
-	line "be reused!"
-	para "Change anyway?"
+	text " ne"
+	line "pourra pas être"
+	cont "réutilisée!"
+	para "Continuer quand"
+	line "même?"
 	done
 
 _ChangeOutOfWarning::
-	text "Taking it out of"
-	line "a @"
+	text "La sortir d'une"
+	line "@"
 	text_ram_namebuffer
 	text ""
-	cont "will destroy the"
+	cont "va détruire la"
 	cont "@"
 	text_ram_namebuffer
 	text "."
-	para "Its powerful catch"
-	line "mechanism can"
-	cont "only work once!"
-	para "Change anyway?"
+	para "Son puissant"
+	line "mécanisme de"
+	cont "capture ne marche"
+	cont "qu'une seule fois!"
+	para "Continuer quand"
+	line "même?"
 	done
 
 _CeruleanBallDesignerBlankPokeballText::
-	text "It's a blank white"
-	line "# BALL!"
-	para "It's ready for a"
-	line "cool design!"
+	text "C'est une"
+	line "# BALL blanche"
+	cont "basique!"
+	para "Prête pour un"
+	line "design cool!"
 	done
 
 _CeruleanBallDesignerCameraText::
-	text "It's an instant"
-	line "film CAMERA!"
-	para "It prints out a"
-	line "photo right after"
-	cont "taking it!"
+	text "C'est un"
+	line "APP. PHOTO"
+	cont "instantané!"
+	para "Elle peut imprimer"
+	line "une photo juste"
+	cont "après l'avoir"
+	cont "prise!"
 	done
 
 _CeruleanBallDesignerCamera2Text::
-	text "Time to take some"
-	line "inspiring photos!"
+	text "C'est le moment de"
+	line "prendre de belles"
+	cont "photos!"
 	prompt
 
 _CeruleanBallDesignerDarkRoomSignText::
-	text "DARKROOM"
-	para "Keep door closed!"
-	para "Photos are"
-	line "developing."
+	text "CHAMBRE NOIRE"
+	para "Gardez la porte"
+	line "fermée!"
+	para "Les photos sont"
+	line "en cours de"
+	cont "développement."
 	done
 
 _CeruleanBallDesignerBallDisplayText::
-	text "A solid silver"
-	line "# BALL is on"
-	cont "display!"
-	para "The engraving"
-	line "reads:"
-	para "THANKS FOR YOUR"
-	line "EXCELLENT WORK!"
-	para "-SILPH CO."
+	text "Une # BALL en"
+	line "argent massif"
+	cont "est exposé!"
+	para "La gravure dit:"
+	para "MERCI POUR VOTRE"
+	line "EXCELLENT TRAVAIL"
+	para "-SYLPHE SARL"
 	done
 
 _CeruleanBallDesignerPhotosText::
-	text "A bunch of photos"
-	line "are developing!"
-	para "Shouldn't touch!"
+	text "Des photos sont"
+	line "en train d'être"
+	cont "développées!"
+	para "Ne pas toucher!"
 	done
 
 _CeruleanBallDesignerSinkText::
-	text "Sinks for chemical"
-	line "photo baths,"
-	cont "and an enlarger!"
+	text "Des bacs de bains"
+	line "chimiques, et un"
+	cont "agrandisseur!"
 	done
 
 _CeruleanBallDesignerPosterText::
-	text "A poster"
-	line "advertisement."
-	para "MISTY's wearing"
-	line "a red lifeguard"
-	cont "outfit, blowing"
-	cont "a whistle."
-	para "She's holding a new"
-	line "GREAT BALL up to"
-	cont "the viewer."
-	para "“You won't need"
-	line "saving-"
-	para "when you've got"
-	line "a GREAT BALL!”"
-	para "-SILPH CO."
+	text "Une affiche"
+	line "publicitaire."
+	para "ONDINE porte une"
+	line "tenue de maître-"
+	cont "nageuse rouge et"
+	cont "siffle."
+	para "Elle tend une"
+	line "nouvelle SUPER"
+	cont "BALL vers le"
+	cont "spectateur."
+	para "“Pas besoin d'être"
+	line "sauvé-"
+	para "quand vous avez"
+	line "une SUPER BALL!”"
+	para "-SYLPHE SARL"
 	done
 
 _CeruleanBallDesignerDesignerGreeting::
-	text "I'm a # BALL"
-	line "DESIGNER!"
-	para "SILPH CO. creates"
-	line "capture tech, I"
-	cont "design the look!"
-	para "Check out my"
-	line "latest design-"
-	para "In all its blue"
-	line "glory!"
+	text "Je suis DESIGNER"
+	line "DE # BALL!"
+	para "La SYLPHE SARL"
+	line "crée des techno-"
+	cont "logies de capture"
+	cont "et moi je m'occupe"
+	cont "du design!"
+	para "Découvre ma"
+	line "création finale:"
+	para "Dans toute sa"
+	line "splendeur bleue!"
 	prompt
 
 _CeruleanBallDesignerDesignerSecondTime::
-	text "I'm brainstorming"
-	line "new ideas on this"
-	cont "notepad."
-	para "# BALL design"
-	line "ideas!"
-	para "Agh, I can't think"
-	line "of anything good!"
+	text "Je note toutes mes"
+	line "nouvelles idées"
+	cont "sur ce carnet."
+	para "Idées de design"
+	line "pour # BALL!"
+	para "Argh, je ne trouve"
+	line "rien de bon!"
 	para "Hmm<...>"
-	para "Maybe you could"
-	line "help."
-	para "Want to become my"
-	line "assistant?"
+	para "Tu pourrais peut-"
+	line "être m'aider."
+	para "Tu veux devenir"
+	line "mon assistant?"
 	done
 
 _CeruleanBallDesignerDesignerBecameAssistant::
-	text "Hooray! I've got"
-	line "an assistant now!"
-	para "Ready to start?<PARA>@"
+	text "Hourra! J'ai enfin"
+	line "un assistant!"
+	para "Prêt à commencer?<PARA>@"
 	text_end
 
 _CeruleanBallDesignerGoGetCamera::
-	text "Go to my DARKROOM"
-	line "over there and"
-	cont "grab the CAMERA."
+	text "Va dans ma CHAMBRE"
+	line "NOIRE là-bas et"
+	cont "récupère"
+	cont "l'APP. PHOTO."
 
-	para "Take some photos"
-	line "with it, find me"
-	cont "some inspiration!"
+	para "Prends des photos"
+	line "avec, trouve-moi"
+	cont "de l'inspiration!"
 	done
 
 _CeruleanBallDesignerDesignerGotCamera::
-	text "Got my new CAMERA?"
-	para "Good!"
-	para "I wrote down some"
-	line "concepts that may"
-	cont "inspire me on"
-	cont "that clipboard!"
-	para "Take a look!"
+	text "Tu as mon nouvel"
+	line "APP. PHOTO?"
+	para "Super!"
+	para "J’ai noté quelques"
+	line "idées qui pourr-"
+	cont "aient m'inspirer"
+	cont "sur ce carnet!"
+	para "Jette un oeil!"
 	done
 
 _CeruleanBallDesignerDesignerWaitingForPhotos::
-	text "Got any new"
-	line "photos?"
-	para "No?"
-	para "By the way,"
-	para "You can switch"
-	line "your #MON's"
-	cont "# BALLs at my"
-	cont "work bench!"
-	para "Try it out!"
+	text "Tu as pris des"
+	line "nouvelles photos?"
+	para "Non?"
+	para "Au fait,"
+	para "Tu peux changer"
+	line "les # BALL de"
+	cont "tes #MON sur"
+	cont "mon établi!"
+	para "Essaie donc!"
 	done
 
 _CeruleanBallDesignerNewPhoto::
-	text "Oh? You have a"
-	line "new photo?!"
-	para "Ah, so exciting!"
-	line "Show me! Show me!"
+	text "Oh? Tu as une"
+	line "nouvelle photo?!"
+	para "Ah, quel plaisir!"
+	line "Montre-moi!"
 	prompt
 
 _CeruleanBallDesignerWait::
 	text "!!!"
-	line "Wait a sec<...>"
+	line "Attends une sec<...>"
 	prompt
 
 _CeruleanBallDesignerEureka::
@@ -229,349 +251,390 @@ _CeruleanBallDesignerEureka::
 	prompt
 
 _CeruleanBallDesignerDesigned::
-	text "With your photo's"
-	line "inspiration,"
-	para "I designed the"
+	text "En m'inspirant de"
+	line "ta photo,"
+	para "j'ai conçu la"
 	line "@"
 	text_ram_stringbuffer
 	text "!"
 	done
 
 _CeruleanBallDesignerDesigned2::
-	text "<PARA>You can put your"
-	line "#MON in it at"
-	cont "my workbench,"
-	para "or customize it"
-	line "with my tools!"
-	para "Thanks again,"
-	line "my assistant!"
+	text "<PARA>Tu peux y"
+	line "transférer ton"
+	cont "#MON via mon"
+	cont "établi,"
+	para "ou sinon la"
+	line "personnaliser"
+	cont "avec mes outils!"
+	para "Merci encore,"
+	line "mon assistant!"
 	done
 
 _BallDesignerPokemonBreederReaction::
-	text "#MON and humans"
-	line "living together"
-	cont "off of this green"
-	cont "earth!"
-	para "Our planet is like"
-	line "one big tree!"
+	text "#MON et humains"
+	line "vivant ensemble"
+	cont "sur cette planète"
+	cont "verte!"
+	para "Notre planète est"
+	line "comme un grand"
+	cont "arbre!"
 	prompt
 
 _BallDesignerPsyduckReaction::
-	text "Its beautiful soul"
-	line "is reflected in"
-	cont "rippling water!"
+	text "Sa belle âme se"
+	line "reflète dans l'eau"
+	cont "frémissante!"
 	prompt
 
 _BallDesignerFlareonReaction::
-	text "A ball of blazing"
-	line "fluff!"
+	text "Une boule de poils"
+	line "flamboyante!"
 	prompt
 
 _BallDesignerJigglypuffReaction::
-	text "OH. MY. GOSH!"
-	para "That is soooo"
-	line "cute!"
+	text "OH. MON. DIEU!"
+	para "Troooop mignon!"
 	prompt
 
 _BallDesignerJolteonReaction::
-	text "Shocking!"
-	para "It's lookin' real"
-	line "sharp!"
+	text "Electrisant!"
+	para "Vraiment superbe!"
 	prompt
 
 _BallDesignerPorygonReaction::
-	text "Whoa!"
-	para "Is it surfing"
-	line "the virtual web?"
+	text "Ouah!"
+	para "Est-ce qu'il surfe"
+	line "sur le web?"
 	prompt
 
 _BallDesignerFossilReaction::
-	text "These ancient"
-	line "stones:"
-	para "gardens of bone!"
+	text "Ces pierres"
+	line "antiques:"
+	para "des jardins d'os!"
 	prompt
 
 _BallDesignerArticunoReaction::
-	text "Brrr! You must"
-	line "have froze while"
-	cont "taking that pic!"
+	text "Brrr! Tu as dû te"
+	line "geler en prenant"
+	cont "cette photo!"
 	prompt
 
 _BallDesignerAbraReaction::
-	text "I wonder what"
-	line "it's seeing in"
-	cont "its dreams?"
+	text "Je me demande ce"
+	line "qu'il voit dans"
+	cont "ses rêves?"
 	prompt
 
 _BallDesignerPidgeotReaction::
-	text "Wow! So dynamic!"
-	para "It's soaring on"
-	line "the wind!"
+	text "Woah!"
+	line "Quelle énergie!"
+	para "Il plane au gré du"
+	line "vent!"
 	prompt
 
 _BallDesignerGrimerReaction::
-	text "It's somehow cute"
-	line "while also being"
-	cont "toxic sludge!"
+	text "C'est à la fois"
+	line "mignon et toxique!"
 	prompt
 
 _BallDesignerGastlyReaction::
-	text "What a spooky"
-	line "piece that is!"
+	text "Quelle oeuvre"
+	line "effrayante!"
 	prompt
 
 _BallDesignerScytherReaction::
-	text "It's slicing right"
-	line "through a field!"
+	text "Il coupe un champ"
+	line "de part en part!"
 	prompt
 
 _BallDesignerLassReaction::
-	text "Look at her"
-	line "beautiful smile!"
-	para "What an angel!"
+	text "Regarde son beau"
+	line "sourire!"
+	para "Quel ange!"
 	prompt
 
 _BallDesignerMankeyReaction::
-	text "It looks so angry"
-	line "it could explode!"
+	text "Il a l'air si en"
+	line "colère qu'il"
+	cont "pourrait exploser!"
 	prompt
 
 _BallDesignerGamblerReaction::
-	text "A picture of dice?"
-	para "That's pretty"
-	line "random! Hehe."
+	text "Une photo de dés?"
+	para "C'est plutôt"
+	line "inattendu! Héhé."
 	prompt
 
 _BallDesignerPokemonBreederHint::
-	text "A man in a straw"
-	line "hat tending a"
-	cont "green field."
+	text "Un homme coiffé"
+	line "d'un chapeau de"
+	cont "paille cultivant"
+	cont "un champ herbeux."
 	prompt
 
 _BallDesignerPsyduckHint::
-	text "A #MON living"
-	line "in a pond near"
-	cont "a port city."
+	text "Un #MON vivant"
+	line "dans un étang"
+	cont "près d'une ville"
+	cont "portuaire."
 	prompt
 
 _BallDesignerFlareonHint::
-	text "A fiery #MON"
-	line "living in a rocky"
-	cont "eastern ROUTE."
+	text "Un #MON"
+	line "fougueux vivant"
+	cont "sur une ROUTE"
+	cont "rocheuse à l'est."
 	prompt
 
 _BallDesignerJigglypuffHint::
-	text "A cute round"
-	line "singing #MON"
-	cont "living south of"
-	cont "the gray city."
+	text "Un adorable"
+	line "#MON rond qui"
+	cont "chante, vivant au"
+	cont "sud de la ville"
+	cont "grise."
 	prompt
 
 _BallDesignerJolteonHint::
-	text "An electric"
-	line "#MON living on"
-	cont "the outskirts of"
-	cont "a big city."
+	text "Un #MON"
+	line "électrique vivant"
+	cont "en périphérie"
+	cont "d'une grande ville."
 	prompt
 
 _BallDesignerPorygonHint::
-	text "A virtual #MON"
-	line "cruising through"
-	cont "cyberspace."
+	text "Un #MON virtuel"
+	line "naviguant dans le"
+	cont "cyberespace."
 	prompt
 
 _BallDesignerFossilHint::
-	text "Stone cold proof"
-	line "of prehistoric"
-	cont "#MON!"
+	text "La preuve évidente"
+	line "d'un #MON"
+	cont "préhistorique!"
 	prompt
 
 _BallDesignerArticunoHint::
-	text "A super-rare"
-	line "#MON in an"
-	cont "icy area!"
+	text "Un #MON"
+	line "rarissime dans"
+	cont "une zone glacée!"
 	prompt
 
 _BallDesignerAbraHint::
-	text "A sleepy little"
-	line "#MON living in"
-	cont "a northern ROUTE."
+	text "Un petit #MON"
+	line "endormi vivant"
+	cont "sur une ROUTE du"
+	cont "nord."
 	prompt
 
 _BallDesignerPidgeotHint::
-	text "A stunning bird"
-	line "#MON in a"
-	cont "ROUTE with many"
-	cont "fences."
+	text "Un superbe #MON"
+	line "oiseau sur une"
+	cont "ROUTE bordée de"
+	cont "clôtures."
 	prompt
 
 _BallDesignerGrimerHint::
-	text "A #MON living"
-	line "secretly below an"
-	cont "underground path!"
+	text "Un #MON vivant"
+	line "secrètement sous"
+	cont "un passage"
+	cont "souterrain!"
 	prompt
 
 _BallDesignerGastlyHint::
-	text "A little girl who"
-	line "is in touch with"
-	cont "the supernatural!"
+	text "Une petite fille"
+	line "en contact avec"
+	cont "le surnaturel!"
 	prompt
 
 _BallDesignerScytherHint::
-	text "A fast #MON"
-	line "zooming through a"
-	cont "ROUTE with lots"
-	cont "of tall grass."
+	text "Un #MON rapide"
+	line "filant à toute"
+	cont "allure sur une"
+	cont "ROUTE bordée de"
+	cont "hautes herbes."
 	prompt
 
 _BallDesignerLassHint::
-	text "A skirt-wearing"
-	line "girly girl who"
-	cont "loves CLEFAIRY."
+	text "Une fillette très"
+	line "féminine qui"
+	cont "porte des jupes"
+	cont "et adore MELOFEE."
 	prompt
 
 _BallDesignerMankeyHint::
-	text "An angry looking"
-	line "ball of fluff"
-	cont "living near the"
-	cont "path for BIKERs!"
+	text "Une boule de poils"
+	line "à l'air furieux"
+	cont "vivant près de la"
+	cont "PISTE CYCLABLE!"
 	prompt
 
 _BallDesignerGamblerHint::
-	text "A lucky man who"
-	line "embraces random"
-	cont "chaos in battle!"
+	text "Un homme chanceux"
+	line "qui accepte le"
+	cont "chaos aléatoire"
+	cont "au combat!"
 	prompt
 
 _CeruleanBallDesignerThanksForHelp::
-	text "You helped me"
-	line "design so many"
-	cont "new # BALLs!"
-	para "Now customize"
-	line "some of your own!"
-	para "Head to my bench"
-	line "and get busy!"
-	para "Good job,"
-	line "assistant!"
+	text "Tu m'as aidé à"
+	line "concevoir plein"
+	cont "de nouvelles"
+	cont "# BALL!"
+	para "Vas-y, personna-"
+	line "lise les tiennes!"
+	para "Va à mon établi et"
+	line "au boulot!"
+	para "Bravo, assistant!"
 	done
 
 _CeruleanBallDesignerBenchCustomizeNoPermission::
-	text "A bunch of tools"
-	line "and doodads for"
-	cont "designing new"
-	cont "# BALLs!"
-	para "I don't have"
-	line "permission to use"
-	cont "these yet."
+	text "Tout un tas"
+	line "d'outils et de"
+	cont "gadgets pour"
+	cont "concevoir des"
+	cont "# BALL!"
+	para "Je n'ai pas encore"
+	line "la permission de"
+	cont "les utiliser."
 	done
 
 _NeedWorkBenchInfo::
-	text "Need info on using"
-	line "the workbench?"
+	text "Besoin d'infos"
+	line "sur l'utilisation"
+	cont "de l'établi?"
 	prompt
 
 _WorkbenchInfoBasic::
-	text "Custom # BALLs"
-	line "are special."
-	para "They have unique"
-	line "animations when"
-	cont "sending out your"
-	cont "#MON!"
-	para "But these custom"
-	line "BALLs don't have"
-	cont "catch mechanisms!"
-	para "You cannot catch"
-	line "wild #MON with"
-	cont "them."
+	text "Les # BALL"
+	line "personnalisées"
+	cont "sont spéciales."
+	para "Elles ont des"
+	line "animations"
+	cont "uniques lorsque"
+	cont "vous envoyez"
+	cont "votre #MON!"
+	para "Mais ces # BALL"
+	line "personnalisées"
+	cont "n'ont pas de"
+	cont "mécanisme de"
+	cont "capture!"
+	para "Vous ne pouvez pas"
+	line "les utiliser pour"
+	cont "attraper des"
+	cont "#MON sauvages."
 	prompt
 
 _WorkbenchInfoChangingBalls::
-	text "You can change the"
-	line "# BALLs your"
-	cont "#MON are in."
-	para "For item BALLs,"
-	line "you will need one"
-	cont "in your bag to"
-	cont "switch a #MON"
-	cont "into it."
-	para "But custom BALLs"
-	line "are unlimited!"
-	para "By switching a"
-	line "#MON to a"
-	cont "custom BALL,"
-	para "you can get back"
-	line "your item BALL!"
-	para "Save your money"
-	line "and reuse item"
-	cont "BALLs to catch"
-	cont "more #MON!"
-	prompt 
+	text "Vous pouvez"
+	line "changer les"
+	cont "# BALL dans"
+	cont "lesquelles se"
+	cont "trouvent vos"
+	cont "#MON."
+	para "Pour les BALL"
+	line "objet, il vous en"
+	cont "faut une dans"
+	cont "votre sac pour y"
+	cont "transférer un"
+	cont "#MON."
+	para "Mais les BALL"
+	line "personnalisées"
+	cont "sont illimitées!"
+	para "En transférant un"
+	line "#MON dans une"
+	cont "# BALL"
+	cont "personnalisée,"
+	para "vous récupérer"
+	line "l'ancienne BALL"
+	cont "en tant qu'objet!"
+	para "Economisez votre"
+	line "argent et réuti-"
+	cont "lisez les BALL"
+	cont "objet pour"
+	cont "capturer plus de"
+	cont "#MON!"
+	prompt
 
 _WorkbenchInfoCustomizingBalls::
-	text "You can modify"
-	line "custom BALLs that"
-	cont "you've unlocked."
-	para "You can change"
-	line "their audiovisual"
-	cont "effects!"
-	para "As the DESIGNER"
-	line "makes new BALLs,"
-	cont "you will unlock"
-	cont "more options."
+	text "Vous pouvez"
+	line "modifier les BALL"
+	cont "personnalisées"
+	cont "que vous avez"
+	cont "débloquées."
+	para "Vous pouvez"
+	line "changer leurs"
+	cont "effets audio et"
+	cont "visuels!"
+	para "A mesure que le"
+	line "DESIGNER crée de"
+	cont "nouvelles BALL,"
+	cont "vous débloquerez"
+	cont "plus d'options."
 	prompt
 
 _CeruleanBallDesignerBookshelfText::
-	text "A reel-to-reel"
-	line "audio system!"
-	para "Lots of tapes"
-	line "on the shelf too!"
-	para "Classical, jazz,"
-	line "big band<...>"
+	text "Un magnétophone"
+	line "à bobines!"
+	para "Avec plein de"
+	line "cassettes aussi!"
+	para "Classique, jazz,"
+	line "orchestral<...>"
 	done
 
 _CeruleanBallDesignerCannotChangeTile::
-	text "You cannot change"
-	line "tile of this poof"
-	cont "animation."
-	para "OG Poof + Explode"
-	line "animations use"
-	cont "static graphics."
+	text "Vous ne pouvez pas"
+	line "modifier le motif"
+	cont "de l'animation."
+	para "L'animation"
+	line "Classique +"
+	cont "Explosion utilise"
+	cont "des graphismes"
+	cont "statiques."
 	prompt
 
 _CeruleanBallDesignerCannotChangeColor::
-	text "Cannot edit color"
-	line "on this system."
+	text "Impossible de"
+	line "modifier la"
+	cont "couleur sur ce"
+	cont "système."
 	prompt
 
 _BallDesignerInfoText::
-	text "If ON, in CERULEAN"
-	line "CITY a new house"
-	cont "will contain the"
-	cont "BALL DESIGNER."
-	para "You can work"
-	line "with the DESIGNER"
-	cont "to create new"
-	cont "# BALLs."
-	para "Customize BALLs"
-	line "with unlockable"
-	cont "audiovisual"
-	cont "effects!"
+	text "Si option sur ON,"
+	line "une nouvelle"
+	cont "maison à AZURIA"
+	cont "abritera le"
+	cont "DESIGNER DE BALL."
+	para "Vous pouvez"
+	line "collaborer avec"
+	cont "le DESIGNER pour"
+	cont "créer des"
+	cont "nouvelles"
+	cont "# BALL."
+	para "Personnalisez vos"
+	line "BALL avec des"
+	cont "effets audio et"
+	cont "visuels à"
+	cont "débloquer!"
 	prompt
 
 _BallDesignerCameraBack::
-	text "By the way,"
-	para "Can I have my"
-	line "CAMERA back?"
+	text "Au fait,"
+	para "Tu peux me rendre"
+	line "mon APP. PHOTO?"
 	done
 
 _BallDesignerCameraBackPC::
-	text "It's in your PC!"
-	line "Retrieve it first."
+	text "C'est dans ton <PC>!"
+	line "Récupère-le"
+	cont "d'abord."
 	done
 
 _BallDesignerCameraBorrowAgain::
-	text "Thanks!"
-	para "Feel free to"
-	line "borrow it again"
-	cont "from my DARKROOM!"
+	text "Merci!"
+	para "N'hésite pas à"
+	line "l'emprunter à"
+	cont "nouveau dans ma"
+	cont "CHAMBRE NOIRE!"
 	done

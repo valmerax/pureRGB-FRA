@@ -1,24 +1,26 @@
 _CeladonCityLittleGirlText::
-	text "I got my KOFFING"
-	line "in CINNABAR!"
+	text "J'ai eu mon"
+	line "SMOGO à"
+	cont "CRAMOIS'ILE!"
 
-	para "It's nice, but it"
-	line "breathes poison"
-	cont "when it's angry!"
+	para "Il est gentil"
+	line "mais il crache du"
+	cont "poison pour un"
+	cont "rien!"
 	done
 
 _CeladonCityLittleGirlText2::
-	text "Want to see?"
+	text "Tu veux voir?"
 	done
 
 _CeladonCityLittleGirlText3::
-	text "Haha, it is pretty"
-	line "cool after all!"
+	text "Haha, c'est plutôt"
+	line "cool finalement!"
 	done
 
 _KoffingLearnsetText::
-	text "Watch this!"
-	para "Go, KOFFING!@"
+	text "Regarde ça!"
+	para "Allez, SMOGO!@"
 	text_asm
 	ld a, [wPlayerDirection]
 	cp PLAYER_DIR_RIGHT
@@ -40,60 +42,67 @@ _KoffingLearnsetText::
 	rst TextScriptEnd
 
 _CeladonCityGramps1Text::
-	text "Heheh! This GYM"
-	line "is great! It's"
-	cont "full of women!"
+	text "Héhé! Cette ARENE"
+	line "est terrible! Y'a"
+	cont "plein d'meufs!"
 	done
 
 _CeladonCityGirlText::
-	text "The GAME CORNER"
-	line "is bad for our"
-	cont "city's image!"
+	text "Le CASINO n'est"
+	line "pas très bon pour"
+	cont "notre image!"
 	done
 
 _CeladonCityGramps2Text::
-	text "Moan! I blew it"
-	line "all at the slots!"
+	text "Pfff<...> J'ai tout"
+	line "perdu au CASINO!"
 
-	para "I knew I should"
-	line "have cashed in my"
-	cont "coins for prizes!"
+	para "J'aurais dû"
+	line "acheter un prix"
+	cont "avec mes jetons"
+	cont "avant de tout"
+	cont "claquer!"
 	done
 
 _CeladonCityGramps3Text::
-	text "Hello, there!"
+	text "Bonjour!"
 
-	para "I've seen you,"
-	line "but I never had a"
-	cont "chance to talk!"
+	para "Enfin tu viens"
+	line "me parler!"
 
-	para "Shall I reward you"
-	line "for dropping by?"
+	para "Veux-tu que je te"
+	line "récompense pour"
+	cont "ta visite?"
 
 	para "Hmm<...>"
-	line "I know!"
+	line "Je sais!"
 
-	para "I'm a retired"
-	line "teacher."
+	para "Je suis un"
+	line "professeur à"
+	cont "la retraite."
 
-	para "I know a lot about"
-	line "less popular"
-	cont "#MON moves!"
+	para "J'en sais beaucoup"
+	line "sur les capacités"
+	cont "#MON peu"
+	cont "connues!"
 
-	para "So I'll teach"
-	line "your #MON!"
+	para "Je vais donc"
+	line "enseigner à"
+	cont "ton #MON!"
 	prompt
 
 _CeladonCityGramps3Text2::
-	text "Hello again!"
-	para "Do your #MON"
-	line "want to learn?"
+	text "Bonjour à nouveau!"
+	para "Votre #MON"
+	line "souhaite-t-il"
+	cont "apprendre?"
 	prompt
 
 _CeladonPoolGrampsAfterTeachText::
-	text "A new move is"
-	line "always exciting!"
-	para "Use it well!"
+	text "Un déménagement,"
+	line "c'est toujours"
+	cont "excitant!"
+	para "Profitez-en bien!"
 	done
 
 _GenericPlayerReceivedText::
@@ -104,18 +113,24 @@ _CeladonGymReceivedTM21Text::
 _CeladonMart3FClerkReceivedTM18Text::
 _CeladonMartRoofLittleGirlReceivedTM13Text::
 _CeladonMartRoofLittleGirlReceivedTM48Text::
-_CopycatsHouse2FCopycatReceivedTM31Text::
-_MrPsychicsHouseMrPsychicReceivedTM29Text::
-_SaffronGymSabrinaReceivedTM46Text::
 _FuchsiaGymKogaReceivedTM06Text::
 _WardensHouseWardenReceivedHM04Text::
-_SafariZoneSecretHouseFishingGuruReceivedHM03Text::
-_CinnabarGymBlaineReceivedTM38Text::
 _CinnabarLabMetronomeRoomScientist1ReceivedTM35Text::
 _ViridianCityFisherReceivedTM42Text::
 _ViridianGymGiovanniReceivedTM27Text::
+	text "<PLAYER> reçoit:"
+	line "@"
+	text_ram_stringbuffer
+	text "!@"
+	text_end
+
+_CopycatsHouse2FCopycatReceivedTM31Text::
+_MrPsychicsHouseMrPsychicReceivedTM29Text::
+_SaffronGymSabrinaReceivedTM46Text::
+_SafariZoneSecretHouseFishingGuruReceivedHM03Text::
+_CinnabarGymBlaineReceivedTM38Text::
 _Route12Gate2FBrunetteGirlReceivedTM39Text::
-	text "<PLAYER> received"
+	text "<PLAYER> obtient:"
 	line "@"
 	text_ram_stringbuffer
 	text "!@"
@@ -123,131 +138,141 @@ _Route12Gate2FBrunetteGirlReceivedTM39Text::
 
 ; PureRGBnote: CHANGED: he is now a tutor
 ;_CeladonCityGramps3TM41ExplanationText::
-;	text "<CT>41 teaches"
-;	line "MEDITATE!"
+;	text "La <CT>41 contient"
+;	line "YOGA!"
 ;
-;	para "It raises ATTACK,"
-;	line "SPECIAL and SPEED"
-;	cont "all by one stage!"
+;	para "Augmente l'ATTAQUE,"
+;	line "le SPECIAL et la"
+;	cont "VITESSE d'un cran!"
 ;
-;	para "Your #MON will"
-;	line "be unstoppable!"
+;	para "Votre #MON sera"
+;	line "inarrêtable!"
 ;	done
 
 ;_CeladonCityGramps3TM41NoRoomText::
 _GenericPackIsFullOfItemsText::
-	text "Oh, your pack is"
-	line "full of items!"
+	text "Oh, ton sac est"
+	line "plein à craquer!"
 	done
 
 _CeladonCityFisherText::
-	text "This is my trusted"
-	line "pal, POLIWRATH!"
+	text "C'est mon copain:"
+	line "TARTARD!"
 
-	para "It evolved from"
-	line "POLIWHIRL when I"
-	cont "used WATER STONE!"
+	para "Il n'était qu'un"
+	line "TETARTE avant"
+	cont "d'utiliser une"
+	cont "PIERRE EAU!"
 	done
 
 _CeladonCityFisher2Text::
-	text "Want to see some"
-	line "of its moves?"
+	text "Tu veux voir ses"
+	line "capacités?"
 	done
 
 _PoliwrathLearnsetText::
-	text "Ready, @"
+	text "Prêt, @"
 	text_ram_namebuffer
 	text "?"
 	prompt
 
 _CeladonCityPoliwrathText::
-	text "POLIWRATH: Ribi"
-	line "ribit!@"
+	text "TARTARD: Tarta!"
+	line "Taaaar!@"
 	text_end
 
 _CeladonCityRocket1Text::
-	text "What are you"
-	line "staring at?"
+	text "Kesstu mates?"
 	done
 
 _CeladonCityRocket2Text::
-	text "Keep out of <TEAM>"
-	line "<ROCKET>'s way!"
+	text "Laisse la <TEAM>"
+	line "tranquille!"
 	done
 
 _CeladonCityTrainerTips1Text::
 	text "<ASTUCE>"
 
-	para "X ACCURACY boosts"
-	line "the accuracy of"
-	cont "techniques!"
+	para "PRECISION +"
+	line "augmente la"
+	cont "précision des"
+	cont "attaques!"
 
-	para "DIRE HIT jacks up"
-	line "the likelihood of"
-	cont "critical hits!"
+	para "MUSCLE +"
+	line "augmente les"
+	cont "chances de coups"
+	cont "critiques!"
 	; fall through
 _GetYourItemsAtDeptStore::
-	para "Get your items at"
-	line "CELADON DEPT."
-	cont "STORE!"
+	para "Les meilleurs"
+	line "objets sont en"
+	cont "vente au CENTRE"
+	cont "COMMERCIAL de"
+	cont "CELADOPOLE!"
 	done
 
 _CeladonCitySignText::
-	text "CELADON CITY"
-	para "The City of"
-	line "Rainbow Dreams"
+	text "CELADOPOLE"
+	para "Ville aux rêves"
+	line "arc-en-ciel"
 	done
 
 _CeladonCityGymSignText::
-	text "CELADON CITY"
-	line "#MON GYM"
-	cont "LEADER: ERIKA"
+	text "CELADOPOLE"
+	line "ARENE #MON"
+	cont "CHAMPION: ERIKA"
 
-	para "The Nature Loving"
-	line "Princess!"
+	para "Le combat par"
+	line "les plantes!"
 	done
 
 _CeladonCityMansionSignText::
-	text "CELADON MANSION"
+	text "MANOIR CELADON"
 	done
 
 _CeladonCityDeptStoreSignText::
-	text "Find what you"
-	line "need at CELADON"
-	cont "DEPT. STORE!"
+	text "Y'a tout c'qui"
+	line "t'faut au CENTRE"
+	cont "COMMERCIAL de"
+	cont "CELADOPOLE!"
 	done
 
 _CeladonCityTrainerTips2Text::
 	text "<ASTUCE>"
 
-	para "GUARD SPEC."
-	line "protects #MON"
-	cont "against status"
-	cont "moves like LEER"
-	cont "or SAND-ATTACK!@"
+	para "DEFENSE SPEC"
+	line "protège les"
+	cont "#MON des atta-"
+	cont "ques SPECIALES"
+	cont "telles que le feu"
+	cont "ou l'eau!"
 
-	text_jump _GetYourItemsAtDeptStore
+	para "Y'a tout c'qui"
+	line "t'faut au CENTRE"
+	cont "COMMERCIAL de"
+	cont "CELADOPOLE!"
+	done
 
 _CeladonCityPrizeExchangeSignText::
-	text "Coins exchanged"
-	line "for prizes!"
-	cont "PRIZE EXCHANGE"
+	text "CHANGE"
+	line "Des jetons contre"
+	cont "de bô prix!"
 	done
 
 _CeladonCityGameCornerSignText::
-	text "<ROCKET> GAME CORNER"
-	line "The playground"
-	cont "for grown-ups!"
+	text "CASINO <ROCKET>"
+	line "Club de jeu"
+	cont "pour adultes!"
 	done
 
 _CeladonCityText19::
 	text "<ASTUCE>"
-	para "Open the START"
-	line "menu and scroll"
-	cont "down to the SAVE"
-	cont "option."
-	para "Then press SELECT"
-	line "to change <PC>"
-	cont "boxes whenever"
-	cont "you like!"
+	para "Ouvrez le menu"
+	line "et faites défiler"
+	cont "jusqu'à l'option"
+	cont "SAUVER."
+	para "Appuyez ensuite"
+	line "sur SELECT pour"
+	cont "gérer vos BOITES"
+	cont "<PC> à votre guise!"
 	done

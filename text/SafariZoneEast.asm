@@ -1,169 +1,176 @@
 _SafariZoneEastRestHouseSignText::
-	text "REST HOUSE"
+	text "ABRI"
 	done
 
 _SafariZoneEastTrainerTipsText::
 	text "<ASTUCE>"
 
-	para "The remaining time"
-	line "declines only"
-	cont "while you walk!"
+	para "Le temps s'écoule"
+	line "en fonction des"
+	cont "pas!"
 	done
 
 _SafariZoneEastSignText::
-	text "AREA 1"
-	line "WEST: CENTER AREA"
+	text "PARC CENTRAL"
+	line "NORD: PARC 2"
 	done
 
 _SafariZoneEastRangerText::
-	text "Oh my goodness!"
-	line "It seems you've"
-	cont "found me!"
+	text "Oh là là!"
+	line "On dirait que tu"
+	cont "m'as trouvé!"
 
-	para "I'm RANGER number"
-	line "2! I've been"
-	cont "waiting for you."
+	para "Je suis le RANGER"
+	line "numéro 2! Je"
+	cont "t'attendais."
 	done
 
 _SafariZoneEastRangerEndBattleText::
-	text "Have"
-	line "a lovely day!"
+	text "Passe une bonne"
+	line "journée!"
 	prompt
 
 _SafariZoneEastRangerAfterBattleText::
-	text "You did great!"
-	line "I love seeing"
-	cont "skilled trainers"
-	cont "battle."
+	text "Tu as été super!"
+	line "J'adore voir des"
+	cont "dresseurs aussi"
+	cont "doués s'affronter."
 
-	para "I'll battle you"
-	line "anytime."
+	para "Je t'affronte quand"
+	line "tu veux."
 	done
 
 _SafariZoneEastPsychicText::
-	text "The tall grass"
-	line "bows deeply to"
-	cont "my telekinesis."
+	text "Les hautes herbes"
+	line "s'inclinent devant"
+	cont "ma télékinésie."
 
-	para "A lone trainer"
-	line "approaches, all"
-	cont "but cowering at"
-	cont "the sight of my"
-	cont "abilities."
+	para "Un dresseur soli-"
+	line "taire s'approche,"
+	cont "presque terrifié"
+	cont "à la vue de mes"
+	cont "pouvoirs."
 	done
 
 _SafariZoneEastPsychicEndBattleText::
-	text "Now"
-	line "humiliated, I"
-	cont "resign myself to"
-	cont "a state of silent"
-	cont "contemplation."
+	text "Humilié, je me"
+	line "résigne à un état"
+	cont "de contemplation"
+	cont "silencieuse."
 	prompt
 
 _SafariZoneEastPsychicAfterBattleText::
-	text "I continued to"
-	line "make a mental"
-	cont "note of my total"
-	cont "failure as the"
-	cont "trainer looked on"
-	cont "in disgust."
+	text "Je ne cesse de me"
+	line "remémorer mon"
+	cont "échec total"
+	cont "tandis que le"
+	cont "mentor m'observe"
+	cont "avec dégoût."
 	done
 
 _SafariZoneEastRockerText::
-	text "My band needs"
-	line "another mascot!"
-	para "What's the"
-	line "biggest, baddest"
-	cont "#MON this"
-	cont "place has to"
-	cont "offer?"
+	text "Ma bande a besoin"
+	line "d'une nouvelle"
+	cont "mascotte!"
+	para "Quel est le"
+	line "#MON le plus"
+	cont "imposant et le"
+	cont "plus redoutable"
+	cont "qu'on puisse"
+	cont "trouver ici?"
 	done
 
 _SafariZoneEastRockerEndBattleText::
-	text "Heavy"
-	line "metal never dies!"
+	text "Le heavy metal ne"
+	line "meurt jamais!"
 	prompt
 
 _SafariZoneEastRockerAfterBattleText::
-	text "I set my whip on"
-	line "fire when I"
-	cont "play heavy metal"
-	cont "on stage!"
+	text "Je mets le feu à"
+	line "mon fouet quand"
+	cont "je joue du heavy"
+	cont "metal sur scène!"
 
-	para "Pyrotechnics and"
-	line "300BPM are our"
-	cont "mainstays!"
+	para "Pyrotechnie et"
+	line "300BPM, voilà"
+	cont "notre truc!"
 
-	para "That's why I've"
-	line "got ELECTRODE!"
+	para "C'est pour ça que"
+	line "j'ai ELECTRODE!"
 
-	para "Fast and furious"
-	line "is how we play!"
+	para "On joue vite et"
+	line "fort!"
 
-	para "Never give up on"
-	line "your dreams, kid!"
+	para "Ne renonce jamais"
+	line "à tes rêves,"
+	cont "gamin!"
 	done
 
 _SafariZoneEastCooltrainerMText::
-	text "I have a huge"
-	line "crush on one"
-	cont "of the SAFARI"
-	cont "ZONE RANGERs."
+	text "J'ai un faible"
+	line "pour l'un des"
+	cont "RANGERs du PARC"
+	cont "SAFARI."
 	done
 
 _SafariZoneEastCooltrainerMEndBattleText::
-	text "I'm"
-	line "blinded by love!"
+	text "Je suis aveuglé"
+	line "par l'amour!"
 	prompt
 
 _SafariZoneEastCooltrainerMAfterBattleText::
-	text "RANGER number 2"
-	line "is the cutest."
+	text "La RANGER numéro 2"
+	line "est la plus"
+	cont "mignonne."
 
-	para "What a lovely"
-	line "girl<...>"
+	para "Quelle jolie"
+	line "fille<...>"
 
-	para "I'm way too"
-	line "nervous to flirt"
-	cont "with her after"
-	cont "we battle."
+	para "Je suis bien trop"
+	line "nerveux pour"
+	cont "flirter avec elle"
+	cont "après notre"
+	cont "combat."
 
-	para "Do you have any"
-	line "tips for romance?"
+	para "T'as des conseils"
+	line "en séduction à me"
+	cont "donner?"
 	done
 
 _SafariZoneEastEngineerText::
-	text "Who's the"
-	line "nincompoop who"
-	cont "designed this"
-	cont "REST HOUSE?"
+	text "Quel est l'imbécile"
+	line "qui a conçu cet"
+	cont "ABRI?"
 	done
 
 _SafariZoneEastEngineerEndBattleText::
-	text "Quiet!"
-	line "I'm thinking."
+	text "Silence!"
+	line "Je réfléchis."
 	prompt
 
 _SafariZoneEastEngineerAfterBattleText::
-	text "Rain pools on"
-	line "the flat roof"
-	cont "and leaks inside."
+	text "L'eau de pluie"
+	line "stagne sur le"
+	cont "toit plat et"
+	cont "s'infiltre à"
+	cont "l'intérieur."
 
-	para "Just because it"
-	line "doesn't rain much"
-	cont "here doesn't mean"
-	cont "that's okay!"
+	para "Ce n'est pas parce"
+	line "qu'il ne pleut pas"
+	cont "beaucoup ici que"
+	cont "c'est acceptable!"
 
-	para "I can't believe"
-	line "this!"
+	para "Je n'en reviens"
+	line "pas!"
 
-	para "The sheer lack of"
-	line "foresight!"
+	para "Quel manque de"
+	line "prévoyance!"
 
-	para "Alright, so be it."
-	line "It's fixing time!"
+	para "Bon, tant pis."
+	line "Il est temps de"
+	cont "réparer tout ça!"
 
-	para "I'm going to make"
-	line "this REST HOUSE"
-	cont "my work of art!"
+	para "Je vais faire de"
+	line "cet ABRI une"
+	cont "oeuvre d'art!"
 	done

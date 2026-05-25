@@ -1,10 +1,11 @@
 _RocketHideoutElevatorAppearsToNeedKeyText::
-	text "It appears to"
-	line "need a key.@"
+	text "On dirait qu'il"
+	line "faut une clé!@"
 	text_end
 
 _UnlockedElevatorText::
-	text "<PLAYER> unlocked"
-	line "the elevator with"
-	cont "the LIFT KEY!"
+	text "<PLAYER>"
+	line "déverouille"
+	cont "l'ascenseur avec"
+	cont "la CLE ASC.!"
 	prompt	

@@ -1,5 +1,5 @@
 _AgathaBeforeBattleText::
-	text "Gnnn... Bonjour"
+	text "Gnnn<...> Bonjour"
 	line "mon tout petit."
 	cont "Je suis AGATHA du"
 	cont "CONSEIL des 4!"
@@ -11,7 +11,7 @@ _AgathaBeforeBattleText::
 	para "Sais-tu que ce"
 	line "vieux machin"
 	cont "était jadis beau"
-	cont "garçon? Enfin..."
+	cont "garçon? Enfin<...>"
 	cont "Il y a très"
 	cont "longtemps!"
 
@@ -36,7 +36,7 @@ _AgathaEndBattleText::
 	prompt
 
 _AgathaAfterBattleText::
-	text "Mmmm... Je vois"
+	text "Mmmm<...> Je vois"
 	line "pourquoi le vieux"
 	cont "CHEN t'apprécie"
 	cont "autant!"

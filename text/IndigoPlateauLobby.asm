@@ -1,110 +1,122 @@
 _IndigoPlateauLobbyGymGuideText::
-	text "At #MON LEAGUE,"
-	line "you have to face"
-	cont "the ELITE FOUR in"
-	cont "succession."
+	text "Tu vas devoir"
+	line "affronter le"
+	cont "CONSEIL des 4"
+	cont "dans l'ordre pour"
+	cont "triompher de la"
+	cont "LIGUE #MON."
 
-	para "If you lose, you"
-	line "have to start all"
-	cont "over again! This"
-	cont "is it! Go for it!"
-
-	para "If you need <CT>s"
-	line "just talk to"
-	cont "my son!"
-
-	para "He's a chip off"
-	line "the old block!@"
-	text_end
+	para "Si tu perds,"
+	line "d'abord tu auras"
+	cont "honte, et ensuite"
+	cont "tu devras tout"
+	cont "recommencer!"
+	cont "Alors fais bien"
+	cont "attention et<...>"
+	cont "Ecrase-les!"
+	done
 
 _IndigoPlateauGymGuideChampGreeting::
-	text "Yo! Champ!!"
-	line "Congratulations!"
+	text "Yo! Champion!!"
+	line "Félicitations!"
 
-	para "I saw a fire in"
-	line "your eyes back in"
-	cont "PEWTER CITY<...>"
-	cont "I knew you'd go"
-	cont "places!"
+	para "J'ai vu une flamme"
+	line "dans tes yeux à"
+	cont "ARGENTA<...>"
+	cont "Je savais que tu"
+	cont "irais loin!"
 
-	para "By the way, could"
-	line "you sign an auto-"
-	cont "graph for my son?"
-	cont "He's a big fan!@"
+	para "Au fait, tu peux"
+	line "signer un auto-"
+	cont "graphe pour mon"
+	cont "fils? C'est un"
+	cont "grand fan!@"
 	text_end
 
 _IndigoPlateauGymGuideChampApexChips::
-	text "Come talk to me"
-	line "whenever you need"
-	cont "some APEX CHIPs."
+	text "N'hésite pas à"
+	line "venir me voir si"
+	cont "tu as besoin de"
+	cont "PUCE APEX."
 	done
 
 _IndigoPlateauGymGuideChampAfterGreet::
-	text "Yo! Champ!!"
-	line "How's it going?"
+	text "Yo! Champion!!"
+	line "Comment ça va?"
 
-	para "My son and I are"
-	line "here to help!@"
+	para "Mon fils et moi"
+	line "sommes là pour"
+	cont "t'aider!@"
 	text_end
 
 _IndigoPlateauLobbyCooltrainerFText::
-	text "From here on, you"
-	line "face the ELITE"
-	cont "FOUR one by one!"
+	text "A partir d'ici,"
+	line "tu affronteras"
+	cont "les quatre"
+	cont "membres du<...>."
+	cont "CONSEIL des 4!"
 
-	para "If you win, a"
-	line "door opens to the"
-	cont "next trainer!"
-	cont "Good luck!"
+	para "Remporte la"
+	line "victoire et une"
+	cont "porte s'ouvrira"
+	cont "vers le prochain"
+	cont "dresseur. Bonne"
+	cont "chance, petit!"
 	done
 
 _IndigoPlateauApexChipsAfterChamp::
-	text "If you beat the"
-	line "ELITE FOUR and"
-	cont "become champ,"
-	cont "remember to come"
-	cont "talk to me."
+	text "Si tu bats le"
+	line "CONSEIL des 4 et"
+	cont "que tu deviens"
+	cont "champion, n'oublie"
+	cont "pas de venir me"
+	cont "parler."
 
-	para "I'll always be"
-	line "here to help,"
-	cont "even after you"
-	cont "become champ!@"
+	para "Je serai toujours"
+	line "là pour t'aider,"
+	cont "même après que tu"
+	cont "aies remporté le"
+	cont "titre!@"
 	text_end
 
 _IndigoPlateauGymGuideSonText::
-	text "It's me! The <CT>"
-	line "Pirate and Gym"
-	cont "Guide in making!"
+	text "C'est moi! Le"
+	line "Pirate <CT> et"
+	cont "GUIDE D'ARENE en"
+	cont "devenir!"
 	prompt
 
 _IndigoPlateauGymGuideSonChampText::
-	text "Yo! Champ!!"
+	text "Yo! Champion!!"
 
-	para "It's me! The <CT>"
-	line "Pirate and Gym"
-	cont "Guide in making!"
+	para "C'est moi! Le"
+	line "Pirate <CT> et"
+	cont "GUIDE D'ARENE en"
+	cont "devenir!"
 	prompt
 
 _IndigoPlateauGymGuideSonIntro::
-	text "I'm going to be"
-	line "a great gym guide"
-	cont "like my dad some"
-	cont "day!"
+	text "Un jour, je serai"
+	line "un super GUIDE"
+	cont "D'ARENE comme mon"
+	cont "papa!"
 
-	para "I'm a certified"
-	line "<CT> engineer now!"
+	para "Je suis désormais"
+	line "ingénieur <CT>"
+	cont "certifié!"
 
-	para "Got some powerful"
-	line "<CT>s copied from"
-	cont "dad's originals!"
+	para "J'ai des <CT> super"
+	line "puissantes copiés"
+	cont "des originaux de"
+	cont "papa!"
 
-	para "Want some?"
+	para "Tu en veux?"
 	done
 
 _IndigoPlateauGymGuideSonMoreTMs::
-	text "I've got every"
-	line "single <CT> copied"
-	cont "and ready for you"
-	cont "now! Want some?"
+	text "J'ai copié toutes"
+	line "les <CT> et elles"
+	cont "sont prêtes pour"
+	cont "toi maintenant!"
+	cont "Tu en veux?"
 	done
-	

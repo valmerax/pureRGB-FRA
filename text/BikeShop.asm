@@ -18,7 +18,7 @@ _BikeShopCantAffordText::
 	prompt
 
 _BikeShopClerkOhThatsAVoucherText::
-	text "Oh! Mais c'est..."
+	text "Oh! Mais c'est<...>"
 
 	para "Un BON pour"
 	line "une BICYCLETTE!"
@@ -114,7 +114,7 @@ _BikeShopStatsText::
 	done
 
 _BikeShopArcade1Text::
-	text "Waouh!"
+	text "Woah!"
 	para "C'est EXCITEBIKE!"
 	para "Ce jeu est un"
 	line "classique!"

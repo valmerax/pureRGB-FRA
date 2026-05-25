@@ -26,7 +26,6 @@ _MapHelpText::
 	cont "CARTE. Facile!"
 	done
 
-_Route1Youngster1NoRoomText::
 _BluesHouseDaisyBagFullText::
 	text "Votre inventaire"
 	line "est plein."

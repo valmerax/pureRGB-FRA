@@ -1,72 +1,75 @@
 _Route2SignText::
 	text "ROUTE 2"
-	line "VIRIDIAN CITY -"
-	cont "PEWTER CITY"
+	line "JADIELLE -"
+	cont "ARGENTA"
 	done
 
 _Route2DiglettsCaveSignText::
-	text "DIGLETT's CAVE"
+	text "CAVE TAUPIQUEUR"
 	done
 
 _Route2BattleText1::
-	text "This field is a"
-	line "nice place!"
-	para "So much sunnier"
-	line "than VIRIDIAN"
-	cont "FOREST."
+	text "Ce champ est un"
+	line "endroit agréable!"
+	para "Tellement plus"
+	line "ensoleillé que la"
+	cont "FORET DE JADE."
 	done
 
 _Route2EndBattleText1::
-	text "I"
-	line "don't mind losing!"
+	text "Perdre ne me"
+	line "dérange pas!"
 	prompt
 
 _Route2AfterBattleText1::
-	text "Imagine a thunder"
-	line "storm hitting"
-	cont "this field."
-	para "Wouldn't that be"
-	line "exciting!"
+	text "Imagine un orage"
+	line "qui s'abat sur ce"
+	cont "champ."
+	para "Ce serait génial,"
+	line "non!"
 	done
 
 _Route2AfterBattle1Learnset::
-	text "What do you"
-	line "think?"
-	para "Who'd be better at"
-	line "braving a storm?"
-	para "SCYTHER or PINSIR?"
+	text "T'en penses quoi?"
+	para "Qui serait le plus"
+	line "à même d'affronter"
+	cont "une tempête?"
+	para "INSECATEUR ou"
+	line "SCARABRUTE?"
 	prompt
 
 _Route2AfterBattle2Learnset::
-	text "Everybody loves"
+	text "Tout le monde aime"
 	line "@"
 	text_ram_namebuffer
 	text "!"
-	para "Come on! Let's"
-	line "hang out."
-	para "I'll tell you"
-	line "more about it."
+	para "Allez! Passons du"
+	line "temps ensemble."
+	para "Je t'en dirai plus"
+	line "à son sujet."
 	prompt
 
 _Route2BattleText2::
-	text "Amazing how"
-	line "DIGLETT'S CAVE"
-	cont "leads all the way"
-	cont "to the outskirts"
-	cont "of VIRIDIAN CITY!"
+	text "Incroyable que la"
+	line "CAVE TAUPIQUEUR"
+	cont "mène tout droit"
+	cont "jusqu'aux abords"
+	cont "de JADIELLE!"
 	done
 
 _Route2EndBattleText2::
-	text "Not"
-	line "enough DIGLETTs!"
+	text "Pas assez de"
+	line "TAUPIQUEUR!"
 	prompt
 
 _Route2AfterBattleText2::
-	text "Wouldn't it be"
-	line "intimidating if"
-	cont "I had an army of"
-	cont "DIGLETTs trailing"
-	cont "everywhere I go?"
+	text "Ca ne serait pas"
+	line "intimidant si"
+	cont "j'avais une armée"
+	cont "de TAUPIQUEUR à"
+	cont "mes trousses"
+	cont "partout où je"
+	cont "vais?"
 	done
 
 _TextNothing::
@@ -74,28 +77,29 @@ _TextNothing::
 	done
 	
 _Route2BattleText3::
-	text "Don't trod on"
-	line "the flowers!"
+	text "Ne piétine pas les"
+	line "fleurs!"
 	done
 
 _Route2EndBattleText3::
-	text "Be"
-	line "careful!"
+	text "Sois prudent!"
 	prompt
 
 _Route2AfterBattleText3::
-	text "I come here for"
-	line "picnics."
-	para "It's a beautiful"
-	line "quiet spot to"
-	cont "relax."
+	text "Je viens ici pour"
+	line "pique-niquer."
+	para "C'est un endroit"
+	line "magnifique et"
+	cont "paisible, idéal"
+	cont "pour se détendre."
 	done
 
 _Route2AfterBattle3Learnset::
 	text "@"
 	text_ram_namebuffer
-	text " likes"
-	line "to doze among"
-	cont "the flowers."
+	text " aime"
+	line "faire la sieste"
+	cont "au milieu des"
+	cont "fleurs."
 	para "@"
 	text_end

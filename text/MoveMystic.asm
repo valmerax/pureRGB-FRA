@@ -1,150 +1,169 @@
 _MoveMysticIntro::
-	text "I am the"
-	line "MOVE MYSTIC!"
-	para "Certain #MON"
-	line "have hidden"
-	cont "talents!"
-	para "I can scry for"
-	line "their secrets in"
-	cont "my crystal ball!"
-	para "But only if"
-	line "you've seen the"
-	cont "#MON before!"
+	text "Je suis le"
+	line "MYSTIQUE DES"
+	cont "CAPACITES!"
+	para "Certains #MON"
+	line "possèdent des"
+	cont "talents cachés!"
+	para "Je peux percer"
+	line "leurs secrets"
+	cont "grâce à ma boule"
+	cont "de cristal!"
+	para "Mais seulement"
+	line "si tu as déjà"
+	cont "rencontré le"
+	cont "#MON!"
 	prompt
 
 _MoveMysticAgain::
-	text "You've returned to"
-	line "the MOVE MYSTIC!"
+	text "Tu es revenu"
+	line "auprès du"
+	cont "MYSTIQUE DES"
+	cont "CAPACITES!"
 	prompt
 
 _MoveMysticQuestion::
-	text "What #MON"
-	line "shall I divine"
-	cont "the secrets of?"
+	text "Je dois percer les"
+	line "secrets de quel"
+	cont "#MON?"
 	prompt
 
 _MoveMysticLookDeep::
-	text "Look deep into"
-	line "my crystal ball!"
+	text "Regarde au plus"
+	line "profond de ma"
+	cont "boule de cristal!"
 	prompt
 
 _MoveMysticAhYes::
-	text "Ah yes<...>"
-	line "I see it."
+	text "Ah oui<...>"
+	line "Je vois."
 	para "@"
 	text_ram_stringbuffer
-	text ", the@"
+	text ",@"
 	text_end
 
 _BeedrillMoveMysticText::
 	text_start
-	line "hypodermic"
-	cont "hornet."
+	line "le frelon"
+	cont "hypodermique."
 	prompt
 
 _ArbokMoveMysticText::
 	text_start
-	line "venomous viper."
+	line "le serpent"
+	cont "venimeux."
 	prompt
 
 _FearowMoveMysticText::
 	text_start
-	line "bloodthirsty"
-	cont "beak."
+	line "le bec"
+	cont "sanguinaire."
 	prompt
 
 _GolemMoveMysticText::
 	text_start
-	line "rolling rock."
+	line "le rocher"
+	cont "roulant."
 	prompt
 
 _HitmonleeMoveMysticText::
 	text_start
-	line "king of kicks."
+	line "le roi des coups"
+	cont "de pied."
 	prompt
 
 _HitmonchanMoveMysticText::
 	text_start
-	line "furious fist."
+	line "le poing furieux."
 	prompt
 
 _ElectabuzzMoveMysticText::
 	text_start
-	line "voltaic vanguard."
+	line "l'avant-garde"
+	cont "voltaïque."
 	prompt
 
 _MagmarMoveMysticText::
 	text_start
-	line "pyroclastic"
-	cont "punisher."
+	line "le bourreau"
+	cont "pyromane."
 	prompt
 
 _JynxMoveMysticText::
 	text_start
-	line "glacial goddess."
+	line "la déesse"
+	cont "glaciaire."
 	prompt
 
 _HypnoMoveMysticText::
 	text_start
-	line "hypnotic horror."
+	line "l'horreur"
+	cont "hypnotique."
 	prompt
 
 _DragoniteMoveMysticText::
 	text_start
-	line "mystical monarch."
+	line "le monarque"
+	cont "mystique."
 	prompt
 
 _SeakingMoveMysticText::
 	text_start
-	line "fabulous fish."
+	line "le poisson"
+	cont "fabuleux."
 	prompt
 	
 _KangaskhanMoveMysticText::
 	text_start
-	line "parental"
-	cont "powerhouse."
+	line "le pilier"
+	cont "parental."
 	prompt
 	
 _LickitungMoveMysticText::
 	text_start
-	line "salivating"
-	cont "slurper."
+	line "le siroteur"
+	cont "baveux."
 	prompt
 
 _OmastarMoveMysticText::
 	text_start
-	line "ancient ammonite."
+	line "l'ammonite"
+	cont "antique."
 	prompt
 
 _JigglypuffMoveMysticText::
 	text_start
-	line "spherical"
-	cont "songstress."
+	line "la chanteuse"
+	cont "sphérique."
 	prompt
 
 _WigglytuffMoveMysticText::
 	text_start
-	line "globular glory."
+	line "la gloire"
+	cont "globulaire."
 	prompt
 
 _GolduckMoveMysticText::
 	text_start
-	line "dangerous duck."
+	line "le canard"
+	cont "dangereux."
 	prompt
 
 _DewgongMoveMysticText::
 	text_start
-	line "splendid seal."
+	line "la splendide"
+	cont "sceau."
 	prompt
 
 _ArcanineMoveMysticText::
 	text_start
-	line "heroic hound."
+	line "le limier"
+	cont "héroïque."
 	prompt
 
 _MoveMysticMasterOfMoveText::
-	text "It's a master"
-	line "of @"
+	text "C'est un maître"
+	line "de @"
 	text_ram_namebuffer
 	text "!"
 	prompt
@@ -153,71 +172,81 @@ _MoveMysticTalentOfMoveText::
 	text "@"
 	text_ram_namebuffer
 	text ""
-	line "is its talent!"
+	line "est son talent!"
 	prompt
 
 _MoveMysticSoulCallsForMoveText::
-	text "Its soul calls"
-	line "for @"
+	text "Son âme appelle"
+	line "@"
 	text_ram_namebuffer
 	text "!"
 	prompt
 
 _MoveMysticLovesMoveText::
-	text "It loves to use"
+	text "Il adore utiliser"
 	line "@"
 	text_ram_namebuffer
 	text "!"
 	prompt
 
 _MoveMysticBeedrillText::
-	text "Its deadly"
-	line "stingers help in"
-	cont "multiple ways!"
-	para "POISON STING's"
-	line "POWER triples to"
-	cont "45!"
-	para "On top of that,"
-	line "TWINEEDLE's POWER"
-	cont "increases to 65!"
+	text "Ses dards mortels"
+	line "sont utiles à"
+	cont "bien des égards!"
+	para "La puissance de"
+	line "DARD-VENIN triple"
+	cont "et monte à 45!"
+	para "Et la puissance de"
+	line "DOUBLE-DARD monte"
+	cont "à 65!"
 	done
 
 _MoveMysticAccuracy85::
-	text "Its ACCURACY"
-	line "increases to 85%!"
+	text "Sa PRECISION monte"
+	line "à 85%!"
 	done
 
 _MoveMysticAccuracy100::
-	text "Its ACCURACY"
-	line "increases to 100%!"
+	text "Sa PRECISION monte"
+	line "à 100%!"
 	done
 
 _MoveMysticJigglyWigglyOnlyLevel20Text::
 	text_start
-	para "But only when"
-	line "above level 20!"
+	para "Mais seulement à"
+	line "partir du niveau"
+	cont "20!"
 	done
 
 _GenericMovePowerIncreasesText::
-	text "Its POWER"
-	line "increases to @"
+	text "Sa puissance monte"
+	line "à @"
 	text_decimal w2CharStringBuffer, 1, 3
 	text "!"
 	done
 
 _MoveMysticInfoText::
-	text "If ON, a new house"
-	line "will be available"
-	cont "in SAFFRON CITY."
-	para "The MOVE MYSTIC"
-	line "here will tell"
-	cont "you about #MON"
-	cont "SIGNATURE MOVEs."
-	para "Some #MON will"
-	line "have bonus power"
-	cont "or accuracy when"
-	cont "using some moves."
-	para "If turned OFF,"
-	line "these bonuses are"
-	cont "turned off too."
+	text "Si option sur ON,"
+	line "une nouvelle"
+	cont "maison sera"
+	cont "disponible à"
+	cont "SAFRANIA."
+	para "Le MYSTIQUE DES"
+	line "CAPACITES qui s'y"
+	cont "trouve vous"
+	cont "renseignera sur"
+	cont "les CAPACITES"
+	cont "SIGNATURE des"
+	cont "#MON."
+	para "Certains #MON"
+	line "bénéficieront"
+	cont "d'un bonus de"
+	cont "puissance ou de"
+	cont "précision lors de"
+	cont "l'utilisation de"
+	cont "certaines"
+	cont "capacités."
+	para "Si option sur OFF,"
+	line "ces bonus seront"
+	cont "désactivés."
 	prompt

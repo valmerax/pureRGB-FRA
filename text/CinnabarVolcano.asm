@@ -1,527 +1,567 @@
 _CinnabarVolcanoBombRocksText::
-	text "These rocks are"
-	line "blocking the lava"
-	cont "from flowing out."
-	para "Smash them with"
-	line "a #MON?"
+	text "Ces rochers"
+	line "empêchent la lave"
+	cont "de s'écouler."
+	para "Les détruire avec"
+	line "un #MON?"
 	done
 
 _CinnabarVolcanoBombRocksTextDoneJump::
 	para "@"
 _CinnabarVolcanoBombRocksTextDone::
-	text "Lava's flowing out"
-	line "of the volcano."
+	text "La lave s'écoule"
+	line "du volcan."
 	done
 
 _CinnabarVolcanoProspectorGreetingNotMetText::
-	text "Hey kid!"
-	para "This place is"
-	line "dangerous!"
-	para "What are you doing"
-	line "here?"
-	para "Huh! You've got"
-	line "strong #MON!"
+	text "Hé, petit!"
+	para "Cet endroit est"
+	line "dangereux!"
+	para "Tu fais quoi ici?"
+	para "Tiens! Tu as des"
+	line "#MON costauds!"
 	prompt
 
 _CinnabarVolcanoProspectorGreetingMetText::
-	text "PROSPECTOR: Hey"
-	line "kid!"
-	para "Imagine meeting"
-	line "you again here!"
-	para "You came at a"
-	line "great time!"
-	para "You've got strong"
-	line "#MON!"
+	text "PROSPECTEUR:"
+	line "Salut, petit!"
+	para "Quelle surprise de"
+	line "te revoir ici!"
+	para "Tu tombes à pic!"
+	para "Tu as des #MON"
+	line "bien costauds!"
 	prompt
 
 _CinnabarVolcanoProspectorStrongMonsText::
-	text "It's too hot in"
-	line "CINNABAR VOLCANO"
-	cont "for the average"
-	cont "explorer."
-	para "Maybe you can help"
-	line "us out in here!"
-	para "But first you'll"
-	line "need to put on"
-	cont "one of these-"
+	text "Il fait trop chaud"
+	line "dans le VOLCAN"
+	cont "CRAMOIS’ILE pour"
+	cont "un explorateur"
+	cont "lambda."
+	para "Tu pourrais"
+	line "peut-être nous"
+	cont "aider ici!"
+	para "Mais d'abord, tu"
+	line "devras porter"
+	cont "l'une de ces<...>"
 	prompt
 
 _CinnabarVolcanoProspectorLavaSuitText::
-	text "It's a LAVA SUIT!"
-	para "It'll protect you"
-	line "from the heat!"
-	para "It's like an oven"
-	line "in there!"
-	para "Here try this"
-	line "one on!"
+	text "C'est une"
+	line "COMBI. LAVE!"
+	para "Ca te protégera"
+	line "de la chaleur!"
+	para "C'est comme un"
+	line "four là-dedans!"
+	para "Tiens, essaie"
+	line "celle-là!"
 	prompt
 
 _CinnabarVolcanoProspectorLetsGo::
-	text "Lookin' good!"
-	para "Alright,"
-	line "follow me!"
+	text "Ca te va bien!"
+	para "Allez, suis-moi!"
 	done
 
 _CinnabarVolcanoProspectorHeresProblem::
-	text "Alright kid, here's"
-	line "the problem-"
+	text "Bon petit, voilà"
+	line "le problème<...>"
 	prompt
 
 _CinnabarVolcanoProspectorLavaExplain::
-	text "There's too much"
-	line "lava here in the"
-	cont "main lava cone!"
-	para "It usually flows"
-	line "out underwater."
-	para "If we don't drain"
-	line "out all the lava,"
-	para "the volcano will"
-	line "erupt soon!"
-	para "The lava must be"
-	line "clogged up below."
-	para "You've got to clear"
-	line "those blockages!"
+	text "Il y a trop de"
+	line "lave ici, dans le"
+	cont "grand cratère!"
+	para "D'habitude, elle"
+	line "s'écoule sous"
+	cont "l'eau."
+	para "Si on ne vide pas"
+	line "toute cette lave,"
+	para "le volcan va"
+	line "bientôt entrer"
+	cont "en éruption!"
+	para "La lave doit être"
+	line "bloquée en bas."
+	para "Tu doit dégager"
+	line "tout ça!"
 	prompt
 
 _CinnabarVolcanoProspectorBlowRocks::
-	text "Rocks that look"
-	line "like this one"
-	cont "create blockages!"
-	para "Find the blockages"
-	line "and blow them up,"
-	para "smash them, melt"
-	line "them down<...>"
-	para "Just do anything"
-	line "to destroy them!"
+	text "Les rochers comme"
+	line "celui-ci créent"
+	cont "des barrages!"
+	para "Trouve-les et"
+	line "fais-les sauter,"
+	para "brise-les, fais-"
+	line "les fondre<...>"
+	para "Bref, fais tout ce"
+	line "qu'il faut pour"
+	cont "les détruire!"
 	prompt
 
 _CinnabarVolcanoGiveDrill::
-	text "You'll need to"
-	line "dig down deeper"
-	cont "into the volcano!"
-	para "There isn't any"
-	line "way down yet, so"
-	cont "take a DRILL!"
+	text "Tu vas devoir"
+	line "creuser plus"
+	cont "profondément dans"
+	cont "le volcan!"
+	para "Il n'y a pas encore"
+	line "de chemin pour"
+	cont "descendre, alors"
+	cont "prends une"
+	cont "FOREUSE!"
 	prompt
 
 _CinnabarVolcanoGotDrill::
-	text "<PLAYER> got a"
-	line "POWER DRILL!"
+	text "<PLAYER> obtient"
+	line "une FOREUSE!"
 	done
 
 _CinnabarVolcanoDrill::
-	text "Press SELECT to"
-	line "use your DRILL."
-	para "You can drill a"
-	line "hole down where"
-	cont "you see cracks!"
-	para "But it'll take"
-	line "a lot of fuel to"
-	cont "dig down."
-	para "If you run out,"
-	line "just pop 3 RUBIES"
-	cont "into the DRILL!"
-	para "You should be"
-	line "able to find lots"
-	cont "of them here!"
+	text "Appuie sur SELECT"
+	line "pour utiliser ta"
+	cont "FOREUSE."
+	para "Tu peux percer"
+	line "un trou là où"
+	cont "tu vois des"
+	cont "fissures!"
+	para "Mais sa consomme"
+	line "beaucoup de"
+	cont "carburant pour"
+	cont "creuser."
+	para "Si t'es à sec,"
+	line "insère 3 RUBIS"
+	cont "dans la FOREUSE!"
+	para "Tu devrais en"
+	line "trouver plein"
+	cont "par ici!"
 	prompt
 
 _CinnabarVolcanoFriend::
-	text "This guy with his"
-	line "ARCANINE'll clear"
-	cont "the west side."
+	text "Ce type avec son"
+	line "ARCANIN s'occupe"
+	cont "du côté OUEST."
 	prompt
 
 _CinnabarVolcanoYouClearEast::
-	text "You clear the"
-	line "east side!"
-	para "Oh and one last"
-	line "thing."
-	para "It's too hot for"
-	line "most #MON!"
-	para "Stick to FIRE,ROCK"
-	line "and GROUND-types."
-	para "They're the only"
-	line "ones who can take"
-	cont "this heat!"
+	text "Tu t'occupes du"
+	line "côté EST!"
+	para "Ah, et une"
+	line "dernière chose."
+	para "Il fait trop chaud"
+	line "pour la plupart"
+	cont "des #MON!"
+	para "Privilégie les"
+	line "types FEU, ROCHE"
+	cont "et SOL."
+	para "Ce sont les seuls"
+	line "à pouvoir"
+	cont "supporter cette"
+	cont "chaleur!"
 	prompt
 
 _ExplodeRocksExplosionText::
 	text_ram_namebuffer
-	text " used"
-	line "EXPLOSION to"
-	cont "blow up the rocks!"
+	text " utilise"
+	line "EXPLOSION pour"
+	cont "faire exploser"
+	cont "les rochers!"
 	done
 
 _ExplodeRocksSelfdestructText::
 	text_ram_namebuffer
-	text " used"
-	line "SELFDESTRUCT to"
-	cont "blow up the rocks!"
+	text " utilise"
+	line "DESTRUCTION pour"
+	cont "faire exploser"
+	cont "les rochers!"
 	done
 
 _ShatteredRocksSkullBashText::
 	text_ram_namebuffer
-	text " smashed"
-	line "the rocks with"
-	cont "SKULL BASH!"
+	text " brise"
+	line "les rochers avec"
+	cont "COUD'KRANE!"
 	done
 
 _ShatteredRocksText::
 	text_ram_namebuffer
-	text " smashed"
-	line "the rocks with"
-	cont "a powerful blow!"
+	text " brise"
+	line "les rochers avec"
+	cont "un puissant coup!"
 	done
 
 _MeltedRocksText::
 	text_ram_namebuffer
-	text " melted"
-	line "the rocks with"
-	cont "superheated fire!"
+	text " fait"
+	line "fondre les"
+	cont "rochers avec un"
+	cont "feu surpuissant!"
 	done
 
 _RocksGoneText::
-	text "The lava flow was"
-	line "unclogged!"
+	text "La lave s'écoule"
+	line "à nouveau!"
 	done
 
 _WhereRubiesText::
-	text "Time to find"
-	line "some RUBIES for"
-	cont "the DRILL!"
-	para "They should be"
-	line "on this floor!"
+	text "Il est temps de"
+	line "trouver des RUBIS"
+	cont "pour la FOREUSE!"
+	para "Ils devraient être"
+	line "à cet étage!"
 	done
 
 _FoundRubyText::
-	text "<PLAYER> found"
-	line "a RUBY!"
+	text "<PLAYER> trouve"
+	line "un RUBIS!"
 	done
 
 _RubyTwoMoreToGoText::
-	text "Two@"
+	text "Encore deux@"
 	text_jump _MoreToGoText
 	
 _MoreToGoText:
 	text_end
-	text " more to go!"
+	text "!"
 	done
 
 _RubyOneMoreToGoText::
-	text "One@"
+	text "Encore un@"
 	text_jump _MoreToGoText
 
 _RubyGotAllOfThemText::
-	text "<PLAYER> inserted"
-	line "the 3 RUBIES into"
-	cont "the DRILL."
+	text "<PLAYER> insère"
+	line "les 3 RUBIS dans"
+	cont "la FOREUSE."
 	done
 
 _RubyGoodToGo::
-	text "The DRILL entered"
-	line "power mode!"
-	para "Time to dig down"
-	line "to the next floor!"
+	text "La FOREUSE s'est"
+	line "mise en marche!"
+	para "C'est l'heure de"
+	line "creuser jusqu'à"
+	cont "l'étage suivant!"
 	done
 
 _ItsRhydon::
-	text "It's a RHYDON."
-	para "It looks bored."
+	text "C'est un"
+	line "RHINOFEROS."
+	para "Il a l'air de"
+	line "s'ennuyer."
 	prompt
 
 _RhydonGetOnBack::
-	text "Jump on its back?"
+	text "Monter sur son"
+	line "dos?"
 	done
 
 _RhydonGotOnBack::
-	text "Here we go!"
+	text "C'est parti!"
 	done
 
 _GotRocksalts::
-	text "<PLAYER> found"
-	line "ROCK SALTS!"
+	text "<PLAYER> trouve"
+	line "des SELS MINERAUX!"
 	done
 
 _GotLimestone::
-	text "<PLAYER> found"
-	line "LIMESTONE!"
+	text "<PLAYER> trouve"
+	line "du CALCAIRE!"
 	done
 
 _ItsGraveler::
-	text "It's a GRAVELER."
-	para "It's enjoying a"
-	line "massage from the"
-	cont "flowing lava."
-	para "It looks a bit"
-	line "hungry."
+	text "C'est un"
+	line "GRAVALANCH."
+	para "Il profite d'un"
+	line "massage grâce au"
+	cont "flux de lave."
+	para "Il a l'air d'avoir"
+	line "un petit creux."
 	done
 
 _GiveGravelerRockSalts::
-	text "Give it ROCK SALTS"
-	line "to eat?"
+	text "Lui donner des"
+	line "SELS MINERAUX"
+	cont "à manger?"
 	done
 
 _GravelerMunching::
-	text "The GRAVELER is"
-	line "munching on the"
-	cont "ROCK SALTS."
-	para "Looks satisfied!"
+	text "GRAVALANCH"
+	line "grignote les"
+	cont "SELS MINERAUX."
+	para "Il a l'air"
+	line "satisfait!"
 	done
 
 _ItsSickRhydon::
-	text "It's another"
-	line "RHYDON."
-	para "This one seems"
-	line "to have an upset"
-	cont "stomach."
+	text "C'est un autre"
+	line "RHINOFEROS."
+	para "Celui-là a l'air"
+	line "d'avoir mal au"
+	cont "ventre."
 	done
 
 _GiveRhydonLimestone::
-	text "Give it some"
-	line "crushed LIMESTONE"
-	cont "to cure its"
-	cont "indigestion?"
+	text "Lui donner du"
+	line "CALCAIRE broyé"
+	cont "pour soigner"
+	cont "son indigestion?"
 	done
 
 _RhydonGrinded::
-	text "<PLAYER> ground"
-	line "the LIMESTONE to"
-	cont "a fine powder"
-	cont "with the DRILL."
+	text "<PLAYER> réduit le"
+	line "CALCAIRE en une"
+	cont "poudre fine avec"
+	cont "la FOREUSE."
 	done
 
 _GotAntacidText::
-	text "The LIMESTONE"
-	line "became ANTACID!"
+	text "Le CALCAIRE s'est"
+	line "transformé en"
+	cont "ANTI-ACIDE!"
 	done
 
 _GaveRhydonAntacid::
-	text "The sick RHYDON"
-	line "swallowed the"
-	cont "ANTACID."
+	text "Le RHINOFEROS"
+	line "malade avale"
+	cont "l'ANTI-ACIDE."
 	prompt
 
 _RhydonResting::
-	text "The sick RHYDON"
-	line "will feel better,"
-	cont "but needs rest!"
+	text "Le RHINOFEROS"
+	line "malade se sent"
+	cont "mieux, mais a"
+	cont "besoin de repos!"
 	done
 
 _MagmarBoss::
-	text "A big MAGMAR is"
-	line "blocking the way."
+	text "Un énorme MAGMAR"
+	line "bloque le passage."
 	done
 
 _MagmarFight::
-	text "It looks very"
-	line "aggressive."
-	para "Fight it?"
+	text "Il a l'air très"
+	line "agressif."
+	para "Le combattre?"
 	done
 
 _VolcanoBattleBurnText::
-	text "The volcano's"
-	line "too hot for @"
+	text "Le volcan est"
+	line "trop chaud pour"
+	cont "@"
 	text_ram_cont wBattleMonNick
 	text "!"
 	prompt
 
 
 _LetsDoThis::
-	text "Let's do this!"
+	text "Allons-y!"
 	done
 
 _MagmarBattleInit::
-	text "A veil of magma"
-	line "covers @"
+	text "Un voile de magma"
+	line "recouvre"
+	cont "@"
 	text_ram wEnemyMonNick
 	text "!"
-	para "It powered up!"
+	para "Il s'est renforcé!"
 	prompt
 
 _EnemyMonWasDefeatedText::
-	text "Enemy @"
+	text "Le @"
 	text_ram wEnemyMonNick
 	text_start
-	line "was defeated!"
+	line "<ennemi> est K.O.!"
 	prompt
 
 _MagmarDefeat::
-	text "MAGMAR conceded"
-	line "defeat and moved"
-	cont "to let you pass."
+	text "MAGMAR reconnait"
+	line "défaite et s'est"
+	cont "écarté pour te"
+	cont "laisser passer."
 	done
 
 _UhohVolcano::
-	text "Uh oh. The lava"
-	line "is about to burst"
-	cont "through the whole"
-	cont "eastern wall!"
-	para "Gotta get behind"
-	line "cover quick!"
+	text "Oh oh. La lave est"
+	line "sur le point de"
+	cont "déferler à"
+	cont "travers tout"
+	cont "le mur EST!"
+	para "Vite, à couvert!"
 	done
 
 _VolcanoBlockagesGone::
-	text "Wow! That should"
-	line "drain any excess"
-	cont "lava!"
-	para "<PLAYER> cleared"
-	line "all blockages!"
+	text "Woah! Ca devrait"
+	line "évacuer tout"
+	cont "l'excès de lave!"
+	para "<PLAYER> a détruit"
+	line "tous les barrages!"
 	done
 
 _VolcanoGoBackMainFloor::
 	text_start
-	para "Let's see how"
-	line "they did back"
-	cont "up at the top."
+	para "Voyons voir"
+	line "comment ça se"
+	cont "passe en haut."
 	done
 
 _VolcanoBlaineJoinUs::
-	text "Nice of you"
-	line "to join us!"
+	text "C'est gentil à toi"
+	line "de te joindre à"
+	cont "nous!"
 	done
 
 _VolcanoProspectorDone::
 	text "Whoa!"
-	para "What did you do?"
-	para "The lava is"
-	line "draining out"
-	cont "like crazy!!"
-	para "Look!"
+	para "T'as fait quoi?"
+	para "La lave s'écoule"
+	line "à toute vitesse!!"
+	para "Regarde!"
 	prompt
 
 _VolcanoProspectorDone2::
-	text "Well, that should"
-	line "stop an eruption!"
-	para "Let's get out"
-	line "of here, kid!"
-	para "I'm sweating like"
-	line "an ODDISH at a"
-	cont "salad bar!"
+	text "Bon, ça devrait"
+	line "mettre fin à"
+	cont "l'éruption!"
+	para "Fichons le camp"
+	line "d'ici, petit!"
+	para "Je transpire comme"
+	line "un MYSTHERBE"
+	cont "devant un buffet"
+	cont "de salades!"
 	done
 
 _VolcanoProspectorPhew::
-	text "Phew, we can"
-	line "finally get out"
-	cont "of these suits!"
+	text "Pfiou, on peut"
+	line "enfin enlever ces"
+	cont "combinaisons!"
 	prompt
 
 _VolcanoProspectorRightBlaine::
-	text "Glad I got them!"
-	para "They came in"
-	line "handy!"
-	para "Even though you"
-	line "and BLAINE did"
-	cont "all the work!"
+	text "Je suis content"
+	line "de les avoir!"
+	para "Elles m'ont bien"
+	line "servi!"
+	para "Même si c'est toi"
+	line "et AUGUSTE qui"
+	cont "avez fait tout le"
+	cont "travail!"
 	prompt
 
 _VolcanoBlaineMessage1::
-	text "BLAINE: Well that"
-	line "should keep the"
-	cont "eruption at bay."
-	para "That heat is"
-	line "something else!"
-	para "Thought I might"
-	line "catch a glimpse"
-	cont "of a fiery bird"
-	cont "#MON I saw"
-	cont "many years ago."
-	para "Oh well!"
-	para "Maybe I'll see"
-	line "it again someday!"
+	text "AUGUSTE: Bon, ça"
+	line "devrait calmer"
+	cont "l'éruption."
+	para "Cette chaleur est"
+	line "incroyable!"
+	para "J'espérais"
+	line "apercevoir cet"
+	cont "oiseau de feu que"
+	cont "j'avais vu il y a"
+	cont "des années."
+	para "Tant pis!"
+	para "Peut-être que je"
+	line "le reverrai un"
+	cont "jour!"
 	prompt
 
 _VolcanoBlaineMessageNotDone::
-	text "<PLAYER> was your"
-	line "name, correct?"
-	para "Great work!"
-	para "I hope you come"
-	line "to challenge me"
-	cont "at CINNABAR GYM!"
-	para "That is, if you"
-	line "can get in!"
-	para "Hah! Until next"
-	line "time!"
+	text "<PLAYER> c'est bien"
+	line "ça?"
+	para "Super boulot!"
+	para "J'espère que tu"
+	line "viendras me"
+	cont "défier à l'ARENE"
+	cont "de CRAMOIS'ILE!"
+	para "Enfin, si tu"
+	line "arrives à y"
+	cont "entrer!"
+	para "Haha! A la"
+	line "prochaine!"
 	done
 
 _VolcanoBlaineMessageGymDone::
-	text "We meet again,"
+	text "On se retrouve,"
 	line "<PLAYER>!"
-	para "This young buck"
-	line "was one of the"
-	cont "two trainers who"
-	cont "trounced me at"
-	cont "the GYM recently!"
-	para "Keep at it, boy!"
-	para "Hah! Until next"
-	line "time!"
+	para "Ce jeunot est l'un"
+	line "des 2 dresseurs"
+	cont "qui m'ont battu à"
+	cont "plate couture à"
+	cont "l'ARENE récemment!"
+	para "Continue comme ça!"
+	para "Haha! A la"
+	line "prochaine!"
 	done
 
 _VolcanoProspectorAfterMessage::
-	text "I'll be here for"
-	line "a while, doing"
-	cont "what I do best-"
-	para "prospecting!"
-	para "You saw all those"
-	line "RUBIES!"
-	para "You can use that"
-	line "LAVA SUIT as much"
-	cont "as you like, kid!"
+	text "Je vais rester ici"
+	line "un moment pour"
+	cont "faire ce que je"
+	cont "fais de mieux:"
+	para "prospecter!"
+	para "Tu as vu tous ces"
+	line "RUBIS!"
+	para "Tu peux utiliser"
+	line "cette COMBI. LAVE"
+	cont "autant que tu"
+	cont "veux, petit!"
 	done
 
 _VolcanoAvoidWestSide::
-	text "Someone's taking"
-	line "care of the west"
-	cont "side already."
-	para "Gotta clear the"
-	line "blockages on the"
-	cont "other side!"
+	text "Quelqu'un s'occupe"
+	line "déjà du côté"
+	cont "OUEST."
+	para "Il faut détruire"
+	line "les barrages de"
+	cont "l'autre côté!"
 	done
 
 _VolcanoGetToIt::
-	text "I'll keep an eye"
-	line "on the amount of"
-	cont "lava up here."
-	para "I'd join you, but I"
-	line "don't have #MON"
-	cont "to bring with me!"
+	text "Je vais surveiller"
+	line "la quantité de"
+	cont "lave par ici."
+	para "Je me joindrais"
+	line "bien à toi, mais"
+	cont "je n'ai pas de"
+	cont "#MON avec moi!"
 	prompt
 
 _VolcanoNeedSomeInfo::
-	text "Hmm<...>do you need"
-	line "more info?"
+	text "Hmm<...>tu as"
+	line "besoin de plus"
+	cont "d'infos?"
 	done
 
 _VolcanoGetToIt2::
-	text "Get to it, kid!"
+	text "Au boulot, petit!"
 	done
 
 _FailedDrillFloorText::
-	text "The DRILL doesn't"
-	line "have enough fuel!"
-	para "Find 3 RUBIES"
-	line "to fuel it up!"
+	text "La FOREUSE n'a"
+	line "plus assez de"
+	cont "carburant!"
+	para "Trouve 3 RUBIS"
+	line "pour le"
+	cont "ravitailler!"
 	done
 
 _CinnabarVolcanoFloor2WarpTilesText::
-	text "Whoa! What are"
-	line "those?"
-	para "Looks like the"
-	line "lava flow opened"
-	cont "up the ground"
-	cont "over there!"
+	text "Woah! C'est quoi,"
+	line "ça?"
+	para "On dirait que la"
+	line "coulée de lave a"
+	cont "creusé le sol par"
+	cont "là-bas!"
 	done
 
 _CinnabarVolcanoWestMagmar1Text::
-	text "Many MAGMAR are"
-	line "relaxing in the"
-	cont "lava flow."
+	text "De nombreux MAGMAR"
+	line "se détendent dans"
+	cont "la coulée de lave."
 	done
 
 _CinnabarVolcanoWestMagmar1QuestionText::
-	text "It looks like"
-	line "there's room for"
-	cont "one more!"
+	text "Il semble y avoir"
+	line "de la place pour"
+	cont "un de plus!"
 	prompt
 
 _CinnabarVolcanoWestMagmar2Text::
@@ -533,65 +573,70 @@ _CinnabarVolcanoWestMagmar3Text::
 	done
 
 _CinnabarVolcanoWestLavaFlowText::
-	text "This is where"
-	line "BLAINE cleared a"
-	cont "lava blockage.@"
+	text "C'est là qu'AUGUSTE"
+	line "a dégagé un"
+	cont "barrage de lave.@"
 	text_jump _CinnabarVolcanoBombRocksTextDoneJump
 
 _CinnabarVolcanoWestMagmarTransformText1::
 	text "@"
 	text_ram_namebuffer
-	text " looks"
-	line "excited for a"
-	cont "lava bath!"
+	text " a l'air"
+	line "impatient de"
+	cont "prendre un bain"
+	cont "de lave!"
 	done
 
 _CinnabarVolcanoWestMagmarTransformText2::
 	text "@"
 	text_ram_namebuffer
-	text " did a"
-	line "cannonball into"
-	cont "the lava pool!"
+	text " plonge"
+	line "tête la première"
+	cont "dans la mare de"
+	cont "lave!"
 	done
 
 _CinnabarVolcanoWestMagmarTransformText3::
-	text "Volcanic power"
-	line "radiated through"
-	cont "@"
+	text "L'énergie"
+	line "volcanique"
+	cont "traverse @"
 	text_ram_namebuffer
 	text "!"
 	done
 
 _MagmarEventAlready::
-	text "It's already"
-	line "filled with the"
-	cont "burning heat"
-	cont "of the volcano."
+	text "Il est déjà"
+	line "imprégnée de la"
+	cont "chaleur brûlante"
+	cont "du volcan."
 	done
 
 _CinnabarVolcanoWestMagmarTransformText4::
-	text "<PARA>It became so"
-	line "scorchingly hot,"
-	cont "all water near it"
-	cont "will vaporize!"
+	text "<PARA>La chaleur est si"
+	line "intense que toute"
+	cont "l'eau à proximité"
+	cont "s'évapore!"
 	para "@"
 	text_ram_namebuffer
-	text " became"
-	line "immune to WATER"
-	cont "and FIRE-type"
-	cont "moves!"
-	para "The tectonic power"
-	line "of the volcano"
-	cont "flows through it!"
-	para "GROUND-type moves"
-	line "will get bonus"
-	cont "damage!"
+	text " est"
+	line "maintenant immu-"
+	cont "nisé contre les"
+	cont "attaques de type"
+	cont "EAU et FEU!"
+	para "La puissance"
+	line "tectonique du"
+	cont "volcan le"
+	cont "traverse!"
+	para "Les attaques de"
+	line "type SOL infli-"
+	cont "gent des dégâts"
+	cont "supplémentaires!"
 	done
 
 _Route21CinnabarVolcanoSignText::
-	text "CINNABAR VOLCANO"
+	text "VOLCAN CRAMOIS'ILE"
 	para "DANGER!"
-	para "DO NOT ENTER"
-	line "WITHOUT HEAT-"
-	cont "RESISTANT KIT!"
+	para "NE PAS ENTRER SANS"
+	line "KIT DE PROTECTION"
+	cont "CONTRE LA CHALEUR!"
 	done

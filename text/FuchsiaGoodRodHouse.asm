@@ -1,75 +1,79 @@
 _FuchsiaGuruIntro::
-	text "I'm the FISHING"
-	line "GURU's second"
-	cont "cousin!"
+	text "Je suis le cousin"
+	line "germain du MAITRE"
+	cont "PECHEUR!"
 	prompt
 
 _LastTwoGurusTextQuestion::
-	text "I simply Looove"
-	line "fishing!"
+	para "Moi, mon truc,"
+	line "c'est la pêche!"
 
-	para "Do you like to"
-	line "fish?"
+	para "T'aimes la"
+	line "pêche, petit?"
 	done
 
 _LastTwoGurusTextYes::
-	text "Grand! I like"
-	line "your style!"
+	text "Cool! T'as l'air"
+	line "d'un bon gars!"
 
-	para "Take this and"
-	line "fish, young one!"
+	para "Prends ça!"
+	line "Que la Grand'"
+	cont "Pêche soit avec"
+	cont "toi, p'tit!"
 	prompt
 
 _LastTwoGurusTextAlreadyHaveSuperRod::
-	text "What!? Someone"
-	line "already gave you"
-	cont "a SUPER ROD?!"
+	text "Quoi!? Quelqu'un t'a"
+	line "déjà donné une"
+	cont "MEGA CANNE?!"
 
-	para "That's my job!"
+	para "C'est mon boulot!"
 
-	para "What to do<...>"
+	para "Que faire<...>"
 
-	para "Hmm, maybe this"
-	line "will be useful"
-	cont "to you instead?"
+	para "Hmm, peut-être que"
+	line "ceci te sera"
+	cont "utile à la place?"
 	prompt
 
 _LastTwoGurusTextNo::
-	text "Oh<...> That's so"
-	line "disappointing<...>"
+	text "Oh<...>Pas cool!"
+	line "Pas cool du tout!"
 	done
 
 _LastTwoGurusTextBagFull::
-	text "Oh no!"
+	text "Oh non!"
 
-	para "You have no room"
-	line "for my gift!"
+	para "Ton inventaire"
+	line "est plein!"
 	done
 
 _FuchsiaGuruEnd::
-	text "Fishing-It's a"
-	line "man's romance!"
+	text "La pêche, une"
+	line "passion d'hommes!"
 
-	para "With a beautiful"
-	line "SUPER ROD at your"
-	cont "side, you can"
-	cont "catch just about"
-	cont "anything!"
+	para "Avec une superbe"
+	line "MEGA CANNE à tes"
+	cont "côtés, tu peux"
+	cont "attraper à peu"
+	cont "près tout ce que"
+	cont "tu veux!"
 
-	para "I feel like"
-	line "hitting the docks"
-	cont "just talking"
-	cont "about it!"
+	para "Rien que d'en"
+	line "parler, j'ai envie"
+	cont "de filer au bord"
+	cont "de l'eau!"
 
-	para "Get out there"
-	line "and fish!"
+	para "Sors et va pêcher!"
 	done
-	
+
 _FuchsiaGoodRodHouseGarbageText::
-	text "There's a crumpled"
-	line "up ad in here."
-	para "Build your own"
-	line "fishing pond!"
-	para "Learn everything"
-	line "step-by-step!"
+	text "Il y a une pub"
+	line "froissée"
+	cont "là-dedans."
+	para "Construisez votre"
+	line "propre étang de"
+	cont "pêche!"
+	para "Apprenez tout"
+	line "étape par étape!"
 	done

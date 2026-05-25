@@ -1,89 +1,91 @@
 _PokemonMansion1FScientistBattleText::
-	text "Who are you? There"
-	line "shouldn't be"
-	cont "anyone here."
+	text "Qui es-tu?"
+	line "C'est interdit"
+	cont "eud' se balader."
 	done
 
 _PokemonMansion1FScientistEndBattleText::
-	text "Ouch!"
+	text "Aïe!"
 	prompt
 
 _PokemonMansion1FScientistAfterBattleText::
-	text "A key? I don't"
-	line "know what you're"
-	cont "talking about."
+	text "Une clé? Je ne"
+	line "sais pas d'quoi"
+	cont "tu parles."
 	done
 
 _Mansion1BattleText2::
-	text "Shh!"
-	para "I'm hiding from"
-	line "the FIREFIGHTERs!"
+	text "Chut!"
+	para "Je me cache des"
+	line "POMPIERs!"
 	done
 
 _Mansion1EndBattleText2::
-	text "Keep"
-	line "quiet!"
+	text "Tais-toi!"
 	prompt
 
 _Mansion1AfterBattleText2::
-	text "Those do-gooders"
-	line "will undoubtedly"
-	cont "kick me out!"
-	para "Just think of how"
-	line "much loot must be"
-	cont "in this place!"
+	text "Ces bienfaiteurs"
+	line "vont sans aucun"
+	cont "doute me mettre"
+	cont "dehors!"
+	para "Imagine tout le"
+	line "butin qu'il doit"
+	cont "y avoir ici!"
 	done
 
 _Mansion1BattleText3::
-	text "This building is"
-	line "off limits!"
-	para "Don't make me"
-	line "throw you out!"
+	text "Ce bâtiment est"
+	line "interdit d'accès!"
+	para "Ne m’oblige pas à"
+	line "te mettre dehors!"
 	done
 
 _Mansion1EndBattleText3::
-	text "Carry"
-	line "on then."
+	text "Allez, vas-y"
+	line "alors."
 	prompt
 
 _Mansion1AfterBattleText3::
-	text "This place is"
-	line "abandoned and"
-	cont "full of fire"
-	cont "hazards."
-	para "Keep your eyes"
-	line "open!" 
-	para "Watch your step!"
-	para "And above all,"
-	line "stay safe!"
+	text "Cet endroit est"
+	line "abandonné et"
+	cont "présente de"
+	cont "nombreux risques"
+	cont "d'incendie."
+	para "Garde les yeux"
+	line "ouverts!"
+	para "Attention où tu"
+	line "mets les pieds!"
+	para "Et surtout, reste"
+	line "prudent!"
 	done
 
 _Mansion1BattleText4::
-	text "Hey!"
-	para "Did you close"
-	line "that door on me?"
+	text "Hé!"
+	para "Tu m'as claqué la"
+	line "porte au nez?"
 	done
 
 _Mansion1EndBattleText4::
-	text "I'm"
-	line "out of here!"
+	text "Je me tire d'ici!"
 	prompt
 
 _Mansion1AfterBattleText4::
-	text "Be careful not"
-	line "to get trapped!"
+	text "Fais attention à"
+	line "ne pas te faire"
+	cont "piéger!"
 	done
 
 _PokemonMansion1FSwitchText::
-	text "A secret switch!"
+	text "Un bouton secret!"
 
-	para "Press it?"
+	para "On appuie?"
 	done
 
 _PokemonMansion1FSwitchPressedText::
-	text "Who wouldn't?"
+	text "Sans blague!"
 	prompt
 
 _PokemonMansion1FSwitchNotPressedText::
-	text "Not quite yet!"
+	text "Pas vraiment<...>"
 	done

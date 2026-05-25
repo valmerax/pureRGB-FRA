@@ -1,157 +1,170 @@
 _CopycatsHouse2FCopycatDoYouLikePokemonText::
-	text "<PLAYER>: Hi! Do"
-	line "you like #MON?"
+	text "<PLAYER>: Salut!"
+	line "tu aimes les"
+	cont "#MON?"
 
-	para "<PLAYER>: Uh no, I"
-	line "just asked you."
+	para "<PLAYER>: Bwoarf!"
+	line "J'disais ça comme"
+	cont "ça!"
 
-	para "<PLAYER>: Huh?"
-	line "You're strange!"
+	para "<PLAYER>: Hein?"
+	line "T'es bizarre toi!"
 
-	para "COPYCAT: Hmm?"
-	line "Quit mimicking?"
+	para "COPIEUSE: Hmm?"
+	line "Arrêter de mimer?"
 
-	para "But, that's my"
-	line "favorite hobby!"
-	done
+	para "Mais je ne sais"
+	line "faire que ça!"
+	prompt
 
 _CopycatsHouse2FCopycatGaveDollText::
-	text "Oh wow!"
-	line "A # DOLL!"
+	text "Whaaaaaa!"
+	line "Une #POUPEE!"
 
-	para "For me?"
-	line "Thank you!"
+	para "C'est pour moi?"
+	line "Merci!"
 	prompt
 
 _CopyCatsHouse2FCopycatILikeYouText::
-	text "I like you!"
-	line "Know what?"
+	text "Je t'aime bien!"
+	line "Tu sais quoi?"
 
-	para "I'll teach your"
-	line "#MON my"
-	cont "favorite move:"
-	para "MIMIC!"
-	para "Who should I"
-	line "teach it to?"
+	para "Je vais apprendre"
+	line "à ton #MON mon"
+	cont "attaque préférée:"
+	para "COPIE!"
+	para "A qui dois-je "
+	line "l'apprendre?"
 	prompt
 
 _CopycatsHouse2FCopycatCancelledFirstTimeText::
-	text "<PLAYER>: No way"
-	line "am I teaching my"
-	cont "#MON that"
-	cont "crummy move!"
-	para "<PLAYER>: Hey!"
-	line "I didn't say that!"
-	para "COPYCAT: But you"
-	line "were thinking it!"
-	para "Hehehe!"
+	text "<PLAYER>: Pas"
+	line "question que"
+	cont "j'apprenne cette"
+	cont "attaque pourrie"
+	cont "à mon #MON!     "
+	para "<PLAYER>: Hé! Je"
+	line "n'ai pas dit ça!"
+	para "COPIEUSE: Mais"
+	line "tu le pensais!"
+	para "Héhéhé!"
 	done
 
 _CopyCatsHouse2FCopycatDittoText::
-	text "COPYCAT: Is that a"
-	line "DITTO?!"
-	para "DITTO is the best"
-	line "copycat there is!"
-	para "Can I have it?"
+	text "COPIEUSE: C'est"
+	line "un METAMORPH?!"
+	para "METAMORPH est le"
+	line "meilleur copieur"
+	cont "qui soit!"
+	para "J'peux l'avoir?"
 	done
 
 ;_CopycatsHouse2FCopycatTM31Explanation1Text::
 ;	text_start
 ;
-;	para "TM31 contains my"
-;	line "favorite, MIMIC!"
+;	para "CT31: COPIE!"
 ;
-;	para "Use it on a good"
-;	line "#MON!@"
+;	para "Enseigne-la au"
+;	line "bon #MON!@"
 ;	text_end
 
 _CopycatsHouse2FCopycatSuccessText::
-	text "<PLAYER>: Thanks"
-	line "for teaching my"
-	cont "#MON MIMIC!"
+	text "<PLAYER>: Salut!"
+	line "Merci d'avoir"
+	cont "appris COPIE à"
+	cont "mon #MON!"
 
 	para "<PLAYER>: Pardon?"
 
-	para "<PLAYER>: Is it"
-	line "that fun to mimic"
-	cont "my every move?"
+	para "<PLAYER>: Heu<...>"
+	line "C'est aussi cool"
+	cont "que ça de"
+	cont "m'imiter?"
 
-	para "COPYCAT: You bet!"
-	line "It's a scream!"
+	para "COPIEUSE: Ah non!"
+	line "C'est vraiment la"
+	cont "galère, t'arrêtes"
+	cont "pas d'bouger!"
 
-	para "I'll teach MIMIC"
-	line "for you anytime!"
+	para "Je t'apprendrai"
+	line "COPIE quand tu"
+	cont "veux!"
 	done
 
 _CopycatsHouse2FCopycatAgainText::
-	text "<PLAYER>: Hey,"
-	line "weirdo!"
-	para "I'm here to learn"
-	line "MIMIC again!"
-	para "<PLAYER>: Oh for"
-	line "crying out loud!"
-	cont "I'm not that rude!"
-	para "COPYCAT: Just"
-	line "teasing! Hehehe!"
-	para "Who should I"
-	line "teach?"
+	text "<PLAYER>: Hé,"
+	line "le bizarre!"
+	para "Je suis là pour"
+	line "réapprendre"
+	cont "COPIE!"
+	para "<PLAYER>: Oh,"
+	line "mais enfin!"
+	cont "Je ne suis pas si"
+	cont "impoli!"
+	para "COPIEUSE: Je te"
+	line "taquine! Héhéhé!"
+	para "J'dois l'apprendre"
+	line "à qui?"
 	prompt
 
 _CopycatsHouse2FCopycatCancelledAgainText::
-	text "Changed your"
-	line "mind?"
+	text "T'as changé d'avis?"
 	done
 
 ;_CopycatsHouse2FCopycatTM31NoRoomText::
-;	text "Don't you want"
-;	line "this?@"
+;	text "T'en veux pas?@"
 ;	text_end
 
 _CopycatsHouse2FDoduoText::
-	text "DODUO: Giiih!"
+	text "DODUO: Doduuu!"
 	done
 
 _CopycatsHouse2FDoduoText2::
-	text "MIRROR MIRROR ON"
-	line "THE WALL, WHO IS"
-	cont "THE FAIREST ONE"
-	cont "OF ALL?"
+	text "AH, JE RIS DE"
+	line "ME VOIR SI BELLE"
+	cont "EN CE MIROIR!"
 	done
 
 _DoduoLearnsetText::
 	text "@"
 	text_ram wTrainerName
-	text ": That's"
+	text ": C'est"
 	line "KIWI, my DODUO."
-	para "I like how its"
-	line "heads copy"
-	cont "each other!"
+	para "J'aime la façon"
+	line "dont leurs têtes"
+	cont "se copient les"
+	cont "unes les autres!"
 	prompt
 
 _CopycatsHouse2FRareDollText::
-	text "This is a rare"
-	line "#MON! Huh?"
-	cont "It's only a doll!"
+	text "Ca, un #MON"
+	line "rare? Tu t'moques"
+	cont "de moi!"
+	cont "C'est rien qu'une"
+	cont "poupée! Pas belle"
+	cont "en plus!"
 	done
 
 _CopycatsHouse2FSNESText::
-	text "A game with MARIO"
-	line "wearing a bucket"
-	cont "on his head!"
+	text "Un plombier?"
+	line "Mais<...>"
+	cont "Kesski fait?"
+	cont "Y saute? Cool."
 	done
 
 _CopycatsHouse2FPCMySecretsText::
 	text "<...>"
 
-	para "My Secrets!"
+	para "Mes secrets!"
 
-	para "Skill: Mimicry!"
-	line "Hobby: Collecting"
-	cont "dolls!"
-	cont "Favorite #MON:"
-	cont "CLEFAIRY!"
+	para "Mon boulot:"
+	line "je mime!"
+	cont "Ma passion:"
+	cont "les poupées!"
+	cont "Mon #MON"
+	cont "préféré: MELOFEE!"
 	done
 
 _CopycatsHouse2FPCCantSeeText::
-	text "Huh? Can't see!"
+	text "J'vois rien!"
 	done

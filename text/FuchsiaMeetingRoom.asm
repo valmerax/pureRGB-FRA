@@ -1,45 +1,52 @@
 _FuchsiaMeetingRoomSafariZoneWorker1::
-	text "We nicknamed the"
-	line "WARDEN SLOWPOKE."
+	text "Nous avons"
+	line "surnommé le"
+	cont "GARDIEN, RAMOLOSS."
 
-	para "He and SLOWPOKE"
-	line "both look vacant!"
+	para "Ben, oui! Il"
+	line "ressemble à un"
+	cont "RAMOLOSS!"
 	done
 
 _FuchsiaMeetingRoomSafariZoneWorker2::
-	text "SLOWPOKE is very"
-	line "knowledgeable"
-	cont "about #MON!"
+	text "RAMOLOSS s'y"
+	line "connaît beaucoup"
+	cont "en #MON!"
 
-	para "He even has some"
-	line "fossils of rare,"
-	cont "extinct #MON!"
+	para "Il a même des"
+	line "fossiles de"
+	cont "#MON rares et"
+	cont "anciens!"
 	done
 
 _FuchsiaMeetingRoomSafariZoneWorker3::
-	text "SLOWPOKE came in,"
-	line "but I couldn't"
-	cont "understand him."
+	text "RAMOLOSS m'a"
+	line "parlé, mais je ne"
+	cont "comprends rien à"
+	cont "c'qu'il m'dit."
 
-	para "I think he's got"
-	line "a speech problem!"
+	para "Je crois qu'il a"
+	line "un problème pour"
+	cont "parler!"
 	done
 
 _FuchsiaMeetingRoomPoster::
-	text "A landscape photo"
-	line "taken from a"
-	cont "helicopter."
-	para "The whole SAFARI"
-	line "ZONE is visible!"
+	text "Une photo de"
+	line "paysage prise"
+	cont "depuis un"
+	cont "hélicoptère."
+	para "Toute la SAFARI"
+	line "ZONE est visible!"
 	done
 
 _FuchsiaMeetingRoomDeskPapers::
-	text "An interesting"
-	line "result of zoo"
-	cont "captivity:"
-	para "Our resident"
-	line "VOLTORB explodes"
-	cont "much less often"
-	cont "on average when"
-	cont "around people."
+	text "Une observation"
+	line "intéressante"
+	cont "concernant la"
+	cont "captivité au zoo:"
+	para "Notre VOLTORBE"
+	line "explose beaucoup"
+	cont "moins souvent"
+	cont "lorsqu'il est"
+	cont "entouré de gens."
 	done

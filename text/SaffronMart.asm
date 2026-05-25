@@ -1,31 +1,35 @@
 _SaffronMartSuperNerdText::
-	text "MAX REPEL lasts"
-	line "longer than SUPER"
-	cont "REPEL for keeping"
-	cont "weaker #MON"
-	cont "away!"
+	text "Le MAX REPOUSSE"
+	line "fonctionne plus"
+	cont "longtemps que le"
+	cont "SUPEREPOUSSE!"
 	done
 
 _SaffronMartCooltrainerFText::
-	text "REVIVE is costly,"
-	line "but it revives"
-	cont "fainted #MON!"
+	text "Le RAPPEL est"
+	line "coûteux mais il"
+	cont "permet de"
+	cont "réanimer un"
+	cont "#MON K.O.!"
 	done
 
 _SaffronMartTMKidFlavor::
-	text "<PARA>My dad snuck"
-	line "into SAFFRON GYM"
-	cont "when <TEAM><ROCKET>"
-	cont "wasn't looking!"
+	text "<PARA>Mon père s'est"
+	line "introduit en"
+	cont "douce à SAFRANIA"
+	cont "pendant que la"
+	cont "<TEAM><ROCKET> avait"
+	cont "le dos tourné!"
 
-	para "I'm selling <CT>s"
-	line "to <TEAM><ROCKET>"
-	cont "actually."
+	para "En fait, je vends"
+	line "des <CT> à la"
+	cont "<TEAM><ROCKET>."
 
-	para "Except they're"
-	line "blanks, and only"
-	cont "teach SPLASH!"
+	para "Sauf qu'elles sont"
+	line "fausses et"
+	cont "n'enseignent que"
+	cont "TREMPETTE!"
 
-	para "Take that," 
-	line "thieves!@"
+	para "Bien fait," 
+	line "voleurs!@"
 	text_end

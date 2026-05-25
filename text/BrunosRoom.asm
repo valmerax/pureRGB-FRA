@@ -14,7 +14,7 @@ _BrunoBeforeBattleText::
 
 	para "<PLAYER>!"
 
-	para "Ton équipe..."
+	para "Ton équipe<...>"
 	line "J'vais en faire"
 	cont "du yaourt!"
 

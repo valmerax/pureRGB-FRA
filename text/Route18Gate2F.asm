@@ -1,9 +1,9 @@
 _Route18Gate2FLeftBinocularsText::
-	text "PALLET TOWN is in"
-	line "the west!"
+	text "BOURG PALETTE"
+	line "est à l'Ouest!"
 	done
 
 _Route18Gate2FRightBinocularsText::
-	text "There are people"
-	line "swimming!"
+	text "C'est plein"
+	line "de nageurs!"
 	done

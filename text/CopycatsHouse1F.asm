@@ -1,31 +1,33 @@
 _CopycatsHouse1FMiddleAgedWomanText::
-	text "My daughter is so"
-	line "self-centered."
-	cont "She only has a"
-	cont "few friends."
+	text "Ma fille est très"
+	line "égocentrique!"
+	cont "Elle n'a pas"
+	cont "beaucoup d'amis."
 	done
 
 _CopycatsHouse1FMiddleAgedManText::
-	text "My daughter likes"
-	line "to mimic people."
+	text "Ma fille adore"
+	line "imiter les gens."
 
-	para "Her mimicry has"
-	line "earned her the"
-	cont "nickname COPYCAT"
-	cont "around here!"
+	para "Elle imite si"
+	line "bien qu'on"
+	cont "l'appelle<...>"
+	cont "COPIEUSE!"
+	cont "C'est dément!"
 	done
 
 _CopycatsHouse1FChanseyText::
-	text "CHANSEY: Chaan!"
-	line "Sii!@"
+	text "LEVEINARD :"
+	line "Vénar! Vénar!@"
 	text_end
 
 _CopycatsHouse1FChanseyText2::
-	text "LADY: That's our"
-	line "CHANSEY."
-	para "She's named"
+	text "DAME: C'est notre"
+	line "LEVEINARD."
+	para "Elle s'appelle"
 	line "SMILY."
-	para "She loves to lay"
-	line "eggs for us!"
-	para "Very nutritious!"
+	para "Elle adore nous"
+	line "pondre des oeufs!"
+	para "C'est très"
+	line "nutritif!"
 	prompt

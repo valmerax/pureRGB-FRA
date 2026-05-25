@@ -1,75 +1,82 @@
 _DarkChannelerGreeting::
-	text "I'm the DARK"
-	line "CHANNELER."
+	text "Je suis l'EXORCISTE"
+	line "SOMBRE."
 	prompt
 
 _DarkChannelerGreeting2::
-	text "I guard the entry"
-	line "to the tower"
-	cont "catacombs."
-	para "You don't ever"
-	line "want to go down"
-	cont "there, trust me."
-	para "Very spooky!"
-	para "Only CHANNELERS"
-	line "can go down."
+	text "Je garde l'entrée"
+	line "des catacombes de"
+	cont "la TOUR #MON."
+	para "Crois-moi, tu ne"
+	line "veux surtout pas"
+	cont "y descendre."
+	para "C'est terrifiant!"
+	para "Seuls les"
+	line "EXORCISTES"
+	cont "peuvent y"
+	cont "descendre."
 	prompt
 
 _DarkChannelerBackToMyself::
-	text "Anyway, back to"
-	line "myself."
+	text "Bref, revenons à"
+	line "moi."
 	prompt
 
 _DarkChannelerGreeting3::
-	text "I love curses,"
-	line "jinxes, spells,"
-	cont "and especially"
-	cont "hexes!"
-	para "In fact, I have a"
-	line "perfect curse to"
-	cont "put on a GENGAR!"
-	para "You'd better not"
-	line "show me one, or"
-	cont "who knows what'll"
-	cont "happen!"
+	text "J'adore les"
+	line "malédictions, les"
+	cont "incantations, les"
+	cont "sorts et surtout"
+	cont "les envoûtements!"
+	para "D'ailleurs, j'ai"
+	line "une malédiction"
+	cont "parfaite pour un"
+	cont "ECTOPLASMA!"
+	para "Tu ferais mieux"
+	line "de ne pas m'en"
+	cont "montrer un, sinon"
+	cont "qui sait ce qui"
+	cont "pourrait arriver!"
 	done
 
 _DarkChannelerGengar::
-	text "Oh now you've"
-	line "done it!"
-	para "You brought a"
-	line "GENGAR with you!!"
-	para "I feel a mighty"
-	line "curse welling up!"
-	para "Watch out!"
+	text "Ah, bravo!"
+	line "C'est malin!"
+	para "Tu as amené un"
+	line "ECTOPLASMA avec"
+	cont "toi!!"
+	para "Je sens une terri-"
+	line "ble malédiction"
+	cont "monter en moi!"
+	para "Fais gaffe!"
 	prompt
 
 _DarkChannelerGengarFalseAlarm::
-	text "Phew. I managed"
-	line "to hold that one"
-	cont "back."
-	para "Nevermind."
+	text "Ouf. J'ai réussi à"
+	line "me retenir."
+	para "Laisse tomber."
 	done
 
 _DarkChannelerGengarCurseTime::
-	text "CURSE FALL UPON"
-	line "THEE, GENGAR!" ; use pokemon's nickname?
+	text "MAUDIT SOIS-TU,"
+	line "ECTOPLASMA!" ; use pokemon's nickname?
 	done
 
 _DarkChannelerCurseComplete::
 	text "Kekekekeke!"
-	para "Your GENGAR is"
-	line "totally cursed!!"
-	para "Now it looks like"
-	line "a HAUNTER again!"
+	para "Ton ECTOPLASMA"
+	line "est maudit!!"
+	para "Il a repris"
+	line "l'aspect d'un"
+	cont "SPECTRUM!"
 	para "<...>"
 	para "<...>"
-	para "But other than"
-	line "that, it's still"
-	cont "a GENGAR."
-	para "Even its stats!"
-	para "How's that for"
-	line "a curse?"
-	para "Are you quaking"
-	line "in your boots?"
+	para "Mais à part ça,"
+	line "c'est toujours"
+	cont "un ECTOPLASMA."
+	para "Même ses stats!"
+	para "Pas mal comme"
+	line "malédiction, non?"
+	para "Tu as les genoux"
+	line "qui tremblent?"
 	done

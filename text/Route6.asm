@@ -1,175 +1,182 @@
 _Route6CooltrainerM1BattleText::
-	text "Who's there?"
-	line "Quit listening in"
-	cont "on us!"
+	text "Qui est là?"
+	line "Arrête de nous"
+	cont "espionner!"
 	done
 
 _Route6CooltrainerM1EndBattleText::
-	text "I"
-	line "just can't win!"
+	text "<...>"
+	line "J'suis nul!"
 	prompt
 
 _Route6CooltrainerAfterBattleText::
-	text "Whisper<...>"
-	line "whisper<...>"
+	text "Soupirs<...>"
+	line "Gros soupirs<...>"
 	done
 
 _Route6CooltrainerF1BattleText::
-	text "Excuse me! This"
-	line "is a private"
-	cont "conversation!"
+	text "Heu, c'est une"
+	line "conversation"
+	cont "privée, DEGAGE!"
 	done
 
 _Route6CooltrainerF1EndBattleText::
-	text "Ugh!"
-	line "I hate losing!"
+	text "Non!"
+	line "Pas bon perdre!"
 	prompt
 
 _Route6Youngster1BattleText::
-	text "There aren't many"
-	line "bugs out here."
+	text "C'est plein"
+	line "d'insectes, ici."
 	done
 
 _Route6Youngster1EndBattleText::
-	text "No!"
-	line "You're kidding!"
+	text "Non!"
+	line "C'est une blague!"
 	prompt
 
 _Route6Youngster1AfterBattleText::
-	text "I like bugs, so"
-	line "I'm going back to"
-	cont "VIRIDIAN FOREST."
+	text "Les insectes"
+	line "j'aime ça, je"
+	cont "retourne dans la"
+	cont "FORET DE JADE."
 	done
 
 _Route6VenonatLearnsetText::
-	text "@"
+	text "Des @"
 	text_ram_namebuffer
-	text " started"
-	line "showing up there"
-	cont "recently!"
-	para "I've been reading"
-	line "books about them!"
+	text_start
+	line "sont apparus"
+	cont "récemment là-bas!"
+	para "J'ai lu des livres"
+	line "à leur sujet!"
 	prompt
 
 _Route6CooltrainerM2BattleText::
-	text "Huh? You want"
-	line "to talk to me?"
+	text "Hein? Tu veux"
+	line "me causer?"
 	done
 
 _Route6CooltrainerM2EndBattleText::
-	text "I"
-	line "didn't start it!"
+	text "<...>"
+	line "J'ai rien fait!"
 	prompt
 
 _Route6CooltrainerM2AfterBattleText::
-	text "I should carry"
-	line "more #MON with"
-	cont "me for safety."
+	text "Il me faut plus"
+	line "de #MON"
+	cont "pour me protéger."
 	done
 
 _Route6CooltrainerF2BattleText::
-	text "Me? Well, OK."
-	line "I'll play!"
+	text "Qui ça? Moi?"
+	line "Ok. Attaque!"
 	done
 
 _Route6CooltrainerF2EndBattleText::
-	text "Just"
-	line "didn't work!"
+	text "Ho."
+	line "Pas glop!"
 	prompt
 
 _Route6CooltrainerF2AfterBattleText::
-	text "I want to get"
-	line "stronger! What's"
-	cont "your secret?"
+	text "Je veux être"
+	line "forte! Comme toi!"
+	cont "C'est quoi ton"
+	cont "secret?"
 	done
 
 _Route6Youngster2BattleText::
-	text "I've never seen"
-	line "you around!"
-	cont "Are you good?"
+	text "J't'ai jamais"
+	line "vu dans le coin!"
+	cont "T'es puissant?"
 	done
 
 _Route6Youngster2EndBattleText::
-	text "You"
-	line "are too good!"
+	text "Whaa!"
+	line "Trop puissant!"
 	prompt
 
 _Route6Youngster2AfterBattleText::
-	text "Are my #MON"
-	line "weak? Or, am I"
-	cont "just bad?"
+	text "Mes #MON sont"
+	line "nuls ou je suis"
+	cont "très mauvais?"
 	done
 
 _Route6ButterfreeLearnsetText::
-	text "I try so hard to"
-	line "train @"
+	text "Je fais tout mon"
+	line "possible pour"
+	cont "entraîner"
+	cont "@"
 	text_ram_namebuffer
 	text "!<PARA>@"
 	text_end
 
 _Route6BattleText7::
-	text "Huh! The guard"
-	line "won't let me"
-	cont "through!"
-	para "I'll battle you"
-	line "instead I guess!"
+	text "Hein! Le garde ne"
+	line "me laisse pas"
+	cont "passer!"
+	para "Je vais plutôt"
+	line "t'affronter!"
 	done
 
 _Route6EndBattleText7::
-	text "What"
-	line "should I do?"
+	text "Que dois-je faire?"
 	prompt
 
 _Route6AfterBattleText7::
-	text "Something's up"
-	line "in SAFFRON CITY"
-	cont "if they closed"
-	cont "the gates."
-	para "I wonder what?"
+	text "Il se passe"
+	line "quelque chose à"
+	cont "SAFRANIA s'ils ont"
+	cont "fermé les portes."
+	para "Je me demande bien"
+	line "quoi?"
 	done
 
 _Route6BattleText8::
-	text "Heheheheh<...>"
-	line "that escape was"
-	cont "perfect!"
-	para "I'm already at"
-	line "SAFFRON CITY's"
-	cont "outskirts!"
+	text "Hehehehe<...>"
+	line "Cette évasion"
+	cont "était parfaite!"
+	para "Je suis déjà aux"
+	line "abords de"
+	cont "SAFRANIA!"
 	done
 
 _Route6EndBattleText8::
-	text "Yikes!"
-	line "I'm out of here!"
+	text "Oups!"
+	line "J'me tire d'ici!"
 	prompt
 
 _Route6AfterBattleText8::
-	text "No way I'll get"
-	line "turned in!"
-	para "Not after my big"
-	line "heist in SAFFRON"
-	cont "CITY!"
-	para "Everyone was too"
-	line "distracted to"
-	cont "notice me."
-	para "The place was in"
-	line "chaos!"
+	text "Pas question qu'on"
+	line "me dénonce!"
+	para "Pas après mon gros"
+	line "coup à SAFRANIA!"
+	para "Tout le monde"
+	line "était trop"
+	cont "distrait pour"
+	cont "me remarquer."
+	para "C'était le chaos"
+	line "total!"
 	done
 
 _Route6UndergroundPathSignText::
-	text "UNDERGROUND PATH"
-	line "CERULEAN CITY -"
-	cont "VERMILION CITY"
+	text "SOUTERRAIN"
+	line "AZURIA -"
+	cont "CARMIN SUR MER"
 	done
 
 _Route6TrainerTipsText::
 	text "<ASTUCE>"
-	para "In the PC, scroll"
-	line "to WITHDRAW, then"
-	cont "press SELECT."
-	para "You can view info"
-	line "of #MON in the"
-	cont "current box."
-	para "This can be done"
-	line "even with a full"
-	cont "party!"
+	para "Dans le <PC>,"
+	line "allez sur RETIRER"
+	cont "puis appuyez sur"
+	cont "SELECT."
+	para "Vous pouvez voir"
+	line "les infos des"
+	cont "#MON de la"
+	cont "boîte actuelle."
+	para "C'est possible"
+	line "même si votre"
+	cont "équipe est au"
+	cont "complet!"
 	done

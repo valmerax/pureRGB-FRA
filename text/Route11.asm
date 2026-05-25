@@ -1,176 +1,185 @@
 _Route11Gambler1BattleText::
-	text "Win, lose or draw!"
+	text "Tu veux gagner"
+	line "ou perdre?"
 	done
 
 _Route11Gambler1EndBattleText::
-	text "Atcha!"
-	line "Didn't go my way!"
+	text "OK."
+	line "T'as gagné!"
 	prompt
 
 _Route11Gambler1AfterBattleText::
-	text "#MON is life!"
-	line "And to live is to"
-	cont "gamble!"
+	text "Les #MON c'est"
+	line "la vie! Et la vie"
+	cont "c'est le jeu!"
 	done
 
 _Route11Gambler2BattleText::
-	text "Competition! I"
-	line "can't get enough!"
+	text "J'adore les"
+	line "défis!"
 	done
 
 _Route11Gambler2EndBattleText::
-	text "I had"
-	line "a chance!"
+	text "J'ai eu"
+	line "ma chance!"
 	prompt
 
 _Route11Gambler2AfterBattleText::
-	text "You can't be a"
-	line "coward in the"
-	cont "world of #MON!"
+	text "Dans le monde"
+	line "merveilleux des"
+	cont "#MON, y'a"
+	cont "pas de lâches!"
 	done
 
 _LearnsetBellsprout::
-	text "You've got to be"
-	line "flexible, like my"
+	text "Il faut être"
+	line "souple, comme mon"
 	cont "@"
 	text_ram_namebuffer
 	text "!"
-	para "Move, sway, and"
-	line "adapt!"
+	para "Bouge, balance-toi"
+	line "et adapte-toi!"
 	prompt
 
 _Route11Youngster1BattleText::
-	text "Let's go, but"
-	line "don't cheat!"
+	text "On y va!"
+	line "Mais triche pas!"
 	done
 
 _Route11Youngster1EndBattleText::
-	text "Huh?"
-	line "That's not right!"
+	text "Rha!"
+	line "C'est pas vrai!"
 	prompt
 
 _Route11Youngster1AfterBattleText::
-	text "I did my best! I"
-	line "have no regrets!"
+	text "J'ai fait de mon"
+	line "mieux! Pas ma"
+	cont "faute si j'suis"
+	cont "nul!"
 	done
 
 _Route11SuperNerd1BattleText::
-	text "Careful!"
-	line "I'm laying down"
-	cont "some cables!"
+	text "Attention!"
+	line "Je pose des"
+	cont "câbles!"
 	done
 
 _Route11SuperNerd1EndBattleText::
-	text "That"
-	line "was electric!"
+	text "J'me"
+	line "suis pris du jus!"
 	prompt
 
 _Route11SuperNerd1AfterBattleText::
-	text "Spread the word"
-	line "to save energy!"
+	text "Il faut"
+	line "économiser"
+	cont "l'énergie!"
 	done
 
 _LearnsetMagneton::
-	text "@"
+	text "Les @"
 	text_ram_namebuffer
-	text " gather"
-	line "in places that"
-	cont "overuse energy."
-	para "They can cause"
-	line "big blackouts!"
+	text " se"
+	line "regroupent dans"
+	cont "des lieux très"
+	cont "énergivores."
+	para "Ils peuvent causer"
+	line "de graves pannes"
+	cont "de courant!"
 	para "@"
 	text_end
 
-
 _Route11Youngster2BattleText::
-	text "I just became a"
-	line "trainer! But, I"
-	cont "think I can win!"
+	text "Je suis nouveau,"
+	line "mais j'en veux à"
+	cont "mort!"
 	done
 
 _Route11Youngster2EndBattleText::
-	text "My"
-	line "#MON couldn't!"
+	text "Mes"
+	line "#MON sont"
+	cont "nuls! Beuh<...>"
 	prompt
 
 _Route11Youngster2AfterBattleText5::
-	text "What do you want?"
-	line "Leave me alone!"
+	text "Laisse-moi!"
 	done
 
 _Route11Gambler3BattleText::
-	text "Fwahaha! I have"
-	line "never lost!"
+	text "HAHAHA! J'ai"
+	line "jamais perdu!"
 	done
 
 _Route11Gambler3EndBattleText::
-	text "My"
-	line "first loss!"
+	text "Heu? Ma"
+	line "première défaite!"
 	prompt
 
 _Route11Gambler3AfterBattleText::
-	text "Luck of the draw!"
-	line "Just luck!"
+	text "Tu as la chance"
+	line "des débutants!"
 	done
 
 _Route11Gambler4BattleText::
-	text "I have never won"
-	line "before<...>"
+	text "Je n'ai jamais"
+	line "gagné<...>"
 	done
 
 _Route11Gambler4EndBattleText::
-	text "I saw"
-	line "this coming<...>"
+	text "Je m'y"
+	line "attendais<...>"
 	prompt
 
 _Route11Gambler4AfterBattleText::
-	text "It's just luck."
-	line "Luck of the draw."
+	text "J'suis maudit,"
+	line "je crois!"
 	done
 
 _Route11Youngster3BattleText::
-	text "I'm the best in"
-	line "my class!"
+	text "Je suis le plus"
+	line "fort de ma"
+	cont "classe!"
 	done
 
 _Route11Youngster3EndBattleText::
-	text "Darn!"
-	line "I need to make my"
-	cont "#MON stronger!"
+	text "Argh!"
+	line "Tu veux être le"
+	cont "chef de classe?"
 	prompt
 
 _Route11Youngster3AfterBattleText::
-	text "There's a fat"
-	line "#MON that"
-	cont "comes down from"
-	cont "the mountains."
+	text "Il y a un gros"
+	line "#MON qui"
+	cont "vient de la"
+	cont "montagne."
 
-	para "It's strong if"
-	line "you can get it."
+	para "Si t'es fort, tu"
+	line "peux l'attraper."
 	done
 
 _LearnsetStaryu::
-	text "But I've already"
-	line "got this @"
+	text "Mais j'ai déjà ce"
+	line "@"
 	text_ram_namebuffer
 	text "!"
-	para "It has such a"
-	line "peculiar shape."
-	para "Reminds me of"
-	line "outer space!"
+	para "Il a une forme"
+	line "très étrange."
+	para "Il me fait penser"
+	line "à l'espace!"
 	para "@"
 	text_end
 
 _Route11SuperNerd2BattleText::
-	text "Watch out for"
-	line "live wires!"
+	text "Fais gaffe"
+	line "aux câbles!"
 	done
 
 _LearnsetVulpixLuckyNumber::
-	text "Six is my lucky"
-	line "number!"
-	para "That's why I"
-	line "raised a @"
+	text "Le six est mon"
+	line "chiffre porte-"
+	cont "bonheur!"
+	para "C'est pour ça que"
+	line "j'ai élevé un"
+	cont "@"
 	text_ram_namebuffer
 	text "!"
 	prompt

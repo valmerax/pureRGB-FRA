@@ -1,132 +1,134 @@
 _PokemonMansion2FSuperNerdBattleText::
-	text "I can't get out!"
-	line "This old place is"
-	cont "one big puzzle!"
+	text "Mais<...> J'suis"
+	line "complètement"
+	cont "paumé!"
 	done
 
 _PokemonMansion2FSuperNerdEndBattleText::
-	text "Oh no!"
-	line "My bag of loot!"
+	text "Non!"
+	line "Mon butin!"
 	prompt
 
 _PokemonMansion2FSuperNerdAfterBattleText::
-	text "Switches open and"
-	line "close alternating"
-	cont "sets of doors!"
+	text "Les interrupteurs"
+	line "ouvrent et"
+	cont "ferment alterna-"
+	cont "tivement les"
+	cont "portes!"
 	done
 
 _Mansion2BattleText2::
-	text "Man."
-	para "Exploring"
-	line "abandoned places"
-	cont "is amazing."
+	text "Mec."
+	para "Explorer des lieux"
+	line "abandonnés,"
+	cont "c'est génial."
 	done
 
 _Mansion2EndBattleText2::
 	text ""
-	line "Whoops!"
+	line "Oups!"
 	prompt
 
 _Mansion2AfterBattleText2::
-	text "An abandoned"
-	line "researcher's"
-	cont "mansion."
-	para "So cool."
-	para "Wonder if they"
-	line "did any weird"
-	cont "experiments?"
+	text "Une demeure"
+	line "abandonnée de"
+	cont "chercheur."
+	para "Trop cool."
+	para "Je me demande"
+	line "s'ils ont mené"
+	cont "des expériences"
+	cont "bizarres?"
 	done
 
 _Mansion2BattleText3::
-	text "I'm an urban"
-	line "spelunker!"
+	text "Je suis un spéléo-"
+	line "logue urbain!"
 	done
 
 _Mansion2EndBattleText3::
-	text "Ker-"
-	line "plunk!"
+	text "Plouf!"
 	prompt
 
 _Mansion2AfterBattleText3::
-	text "It's my hobby"
-	line "to explore"
-	cont "abandoned places."
-	para "Have you been to"
-	line "the POWER PLANT?"
-	para "That place is"
-	line "so cool!"
-	para "But this place"
-	line "really takes the"
-	cont "cake."
+	text "J'adore explorer"
+	line "des lieux"
+	cont "abandonnés."
+	para "Tu es déjà allé à"
+	line "la CENTRALE?"
+	para "C'est un endroit"
+	line "génial!"
+	para "Mais celui-là,"
+	line "c'est vraiment le"
+	cont "top."
 	done
 
 _Mansion2BattleText4::
-	text "Don't touch"
-	line "anything!"
+	text "Ne touche à rien!"
 	done
 
 _Mansion2EndBattleText4::
-	text "Hey!"
-	line "Careful!"
+	text "Hé!"
+	line "Attention!"
 	prompt
 
 _Mansion2AfterBattleText4::
-	text "Sometimes data"
-	line "that was hidden"
-	cont "from the public"
-	cont "is sequestered"
-	cont "away in these"
-	cont "facilities."
-	para "Then they forget"
-	line "to destroy data"
-	cont "when the research"
-	cont "lab is abandoned."
-	para "As a researcher"
-	line "it's my job to"
-	cont "uncover these"
-	cont "experiments!"
+	text "Parfois, des"
+	line "données cachées"
+	cont "au public sont"
+	cont "stockées dans ces"
+	cont "installations."
+	para "Puis, ces données"
+	line "sont oubliées"
+	cont "lorsque le labo"
+	cont "est abandonné."
+	para "En tant que"
+	line "chercheur, c'est"
+	cont "mon travail de"
+	cont "découvrir ces"
+	cont "expériences!"
 	done
 
 _Mansion2BattleText5::
-	text "Groan! Another"
-	line "dead end?"
+	text "Grrr! Encore une"
+	line "impasse?"
 	done
 
 _Mansion2EndBattleText5::
 	text ""
-	line "Augh!!"
+	line "Aïe!!"
 	prompt
 
 _Mansion2AfterBattleText5::
-	text "I'm getting"
-	line "totally fed up"
-	cont "with this place!"
+	text "J'en ai vraiment"
+	line "marre de cet"
+	cont "endroit!"
 	done
 
 _PokemonMansion2FDiary1Text::
-	text "Diary: July 5"
-	line "Guyana,"
-	cont "South America"
+	text "Rapport:"
+	line "5 Juillet."
+	cont "Jungle X."
 
-	para "A new #MON was"
-	line "discovered deep"
-	cont "in the jungle."
+	para "Un nouveau type "
+	line "de #MON fut"
+	cont "découvert."
 	done
 
 _PokemonMansion2FDiary2Text::
-	text "Diary: July 10"
-	line "We christened the"
-	cont "newly discovered"
-	cont "#MON, MEW."
+	text "Rapport:"
+	line "10 Juillet."
+	cont "Le #MON fut"
+	cont "baptisé MEW."
 	done
 
-
 _PokemonMansion2FDiary3Text::
-	text "Diary: Sept 6"
-	para "We have tested"
-	line "the abilities of"
-	cont "the captive MEW."
-	para "Its learning"
-	line "capacity seems"
-	cont "almost limitless."
+	text "Rapport:"
+	line "6 Septembre."
+	para "Nous avons testé"
+	line "les capacités du"
+	cont "MEW en captivité."
+	para "Sa capacité"
+	line "d'apprentissage"
+	cont "semble presque"
+	cont "illimitée."
 	done

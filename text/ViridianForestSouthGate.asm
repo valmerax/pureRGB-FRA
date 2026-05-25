@@ -1,20 +1,23 @@
 _ViridianForestSouthGateGirlText::
-	text "Are you going to"
-	line "VIRIDIAN FOREST?"
-	cont "Be careful, it's"
-	cont "a natural maze!"
+	text "Vas-tu dans la"
+	line "FORET DE JADE,"
+	cont "mon poussin? Fais"
+	cont "bien attention,"
+	cont "c'est un vrai"
+	cont "labyrinthe!"
 	done
 
 _ViridianForestSouthGateLittleGirlText::
-	text "RATTATA may be"
-	line "small, but its"
-	cont "bite is wicked!"
-	cont "Did you get one?"
+	text "RATTATA est"
+	line "petit mais il est"
+	cont "vicieux! En as-tu"
+	cont "capturé un?"
 	done
 
 _ViridianForestSouthGateLittleGirl2Text::
-	text "You did?!"
-	para "Right on!"
-	para "You're on the path"
-	line "to cool school!"
+	text "Tu l'as fait?!"
+	para "Bravo!"
+	para "Tu es sur la bonne"
+	line "voie pour devenir"
+	cont "un pro!"
 	done

@@ -1,222 +1,234 @@
 _SafariZoneNorthRestHouseSignText::
-	text "REST HOUSE"
+	text "ABRI"
 	done
 
 _SafariZoneNorthTrainerTips1Text::
 	text "<ASTUCE>"
 
-	para "The SECRET HOUSE"
-	line "is still ahead!"
+	para "La Cabane Secrète"
+	line "est tout droit!"
 	done
 
 _SafariZoneNorthSignText::
-	text "AREA 2"
+	text "PARC 2"
 	done
 
 _SafariZoneNorthTrainerTips2Text::
 	text "<ASTUCE>"
 
-	para "GHOST type moves"
-	line "are dynamic!"
-	para "They can do either"
-	line "physical or"
-	cont "special damage!"
-	para "If a #MON's"
-	line "base SPECIAL is"
-	cont "higher than its"
-	cont "base ATTACK,"
-	para "GHOST attacks"
-	line "will do special"
-	cont "damage!"
-	para "Otherwise, they"
-	line "do physical"
-	cont "damage."
+	para "Les attaques de"
+	line "type SPECTRE sont"
+	cont "dynamiques!"
+	para "Elles peuvent"
+	line "infliger des"
+	cont "dégâts physiques"
+	cont "ou spéciaux!"
+	para "Si la stat SPECIAL"
+	line "d'un #MON est"
+	cont "est supérieure à"
+	cont "sa stat d'ATTAQUE,"
+	para "les attaques"
+	line "SPECTRE inflige-"
+	cont "ront des dégâts"
+	cont "spéciaux!"
+	para "Sinon, elles"
+	line "infligeront des"
+	cont "dégâts physiques."
 	done
 
 _SafariZoneNorthTrainerTips3Text::
 	text "<ASTUCE>"
 
-	para "Win a free HM for"
-	line "finding the"
-	cont "SECRET HOUSE!"
+	para "Découvrez la"
+	line "CABANE SECRETE et"
+	cont "gagnez une CS!"
 	done
 
 _SafariZoneNorthRangerText::
-	text "Here I am!"
-	line "RANGER number 3!"
-	cont "Let's dance!"
+	text "Me voilà!"
+	line "RANGER numéro 3!"
+	cont "C'est parti!"
 	done
 
 _SafariZoneNorthRangerEndBattleText::
-	text "Wow,"
-	line "powerful #MON!"
+	text "Whoa, redoutables"
+	line "#MON!"
 	prompt
 
 _SafariZoneNorthRangerAfterBattleText::
-	text "I'm in charge of"
-	line "monitoring the"
-	cont "population of"
-	cont "CHANSEY we have"
-	cont "here."
+	text "Je suis chargé de"
+	line "surveiller la"
+	cont "population de"
+	cont "LEVEINARD que"
+	cont "nous avons ici."
 
-	para "Sadly they were"
-	line "dwindling in"
-	cont "number for years."
+	para "Malheureusement,"
+	line "leur nombre"
+	cont "diminuait depuis"
+	cont "des années."
 
-	para "But we've made"
-	line "great progress!"
+	para "Mais nous avons"
+	line "fait de grands"
+	cont "progrès!"
 
-	para "They're bouncing"
-	line "back!"
+	para "Ils sont en train"
+	line "de se rétablir!"
 	done
 
 _SafariZoneNorthJugglerText::
-	text "I'm a POKé BALL"
-	line "collector!"
+	text "Je collectionne"
+	line "les # BALL!"
 	done
 
 _SafariZoneNorthJugglerEndBattleText::
-	text "Yeah,"
-	line "battling wasn't"
-	cont "ever my forté."
+	text "Ouais, les combats"
+	line "n'ont jamais été"
+	cont "mon point fort."
 	prompt
 
 _SafariZoneNorthJugglerAfterBattleText::
-	text "The prize for"
-	line "completing the"
-	cont "RANGER HUNT game"
-	cont "is supposed to be"
-	cont "a special type of"
-	cont "# BALL."
+	text "La récompense pour"
+	line "avoir terminé la"
+	cont "CHASSE AU RANGER"
+	cont "est censée être"
+	cont "une # BALL"
+	cont "spéciale."
 
-	para "Not available"
-	line "anywhere else!"
+	para "Introuvable"
+	line "ailleurs!"
 
-	para "A real rarity!"
+	para "Une vraie rareté!"
 
-	para "That sounds right"
-	line "up my alley."
+	para "Ca me tente bien."
 	done
 
 _SafariZoneNorthCooltrainerMText::
-	text "This empty field"
-	line "is perfect for"
-	cont "training!"
+	text "Ce terrain vague"
+	line "est parfait pour"
+	cont "s'entraîner!"
 	done
 
 _SafariZoneNorthCooltrainerMEndBattleText::
 	text "Ah!"
-	para "The great"
-	line "outdoors!"
+	para "Le grand air!"
 	prompt
 
 _SafariZoneNorthCooltrainerMAfterBattleText::
-	text "The feel of wind"
-	line "in your hair!"
+	text "La sensation du"
+	line "vent dans les"
+	cont "cheveux!"
 
-	para "The earthy smell"
-	line "in the air after"
-	cont "rain!"
+	para "L'odeur de la"
+	line "terre après la"
+	cont "pluie!"
 
-	para "The beams of"
-	line "sunlight shining"
-	cont "through foliage!"
+	para "Les rayons de"
+	line "soleil qui"
+	cont "brillent à"
+	cont "travers le"
+	cont "feuillage!"
 
-	para "With my #MON"
-	line "at my side, this"
-	cont "is the essence of"
-	cont "adventure!"
+	para "Avec mes #MON à"
+	line "mes côtés, voilà"
+	cont "l'essence même"
+	cont "de l'aventure!"
 	done
 
 _SafariZoneNorthSuperNerdText::
-	text "Huh?!"
-	para "My ITEMFINDER is"
-	line "going ballistic!"
+	text "Hein?!"
+	para "Mon CHERCH'OBJET"
+	line "s'emballe!"
 	done
 
 _SafariZoneNorthSuperNerdEndBattleText::
-	text "Must"
-	line "find items!"
-	para "Must find items!"
+	para "Je dois trouver"
+	line "des objets!"
+	para "Je dois trouver"
+	line "des objets!!"
 	prompt
 
 _SafariZoneNorthSuperNerdAfterBattleText::
-	text "You wouldn't"
-	line "believe the pure"
-	cont "treasure I found"
-	cont "with this thing!"
+	text "Tu n'imagines"
+	line "pas les trésors"
+	cont "que j'ai trouvés"
+	cont "avec ce truc!"
 
-	para "NUGGETs, PROTEIN,"
-	line "even once a pair"
-	cont "of undies!"
+	para "Des PEPITE, des"
+	line "PROTEINE, et même"
+	cont "une culotte!"
 
-	para "Hyuck hyuck"
-	line "hyuck hyuck!"
+	para "Nyark nyark"
+	line "nyark nyark!"
 
-	para "(What a weirdo!)"
+	para "(Quel drôle de"
+	line "type!)"
 	done
 
 _SafariZoneNorthEngineerText::
-	text "See this REST"
-	line "HOUSE?"
-	para "I designed it!"
+	text "Tu vois cet ABRI?"
+	para "Je l'ai conçu!"
 	done
 
 _SafariZoneNorthEngineerEndBattleText::
-	text "Oh"
-	line "well!"
+	text "Tant pis!"
 	prompt
 
 _SafariZoneNorthEngineerAfterBattleText::
-	text "I designed and"
-	line "built all the"
-	cont "REST HOUSEs in"
-	cont "the SAFARI ZONE."
+	text "J'ai conçu et"
+	line "construit tous"
+	cont "les ABRI du PARC"
+	cont "SAFARI."
 
-	para "They are supposed"
-	line "to make people"
-	cont "feel welcome to"
-	cont "the outdoors."
+	para "Ils sont censés"
+	line "offrir aux gens"
+	cont "un refuge en"
+	cont "pleine nature."
 
-	para "They provide just"
-	line "the basics for a"
-	cont "remote cottage"
-	cont "style feel!"
+	para "Ils offrent le"
+	line "strict minimum"
+	cont "pour une ambiance"
+	cont "de chalet isolé!"
 
-	para "If I ever see"
-	line "a <PC> or healing"
-	cont "machine in one"
-	cont "of them, I'm"
-	cont "quitting!"
+	para "Si jamais je vois"
+	line "un <PC> ou un"
+	cont "appareil de soins"
+	cont "dans l'un d'eux,"
+	cont "je démissionne!"
 	done
 
 _SafariZoneNorthManiacText::
-	text "#MANIAC code!"
-	line "Tenet one!"
+	text "Code des"
+	line "#MANIAC!"
 
-	para "Always battle"
-	line "someone who looks"
-	cont "cool!"
+	para "Règle numéro un!"
+
+	para "Combats toujours"
+	line "quelqu'un qui a"
+	cont "l'air cool!"
 	done
 
 _SafariZoneNorthManiacEndBattleText::
-	text "Tenet"
-	line "two! Always lose"
-	cont "with style!"
+	text "Règle numéro deux!"
+	line "Perds toujours"
+	cont "avec classe!"
 	prompt
 
 _SafariZoneNorthManiacAfterBattleText::
-	text "#MANIAC code!"
-	line "Tenet three!"
+	text "Code des"
+	line "#MANIAC!"
 
-	para "If you lose to a"
-	line "trainer, they're"
-	cont "now considered"
-	cont "your pal!"
+	para "Règle numéro"
+	line "trois!"
 
-	para "--You and the"
-	line "#MANIAC did"
-	cont "the secret cool-"
-	cont "dudes-only"
-	cont "handshake!"
+	para "Si tu perds contre"
+	line "un dresseur, il"
+	cont "devient désormais"
+	cont "ton pote!"
+
+	para "<...>Toi et le"
+	line "#MANIAC avez"
+	cont "échangé la"
+	cont "poignée de main"
+	cont "secrète réservée"
+	cont "aux mecs cool!"
 	done

@@ -1,69 +1,72 @@
 _DiamondMineProspectorText::
-	text "Hey kid!"
-	para "There's gold in"
-	line "these hills!"
-	para "Or even better,"
-	line "diamonds!"
-	para "Want to help"
-	line "find some?"
+	text "Hé, petit!"
+	para "Il y a de l'or dans"
+	line "ces collines!"
+	para "Ou mieux encore,"
+	line "des diamants!"
+	para "Tu veux m'aider à"
+	line "en trouver?"
 	done
 
 _DiamondMineProspectorHelp::
-	text "I like the cut"
-	line "of your jib!"
-	para "The ZUBAT around"
-	line "here are getting"
-	cont "a bit ridiculous!"
-	para "I have to wear"
-	line "earplugs to drown"
-	cont "out their ear-"
-	cont "piercing cries!"
-	para "I want to spend"
-	line "my time digging,"
-	para "not swatting at"
-	line "ZUBATs!"
-	para "I need exactly"
-	line "10 REPELs!"
+	text "J'aime ton style!"
+	para "Les NOSFERAPTI du"
+	line "coin deviennent"
+	cont "vraiment pénible!"
+	para "Je dois porter des"
+	line "bouchons d'oreille"
+	cont "pour ne plus"
+	cont "entendre leurs"
+	cont "cris stridents!"
+	para "Je préfère creuser"
+	line "plutôt que de"
+	para "chasser les"
+	line "NOSFERAPTI!"
+	para "Il me faut 10"
+	line "REPOUSSE!"
 	done
 
 _DiamondProspectorRepels::
-	text "Did you pick up"
-	line "10 REPELs yet?"
+	text "Tu as déjà pris"
+	line "les 10 REPOUSSE?"
 	done
 
 _DiamondProspectorGiveRepels::
-	text "Give 10 REPELs?"
+	text "Donner 10"
+	line "REPOUSSE?"
 	done
 
 _DiamondProspectorUseRepels::
-	text "Great, let's spray"
-	line "REPEL everywhere!"
+	text "Super, on va"
+	line "vaporiser du"
+	cont "REPOUSSE partout!"
 	prompt
 
 _DiamondMineProspectorHelp2::
-	text "The ZUBAT have"
-	line "gone away!"
-	para "Perfect!"
-	para "On to the"
-	line "next thing."
-	para "My boombox ran"
-	line "out of batteries!"
-	para "How about you"
-	line "give it a zap"
-	cont "with an ELECTRIC"
-	cont "#MON to start"
-	cont "it up again?"
-	para "Or a #MON with"
-	line "THUNDER WAVE."
-	para "I need my fave"
-	line "digging music!"
+	text "Les NOSFERAPTI"
+	line "sont partis!"
+	para "Parfait!"
+	para "Passons à la"
+	line "suite."
+	para "Ma radio est à"
+	line "plat!"
+	para "Et si tu lui"
+	line "redonner un coup"
+	cont "d'jus avec un"
+	cont "#MON ELECTRIK"
+	cont "pour la rallumer?"
+	para "Ou un #MON avec"
+	line "CAGE-ECLAIR."
+	para "J'ai besoin de ma"
+	line "musique préférée"
+	cont "pour creuser!"
 	done
 
 _DiamondMineProspectorHelp3::
-	text "That's my jam!"
-	line "Oh yeah!"
-	para "Now we're cooking!"
-	para "Let's do this!"
+	text "Ca, c'est mon son!"
+	line "Oh ouais!"
+	para "Là, c'est reparti!"
+	para "Allez, au boulot!"
 	prompt
 
 _DiamondMineProspectorRagh::
@@ -71,139 +74,147 @@ _DiamondMineProspectorRagh::
 	done
 
 _DiamondMineProspectorHelp4::
-	text "We're hitting"
-	line "bedrock!"
-	para "I need a #MON"
-	line "that can smash"
-	cont "hard stone!"
-	para "Do you have an"
-	line "ONIX?"
+	text "On atteint le"
+	line "socle rocheux!"
+	para "J'ai besoin d'un"
+	line "#MON capable"
+	cont "de briser la"
+	cont "roche!"
+	para "Tu as un ONIX?"
 	done
 
 _DiamondMineBoomboxInitial::
-	text "It's a portable"
-	line "boombox!"
-	para "It doesn't seem"
-	line "to turn on."
+	text "C'est une radio"
+	line "portable!"
+	para "Elle ne semble pas"
+	line "s'allumer."
 	done
 
 _DiamondMineBoomboxZap::
-	text "Zap it with"
-	line "electricity?"
+	text "Lui donner un"
+	line "coup d'jus?"
 	done
 
 _DiamondMineBoomboxZapProc::
 	text_ram_namebuffer
-	text " zapped"
-	line "the boombox!"
+	text " envoie"
+	line "une décharge dans"
+	cont "la radio!"
 	done
 
 _DiamondMineBoomboxZapProc2::
 	text_ram_namebuffer
-	text " zapped"
-	line "the boombox with"
-	cont "THUNDER WAVE!"
+	text " envoie"
+	line "une décharge dans"
+	cont "la radio avec"
+	cont "CAGE-ECLAIR!"
 	done
 
 _DiamondMineBoomboxFunctional::
-	text "The boombox is"
-	line "playing a rather"
-	cont "bombastic tune."
+	text "La radio diffuse"
+	line "un air plutôt"
+	cont "entraînant."
 	done
 
 _DiamondMinePickedOnix::
-	text "Okay @"
+	text "Bon @"
 	text_ram_namebuffer
 	text ","
-	line "now the real hard"
-	cont "work begins!"
+	line "c'est maintenant"
+	cont "que les choses"
+	cont "sérieuses"
+	cont "commencent!"
 	prompt
 
 _DiamondMineDownHere::
-	text "Hey, kid!"
-	line "Climb down!"
-	para "You won't believe"
-	line "your eyes!"
+	text "Hé, petit!"
+	line "Descends!"
+	para "Tu n'en croiras pas"
+	line "tes yeux!"
 	done
 
 _DiamondMineWeeksOfWork::
-	text "<PLAYER>, the"
-	line "prospector, and"
+	text "<PLAYER>, le"
+	line "prospecteur, et"
 	cont "@"
 	text_ram_namebuffer
-	text " spent"
-	cont "weeks digging"
-	cont "through the hard"
-	cont "bedrock."
-	para "Soon only"
+	text " ont"
+	cont "passé des semaines"
+	cont "à creuser dans la"
+	cont "roche."
+	para "Bientôt, seul"
 	line "@"
 	text_ram_namebuffer
-	text " could"
-	cont "make progress."
-	para "Until<...>"
+	text " était"
+	cont "capable d'avancer."
+	para "Jusqu'à<...>"
 	prompt
 
 _DiamondMineFinished::
-	text "Diamonds!!"
-	line "Everywhere!!"
-	para "It's all thanks"
-	line "to @"
+	text "Des diamants!!"
+	line "Partout!!"
+	para "Tout cela grâce à"
+	line "@"
 	text_ram_namebuffer
 	text "!"
-	para "Looks like"
-	line "its rocky body"
-	cont "got harder from"
-	cont "all that digging!"
-	para "It's as hard as"
-	line "diamond now!"
+	para "On dirait que son"
+	line "corps rocheux"
+	cont "s'est durci à"
+	cont "force de creuser!"
+	para "Il est désormais"
+	line "aussi dur que le"
+	cont "diamant!"
 	done
 
 _DiamondMineFinished2::
 	text_start
 	para "@"
 	text_ram_namebuffer
-	text " has"
-	line "been powered up!"
+	text " est"
+	line "devenu plus"
+	cont "puissant!"
 	done
 
 _DiamondMineFinished3::
 	text_start
-	para "Its base HP"
-	line "increased! 55→80"
-	para "Its base ATTACK"
-	line "increased! 25→85"
-	para "It'll also take"
-	line "less damage from"
-	cont "WATER, ICE, and"
-	cont "GRASS attacks!"
+	para "Ses PV de base ont"
+	line "augmenté! 55→80"
+	para "Son ATTAQUE de"
+	line "base à augmenté!"
+	cont "25→85"
+	para "Il subira aussi"
+	line "moins de dégâts"
+	cont "des attaques EAU,"
+	cont "GLACE et PLANTE!"
 	done
 
 _DiamondMineEndText::
-	text "Whoo boy, kid!"
-	para "These diamonds"
-	line "will take a while"
-	cont "to cart out!"
-	para "I was down on my"
-	line "luck and you"
-	cont "helped me out!"
-	para "Come say hi at"
-	line "my house in"
-	cont "CELADON CITY"
-	cont "sometime!"
+	text "Eh bien, petit!"
+	para "Il va falloir"
+	line "du temps pour"
+	cont "transporter tout"
+	cont "ces diamants!"
+	para "J'étais vraiment"
+	line "dans la galère et"
+	cont "tu m'as sauvé la"
+	cont "mise!"
+	para "Passe me dire"
+	line "bonjour chez moi"
+	cont "à CELADOPOLE un"
+	cont "de ces jours!"
 	done
 
 _DiamondMineMoreOnix::
-	text "Or did you want"
-	line "me to train with"
-	cont "another ONIX?"
+	text "Ou tu veux que je"
+	line "renforce un autre"
+	cont "ONIX?"
 	done
 
 _DiamondMineMoreOnix2::
-	text "I'd love to!"
-	line "Here we go!"
+	text "J'adorerais ça!"
+	line "On y va!"
 	prompt
 
 _DiamondMineOnixTrainDone::
-	text "That was some"
-	line "intense digging!"
+	text "On a bien creusé!"
 	done

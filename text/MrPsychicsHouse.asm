@@ -1,54 +1,58 @@
 _MrPsychicsHouseMrPsychicYouWantedThisText::
-	text "<...>Wait! Don't"
-	line "say a word!"
+	text "<...>Chut! Pas un"
+	line "mot!"
 
-	para "You wanted this!"
+	para "Tu veux ça?"
 	prompt
 
 _MrPsychicsHouseMrPsychicTM29ExplanationText::
-	text "<CT>29 is PSYCHIC!"
-	
-	para "It uses powerful"
-	line "psychic waves to"
-	cont "inflict damage!"
+	text "CT29: PSYKO!"
 
-	para "It has a chance to"
-	line "lower the target's"
-	cont "SPECIAL stat."
+	para "Elle utilise de"
+	line "puissantes ondes"
+	cont "psychiques pour"
+	cont "infliger des"
+	cont "dégâts!"
+
+	para "Cette attaque"
+	line "diminue le"
+	cont "SPECIAL de la"
+	cont "cible."
 	done
 
 _MrPsychicsHouseMrPsychicTM29NoRoomText::
-	text "Where do you plan"
-	line "to put this?"
+	text "Ton inventaire"
+	line "est plein!"
 	done
 
 _MrPsychicsHouseBookText::
-	text "THE KADABRA BOOK"
-	line "OF PSYCHIC THEORY@"
+	text "KADABRA ET LA"
+	line "THEORIE PSYCHIQUE@"
 	text_end
 
 _MrPsychicsHouseBookText2::
-	text "<PARA>KADABRA's powerful"
-	line "PSYCHIC presence"
-	cont "causes strange"
-	cont "shadows on TVs"
-	cont "and computer"
-	cont "monitors."
-	para "If you see one"
-	line "of these shadows,"
-	cont "it's considered"
-	cont "very bad luck."
+	text "<PARA>La puissante aura"
+	line "PSYCHIQUE de"
+	cont "KADABRA cause"
+	cont "d'étranges ombres"
+	cont "sur les écrans de"
+	cont "télévision et"
+	cont "d'ordinateur."
+	para "Si vous voyez l'une"
+	line "de ces ombres,"
+	cont "cela porte"
+	cont "malheur."
 	done
 
 _MrPsychicsHouseIKnowWhatYouWantText::
-	text "I know what you"
-	line "want!"
-	para "But first do this"
-	line "for me:"
-	para "Go rough up the"
-	line "trainers in the"
-	cont "FIGHTING DOJO!"
-	para "It's on the north"
-	line "side of town."
+	text "Je sais ce que tu"
+	line "veux!"
+	para "Mais d'abord, fait"
+	line "ceci pour moi:"
+	para "Va malmener les"
+	line "dresseurs du"
+	cont "DOJO KARATE!"
+	para "C'est du côté nord"
+	line "de la ville."
 	done
 

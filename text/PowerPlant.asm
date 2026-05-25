@@ -3,112 +3,123 @@ _PowerPlantVoltorbBattleText::
 	done
 
 _PowerPlantZapdosBattleText::
-	text "Gyaoo!@"
+	text "Yahoo!@"
 	text_end
 
 _PowerPlantOpenGateText::
-	text "Tripped a breaker!"
-	para "Electricity was"
-	line "cut off somewhere."
+	text "Disjoncteur"
+	line "déclenché!"
+	para "Le courant a été"
+	line "coupé quelque"
+	cont "part."
 	done
 
 _PowerPlantElectricityText::
-	text "Electrical arcs"
-	line "are blocking the"
-	cont "way forward."
-	para "Is there any way"
-	line "to shut off the"
-	cont "power?"
+	text "Des arcs électri-"
+	line "ques bloquent le"
+	cont "passage."
+	para "Y a-t-il un moyen"
+	line "de couper le"
+	cont "courant?"
 	done
 
 _ZapdosFlewAway::
-	text "The huge #MON"
-	line "caused a power"
-	cont "outage!"
-	para "It flew through"
-	line "a hole up to the"
-	cont "roof!"
-	para "Gotta follow it!"
+	text "Ce #MON géant a"
+	line "provoqué une"
+	cont "panne de courant!"
+	para "Il s'est envolé par"
+	line "un trou et s'est"
+	cont "retrouvé sur le"
+	cont "toit!"
+	para "Il faut le suivre!"
 	done
 
 _PowerPlantRoofDarkCloudsText::
-	text "Huh? Dark clouds"
-	line "are rolling in."
-	para "A thunderstorm"
-	line "is coming!"
+	text "Hein? Des nuages"
+	line "noirs approchent."
+	para "Un orage se"
+	line "prépare!"
 	done
 
 _PowersOutCantUse::
-	text "It's not working"
-	line "because of the"
-	cont "power outage."
+	text "Ca ne fonctionne"
+	line "pas à cause de la"
+	cont "panne de courant."
 	done
 
 _PowerCameBackText::
-	text "Looks like the"
-	line "power's back!"
+	text "On dirait que le"
+	line "courant est"
+	cont "revenu!"
 	done
 
 _MagnetText::
-	text "This magnet seems"
-	line "to have powerful"
-	cont "electromagnetic"
-	cont "waves running"
-	cont "through it."
+	text "Cet aimant semble"
+	line "être traversé par"
+	cont "de puissantes"
+	cont "ondes électro-"
+	cont "magnétiques."
 	prompt
 
 _MagnetMagnemiteText::
-	text "It won't be able"
-	line "to deal with such"
-	cont "high magnetism"
-	cont "yet."
+	text "Il n'est pas encore"
+	line "capable de"
+	cont "supporter un"
+	cont "magnétisme aussi"
+	cont "élevé."
 	done
 
 _MagnetFloatingMagnetonText::
-	text "It's already been"
-	line "supercharged."
+	text "Il est déjà"
+	line "suralimenté."
 	done
 
 _PowerPlantComputer1::
-	text "MAGNETIC RAIL"
-	line "FULLY CHARGED"
+	text "RAIL MAGNETIQUE"
+	line "PLEINEMENT CHARGE"
 	done
 
 _PowerPlantComputer2::
-	text "SUPERCONDUCTOR"
-	line "COOLANT DEPLETED"
+	text "LIQUIDE DE REFROI-"
+	line "DISSEMENT DU"
+	cont "SUPERCONDUCTEUR"
+	cont "EPUISE"
 	done
 
 _PowerPlantComputer3::
-	text "POLARITY REVERSAL"
-	line "CONTROL UNIT"
+	text "UNITE DE COMMANDE"
+	line "D'INVERSION DE"
+	cont "POLARITE"
 	done
 
 _PowerPlantComputer4::
-	text "RESONANCE MATCHER"
+	text "ADAPTATEUR D'ONDES"
 	done
 
 _MagnetMagnetonText1::
 	text_ram_namebuffer
-	text " went"
-	line "close to the"
-	cont "magnet."
+	text ""
+	line "s'approche de"
+	cont "l'aimant."
 	done
 
 _MagnetMagnetonText2::
+	text "Le pouvoir"
+	line "antigravité de"
+	cont "@"
 	text_ram_namebuffer
-	text "'s"
-	line "antigravity power"
-	cont "was supercharged!"
+	text " est"
+	cont "décuplé!"
 	done
 
 _MagnetMagnetonText3::
 	text_start
-	para "It can float"
-	line "higher now."
+	para "Il peut flotter"
+	line "plus haut."
 	para "@"
 	text_ram_namebuffer
-	text " became"
-	line "immune to GROUND"
-	cont "type attacks!"
+	text " est à"
+	line "présent immunisé"
+	cont "aux attaques de"
+	cont "type SOL!"
 	done

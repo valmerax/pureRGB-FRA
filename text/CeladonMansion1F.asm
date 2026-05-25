@@ -1,60 +1,66 @@
 _CeladonMansion1FMeowthText::
-	text "MEOWTH: Meow!@"
+	text "MIAOUSS: Miaou!@"
 	text_end
 
 _CeladonMansion1FGrannyText::
-	text "My dear #MON"
-	line "keep me company."
+	text "Mes chers #MON"
+	line "me tiennent"
+	cont "compagnie."
 
-	para "MEOWTH even brings"
-	line "money home!"
+	para "MIAOUSS rapporte"
+	line "même de l'argent!"
 	done
 
 _CeladonMansion1FClefairyText::
-	text "CLEFAIRY: Pi"
-	line "pippippi!@"
+	text "MELOFEE: Féé!"
+	line "Fééééféééé!@"
 	text_end
 
 _CeladonMansion1FNidoranFText::
-	text "NIDORAN: Kya"
-	line "kyaoo!@"
+	text "NIDORAN: Nido!"
+	line "Nidoodoo!@"
 	text_end
 
 _CeladonMansion1FManagersSuiteSignText::
-	text "CELADON MANSION"
-	line "Manager's Suite"
+	text "MANOIR CELADON"
+	line "La Suite"
+	cont "présidentielle"
 	done
 
 _CeladonMansion1FBookCaseLeftText::
-	text "THE SUNNY SIDE:"
-	line "EXEGGCUTE's STORY"
-	para "A children's fable"
-	line "about EXEGGCUTE.@"
+	text "LE BON COTE:"
+	line "L'HISTOIRE DE"
+	cont "NOEUNEUF"
+	para "Une fable pour"
+	line "enfants sur"
+	cont "NOEUNEUF.@"
 	text_end
 
 _CeladonMansion1FBookCaseLeft2Text::
-	text "<PARA>All 6 of them"
-	line "finally team up!"
-	para "They calm a raging"
-	line "TAUROS with each"
-	cont "of their own"
-	cont "unique skills."
+	text "<PARA>Les 6 se sont"
+	line "enfin réunis!"
+	para "Ils calment un"
+	line "TAUROS enragé"
+	cont "grâce à leurs"
+	cont "compétences"
+	cont "respectives."
 	done
 
 _CeladonMansion1FBookCaseRightText::
-	text "THREE HEADS ARE"
-	line "BETTER THAN TWO"
-	para "A legend about"
+	text "TROIS TETES VALENT"
+	line "MIEUX QUE DEUX"
+	para "Une légende sur"
 	line "DODRIO.@"
 	text_end
 
 _CeladonMansion1FBookCaseRight2Text::
-	text "<PARA>Two of DODRIO's"
-	line "heads just ignore"
-	cont "the third, who"
-	cont "jokes around."
-	para "It turns out this"
-	line "goofy head's idea"
-	cont "was needed to"
-	cont "save the flock."
+	text "<PARA>Deux des têtes de"
+	line "DODRIO ignorent"
+	cont "la troisième, qui"
+	cont "plaisante."
+	para "Il s'avère que c'est"
+	line "l'idée de cette"
+	cont "tête drôle qui a"
+	cont "permis de sauver"
+	cont "le troupeau."
 	done

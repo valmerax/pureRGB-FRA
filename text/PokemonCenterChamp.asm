@@ -1,56 +1,62 @@
 _PokemonCenterChampText::
-	text "Oh my gosh!"
-	line "It's the CHAMP!"
-	para "It'd be an honor to"
-	line "heal your #MON."
+	text "Oh mon Dieu! C'est"
+	line "le CHAMPION!"
+	para "C'est un honneur"
+	line "de soigner vos"
+	cont "#MON."
 	done
 
 _PokemonCenterFastChampText::
-	text "CHAMP! Watch this"
-	line "speedy healing!"
+	text "CHAMPION! Admirez"
+	line "ce soin rapide!"
 	done
 
 _PokemonCenterFarewellChamp1Text::
-	text "Can I have your"
-	line "autograph?"
+	text "Je peux avoir un"
+	line "autographe?"
 	done
 
 _PokemonCenterFarewellChamp2Text::
-	text "My friends will"
-	line "be so jealous!"
+	text "Mes amis vont être"
+	line "tellement jaloux!"
 	done
 
 _PokemonCenterFarewellChamp3Text::
-	text "Is it true you"
-	line "beat <TEAM><ROCKET>?"
+	text "C'est vrai que"
+	line "vous avez battu"
+	cont "la <TEAM><ROCKET>?"
 	done
 
 _PokemonCenterFarewellChamp4Text::
-	text "Y-You're taller"
-	line "in person!"
+	text "V-Vous êtes plus"
+	line "grand en vrai!"
 	done
 
 _PokemonCenterFarewellChamp5Text::
-	text "My little sister"
-	line "crushes on you!"
+	text "Ma petite soeur a"
+	line "le béguin pour"
+	cont "vous!"
 	done
 
 _PokemonCenterFarewellChamp6Text::
-	text "Wow! I healed your"
-	line "famous @"
+	text "Wow! J'ai soigné"
+	line "votre célèbre"
+	cont "@"
 	text_ram_stringbuffer
 	text "!"
 	done
 
 _PokemonCenterFarewellChamp7Text::
-	text "Tell @"
+	text "Dites à @"
 	text_ram wRivalName
-	text "<LINE>I said he's cool!"
+	text "<LINE>que je le trouve"
+	cont "génial!"
 	done
 
 _PokemonCenterFarewellChamp8Text::
-	text "Can I get a photo"
-	line "with @"
+	text "Je peux prendre"
+	line "une photo avec"
+	cont "@"
 	text_ram_stringbuffer
 	text "?"
 	done

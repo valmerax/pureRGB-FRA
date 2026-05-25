@@ -1,43 +1,50 @@
 _CinnabarMartSilphWorkerFText::
-	text "Don't they have X"
-	line "ATTACK? It's good"
-	cont "for battles!"
+	text "Ils n'ont pas de"
+	line "ATTAQUE +? C'est"
+	cont "vachement balèze"
+	cont "dans les bastons!"
 	done
 
 _CinnabarMartScientistText::
-	text "It never hurts to"
-	line "have extra items!"
+	text "Ca fait pas de"
+	line "mal d'être plein"
+	cont "d'objets! Ca fait"
+	cont "même plutôt du"
+	cont "bien!"
 	done
 
 _TMKidBringingTMsAnyCost::
-	text "Bringing <CT>s to"
-	line "the place they"
-	cont "should be, at"
-	cont "any cost!@"
+	text "Remettre les <CT>"
+	line "à leur place,"
+	cont "quoi qu'il en"
+	cont "coûte!@"
 	text_end
 
 _CinnabarMartTMKidFlavor::
-	text "<PARA>My dad found out"
-	line "CINNABAR GYM was"
-	cont "locked when we"
-	cont "arrived."
+	text "<PARA>Mon père a"
+	line "remarqué que"
+	cont "l'ARENE de"
+	cont "CRAMOIS'ILE était"
+	cont "fermée à clé à"
+	cont "notre arrivée."
 
-	para "So he picked the"
-	line "lock and went in!"
+	para "Alors il a forcé"
+	line "la serrure et il"
+	cont "est entré!"
 	
-	para "They were so"
-	line "dumbfounded that"
-	cont "they just let him"
-	cont "stay there!@"
+	para "Ils étaient si"
+	line "stupéfaits qu'ils"
+	cont "l'ont simplement"
+	cont "laissé rester là!@"
 	text_end
 
 _TMKidSellingTMsCopiedDadOriginals::
-	text "<PARA>I'm selling <CT>s"
-	line "that I copied"
-	cont "from my dad's"
-	cont "originals!@"
+	text "<PARA>Je vends des <CT>"
+	line "que j'ai copiés à"
+	cont "partir des origi-"
+	cont "naux de mon père!@"
 	text_end
 
 _TMKidWantSomeText::
-	text "<PARA>Want some?"
+	text "<PARA>Tu en veux?"
 	done

@@ -1,74 +1,75 @@
 _FossilGuyNeverMet::
-	text "Who are you?"
+	text "Qui es-tu?"
 	done
 
 _FossilGuyGreeting::
-	text "You found me!"
-	line "This is great!"
+	text "Tu m'as trouvé!"
+	line "C'est génial!"
 
-	para "I'm the guy from"
-	line "MT.MOON!"
+	para "Je suis le gars du"
+	line "MONT SELENITE!"
 
-	para "We found those"
-	line "two fossils."
+	para "On a trouvé ces"
+	line "deux fossiles."
 
-	para "This is my house!"
+	para "C'est ma maison!"
 
-	para "Make yourself at"
-	line "home!"
+	para "Fais comme chez"
+	line "toi!"
 	prompt
 
 _FossilGuyWhereFossilText::
-	text "Where's that fossil"
-	line "you picked up?"
+	text "Où est le fossile"
+	line "que tu as"
+	cont "récupéré?"
 
-	para "Do you still"
-	line "have it?"
+	para "Tu l'as toujours?"
 
-	para "Show it to me!"
+	para "Montre-le-moi!"
 	done
 
 _FossilGuyHaveFossil::
-	text "Oh, you've still"
-	line "got your fossil?"
+	text "Oh, tu as encore"
+	line "ton fossile?"
 
-	para "I can go to"
-	line "CINNABAR ISLAND"
-	cont "and revive it for"
-	cont "you if you like."
+	para "Je peux aller à la"
+	line "CRAMOIS'ILE et le"
+	cont "réanimer pour toi"
+	cont "si tu veux."
 
-	para "My teleporter can"
-	line "send me straight"
-	cont "there!"
+	para "Mon téléporteur"
+	line "peut m'y envoyer"
+	cont "en un éclair!"
 
-	para "Sound good?"
+	para "Ca te dit?"
 	done
 
 _GenericSuitYourselfText::
 _FossilGuyDenied::
-	text "Suit yourself!"
+	text "Comme tu veux!"
 	done
 
 _FossilGuyGaveFossil::
 	text "Excellent!"
 
-	para "Another test"
-	line "subject!"
+	para "Un autre sujet"
+	line "d'expérience!"
 
-	para "I'll bring it"
-	line "into the lab!"
+	para "Je vais l'emmener"
+	line "au labo!"
 
-	para "Come back in a"
-	line "bit to see how"
-	cont "it went!"
+	para "Reviens dans un"
+	line "instant pour voir"
+	cont "le résultat!"
 	done
 
 _FossilGuyCameBackFossil::
-	text "About that fossil"
-	line "you gave me."
+	text "A propos du"
+	line "fossile que tu"
+	cont "m'as donné."
 
-	para "Not to burst your"
-	line "bubble, but<...>"
+	para "Je ne veux pas te"
+	line "décevoir, mais<...>"
 
 	para "<...>"
 
@@ -76,203 +77,222 @@ _FossilGuyCameBackFossil::
 
 	para "<...>.."
 
-	para "We revived it"
-	line "perfectly into"
-	cont "a rare #MON!!!"
+	para "On l'a parfaitement"
+	line "réanimé en un"
+	cont "#MON rare!!!"
 
-	para "Here you go!"
+	para "Tiens!"
 	prompt
 
 _FossilGuyGreetingEnd::
-	text "I'm researching"
-	line "how to revive"
-	cont "#MON from"
-	cont "pieces of AMBER."
+	text "Je fais des"
+	line "recherches pour"
+	cont "savoir comment"
+	cont "réanimer des"
+	cont "#MON à partir"
+	cont "de morceaux"
+	cont "d'AMBRE."
 	done
 
 _FossilGuyHaveOldAmber::
-	text "Is that AMBER?!"
-	line "Wow, look at it!"
+	text "C'est un AMBRE?!"
+	line "Woah, regarde-le!"
 
-	para "Looks like it"
-	line "contains well-"
-	cont "preserved DNA!!"
+	para "On dirait qu'il"
+	line "contient de l'ADN"
+	cont "bien conservé!!"
 
-	para "That's perfect"
-	line "for my research!"
+	para "C'est parfait pour"
+	line "mes recherches!"
 
-	para "Let me take it"
-	line "to CINNABAR LAB."
+	para "Laisse-moi"
+	line "l'emmener au LABO"
+	cont "de CRAMOIS'ILE."
 
-	para "I'll see if we"
-	line "can revive a"
-	cont "#MON from the"
-	cont "DNA inside!"
+	para "Je vais voir si on"
+	line "peut réanimer un"
+	cont "#MON à partir"
+	cont "de l'ADN qu'il"
+	cont "contient!"
 	done
 
 _FossilGuyGiveOldAmber::
-	text "Now we're"
-	line "cooking!"
+	text "Magnifique!"
 
-	para "I'm off to"
-	line "CINNABAR ISLAND"
-	cont "through my"
-	cont "teleporter."
+	para "Je file à"
+	line "CRAMOIS'ILE"
+	cont "grâce à mon"
+	cont "téléporteur."
 
-	para "Come back in a"
-	line "bit, I work fast"
-	cont "when I'm excited!"
+	para "Reviens dans un"
+	line "instant, je"
+	cont "travaille vite"
+	cont "quand je suis"
+	cont "enthousiaste!"
 	done
 
 _FossilGuyGiveAerodactyl::
-	text "This is my best"
-	line "work yet!"
+	text "C'est ma plus"
+	line "belle réalisation"
+	cont "à ce jour!"
 
-	para "Feast your eyes"
-	line "on it!"
+	para "Admire-la!"
 
-	para "Ta-dah!"
+	para "Tadaa!"
 	prompt
 
 _FossilGuyComeBackLater::
-	text "Come back later."
+	text "Reviens plus tard."
 	done
 
 _FossilGuyEndingText::
-	text "Research isn't"
-	line "about recognition"
-	cont "or awards."
+	text "La recherche n'est"
+	line "pas une question"
+	cont "de reconnaissance"
+	cont "ou de trophées."
 
-	para "It's about"
-	line "helping the world"
-	cont "learn new things!"
+	para "C'est aider le"
+	line "monde à découvrir"
+	cont "de nouvelles"
+	cont "choses!"
 
-	para "Always look for"
-	line "answers, even if"
-	cont "no one's ever"
-	cont "found one before!"
+	para "Cherche toujours"
+	line "des réponses,"
+	cont "même si personne"
+	cont "n'en a jamais"
+	cont "trouvé avant toi!"
 
-	para "Remember that!"
+	para "N'oublie jamais"
+	line "ça!"
 	done
 
 _FossilGuyGoToCinnabarText::
-	text "Huh? You've got"
-	line "another fossil?"
+	text "Hein? Tu as un"
+	line "autre fossile?"
 
-	para "Sorry, my"
-	line "teleporter's on"
-	cont "the fritz."
+	para "Désolé, mon"
+	line "téléporteur est"
+	cont "en panne."
 
-	para "I can't go to"
-	line "CINNABAR LAB"
-	cont "until i fix it."
+	para "Je ne peux pas"
+	line "aller au LABO de"
+	cont "CRAMOIS'ILE tant"
+	cont "que je ne l'ai pas"
+	cont "réparé."
 
-	para "You'll have to"
-	line "go there"
-	cont "yourself!"
+	para "Tu devras y aller"
+	line "par tes propres"
+	cont "moyens."
 	done
 
 _FossilGuysTeleporterText::
-	text "WARNING!"
+	text "ATTENTION!"
 	
-	para "Experimental"
-	line "teleporter!"
+	para "Téléporteur"
+	line "expérimental!"
 
-	para "Enter at your"
-	line "own risk!"
+	para "Entrez à vos"
+	line "risques et périls!"
 	done
 
 _FossilGuysPosterText::
-	text "A detailed"
-	line "oil painting of"
-	cont "a prehistoric"
-	cont "#MON!"
+	text "Une peinture à"
+	line "l'huile détaillée"
+	cont "d'un #MON"
+	cont "préhistorique!"
 
-	para "Looks fierce!"
+	para "Il a l'air féroce!"
 	done
 
 _FossilGuysPaperText::
-	text "On behalf of the"
-	line "FUCHSIA CITY ZOO,"
-	cont "we would like to"
-	cont "thank you for"
-	cont "your generous"
-	cont "donation."
+	text "Au nom du ZOO de"
+	line "PARMANIE, nous"
+	cont "tenons à vous"
+	cont "remercier pour"
+	cont "votre généreux"
+	cont "don."
 	prompt
 
 _FossilGuysPaperTextOmanyte::
-	text "Your research"
-	line "into reviving"
-	cont "an OMANYTE will"
-	cont "not go unnoticed."
+	text "Vos recherches sur"
+	line "la réanimation"
+	cont "d'un AMONITA ne"
+	cont "passeront pas"
+	cont "inaperçues."
 	done
 
 _FossilGuysPaperTextKabuto::
-	text "Your research"
-	line "into reviving"
-	cont "a KABUTO will"
-	cont "not go unnoticed."
+	text "Vos recherches sur"
+	line "la réanimation"
+	cont "d'un KABUTO ne"
+	cont "passeront pas"
+	cont "inaperçues."
 	done
 
 _FossilGuysRock::
-	text "A colorful"
-	line "crystal geode!"
+	text "Une géode de"
+	line "cristal colorée!"
 
-	para "There's an"
-	line "engraving:"
+	para "Il y a une"
+	line "gravure:"
 
-	para "PALEONTOLOGY CLUB"
+	para "CLUB DE"
+	line "PALEONTOLOGIE"
 
-	para "MOST VALUABLE"
-	line "DISCOVERY AWARD"
+	para "PRIX DE LA"
+	line "MEILLEURE"
+	cont "DECOUVERTE"
 	done
 
 _FossilGuysComputer1::
-	text "A very nice"
-	line "computer!"
+	text "Un super"
+	line "ordinateur!"
 
-	para "What's this?"
+	para "C'est quoi ça?"
 
-	para "His desktop"
-	line "background<...>"
+	para "Son fond d'écran<...>"
 
-	para "It's a picture"
-	line "of SABRINA in a"
-	cont "swimsuit!"
+	para "C'est une photo"
+	line "de MORGANE en"
+	cont "maillot de bain!"
 	prompt
 
 _FossilGuysComputer2::
-	text "Ignore that!@"
+	text "Ne fais pas"
+	line "attention à ça!@"
 	text_end
 
 _FossilGuysDesk::
-	text "Blueprints for a"
-	line "device labelled"
-	cont "CINNABAR LAB"
-	cont "FOSSIL CLONER"
+	text "Plans d'un appareil"
+	line "avec la mention:"
+	cont "CLONEUR DE"
+	cont "FOSSILES"
+	cont "LABO CRAMOIS'ILE"
 
-	para "To the right"
-	line "there is another"
-	cont "set of prints:"
+	para "A droite se trouve"
+	line "une autre série"
+	cont "de plans:"
 
-	para "LONG DISTANCE"
-	line "TELEPORTER"
+	para "TELEPORTEUR LONGUE"
+	line "DISTANCE"
 	done
 
 _FossilGuysCat1::
-	text "BASTET: Meow!@"
+	text "MINETTE: Miaou!@"
 	text_end
 
 _FossilGuysCat2::
-	text "That's my MEOWTH."
-	para "Her name is"
-	line "BASTET."
+	text "C'est mon MIAOUSS."
+	para "Elle s'appelle"
+	line "MINETTE."
 	done
 
 _FossilGuysCat3::
-	text "She's really good"
-	line "at finding old"
-	cont "coins!"
-	para "She's like a"
-	line "metal detector!"
+	text "Elle est vraiment"
+	line "douée pour"
+	cont "dénicher de"
+	cont "vieilles pièces!"
+	para "On dirait un"
+	line "détecteur de"
+	cont "métaux!"
 	done

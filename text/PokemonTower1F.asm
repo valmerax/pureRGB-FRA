@@ -1,69 +1,75 @@
 _PokemonTower1FReceptionistText::
-	text "#MON TOWER was"
-	line "erected in the"
-	cont "memory of #MON"
-	cont "that had died."
+	text "La TOUR #MON a"
+	line "été érigée en"
+	cont "mémoire des"
+	cont "braves #MON"
+	cont "morts au combat."
 	done
 
 _PokemonTower1FMiddleAgedWomanText::
-	text "Did you come to"
-	line "pay respects?"
-	cont "Bless you!"
+	text "Tu es venu leur"
+	line "rendre hommage?"
+	cont "Grand bien t'en"
+	cont "fasse!"
 	done
 
 _PokemonTower1FBaldingGuyText::
-	text "I came to pray"
-	line "for my CLEFAIRY."
+	text "Je suis venu"
+	line "prier pour mon"
+	cont "MELOFEE."
 
-	para "Sniff! I can't"
-	line "stop crying<...>"
+	para "Sniff! J'arrête"
+	line "pas de pleurer<...>"
 	done
 
 _PokemonTower1FGirlText::
-	text "My GROWLITHE<...>"
-	line "Why did you die?"
+	text "Mon CANINOS<...>"
+	line "Reviens<...>"
 	done
 
 _PokemonTower1FGirl2Text::
 	text "Sniff<...>"
-	para "What's that?"
-	para "You want to hear"
-	line "about my darling"
+	para "Hein?"
+	para "Tu veux que je te"
+	line "parle de mon cher"
 	cont "@"
 	text_ram_namebuffer
 	text "?"
 	prompt
 
 _PokemonTower1FChannelerText::
-	text "I am a CHANNELER!"
-	line "There are spirits"
-	cont "up to mischief!"
+	text "Je suis une"
+	line "EXORCISTE! Je"
+	cont "chasse les"
+	cont "esprits!"
 	done
 
 _PokemonTower1FRocketText::
-	text "Scram! No one's"
-	line "going downstairs!"
+	text "Fiche le camp!"
+	para "Personne ne"
+	line "descend!"
 	prompt
 
 _PokemonTower1FRocketText2::
-	text "Here's a better"
-	line "idea:"
-	para "Why don't you"
-	line "head west to"
-	cont "CELADON CITY's"
-	cont "GAME CORNER?"
-	para "Spend lots of"
-	line "money while you're"
-	cont "there!"
-	para "Hyuck hyuck"
-	line "hyuck hyuck!"
+	text "J'ai une meilleure"
+	line "idée:"
+	para "Pourquoi ne pas"
+	line "filer à l'ouest,"
+	cont "au CASINO de"
+	cont "de CELADOPOLE?"
+	para "Profite-en pour"
+	line "dépenser plein"
+	cont "d'argent là-bas!"
+	para "Nyark nyark"
+	line "nyark nyark!"
 	done
 
 _PokemonTower1FRocketText3::
-	text "We've got an"
-	line "operation going!"
-	para "Until the boys"
-	line "come back from"
-	cont "the upper floors"
-	cont "I ain't moving!"
+	text "On a une opération"
+	line "en cours!"
+	para "Je ne bouge pas"
+	line "tant que les gars"
+	cont "ne sont pas"
+	cont "revenus des"
+	cont "étages supérieurs!"
 	done

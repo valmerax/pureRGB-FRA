@@ -35,8 +35,8 @@ _Route5BugCatcherText::
 	done
 
 _Route5BugCatcherCameraText::
-	text "Waouh! c'est une"
-	line "superbe CAMERA!"
+	text "Woah! c'est un"
+	line "super APP. PHOTO!"
 	para "Tu peux me prendre"
 	line "en photo?"
 	para "Prends aussi ce"
@@ -49,7 +49,7 @@ _Route5BugCatcherCameraText::
 _Route5BugCatcherBulbasaurText::
 	text "Hoho! BULBIZARRE"
 	line "est intrigué par"
-	cont "la CAMERA!"
+	cont "l'APP. PHOTO!"
 	prompt
 
 _PerfectPhotoText::
@@ -58,7 +58,7 @@ _PerfectPhotoText::
 
 _PerfectPhotoBallDesignerText::
 	text "Le DESIGNER"
-	line "#BALL voudra"
+	line "# BALL voudra"
 	cont "voir sa!"
 	prompt
 
@@ -231,8 +231,8 @@ _UseCameraArticunoDragonairAurora::
 
 _UseCameraSurfing::
 	text "Impossible de"
-	line "tenir la CAMERA"
-	cont "droite en faisant"
+	line "tenir l'APP. PHOTO"
+	cont "droit en faisant"
 	cont "du SURF!"
 	prompt
 
@@ -266,7 +266,7 @@ _AbraCameraEventSleep::
 _AbraCameraEventSnoozing::
 	text "Il fait la sieste"
 	line "sous un arbre!"
-	para "Ça a l'air bien"
+	para "Ca a l'air bien"
 	line "douillet!"
 	prompt
 
@@ -337,8 +337,8 @@ _GastlyCameraText::
 _GastlyYikesText::
 	text "Oups!"
 	para "Il y a un"
-	line "FANTOMINUS juste"
-	cont "devant la CAMERA!"
+	line "FANTOMINUS devant"
+	cont "l'APP. PHOTO!"
 	para "FILLE: Hahaha!"
 	para "Mon FANTOMINUS t'a"
 	line "fait peur?"
@@ -406,7 +406,7 @@ _MankeyCameraText::
 	prompt
 
 _MankeyScowlText::
-	text "Ça, c'est une mine"
+	text "Ca, c'est une mine"
 	line "renfrognée!"
 	prompt
 
@@ -416,7 +416,7 @@ _GamblerCameraText::
 	para "Je ne suis pas"
 	line "vraiment"
 	cont "photogénique!"
-	para "Tiens! Ça va être"
+	para "Tiens! Ca va être"
 	line "cool!"
 	para "Essaie de prendre"
 	line "une photo de mon"
@@ -430,7 +430,7 @@ _GamblerArtText::
 	para "On dirait une"
 	line "oeuvre d'art sur"
 	cont "la chance!"
-	para "Ça fera 5000¥!"
+	para "Ca fera 5000¥!"
 	para "Hahaha!"
 	line "Je rigole!"
 	prompt

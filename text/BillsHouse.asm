@@ -1,8 +1,8 @@
 _BillsHouseBillImNotAPokemonText::
 	text "Yhah! Je suis un"
-	line "#MON..."
-	cont "..."
-	cont "heu...NON!"
+	line "#MON<...>"
+	cont "<...>"
+	cont "heu<...>NON!"
 
 	para "Appelle-moi LEO!"
 	line "Je suis un vrai"
@@ -26,7 +26,7 @@ _BillsHouseBillUseSeparationSystemText::
 	line "TELEPORTEUR."
 	cont "Lance vite le"
 	cont "programme sur mon"
-	cont "PC!"
+	cont "<PC>!"
 	done
 
 _BillsHouseBillNoYouGottaHelpText::
@@ -89,17 +89,16 @@ _BillsHouseBillCheckOutMyRarePokemonText::
 	done
 
 _BillsHouseGardenInfo::
-	text "LEO: Salut mec!"
+	text "LEO: Salut, mec!"
 	para "Je viens de finir"
 	line "mon nouveau"
 	cont "jardin!"
-	para "Pourquoi ne pas"
+	para "Pourquoi ne pas y"
 	line "jeter un oeil?"
 	para "C'est ouvert aux"
 	line "visiteurs!"
 	para "Utilise simplement"
-	line "les portes"
-	cont "là-bas."
+	line "les portes là-bas."
 	done
 
 _BillsHousePCInfo::

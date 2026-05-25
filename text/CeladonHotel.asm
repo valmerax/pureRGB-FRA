@@ -1,62 +1,62 @@
 _CeladonHotelGrannyText::
-	text "#MON? No, this"
-	line "is a hotel for"
-	cont "people."
+	text "Des #MON quoi?"
+	line "C'est un hôtel"
+	cont "ici<...>"
 
-	para "We're full up."
+	para "Et c'est complet."
 	done
 
 _CeladonHotelBeautyText::
-	text "I'm on vacation"
-	line "with my brother"
-	cont "and boyfriend."
+	text "Je suis en"
+	line "vacances avec mon"
+	cont "frère et mon"
+	cont "petit ami."
 
-	para "CELADON is such a"
-	line "pretty city!"
+	para "CELADOPOLE est"
+	line "si belle!"
 	done
 
 _CeladonHotelSuperNerdText::
-	text "Why did she bring"
-	line "her brother?"
+	text "Mais pourquoi y'a"
+	line "son frère?"
 	done
 
 _CeladonChannelerIntro::
-	text "My job is to"
-	line "drive out evil"
-	cont "spirits."
-	para "I'm here on"
-	line "reports of a"
-	cont "ghostly computer."
-	para "Have you seen"
-	line "one?"
+	text "Mon travail est"
+	line "de chasser les"
+	cont "mauvais esprits."
+	para "Je suis ici pour"
+	line "un ordinateur"
+	cont "hanté."
+	para "En avez-vous vu"
+	line "un?"
 	done
 
 _CeladonChannelerNo1::
-	text "Keep your eyes"
-	line "open!"
-	para "It could be"
-	line "anywhere in here!"
+	text "Ouvrez l'oeil!"
+	para "Il pourrait être"
+	line "n'importe où ici!"
 	done
 
 _CeladonChannelerQ2::
-	text "Really?!"
-	line "Did you use it?!"
+	text "Vraiment?!"
+	line "Tu l'as utilisé?!"
 	done
 
 _CeladonHotelBattleText1::
-	text "You need to be"
-	line "exorcized!!"
+	text "Tu dois être"
+	line "exorcisé!!"
 	done
 
 _CeladonHotelEndBattleText1::
-	text "Begone"
-	line "evil spirits!"
+	text "Partez, esprits"
+	line "maléfiques!"
 	prompt
 
 _CeladonHotelAfterBattleText1::
-	text "This ghostly"
-	line "computer is a"
-	cont "tough one."
-	para "But I'll drive"
-	line "it away someday!"
+	text "Cet ordinateur"
+	line "hanté est un vrai"
+	cont "casse-tête."
+	para "Mais je finirai"
+	line "par le chasser!"
 	done

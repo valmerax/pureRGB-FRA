@@ -1,185 +1,197 @@
 _MomDadNotHereText::
-	text "You're back,"
+	text "Te revoilà,"
 	line "<PLAYER>!"
-	para "Where's DAD?"
-	para "You just missed"
-	line "him!"
-	para "He had something"
-	line "urgent at work."
-	para "Don't worry,"
-	line "you'll see him"
-	cont "sometime soon."
+	para "Où est PAPA?"
+	para "Tu l'as raté de"
+	line "peu!"
+	para "Il avait une"
+	line "urgence au"
+	cont "travail."
+	para "Ne t'inquiète pas,"
+	line "tu le reverras"
+	cont "bientôt."
 	done
 
 _MomFoodReadyText::
-	text "There you are!"
-	para "Your food is"
-	line "ready!"
+	text "Te voilà!"
+	para "Ton repas est"
+	line "prêt!"
 	prompt
 
 _MomFoodBonAppetit::
-	text "Bon appetit!"
+	text "Bon appétit!"
 	prompt
 
 _MomFoodRiceBallsText::
-	text "Every rice"
-	line "ball from MOM"
-	cont "was like a"
+	text "Chaque boulette de"
+	line "riz préparée par"
+	cont "MAMAN est une"
 	cont "surprise."
-	para "They all had"
-	line "something"
-	cont "different and"
-	cont "tasty inside."
+	para "Elles ont toutes"
+	line "une garniture"
+	cont "différente et"
+	cont "délicieuse."
 	prompt
 
 _MomFoodJellyDonutsText::
-	text "Nothing beats"
-	line "the sweetness of"
-	cont "MOM's scrumptious"
-	cont "jelly-filled"
-	cont "donuts."
+	text "Rien ne vaut la"
+	line "douceur des déli-"
+	cont "cieux beignets"
+	cont "fourrés à la"
+	cont "confiture de"
+	cont "MAMAN."
 	prompt
 
 _MomFoodBrisketText::
-	text "The brisket"
-	line "prepared from"
-	cont "DAD's recipe"
-	cont "was totally"
-	cont "delicious!"
+	text "La poitrine de"
+	line "boeuf préparée"
+	cont "selon la recette"
+	cont "de PAPA est"
+	cont "absolument"
+	cont "délicieuse!"
 	prompt
 
 _DadFoodBrisketText::
-	text "DAD brought out"
-	line "his slow-cooked"
-	cont "BBQ brisket."
-	para "It was totally"
-	line "delicious!"
+	text "PAPA a sorti sa"
+	line "poitrine de boeuf"
+	cont "cuite lentement"
+	cont "au barbecue."
+	para "C'est absolument"
+	line "délicieux!"
 	prompt
 
 _MomFoodBrisketText2::
-	text "The savory"
-	line "sauce was"
-	cont "perfect."
+	text "La sauce est"
+	line "parfaite."
 	prompt
 
 _MomFoodLasagnaText::
-	text "Mom's cheesy"
-	line "lasagna couldn't"
-	cont "be beat."
-	para "<PLAYER> ate"
-	line "every last morsel"
-	cont "of the meal."
+	text "Les lasagnes au"
+	line "fromage de MAMAN"
+	cont "sont imbattables."
+	para "<PLAYER> mange tout"
+	line "jusqu'à la"
+	cont "dernière miette."
 	prompt
 
 _DadChowedDownText::
-	text "DAD wolfed his"
-	line "down with gusto."
+	text "PAPA englouti son"
+	line "repas avec"
+	cont "appétit."
 	prompt
 
 _MomFoodPokemonJoinsText::
 	text "@"
 	text_ram_namebuffer
 	text " "
-	line "had some as well!"
+	line "en a aussi!"
 	prompt
 
 _MomFoodPokemonChowedDownText::
-	text "It chowed down"
-	line "like crazy."
+	text "Il dévore tout"
+	line "comme un fou."
 	prompt
 
 _MomFoodPokemonShowText::
-	text "MOM looked"
-	line "really happy!"
+	text "MAMAN à l'air"
+	line "vraiment heureuse!"
 	done
 
 _MomFoodDone::
-	text "You'd better"
-	line "get going!"
-	para "Have fun!"
+	text "Tu ferais mieux"
+	line "d'y aller!"
+	para "Amuse-toi bien!"
 	done
 
 _DaisyTeaEvent::
-	text "Oh, hi there"
-	line "<PLAYER>!"
-	para "Are you here"
-	line "for some tea?"
+	text "Oh, salut <PLAYER>!"
+	para "Tu es venu prendre"
+	line "le thé?"
 	prompt
 
 _DaisyTeaEventNo::
-	text "Okay, come back"
-	line "later!"
+	text "D'accord, reviens"
+	line "plus tard!"
 	done
 
 _DaisyTeaPeppermint::
-	text "Today's tea is"
-	line "peppermint."
-	para "Its lovely aroma"
-	line "helps you wake up"
-	cont "in the morning."
-	para "It helps digestion"
-	line "after a meal as"
-	cont "well."
+	text "Le thé d'aujourd'hui"
+	line "est à la menthe"
+	cont "poivrée."
+	para "Son délicieux"
+	line "arôme t'aide à te"
+	cont "réveiller le"
+	cont "matin."
+	para "Il facilite aussi"
+	line "la digestion"
+	cont "après le repas."
 	prompt
 
 _DaisyTeaBarley::
-	text "Today I've made"
-	line "barley tea."
-	para "It's served cold"
-	line "and tastes great"
-	cont "on a hot summer"
-	cont "day."
+	text "Aujourd'hui, j'ai"
+	line "préparé du thé"
+	cont "d'orge."
+	para "On le sert froid"
+	line "et c'est un vrai"
+	cont "délice par une"
+	cont "chaude journée"
+	cont "d'été."
 	prompt
 
 _DaisyTeaChai::
-	text "Today I've made"
-	line "spiced chai tea."
-	para "It's a black tea"
-	line "brewed with milk."
-	para "Some spices are"
-	line "added, including"
-	cont "ginger, green"
-	cont "cardamom, nutmeg,"
-	cont "cinnamon, and"
-	cont "brown sugar."
-	para "It really has a"
-	line "diverse powerful"
-	cont "taste."
-	para "It's common as"
-	line "an alternative to"
-	cont "coffee."
+	text "Aujourd'hui, j'ai"
+	line "préparé du thé"
+	cont "chai épicé."
+	para "C'est un thé noir"
+	line "infusé avec du"
+	cont "lait."
+	para "On y ajoute des"
+	line "épices, notamment"
+	cont "du gingembre, de"
+	cont "la cardamome"
+	cont "verte, de la noix"
+	cont "de muscade, de la"
+	cont "cannelle et du"
+	cont "sucre roux."
+	para "Son goût est"
+	line "vraiment riche"
+	cont "et puissant."
+	para "C'est une"
+	line "alternative"
+	cont "courante au café."
 	prompt
 
 _DaisyTeaSitDown::
-	text "Okay! But first,"
-	line "have a seat!"
+	text "D'accord!"
+	line "Mais avant tout,"
+	cont "assieds-toi!"
 	done
 
 _TeaDrink::
-	text "<PLAYER> tried"
-	line "DAISY's tea."
+	text "<PLAYER> goûte le"
+	line "thé de NINA."
 	done
 
 _TeaReaction::
-	text "It had a nice"
-	line "calming effect."
-	para "It's so very"
-	line "revitalizing!"
+	text "Ca a un effet"
+	line "apaisant très"
+	cont "agréable!"
+	para "C'est tellement"
+	line "revitalisant!"
 	para "@"
 	text_ram_namebuffer
 	text " "
-	line "is looking at"
-	cont "DAISY."
-	para "It really seems"
-	line "to like her."
-	para "It's totally"
-	line "relaxed!"
+	line "regarde NINA."
+	para "Il semble vraiment"
+	line "l'apprécier."
+	para "Il est totalement"
+	line "détendu!"
 	done
 
 _DaisyTeaEnd::
-	text "I'll be right here"
-	line "whenever you feel"
-	cont "like some tea."
-	para "Thanks for"
-	line "coming, bye!"
+	text "Je serai là si"
+	line "jamais tu as"
+	cont "envie d'un thé."
+	para "Merci d'être venu,"
+	line "à plus!"
 	done

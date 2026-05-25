@@ -1,185 +1,208 @@
 _FightingDojoKarateMasterText::
-	text "Grunt!"
+	text "P'tit faiblard!"
 
-	para "I am the KARATE"
-	line "MASTER! I am the"
-	cont "LEADER here!"
+	para "Je suis le GRAND"
+	line "MAITRE de KARATE!"
+	cont "Je suis le"
+	cont "CHAMPION!"
 
-	para "You wish to"
-	line "challenge us?"
-	cont "Expect no mercy!"
+	para "Tu me provoques?"
+	line "Tu veux t'battre?"
+	cont "Tu cherches le"
+	cont "contact? HAHAHA!"
 
-	para "Fwaaa!"
+	para "Ayaaaaa!"
 	done
 
 _FightingDojoKarateMasterDefeatedText::
-	text "Hwa!"
-	line "Arrgh! Beaten!"
+	text "STOP!"
+	line "Tu m'as battu!"
+	cont "J'ai honte!"
 	prompt
 
 _FightingDojoKarateMasterIWillGiveYouAPokemonText::
-	text "Indeed, I have"
-	line "lost!"
+	text "OK, tu as gagné!"
 
-	para "But, I beseech"
-	line "you, do not take"
-	cont "our emblem as"
-	cont "your trophy!"
+	para "Mais ne va pas"
+	line "le crier sur tous"
+	cont "les toits! T'es"
+	cont "très fort, on a"
+	cont "compris!"
 
-	para "In return, I will"
-	line "give you a prized"
-	cont "fighting #MON!"
+	para "Tiens, prends"
+	line "ça! Tu as gagné"
+	cont "un #MON!"
 
-	para "Choose whichever"
-	line "one you like!"
+	para "Choisis celui que"
+	line "tu veux!"
 	done
 
 _FightingDojoKarateMasterStayAndTrainWithUsText::
-	text "Ho!"
+	text "Oh!"
 
-	para "Stay and train at"
-	line "Karate with us!"
+	para "Reste avec nous"
+	line "pour faire du"
+	cont "KARATE!"
 	done
 
 _FightingDojoBlackbelt1BattleText::
-	text "Hoargh! Take your"
-	line "shoes off!"
+	text "Ta garde!"
+	line "Défends-toi!"
 	done
 
-_SilphCo3FRocketEndBattleText::
 _FightingDojoBlackbelt1EndBattleText::
-	text "I give"
-	line "up!"
+	text "Oh!"
+	line "Tu m'as éclaté!"
 	prompt
 
 _FightingDojoBlackbelt1AfterBattleText::
-	text "You wait 'til you"
-	line "see our Master!"
+	text "Tu te tais, tu"
+	line "t'assois et tu"
+	cont "attends le grand"
+	cont "maître!"
 
-	para "I'm a small fry"
-	line "compared to him!"
+	para "Tu vas dérouiller"
+	line "sévère! Il est"
+	cont "vachement balèze!"
 	done
 
 _FightingDojoBlackbelt2BattleText::
-	text "I hear you're"
-	line "good! Show me!"
+	text "T'as des"
+	line "prétentions?"
+	cont "Montre-moi!"
 	done
 
 _FightingDojoBlackbelt2EndBattleText::
-	text "Judge!"
-	line "1 point!"
+	text "Nyaha!"
+	line "T'es fort!"
 	prompt
 
 _FightingDojoBlackbelt2AfterBattleText::
-	text "Our Master is a"
-	line "pro fighter!"
+	text "Notre maître,"
+	line "c'est un costaud!"
 	done
 
 _MachokeLearnsetText2::
-	text "He beat my @"
+	text "Il a battu mon"
+	line "@"
 	text_ram_namebuffer
-	text_start
-	line "at grappling!"
-	para "I still can't"
-	line "believe that!"
+	text " au"
+	cont "corps à corps!"
+	para "Je n'arrive pas à y"
+	line "croire!"
 	para "@"
 	text_end
 
 _FightingDojoBlackbelt3BattleText::
-	text "Nothing tough"
-	line "frightens me!"
+	text "J'ai peur de"
+	line "rien!"
 
-	para "I break boulders"
-	line "for training!"
+	para "Le matin, j'casse"
+	line "des pierres. Ce"
+	cont "soir, j'vais"
+	cont "t'fracasser!"
 	done
 
 _FightingDojoBlackbelt3EndBattleText::
-	text "Yow!"
-	line "Stubbed fingers!"
+	text "Woaa!"
+	line "Les pierres, ça"
+	cont "rend pas les"
+	cont "coups!"
 	prompt
 
 _FightingDojoBlackbelt3AfterBattleText::
-	text "The only thing"
-	line "that frightens us"
-	cont "is psychic power!"
+	text "La seule chose"
+	line "qui nous fait"
+	cont "peur c'est les"
+	cont "psys!"
 	done
 
 _PrimeapeLearnsetText::
-	text "Even my @"
+	text "Même si mon"
+	line "@"
 	text_ram_namebuffer
-	text_start
-	line "doesn't like it."
-	para "I'm going to train"
-	line "it further so it"
-	cont "learns SONICBOOM!"
-	para "Then it'll be able"
-	line "to deal with"
-	cont "PSYCHIC #MON."
+	text " n'aime"
+	cont "pas ça."
+	para "J'vais continuer à"
+	line "l'entraîner pour"
+	cont "qu'il apprenne"
+	cont "SONICBOOM!"
+	para "Comme ça, il"
+	line "pourra venir à"
+	cont "bout des #MON"
+	cont "PSY."
 	para "@"
 	text_end
 
 _FightingDojoBlackbelt4BattleText::
-	text "Hoohah!"
+	text "Ayah!"
 
-	para "You're trespassing"
-	line "in our FIGHTING"
-	cont "DOJO!"
+	para "Tu joues avec ta"
+	line "vie, p'tit!"
+	cont "Not'DOJO, c'est"
+	cont "pour les balèzes!"
 	done
 
 _FightingDojoBlackbelt4EndBattleText::
-	text "Oof!"
-	line "I give up!"
+	text "Ping!"
+	line "J'suis K.O.!"
 	prompt
 
 _FightingDojoBlackbelt4AfterBattleText::
-	text "The prime fighters"
-	line "across the land"
-	cont "train here."
+	text "Les meilleurs"
+	line "combattants sont"
+	cont "ici!"
 	done
 
 _FightingDojoHitmonleePokeBallText::
-	text "You want the"
-	line "hard kicking"
-	cont "HITMONLEE?"
+	text "Tu veux"
+	line "KICKLEE, le"
+	cont "coud'latteur?"
 	done
 
 _FightingDojoHitmonchanPokeBallText::
-	text "You want the"
-	line "piston punching"
-	cont "HITMONCHAN?"
+	text "Tu veux"
+	line "TYGNON, le"
+	cont "castagneur?"
 	done
 
 _FightingDojoBetterNotGetGreedyText::
-	text "Better not get"
-	line "greedy<...>"
+	text "Tss tss tss!"
+	line "Faut pas être"
+	cont "trop gourmand<...>"
 	done
 
 _FightingDojoKarateMasterOthersText::
-	text "Defeat the others"
-	line "if you wish to"
-	cont "challenge me!"
+	text "Bats les autres si"
+	line "tu veux me défier!"
 	done
 
 _FightingDojoHitmonleeScrollText::
-	text "DO NOT FEAR HE"
-	line "WHO PRACTICES"
-	cont "10000 KICKS ONCE."
-	para "FEAR HE WHO"
-	line "PRACTICES 1 KICK"
-	cont "10000 TIMES."
-	para "It's a scroll"
-	line "with ancient"
-	cont "knowledge about"
-	cont "kick techniques."
+	text "NE CRAIGNEZ PAS"
+	line "CELUI QUI"
+	cont "PRATIQUE 10000"
+	cont "COUPS DE PIED EN"
+	cont "UNE SEULE FOIS."
+	para "CRAIGNEZ CELUI QUI"
+	line "PRATIQUE 1 SEUL"
+	cont "COUP DE PIED"
+	cont "10000 FOIS."
+	para "C'est un parchemin"
+	line "qui renferme un"
+	cont "savoir ancien sur"
+	cont "les techniques de"
+	cont "coup de pied."
 	done
 
 _FightingDojoHitmonchanScrollText::
-	text "ROLL WITH THE"
-	line "PUNCHES"
-	para "CAN'T HIT WHAT"
-	line "YOU CAN'T SEE"
-	para "It's a scroll"
-	line "with ancient"
-	cont "knowledge about"
-	cont "punch techniques."
+	text "S'ADAPTER AUX"
+	line "COUPS"
+	para "ON NE PEUT PAS"
+	line "FRAPPER CE QU'ON"
+	cont "NE VOIT PAS"
+	para "C'est un parchemin"
+	line "qui renferme un"
+	cont "savoir ancien sur"
+	cont "les techniques de"
+	cont "frappe."
 	done

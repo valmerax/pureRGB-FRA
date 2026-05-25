@@ -30,7 +30,7 @@ _CeladonBackAlleyCircleLeftBikerText::
 	text "Cette ruelle est"
 	line "notre territoire!"
 	para "INTERDIT A LA"
-	line "<TEAM> <ROCKET>!"
+	line "<TEAM><ROCKET>!"
 	done
 
 _CeladonBackAlleyCircleRightRockerText::
@@ -41,7 +41,7 @@ _CeladonBackAlleyCircleRightRockerText::
 	cont "guerre."
 	para "Que penses-tu de"
 	line "ça:"
-	para "Ça va cogner dur"
+	para "Ca va cogner dur"
 	line "avec ARBOK!"
 	done
 
@@ -76,7 +76,7 @@ _CeladonBackAlleyCircleHooliganExplainText::
 	prompt
 
 _CeladonBackAlleyCircleHooliganBattleText::
-	text "Ça te dit?"
+	text "Ca te dit?"
 	done
 
 _CeladonBackAlleyOpponentBikerIntro1::
@@ -181,7 +181,7 @@ _CeladonBackAlleyOpponentGamblerIntro4::
 _CeladonBackAlleyKoffingGraffiti::
 	text "Un graffiti d'un"
 	line "SMOGO!"
-	para "Waouh! Tellement"
+	para "Woah! Tellement"
 	line "détaillé, et quel"
 	cont "air renfrogné!"
 	done
@@ -223,7 +223,7 @@ _CeladonRuffianHouseBikerText::
 	text "Il n'y a que moi"
 	line "qui peut faire du"
 	cont "vélo ici!"
-	para "Ça te pose un"
+	para "Ca te pose un"
 	line "problème?"
 	done
 
@@ -237,7 +237,7 @@ _CeladonRuffianHouseBikerText::
 ;	line "nous rejoindre,"
 ;	cont "fais tes preuves!"
 ;	para "Trouve le QG de la"
-;	line "<TEAM> <ROCKET> dans"
+;	line "<TEAM><ROCKET> dans"
 ;	cont "cette ville et"
 ;	cont "sème le chaos!"
 ;	para "Alors on"

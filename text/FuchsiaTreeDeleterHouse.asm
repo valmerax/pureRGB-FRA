@@ -1,116 +1,123 @@
 _FuchsiaTreeDeleterText1::
-	text "Huh? <...>Oh, Yes<...>"
-	para "I'm the"
+	text "Hein? <...>Oh, oui<...>"
+	para "Je suis le"
 	line "@"
 	text_ram wTrainerName
 	text "."
 
-	para "Did you expect"
-	line "someone else?"
+	para "Tu t'attendais à"
+	line "quelqu'un d'autre?"
 
-	para "I can delete"
-	line "the most annoying"
-	cont "trees for you!"
+	para "Je peux abattre"
+	line "définitivement"
+	cont "les arbres les"
+	cont "plus gênants pour"
+	cont "toi!"
 
 	prompt
 
 _FuchsiaTreeDeleterText2::
-	text "Where should I"
-	line "delete a tree?@"
+	text "Quel arbre veux-tu"
+	line "que j'abatte"
+	cont "définitivement?@"
 	text_end
 
 _FuchsiaTreeDeleterRoute2::
-	text "I can carve a"
-	line "path from"
-	cont "VIRIDIAN CITY"
-	cont "to PEWTER CITY."
+	text "Je peux créer un"
+	line "passage de"
+	cont "JADIELLE à"
+	cont "ARGENTA."
 
-	para "You won't need"
-	line "to cut down any"
-	cont "trees to travel"
-	cont "between the two,"
-	cont "and can avoid"
-	cont "VIRIDIAN FOREST."
+	para "Tu n'auras plus"
+	line "besoin de couper"
+	cont "d'arbres pour"
+	cont "voyager entre les"
+	cont "deux, et tu"
+	cont "pourras éviter la"
+	cont "FORET DE JADE."
 
-	para "It'll cost you"
-	line "¥8000. Fair?@"
+	para "Ca te coûtera"
+	line "8000¥. Ca te va?@"
 	text_end
 
 _FuchsiaTreeDeleterCerulean::
-	text "That tree at the"
-	line "south end of"
-	cont "CERULEAN CITY?"
+	text "Cet arbre à"
+	line "l'extrémité sud"
+	cont "d'AZURIA?"
 
-	para "Sure thing."
-	line "It'll run you"
-	cont "¥4000. Fair?@"
+	para "Bien sûr."
+	line "Ca te reviendra à"
+	cont "4000¥. Ca te va?@"
 	text_end
 
 _FuchsiaTreeDeleterRoute9::
-	text "The tree at the"
-	line "start of the"
-	cont "route leading to"
-	cont "ROCK TUNNEL?"
+	text "L'arbre au début"
+	line "du chemin menant"
+	cont "à la GROTTE?"
 
-	para "Easy!"
-	line "It'll cost you"
-	cont "¥4000. Fair?@"
+	para "Facile!"
+	line "Ca te fera 4000¥."
+	cont "Ca te va?@"
 	text_end
 
 _FuchsiaTreeDeleterFuchsiaCity::
-	text "Clear out every"
-	line "cuttable tree in"
-	cont "FUCHSIA CITY?"
+	text "Abattre tous les"
+	line "arbres pouvant"
+	cont "être coupés à"
+	cont "PARMANIE?"
 
-	para "That's quite"
-	line "the job! But I"
-	cont "like a challenge."
+	para "C'est un sacré"
+	line "boulot! Mais"
+	cont "j'aime les défis."
 
-	para "The fee is"
-	line "¥10000. Fair?"
+	para "Le tarif est de"
+	line "10000¥. Ca te va?"
 	done
 
 _FuchsiaTreeDeleterAlreadyDeletedText::
-	text "Already been"
-	line "deleted!"
+	text "C'est déjà fait!"
 	prompt
 
 _FuchsiaTreeDeleterTreeDelete::
-	text "It shall be done!"
+	text "Ce sera fait!"
 	prompt
 
 _FuchsiaTreeDeleterDoneText::
-	text "I'm here for all"
-	line "your tree needs!"
+	text "Je suis à ton"
+	line "service pour"
+	cont "abattre les"
+	cont "arbres gênants!"
 	done
 
 _FuchsiaTreeDeleterFinalText::
-	text "You cleared out"
-	line "every tree worth"
-	cont "clearing out!"
+	text "Tous les arbres"
+	line "qui pouvaient"
+	cont "être coupés ont"
+	cont "été abattus!"
 
-	para "Thanks for the"
-	line "business!@"
+	para "Merci pour ta"
+	line "confiance!@"
 	text_end
 
 _FuchsiaTreeDeleterFinalText2::
-	text "As you can see"
-	line "I have lots of"
-	cont "potted trees."
+	text "Comme tu peux le"
+	line "voir, j'ai plein"
+	cont "d'arbres en pot."
 
-	para "It's where I keep"
-	line "the trees I take"
-	cont "out until someone"
-	cont "buys them!"
+	para "C'est là que je"
+	line "garde les arbres"
+	cont "que j'ai retirés"
+	cont "en attendant que"
+	cont "quelqu'un les"
+	cont "achète!"
 
-	para "SNORLAX loves to"
-	line "knock them over"
-	cont "when it gets"
-	cont "hungry!"
+	para "RONFLEX adore les"
+	line "renverser quand"
+	cont "il a faim!"
 	done
 
 _FuchsiaTreeDeleterSnorlax::
-	text "SNORLAX: Snooore-"
+	text "RONFLEX: Rooonf-"
 
 	para "<...>"
 
@@ -118,19 +125,18 @@ _FuchsiaTreeDeleterSnorlax::
 
 	para "<...>"
 
-	para "-laaaaaaaaax@"
+	para "-leeeeeeeeex@"
 	text_end
 
 _FuchsiaTreeDeleterSnorlax2::
-	text "What a couch"
-	line "potato!"
+	text "Quel pantouflard!"
 	done
 
 _FuchsiaTreeDeleterSnorlax3::
 	text "@"
 	text_ram wTrainerName
 	text ":"
-	line "That's my SNORLAX."
-	para "Its name is"
-	line "SNOOZER."
+	line "C'est mon RONFLEX."
+	para "Son nom est"
+	line "PIONCEUR."
 	prompt

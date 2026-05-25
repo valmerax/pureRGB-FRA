@@ -20,11 +20,11 @@ _CeladonDinerMiddleAgedManText::
 	done
 
 _CeladonDinerFisherText::
-	text "Miam..."
+	text "Miam<...>"
 
 	para "Le type à cette"
 	line "table a tout"
-	cont "perdu..."
+	cont "perdu<...>"
 	done
 
 _CeladonDinerCoinCaseGuyImFlatOutBustedText::
@@ -34,7 +34,7 @@ _CeladonDinerCoinCaseGuyImFlatOutBustedText::
 	line "thune!"
 
 	para "C'est marrant,"
-	line "hein? Pfff..."
+	line "hein? Pfff<...>"
 	cont "Je te hais!"
 
 	para "Prends ça tiens!"

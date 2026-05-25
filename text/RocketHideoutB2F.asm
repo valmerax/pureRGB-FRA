@@ -1,12 +1,14 @@
 _RocketHideoutB2FRocketBattleText::
-	text "BOSS said you can"
-	line "see GHOSTs with"
-	cont "the SILPH SCOPE!"
+	text "Le chef dit qu'on"
+	line "peut voir les"
+	cont "fantômes avec un"
+	cont "SCOPE SYLPHE!"
 	done
 
 _RocketHideoutB2FRocketAfterBattleText::
-	text "The <TEAM><ROCKET>"
-	line "HQ has 4 basement"
-	cont "floors. Can you"
-	cont "reach the BOSS?"
+	text "Le repaire de la"
+	line "<TEAM><ROCKET> a 4"
+	cont "étages. Pourras-"
+	cont "tu arriver"
+	cont "jusqu'au chef?"
 	done
