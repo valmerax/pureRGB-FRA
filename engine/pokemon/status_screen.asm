@@ -394,7 +394,7 @@ StatusScreen2:
 	ld b, a ; Number of moves ?
 	hlcoord 11, 10
 	ld de, SCREEN_WIDTH * 2
-	ld a, "<BOLD_P>"
+	ld a, 'P'
 	call StatusScreen_PrintPP ; Print "PP"
 	ld a, b
 	and a

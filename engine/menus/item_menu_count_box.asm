@@ -46,9 +46,9 @@ CheckDrawItemCount::
 	jr nz, .noLoadTextBox2
 	call .loadTextBox
 	hlcoord 5, 1
-	ld [hl], "<BOLD_P2>"
+	ld [hl], "P"
 	inc hl
-	ld [hl], "<BOLD_C>"
+	ld [hl], "C"
 	hlcoord 8, 1
 	ld de, ItemsText
 	call PlaceString
