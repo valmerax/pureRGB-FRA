@@ -94,7 +94,7 @@ _CeruleanBadgeHouseAlsoLetsYouUseHM::
 	cont "@"
 	text_ram wNameBuffer
 	text " en-dehors"
-	cont "des combats.
+	cont "des combats."
 	prompt
 
 _GarbageCrumpledUpPaper::

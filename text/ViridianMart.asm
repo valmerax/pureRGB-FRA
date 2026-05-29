@@ -71,7 +71,7 @@ _TMKidBigStockIndigo::
 	para "Je n'ai plus de"
 	line "copies de <CT>!"
 
-	para "Écoute. Viens me"
+	para "Ecoute. Viens me"
 	line "voir au PLATEAU"
 	cont "INDIGO."
 
