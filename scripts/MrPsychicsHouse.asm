@@ -1,7 +1,5 @@
 MrPsychicsHouse_Script:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	jr z, .notFirstLoad
 	call CheckInFightingBrosHouseAfterGiovanni
 	jr nc, .notFirstLoad
@@ -16,7 +14,7 @@ MrPsychicsHouse_Script:
 	ld a, $06
 	ld [wNewTileBlockID], a
 	lb bc, 3, 7
-	predef ReplaceTileBlock
+	call ReplaceTileBlock
 .notFirstLoad
 	jp EnableAutoTextBoxDrawing
 
@@ -47,7 +45,6 @@ MrPsychicsHouseMrPsychicText:
 	ld hl, .ReceivedTM29Text
 .printDone
 	rst _PrintText
-.done
 	rst TextScriptEnd
 
 .YouWantedThisText:
@@ -224,7 +221,7 @@ FightingBrosRightBroText:
 	ld [wCurrentMenuItem], a
 	ld [wLastMenuItem], a
 	ld [wMenuWatchMovingOutOfBounds], a
-	ld a, A_BUTTON
+	ld a, PAD_A
 	ld [wMenuWatchedKeys], a
 	ld hl, hUILayoutFlags
 	set BIT_DOUBLE_SPACED_MENU, [hl]

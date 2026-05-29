@@ -17,16 +17,14 @@ ChooseCustomBallMenu::
 	push hl
 	ld hl, wCustomBallUnlockFlags
 	ld b, FLAG_TEST
-	predef FlagActionPredef
-	ld a, c
-	and a
+	call FlagAction
 	pop hl
 	jr nz, .loopPlaceString
 	ld de, LockedText
 	jr .skipBallText
 .loopPlaceString
 	ld a, [de]
-	cp "@"
+	cp '@'
 	jr z, .placeBallText
 	ld [hli], a
 	inc de
@@ -54,12 +52,12 @@ ChooseCustomBallMenu::
 .notUnlocked
 	lb bc, 3, 1
 	call CustomBallHandleInputInit
-	ld a, A_BUTTON | B_BUTTON
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	call HandleMenuInput
 	ld hl, hUILayoutFlags
 	res BIT_DOUBLE_SPACED_MENU, [hl]
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	ld a, 0
 	jp nz, .exit
 	ld a, [wCurrentMenuItem]
@@ -67,9 +65,7 @@ ChooseCustomBallMenu::
 	ld c, a
 	ld b, FLAG_TEST
 	ld hl, wCustomBallUnlockFlags
-	predef FlagActionPredef
-	ld a, c
-	and a
+	call FlagAction
 	jr z, .notUnlocked
 	ld a, d
 	inc a
@@ -99,7 +95,7 @@ CustomBallHandleInputInitMaxItems:
 	inc a
 	ld [wMenuWrappingEnabled], a
 	ldh [hJoy7], a ; allow holding down the menu navigation buttons
-	ld a, A_BUTTON | B_BUTTON | SELECT
+	ld a, PAD_A | PAD_B | PAD_SELECT
 	ld [wMenuWatchedKeys], a
 	ld hl, hUILayoutFlags
 	set BIT_DOUBLE_SPACED_MENU, [hl]
@@ -169,7 +165,7 @@ BallCustomizationMenu::
 	hlcoord 3, 1
 .loopPlaceName
 	ld a, [de]
-	cp "@"
+	cp '@'
 	jr z, .placeBallText
 	ld [hli], a
 	inc de
@@ -194,7 +190,7 @@ BallCustomizationMenu::
 	ld de, SCREEN_WIDTH
 	ld b, 5 ; number of menu entries where we will print their current selected option
 .loopPlaceArrows
-	ld [hl], "→"
+	ld [hl], '→'
 	add hl, de
 	dec b
 	jr nz, .loopPlaceArrows
@@ -288,9 +284,9 @@ BallCustomizationMenu::
 	ld a, 6
 	call CustomBallHandleInputInitMaxItems
 	call HandleMenuInput
-	bit BIT_SELECT, a
+	bit B_PAD_SELECT, a
 	jr nz, .visualize
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	jr nz, .exit
 	call PlaceUnfilledArrowMenuCursor
 	ld a, [wCurrentMenuItem]
@@ -377,26 +373,26 @@ BallCustomizationMenu::
 	set BIT_DOUBLE_SPACED_MENU, [hl]
 	call DisableTextDelay
 	ld a, [wStringBuffer]
-	cp "@"
+	cp '@'
 	jr z, .goToLoop ; if the player didnt type in any name don't change it
 	call GetBallName
 	push hl
 	ld hl, wStringBuffer
 	ld bc, NAME_LENGTH
 	rst _CopyData
-	ld a, SRAM_ENABLE
-  	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+  	ld [rRAMG], a
   	ld a, $1
-  	ld [MBC1SRamBankingMode], a
+  	ld [rBMODE], a
   	xor a
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	call GetBallNameSRAM
 	pop hl
 	ld bc, NAME_LENGTH
 	rst _CopyData
    	xor a
-  	ld [MBC1SRamBankingMode], a
-  	ld [MBC1SRamEnable], a
+  	ld [rBMODE], a
+  	ld [rRAMG], a
 	jp .goToLoop
 .placeNthString
 	and %1111
@@ -449,7 +445,7 @@ PlaceStringGoToNextEntry:
 .loop
 	ld a, [de]
 	inc de
-	cp "@"
+	cp '@'
 	ret z
 	jr .loop
 
@@ -468,7 +464,7 @@ GoToNthString:
 .loop
 	ld a, [de]
 	inc de
-	cp "@"
+	cp '@'
 	jr nz, .loop
 	dec b
 	ret z
@@ -553,7 +549,7 @@ BallTileCustomizationMenu:
 	ld c, BALL_CUSTOM_FORMAT_TILE
 	call PlaceChildMenuStrings
 	hlcoord 8, 4
-	ld [hl], "→"
+	ld [hl], '→'
 .loopMenu
 	ld a, 3
 	ld [wListMenuHoverTextType], a
@@ -562,9 +558,9 @@ BallTileCustomizationMenu:
 	call .isUnlocked
 	call c, CustomBallLoadDataSwapped
 	ldh a, [hJoy5]
-	bit BIT_SELECT, a
+	bit B_PAD_SELECT, a
 	jr nz, .visualize
-	bit BIT_A_BUTTON, a
+	bit B_PAD_A, a
 	jr z, .exit
 	call .isUnlocked
 	jr nc, .loopMenu
@@ -713,7 +709,7 @@ BallColorCustomizationMenu:
 	ld c, BALL_CUSTOM_FORMAT_COLOR
 	call PlaceChildMenuStrings
 	hlcoord 8, 5
-	ld [hl], "→"
+	ld [hl], '→'
 .loopMenu
 	ld a, 4
 	ld [wListMenuHoverTextType], a
@@ -725,9 +721,9 @@ BallColorCustomizationMenu:
 	call CustomBallLoadBottomNybble
 .dontLoad
 	ldh a, [hJoy5]
-	bit BIT_SELECT, a
+	bit B_PAD_SELECT, a
 	jr nz, .visualize
-	bit BIT_A_BUTTON, a
+	bit B_PAD_A, a
 	jr z, .exit
 	call .isUnlocked
 	jr nc, .loopMenu
@@ -783,7 +779,7 @@ BallThrowAnimCustomizationMenu:
 	ld c, BALL_CUSTOM_FORMAT_THROW
 	call PlaceChildMenuStrings
 	hlcoord 8, 6
-	ld [hl], "→"
+	ld [hl], '→'
 .loopMenu
 	call InitChildMenuInput
 	call HandleMenuInput
@@ -794,9 +790,9 @@ BallThrowAnimCustomizationMenu:
 	call CustomBallLoadTopNybble
 .dontLoad
 	ldh a, [hJoy5]
-	bit BIT_SELECT, a
+	bit B_PAD_SELECT, a
 	jr nz, .visualize
-	bit BIT_A_BUTTON, a
+	bit B_PAD_A, a
 	jr z, .exit
 	call .isUnlocked
 	jr nc, .loopMenu
@@ -846,7 +842,7 @@ BallPoofAnimCustomizationMenu:
 	ld c, BALL_CUSTOM_FORMAT_POOF
 	call PlaceChildMenuStrings
 	hlcoord 8, 8
-	ld [hl], "→"
+	ld [hl], '→'
 .loopMenu
 	call InitChildMenuInput
 	call HandleMenuInput
@@ -858,9 +854,9 @@ BallPoofAnimCustomizationMenu:
 	call CustomBallLoadTopNybble
 .dontLoad
 	ldh a, [hJoy5]
-	bit BIT_SELECT, a
+	bit B_PAD_SELECT, a
 	jr nz, .visualize
-	bit BIT_A_BUTTON, a
+	bit B_PAD_A, a
 	jr z, .exit
 	call .isUnlocked
 	jr nc, .loopMenu
@@ -908,7 +904,7 @@ BallSFXCustomizationMenu:
 	ld c, BALL_CUSTOM_FORMAT_SFX
 	call PlaceChildMenuStrings
 	hlcoord 8, 7
-	ld [hl], "→"
+	ld [hl], '→'
 .loopMenu
 	call InitChildMenuInput
 	call HandleMenuInput
@@ -919,9 +915,9 @@ BallSFXCustomizationMenu:
 	call CustomBallLoadBottomNybble
 .dontLoad
 	ldh a, [hJoy5]
-	bit BIT_SELECT, a
+	bit B_PAD_SELECT, a
 	jr nz, .visualize
-	bit BIT_A_BUTTON, a
+	bit B_PAD_A, a
 	jr nz,  .playSound
 	pop af
 	ld [wCurrentMenuItem], a
@@ -971,9 +967,9 @@ BallSpecialCustomizationMenu:
 	call .prepareSpecialMenu
 	call HandleMenuInput
 	ldh a, [hJoy5]
-	bit BIT_SELECT, a
+	bit B_PAD_SELECT, a
 	jr nz, .visualize
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	jr nz, .exit
 	call GetSelectedBallData
 	inc hl
@@ -1026,15 +1022,15 @@ BallSpecialCustomizationMenu:
 	ld b, [hl]
 	bit 2, b
 	hlcoord 17, 11
-	ld a, " "
+	ld a, ' '
 	jr z, .skipInvertColorMarker
-	ld a, "×"
+	ld a, '×'
 .skipInvertColorMarker
 	ld [hl], a
 	hlcoord 17, 12
-	ld [hl], " "
+	ld [hl], ' '
 	hlcoord 17, 13
-	ld [hl], " "
+	ld [hl], ' '
 	ld a, b
 	and %11
 	dec a
@@ -1044,7 +1040,7 @@ BallSpecialCustomizationMenu:
 	hlcoord 17, 13
 	jr nz, .skipScreen
 .loadData
-	ld [hl], "×"
+	ld [hl], '×'
 .skipScreen
 	lb de, 47, 86
 	call LoadBallTileOAM
@@ -1100,7 +1096,7 @@ VizualizeBallAnimation:
 	call PlaceStringGoToNextEntry
 	call WaitForTextScrollButtonPress
 	ldh a, [hJoy5]
-	bit BIT_A_BUTTON, a
+	bit B_PAD_A, a
 	jr nz, .replayAnimation
 	call WaitForSoundToFinish
 	pop af
@@ -1157,19 +1153,19 @@ CopyCustomBallNamesFromSRAM::
 	callfar InitializeCustomPokeballData
 .skipInitializeNames
 	; copy custom ball names from sram to temporary wram space
-	ld a, SRAM_ENABLE
-  	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+  	ld [rRAMG], a
   	ld a, $1
-  	ld [MBC1SRamBankingMode], a
+  	ld [rBMODE], a
   	xor a
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	ld hl, sCustomBallNames
 	ld de, wCustomBallNames
 	ld bc, NUM_CUSTOM_BALLS * NAME_LENGTH
 	rst _CopyData
    	xor a
-  	ld [MBC1SRamBankingMode], a
-  	ld [MBC1SRamEnable], a
+  	ld [rBMODE], a
+  	ld [rRAMG], a
   	ret
 
 ; d = which custom ball
@@ -1263,7 +1259,7 @@ CeruleanBallDesignerPhotoHintMenu::
 	push hl
 	ld de, 9 ; length of "Photo Hint" text + number beside it
 	add hl, de
-	ld [hl], "×"
+	ld [hl], '×'
 .noXMark
 	pop hl
 	push hl
@@ -1292,15 +1288,15 @@ CeruleanBallDesignerPhotoHintMenu::
 	ld de, LockedText
 	call PlaceString
 	hlcoord 16, 16
-	ld [hl], " "
+	ld [hl], ' '
 .loopHandleMenuInput
 	call EnableTextDelay
 	lb bc, 8, 1
 	call CustomBallHandleInputInit
 	call HandleMenuInput
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	jr nz, .exit
-	bit BIT_SELECT, a
+	bit B_PAD_SELECT, a
 	jr nz, .loopHandleMenuInput
 	call SaveScreenTilesToBuffer2
 	ld a, [wCurrentMenuItem]
@@ -1341,10 +1337,7 @@ CeruleanBallDesignerPhotoHintMenu::
 .checkPhotoEventSetC
 	ld b, FLAG_TEST
 	ld hl, wCustomBallUnlockFlags
-	predef FlagActionPredef
-	ld a, c
-	and a
-	ret
+	jp FlagAction
 .printHintText
 	push af
 	cp 15

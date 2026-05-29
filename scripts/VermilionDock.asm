@@ -20,7 +20,7 @@ VermilionDock_Script:
 	ld hl, wStatusFlags5
 	set BIT_SCRIPTED_MOVEMENT_STATE, [hl]
 	ld hl, wSimulatedJoypadStatesEnd
-	ld a, D_UP
+	ld a, PAD_UP
 	ld [hli], a
 	ld [hli], a
 	ld [hl], a
@@ -29,9 +29,7 @@ VermilionDock_Script:
 	xor a
 	ld [wSpritePlayerStateData2MovementByte1], a
 	ld [wOverrideSimulatedJoypadStatesMask], a
-	dec a
-	ld [wJoyIgnore], a
-	ret
+	jp DisableAllJoypad
 .walking_out_of_dock
 	CheckEventAfterBranchReuseHL EVENT_WALKED_OUT_OF_DOCK, EVENT_STARTED_WALKING_OUT_OF_DOCK
 	ret nz
@@ -60,8 +58,9 @@ VermilionDockSSAnneLeavesScript:
 ;;;;;;;;;; we need to reset the palette here or the screen will be black
 	call GBPalNormal
 ;;;;;;;;;; 
-	ld a, SFX_STOP_ALL_MUSIC
-	ld [wJoyIgnore], a
+	call DisableAllJoypad
+	ASSERT SFX_STOP_ALL_MUSIC == $FF 
+	; a = SFX_STOP_ALL_MUSIC = $FF due to DisableAllJoypad
 	ld [wNewSoundID], a
 	rst _PlaySound
 	ld c, BANK(Music_Surfing)
@@ -72,7 +71,7 @@ VermilionDockSSAnneLeavesScript:
 	ld [wSpritePlayerStateData1ImageIndex], a
 	ld c, 120
 	rst _DelayFrames
-	ld b, $9c
+	ld b, HIGH(vBGMap1)
 	call CopyScreenTileBufferToVRAM
 	hlcoord 0, 10
 	ld bc, SCREEN_WIDTH * 6
@@ -107,7 +106,24 @@ VermilionDockSSAnneLeavesScript:
 	ld [wMapViewVRAMPointer + 1], a
 	push hl
 	push de
-	call ScheduleEastColumnRedraw
+; ScheduleEastColumnRedraw was un-functioned in overworld so it was copied here
+	
+	hlcoord 18, 0
+	call ScheduleColumnRedrawHelper
+	ld a, [wMapViewVRAMPointer]
+	ld c, a
+	and $e0
+	ld b, a
+	ld a, c
+	add 18
+	and $1f
+	or b
+	ldh [hRedrawRowOrColumnDest], a
+	ld a, [wMapViewVRAMPointer + 1]
+	ldh [hRedrawRowOrColumnDest + 1], a
+	ld a, REDRAW_COL
+	ldh [hRedrawRowOrColumnMode], a
+
 	call VermilionDock_EmitSmokePuff
 	pop de
 	ld b, $10
@@ -149,7 +165,7 @@ VermilionDock_AnimSmokePuffDriftRight:
 	ld a, [wSSAnneSmokeDriftAmount]
 	swap a
 	ld c, a
-	ld de, 4
+	ld de, OBJ_SIZE
 .drift_loop
 	inc [hl]
 	inc [hl]
@@ -176,10 +192,10 @@ VermilionDock_EmitSmokePuff:
 
 VermilionDockOAMBlock:
 ; tile ID, attributes
-	db $fc, $10
-	db $fd, $10
-	db $fe, $10
-	db $ff, $10
+	db $fc, OAM_PAL1
+	db $fd, OAM_PAL1
+	db $fe, OAM_PAL1
+	db $ff, OAM_PAL1
 
 VermilionDock_SyncScrollWithLY:
 	ld h, d
@@ -381,15 +397,15 @@ BubbleOAMTable:
 	db $44, $30, $C0, $00
 	db $44, $38, $C1, $00
 	db $4C, $30, $C2, $00
-	db $44, $48, $C0, OAM_HFLIP
-	db $44, $40, $C1, OAM_HFLIP
-	db $4C, $48, $C2, OAM_HFLIP
-	db $5C, $30, $C0, OAM_VFLIP
-	db $5C, $38, $C1, OAM_VFLIP
-	db $54, $30, $C2, OAM_VFLIP
-	db $5C, $48, $C0, OAM_HFLIP | OAM_VFLIP
-	db $5C, $40, $C1, OAM_HFLIP | OAM_VFLIP
-	db $54, $48, $C2, OAM_HFLIP | OAM_VFLIP
+	db $44, $48, $C0, OAM_XFLIP
+	db $44, $40, $C1, OAM_XFLIP
+	db $4C, $48, $C2, OAM_XFLIP
+	db $5C, $30, $C0, OAM_YFLIP
+	db $5C, $38, $C1, OAM_YFLIP
+	db $54, $30, $C2, OAM_YFLIP
+	db $5C, $48, $C0, OAM_XFLIP | OAM_YFLIP
+	db $5C, $40, $C1, OAM_XFLIP | OAM_YFLIP
+	db $54, $48, $C2, OAM_XFLIP | OAM_YFLIP
 	db $4A, $40, $C3, $00
 
 TruckOAMTable:
@@ -418,15 +434,12 @@ TruckCheck:
 	jp nz, ChangeTruckTile
 	ld hl, wCurrentMapScriptFlags
 	res BIT_CUR_MAP_LOADED_1, [hl]
-	lb bc, FLAG_TEST, HS_MEW_VERMILION_DOCK
-	ld hl, wMissableObjectFlags
-	predef FlagActionPredef
-	ld a, c
-	and a
+	lb bc, FLAG_TEST, TOGGLE_MEW_VERMILION_DOCK
+	ld hl, wToggleableObjectFlags
+	call FlagAction
 	jr nz, .skiphidingmew
-	ld a, HS_MEW_VERMILION_DOCK
-	ld [wMissableObjectIndex], a
-	predef HideObject
+	ld c, TOGGLE_MEW_VERMILION_DOCK
+	call HideObject
 .skiphidingmew
 	ld a, [wStatusFlags1]
 	bit BIT_STRENGTH_ACTIVE, a ; using Strength?
@@ -448,7 +461,7 @@ TruckCheck:
 	set BIT_CUR_MAP_USED_ELEVATOR, [hl] ; wait until the next time the player presses left
 	ret z
 	ldh a, [hJoyHeld]
-	bit BIT_D_LEFT, a ; is player pressing left
+	bit B_PAD_LEFT, a ; is player pressing left
 	ret z
 	res BIT_CUR_MAP_USED_ELEVATOR, [hl]
 	call DisableSpriteUpdates
@@ -467,7 +480,7 @@ TruckCheck:
 	ld a, $c
 	ld [wNewTileBlockID], a ; used to be wd09f
 	ld bc, $a
-	predef ReplaceTileBlock
+	call ReplaceTileBlock
 	; moving the truck
 	ld a, SFX_PUSH_BOULDER
 	rst _PlaySound
@@ -488,26 +501,22 @@ TruckCheck:
 	ld a, $3
 	ld [wNewTileBlockID], a ; used to be wd09f
 	ld bc, $9
-	predef ReplaceTileBlock
+	call ReplaceTileBlock
 	callfar AnimateBoulderDust
 	call ShowMew
 	ld c, 20
 	rst _DelayFrames
-	xor a
-	ld [wJoyIgnore], a
+	call EnableAllJoypad
 	SetEvent EVENT_FOUND_MEW
 	ret
 
 ShowMew:
 	call EnableSpriteUpdates
-	ld a, HS_MEW_VERMILION_DOCK
-	ld [wMissableObjectIndex], a
-	predef_jump ShowObject
+	ld c, TOGGLE_MEW_VERMILION_DOCK
+	jp ShowObject
 
 ChangeTruckTile:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	res BIT_CUR_MAP_USED_ELEVATOR, [hl]
 	ret z
 	ld bc, $9

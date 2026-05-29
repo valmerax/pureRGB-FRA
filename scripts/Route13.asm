@@ -10,9 +10,7 @@ Route13_Script:
 
 ; PureRGBnote: ADDED: code that keeps the cut tree cut down if we're in its alcove. Prevents getting softlocked if you delete cut.
 Route13CheckHideCutTree:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl] ; did we load the map from a save/warp/door/battle, etc?
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	jr nz, .next 
 	ld hl, wCurrentMapScriptFlags
 	bit BIT_CROSSED_MAP_CONNECTION, [hl]
@@ -38,7 +36,7 @@ Route13CheckHideCutTree:
 	lb bc, 2, 17
 	ld a, $6F
 	ld [wNewTileBlockID], a
-	predef_jump ReplaceTileBlock
+	jp ReplaceTileBlock
 
 Route13_ScriptPointers:
 	def_script_pointers
@@ -88,10 +86,34 @@ Route13TrainerHeader9:
 	db -1 ; end
 
 Route13CooltrainerM1Text:
-	text_asm
-	ld hl, Route13TrainerHeader0
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route13TrainerHeader0
+
+Route13CooltrainerF1Text:
+	script_trainer Route13TrainerHeader1
+
+Route13CooltrainerF2Text:
+	script_trainer Route13TrainerHeader2
+
+Route13CooltrainerF3Text:
+	script_trainer Route13TrainerHeader3
+
+Route13CooltrainerF4Text:
+	script_trainer Route13TrainerHeader4
+
+Route13CooltrainerM2Text:
+	script_trainer Route13TrainerHeader5
+
+Route13Beauty1Text:
+	script_trainer Route13TrainerHeader6
+
+Route13Beauty2Text:
+	script_trainer Route13TrainerHeader7
+
+Route13BikerText:
+	script_trainer Route13TrainerHeader8
+
+Route13CooltrainerM3Text:
+	script_trainer Route13TrainerHeader9
 
 Route13CooltrainerM1BattleText:
 	text_far _Route13CooltrainerM1BattleText
@@ -105,12 +127,6 @@ Route13CooltrainerM1AfterBattleText:
 	text_far _Route13CooltrainerM1AfterBattleText
 	text_end
 
-Route13CooltrainerF1Text:
-	text_asm
-	ld hl, Route13TrainerHeader1
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route13CooltrainerF1BattleText:
 	text_far _Route13CooltrainerF1BattleText
 	text_end
@@ -122,12 +138,6 @@ Route13CooltrainerF1EndBattleText:
 Route13CooltrainerF1AfterBattleText:
 	text_far _Route13CooltrainerF1AfterBattleText
 	text_end
-
-Route13CooltrainerF2Text:
-	text_asm
-	ld hl, Route13TrainerHeader2
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route13CooltrainerF2BattleText:
 	text_far _Route13CooltrainerF2BattleText
@@ -141,12 +151,6 @@ Route13CooltrainerF2AfterBattleText:
 	text_far _Route13CooltrainerF2AfterBattleText
 	text_end
 
-Route13CooltrainerF3Text:
-	text_asm
-	ld hl, Route13TrainerHeader3
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route13CooltrainerF3BattleText:
 	text_far _Route13CooltrainerF3BattleText
 	text_end
@@ -158,12 +162,6 @@ Route13CooltrainerF3EndBattleText:
 Route13CooltrainerF3AfterBattleText:
 	text_far _Route13CooltrainerF3AfterBattleText
 	text_end
-
-Route13CooltrainerF4Text:
-	text_asm
-	ld hl, Route13TrainerHeader4
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route13CooltrainerF4BattleText:
 	text_far _Route13CooltrainerF4BattleText
@@ -177,12 +175,6 @@ Route13CooltrainerF4AfterBattleText:
 	text_far _Route13CooltrainerF4AfterBattleText
 	text_end
 
-Route13CooltrainerM2Text:
-	text_asm
-	ld hl, Route13TrainerHeader5
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route13CooltrainerM2BattleText:
 	text_far _Route13CooltrainerM2BattleText
 	text_end
@@ -194,12 +186,6 @@ Route13CooltrainerM2EndBattleText:
 Route13CooltrainerM2AfterBattleText:
 	text_far _Route13CooltrainerM2AfterBattleText
 	text_end
-
-Route13Beauty1Text:
-	text_asm
-	ld hl, Route13TrainerHeader6
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route13Beauty1BattleText:
 	text_far _Route13Beauty1BattleText
@@ -213,12 +199,6 @@ Route13Beauty1AfterBattleText:
 	text_far _Route13Beauty1AfterBattleText
 	text_end
 
-Route13Beauty2Text:
-	text_asm
-	ld hl, Route13TrainerHeader7
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route13Beauty2BattleText:
 	text_far _Route13Beauty2BattleText
 	text_end
@@ -231,12 +211,6 @@ Route13Beauty2AfterBattleText:
 	text_far _Route13Beauty2AfterBattleText
 	text_end
 
-Route13BikerText:
-	text_asm
-	ld hl, Route13TrainerHeader8
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route13BikerBattleText:
 	text_far _Route13BikerBattleText
 	text_end
@@ -248,12 +222,6 @@ Route13BikerEndBattleText:
 Route13BikerAfterBattleText:
 	text_far _Route13BikerAfterBattleText
 	text_end
-
-Route13CooltrainerM3Text:
-	text_asm
-	ld hl, Route13TrainerHeader9
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route13CooltrainerM3BattleText:
 	text_far _Route13CooltrainerM3BattleText

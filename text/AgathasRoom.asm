@@ -45,10 +45,8 @@ _AgathaAfterBattleText::
 	line "perdu. Tu peux"
 	cont "passer."
 	done
-	
-_LoreleisRoomLoreleiDontRunAwayText::
-_BrunosRoomBrunoDontRunAwayText::
-_AgathasRoomAgathaDontRunAwayText::
+
+_EliteFourDontRunAwayText::
 	text "Une voix:"
 	line "Ne fuis pas!"
 	done

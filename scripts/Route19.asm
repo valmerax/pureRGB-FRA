@@ -52,64 +52,34 @@ Route19TrainerHeader9:
 	db -1 ; end
 
 Route19CooltrainerM1Text:
-	text_asm
-	ld hl, Route19TrainerHeader0
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader0
 
 Route19CooltrainerM2Text:
-	text_asm
-	ld hl, Route19TrainerHeader1
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader1
 
 Route19Swimmer1Text:
-	text_asm
-	ld hl, Route19TrainerHeader2
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader2
 
 Route19Swimmer2Text:
-	text_asm
-	ld hl, Route19TrainerHeader3
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader3
 
 Route19Swimmer3Text:
-	text_asm
-	ld hl, Route19TrainerHeader4
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader4
 
 Route19Swimmer4Text:
-	text_asm
-	ld hl, Route19TrainerHeader5
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader5
 
 Route19Swimmer5Text:
-	text_asm
-	ld hl, Route19TrainerHeader6
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader6
 
 Route19Swimmer6Text:
-	text_asm
-	ld hl, Route19TrainerHeader7
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader7
 
 Route19Swimmer7Text:
-	text_asm
-	ld hl, Route19TrainerHeader8
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader8
 
 Route19Swimmer8Text:
-	text_asm
-	ld hl, Route19TrainerHeader9
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route19TrainerHeader9
 
 Route19CooltrainerM1BattleText:
 	text_far _Route19CooltrainerM1BattleText

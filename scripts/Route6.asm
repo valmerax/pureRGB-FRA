@@ -1,9 +1,7 @@
 ; PureRGBnote: ADDED: new trainers on this route.
 
 Route6_Script:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	jr nz, .mapLoad
 	bit BIT_CROSSED_MAP_CONNECTION, [hl]
 	res BIT_CROSSED_MAP_CONNECTION, [hl]
@@ -62,10 +60,28 @@ Route6TrainerHeader7:
 	db -1 ; end
 
 Route6CooltrainerM1Text:
-	text_asm
-	ld hl, Route6TrainerHeader0
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route6TrainerHeader0
+
+Route6CooltrainerF1Text:
+	script_trainer Route6TrainerHeader1
+
+Route6Youngster1Text:
+	script_trainer Route6TrainerHeader2
+
+Route6CooltrainerM2Text:
+	script_trainer Route6TrainerHeader3
+
+Route6CooltrainerF2Text:
+	script_trainer Route6TrainerHeader4
+
+Route6Youngster2Text:
+	script_trainer Route6TrainerHeader5
+
+Route6Text7:
+	script_trainer Route6TrainerHeader6
+
+Route6Text8:
+	script_trainer Route6TrainerHeader7
 
 Route6CooltrainerM1BattleText:
 	text_far _Route6CooltrainerM1BattleText
@@ -79,12 +95,6 @@ Route6CooltrainerAfterBattleText: ; used by both COOLTRAINER_M1 and COOLTRAINER_
 	text_far _Route6CooltrainerAfterBattleText
 	text_end
 
-Route6CooltrainerF1Text:
-	text_asm
-	ld hl, Route6TrainerHeader1
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route6CooltrainerF1BattleText:
 	text_far _Route6CooltrainerF1BattleText
 	text_end
@@ -92,12 +102,6 @@ Route6CooltrainerF1BattleText:
 Route6CooltrainerF1EndBattleText:
 	text_far _Route6CooltrainerF1EndBattleText
 	text_end
-
-Route6Youngster1Text:
-	text_asm
-	ld hl, Route6TrainerHeader2
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route6Youngster1BattleText:
 	text_far _Route6Youngster1BattleText
@@ -114,12 +118,6 @@ Route6Youngster1AfterBattleText:
 	ld de, Route6VenonatLearnsetText
 	predef_jump LearnsetTrainerScript
 
-Route6CooltrainerM2Text:
-	text_asm
-	ld hl, Route6TrainerHeader3
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route6CooltrainerM2BattleText:
 	text_far _Route6CooltrainerM2BattleText
 	text_end
@@ -132,12 +130,6 @@ Route6CooltrainerM2AfterBattleText:
 	text_far _Route6CooltrainerM2AfterBattleText
 	text_end
 
-Route6CooltrainerF2Text:
-	text_asm
-	ld hl, Route6TrainerHeader4
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route6CooltrainerF2BattleText:
 	text_far _Route6CooltrainerF2BattleText
 	text_end
@@ -149,12 +141,6 @@ Route6CooltrainerF2EndBattleText:
 Route6CooltrainerF2AfterBattleText:
 	text_far _Route6CooltrainerF2AfterBattleText
 	text_end
-
-Route6Youngster2Text:
-	text_asm
-	ld hl, Route6TrainerHeader5
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route6Youngster2BattleText:
 	text_far _Route6Youngster2BattleText
@@ -171,12 +157,6 @@ Route6Youngster2AfterBattleText:
 	ld de, Route6ButterfreeLearnsetText
 	predef_jump LearnsetTrainerScript
 
-Route6Text7:
-	text_asm
-	ld hl, Route6TrainerHeader6
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route6BattleText7:
 	text_far _Route6BattleText7
 	text_end
@@ -188,12 +168,6 @@ Route6EndBattleText7:
 Route6AfterBattleText7:
 	text_far _Route6AfterBattleText7
 	text_end
-
-Route6Text8:
-	text_asm
-	ld hl, Route6TrainerHeader7
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route6BattleText8:
 	text_far _Route6BattleText8

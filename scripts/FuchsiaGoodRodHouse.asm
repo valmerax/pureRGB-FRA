@@ -27,9 +27,7 @@ FuchsiaGoodRodHouse_TextPointers:
 	dw_const ErikSarasHouseAfterEventText,       TEXT_ERIKSARASHOUSE_AFTER_EVENT
 
 FuchsiaGoodRodHouseOnMapLoad:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	ret z
 	ld a, [wXCoord]
 	cp 12
@@ -61,22 +59,18 @@ FuchsiaGoodRodHouseOnMapLoad:
 	call UpdateSprites
 	ld a, $32
 	call .replaceTileBlockEntry
-	ld a, HS_ERIK_SARA_HOUSE_NOTE2
-	ld [wMissableObjectIndex], a
-	predef ShowExtraObject
+	ld c, TOGGLE_ERIK_SARA_HOUSE_NOTE2
+	call ShowExtraObject
 	jp GBFadeInFromBlack
 .replaceTileBlockEntry
 	ld [wNewTileBlockID], a
 	lb bc, 5, 10
-	predef_jump ReplaceTileBlock
+	jp ReplaceTileBlock
 .noEndingText
-	ld a, HS_SAFARI_ZONE_CENTER_REST_HOUSE_SARA
-	call FuchsiaGoodRodHouseHideExtraObjectEntry
-	ld a, HS_SAFARI_ZONE_CENTER_REST_HOUSE_ERIK
-	; fall through
-FuchsiaGoodRodHouseHideExtraObjectEntry:
-	ld [wMissableObjectIndex], a
-	predef_jump HideExtraObject
+	ld c, TOGGLE_SAFARI_ZONE_CENTER_REST_HOUSE_SARA
+	call HideExtraObject
+	ld c, TOGGLE_SAFARI_ZONE_CENTER_REST_HOUSE_ERIK
+	jp HideExtraObject
 
 FuchsiaGoodRodHouseFishingGuruText:
 	text_asm
@@ -112,7 +106,7 @@ FuchsiaGoodRodHouseGarbageText:
 
 ; nz if they're not at home
 AreErikAndSaraAtHome:
-	CheckExtraHideShowState HS_ERIK_HOUSE
+	CheckExtraHideShowState TOGGLE_ERIK_HOUSE
 	ld hl, ErikSaraNoPokingAround
 	ret
 

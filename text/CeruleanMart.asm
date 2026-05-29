@@ -32,9 +32,8 @@ _TMKidQuick::
 
 _CeruleanMartTMKidFlavor::
 	text "<PARA>Mon père et moi on"
-	line "voyage beaucoup,"
-	cont "alors tu me verra"
-	cont "sûrement aussi"
-	cont "dans d'autres"
-	cont "boutique!@"
+	line "voyage beaucoup!"
+	para "Tu me reverras"
+	line "sûrement dans"
+	cont "d'autres boutiques!@"
 	text_end

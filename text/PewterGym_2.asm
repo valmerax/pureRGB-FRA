@@ -179,9 +179,9 @@ _ApexChipExplanationText::
 	cont "# BALL!"
 
 	para "Elle rend les"
-	line "#MON heureux"
-	cont "et les aide à"
-	cont "atteindre leur"
+	line "#MON heureux,"
+	para "et les aide à"
+	line "atteindre leur"
 	cont "plein potentiel!"
 
 	para "Utilise-la sur"
@@ -202,8 +202,9 @@ _ApexChipExplanationText::
 _AlreadyReceivedApexChipsText::
 	text "Viens me parler"
 	line "à la prochaine"
-	cont "ARENE si tu bats"
-	cont "le CHAMPION pour"
-	cont "obtenir plus de"
-	cont "PUCE APEX!"
+	cont "ARENE!"
+	para "Si tu bats le"
+	line "CHAMPION,"
+	para "je te donnerai"
+	line "d'autres PUCE APEX!"
 	done

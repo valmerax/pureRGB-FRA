@@ -48,9 +48,7 @@ DoInGameTradeDialogue:
 	ld a, [wWhichTrade]
 	ld c, a
 	ld b, FLAG_TEST
-	predef FlagActionPredef
-	ld a, c
-	and a
+	call FlagAction
 	ld a, TRADETEXT_AFTER_TRADE
 	ld [wInGameTradeTextPointerTableIndex], a
 	jr nz, .printText
@@ -116,7 +114,7 @@ InGameTrade_DoTrade:
 	ld a, [wWhichPokemon]
 ;;;;;;;;;; PureRGBnote: ADDED: check if we need to store whether the player's pokemon uses alternate palette to make the trade animation correct
 	ld hl, wPartyMon1Flags
-	ld bc, wPartyMon2 - wPartyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	call AddNTimes
 	ld a, [hl]
 	and 1
@@ -130,7 +128,7 @@ InGameTrade_DoTrade:
 	ld a, [wWhichTrade]
 	ld c, a
 	ld b, FLAG_SET
-	predef FlagActionPredef
+	call FlagAction
 	ld hl, ConnectCableText
 	rst _PrintText
 	call PlayInGameTradeMusic
@@ -141,7 +139,7 @@ InGameTrade_DoTrade:
 	call GetTradeMonPalette ; PureRGBnote: ADDED: stores whether mon you receive via trade has an alternate palette into wIsAltPalettePkmnData
 	call LoadHpBarAndStatusTilePatterns
 	call InGameTrade_PrepareTradeData
-	predef InternalClockTradeAnim
+	callfar InternalClockTradeAnim
 	pop af
 	ld [wCurEnemyLevel], a
 	pop af
@@ -223,7 +221,7 @@ InGameTrade_PrepareTradeData:
 	ld de, wLinkEnemyTrainerName
 	call InGameTrade_CopyData
 	ld hl, wPartyMon1OTID
-	ld bc, wPartyMon2 - wPartyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	ld a, [wWhichPokemon]
 	call AddNTimes
 	ld de, wTradedPlayerMonOTID
@@ -255,10 +253,10 @@ InGameTrade_CopyDataToReceivedMon:
 	call GetInGameTradeTrainerName
 	rst _CopyData
 	ld hl, wPartyMon1OTID
-	ld bc, wPartyMon2 - wPartyMon1
+	ld bc, PARTYMON_STRUCT_LENGTH
 	call InGameTrade_GetReceivedMonPointer
 	ld hl, wTradedEnemyMonOTID
-	ld bc, $2
+	ld bc, 2
 	jp CopyData
 
 ; the received mon's index is (partyCount - 1),
@@ -283,18 +281,21 @@ GetInGameTradeTrainerName:
 	jr nz, .loop
 	ret
 
-InGameTrade_TrainerStrings:
-	db "BOBO@@@@@@@"
-	db "GABRIEL@@@@"
-	db "CROCKET@@@@"
-	db "DRVERT@@@@@"
-	db "MIMI@@@@@@@"
-	db "LUCIEN@@@@@"
-	db "EDMOND@@@@@"
-	db "MICHAEL@@@@"
-	db "ANNA@@@@@@@"
-	db "LILIAN@@@@@"
+MACRO trade_npc_name
+	dname \1, NAME_LENGTH
+ENDM
 
+InGameTrade_TrainerStrings:
+	trade_npc_name "BOBO"
+	trade_npc_name "GABRIEL"
+	trade_npc_name "CROCKET"
+	trade_npc_name "DRVERT"
+	trade_npc_name "MIMI"
+	trade_npc_name "LUCIEN"
+	trade_npc_name "EDMOND"
+	trade_npc_name "MICHAEL"
+	trade_npc_name "ANNA"
+	trade_npc_name "LILIAN"
 
 InGameTradeTextPointers:
 ; entries correspond to TRADE_DIALOGSET_* constants

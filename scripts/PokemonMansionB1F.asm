@@ -14,9 +14,7 @@ PokemonMansionB1F_Script:
 	ret
 
 MansionB1FCheckReplaceSwitchDoorBlocks:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	ret z
 	CheckEvent EVENT_UNLOCKED_SECRET_LAB
 	call nz, UnlockLab
@@ -46,7 +44,7 @@ UnlockLab::
 	ld a, $78
 	lb bc, 6, 2
 	ld [wNewTileBlockID], a
-	predef_jump ReplaceTileBlock
+	jp ReplaceTileBlock
 
 CheckUnlockLab::
 	CheckEvent EVENT_UNLOCKED_SECRET_LAB
@@ -121,26 +119,16 @@ Mansion4TrainerHeader3:
 	db -1 ; end
 
 PokemonMansionB1FBurglarText:
-	text_asm
-	ld hl, Mansion4TrainerHeader0
-	jr PokemonMansionB1FTalkToTrainer
+	script_trainer Mansion4TrainerHeader0
 
 PokemonMansionB1FScientistText:
-	text_asm
-	ld hl, Mansion4TrainerHeader1
-	jr PokemonMansionB1FTalkToTrainer
+	script_trainer Mansion4TrainerHeader1
 
 Mansion4Text3:
-	text_asm
-	ld hl, Mansion4TrainerHeader2
-	jr PokemonMansionB1FTalkToTrainer
+	script_trainer Mansion4TrainerHeader2
 
 Mansion4Text4:
-	text_asm
-	ld hl, Mansion4TrainerHeader3
-PokemonMansionB1FTalkToTrainer:
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Mansion4TrainerHeader3
 
 PokemonMansionB1FBurglarBattleText:
 	text_far _PokemonMansionB1FBurglarBattleText

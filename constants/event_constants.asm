@@ -8,7 +8,7 @@
 	const EVENT_HALL_OF_FAME_DEX_RATING
 	const_skip 2
 	const EVENT_PALLET_AFTER_GETTING_POKEBALLS
-	const EVENT_IN_EXTRA_MISSABLE_OBJECTS_MAP
+	const EVENT_IN_EXTRA_TOGGLEABLE_OBJECTS_MAP
 	const EVENT_SAW_GOT_ON_BIKE_TEXT
 	const EVENT_SAW_GOT_OFF_BIKE_TEXT
 	const EVENT_HIDE_CHANGE_BOX_SAVE_MSG
@@ -17,7 +17,8 @@
 	const EVENT_SAW_LEARNSET_UNLOCK_TEXT_ONCE
 	const EVENT_PAUSED_MUSIC_BEFORE_BATTLE
 	const EVENT_ALREADY_BACKED_UP_MUSIC_BEFORE_BATTLE
-	const_skip 6
+	const EVENT_INITIALIZED_BOX_NAMES
+	const_skip 5
 	const EVENT_MET_DAD
 	const EVENT_CALLED_DAD_WAITING
 	const EVENT_GOT_TOWN_MAP
@@ -767,7 +768,7 @@ DEF FLAG_JIGGLE_TOGGLE EQU const_value
 
 ; Route 20 events
 	const_next $500
-	const EVENT_IN_SEAFOAM_ISLANDS
+	const_skip ; used to be EVENT_IN_SEAFOAM_ISLANDS but this wasn't necessary
 	const EVENT_BEAT_ROUTE_20_TRAINER_0
 	const EVENT_BEAT_ROUTE_20_TRAINER_1
 	const EVENT_BEAT_ROUTE_20_TRAINER_2
@@ -962,7 +963,7 @@ DEF FLAG_JIGGLE_TOGGLE EQU const_value
 	const EVENT_BEAT_ROCKET_HIDEOUT_1_TRAINER_3
 	const EVENT_BEAT_ROCKET_HIDEOUT_1_TRAINER_4
 	const_skip
-	const EVENT_ROCKET_HIDEOUT_B1F_DOOR_UNLOCKED
+	const EVENT_ENTERED_ROCKET_HIDEOUT
 	const_skip 7
 	const EVENT_67F ; ???
 	const_skip
@@ -1272,15 +1273,15 @@ DEF INDIGO_PLATEAU_EVENTS_START EQU const_value
 	const_skip
 	const EVENT_BEAT_LORELEIS_ROOM_TRAINER_0
 	const_skip 4
-	const EVENT_AUTOWALKED_INTO_LORELEIS_ROOM
+	const_skip ;const EVENT_AUTOWALKED_INTO_LORELEIS_ROOM ; no longer used but would need save file updater to use
 	const_skip 2
 	const EVENT_BEAT_BRUNOS_ROOM_TRAINER_0
 	const_skip 4
-	const EVENT_AUTOWALKED_INTO_BRUNOS_ROOM
+	const_skip ;const EVENT_AUTOWALKED_INTO_BRUNOS_ROOM ; no longer used but would need save file updater to use
 	const_skip 2
 	const EVENT_BEAT_AGATHAS_ROOM_TRAINER_0
 	const_skip 4
-	const EVENT_AUTOWALKED_INTO_AGATHAS_ROOM
+	const_skip ;const EVENT_AUTOWALKED_INTO_AGATHAS_ROOM ; no longer used but would need save file updater to use
 	const_skip 2
 	const EVENT_BEAT_LANCES_ROOM_TRAINER_0
 	const_skip 4

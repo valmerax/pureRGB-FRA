@@ -1,4 +1,4 @@
-__SilphCo8FSilphWorkerMThanksForSavingUsText::
+_SilphCo8FSilphWorkerMSilphIsFinishedText::
 	text "Mmm<...> La SYLPHE"
 	line "va-t-elle faire"
 	cont "faillite?"

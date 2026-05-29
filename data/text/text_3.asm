@@ -20,6 +20,24 @@ _OlderFileWillBeErasedText::
 	cont "effacée. OK?"
 	done
 
+_SortItems::
+	text "Trier vos objets?"
+	done
+
+_SortPCItems::
+	text "Trier votre <PC>"
+	line "objets?"
+	done
+
+_SortDone::
+	text "Tout est trié!"
+	prompt
+
+_SortNotEnough::
+	text "Il faut au moins 2"
+	line "objets à trier."
+	prompt
+
 _WhenYouChangeBoxText::
 	text "En activant"
 	line "une autre boîte"
@@ -48,6 +66,11 @@ _ChooseABoxDataWillSaveText::
 	para "La partie sera"
 	line "sauvegardée.@"
 	text_end
+
+_RenameCurrentBoxText::
+	text "Renommer la BOITE"
+	line "actuelle?"
+	done
 
 _EvolvedText::
 	text_ram wStringBuffer

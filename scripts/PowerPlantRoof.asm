@@ -7,9 +7,7 @@ PowerPlantRoof_Script:
 	jp EnableAutoTextBoxDrawing
 
 PowerPlantRoofOnMapLoad:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	ret z
 	; if the player is standing in a specific area, make the palette darker as if dark clouds
 	CheckEvent EVENT_BEAT_ZAPDOS
@@ -84,7 +82,9 @@ PlayThunderRumbleSound::
 PowerPlantRoof_TextPointers:
 	def_text_pointers
 	dw_const PowerPlantRoofZapdosText,  TEXT_POWER_PLANT_ROOF_ZAPDOS
+	dw_const PowerPlantRoofSignText, TEXT_POWER_PLANT_ROOF_SIGN
 	dw_const PowerPlantRoofDarkCloudsText,  TEXT_POWER_PLANT_ROOF_DARK_CLOUDS
+
 
 PowerPlantRoofDarkCloudsText:
 	text_far _PowerPlantRoofDarkCloudsText
@@ -337,7 +337,7 @@ PowerPlantDrawLightning:
 	cp c
 	ld a, $C1
 	jr z, .load
-	ld a, " " ; empty
+	ld a, ' ' ; empty
 .load
 	ld [hli], a
 	dec b
@@ -371,7 +371,9 @@ ZapdosEndBattleScript:
 	cp $ff ; do nothing if you lost the battle
 	ret z
 	SetEvent EVENT_BEAT_ZAPDOS
-	ld a, HS_POWER_PLANT_ROOF_ZAPDOS
-	ld [wMissableObjectIndex], a
-	predef_jump HideExtraObject
+	ld c, TOGGLE_POWER_PLANT_ROOF_ZAPDOS
+	jp HideExtraObject
 	
+PowerPlantRoofSignText::
+	text_far _PowerPlantRoofSignText
+	text_end

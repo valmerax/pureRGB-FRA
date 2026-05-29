@@ -202,13 +202,7 @@ _RockTunnelPokecenterGuyText::
 	cont "à LAVANVILLE!"
 	done
 
-_UnusedBenchGuyText1::
-	text "Moi aussi j'veux"
-	line "capturer un"
-	cont "#MON."
-	done
-
-_UnusedBenchGuyText2::
+_SafariZoneTiredGuyText::
 	text "La fatigue<...>"
 	cont "Doucement<...>"
 	cont "Me gagne<...>"
@@ -521,14 +515,15 @@ _TurnPageText::
 	done
 
 _ViridianSchoolNotebookText5::
-	text "FILLE: Hé! Ne lis"
+	text "FILLE" ; fall through
+_ViridianSchoolHeyDontLookAtNotes::
+	db ": Hé! Ne lis"
 	line "pas mon journal!@"
 	text_end
 
 _ViridianSchoolNotebookTextGus::
-	text "GUS: Hé! Ne lis"
-	line "pas mon journal!@"
-	text_end
+	text "GUS@"
+	text_jump _ViridianSchoolHeyDontLookAtNotes
 
 _ViridianSchoolNotebookText1::
 	text "Vous examinez le"
@@ -618,13 +613,6 @@ _FightingDojoText::
 	text "DOJO"
 	done
 
-_IndigoPlateauHQText::
-	text "PLATEAU INDIGO"
-	line "Quartier général"
-	cont "de la LIGUE"
-	cont "#MON"
-	done
-
 _RedBedroomSNESText::
 	text "<PLAYER> joue à la"
 	line "Super Nintendo!"
@@ -638,16 +626,11 @@ _Route15UpstairsBinocularsText::
 	cont "la mer."
 	done
 
-_AerodactylFossilText::
+_AerodactylKabutopsFossilText::
 	text "Le fossile du"
-	line "PTERA est un"
-	cont "#MON rare"
-	cont "et ancien."
-	done
-
-_KabutopsFossilText::
-	text "Le fossile du"
-	line "KABUTOPS est un"
+	line "@"
+	text_ram wNameBuffer
+	text " est un"
 	cont "#MON rare"
 	cont "et ancien."
 	done
@@ -779,11 +762,22 @@ _VermilionGymTrashSuccessText1::
 	text "Oh! Un bouton"
 	line "dans la poubelle!"
 	cont "Dingue!"
+	done
 
-	para "Le premier"
-	line "verrouillage est"
-	cont "levé!@"
-	text_end
+_VermilionGym1stElectricLock::
+	text "Le premier"
+	line "@"
+	text_jump _VermilionTheElectricLockOpened
+
+_VermilionGym2ndElectricLock::
+	text "Le deuxième"
+	line "@"
+	text_jump _VermilionTheElectricLockOpened
+
+_VermilionTheElectricLockOpened::
+	db "verrouillage est"
+	cont "levé!"
+	done
 
 _VermilionGymTrashSuccessText2::
 	text "Hé! Un autre"
@@ -793,12 +787,8 @@ _VermilionGymTrashSuccessText2::
 	prompt
 
 _VermilionGymTrashSuccessText3::
-	text "Le deuxième"
-	line "verrouillage est"
-	cont "levé!"
-
-	para "La porte s'ouvre!@"
-	text_end
+	text "La porte s'ouvre!"
+	done
 
 ;_VermilionGymTrashFailText::
 ;	text "Une poubelle bien"
@@ -1152,16 +1142,16 @@ _MoveIsDisabledText::
 	cont "a disparu!"
 	prompt
 
-_MonName1Text::
+_ActorNameText::
 	text "<USER>@"
 	text_end
 
-_UsedText::
+_UsedMoveText::
 	text_start
 	line "lance @"
 	text_end
 
-_InsteadText::
+_UsedInsteadText::
 	text "à la place de,"
 	cont "@"
 	text_end
@@ -1245,11 +1235,11 @@ _SubstituteBrokeText::
 	cont "est détruit!"
 	prompt
 
-_BuildingRageText::
-	text "La FRENESIE de"
-	line "<USER>"
-	cont "s'intensifie!"
-	prompt
+;_BuildingRageText::
+;	text "La FRENESIE de"
+;	line "<USER>"
+;	cont "s'intensifie!"
+;	prompt
 
 _MirrorMoveFailedText::
 	text "La MIMIQUE a"
@@ -1517,7 +1507,8 @@ _TurnedOnPC1Text::
 _AccessedBillsPCText::
 	text "Connexion au <PC>"
 	line "de LEO."
-
+	; fall through
+_AccessedMonStorageSystemText::
 	para "Accès au système"
 	line "de stockage des"
 	cont "#MON."
@@ -1525,12 +1516,8 @@ _AccessedBillsPCText::
 
 _AccessedSomeonesPCText::
 	text "Connexion au <PC>"
-	line "inconnu."
-
-	para "Accès au système"
-	line "de stockage des"
-	cont "#MON."
-	prompt
+	line "inconnu.@"
+	text_jump _AccessedMonStorageSystemText
 
 _AccessedMyPCText::
 	text "<PC> personnel"
@@ -1905,42 +1892,61 @@ _CantDepositSSTicketText::
 	cont "bord de L'OCEANE!"
 	prompt
 
-_WildMonAppearedTextEnd::
-	line "@"
+_CantDepositBikeText::
+	text "You're riding it!"
+	line "Can't deposit now!"
+	prompt
+
+_SpiritAppearedFirstLine::
+	db "Esprit@"
+	done
+
+_SpiritAppearedNextLine::
+	text "@"
 	text_ram wEnemyMonNick
 	text_start
 	cont "attaque!"
 	prompt
 
-_SpiritAppearedNextLine::
-	text_end
-	text_jump _WildMonAppearedTextEnd
-
 _SpiritAppeared::
-	text_end
-	line "@"
+	text "@"
 	text_ram wEnemyMonNick
 	text " attaque!"
 	prompt
 
 _TorchedAppeared::
-	text "Esprit flamboyant@"
+	text "@"
+	text_call _SpiritAppearedFirstLine
+	text " flamboyant"
+	line "@"
 	text_jump _SpiritAppeared
 
 _ChunkyAppeared::
-	text "Esprit affamé@"
+	text "@"
+	text_call _SpiritAppearedFirstLine
+	text " affamé@"
+	line "@"
 	text_jump _SpiritAppeared
 
 _PainlessAppeared::
-	text "Esprit blessé@"
+	text "@"
+	text_call _SpiritAppearedFirstLine
+	text " blessé@"
+	line "@"
 	text_jump _SpiritAppearedNextLine
 
 _IrradiatedAppeared::
-	text "Esprit irradié@"
-	text_jump _SpiritAppearedNextLine
+	text "@"
+	text_call _SpiritAppearedFirstLine
+	text " irradié@"
+	line "@"
+	text_jump _SpiritAppeared
 
 _TheMawAppeared::
-	text "Esprit sombre@"
+	text "@"
+	text_call _SpiritAppearedFirstLine
+	text " sombre@"
+	line "@"
 	text_jump _SpiritAppeared
 
 _SaveFileUpdateText::

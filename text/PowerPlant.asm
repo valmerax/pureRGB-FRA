@@ -123,3 +123,10 @@ _MagnetMagnetonText3::
 	cont "aux attaques de"
 	cont "type SOL!"
 	done
+
+_PowerPlantRoofSignText::
+	text "ATTENTION AUX"
+	line "TRANSFORMATEURS"
+	cont "HAUTE TENSION"
+	cont "SUR LE TOIT"
+	done

@@ -99,21 +99,21 @@ TransferSpecificAnimPalette::
 	ld b, d
 	jr SetAttackAnimPal.gotPalette
 .notGBC
+	ld a, d
 	; on SGB or GB
 	; we will only transfer the color once per animation since it's slow
 	; this means no multi-color-cycling prism ball on SGB
 	ld hl, wBallAnimSGBColorLoadFlag
 	bit 1, [hl]
-	ld b, SET_PAL_BATTLE
+	ld d, SET_PAL_BATTLE
 	jr nz, .fullAnim
-	ld b, SET_PAL_GENERIC
+	ld d, SET_PAL_GENERIC
 	jr .skip
 .fullAnim
 	bit 0, [hl]
 	set 0, [hl]
 	ret nz
 .skip
-	ld a, d
 	ld [wGenericPaletteOverride], a
 	jp RunPaletteCommand
 
@@ -244,7 +244,7 @@ SetAttackAnimPal_resetPalettes:
 	ld b, 4
 .loop2
 	ldh a, [rLCDC]
-	and 1 << rLCDC_ENABLE
+	and LCDC_ON
 	jr z, .lcd_dis
 	;lcd in enabled otherwise
 .wait1

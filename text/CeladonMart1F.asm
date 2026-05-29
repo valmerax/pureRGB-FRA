@@ -8,6 +8,13 @@ _CeladonMart1FReceptionistText::
 	line "droite décrit les"
 	cont "différents rayons"
 	cont "du magasin."
+
+	para "Je serais ravi de"
+	line "vous aider aussi!"
+	done
+
+_CeladonMart1FReceptionistText2::
+	text "A votre service!"
 	done
 
 _CeladonMart1FCurrentFloorSignText::
@@ -31,7 +38,7 @@ _CeladonMart3FCurrentFloorSignText::
 
 _CeladonMart4FDirectorySignText::
 	text "3ème: CADEAUX"
-	prompt
+	done
 
 _CeladonMart5FCurrentFloorSignText::
 	text "4ème: MEDICAMENTS"
@@ -40,6 +47,36 @@ _CeladonMart5FCurrentFloorSignText::
 _CeladonMartRoofCurrentFloorSignText::
 	text "DERNIER ETAGE:"
 	line "DISTRIBUTEURS"
+	done
+
+_CeladonMart1FCurrentFloorClerkText::
+	text "Where I work!"
+	line "You're here now!"
+	done
+
+_CeladonMart2FDirectoryClerkText::
+	text "So many great TMs!"
+	line "What a steal!"
+	done
+
+_CeladonMart3FCurrentFloorClerkText::
+	text "The floor for"
+	line "video game lovers!"
+	done
+
+_CeladonMart4FDirectoryClerkText::
+	text "Buy a gift for"
+	line "your sweetie here!"
+	done
+
+_CeladonMart5FCurrentFloorClerkText::
+	text "Vitamins for your"
+	line "cute #MON here!"
+	done
+
+_CeladonMartRoofCurrentFloorClerkText::
+	text "Relax seeing the"
+	line "CELADON skyline!"
 	done
 
 _CeladonMartUsePhoneText::
@@ -239,43 +276,3 @@ _CeladonMartCallMomGoodbyeSweetSon::
 _CeladonMartCallMomGoodbyeComplete::
 	text "Au revoir!"
 	prompt
-
-_CeladonMartCallDadText::
-	text "PAPA: C'est qui?"
-	para "<PLAYER>?"
-	para "Tu es parti sans"
-	line "dire au revoir à"
-	cont "ton vieux!"
-	para "Haha, je sais que"
-	line "tu avais hâte"
-	cont "d'aller capturer"
-	cont "des #MON."
-	para "J'ai entendu dire"
-	line "que tu as choisi"
-	cont "@"
-	text_ram_namebuffer
-	text "!"
-	prompt
-
-_CeladonMartCallDadText2::
-	text "Tu as donc @"
-	text_ram w2CharStringBuffer
-	text " "
-	line "badges<...>"
-	para "Je suis"
-	line "impressionné!"
-	para "Tu t'en sors très"
-	line "bien!"
-	para "Continue comme ça!"
-	para "Je suis à la"
-	line "maison en ce"
-	cont "moment, pourquoi"
-	cont "tu ne viendrai"
-	cont "pas me voir?"
-	para "On pourra jouer à"
-	line "KIRBY SUPER STAR"
-	cont "sur la SNES."
-	para "Je t'attends!"
-	line "A bientôt!"
-	prompt
-

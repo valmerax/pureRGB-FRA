@@ -10,9 +10,7 @@ CeladonGym_Script:
 
 ; PureRGBnote: ADDED: code that keeps the cut trees cut down if we're in their alcove. Prevents getting softlocked if you delete cut.
 CeladonGymCheckHideCutTrees:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl] ; did we load the map from a save/warp/door/battle, etc?
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	ret z
 	ld de, CeladonGymCutAlcove
 	callfar FarArePlayerCoordsInRange
@@ -25,19 +23,19 @@ CeladonGymCheckHideCutTrees:
 .removeTreeBlockers
 	CheckEvent EVENT_CUT_DOWN_CELADON_GYM_LEFT_TREE
 	jr z, .bottomTreeCheck
-	lb bc, 2, 1
+	lb de, 2, 1
 	ld a, $35
 	call .replaceTileBlock
 .bottomTreeCheck
 	CheckEvent EVENT_CUT_DOWN_CELADON_GYM_BOTTOM_TREE
 	jr z, .rightTreeCheck
-	lb bc, 3, 2
+	lb de, 3, 2
 	ld a, $35
 	call .replaceTileBlock
 .rightTreeCheck
 	CheckEvent EVENT_CUT_DOWN_CELADON_GYM_RIGHT_TREE
 	jr z, .done
-	lb bc, 2, 3
+	lb de, 2, 3
 	ld a, $36
 	call .replaceTileBlock
 .done
@@ -46,15 +44,7 @@ CeladonGymCheckHideCutTrees:
 	jpfar RedrawMapView
 .replaceTileBlock
 	ld [wNewTileBlockID], a
-	predef_jump ReplaceTileBlockNoRedraw
-	
-
-CeladonGymResetScripts:
-	xor a ; SCRIPT_CELADONGYM_DEFAULT
-	ld [wJoyIgnore], a
-	ld [wCeladonGymCurScript], a
-	ld [wCurMapScript], a
-	ret
+	jpfar ReplaceTileBlockNoRedraw
 
 CeladonGym_ScriptPointers:
 	def_script_pointers
@@ -62,6 +52,12 @@ CeladonGym_ScriptPointers:
 	dw_const DisplayEnemyTrainerTextAndStartBattle, SCRIPT_CELADONGYM_START_BATTLE
 	dw_const EndTrainerBattle,                      SCRIPT_CELADONGYM_END_BATTLE
 	dw_const CeladonGymErikaPostBattleScript,       SCRIPT_CELADONGYM_ERIKA_POST_BATTLE
+	
+
+CeladonGymResetScripts:
+	call ResetMapScripts
+	ld [wCeladonGymCurScript], a ; SCRIPT_CELADONGYM_DEFAULT
+	ret
 
 CeladonGymErikaPostBattleScript:
 	ld hl, wCurrentMapScriptFlags
@@ -69,9 +65,8 @@ CeladonGymErikaPostBattleScript:
 	call GBFadeInFromWhite ; PureRGBnote: ADDED: since trainer instantly talks to us after battle we need to fade back in here
 	ld a, [wIsInBattle]
 	cp $ff
-	jp z, CeladonGymResetScripts
-	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
-	ld [wJoyIgnore], a
+	jr z, CeladonGymResetScripts
+	call DisableDpad
 
 CeladonGymReceiveTM21:
 	ld d, CELADONGYM_ERIKA
@@ -102,7 +97,7 @@ CeladonGymReceiveTM21:
 	ld a, CELADONGYM_ERIKA
 	ldh [hSpriteIndex], a
 	call SetSpriteMovementBytesToFF
-	jp CeladonGymResetScripts
+	jr CeladonGymResetScripts
 
 CeladonGym_TextPointers:
 	def_text_pointers
@@ -197,10 +192,25 @@ CeladonGymTM21NoRoomText:
 	text_end
 
 CeladonGymCooltrainerF1Text:
-	text_asm
-	ld hl, CeladonGymTrainerHeader0
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer CeladonGymTrainerHeader0
+
+CeladonGymBeauty1Text:
+	script_trainer CeladonGymTrainerHeader1
+
+CeladonGymCooltrainerF2Text:
+	script_trainer CeladonGymTrainerHeader2
+
+CeladonGymBeauty2Text:
+	script_trainer CeladonGymTrainerHeader3
+
+CeladonGymCooltrainerF3Text:
+	script_trainer CeladonGymTrainerHeader4
+
+CeladonGymBeauty3Text:
+	script_trainer CeladonGymTrainerHeader5
+
+CeladonGymCooltrainerF4Text:
+	script_trainer CeladonGymTrainerHeader6
 
 CeladonGymBattleText2:
 	text_far _CeladonGymBattleText2
@@ -224,12 +234,6 @@ CeladonGymAfterBattleText2:
 	text_far _CeladonGymAfterBattleText2
 	text_end
 
-CeladonGymBeauty1Text:
-	text_asm
-	ld hl, CeladonGymTrainerHeader1
-	call TalkToTrainer
-	rst TextScriptEnd
-
 CeladonGymBattleText3:
 	text_far _CeladonGymBattleText3
 	text_end
@@ -241,12 +245,6 @@ CeladonGymEndBattleText3:
 CeladonGymAfterBattleText3:
 	text_far _CeladonGymAfterBattleText3
 	text_end
-
-CeladonGymCooltrainerF2Text:
-	text_asm
-	ld hl, CeladonGymTrainerHeader2
-	call TalkToTrainer
-	rst TextScriptEnd
 
 CeladonGymBattleText4:
 	text_far _CeladonGymBattleText4
@@ -260,12 +258,6 @@ CeladonGymAfterBattleText4:
 	text_far _CeladonGymAfterBattleText4
 	text_end
 
-CeladonGymBeauty2Text:
-	text_asm
-	ld hl, CeladonGymTrainerHeader3
-	call TalkToTrainer
-	rst TextScriptEnd
-
 CeladonGymBattleText5:
 	text_far _CeladonGymBattleText5
 	text_end
@@ -277,12 +269,6 @@ CeladonGymEndBattleText5:
 CeladonGymAfterBattleText5:
 	text_far _CeladonGymAfterBattleText5
 	text_end
-
-CeladonGymCooltrainerF3Text:
-	text_asm
-	ld hl, CeladonGymTrainerHeader4
-	call TalkToTrainer
-	rst TextScriptEnd
 
 CeladonGymBattleText6:
 	text_far _CeladonGymBattleText6
@@ -296,12 +282,6 @@ CeladonGymAfterBattleText6:
 	text_far _CeladonGymAfterBattleText6
 	text_end
 
-CeladonGymBeauty3Text:
-	text_asm
-	ld hl, CeladonGymTrainerHeader5
-	call TalkToTrainer
-	rst TextScriptEnd
-
 CeladonGymBattleText7:
 	text_far _CeladonGymBattleText7
 	text_end
@@ -313,12 +293,6 @@ CeladonGymEndBattleText7:
 CeladonGymAfterBattleText7:
 	text_far _CeladonGymAfterBattleText7
 	text_end
-
-CeladonGymCooltrainerF4Text:
-	text_asm
-	ld hl, CeladonGymTrainerHeader6
-	call TalkToTrainer
-	rst TextScriptEnd
 
 CeladonGymBattleText8:
 	text_far _CeladonGymBattleText8

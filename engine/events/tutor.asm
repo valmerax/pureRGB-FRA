@@ -44,7 +44,7 @@ MoveTutorScript::
 	ld a, [hl] ; a = selected pokemon's species
 	ld b, a ; b = selected pokemon's index (species)
 	ld [wPokedexNum], a
-	predef IndexToPokedex
+	call IndexToPokedex
 	ld a, [wPokedexNum]
 	ld c, a ; c = selected pokemon's dex number
 	pop hl ; pop which list should be used into hl from de
@@ -68,11 +68,9 @@ MoveTutorScript::
 	; hl = flag array for all pokemon for the given move, check current pokemon's dex ID against this array
 	ld b, FLAG_TEST
 	; c = pokemon's dex number, aka which bit to check in flag array
-	call FlagAction ; calling FlagAction relies on this code being within Bank 3. Otherwise we need to copy the learnset data to wram and do FlagActionPredef.
+	call FlagAction
 	pop de
 	pop hl
-	ld a, c
-	and a
 	pop bc
 	jr .continue
 .onlyDittoCant
@@ -189,7 +187,7 @@ MoveTutorScript::
 	inc a
 	ld [wMenuWrappingEnabled], a
 	ldh [hJoy7], a ; allow holding down the menu navigation buttons
-	ld a, A_BUTTON | B_BUTTON
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	ld hl, hUILayoutFlags
 	set BIT_DOUBLE_SPACED_MENU, [hl]
@@ -200,7 +198,7 @@ MoveTutorScript::
 	xor a
 	ldh [hJoy7], a
 	ldh a, [hJoy5]
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	ld d, 0
 	ret nz
 	; grab the chosen move from the list

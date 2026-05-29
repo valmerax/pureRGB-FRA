@@ -29,9 +29,7 @@ SafariZoneCenter_TextPointers:
 	dw_const SafariZoneCenterTrainerTipsSignText, TEXT_SAFARIZONECENTER_TRAINER_TIPS_SIGN
 
 CheckModifySafariWildRate:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	ret z
 	ld a, [wSafariType]
 	and a
@@ -95,26 +93,16 @@ SafariZoneCenterRangerText0:
 	rst TextScriptEnd
 
 SafariZoneCenterTrainerText0:
-	text_asm
-	ld hl, SafariZoneCenterTrainerHeader0
-	jr SafariZoneCenterTalkToTrainer
+	script_trainer SafariZoneCenterTrainerHeader0
 
 SafariZoneCenterTrainerText1:
-	text_asm
-	ld hl, SafariZoneCenterTrainerHeader1
-	jr SafariZoneCenterTalkToTrainer
+	script_trainer SafariZoneCenterTrainerHeader1
 
 SafariZoneCenterTrainerText2:
-	text_asm
-	ld hl, SafariZoneCenterTrainerHeader2
-	jr SafariZoneCenterTalkToTrainer
+	script_trainer SafariZoneCenterTrainerHeader2
 
 SafariZoneCenterTrainerText3:
-	text_asm
-	ld hl, SafariZoneCenterTrainerHeader3
-SafariZoneCenterTalkToTrainer:
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer SafariZoneCenterTrainerHeader3
 
 SafariZoneCenterRangerBattleText0:
 	text_far _SafariZoneCenterRangerText

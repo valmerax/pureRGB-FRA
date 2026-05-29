@@ -12,12 +12,19 @@ _CeruleanBadgeHouseMiddleAgedManText::
 	cont "pouvoirs!"
 	prompt
 
-_CeruleanBadgeHouseMiddleAgedManWhichBadgeText::
+_CeruleanBadgeHouseNowThenText::
 	text "Dis-moi<...>"
+	done
 
-	para "Lequel des 8"
+_CeruleanBadgeHouseMiddleAgedManWhichBadgeText::
+	text "<PARA>Lequel des 8"
 	line "BADGES veux-tu"
 	cont "que je décrive?"
+	done
+
+_CeruleanBadgeHouseAnyMoreText::
+	text "<PARA>Besoin d'infos sur"
+	line "d'autres BADGES?"
 	done
 
 _CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText::
@@ -26,77 +33,29 @@ _CeruleanBadgeHouseMiddleAgedManVisitAnyTimeText::
 	done
 
 _CeruleanBadgeHouseBoulderBadgeText::
-	text "L'ATTAQUE de tous"
-	line "tes #MON est"
-	cont "augmentée."
-
-	para "Il permet aussi"
-	line "d'utiliser la CS"
-	cont "FLASH."
-	prompt
+	text "L'ATTAQUE@"
+	text_jump _CeruleanBadgeHouseIncreasesALittleBit
 
 _CeruleanBadgeHouseCascadeBadgeText::
-	text "Les #MON d'un"
-	line "niveau inférieur"
-	cont "à 30 t'obéiront."
-
-	para "S'ils sont d'un"
-	line "niveau supérieur,"
-	cont "ils seront"
-	cont "incontrôlables!"
-
-	para "Tu pourras aussi"
-	line "utiliser la CS"
-	cont "COUPE en-dehors"
-	cont "des combats."
-	prompt
+	text_call _CeruleanBadgeHouseUpToLevel
+	text "@"
+	text_jump _CeruleanBadgeHouseAlsoLetsYouUseHM
 
 _CeruleanBadgeHouseThunderBadgeText::
-	text "La VITESSE de"
-	line "tous tes #MON"
-	cont "sera un peu"
-	cont "augmentée."
-
-	para "Tu pourras aussi"
-	line "utiliser la CS"
-	cont "VOL en-dehors des"
-	cont "combats."
-	prompt
+	text "La VITESSE@"
+	text_jump _CeruleanBadgeHouseIncreasesALittleBit
 
 _CeruleanBadgeHouseRainbowBadgeText::
-	text "Les #MON"
-	line "jusqu'au niveau"
-	cont "50 t'obéiront."
-
-	para "Ceux d'un niveau"
-	line "supérieur seront"
-	cont "incontrôlables!"
-
-	para "Tu pourras aussi"
-	line "utiliser la CS"
-	cont "FORCE."
-	prompt
+	text_call _CeruleanBadgeHouseUpToLevel
+	text "@"
+	text_jump _CeruleanBadgeHouseAlsoLetsYouUseHM
 
 _CeruleanBadgeHouseSoulBadgeText::
-	text "La DEFENSE de"
-	line "tous tes #MON"
-	cont "sera augmentée."
-
-	para "Tu pourras aussi"
-	line "utiliser la CS"
-	cont "SURF en-dehors"
-	cont "des combats."
-	prompt
+	text "La DEFENSE@"
+	text_jump _CeruleanBadgeHouseIncreasesALittleBit
 
 _CeruleanBadgeHouseMarshBadgeText::
-	text "Les #MON de"
-	line "niveau 70 ou"
-	cont "moins t'obéiront."
-
-	para "S'ils sont d'un"
-	line "niveau supérieur,"
-	cont "ils seront"
-	cont "incontrôlables!"
+	text_call _CeruleanBadgeHouseUpToLevel
 	prompt
 
 _CeruleanBadgeHouseVolcanoBadgeText::
@@ -109,6 +68,33 @@ _CeruleanBadgeHouseEarthBadgeText::
 	text "Tous les #MON"
 	line "obéiront à tes"
 	cont "ordres!"
+	prompt
+
+_CeruleanBadgeHouseUpToLevel::
+	db "Les #MON"
+	line "jusqu'au niveau"
+	cont "@"
+	text_decimal w2CharStringBuffer, 1, 2
+	text " t'obéiront."
+
+	para "S'ils sont d'un"
+	line "niveau supérieur,"
+	cont "ils seront"
+	cont "incontrôlables!"
+	done
+
+_CeruleanBadgeHouseIncreasesALittleBit::
+	text " de"
+	line "tous tes #MON"
+	cont "sera un peu"
+	cont "augmentée."
+_CeruleanBadgeHouseAlsoLetsYouUseHM::
+	para "Tu pourras aussi"
+	line "utiliser la CS"
+	cont "@"
+	text_ram wNameBuffer
+	text " en-dehors"
+	cont "des combats.
 	prompt
 
 _GarbageCrumpledUpPaper::

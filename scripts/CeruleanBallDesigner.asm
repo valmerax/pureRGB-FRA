@@ -1,10 +1,6 @@
 CeruleanBallDesigner_Script:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
-	jr z, .mapLoaded
-	call CeruleanBallDesignerLoadExtraTiles
-.mapLoaded
+	call WasMapJustLoaded
+	call nz, CeruleanBallDesignerLoadExtraTiles
 	jp EnableAutoTextBoxDrawing
 
 CeruleanBallDesignerLoadExtraTiles::
@@ -22,7 +18,7 @@ CeruleanBallDesignerLoadExtraSprites::
 	cp 14
 	ld b, 0
 	jr c, .skip
-	CheckExtraHideShowState HS_CERULEAN_BALL_DESIGNER_CAMERA
+	CheckExtraHideShowState TOGGLE_CERULEAN_BALL_DESIGNER_CAMERA
 	ld b, 3
 	jr nz, .skip
 	ld hl, vNPCSprites tile $7C
@@ -80,12 +76,10 @@ CeruleanBallDesignerCameraText:
 	call GiveItem
 	ld hl, .noMoreRoom
 	jr nc, .printDone
-	ld a, HS_CERULEAN_BALL_DESIGNER_CAMERA
-	ld [wMissableObjectIndex], a
-	predef HideExtraObject
-	ld a, HS_CERULEAN_BALL_DESIGNER_CLIPBOARD
-	ld [wMissableObjectIndex], a
-	predef ShowExtraObject
+	ld c, TOGGLE_CERULEAN_BALL_DESIGNER_CAMERA
+	call HideExtraObject
+	ld c, TOGGLE_CERULEAN_BALL_DESIGNER_CLIPBOARD
+	call ShowExtraObject
 	SetEvent EVENT_CERULEAN_BALL_DESIGNER_GOT_CAMERA
 	ld hl, CeruleanBallDesignerDesignerText.received
 .printDone
@@ -184,7 +178,7 @@ CeruleanBallDesignerDesignerText:
 	; all custom balls unlocked
 	ld hl, .thanksForHelpMakeYourOwn
 	rst _PrintText
-	CheckExtraHideShowState HS_CERULEAN_BALL_DESIGNER_CAMERA
+	CheckExtraHideShowState TOGGLE_CERULEAN_BALL_DESIGNER_CAMERA
 	jr z, .done
 	call DisplayTextPromptButton
 	ld hl, .cameraBack
@@ -205,9 +199,8 @@ CeruleanBallDesignerDesignerText:
 	ld a, CAMERA
 	ldh [hItemToRemoveID], a
 	farcall RemoveItemByID
-	ld a, HS_CERULEAN_BALL_DESIGNER_CAMERA
-	ld [wMissableObjectIndex], a
-	predef ShowExtraObject
+	ld c, TOGGLE_CERULEAN_BALL_DESIGNER_CAMERA
+	call ShowExtraObject
 	ld hl, .thanksBorrowCameraAgain
 	rst _PrintText
 	rst TextScriptEnd
@@ -250,15 +243,14 @@ CeruleanBallDesignerDesignerText:
 	callfar CopyFullCustomBallNameToStringBuffer
 	ld hl, .designedBall
 	rst _PrintText
-	ld a, HS_CERULEAN_BALL_DESIGNER_CLIPBOARD2
-	ld [wMissableObjectIndex], a
-	predef ShowExtraObject
+	ld c, TOGGLE_CERULEAN_BALL_DESIGNER_CLIPBOARD2
+	call ShowExtraObject
 	SetEvent EVENT_UNLOCKED_AT_LEAST_ONE_CUSTOM_BALL
 	pop af
 	ld b, FLAG_SET
 	ld c, a
 	ld hl, wCustomBallUnlockFlags
-	predef FlagActionPredef
+	call FlagAction
 	rst TextScriptEnd
 .checkForBallUnlockEvent
 	; compare unlocked custom balls to snapped pictures, if we've snapped one but not unlocked it, do the associated unlock event
@@ -267,16 +259,12 @@ CeruleanBallDesignerDesignerText:
 .loopTestBallUnlocks
 	push bc
 	ld hl, wCustomBallPhotoSnappedFlags
-	predef FlagActionPredef
-	ld a, c
-	and a
+	call FlagAction
 	pop bc
 	jr z, .goToNextBall
 	push bc
 	ld hl, wCustomBallUnlockFlags
-	predef FlagActionPredef
-	ld a, c
-	and a
+	call FlagAction
 	pop bc
 	jr z, .foundNotUnlockedBall
 .goToNextBall
@@ -511,12 +499,12 @@ CeruleanBallDesignerClipboard2Text:
 	xor a
 	ld [wLastMenuItem], a
 	ld [wMenuWatchMovingOutOfBounds], a
-	ld a, A_BUTTON | B_BUTTON
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	call HandleMenuInput
 	call EnableTextDelay
 	ldh a, [hJoy5]
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	jp nz, TextScriptEndNoButtonPress
 	call PlaceUnfilledArrowMenuCursor
 	ld a, [wCurrentMenuItem]
@@ -705,7 +693,7 @@ CeruleanBallDesignerSwitchBallMenu:
 	inc a
 	ldh [hJoy7], a
 	ld [wMenuWrappingEnabled], a
-	ld a, A_BUTTON | B_BUTTON
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	ld a, 4
 	ld [wTopMenuItemY], a
@@ -734,7 +722,7 @@ CeruleanBallDesignerSwitchBallMenu:
 	ldh [hJoy7], a
 	pop bc
 	ldh a, [hJoy5]
-	bit BIT_B_BUTTON, a
+	bit B_PAD_B, a
 	jp nz, .exitNoButtonPress
 	ld a, [wCurrentMenuItem]
 	CheckEventHL EVENT_UNLOCKED_AT_LEAST_ONE_CUSTOM_BALL
@@ -1001,15 +989,15 @@ CeruleanBallDesignerCustomizeBallMenu:
 InitializeCustomPokeballData::
 	; initialize the custom pokeball names in the sram save data. We cannot permanently store them in wram due to their size.
 	; instead we will copy them over to wram only when displaying the customization menus.
-	ld a, SRAM_ENABLE
-  	ld [MBC1SRamEnable], a
+	ld a, RAMG_SRAM_ENABLE
+  	ld [rRAMG], a
   	ld a, $1
-  	ld [MBC1SRamBankingMode], a
+  	ld [rBMODE], a
   	xor a
-	ld [MBC1SRamBank], a
+	ld [rRAMB], a
 	; initialize the ball names to be blank
 	ld hl, sCustomBallNames
-	ld a, "@"
+	ld a, '@'
 	ld bc, NUM_CUSTOM_BALLS * NAME_LENGTH
 	call FillMemory
 	; then copy over the default names
@@ -1027,8 +1015,8 @@ InitializeCustomPokeballData::
 	dec b
 	jr nz, .loopCopyNames
    	xor a
-  	ld [MBC1SRamBankingMode], a
-  	ld [MBC1SRamEnable], a
+  	ld [rBMODE], a
+  	ld [rRAMG], a
   	; also initialize the data associated with them, aka the settings for each ball that can be customized
   	ld hl, InitialCustomBallData
   	ld de, wCustomPokeballSettings
@@ -1184,9 +1172,7 @@ IsBallPropertyUnlocked::
 	ld c, b
 	ld b, FLAG_TEST
 	ld hl, wCustomBallUnlockFlags
-	predef FlagActionPredef
-	ld a, c
-	and a
+	call FlagAction
 	pop bc
 	pop hl
 	jr z, .continue

@@ -19,13 +19,11 @@ PowerPlant_Script:
 	ret
 
 PowerPlantOnMapLoad:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	ret z
 	CheckEvent EVENT_BEAT_ZAPDOS
 	jr nz, .noPowerOutage
-	CheckHideShowState HS_ZAPDOS
+	CheckHideShowState TOGGLE_ZAPDOS
 	jr z, .noPowerOutage
 	ld a, 3
 	ld [wMapPalOffset], a ; make the area look dark
@@ -71,7 +69,7 @@ PowerPlantReplaceBottomGateBlock:
 PowerPlantReplaceTileBlockEntry:
 	push de
 	ld [wNewTileBlockID], a
-	predef ReplaceTileBlock
+	call ReplaceTileBlock
 	pop de
 	ret
 
@@ -215,7 +213,7 @@ CopyMenuSpritesVideoData:
 	call CopyVideoData
 	pop bc
 	pop hl
-	ld a, LEN_2BPP_TILE * 4
+	ld a, TILE_SIZE * 4
 	ld d, 0
 	ld e, a
 	add hl, de
@@ -223,7 +221,7 @@ CopyMenuSpritesVideoData:
 	ld e, l
 	pop hl
 	push de
-	ld a, LEN_2BPP_TILE * 2
+	ld a, TILE_SIZE * 2
 	ld d, 0
 	ld e, a
 	add hl, de
@@ -419,12 +417,10 @@ ZapdosAbsorbAnimation:
 	lb bc, BANK(MoveAnimationTiles0), 1
 	call CopyVideoData
 	; show two voltorb sprites that have to be hidden at this point and move them into view visually
-	ld a, HS_ELECTRODE_1
-	ld [wMissableObjectIndex], a
-	predef ShowObject
-	ld a, HS_VOLTORB_4
-	ld [wMissableObjectIndex], a
-	predef ShowObject
+	ld c, TOGGLE_ELECTRODE_1
+	call ShowObject
+	ld c, TOGGLE_VOLTORB_4
+	call ShowObject
 	ld hl, wSprite04StateData2MapY
 	ld a, [wYCoord]
 	add 4 
@@ -472,10 +468,10 @@ ZapdosAbsorbAnimation:
 	ld a, BANK(Music_Dungeon1)
 	ld [wAudioROMBank], a
 
-	ld a, HS_ELECTRODE_1
-	call PowerPlantHideSpriteEntry
-	ld a, HS_VOLTORB_4
-	call PowerPlantHideSpriteEntry
+	ld c, TOGGLE_ELECTRODE_1
+	call HideObject
+	ld c, TOGGLE_VOLTORB_4
+	call HideObject
 	call GBPalWhiteOut
 	rst _DelayFrame
 	ld a, 3
@@ -517,8 +513,8 @@ ZapdosAbsorbAnimation:
 	rst _DelayFrame
 	dec b
 	jr nz, .loopFliesAway
-	ld a, HS_ZAPDOS
-	call PowerPlantHideSpriteEntry
+	ld c, TOGGLE_ZAPDOS
+	call HideObject
 	; bring back original pokeball sprite
 	ld hl, vNPCSprites tile $78
 	ld de, PokeBallSprite
@@ -533,10 +529,6 @@ ZapdosAbsorbAnimation:
 	ld [wPowerPlantCurScript], a
 	ld [wCurMapScript], a
 	ret
-
-PowerPlantHideSpriteEntry:
-	ld [wMissableObjectIndex], a
-	predef_jump HideObject
 
 PowerPlantZapdosFlewAwayText:
 	text_far _ZapdosFlewAway
@@ -590,7 +582,7 @@ PowerPlantMagnet::
 	cp SCRIPT_MAGNETON_SUPERCHARGE
 	ret nz
 	; make player walk down one step
-	ld a, D_DOWN
+	ld a, PAD_DOWN
 	ld hl, wSimulatedJoypadStatesEnd
 	ld [hli], a
 	ld [hl], -1
@@ -669,9 +661,8 @@ MagnetonSuperchargeAnimation:
 	ld [wPlayerMovingDirection], a
 	call UpdateSprites
 	; show magneton sprite by reusing a hidden electrode NPC, then make it float up a bit
-	ld a, HS_ELECTRODE_1
-	ld [wMissableObjectIndex], a
-	predef ShowObject
+	ld c, TOGGLE_ELECTRODE_1
+	call ShowObject
 	ld hl, wSprite04StateData2MapY
 	ld a, [wYCoord]
 	add 3 
@@ -701,8 +692,8 @@ MagnetonSuperchargeAnimation:
 	ld c, 60
 	rst _DelayFrames
 	call .doBallPoof
-	ld a, HS_ELECTRODE_1
-	call PowerPlantHideSpriteEntry
+	ld c, TOGGLE_ELECTRODE_1
+	call HideObject
 	; bring back original pokeball sprite
 	call .loadPokeballSprite
 	; reset script

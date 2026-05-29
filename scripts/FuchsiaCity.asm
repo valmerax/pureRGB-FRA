@@ -11,29 +11,24 @@ FuchsiaCityDefaultScript:
 	bit BIT_CROSSED_MAP_CONNECTION, [hl] ; did we enter the map by traversal from another route
 	res BIT_CROSSED_MAP_CONNECTION, [hl]
 	jr nz, .removeAddCutTilesNoRedraw
-	bit BIT_CUR_MAP_LOADED_1, [hl] ; did we load the map from a save/warp/door/battle, etc?
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	jr nz, .removeAddCutTiles
 ; PureRGBnote: ADDED: ERIK can walk away after you tell him where SARA is.
 	; check if ERIK is walking away
 	CheckEventHL EVENT_ERIK_LEAVING
 	ret z
-	ld a, $FF
-	ld [wJoyIgnore], a
+	call DisableAllJoypad
 	ld a, [wStatusFlags5]
 	bit BIT_SCRIPTED_NPC_MOVEMENT, a
 	ret nz
 	ResetEventReuseHL EVENT_ERIK_LEAVING
-	xor a
-	ld [wJoyIgnore], a
+	call EnableAllJoypad
 	; hide erik sprite
-	ld a, HS_FUCHSIA_ERIK
-	ld [wMissableObjectIndex], a
-	predef HideExtraObject
-	ld a, HS_SAFARI_ZONE_CENTER_REST_HOUSE_ERIK
-	ld [wMissableObjectIndex], a
+	ld c, TOGGLE_FUCHSIA_ERIK
+	call HideExtraObject
+	ld c, TOGGLE_SAFARI_ZONE_CENTER_REST_HOUSE_ERIK
 	; show erik in safari zone sprite
-	predef_jump ShowExtraObject
+	jp ShowExtraObject
 .removeAddCutTiles
 	CheckEvent EVENT_DELETED_FUCHSIA_TREES
 	jr z, .firstLoadCommon
@@ -102,14 +97,13 @@ FuchsiaCityYoungster1Text:
 	text_asm
 	ld a, [wOptions2]
 	bit BIT_ALT_PKMN_PALETTES, a ; do we have alt palettes enabled
-	jr nz, .altPalettes
 	ld hl, .didYouTrySafariText
-	jr .done
+	jr z, .printDone
 .altPalettes
 	ld hl, .didYouTrySafariPromptText
 	rst _PrintText
 	ld hl, .manyHaveUniqueColorsText
-.done
+.printDone
 	rst _PrintText
 	rst TextScriptEnd
 

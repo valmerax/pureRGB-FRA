@@ -1,9 +1,7 @@
 ; PureRGBnote: ADDED: You can now eat in the SS Anne Kitchen.
 SSAnneKitchen_Script:
 	call EnableAutoTextBoxDrawing
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	jr z, .notLoaded
 .reroll
 	; get a random value which will decide what text the randomized text chef will say first.
@@ -14,8 +12,7 @@ SSAnneKitchen_Script:
 .notLoaded
 	CheckEvent EVENT_GENERIC_NPC_WALKING_FLAG
 	ret z
-	ld a, $FF
-	ld [wJoyIgnore], a
+	call DisableAllJoypad
 	ld a, [wStatusFlags5]
 	bit BIT_SCRIPTED_NPC_MOVEMENT, a
 	ret nz
@@ -44,8 +41,6 @@ SSAnneKitchen_Script:
 	jpfar MoveSprite
 .done
 	ResetEvent EVENT_GENERIC_NPC_WALKING_FLAG
-	xor a
-	ld [wJoyIgnore], a
 	; Waiter done walking
 	ld d, SSANNEKITCHEN_WAITER
 	callfar FarNPCSpriteQuickSpin
@@ -60,6 +55,7 @@ SSAnneKitchen_Script:
 	call PlaySoundWaitForCurrent
 	ld c, 60
 	rst _DelayFrames
+	call EnableAllJoypad
 	ld a, TEXT_SSANNEKITCHEN_WAITER_RETURNS
 	ldh [hTextID], a
 	jp DisplayTextID
@@ -75,6 +71,7 @@ SSAnneKitchen_TextPointers:
 	dw_const SSAnneKitchenCook6Text, TEXT_SSANNEKITCHEN_COOK6
 	dw_const SSAnneKitchenCook7Text, TEXT_SSANNEKITCHEN_COOK7
 	dw_const SSAnneKitchenWaiterText, TEXT_SSANNEKITCHEN_WAITER
+	dw_const SSAnneKitchenOnlyTrashHereText, TEXT_SSANNEKITCHEN_ONLY_TRASH_HERE
 	dw_const SSAnneKitchenWaiterReturnsText, TEXT_SSANNEKITCHEN_WAITER_RETURNS
 
 SSAnneKitchenCook1Text:
@@ -150,7 +147,7 @@ SSAnneKitchenWaiterText:
 	rst _PrintText
 	call SaveScreenTilesToBuffer2
 	ld hl, SSAnneFoodMenu
-	ld b, A_BUTTON | B_BUTTON
+	ld b, PAD_A | PAD_B
 	call DisplayMultiChoiceTextBox
 	call LoadScreenTilesFromBuffer2
 	call Delay3
@@ -209,7 +206,7 @@ SSAnneKitchenWaiterReturnsText:
 KitchenReplaceFoodTileBlock:
 	lb bc, 7, 0
 	ld [wNewTileBlockID], a
-	predef_jump ReplaceTileBlock
+	jp ReplaceTileBlock
 
 MovementWaiterWalksRight:
 	db NPC_MOVEMENT_RIGHT, 5
@@ -235,3 +232,7 @@ GetMapSpriteLocation::
 	sub 4
 	ld e, a
 	ret
+
+SSAnneKitchenOnlyTrashHereText:
+	text_far _VermilionGymTrashText
+	text_end

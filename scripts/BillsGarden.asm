@@ -9,9 +9,7 @@ BillsGarden_ScriptPointers:
 	dw_const BillsGardenScript0,  SCRIPT_BILLS_GARDEN_DEFAULT_SCRIPT
 
 BillsGardenScript0:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	jr z, .checkOverHeard
 	CheckEvent EVENT_IN_BILLS_GARDEN
 	ret nz
@@ -353,7 +351,7 @@ BillsGardenBlueText:
 
 	call SaveScreenTilesToBuffer1
 	ld hl, BillsGardenBlueThanks
-	ld b, A_BUTTON
+	ld b, PAD_A
 	call DisplayMultiChoiceTextBox
 	call LoadScreenTilesFromBuffer1
 	ld a, [wCurrentMenuItem]
@@ -578,9 +576,8 @@ BillsGardenDadText:
 	text_asm
 	call SaveScreenTilesToBuffer2
 	SetEvent EVENT_MET_DAD
-	ld a, HS_REDS_HOUSE_1F_DAD
-	ld [wMissableObjectIndex], a
-	predef ShowExtraObject
+	ld c, TOGGLE_REDS_HOUSE_1F_DAD
+	call ShowExtraObject
 	; make MOM face down
 	ld a, BILLS_GARDEN_VARIABLE_GUEST2
 	ld b, SPRITE_FACING_DOWN

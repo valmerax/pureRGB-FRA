@@ -189,3 +189,42 @@ _CeladonMartCallRivalText4::
 	cont "#MON!"
 	para "Tchao minable!"
 	prompt
+
+_CeladonMartCallDadText::
+	text "PAPA: C'est qui?"
+	para "<PLAYER>?"
+	para "Tu es parti sans"
+	line "dire au revoir à"
+	cont "ton vieux!"
+	para "Haha, je sais que"
+	line "tu avais hâte"
+	cont "d'aller capturer"
+	cont "des #MON."
+	para "J'ai entendu dire"
+	line "que tu as choisi"
+	cont "@"
+	text_ram_namebuffer
+	text "!"
+	prompt
+
+_CeladonMartCallDadText2::
+	text "Tu as donc @"
+	text_ram w2CharStringBuffer
+	text " "
+	line "badges<...>"
+	para "Je suis"
+	line "impressionné!"
+	para "Tu t'en sors très"
+	line "bien!"
+	para "Continue comme ça!"
+	para "Je suis à la"
+	line "maison en ce"
+	cont "moment, pourquoi"
+	cont "tu ne viendrai"
+	cont "pas me voir?"
+	para "On pourra jouer à"
+	line "KIRBY SUPER STAR"
+	cont "sur la SNES."
+	para "Je t'attends!"
+	line "A bientôt!"
+	prompt

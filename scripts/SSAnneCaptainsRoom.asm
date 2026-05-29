@@ -86,13 +86,12 @@ SSAnneCaptainsRoomCaptainText:
 	ld a, S_S_TICKET
 	ldh [hItemToRemoveID], a
 	farcall RemoveItemByID
-	ld a, HS_VERMILIONFITNESSCLUB_CLERK
-	call .showObject
-	ld a, HS_VERMILIONFITNESSCLUB_MUSCLE1
-	call .showObject
-	ld a, HS_VERMILIONFITNESSCLUB_JANITOR
-	ld [wMissableObjectIndex], a
-	predef HideExtraObject
+	ld c, TOGGLE_VERMILIONFITNESSCLUB_CLERK
+	call ShowExtraObject
+	ld c, TOGGLE_VERMILIONFITNESSCLUB_MUSCLE1
+	call ShowExtraObject
+	ld c, TOGGLE_VERMILIONFITNESSCLUB_JANITOR
+	call HideExtraObject
 	ld hl, .SSAnneWontBeNeedingThatAnymore
 	jr .printDone
 .bag_full
@@ -103,9 +102,6 @@ SSAnneCaptainsRoomCaptainText:
 	rst _PrintText
 .done
 	rst TextScriptEnd
-.showObject
-	ld [wMissableObjectIndex], a
-	predef_jump ShowExtraObject
 
 .SSAnneCaptainsRoomCaptainFeelingABitBetter
 	text_far _SSAnneCaptainsRoomCaptainFeelingABitBetter

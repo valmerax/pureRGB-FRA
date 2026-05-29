@@ -3,9 +3,7 @@ FightingDojo_Script:
 	ld hl, wCurrentMapScriptFlags
 	CheckEvent EVENT_GENERIC_NPC_WALKING_FLAG
 	jr nz, .MasterWalking
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	jr z, .noMapLoadScript
 	CheckEvent EVENT_OPENED_DOJO_INTERIOR
 	jr z, .noMapLoadScript2
@@ -32,8 +30,7 @@ FightingDojo_Script:
 	bit BIT_SCRIPTED_NPC_MOVEMENT, a
 	ret nz
 	ResetEvent EVENT_GENERIC_NPC_WALKING_FLAG
-	xor a
-	ld [wJoyIgnore], a
+	call EnableAllJoypad
 	ld a, TEXT_FIGHTINGDOJO_KARATE_MASTER_POST_BALL
 	ldh [hTextID], a
 	jp DisplayTextID
@@ -55,13 +52,6 @@ FightingDojo_Script:
 	ResetEvent EVENT_IN_FIGHTING_DOJO_EXPERT_CLUB_BATTLE_LOOP
 	ret
 
-FightingDojoResetScripts:
-	xor a ; SCRIPT_FIGHTINGDOJO_DEFAULT
-	ld [wJoyIgnore], a
-	ld [wFightingDojoCurScript], a
-	ld [wCurMapScript], a
-	ret
-
 FightingDojo_ScriptPointers:
 	def_script_pointers
 	dw_const FightingDojoDefaultScript,                SCRIPT_FIGHTINGDOJO_DEFAULT
@@ -81,11 +71,8 @@ FightingDojoDefaultScript:
 	xor a
 	ldh [hJoyHeld], a
 	ld [wSavedCoordIndex], a
-	ld a, [wYCoord]
-	cp 3
-	ret nz
-	ld a, [wXCoord]
-	cp 4
+	lb de, 4, 3
+	call IsPlayerAtCoords
 	ret nz
 	ld a, 1
 	ld [wSavedCoordIndex], a
@@ -100,29 +87,32 @@ FightingDojoDefaultScript:
 	ldh [hTextID], a
 	jp DisplayTextID
 
+FightingDojoResetScripts:
+	call ResetMapScripts
+	ld [wFightingDojoCurScript], a ; SCRIPT_FIGHTINGDOJO_DEFAULT
+	ret
+
 FightingDojoKarateMasterPostBattleScript:
 	ld a, [wIsInBattle]
 	cp $ff
-	jp z, FightingDojoResetScripts
+	jr z, FightingDojoResetScripts
 	ld a, [wSavedCoordIndex]
 	and a ; nz if the player was at (4, 3), left of the Karate Master
 	jr z, .already_facing
 	ld a, PLAYER_DIR_RIGHT
 	ld [wPlayerMovingDirection], a
 .already_facing
-	ld a, D_RIGHT | D_LEFT | D_UP | D_DOWN
-	ld [wJoyIgnore], a
+	call DisableDpad
 	SetEventRange EVENT_BEAT_KARATE_MASTER, EVENT_BEAT_FIGHTING_DOJO_TRAINER_3
 	ld d, FIGHTINGDOJO_KARATE_MASTER
 	callfar MakeSpriteFacePlayer
+	ld hl, wCurrentMapScriptFlags
+	res BIT_MAP_LOADED_AFTER_BATTLE, [hl]
+	call GBFadeInFromWhite
 	ld a, TEXT_FIGHTINGDOJO_KARATE_MASTER_I_WILL_GIVE_YOU_A_POKEMON
 	ldh [hTextID], a
 	call DisplayTextID
-	xor a ; SCRIPT_FIGHTINGDOJO_DEFAULT
-	ld [wJoyIgnore], a
-	ld [wFightingDojoCurScript], a
-	ld [wCurMapScript], a
-	ret
+	jr FightingDojoResetScripts
 
 FightingDojo_TextPointers:
 	def_text_pointers
@@ -201,7 +191,7 @@ FightingDojoKarateMasterText:
 	ld a, [wYCoord]
 	cp 3
 	jr nz, .noDownWalk
-	ld a, D_DOWN
+	ld a, PAD_DOWN
 	ld hl, wSimulatedJoypadStatesEnd
 	ld [hli], a
 	ld [hl], -1
@@ -274,10 +264,16 @@ FightingDojoKarateMasterText:
 	text_end
 
 FightingDojoBlackbelt1Text:
-	text_asm
-	ld hl, FightingDojoTrainerHeader0
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer FightingDojoTrainerHeader0
+
+FightingDojoBlackbelt2Text:
+	script_trainer FightingDojoTrainerHeader1
+
+FightingDojoBlackbelt3Text:
+	script_trainer FightingDojoTrainerHeader2
+
+FightingDojoBlackbelt4Text:
+	script_trainer FightingDojoTrainerHeader3
 
 FightingDojoBlackbelt1BattleText:
 	text_far _FightingDojoBlackbelt1BattleText
@@ -290,12 +286,6 @@ FightingDojoBlackbelt1EndBattleText:
 FightingDojoBlackbelt1AfterBattleText:
 	text_far _FightingDojoBlackbelt1AfterBattleText
 	text_end
-
-FightingDojoBlackbelt2Text:
-	text_asm
-	ld hl, FightingDojoTrainerHeader1
-	call TalkToTrainer
-	rst TextScriptEnd
 
 FightingDojoBlackbelt2BattleText:
 	text_far _FightingDojoBlackbelt2BattleText
@@ -312,12 +302,6 @@ FightingDojoBlackbelt2AfterBattleText:
 	ld de, MachokeLearnsetText2
 	predef_jump LearnsetTrainerScript
 
-FightingDojoBlackbelt3Text:
-	text_asm
-	ld hl, FightingDojoTrainerHeader2
-	call TalkToTrainer
-	rst TextScriptEnd
-
 FightingDojoBlackbelt3BattleText:
 	text_far _FightingDojoBlackbelt3BattleText
 	text_end
@@ -332,12 +316,6 @@ FightingDojoBlackbelt3AfterBattleText:
 	lb hl, DEX_PRIMEAPE, BLACKBELT
 	ld de, PrimeapeLearnsetText
 	predef_jump LearnsetTrainerScript
-
-FightingDojoBlackbelt4Text:
-	text_asm
-	ld hl, FightingDojoTrainerHeader3
-	call TalkToTrainer
-	rst TextScriptEnd
 
 FightingDojoBlackbelt4BattleText:
 	text_far _FightingDojoBlackbelt4BattleText
@@ -373,8 +351,8 @@ FightingDojoHitmonleePokeBallText:
 	jr nc, .done
 
 	; once Poké Ball is taken, hide sprite
-	ld a, HS_FIGHTING_DOJO_GIFT_1
-	call FightingDojoHideObject
+	ld c, TOGGLE_FIGHTING_DOJO_GIFT_1
+	call HideObject
 	SetEvents EVENT_GOT_HITMONLEE, EVENT_DEFEATED_FIGHTING_DOJO
 	SetEvent EVENT_GENERIC_NPC_WALKING_FLAG
 	ld a, FIGHTINGDOJO_KARATE_MASTER
@@ -411,8 +389,8 @@ FightingDojoHitmonchanPokeBallText:
 	SetEvents EVENT_GOT_HITMONCHAN, EVENT_DEFEATED_FIGHTING_DOJO
 
 	; once Poké Ball is taken, hide sprite
-	ld a, HS_FIGHTING_DOJO_GIFT_2
-	call FightingDojoHideObject
+	ld c, TOGGLE_FIGHTING_DOJO_GIFT_2
+	call HideObject
 	SetEvent EVENT_GENERIC_NPC_WALKING_FLAG
 	ld a, FIGHTINGDOJO_KARATE_MASTER
 	ldh [hSpriteIndex], a
@@ -467,10 +445,10 @@ FightingDojoGoesAroundScrollText::
 
 FightingDojoKarateMasterPostBallText::
 	text_asm
-	ld a, HS_FIGHTING_DOJO_GIFT_1
-	call FightingDojoHideObject
-	ld a, HS_FIGHTING_DOJO_GIFT_2
-	call FightingDojoHideObject
+	ld c, TOGGLE_FIGHTING_DOJO_GIFT_1
+	call HideObject
+	ld c, TOGGLE_FIGHTING_DOJO_GIFT_2
+	call HideObject
 	ld c, 30
 	rst _DelayFrames
 	ld a, [wXCoord]
@@ -506,17 +484,13 @@ KarateMasterGoFightKogaText:
 	text_far _FightingDojoMasterJustATest2
 	text_end
 
-FightingDojoHideObject:
-	ld [wMissableObjectIndex], a
-	predef_jump HideObject
-
 FightingDojoReplaceScrolls:
 	CheckEvent FLAG_CATCHUP_CLUBS_TURNED_OFF
 	ret nz
 	lb bc, 0, 2
 	ld a, $05
 	ld [wNewTileBlockID], a
-	predef_jump ReplaceTileBlock
+	jp ReplaceTileBlock
 
 FightingDojoLoadBetaDojoTiles::
 	ld a, [wXCoord]
@@ -557,31 +531,31 @@ FightingDojoExpertBattleClerkText:
 	jr nc, .done
 .startBattle
 	ld hl, wSimulatedJoypadStatesEnd
-	ld [hl], D_UP
+	ld [hl], PAD_UP
 	inc hl
-	ld [hl], D_LEFT
+	ld [hl], PAD_LEFT
 	inc hl
 	ld c, 3
 	ld a, [wYCoord]
 	cp 5
-	ld b, D_LEFT
+	ld b, PAD_LEFT
 	jr z, .next
 	cp 6
-	ld a, D_UP
+	ld a, PAD_UP
 	ld b, a
 	jr z, .next
 	ld [hli], a
 	ld [hli], a
 	inc c
 	inc c
-	ld b, D_LEFT
+	ld b, PAD_LEFT
 .next
 	ld [hl], b
 	inc hl
 	ld [hl], -1
 	ld a, c
 	ld [wSimulatedJoypadStatesIndex], a
-	call StartSimulatingJoypadStates
+	call StartSimulatingJoypadStatesOnlyAOrBPress
 	SetEvent EVENT_IN_FIGHTING_DOJO_EXPERT_CLUB_BATTLE_LOOP
 .done
 	rst TextScriptEnd

@@ -9,9 +9,7 @@ SeafoamIslandsB4F_Script:
 	jp CallFunctionInTable
 
 SeafoamIslandsB4FOnMapLoad::
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	ret z
 	SetFlag FLAG_MAP_HAS_OVERWORLD_ANIMATION
 	CheckEvent EVENT_SEAFOAM_DRAGONAIR_PRESENT
@@ -40,13 +38,7 @@ SeafoamB4FReplaceEastCurrentBlock:
 	lb bc, 8, 10
 SeafoamReplaceTileBlockEntry:
 	ld [wNewTileBlockID], a
-	predef_jump ReplaceTileBlock
-
-SeafoamIslandsB4FResetScript:
-	xor a
-	ld [wSeafoamIslandsB4FCurScript], a
-	ld [wJoyIgnore], a
-	ret
+	jp ReplaceTileBlock
 
 SeafoamIslandsB4F_ScriptPointers:
 	def_script_pointers
@@ -56,14 +48,18 @@ SeafoamIslandsB4F_ScriptPointers:
 	dw_const SeafoamIslandsB4FEndArticunoBattleScript, SCRIPT_SEAFOAMISLANDSB4F_ARTICUNO_BATTLE_END
 	dw_const SeafoamIslandsB4FDragonairEventStartScript, SCRIPT_SEAFOAMISLANDSB4F_DRAGONAIR_EVENT_START
 
+SeafoamIslandsB4FResetScript:
+	call EnableAllJoypad
+	ld [wSeafoamIslandsB4FCurScript], a
+	ret
+
 SeafoamIslandsB4FEndArticunoBattleScript:
 	ld a, [wIsInBattle]
 	cp $ff ; do nothing if you lost the battle
 	jr z, SeafoamIslandsB4FResetScript
 	SetEvent EVENT_BEAT_ARTICUNO
-	ld a, HS_ARTICUNO
-	ld [wMissableObjectIndex], a
-	predef HideObject
+	ld c, TOGGLE_ARTICUNO
+	call HideObject
 SeafoamB4FDefaultScript:
 	ld a, SCRIPT_SEAFOAMISLANDSB4F_DEFAULT
 	ld [wSeafoamIslandsB4FCurScript], a
@@ -89,8 +85,7 @@ SeafoamIslandsB4FObjectMoving1Script:
 	ld a, [wSimulatedJoypadStatesIndex]
 	and a
 	ret nz
-	xor a
-	ld [wJoyIgnore], a
+	call EnableAllJoypad
 	ld a, [wYCoord]
 	cp 12
 	jr nz, SeafoamB4FDefaultScript
@@ -102,7 +97,6 @@ SeafoamIslandsB4FObjectMoving1Script:
 SeafoamDoneForcedSurfMovementLeft:
 	xor a
 	ld [wWalkBikeSurfState], a
-	ld [wWalkBikeSurfStateCopy], a
 	jp ForceBikeOrSurf
 
 SeafoamIslandsB4F_TextPointers:
@@ -155,7 +149,7 @@ SeafoamIslandsB4FArticunoIntroAnimation:
 .loopSetSpriteStartingCoords
 	push de
 	push bc
-	lb de, $3C, $48
+	call .getInitialCoords
 	callfar LoadSpecificOAMSpriteCoords
 	pop bc
 	pop de
@@ -309,6 +303,20 @@ SeafoamIslandsB4FArticunoIntroAnimation:
 	dec e
 	jr nz, .copyOAMTileIDsOuter
 	ret
+.getInitialCoords
+	ld a, [wSpritePlayerStateData1FacingDirection]
+	cp SPRITE_FACING_UP
+	lb de, $3C, $48
+	ret z
+	cp SPRITE_FACING_LEFT
+	lb de, $4C, $38
+	ret z
+	cp SPRITE_FACING_RIGHT
+	lb de, $4C, $58
+	ret z
+	; down
+	lb de, $5C, $48
+	ret
 
 
 SeafoamIslandsB4FBouldersSignText:
@@ -367,8 +375,7 @@ SeafoamIslandsB4FDragonairEventStartScript:
 	ld a, [wYCoord]
 	cp 5
 	jr z, .initialText
-	xor a
-	ld [wJoyIgnore], a
+	call EnableAllJoypad
 	ld c, 60
 	rst _DelayFrames
 	; play a splash sound
@@ -407,7 +414,7 @@ SeafoamIslandsB4FDragonairEventStartScript:
 	ldh [hTextID], a
 	call DisplayTextID
 	; add more "downs" to the surf auto movement
-	ld a, D_DOWN
+	ld a, PAD_DOWN
 	ld hl, wSimulatedJoypadStatesEnd + 1
 	ld [hli], a
 	ld [hli], a

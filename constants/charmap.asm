@@ -61,7 +61,7 @@
 	charmap "’",         $71 ; closing single quote
 	charmap "<EXTRAOPENQUOTE>",         $72 ; opening quote ; PureRGBnote: CHANGED: crappier quotation mark (unused)
 	charmap "<EXTRACLOSEQUOTE>",         $73 ; closing quote ; PureRGBnote: CHANGED: crappier quotation mark 2 (unused)
-	charmap "·",         $74 ; middle dot, unused
+	charmap "·",         $74 ; middle dot
 	charmap "…",         $75 ; ellipsis
 	charmap "ぁ",         $76 ; hiragana small a, unused
 	charmap "ぇ",         $77 ; hiragana small e, unused

@@ -64,7 +64,7 @@ GameCornerPrizeRoomPrizeKingText:
 	inc hl
 	hl_deref
 	rst _PrintText
-	predef IndexToPokedex
+	call IndexToPokedex
 	ld a, [wPokedexNum]
 	ld h, a
 	ld l, $FF
@@ -137,4 +137,8 @@ PorygonPrizeKingText:
 	text_end
 
 GameCornerPRizeRoomPrizeVendorText:
-	script_prize_vendor
+	text_asm
+	callfar CeladonPrizeMenu
+	ld a, 1
+	ld [wDoNotWaitForButtonPressAfterDisplayingText], a
+	rst TextScriptEnd

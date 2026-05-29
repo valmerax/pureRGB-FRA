@@ -1,1224 +1,190 @@
-; TODO: convert to all be in the dex_text.asm bank and just a single list of pointers?
-; PureRGBnote: CHANGED: adusted to be indexed by pokedex_constants instead of pokemon_constants to take up less space
-PokedexEntryPointers:
-	table_width 2
-	dw BulbasaurDexEntry
-	dw IvysaurDexEntry
-	dw VenusaurDexEntry
-	dw CharmanderDexEntry
-	dw CharmeleonDexEntry
-	dw CharizardDexEntry
-	dw SquirtleDexEntry
-	dw WartortleDexEntry
-	dw BlastoiseDexEntry
-	dw CaterpieDexEntry
-	dw MetapodDexEntry
-	dw ButterfreeDexEntry
-	dw WeedleDexEntry
-	dw KakunaDexEntry
-	dw BeedrillDexEntry
-	dw PidgeyDexEntry
-	dw PidgeottoDexEntry
-	dw PidgeotDexEntry
-	dw RattataDexEntry
-	dw RaticateDexEntry
-	dw SpearowDexEntry
-	dw FearowDexEntry
-	dw EkansDexEntry
-	dw ArbokDexEntry
-	dw PikachuDexEntry
-	dw RaichuDexEntry
-	dw SandshrewDexEntry
-	dw SandslashDexEntry
-	dw NidoranFDexEntry
-	dw NidorinaDexEntry
-	dw NidoqueenDexEntry
-	dw NidoranMDexEntry
-	dw NidorinoDexEntry
-	dw NidokingDexEntry
-	dw ClefairyDexEntry
-	dw ClefableDexEntry
-	dw VulpixDexEntry
-	dw NinetalesDexEntry
-	dw JigglypuffDexEntry
-	dw WigglytuffDexEntry
-	dw ZubatDexEntry
-	dw GolbatDexEntry
-	dw OddishDexEntry
-	dw GloomDexEntry
-	dw VileplumeDexEntry
-	dw ParasDexEntry
-	dw ParasectDexEntry
-	dw VenonatDexEntry
-	dw VenomothDexEntry
-	dw DiglettDexEntry
-	dw DugtrioDexEntry
-	dw MeowthDexEntry
-	dw PersianDexEntry
-	dw PsyduckDexEntry
-	dw GolduckDexEntry
-	dw MankeyDexEntry
-	dw PrimeapeDexEntry
-	dw GrowlitheDexEntry
-	dw ArcanineDexEntry
-	dw PoliwagDexEntry
-	dw PoliwhirlDexEntry
-	dw PoliwrathDexEntry
-	dw AbraDexEntry
-	dw KadabraDexEntry
-	dw AlakazamDexEntry
-	dw MachopDexEntry
-	dw MachokeDexEntry
-	dw MachampDexEntry
-	dw BellsproutDexEntry
-	dw WeepinbellDexEntry
-	dw VictreebelDexEntry
-	dw TentacoolDexEntry
-	dw TentacruelDexEntry
-	dw GeodudeDexEntry
-	dw GravelerDexEntry
-	dw GolemDexEntry
-	dw PonytaDexEntry
-	dw RapidashDexEntry
-	dw SlowpokeDexEntry
-	dw SlowbroDexEntry
-	dw MagnemiteDexEntry
-	dw MagnetonDexEntry
-	dw FarfetchdDexEntry
-	dw DoduoDexEntry
-	dw DodrioDexEntry
-	dw SeelDexEntry
-	dw DewgongDexEntry
-	dw GrimerDexEntry
-	dw MukDexEntry
-	dw ShellderDexEntry
-	dw CloysterDexEntry
-	dw GastlyDexEntry
-	dw HaunterDexEntry
-	dw GengarDexEntry
-	dw OnixDexEntry
-	dw DrowzeeDexEntry
-	dw HypnoDexEntry
-	dw KrabbyDexEntry
-	dw KinglerDexEntry
-	dw VoltorbDexEntry
-	dw ElectrodeDexEntry
-	dw ExeggcuteDexEntry
-	dw ExeggutorDexEntry
-	dw CuboneDexEntry
-	dw MarowakDexEntry
-	dw HitmonleeDexEntry
-	dw HitmonchanDexEntry
-	dw LickitungDexEntry
-	dw KoffingDexEntry
-	dw WeezingDexEntry
-	dw RhyhornDexEntry
-	dw RhydonDexEntry
-	dw ChanseyDexEntry
-	dw TangelaDexEntry
-	dw KangaskhanDexEntry
-	dw HorseaDexEntry
-	dw SeadraDexEntry
-	dw GoldeenDexEntry
-	dw SeakingDexEntry
-	dw StaryuDexEntry
-	dw StarmieDexEntry
-	dw MrMimeDexEntry
-	dw ScytherDexEntry
-	dw JynxDexEntry
-	dw ElectabuzzDexEntry
-	dw MagmarDexEntry
-	dw PinsirDexEntry
-	dw TaurosDexEntry
-	dw MagikarpDexEntry
-	dw GyaradosDexEntry
-	dw LaprasDexEntry
-	dw DittoDexEntry
-	dw EeveeDexEntry
-	dw VaporeonDexEntry
-	dw JolteonDexEntry
-	dw FlareonDexEntry
-	dw PorygonDexEntry
-	dw OmanyteDexEntry
-	dw OmastarDexEntry
-	dw KabutoDexEntry
-	dw KabutopsDexEntry
-	dw AerodactylDexEntry
-	dw SnorlaxDexEntry
-	dw ArticunoDexEntry
-	dw ZapdosDexEntry
-	dw MoltresDexEntry
-	dw DratiniDexEntry
-	dw DragonairDexEntry
-	dw DragoniteDexEntry
-	dw MewtwoDexEntry
-	dw MewDexEntry
+DEF DEX_ENTRY_SIZE EQU 9 ; 9 bytes per dex entry
+
+; PureRGBnote: CHANGED: separated out the pokemon categories, which means the dex entries become a fixed size. 
+; This means there is no need for a jump table, saving a lot of space.
+GetDexEntryData:
+	ld a, [wPokedexNum]
+	dec a
+	ld hl, DexEntryData
+	ld b, 0
+	ld c, a
+	ld d, DEX_ENTRY_SIZE
+.loopFindDexEntry
+	add hl, bc
+	dec d
+	jr nz, .loopFindDexEntry
+	ld d, h
+	ld e, l
+	ret
+
+; \1 = height in feet, \2 = inches
+; \3 = weight in tenths of a pound
+; \4 = pokemon text description label
+MACRO dex_entry
+	db \1, \2
+	dw \3
+	text_far \4
+	text_end
+ENDM
+
+DexEntryData:
+	table_width DEX_ENTRY_SIZE
+	dex_entry  2,  4,   150, _BulbasaurDexEntry  ; DEX_BULBASAUR  ; 1
+	dex_entry  3,  3,   290, _IvysaurDexEntry    ; DEX_IVYSAUR    ; 2
+	dex_entry  6,  7,  2210, _VenusaurDexEntry   ; DEX_VENUSAUR   ; 3
+	dex_entry  2,  0,   190, _CharmanderDexEntry ; DEX_CHARMANDER ; 4
+	dex_entry  3,  7,   420, _CharmeleonDexEntry ; DEX_CHARMELEON ; 5
+	dex_entry  5,  7,  2000, _CharizardDexEntry  ; DEX_CHARIZARD  ; 6
+	dex_entry  1,  8,   200, _SquirtleDexEntry   ; DEX_SQUIRTLE   ; 7
+	dex_entry  3,  3,   500, _WartortleDexEntry  ; DEX_WARTORTLE  ; 8
+	dex_entry  5,  3,  1890, _BlastoiseDexEntry  ; DEX_BLASTOISE  ; 9
+	dex_entry  1,  0,    60, _CaterpieDexEntry   ; DEX_CATERPIE   ; 10
+	dex_entry  2,  4,   220, _MetapodDexEntry    ; DEX_METAPOD    ; 11
+	dex_entry  3,  7,   710, _ButterfreeDexEntry ; DEX_BUTTERFREE ; 12
+	dex_entry  1,  0,    70, _WeedleDexEntry     ; DEX_WEEDLE     ; 13
+	dex_entry  2,  0,   220, _KakunaDexEntry     ; DEX_KAKUNA     ; 14
+	dex_entry  3,  3,   650, _BeedrillDexEntry   ; DEX_BEEDRILL   ; 15
+	dex_entry  1,  0,    40, _PidgeyDexEntry     ; DEX_PIDGEY     ; 16
+	dex_entry  3,  7,   660, _PidgeottoDexEntry  ; DEX_PIDGEOTTO  ; 17
+	dex_entry  4, 11,   870, _PidgeotDexEntry    ; DEX_PIDGEOT    ; 18
+	dex_entry  1,  0,    80, _RattataDexEntry    ; DEX_RATTATA    ; 19
+	dex_entry  2,  4,   410, _RaticateDexEntry   ; DEX_RATICATE   ; 20
+	dex_entry  1,  0,    40, _SpearowDexEntry    ; DEX_SPEAROW    ; 21
+	dex_entry  3, 11,   840, _FearowDexEntry     ; DEX_FEAROW     ; 22
+	dex_entry  6,  7,   150, _EkansDexEntry      ; DEX_EKANS      ; 23
+	dex_entry 11,  6,  1430, _ArbokDexEntry      ; DEX_ARBOK      ; 24
+	dex_entry  1,  4,   130, _PikachuDexEntry    ; DEX_PIKACHU    ; 25
+	dex_entry  2,  7,   660, _RaichuDexEntry     ; DEX_RAICHU     ; 26
+	dex_entry  2,  0,   260, _SandshrewDexEntry  ; DEX_SANDSHREW  ; 27
+	dex_entry  3,  3,   650, _SandslashDexEntry  ; DEX_SANDSLASH  ; 28
+	dex_entry  1,  4,   150, _NidoranFDexEntry   ; DEX_NIDORAN_F  ; 29
+	dex_entry  2,  7,   440, _NidorinaDexEntry   ; DEX_NIDORINA   ; 30
+	dex_entry  4,  3,  1320, _NidoqueenDexEntry  ; DEX_NIDOQUEEN  ; 31
+	dex_entry  1,  8,   200, _NidoranMDexEntry   ; DEX_NIDORAN_M  ; 32
+	dex_entry  2, 11,   430, _NidorinoDexEntry   ; DEX_NIDORINO   ; 33
+	dex_entry  4,  7,  1370, _NidokingDexEntry   ; DEX_NIDOKING   ; 34
+	dex_entry  2,  0,   170, _ClefairyDexEntry   ; DEX_CLEFAIRY   ; 35
+	dex_entry  4,  3,   880, _ClefableDexEntry   ; DEX_CLEFABLE   ; 36
+	dex_entry  2,  0,   220, _VulpixDexEntry     ; DEX_VULPIX     ; 37
+	dex_entry  3,  7,   440, _NinetalesDexEntry  ; DEX_NINETALES  ; 38
+	dex_entry  1,  8,   120, _JigglypuffDexEntry ; DEX_JIGGLYPUFF ; 39
+	dex_entry  3,  3,   260, _WigglytuffDexEntry ; DEX_WIGGLYTUFF ; 40
+	dex_entry  2,  7,   170, _ZubatDexEntry      ; DEX_ZUBAT      ; 41
+	dex_entry  5,  3,  1210, _GolbatDexEntry     ; DEX_GOLBAT     ; 42
+	dex_entry  1,  8,   120, _OddishDexEntry     ; DEX_ODDISH     ; 43
+	dex_entry  2,  7,   190, _GloomDexEntry      ; DEX_GLOOM      ; 44
+	dex_entry  3, 11,   410, _VileplumeDexEntry  ; DEX_VILEPLUME  ; 45
+	dex_entry  1,  0,   120, _ParasDexEntry      ; DEX_PARAS      ; 46
+	dex_entry  3,  3,   650, _ParasectDexEntry   ; DEX_PARASECT   ; 47
+	dex_entry  3,  3,   660, _VenonatDexEntry    ; DEX_VENONAT    ; 48
+	dex_entry  4, 11,   280, _VenomothDexEntry   ; DEX_VENOMOTH   ; 49
+	dex_entry  0,  8,    20, _DiglettDexEntry    ; DEX_DIGLETT    ; 50
+	dex_entry  2,  4,   730, _DugtrioDexEntry    ; DEX_DUGTRIO    ; 51
+	dex_entry  1,  4,    90, _MeowthDexEntry     ; DEX_MEOWTH     ; 52
+	dex_entry  3,  3,   710, _PersianDexEntry    ; DEX_PERSIAN    ; 53
+	dex_entry  2,  7,   430, _PsyduckDexEntry    ; DEX_PSYDUCK    ; 54
+	dex_entry  5,  7,  1690, _GolduckDexEntry    ; DEX_GOLDUCK    ; 55
+	dex_entry  1,  8,   620, _MankeyDexEntry     ; DEX_MANKEY     ; 56
+	dex_entry  3,  3,   710, _PrimeapeDexEntry   ; DEX_PRIMEAPE   ; 57
+	dex_entry  2,  4,   420, _GrowlitheDexEntry  ; DEX_GROWLITHE  ; 58
+	dex_entry  6,  3,  3420, _ArcanineDexEntry   ; DEX_ARCANINE   ; 59
+	dex_entry  2,  0,   270, _PoliwagDexEntry    ; DEX_POLIWAG    ; 60
+	dex_entry  3,  3,   440, _PoliwhirlDexEntry  ; DEX_POLIWHIRL  ; 61
+	dex_entry  4,  3,  1190, _PoliwrathDexEntry  ; DEX_POLIWRATH  ; 62
+	dex_entry  2, 11,   430, _AbraDexEntry       ; DEX_ABRA       ; 63
+	dex_entry  4,  3,  1250, _KadabraDexEntry    ; DEX_KADABRA    ; 64
+	dex_entry  4, 11,  1060, _AlakazamDexEntry   ; DEX_ALAKAZAM   ; 65
+	dex_entry  2,  7,   430, _MachopDexEntry     ; DEX_MACHOP     ; 66
+	dex_entry  4, 11,  1550, _MachokeDexEntry    ; DEX_MACHOKE    ; 67
+	dex_entry  5,  3,  2870, _MachampDexEntry    ; DEX_MACHAMP    ; 68
+	dex_entry  2,  4,    90, _BellsproutDexEntry ; DEX_BELLSPROUT ; 69
+	dex_entry  3,  3,   140, _WeepinbellDexEntry ; DEX_WEEPINBELL ; 70
+	dex_entry  5,  7,   340, _VictreebelDexEntry ; DEX_VICTREEBEL ; 71
+	dex_entry  2, 11,  1000, _TentacoolDexEntry  ; DEX_TENTACOOL  ; 72
+	dex_entry  5,  3,  1210, _TentacruelDexEntry ; DEX_TENTACRUEL ; 73
+	dex_entry  1,  4,   440, _GeodudeDexEntry    ; DEX_GEODUDE    ; 74
+	dex_entry  3,  3,  2320, _GravelerDexEntry   ; DEX_GRAVELER   ; 75
+	dex_entry  3,  7,  6620, _GolemDexEntry      ; DEX_GOLEM      ; 76
+	dex_entry  3,  3,   660, _PonytaDexEntry     ; DEX_PONYTA     ; 77
+	dex_entry  5,  7,  2090, _RapidashDexEntry   ; DEX_RAPIDASH   ; 78
+	dex_entry  3, 11,   790, _SlowpokeDexEntry   ; DEX_SLOWPOKE   ; 79
+	dex_entry  5,  3,  1730, _SlowbroDexEntry    ; DEX_SLOWBRO    ; 80
+	dex_entry  1,  0,   130, _MagnemiteDexEntry  ; DEX_MAGNEMITE  ; 81
+	dex_entry  3,  3,  1320, _MagnetonDexEntry   ; DEX_MAGNETON   ; 82
+	dex_entry  2,  7,   330, _FarfetchdDexEntry  ; DEX_FARFETCHD  ; 83
+	dex_entry  4,  7,   860, _DoduoDexEntry      ; DEX_DODUO      ; 84
+	dex_entry  5, 11,  1880, _DodrioDexEntry     ; DEX_DODRIO     ; 85
+	dex_entry  3,  7,  1980, _SeelDexEntry       ; DEX_SEEL       ; 86
+	dex_entry  5,  7,  2650, _DewgongDexEntry    ; DEX_DEWGONG    ; 87
+	dex_entry  2, 11,   660, _GrimerDexEntry     ; DEX_GRIMER     ; 88
+	dex_entry  3, 11,   660, _MukDexEntry        ; DEX_MUK        ; 89
+	dex_entry  1,  0,    90, _ShellderDexEntry   ; DEX_SHELLDER   ; 90
+	dex_entry  4, 11,  2920, _CloysterDexEntry   ; DEX_CLOYSTER   ; 91
+	dex_entry  4,  3,     2, _GastlyDexEntry     ; DEX_GASTLY     ; 92
+	dex_entry  5,  3,     2, _HaunterDexEntry    ; DEX_HAUNTER    ; 93
+	dex_entry  4, 11,   890, _GengarDexEntry     ; DEX_GENGAR     ; 94
+	dex_entry 28, 10,  4630, _OnixDexEntry       ; DEX_ONIX       ; 95
+	dex_entry  3,  3,   710, _DrowzeeDexEntry    ; DEX_DROWZEE    ; 96
+	dex_entry  5,  3,  1670, _HypnoDexEntry      ; DEX_HYPNO      ; 97
+	dex_entry  1,  4,   140, _KrabbyDexEntry     ; DEX_KRABBY     ; 98
+	dex_entry  4,  3,  1320, _KinglerDexEntry    ; DEX_KINGLER    ; 99
+	dex_entry  1,  8,   230, _VoltorbDexEntry    ; DEX_VOLTORB    ; 100
+	dex_entry  3, 11,  1470, _ElectrodeDexEntry  ; DEX_ELECTRODE  ; 101
+	dex_entry  1,  4,    60, _ExeggcuteDexEntry  ; DEX_EXEGGCUTE  ; 102
+	dex_entry  6,  7,  2650, _ExeggutorDexEntry  ; DEX_EXEGGUTOR  ; 103
+	dex_entry  1,  4,   140, _CuboneDexEntry     ; DEX_CUBONE     ; 104
+	dex_entry  3,  3,   990, _MarowakDexEntry    ; DEX_MAROWAK    ; 105
+	dex_entry  4, 11,  1100, _HitmonleeDexEntry  ; DEX_HITMONLEE  ; 106
+	dex_entry  4,  7,  1110, _HitmonchanDexEntry ; DEX_HITMONCHAN ; 107
+	dex_entry  3, 11,  1440, _LickitungDexEntry  ; DEX_LICKITUNG  ; 108
+	dex_entry  2,  0,    20, _KoffingDexEntry    ; DEX_KOFFING    ; 109
+	dex_entry  3, 11,   210, _WeezingDexEntry    ; DEX_WEEZING    ; 110
+	dex_entry  3,  3,  2540, _RhyhornDexEntry    ; DEX_RHYHORN    ; 111
+	dex_entry  6,  3,  2650, _RhydonDexEntry     ; DEX_RHYDON     ; 112
+	dex_entry  3,  7,   760, _ChanseyDexEntry    ; DEX_CHANSEY    ; 113
+	dex_entry  3,  3,   770, _TangelaDexEntry    ; DEX_TANGELA    ; 114
+	dex_entry  7,  3,  1760, _KangaskhanDexEntry ; DEX_KANGASKHAN ; 115
+	dex_entry  1,  4,   180, _HorseaDexEntry     ; DEX_HORSEA     ; 116
+	dex_entry  3, 11,   550, _SeadraDexEntry     ; DEX_SEADRA     ; 117
+	dex_entry  2,  0,   330, _GoldeenDexEntry    ; DEX_GOLDEEN    ; 118
+	dex_entry  4,  3,   860, _SeakingDexEntry    ; DEX_SEAKING    ; 119
+	dex_entry  2,  7,   760, _StaryuDexEntry     ; DEX_STARYU     ; 120
+	dex_entry  3,  7,  1760, _StarmieDexEntry    ; DEX_STARMIE    ; 121
+	dex_entry  4,  3,  1200, _MrMimeDexEntry     ; DEX_MR_MIME    ; 122
+	dex_entry  4, 11,  1230, _ScytherDexEntry    ; DEX_SCYTHER    ; 123
+	dex_entry  4,  7,   900, _JynxDexEntry       ; DEX_JYNX       ; 124
+	dex_entry  3,  7,   660, _ElectabuzzDexEntry ; DEX_ELECTABUZZ ; 125
+	dex_entry  4,  3,   980, _MagmarDexEntry     ; DEX_MAGMAR     ; 126
+	dex_entry  4, 11,  1210, _PinsirDexEntry     ; DEX_PINSIR     ; 127
+	dex_entry  4,  7,  1950, _TaurosDexEntry     ; DEX_TAUROS     ; 128
+	dex_entry  2, 11,   220, _MagikarpDexEntry   ; DEX_MAGIKARP   ; 129
+	dex_entry 21,  4,  5180, _GyaradosDexEntry   ; DEX_GYARADOS   ; 130
+	dex_entry  8,  2,  4850, _LaprasDexEntry     ; DEX_LAPRAS     ; 131
+	dex_entry  1,  0,    90, _DittoDexEntry      ; DEX_DITTO      ; 132
+	dex_entry  1,  0,   140, _EeveeDexEntry      ; DEX_EEVEE      ; 133
+	dex_entry  3,  3,   640, _VaporeonDexEntry   ; DEX_VAPOREON   ; 134
+	dex_entry  2,  7,   540, _JolteonDexEntry    ; DEX_JOLTEON    ; 135
+	dex_entry  2, 11,   550, _FlareonDexEntry    ; DEX_FLAREON    ; 136
+	dex_entry  2,  7,   800, _PorygonDexEntry    ; DEX_PORYGON    ; 137
+	dex_entry  1,  4,   170, _OmanyteDexEntry    ; DEX_OMANYTE    ; 138
+	dex_entry  3,  3,   770, _OmastarDexEntry    ; DEX_OMASTAR    ; 139
+	dex_entry  1,  8,   250, _KabutoDexEntry     ; DEX_KABUTO     ; 140
+	dex_entry  4,  3,   890, _KabutopsDexEntry   ; DEX_KABUTOPS   ; 141
+	dex_entry  5, 11,  1300, _AerodactylDexEntry ; DEX_AERODACTYL ; 142
+	dex_entry  6, 11, 10140, _SnorlaxDexEntry    ; DEX_SNORLAX    ; 143
+	dex_entry  5,  7,  1220, _ArticunoDexEntry   ; DEX_ARTICUNO   ; 144
+	dex_entry  5,  3,  1160, _ZapdosDexEntry     ; DEX_ZAPDOS     ; 145
+	dex_entry  6,  7,  1320, _MoltresDexEntry    ; DEX_MOLTRES    ; 146
+	dex_entry  5, 11,    60, _DratiniDexEntry    ; DEX_DRATINI    ; 147
+	dex_entry 13,  1,   360, _DragonairDexEntry  ; DEX_DRAGONAIR  ; 148
+	dex_entry  7,  3,  4630, _DragoniteDexEntry  ; DEX_DRAGONITE  ; 149
+	dex_entry  6,  7,  2690, _MewtwoDexEntry     ; DEX_MEWTWO     ; 150
+	dex_entry  1,  4,    90, _MewDexEntry        ; DEX_MEW        ; 151
 	assert_table_length NUM_POKEMON - 1
-
-; string: species name
-; height in feet, inches
-; weight in tenths of a pound
-; text entry
-
-RhydonDexEntry:
-	db "PERCEUR@"
-	db 6,3
-	dw 2650
-	text_far _RhydonDexEntry
-	text_end
-
-KangaskhanDexEntry:
-	db "MATERNEL@"
-	db 7,3
-	dw 1760
-	text_far _KangaskhanDexEntry
-	text_end
-
-NidoranMDexEntry:
-	db "VENEPIC@"
-	db 1,8
-	dw 200
-	text_far _NidoranMDexEntry
-	text_end
-
-ClefairyDexEntry:
-	db "FEE@"
-	db 2,0
-	dw 170
-	text_far _ClefairyDexEntry
-	text_end
-
-SpearowDexEntry:
-	db "MINOISEAU@"
-	db 1,0
-	dw 40
-	text_far _SpearowDexEntry
-	text_end
-
-VoltorbDexEntry:
-	db "BALLE@"
-	db 1,8
-	dw 230
-	text_far _VoltorbDexEntry
-	text_end
-
-NidokingDexEntry:
-	db "PERCEUR@"
-	db 4,7
-	dw 1370
-	text_far _NidokingDexEntry
-	text_end
-
-SlowbroDexEntry:
-	db "SYMBIOSE@"
-	db 5,3
-	dw 1730
-	text_far _SlowbroDexEntry
-	text_end
-
-IvysaurDexEntry:
-	db "GRAINE@"
-	db 3,3
-	dw 290
-	text_far _IvysaurDexEntry
-	text_end
-
-ExeggutorDexEntry:
-	db "FRUITPALME@"
-	db 6,7
-	dw 2650
-	text_far _ExeggutorDexEntry
-	text_end
-
-LickitungDexEntry:
-	db "LECHEUR@"
-	db 3,11
-	dw 1440
-	text_far _LickitungDexEntry
-	text_end
-
-ExeggcuteDexEntry:
-	db "OEUF@"
-	db 1,4
-	dw 60
-	text_far _ExeggcuteDexEntry
-	text_end
-
-GrimerDexEntry:
-	db "DEGUEU@"
-	db 2,11
-	dw 660
-	text_far _GrimerDexEntry
-	text_end
-
-GengarDexEntry:
-	db "OMBRE@"
-	db 4,11
-	dw 890
-	text_far _GengarDexEntry
-	text_end
-
-NidoranFDexEntry:
-	db "VENEPIC@"
-	db 1,4
-	dw 150
-	text_far _NidoranFDexEntry
-	text_end
-
-NidoqueenDexEntry:
-	db "PERCEUR@"
-	db 4,3
-	dw 1320
-	text_far _NidoqueenDexEntry
-	text_end
-
-CuboneDexEntry:
-	db "SOLITAIRE@"
-	db 1,4
-	dw 140
-	text_far _CuboneDexEntry
-	text_end
-
-RhyhornDexEntry:
-	db "PIQUANT@"
-	db 3,3
-	dw 2540
-	text_far _RhyhornDexEntry
-	text_end
-
-LaprasDexEntry:
-	db "TRANSPORT@"
-	db 8,2
-	dw 4850
-	text_far _LaprasDexEntry
-	text_end
-
-ArcanineDexEntry:
-	db "LEGENDAIRE@"
-	db 6,3
-	dw 3420
-	text_far _ArcanineDexEntry
-	text_end
-
-MewDexEntry:
-	db "NOUVEAU@"
-	db 1,4
-	dw 90
-	text_far _MewDexEntry
-	text_end
-
-GyaradosDexEntry:
-	db "TERRIFIANT@"
-	db 21,4
-	dw 5180
-	text_far _GyaradosDexEntry
-	text_end
-
-ShellderDexEntry:
-	db "BIVALVE@"
-	db 1,0
-	dw 90
-	text_far _ShellderDexEntry
-	text_end
-
-TentacoolDexEntry:
-	db "MOLLUSQUE@"
-	db 2,11
-	dw 1000
-	text_far _TentacoolDexEntry
-	text_end
-
-GastlyDexEntry:
-	db "GAZ@"
-	db 4,3
-	dw 2
-	text_far _GastlyDexEntry
-	text_end
-
-ScytherDexEntry:
-	db "MANTE@"
-	db 4,11
-	dw 1230
-	text_far _ScytherDexEntry
-	text_end
-
-StaryuDexEntry:
-	db "ETOILE@"
-	db 2,7
-	dw 760
-	text_far _StaryuDexEntry
-	text_end
-
-BlastoiseDexEntry:
-	db "CARAPACE@"
-	db 5,3
-	dw 1890
-	text_far _BlastoiseDexEntry
-	text_end
-
-PinsirDexEntry:
-	db "SCARABEE@"
-	db 4,11
-	dw 1210
-	text_far _PinsirDexEntry
-	text_end
-
-TangelaDexEntry:
-	db "VIGNE@"
-	db 3,3
-	dw 770
-	text_far _TangelaDexEntry
-	text_end
-
-GrowlitheDexEntry:
-	db "CHIOT@"
-	db 2,4
-	dw 420
-	text_far _GrowlitheDexEntry
-	text_end
-
-OnixDexEntry:
-	db "SERPENROC@"
-	db 28,10
-	dw 4630
-	text_far _OnixDexEntry
-	text_end
-
-FearowDexEntry:
-	db "BEC-OISEAU@"
-	db 3,11
-	dw 840
-	text_far _FearowDexEntry
-	text_end
-
-PidgeyDexEntry:
-	db "MINOISEAU@"
-	db 1,0
-	dw 40
-	text_far _PidgeyDexEntry
-	text_end
-
-SlowpokeDexEntry:
-	db "CRETIN@"
-	db 3,11
-	dw 790
-	text_far _SlowpokeDexEntry
-	text_end
-
-KadabraDexEntry:
-	db "PSY@"
-	db 4,3
-	dw 1250
-	text_far _KadabraDexEntry
-	text_end
-
-GravelerDexEntry:
-	db "ROCHE@"
-	db 3,3
-	dw 2320
-	text_far _GravelerDexEntry
-	text_end
-
-ChanseyDexEntry:
-	db "OEUF@"
-	db 3,7
-	dw 760
-	text_far _ChanseyDexEntry
-	text_end
-
-MachokeDexEntry:
-	db "COLOSSE@"
-	db 4,11
-	dw 1550
-	text_far _MachokeDexEntry
-	text_end
-
-MrMimeDexEntry:
-	db "BLOQUEUR@"
-	db 4,3
-	dw 1200
-	text_far _MrMimeDexEntry
-	text_end
-
-HitmonleeDexEntry:
-	db "LATTEUR@"
-	db 4,11
-	dw 1100
-	text_far _HitmonleeDexEntry
-	text_end
-
-HitmonchanDexEntry:
-	db "PUNCHEUR@"
-	db 4,7
-	dw 1110
-	text_far _HitmonchanDexEntry
-	text_end
-
-ArbokDexEntry:
-	db "COBRA@"
-	db 11,6
-	dw 1430
-	text_far _ArbokDexEntry
-	text_end
-
-ParasectDexEntry:
-	db "CHAMPIGNON@"
-	db 3,3
-	dw 650
-	text_far _ParasectDexEntry
-	text_end
-
-PsyduckDexEntry:
-	db "CANARD@"
-	db 2,7
-	dw 430
-	text_far _PsyduckDexEntry
-	text_end
-
-DrowzeeDexEntry:
-	db "HYPNOSE@"
-	db 3,3
-	dw 710
-	text_far _DrowzeeDexEntry
-	text_end
-
-GolemDexEntry:
-	db "TITANESQUE@"
-	db 4,7
-	dw 6620
-	text_far _GolemDexEntry
-	text_end
-
-MagmarDexEntry:
-	db "CRACHE-FEU@"
-	db 4,3
-	dw 980
-	text_far _MagmarDexEntry
-	text_end
-
-ElectabuzzDexEntry:
-	db "ELECTRIQUE@"
-	db 3,7
-	dw 660
-	text_far _ElectabuzzDexEntry
-	text_end
-
-MagnetonDexEntry:
-	db "MAGNETIQUE@"
-	db 3,3
-	dw 1320
-	text_far _MagnetonDexEntry
-	text_end
-
-KoffingDexEntry:
-	db "GAZ MORTEL@"
-	db 2,0
-	dw 20
-	text_far _KoffingDexEntry
-	text_end
-
-MankeyDexEntry:
-	db "PORSINGE@"
-	db 1,8
-	dw 620
-	text_far _MankeyDexEntry
-	text_end
-
-SeelDexEntry:
-	db "OTARIE@"
-	db 3,7
-	dw 1980
-	text_far _SeelDexEntry
-	text_end
-
-DiglettDexEntry:
-	db "TAUPE@"
-	db 0,8
-	dw 20
-	text_far _DiglettDexEntry
-	text_end
-
-TaurosDexEntry:
-	db "BUFFLE@"
-	db 4,7
-	dw 1950
-	text_far _TaurosDexEntry
-	text_end
-
-FarfetchdDexEntry:
-	db "CANARD FOU@"
-	db 2,7
-	dw 330
-	text_far _FarfetchdDexEntry
-	text_end
-
-VenonatDexEntry:
-	db "VERMINE@"
-	db 3,3
-	dw 660
-	text_far _VenonatDexEntry
-	text_end
-
-DragoniteDexEntry:
-	db "DRAGON@"
-	db 7,3
-	dw 4630
-	text_far _DragoniteDexEntry
-	text_end
-
-DoduoDexEntry:
-	db "DUOISEAU@"
-	db 4,7
-	dw 860
-	text_far _DoduoDexEntry
-	text_end
-
-PoliwagDexEntry:
-	db "TETARD@"
-	db 2,0
-	dw 270
-	text_far _PoliwagDexEntry
-	text_end
-
-JynxDexEntry:
-	db "HUMANOIDE@"
-	db 4,7
-	dw 900
-	text_far _JynxDexEntry
-	text_end
-
-MoltresDexEntry:
-	db "FLAMME@"
-	db 6,7
-	dw 1320
-	text_far _MoltresDexEntry
-	text_end
-
-ArticunoDexEntry:
-	db "GLACIAIRE@"
-	db 5,7
-	dw 1220
-	text_far _ArticunoDexEntry
-	text_end
-
-ZapdosDexEntry:
-	db "ELECTRIQUE@"
-	db 5,3
-	dw 1160
-	text_far _ZapdosDexEntry
-	text_end
-
-DittoDexEntry:
-	db "MORPHING@"
-	db 1,0
-	dw 90
-	text_far _DittoDexEntry
-	text_end
-
-MeowthDexEntry:
-	db "CHADEGOUT@"
-	db 1,4
-	dw 90
-	text_far _MeowthDexEntry
-	text_end
-
-KrabbyDexEntry:
-	db "DOUX CRABE@"
-	db 1,4
-	dw 140
-	text_far _KrabbyDexEntry
-	text_end
-
-VulpixDexEntry:
-	db "RENARD@"
-	db 2,0
-	dw 220
-	text_far _VulpixDexEntry
-	text_end
-
-NinetalesDexEntry:
-	db "RENARD@"
-	db 3,7
-	dw 440
-	text_far _NinetalesDexEntry
-	text_end
-
-PikachuDexEntry:
-	db "SOURIS@"
-	db 1,4
-	dw 130
-	text_far _PikachuDexEntry
-	text_end
-
-RaichuDexEntry:
-	db "SOURIS@"
-	db 2,7
-	dw 660
-	text_far _RaichuDexEntry
-	text_end
-
-DratiniDexEntry:
-	db "DRAGON@"
-	db 5,11
-	dw 70
-	text_far _DratiniDexEntry
-	text_end
-
-DragonairDexEntry:
-	db "DRAGON@"
-	db 13,1
-	dw 360
-	text_far _DragonairDexEntry
-	text_end
-
-KabutoDexEntry:
-	db "CARAPACE@"
-	db 1,8
-	dw 250
-	text_far _KabutoDexEntry
-	text_end
-
-KabutopsDexEntry:
-	db "CARAPACE@"
-	db 4,3
-	dw 890
-	text_far _KabutopsDexEntry
-	text_end
-
-HorseaDexEntry:
-	db "DRAGON@"
-	db 1,4
-	dw 180
-	text_far _HorseaDexEntry
-	text_end
-
-SeadraDexEntry:
-	db "DRAGON@"
-	db 3,11
-	dw 550
-	text_far _SeadraDexEntry
-	text_end
-
-SandshrewDexEntry:
-	db "SOURIS@"
-	db 2,0
-	dw 260
-	text_far _SandshrewDexEntry
-	text_end
-
-SandslashDexEntry:
-	db "SOURIS@"
-	db 3,3
-	dw 650
-	text_far _SandslashDexEntry
-	text_end
-
-OmanyteDexEntry:
-	db "SPIRALE@"
-	db 1,4
-	dw 170
-	text_far _OmanyteDexEntry
-	text_end
-
-OmastarDexEntry:
-	db "SPIRALE@"
-	db 3,3
-	dw 770
-	text_far _OmastarDexEntry
-	text_end
-
-JigglypuffDexEntry:
-	db "BOUBOULE@"
-	db 1,8
-	dw 120
-	text_far _JigglypuffDexEntry
-	text_end
-
-WigglytuffDexEntry:
-	db "BOUBOULE@"
-	db 3,3
-	dw 260
-	text_far _WigglytuffDexEntry
-	text_end
-
-EeveeDexEntry:
-	db "EVOLUTIF@"
-	db 1,0
-	dw 140
-	text_far _EeveeDexEntry
-	text_end
-
-FlareonDexEntry:
-	db "FLAMME@"
-	db 2,11
-	dw 550
-	text_far _FlareonDexEntry
-	text_end
-
-JolteonDexEntry:
-	db "FOUDRE@"
-	db 2,7
-	dw 540
-	text_far _JolteonDexEntry
-	text_end
-
-VaporeonDexEntry:
-	db "BULLEUR@"
-	db 3,3
-	dw 640
-	text_far _VaporeonDexEntry
-	text_end
-
-MachopDexEntry:
-	db "COLOSSE@"
-	db 2,7
-	dw 430
-	text_far _MachopDexEntry
-	text_end
-
-ZubatDexEntry:
-	db "CHOVSOURIS@"
-	db 2,7
-	dw 170
-	text_far _ZubatDexEntry
-	text_end
-
-EkansDexEntry:
-	db "SERPENT@"
-	db 6,7
-	dw 150
-	text_far _EkansDexEntry
-	text_end
-
-ParasDexEntry:
-	db "CHAMPIGNON@"
-	db 1,0
-	dw 120
-	text_far _ParasDexEntry
-	text_end
-
-PoliwhirlDexEntry:
-	db "TETARD@"
-	db 3,3
-	dw 440
-	text_far _PoliwhirlDexEntry
-	text_end
-
-PoliwrathDexEntry:
-	db "TETARD@"
-	db 4,3
-	dw 1190
-	text_far _PoliwrathDexEntry
-	text_end
-
-WeedleDexEntry:
-	db "INSECTOPIC@"
-	db 1,0
-	dw 70
-	text_far _WeedleDexEntry
-	text_end
-
-KakunaDexEntry:
-	db "COCON@"
-	db 2,0
-	dw 220
-	text_far _KakunaDexEntry
-	text_end
-
-BeedrillDexEntry:
-	db "GUEPOISON@"
-	db 3,3
-	dw 650
-	text_far _BeedrillDexEntry
-	text_end
-
-DodrioDexEntry:
-	db "TROISEAU@"
-	db 5,11
-	dw 1880
-	text_far _DodrioDexEntry
-	text_end
-
-PrimeapeDexEntry:
-	db "PORSINGE@"
-	db 3,3
-	dw 710
-	text_far _PrimeapeDexEntry
-	text_end
-
-DugtrioDexEntry:
-	db "TAUPE@"
-	db 2,4
-	dw 730
-	text_far _DugtrioDexEntry
-	text_end
-
-VenomothDexEntry:
-	db "MITE@"
-	db 4,11
-	dw 280
-	text_far _VenomothDexEntry
-	text_end
-
-DewgongDexEntry:
-	db "OTARIE@"
-	db 5,7
-	dw 2650
-	text_far _DewgongDexEntry
-	text_end
-
-CaterpieDexEntry:
-	db "VER@"
-	db 1,0
-	dw 60
-	text_far _CaterpieDexEntry
-	text_end
-
-MetapodDexEntry:
-	db "COCON@"
-	db 2,4
-	dw 220
-	text_far _MetapodDexEntry
-	text_end
-
-ButterfreeDexEntry:
-	db "PAPILLON@"
-	db 3,7
-	dw 710
-	text_far _ButterfreeDexEntry
-	text_end
-
-MachampDexEntry:
-	db "COLOSSE@"
-	db 5,3
-	dw 2870
-	text_far _MachampDexEntry
-	text_end
-
-GolduckDexEntry:
-	db "CANARD@"
-	db 5,7
-	dw 1690
-	text_far _GolduckDexEntry
-	text_end
-
-HypnoDexEntry:
-	db "HYPNOSE@"
-	db 5,3
-	dw 1670
-	text_far _HypnoDexEntry
-	text_end
-
-GolbatDexEntry:
-	db "CHOVSOURIS@"
-	db 5,3
-	dw 1210
-	text_far _GolbatDexEntry
-	text_end
-
-MewtwoDexEntry:
-	db "GENETIQUE@"
-	db 6,7
-	dw 2690
-	text_far _MewtwoDexEntry
-	text_end
-
-SnorlaxDexEntry:
-	db "PIONCEUR@"
-	db 6,11
-	dw 10140
-	text_far _SnorlaxDexEntry
-	text_end
-
-MagikarpDexEntry:
-	db "POISSON@"
-	db 2,11
-	dw 220
-	text_far _MagikarpDexEntry
-	text_end
-
-MukDexEntry:
-	db "DEGUEU@"
-	db 3,11
-	dw 660
-	text_far _MukDexEntry
-	text_end
-
-KinglerDexEntry:
-	db "POIGNEUR@"
-	db 4,3
-	dw 1320
-	text_far _KinglerDexEntry
-	text_end
-
-CloysterDexEntry:
-	db "BIVALVE@"
-	db 4,11
-	dw 2920
-	text_far _CloysterDexEntry
-	text_end
-
-ElectrodeDexEntry:
-	db "BALLE@"
-	db 3,11
-	dw 1470
-	text_far _ElectrodeDexEntry
-	text_end
-
-ClefableDexEntry:
-	db "FEE@"
-	db 4,3
-	dw 880
-	text_far _ClefableDexEntry
-	text_end
-
-WeezingDexEntry:
-	db "GAZ MORTEL@"
-	db 3,11
-	dw 210
-	text_far _WeezingDexEntry
-	text_end
-
-PersianDexEntry:
-	db "CHADEVILLE@"
-	db 3,3
-	dw 710
-	text_far _PersianDexEntry
-	text_end
-
-MarowakDexEntry:
-	db "GARD'OS@"
-	db 3,3
-	dw 990
-	text_far _MarowakDexEntry
-	text_end
-
-HaunterDexEntry:
-	db "GAZ@"
-	db 5,3
-	dw 2
-	text_far _HaunterDexEntry
-	text_end
-
-AbraDexEntry:
-	db "PSY@"
-	db 2,11
-	dw 430
-	text_far _AbraDexEntry
-	text_end
-
-AlakazamDexEntry:
-	db "PSY@"
-	db 4,11
-	dw 1060
-	text_far _AlakazamDexEntry
-	text_end
-
-PidgeottoDexEntry:
-	db "OISEAU@"
-	db 3,7
-	dw 660
-	text_far _PidgeottoDexEntry
-	text_end
-
-PidgeotDexEntry:
-	db "OISEAU@"
-	db 4,11
-	dw 870
-	text_far _PidgeotDexEntry
-	text_end
-
-StarmieDexEntry:
-	db "MYSTERIEUX@"
-	db 3,7
-	dw 1760
-	text_far _StarmieDexEntry
-	text_end
-
-BulbasaurDexEntry:
-	db "GRAINE@"
-	db 2,4
-	dw 150
-	text_far _BulbasaurDexEntry
-	text_end
-
-VenusaurDexEntry:
-	db "GRAINE@"
-	db 6,7
-	dw 2210
-	text_far _VenusaurDexEntry
-	text_end
-
-TentacruelDexEntry:
-	db "MOLLUSQUE@"
-	db 5,3
-	dw 1210
-	text_far _TentacruelDexEntry
-	text_end
-
-GoldeenDexEntry:
-	db "POISSON@"
-	db 2,0
-	dw 330
-	text_far _GoldeenDexEntry
-	text_end
-
-SeakingDexEntry:
-	db "POISSON@"
-	db 4,3
-	dw 860
-	text_far _SeakingDexEntry
-	text_end
-
-PonytaDexEntry:
-	db "CHEVAL FEU@"
-	db 3,3
-	dw 660
-	text_far _PonytaDexEntry
-	text_end
-
-RapidashDexEntry:
-	db "CHEVAL FEU@"
-	db 5,7
-	dw 2090
-	text_far _RapidashDexEntry
-	text_end
-
-RattataDexEntry:
-	db "RAT@"
-	db 1,0
-	dw 80
-	text_far _RattataDexEntry
-	text_end
-
-RaticateDexEntry:
-	db "RAT@"
-	db 2,4
-	dw 410
-	text_far _RaticateDexEntry
-	text_end
-
-NidorinoDexEntry:
-	db "VENEPIC@"
-	db 2,11
-	dw 430
-	text_far _NidorinoDexEntry
-	text_end
-
-NidorinaDexEntry:
-	db "VENEPIC@"
-	db 2,7
-	dw 440
-	text_far _NidorinaDexEntry
-	text_end
-
-GeodudeDexEntry:
-	db "ROCHE@"
-	db 1,4
-	dw 440
-	text_far _GeodudeDexEntry
-	text_end
-
-PorygonDexEntry:
-	db "VIRTUEL@"
-	db 2,7
-	dw 800
-	text_far _PorygonDexEntry
-	text_end
-
-AerodactylDexEntry:
-	db "FOSSILE@"
-	db 5,11
-	dw 1300
-	text_far _AerodactylDexEntry
-	text_end
-
-MagnemiteDexEntry:
-	db "MAGNETIQUE@"
-	db 1,0
-	dw 130
-	text_far _MagnemiteDexEntry
-	text_end
-
-CharmanderDexEntry:
-	db "LEZARD@"
-	db 2,0
-	dw 190
-	text_far _CharmanderDexEntry
-	text_end
-
-SquirtleDexEntry:
-	db "MINITORTUE@"
-	db 1,8
-	dw 200
-	text_far _SquirtleDexEntry
-	text_end
-
-CharmeleonDexEntry:
-	db "FLAMME@"
-	db 3,7
-	dw 420
-	text_far _CharmeleonDexEntry
-	text_end
-
-WartortleDexEntry:
-	db "TORTUE@"
-	db 3,3
-	dw 500
-	text_far _WartortleDexEntry
-	text_end
-
-CharizardDexEntry:
-	db "FLAMME@"
-	db 5,7
-	dw 2000
-	text_far _CharizardDexEntry
-	text_end
-
-OddishDexEntry:
-	db "RACINE@"
-	db 1,8
-	dw 120
-	text_far _OddishDexEntry
-	text_end
-
-GloomDexEntry:
-	db "RACINE@"
-	db 2,7
-	dw 190
-	text_far _GloomDexEntry
-	text_end
-
-VileplumeDexEntry:
-	db "FLEUR@"
-	db 3,11
-	dw 410
-	text_far _VileplumeDexEntry
-	text_end
-
-BellsproutDexEntry:
-	db "FLEUR@"
-	db 2,4
-	dw 90
-	text_far _BellsproutDexEntry
-	text_end
-
-WeepinbellDexEntry:
-	db "CARNIVORE@"
-	db 3,3
-	dw 140
-	text_far _WeepinbellDexEntry
-	text_end
-
-VictreebelDexEntry:
-	db "CARNIVORE@"
-	db 5,7
-	dw 340
-	text_far _VictreebelDexEntry
-	text_end
 
 ;MissingNoDexEntry:
 ;	db "???@"
 ;	db 10 ; 1.0 m
 ;	dw 100 ; 10.0 kg
 ;	db "コメント　さくせいちゅう@" ; コメント作成中 (Comment to be written)
+

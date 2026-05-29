@@ -6,11 +6,9 @@ DiamondMine_Script:
 	call DiamondMineCheckPlayBoomboxMusic
 	call DiamondMineCheckDigAnimation
 	call DiamondMineCheckFinalStep
-	call DiamondMineJiggleBoomBox
 	jp EnableAutoTextBoxDrawing
 
 DiamondMineJiggleBoomBox::
-	; TODO: make it an overworld animation
 	CheckEvent EVENT_DIAMOND_MINE_STARTED_BOOMBOX
 	ret z
 .jiggleBoombox
@@ -55,7 +53,7 @@ DiamondMineReplaceHole:
 .replaceTile
 	lb bc, 1, 1
 	ld [wNewTileBlockID], a
-	predef ReplaceTileBlock
+	call ReplaceTileBlock
 .checkLeaveHole
 	ld hl, DiamondMineLeaveHoleCoords
 	call ArePlayerCoordsInArray
@@ -72,10 +70,9 @@ DiamondMineLeaveHoleCoords:
 	db -1
 
 DiamondMineCheckHandleHole:
-	ld hl, wCurrentMapScriptFlags
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	ret nz
+	SetFlag FLAG_MAP_HAS_OVERWORLD_ANIMATION
 	ld a, DIAMOND_MINE
 	ld [wDungeonWarpDestinationMap], a
 	ld hl, DiamondMineHoleCoords
@@ -267,7 +264,7 @@ DiamondMineCheckDigAnimation:
 	lb bc, 1, 1
 	ld a, $A2
 	ld [wNewTileBlockID], a
-	predef ReplaceTileBlock
+	call ReplaceTileBlock
 	ld de, SFX_Break_Stone
 	call PlayNewSoundChannel8
 	call DiamondMineShakeScreen
@@ -406,9 +403,8 @@ DiamondMineProspectorText:
 	call EnableSpriteUpdates
 	call LoadScreenTilesFromBuffer2
 	SetEvent EVENT_DIAMOND_MINE_COMPLETED
-	ld a, HS_PROSPECTORS_HOUSE_PROSPECTOR
-	ld [wMissableObjectIndex], a
-	predef ShowExtraObject
+	ld c, TOGGLE_PROSPECTORS_HOUSE_PROSPECTOR
+	call ShowExtraObject
 	call DiamondMineReplaceHole
 	call UpdateSpritesAndDelay3
 	call GBFadeInFromWhite
@@ -540,11 +536,11 @@ DiamondMineLoadPlayerDirections:
 	jr .loop
 
 PlayerWalkDownHoleDirectionsBelow:
-	db D_UP
+	db PAD_UP
 PlayerWalkDownHoleDirectionsRight:
-	db D_UP
-	db D_UP
-	db D_LEFT
+	db PAD_UP
+	db PAD_UP
+	db PAD_LEFT
 	db -1
 
 DiamondMineBoombox:

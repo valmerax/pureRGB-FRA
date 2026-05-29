@@ -58,10 +58,34 @@ Route17TrainerHeader9:
 	db -1 ; end
 
 Route17Biker1Text:
-	text_asm
-	ld hl, Route17TrainerHeader0
-	call TalkToTrainer
-	rst TextScriptEnd
+	script_trainer Route17TrainerHeader0
+
+Route17Biker2Text:
+	script_trainer Route17TrainerHeader1
+
+Route17Biker3Text:
+	script_trainer Route17TrainerHeader2
+
+Route17Biker4Text:
+	script_trainer Route17TrainerHeader3
+
+Route17Biker5Text:
+	script_trainer Route17TrainerHeader4
+
+Route17Biker6Text:
+	script_trainer Route17TrainerHeader5
+
+Route17Biker7Text:
+	script_trainer Route17TrainerHeader6
+
+Route17Biker8Text:
+	script_trainer Route17TrainerHeader7
+
+Route17Biker9Text:
+	script_trainer Route17TrainerHeader8
+
+Route17Biker10Text:
+	script_trainer Route17TrainerHeader9
 
 Route17Biker1BattleText:
 	text_far _Route17Biker1BattleText
@@ -75,12 +99,6 @@ Route17Biker1AfterBattleText:
 	text_far _Route17Biker1AfterBattleText
 	text_end
 
-Route17Biker2Text:
-	text_asm
-	ld hl, Route17TrainerHeader1
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route17Biker2BattleText:
 	text_far _Route17Biker2BattleText
 	text_end
@@ -92,12 +110,6 @@ Route17Biker2EndBattleText:
 Route17Biker2AfterBattleText:
 	text_far _Route17Biker2AfterBattleText
 	text_end
-
-Route17Biker3Text:
-	text_asm
-	ld hl, Route17TrainerHeader2
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route17Biker3BattleText:
 	text_far _Route17Biker3BattleText
@@ -111,12 +123,6 @@ Route17Biker3AfterBattleText:
 	text_far _Route17Biker3AfterBattleText
 	text_end
 
-Route17Biker4Text:
-	text_asm
-	ld hl, Route17TrainerHeader3
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route17Biker4BattleText:
 	text_far _Route17Biker4BattleText
 	text_end
@@ -128,12 +134,6 @@ Route17Biker4EndBattleText:
 Route17Biker4AfterBattleText:
 	text_far _Route17Biker4AfterBattleText
 	text_end
-
-Route17Biker5Text:
-	text_asm
-	ld hl, Route17TrainerHeader4
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route17Biker5BattleText:
 	text_far _Route17Biker5BattleText
@@ -150,12 +150,6 @@ Route17Biker5AfterBattleText:
 	ld de, LearnsetElectrode
 	predef_jump LearnsetTrainerScript
 
-Route17Biker6Text:
-	text_asm
-	ld hl, Route17TrainerHeader5
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route17Biker6BattleText:
 	text_far _Route17Biker6BattleText
 	text_end
@@ -167,12 +161,6 @@ Route17Biker6EndBattleText:
 Route17Biker6AfterBattleText:
 	text_far _Route17Biker6AfterBattleText
 	text_end
-
-Route17Biker7Text:
-	text_asm
-	ld hl, Route17TrainerHeader6
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route17Biker7BattleText:
 	text_far _Route17Biker7BattleText
@@ -186,12 +174,6 @@ Route17Biker7AfterBattleText:
 	text_far _Route17Biker7AfterBattleText
 	text_end
 
-Route17Biker8Text:
-	text_asm
-	ld hl, Route17TrainerHeader7
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route17Biker8BattleText:
 	text_far _Route17Biker8BattleText
 	text_end
@@ -204,12 +186,6 @@ Route17Biker8AfterBattleText:
 	text_far _Route17Biker8AfterBattleText
 	text_end
 
-Route17Biker9Text:
-	text_asm
-	ld hl, Route17TrainerHeader8
-	call TalkToTrainer
-	rst TextScriptEnd
-
 Route17Biker9BattleText:
 	text_far _Route17Biker9BattleText
 	text_end
@@ -221,12 +197,6 @@ Route17Biker9EndBattleText:
 Route17Biker9AfterBattleText:
 	text_far _Route17Biker9AfterBattleText
 	text_end
-
-Route17Biker10Text:
-	text_asm
-	ld hl, Route17TrainerHeader9
-	call TalkToTrainer
-	rst TextScriptEnd
 
 Route17Biker10BattleText:
 	text_far _Route17Biker10BattleText

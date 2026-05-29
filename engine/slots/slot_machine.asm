@@ -1,4 +1,4 @@
-PromptUserToPlaySlots:
+PromptUserToPlaySlots::
 	call SaveScreenTilesToBuffer2
 	ld a, BANK(DisplayTextIDInit)
 	ASSERT BANK(DisplayTextIDInit) == 1 << BIT_NO_AUTO_TEXT_BOX
@@ -16,11 +16,11 @@ PromptUserToPlaySlots:
 	xor a
 	ld [hli], a
 	ld [hl], SMILE_BUBBLE
-	predef EmotionBubble
+	callfar EmotionBubble
 	call GBPalWhiteOutWithDelay3
 	call LoadSlotMachineTiles
 	call LoadFontTilePatterns
-	ld b, SET_PAL_SLOTS
+	ld d, SET_PAL_SLOTS
 	call RunPaletteCommand
 	call GBPalNormal
 	ld a, $e4
@@ -66,7 +66,7 @@ MainSlotMachineLoop:
 	rst _PrintText
 	call SaveScreenTilesToBuffer1
 .loop
-	ld a, A_BUTTON | B_BUTTON
+	ld a, PAD_A | PAD_B
 	ld [wMenuWatchedKeys], a
 	ld a, 2
 	ld [wMaxMenuItem], a
@@ -85,7 +85,7 @@ MainSlotMachineLoop:
 	ld de, CoinMultiplierSlotMachineText
 	call PlaceString
 	call HandleMenuInput
-	and B_BUTTON
+	and PAD_B
 	jp nz, LoadScreenTilesFromBuffer1
 	ld a, [wCurrentMenuItem]
 	n_sub_a 3
@@ -440,7 +440,7 @@ SlotMachine_CheckForMatches:
 	ld h, [hl]
 	ld l, a
 	ld de, wStringBuffer
-	ld bc, 4
+	ld bc, 4 ; every SlotReward*Text is at most 4 bytes
 	rst _CopyData
 	pop hl
 	call hl_caller
@@ -629,7 +629,7 @@ SlotMachine_PrintWinningSymbol:
 	inc a
 	ld [hl], a
 	hlcoord 18, 16
-	ld [hl], "▼"
+	ld [hl], '▼'
 	ret
 
 SlotMachine_SubtractBetFromPlayerCoins:
@@ -841,7 +841,7 @@ SlotMachine_HandleInputWhileWheelsSpin:
 	rst _DelayFrame
 	call JoypadLowSensitivity
 	ldh a, [hJoy5]
-	and A_BUTTON
+	and PAD_A
 	ret z
 	ld hl, wStoppingWhichSlotMachineWheel
 	ld a, [hl]

@@ -13,12 +13,10 @@ VermilionFitnessClub_Script:
 	ld hl, wCurrentMapScriptFlags
 	bit BIT_MAP_LOADED_AFTER_BATTLE, [hl]
 	jr nz, .afterBattle
-	bit BIT_CUR_MAP_LOADED_1, [hl]
-	res BIT_CUR_MAP_LOADED_1, [hl]
+	call WasMapJustLoaded
 	jr z, .notLoaded
-	ld a, HS_VERMILIONFITNESSCLUB_JANITOR
-	ld [wMissableObjectIndex], a
-	predef HideExtraObject
+	ld c, TOGGLE_VERMILIONFITNESSCLUB_JANITOR
+	call HideExtraObject
 .notLoaded
 	ld a, [wStatusFlags5]
 	bit BIT_SCRIPTED_MOVEMENT_STATE, a
@@ -40,9 +38,9 @@ VermilionFitnessClub_Script:
 	call z, StartVermilionFitnessClubBattle
 .noPositionScripts
 	ldh a, [hJoyPressed]
-	bit BIT_A_BUTTON, a
+	bit B_PAD_A, a
 	ret z
-	callfar _GetTileAndCoordsInFrontOfPlayer
+	call GetTileAndCoordsInFrontOfPlayer
 	ld a, [wTileInFrontOfPlayer]
 	cp $5B
 	ld b, TEXT_VERMILIONFITNESSCLUB_BIKES
@@ -129,24 +127,24 @@ VermilionFitnessClubClerk:
 	rst TextScriptEnd
 .startBattle
 	ld hl, wSimulatedJoypadStatesEnd
-	ld [hl], D_RIGHT
+	ld [hl], PAD_RIGHT
 	inc hl
-	ld a, D_UP
+	ld a, PAD_UP
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	call IsPlayerBesideVermilionFitnessClubClerk
 	ld a, 4
 	jr z, .beside
-	ld [hl], D_UP
+	ld [hl], PAD_UP
 	inc hl
-	ld [hl], D_RIGHT
+	ld [hl], PAD_RIGHT
 	inc hl
 	ld a, 6
 .beside
 	ld [hl], -1
 	ld [wSimulatedJoypadStatesIndex], a
-	call StartSimulatingJoypadStates
+	call StartSimulatingJoypadStatesOnlyAOrBPress
 	rst TextScriptEnd
 
 .intro
@@ -157,7 +155,7 @@ VermilionFitnessClubClerk:
 	text_end
 
 VermilionFitnessClubForceWalkDown:	
-	ld a, D_DOWN
+	ld a, PAD_DOWN
 	ld hl, wSimulatedJoypadStatesEnd
 	ld [hli], a
 	ld [hl], -1
@@ -408,18 +406,18 @@ VermilionFitnessClubAfterBattleText:
 	call FitnessClubAfterBattleText
 	jr c, .done
 	; if nc, make the player leave
-	ld a, D_DOWN
+	ld a, PAD_DOWN
 	ld hl, wSimulatedJoypadStatesEnd
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
 	ld [hli], a
-	ld a, D_LEFT
+	ld a, PAD_LEFT
 	ld [hli], a
 	ld [hl], -1
 	ld a, 5
 	ld [wSimulatedJoypadStatesIndex], a
-	call StartSimulatingJoypadStates
+	call StartSimulatingJoypadStatesOnlyAOrBPress
 	ld hl, VermilionFitnessClubHideOpponents
 	call FitnessClubHideOpponents
 .done
