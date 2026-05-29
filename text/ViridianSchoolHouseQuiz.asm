@@ -124,8 +124,7 @@ _SchoolB1FLeftTeacherQuizQuickAttack::
 _SchoolB1FLeftTeacherQuizQuestion3::
 	text "Question 3:"
 	para "Quel status baisse"
-	line "la statistique"
-	cont "d'ATTAQUE?"
+	line "la stat d'ATTAQUE?"
 	prompt
 
 _SchoolB1FLeftTeacherQuizQuestion4::

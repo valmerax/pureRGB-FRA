@@ -146,7 +146,7 @@ _SwordsDanceDexEntry::
 	next "pour augmenter"
 	next "l'esprit combatif."
 
-	bage "Booste la FORCE du"
+	bage "Booste l'ATTAQUE du"
 	next "<lanceur>."
 	next "(+2 FOR)"
 	dex
@@ -456,7 +456,7 @@ _GrowlDexEntry::
 	next "rend l'<ennemi>"
 	next "moins méfiant."
 
-	bage "Baisse la FORCE de"
+	bage "Baisse l'ATTAQUE de"
 	next "l'<ennemi>."
 	next "(-1 FOR)"
 	dex
@@ -468,7 +468,7 @@ _RoarDexEntry::
 	; fall through
 _Generic33PercentLowerAttackText::
 	bage "33% de chances de"
-	next "baisser la FORCE"
+	next "baisser l'ATTAQUE"
 	next "ennemie. (-1 FOR)"
 	dex
 
@@ -525,7 +525,7 @@ _AcidDexEntry::
 	next "l'<ennemi>."
 
 	bage "Réduit toujours"
-	next "la FORCE ou la"
+	next "l'ATTAQUE ou la"
 	next "DEFENSE de l'<ennemi>"
 	dex
 
@@ -696,7 +696,7 @@ _SubmissionDexEntry::
 	next "net avantage."
 	; fall through
 _GenericRaisesAttack1StageText::
-	bage "Augmente la FORCE"
+	bage "Augmente l'ATTAQUE"
 	next "du <lanceur>."
 	next "(+1 FOR)"
 	dex
@@ -1024,7 +1024,7 @@ _MeditateDexEntry::
 	next "détend et accroît"
 	next "ses capacités."
 
-	bage "Augmente la FORCE,"
+	bage "Augmente l'ATTAQUE,"
 	next "le SPECIAL, et"
 	next "la VITESSE. (+1)"
 	dex
@@ -1290,7 +1290,7 @@ _BideDexEntry::
 	next "mentalement pour"
 	next "augmenter sa force."
 
-	bage "Augmente la FORCE"
+	bage "Augmente l'ATTAQUE"
 	next "et la DEFENSE."
 	next "(+1 FOR, +1 DEF)"
 	dex
@@ -1775,7 +1775,7 @@ _SharpenDexEntry::
 	next "ses griffes ou"
 	next "ses facettes."
 
-	bage "Augmente la FORCE"
+	bage "Augmente l'ATTAQUE"
 	next "et la PRECISION."
 	next "(+1 FOR, +1 PRE)"
 	dex
