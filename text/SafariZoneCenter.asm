@@ -22,7 +22,7 @@ _SafariZoneCenterRangerEndBattleText::
 
 _SafariZoneCenterRangerAfterBattleText::
 	text "En fait, je suis"
-	line "le maître-nageur"
+	line "maître-nageur"
 	cont "ici!"
 	para "Cette petite île"
 	line "est mon havre de"
@@ -81,7 +81,7 @@ _SafariZoneCenterRockerAfterBattleText::
 _SafariZoneCenterJugglerText::
 	text "Pourquoi je ne"
 	line "peux pas garder"
-	cont "tous ces TAUROS?"
+	cont "ces TAUROS?"
 	done
 
 _SafariZoneCenterJugglerEndBattleText::
@@ -99,9 +99,9 @@ _SafariZoneCenterJugglerAfterBattleText::
 _TaurosLearnsetText::
 	text "“Le Matador” va"
 	line "maintenant te"
-	cont "raconter un célèbre"
-	cont "conte populaire"
-	cont "sur @"
+	cont "raconter une"
+	cont "histoire sur"
+	cont "@"
 	text_ram_namebuffer
 	text "<...>"
 	prompt

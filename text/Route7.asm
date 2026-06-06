@@ -6,8 +6,7 @@ _Route7UndergroundPathSignText::
 
 _Route7BattleText1::
 	text "Je suis le plus"
-	line "vieux croupier"
-	cont "encore en vie!"
+	line "vieux croupier!"
 	done
 
 _Route7EndBattleText1::
@@ -17,11 +16,10 @@ _Route7EndBattleText1::
 
 _Route7AfterBattleText1::
 	text "N'écoute pas ce"
-	line "que l'autre type"
-	cont "te raconte."
+	line "que dit l'autre."
 	para "J'étais CROUPIER"
 	line "quand lui était"
-	cont "encore bébé!"
+	cont "bébé!"
 	done
 
 _Route7BattleText2::
@@ -37,11 +35,11 @@ _Route7EndBattleText2::
 
 _Route7AfterBattleText2::
 	text "Ne crois pas ce"
-	line "que l'autre type"
-	cont "te raconte."
+	line "que dit l'autre."
 	para "CELADOPOLE ne"
-	line "serait pas pareil"
-	cont "sans mes paris!"
+	line "serait plus la"
+	cont "même sans mes"
+	cont "paris!"
 	para "J'ai perdu plus"
 	line "d'argent que"
 	cont "quiconque!"

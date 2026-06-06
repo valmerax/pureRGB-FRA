@@ -47,8 +47,7 @@ _RhyhornLearnset::
 	para "Je t'ai vu mater"
 	line "mon @"
 	text_ram_namebuffer
-	text_start
-	cont "un peu déjanté!"
+	text "!"
 	para "Tu sais qu'il est"
 	line "trop cool!"
 	prompt
@@ -136,8 +135,7 @@ _Route9Hiker2AfterBattleText::
 	done
 
 _GeodudeLearnset::
-	text "Résistant et"
-	line "robuste, comme"
+	text "Robuste, comme"
 	cont "mon @"
 	text_ram_namebuffer
 	text "!"

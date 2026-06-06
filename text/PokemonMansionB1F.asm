@@ -42,30 +42,30 @@ _Mansion4EndBattleText3::
 _Mansion4AfterBattleText3::
 	text "Cet étage a une"
 	line "aura inquiétante."
-	para "Je deviens"
-	line "vraiment anxieux."
+	para "Je suis vraiment"
+	line "inquiet."
 	done
 
 _Mansion4BattleText4::
-	text "Je ne sais même"
-	line "pas comment je"
-	cont "suis arrivé ici!"
+	text "Je ne sais pas"
+	line "comment je suis"
+	cont "arrivé ici!"
 	done
 
 _Mansion4EndBattleText4::
 	text "Tu sais comment"
-	line "on sort d'ici?"
+	line "on sort?"
 	prompt
 
 _Mansion4AfterBattleText4::
-	text "On reçoit sans"
-	line "cesse des appels"
-	cont "au sujet d'enfants"
+	text "On reçoit souvent"
+	line "des appels au"
+	cont "sujet d'enfants"
 	cont "égarés dans le"
 	cont "manoir."
-	para "On doit connaître"
-	line "cet endroit comme"
-	cont "notre poche!"
+	para "Il faut bien"
+	line "connaître cet"
+	cont "endroit!"
 	done
 
 _PokemonMansionB1FDiaryText::

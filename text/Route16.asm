@@ -76,7 +76,7 @@ _Route16Biker5AfterBattleText::
 	text "Mes #MON sont"
 	line "féroces! Ils"
 	cont "déchirent mes"
-	cont "ennemis!"
+	cont "<ennemi>s!"
 	done
 
 _Route16Biker6BattleText::

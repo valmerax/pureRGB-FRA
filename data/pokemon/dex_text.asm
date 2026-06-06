@@ -435,7 +435,7 @@ _ParasectDexEntry::
 
 _PsyduckDexEntry::
 	text "Il distrait ses"
-	next "ennemis avec des"
+	next "<ennemi>s avec des"
 	next "grimaces débiles"
 
 	bage "et les attaque"
@@ -445,7 +445,7 @@ _PsyduckDexEntry::
 
 _DrowzeeDexEntry::
 	text "Il endort ses"
-	next "ennemis et dévore"
+	next "<ennemi>s et dévore"
 	next "leurs songes."
 
 	bage "En mangeant de"
@@ -1023,7 +1023,7 @@ _ButterfreeDexEntry::
 
 	bage "projeter des"
 	next "poudres toxiques"
-	next "sur ses ennemis."
+	next "sur ses <ennemi>s."
 	dex
 
 _MachampDexEntry::

@@ -14,7 +14,7 @@ _VermilionGymLTSurgePreBattleText::
 	cont "Et ouais!"
 
 	para "Ils ont paralysé"
-	line "mes ennemis avec"
+	line "mes <ennemi>s avec"
 	cont "leurs éclairs!"
 	cont "Une vraie"
 	cont "boucherie!"

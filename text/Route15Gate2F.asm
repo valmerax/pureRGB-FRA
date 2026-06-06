@@ -9,9 +9,9 @@ _Route15Gate2FOaksAideBoosterChipText::
 	cont "ta ceinture"
 	cont "# BALL!"
 	
-	para "Par contre, il est"
-	line "un peu difficile"
-	cont "à désinstaller."
+	para "Par contre, elle"
+	line "est difficile à"
+	cont "désinstaller."
 
 	para "Alors si tu veux"
 	line "l'enlever, viens"

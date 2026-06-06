@@ -39,10 +39,9 @@ _Route16FlyHouseFearow2Text::
 	line "ma RAPASDEPIC,"
 	cont "PLUMETTE."
 	para "Elle me transporte"
-	line "partout en VOL"
+	line "partout avec VOL"
 	cont "pour que je sois"
-	cont "bien tranquille!"
+	cont "tranquille!"
 	para "Quel oiseau"
-	line "adorable et"
-	cont "affectueux!"
+	line "adorable!"
 	done

@@ -93,12 +93,12 @@ _BillsHouseGardenInfo::
 	para "Je viens de finir"
 	line "mon nouveau"
 	cont "jardin!"
-	para "Pourquoi ne pas y"
-	line "jeter un oeil?"
+	para "Vas-y jeter un"
+	line "coup d'oeil!"
 	para "C'est ouvert aux"
 	line "visiteurs!"
-	para "Utilise simplement"
-	line "les portes là-bas."
+	para "Passe par les"
+	line "portes là-bas."
 	done
 
 _BillsHousePCInfo::

@@ -21,7 +21,7 @@ _Mansion2BattleText2::
 	text "Mec."
 	para "Explorer des lieux"
 	line "abandonnés,"
-	cont "c'est génial."
+	cont "c'est cool."
 	done
 
 _Mansion2EndBattleText2::
@@ -30,19 +30,17 @@ _Mansion2EndBattleText2::
 	prompt
 
 _Mansion2AfterBattleText2::
-	text "Une demeure"
-	line "abandonnée de"
-	cont "chercheur."
+	text "Un manoir"
+	line "abandonné."
 	para "Trop cool."
-	para "Je me demande"
-	line "s'ils ont mené"
-	cont "des expériences"
-	cont "bizarres?"
+	para "Je me demande si"
+	line "des expériences"
+	cont "ont eu lieu ici?"
 	done
 
 _Mansion2BattleText3::
-	text "Je suis un spéléo-"
-	line "logue urbain!"
+	text "Je suis explora-"
+	line "teur urbain!"
 	done
 
 _Mansion2EndBattleText3::
@@ -53,17 +51,16 @@ _Mansion2AfterBattleText3::
 	text "J'adore explorer"
 	line "des lieux"
 	cont "abandonnés."
-	para "Tu es déjà allé à"
+	para "T'es déjà allé à"
 	line "la CENTRALE?"
 	para "C'est un endroit"
 	line "génial!"
 	para "Mais celui-là,"
-	line "c'est vraiment le"
-	cont "top."
+	line "c'est le top."
 	done
 
 _Mansion2BattleText4::
-	text "Ne touche à rien!"
+	text "Touche à rien!"
 	done
 
 _Mansion2EndBattleText4::
@@ -73,19 +70,15 @@ _Mansion2EndBattleText4::
 
 _Mansion2AfterBattleText4::
 	text "Parfois, des"
-	line "données cachées"
-	cont "au public sont"
-	cont "stockées dans ces"
-	cont "installations."
-	para "Puis, ces données"
-	line "sont oubliées"
-	cont "lorsque le labo"
-	cont "est abandonné."
+	line "documents secrets"
+	cont "sont abandonnés"
+	cont "dans ce genre"
+	cont "d'installations."
 	para "En tant que"
 	line "chercheur, c'est"
-	cont "mon travail de"
-	cont "découvrir ces"
-	cont "expériences!"
+	cont "mon devoir de"
+	cont "découvrir tous"
+	cont "ces secrets!"
 	done
 
 _Mansion2BattleText5::
@@ -99,9 +92,8 @@ _Mansion2EndBattleText5::
 	prompt
 
 _Mansion2AfterBattleText5::
-	text "J'en ai vraiment"
-	line "marre de cet"
-	cont "endroit!"
+	text "J'en ai marre de"
+	line "cet endroit!"
 	done
 
 _PokemonMansion2FDiary1Text::
@@ -126,9 +118,8 @@ _PokemonMansion2FDiary3Text::
 	line "6 Septembre."
 	para "Nous avons testé"
 	line "les capacités du"
-	cont "MEW en captivité."
+	cont "MEW captif."
 	para "Sa capacité"
 	line "d'apprentissage"
-	cont "semble presque"
-	cont "illimitée."
+	cont "semble illimitée."
 	done

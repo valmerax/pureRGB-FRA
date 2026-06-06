@@ -52,9 +52,8 @@ _SilphCo5FPokemonReport3Text::
 	text "C'est un RAPPORT"
 	line "sur les #MON!"
 
-	para "4 #MON"
-	line "n'évoluent que"
-	cont "s'ils sont"
+	para "4 #MON évoluent"
+	line "s'ils sont"
 	cont "échangés!"
 
 	para "Il s'agit de:"
@@ -64,6 +63,6 @@ _SilphCo5FPokemonReport3Text::
 	cont "et KADABRA."
 
 	para "Ils peuvent aussi"
-	line "évoluer normale-"
-	cont "ment au niveau 37!"
+	line "évoluer au niveau"
+	cont "37!"
 	done

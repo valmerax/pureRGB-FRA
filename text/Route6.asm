@@ -103,7 +103,7 @@ _Route6Youngster2AfterBattleText::
 	done
 
 _Route6ButterfreeLearnsetText::
-	text "Je fais tout mon"
+	text "Je fais mon"
 	line "possible pour"
 	cont "entraîner"
 	cont "@"

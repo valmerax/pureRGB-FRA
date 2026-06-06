@@ -53,8 +53,8 @@ _MukLearnset::
 	line "LILLIPUT<...>"
 	para "<...>alors il va"
 	line "manquer de PP<...>"
-	para "c'est si parfait"
-	line "<...>comment j'ai pu"
+	para "c'est parfait<...>"
+	line "comment j'ai pu"
 	cont "bla bla bla<...>"
 	prompt
 
@@ -64,17 +64,14 @@ _MukLearnset2::
 	text_start
 	line "ont dévoilé leur"
 	cont "stratégie de"
-	cont "combat en"
-	cont "détail<...>"
+	cont "combat<...>"
 	para "Ils l'ont dit à"
 	line "voix haute pour"
 	cont "que tout le monde"
-	cont "soit au courant."
-	para "Tu ne l'as pas"
-	line "demandé, mais tu"
-	cont "as beaucoup"
-	cont "entendu parler"
-	cont "de GROTADMORV."
+	cont "entende."
+	para "Sans le vouloir,"
+	line "tu en sais long"
+	cont "sur GROTADMORV."
 	prompt
 
 _Route8CooltrainerF1BattleText::
@@ -97,7 +94,7 @@ _Route8CooltrainerF1AfterBattleText::
 _NidorinaLearnset::
 	text "Hmm? Certains"
 	line "restent mignons?!"
-	para "Devrais-je faire"
+	para "Je devrais faire"
 	line "évoluer mon"
 	cont "@"
 	text_ram_namebuffer
@@ -140,15 +137,15 @@ _Route8CooltrainerF2EndBattleText::
 
 _Route8CooltrainerF2AfterBattleText::
 	text "Je trouve que"
-	line "ROUCOOL et"
-	cont "RATTATA sont trop"
-	cont "cool!"
+	line "EVOLI et"
+	cont "CANARTICHO sont"
+	cont "trop cool!"
 	done
 
 _LearnsetMeowth::
 	text "Mais les chats"
 	line "sont les plus"
-	cont "mignons!"
+	cont "cool!"
 	para "Ils se blottissent"
 	line "et adorent les"
 	cont "câlins!"
@@ -211,7 +208,7 @@ _Route8CooltrainerF4EndBattleText::
 _Route8CooltrainerF4AfterBattleText::
 	text "Il paraît que"
 	line "MELOFEE peut"
-	cont "évoluer grâce à "
+	cont "évoluer grâce à"
 	cont "une PIERRE LUNE."
 	done
 
@@ -228,8 +225,7 @@ _ClefableLearnset::
 	cont "l'espace!"
 	para "J'aime bien les"
 	line "imaginer dans une"
-	cont "petite soucoupe"
-	cont "volante!"
+	cont "soucoupe volante!"
 	para "@"
 	text_end
 

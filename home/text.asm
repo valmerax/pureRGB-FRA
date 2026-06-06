@@ -108,7 +108,7 @@ TextShortcutCommandJumpTable:
 	dw QueChar
 	dw EstChar
 	dw EntChar
-	dw IonChar
+	dw LesChar
 	dw OpponentChar
 	dw UserChar
 	dw PokemonChar
@@ -222,7 +222,7 @@ UserChar:: print_name UserText
 QueChar:: print_name QueText
 EstChar:: print_name EstText
 EntChar:: print_name EntText
-IonChar:: print_name IonText
+LesChar:: print_name LesText
 DeChar:: print_name DeText
 
 
@@ -237,8 +237,8 @@ OpponentText::    db "adversaire@"
 QueText::         db "q","ue@" ; have to separate with a comma to avoid it entering the same macro again
 EstText::         db "e","st@" ; have to separate with a comma to avoid it entering the same macro again
 EntText::         db "e","nt@" ; have to separate with a comma to avoid it entering the same macro again
-IonText::         db "i","on@" ; have to separate with a comma to avoid it entering the same macro again
-DeText::          db "d","e@" ; have to separate with a comma to avoid it entering the same macro again
+LesText::         db "l","es@" ; have to separate with a comma to avoid it entering the same macro again
+DeText::          db " ","de@" ; have to separate with a comma to avoid it entering the same macro again
 
 ;TextIDErrorText:: ; "[hTextID] ERROR."
 ;	text_far _TextIDErrorText

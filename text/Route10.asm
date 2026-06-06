@@ -18,14 +18,14 @@ _Route10SuperNerd1AfterBattleText::
 
 _ElectabuzzLearnsetText::
 	text "J'ai attrapé ce"
-	line "ce rare @"
+	line "ce rarissime"
+	cont "@"
 	text_ram_namebuffer
-	text_start
-	cont "à la CENTRALE."
+	text " à la"
+	cont "CENTRALE."
 	para "J'ai beaucoup lu"
-	line "à son sujet et"
-	cont "j'ai décidé qu'il"
-	cont "me le fallait"
+	line "à son sujet alors"
+	cont "il me le fallait"
 	cont "absolument!"
 	para "@"
 	text_end

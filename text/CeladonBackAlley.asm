@@ -36,9 +36,8 @@ _CeladonBackAlleyCircleLeftBikerText::
 _CeladonBackAlleyCircleRightRockerText::
 	text "Je veux adhérer au"
 	line "CLUB DE COMBAT,"
-	para "mais je cherche"
-	line "d'abord un cri de"
-	cont "guerre."
+	para "mais je cherche un"
+	line "cri de guerre."
 	para "Que penses-tu de"
 	line "ça:"
 	para "Ca va cogner dur"
@@ -91,8 +90,8 @@ _CeladonBackAlleyOpponentBikerIntro2::
 	done
 
 _CeladonBackAlleyOpponentBikerIntro3::
-	text "Quatre coups de"
-	line "rage s'abattent!"
+	text "La fureur du"
+	line "4 TEMPS débarque!"
 	done
 
 _CeladonBackAlleyOpponentBikerIntro4::
@@ -103,7 +102,7 @@ _CeladonBackAlleyOpponentBikerIntro4::
 	done
 
 _CeladonBackAlleyOpponentCueBallIntro1::
-	text "Que penses-tu de"
+	text "Tu penses quoi de"
 	line "ma boucle de"
 	cont "ceinture"
 	cont "BOUSTIFLOR?"
@@ -141,7 +140,7 @@ _CeladonBackAlleyOpponentRockerIntro3::
 	text "Je préfère les"
 	line "duels de guitare."
 	para "Tant pis!"
-	line "C'est parti!"
+	line "On y va!"
 	done
 	
 _CeladonBackAlleyOpponentRockerIntro4::
@@ -175,7 +174,7 @@ _CeladonBackAlleyOpponentGamblerIntro3::
 _CeladonBackAlleyOpponentGamblerIntro4::
 	text "Ne joue pas avec"
 	line "ta vie!"
-	para "C'est mon boulot!"
+	para "C'est mon job!"
 	done
 
 _CeladonBackAlleyKoffingGraffiti::
@@ -196,9 +195,8 @@ _CeladonSeniorHouseGrampsText::
 	done
 
 _CeladonSeniorHouseGrannyText::
-	text "Oh, on dirait que"
-	line "les garçons"
-	cont "jouent encore"
+	text "Oh, les garçons"
+	line "jouent encore"
 	cont "dehors!"
 	para "Je devrais leur"
 	line "faire des cookies!"
@@ -224,7 +222,7 @@ _CeladonRuffianHouseBikerText::
 	line "qui peut faire du"
 	cont "vélo ici!"
 	para "Ca te pose un"
-	line "problème?"
+	line "soucis?"
 	done
 
 ; TODO: add back in?

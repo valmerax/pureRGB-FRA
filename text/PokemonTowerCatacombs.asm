@@ -1,10 +1,8 @@
 _PokemonTowerCatacombsTorchedGraveText::
 	text "ICI REPOSE KOKO"
 	line "LE NOADKOKO"
-	para "KOKO a"
-	line "tragiquement péri"
-	cont "dans un incendie"
-	cont "de maison."
+	para "KOKO a péri dans"
+	line "un incendie."
 	; fall through
 _PokemonTowerCatacombsWavedStaff::
 	para "<PLAYER> brandit le"
@@ -39,8 +37,8 @@ _PokemonTowerCatacombsTorchedAfterText::
 	para "Mon dresseur"
 	line "n'avait pas"
 	cont "d'extincteur!"
-	para "Pourquoi a-t-il"
-	line "été si négligent?"
+	para "Pourquoi il a été"
+	line "si négligent?"
 	; fall through
 _PokemonTowerCatacombsSpiritDissipatedText::
 	para "@"
@@ -55,11 +53,10 @@ _PokemonTowerCatacombsSpiritDissipatedText::
 _PokemonTowerCatacombsChunkyGraveText::
 	text "ICI REPOSE VOLTY"
 	line "LE RAICHU"
-	para "VOLTY a été"
-	line "victime d'une"
-	cont "crise cardiaque"
-	cont "soudaine durant"
-	cont "son sommeil.@"
+	para "VOLTY a eu une"
+	line "crise cardiaque"
+	cont "durant son"
+	cont "sommeil.@"
 	text_jump _PokemonTowerCatacombsWavedStaff
 
 _PokemonTowerCatacombsChunkyGraveText2::
@@ -76,7 +73,7 @@ _PokemonTowerCatacombsChunkyAfterText::
 	line "plein de bonnes"
 	cont "choses à manger!"
 	para "Mais je crois que"
-	line "j'ai trop mangé!"
+	line "j'ai abusé!"
 	para "Oups!"
 	para "Tu as quelque"
 	line "chose à manger?"
@@ -91,7 +88,7 @@ _PokemonTowerCatacombsPainlessGraveText::
 	text "ICI REPOSE DOUDOU"
 	line "LE GRODOUDOU"
 	para "DOUDOU est décédé"
-	line "des suites d'un"
+	line "suite à un"
 	cont "traumatisme"
 	cont "crânien.@" 
 	text_jump _PokemonTowerCatacombsWavedStaff
@@ -110,15 +107,13 @@ _PokemonTowerCatacombsPainlessGraveText2::
 
 _PokemonTowerCatacombsPainlessAfterText::
 	text ""
-	para "Mo dresseur m'a"
+	para "Mon dresseur m'a"
 	line "fait combattre si"
 	cont "fort que j'ai subi"
 	cont "des lésions"
-	cont "cérébrales"
 	cont "irréversibles!"
-	para "Je voulais juste"
-	line "lui faire"
-	cont "plaisir!"
+	para "Je voulais lui"
+	line "faire plaisir!"
 	para "On aurait dû"
 	line "connaître nos"
 	cont "limites!@"
@@ -128,9 +123,9 @@ _PokemonTowerCatacombsIrradiatedGraveText::
 	text "ICI REPOSE BOB"
 	line "LE TYGNON"
 	para "BOB a péri avec"
-	line "son dresseur des"
-	cont "suites d'une"
-	cont "maladie due aux"
+	line "son dresseur à"
+	cont "cause d'une"
+	cont "exposition aux"
 	cont "radiations.@"
 	text_jump _PokemonTowerCatacombsWavedStaff
 
@@ -150,19 +145,17 @@ _PokemonTowerCatacombsIrradiatedAfterText::
 	cont "dans une grotte"
 	cont "interdite au"
 	cont "public!"
-	para "On n'avait aucune"
-	line "idée qu'il"
-	cont "s'agissait d'un"
+	para "On ne savait pas"
+	line "que c'était un"
 	cont "site de stockage"
-	cont "de déchets"
-	cont "nucléaires!"
+	cont "nucléaire!"
 	para "Nous n'aurions pas"
 	line "dû y aller!@"
 	text_jump _PokemonTowerCatacombsSpiritDissipatedText
 
 _PokemonTowerCatacombsDarkChannelerText::
-	text "Kekeke, tu as un"
-	line "peu trop peur?"
+	text "Kekeke, tu as"
+	line "trop peur?"
 	para "Tu veux remonter?"
 	done
 
@@ -175,8 +168,7 @@ _GhostMarowakAfterGiovanniText::
 	text "<PLAYER>!"
 	para "C'est le SPECTRE"
 	line "d'OSSATUEUR qui"
-	cont "te parle par"
-	cont "l'intermédiaire du"
+	cont "te parle via le"
 	cont "ROI du KARATE."
 	para "Merci d'avoir"
 	line "vaincu la <TEAM>"
@@ -186,8 +178,7 @@ _GhostMarowakAfterGiovanniText::
 	cont "contribuer à leur"
 	cont "chute."
 	para "Si tu le peux,"
-	line "emmène-moi s'il"
-	cont "te plaît au"
+	line "emmène-moi au"
 	cont "sous-sol de la"
 	cont "TOUR #MON."
 	para "Là-bas, je pourrai"
@@ -204,7 +195,7 @@ _ViridianGymHiker3WhatText::
 
 _DarkChannelerGoDownText::
 	text "Hmm? Je perçois un"
-	line "esprit parmi vos"
+	line "esprit parmi tes"
 	cont "#MON."
 	para "Hoho! La mère"
 	line "OSSATUEUR?"
@@ -224,8 +215,8 @@ _DarkChannelerCatacombsIntroText::
 	text "Suis le chemin"
 	line "jusqu'à la tombe"
 	cont "de OSSATUEUR!"
-	para "Mais tu croiseras"
-	line "sûrement des"
+	para "Mais tu risque"
+	line "de croiser des"
 	cont "esprits errants"
 	cont "en chemin."
 	para "Tiens! Utilise mon"
@@ -235,9 +226,8 @@ _DarkChannelerCatacombsIntroText::
 	cont "esprits mieux"
 	cont "qu'un SCOPE"
 	cont "SYLPHE!"
-	para "Tout ça grâce aux"
-	line "sorts spéciaux"
-	cont "que j'y ai jetés!"
+	para "Grâce aux sorts"
+	line "que j'y ai jetés!"
 	para "<PLAYER> obtient le"
 	line "BATON d'EXORCISTE!"
 	done
@@ -267,14 +257,13 @@ _IrradiatedGrowsLarger::
 	text "IRRADIE se tord et"
 	line "se contorsionne,"
 	para "son corps se"
-	line "métamorphose de"
-	cont "manière étrange!"
+	line "métamorphose"
+	cont "bizarrement!"
 	prompt
 
 _CatacombsCuboneText::
-	text "On dirait que"
-	line "OSSELAIT se"
-	cont "recueille sur la"
+	text "OSSELAIT se"
+	line "recueille sur la"
 	cont "tombe de sa mère."
 	done
 
@@ -307,10 +296,9 @@ _PokemonTowerCatacombsTheMawGraveText::
 	text "ICI REPOSE UN"
 	line "NOSFERALTO CONNU"
 	para "Ce NOSFERALTO a"
-	line "tué son propre"
-	cont "dresseur et s'est"
-	cont "ensuite livré à"
-	cont "une de crimes"
+	line "tué son dresseur"
+	cont "et a ensuite"
+	cont "commis des crimes"
 	cont "violents."
 	para "On ignore s'il"
 	line "avait un surnom.@"
@@ -367,15 +355,13 @@ _CubonePoweredUp::
 	line "@"
 	text_ram wTrainerName
 	text " a"
-	cont "conféré une"
-	cont "énergie divine"
-	cont "à OSSELAIT!"
+	cont "donné une force"
+	cont "divine à OSSELAIT!"
 	prompt
 
 _CuboneGainedUltimateProtection::
-	text "OSSELAIT a obtenu"
-	line "une protection"
-	cont "ultime!"
+	text "OSSELAIT gagne une"
+	line "protection ultime!"
 	prompt
 
 _TheMawMeltedIntoShadows::

@@ -10,9 +10,8 @@ _LearnsetCuteTalk::
 _LearnsetBeautyTalk::
 	text "As-tu déjà"
 	line "remarqué la"
-	cont "beauté sereine"
-	cont "et absolue d'un"
-	cont "@"
+	cont "beauté absolue"
+	cont "d'un @"
 	text_ram_cont wNameBuffer
 	text "?"
 	prompt
@@ -91,10 +90,10 @@ _LearnsetAppreciator::
 	cont "rejoindre<...>"
 	para "<...>"
 	para "<...>"
-	para "Le @"
+	para "Le CLUB DES FANS"
+	line "de @"
 	text_ram_namebuffer
-	text_start
-	line "CLUB DES AMATEURS!"
+	text "!"
 	prompt
 
 _LearnsetMastering::

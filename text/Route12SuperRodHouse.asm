@@ -18,7 +18,7 @@ _Route12GuruEnd::
 _Route12GuruColor::
 	text "Selon l'endroit où"
 	line "tu pêche, tu peux"
-	cont "même trouver des"
+	cont "trouver des"
 	cont "#MON avec des"
 	cont "couleurs variées!"
 

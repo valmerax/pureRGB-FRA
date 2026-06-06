@@ -18,18 +18,17 @@ _PowerPlantElectricityText::
 	text "Des arcs électri-"
 	line "ques bloquent le"
 	cont "passage."
-	para "Y a-t-il un moyen"
-	line "de couper le"
+	para "Peut-on couper le"
 	cont "courant?"
 	done
 
 _ZapdosFlewAway::
-	text "Ce #MON géant a"
-	line "provoqué une"
-	cont "panne de courant!"
-	para "Il s'est envolé par"
-	line "un trou et s'est"
-	cont "retrouvé sur le"
+	text "Ce #MON a causé"
+	line "une panne de"
+	cont "courant!"
+	para "Il s'est enfui par"
+	line "un trou pour"
+	cont "aller sur le"
 	cont "toit!"
 	para "Il faut le suivre!"
 	done
@@ -42,23 +41,21 @@ _PowerPlantRoofDarkCloudsText::
 	done
 
 _PowersOutCantUse::
-	text "Ca ne fonctionne"
-	line "pas à cause de la"
-	cont "panne de courant."
+	text "En panne à cause"
+	line "de la coupure de"
+	cont "courant."
 	done
 
 _PowerCameBackText::
-	text "On dirait que le"
-	line "courant est"
-	cont "revenu!"
+	text "Le courant est"
+	line "revenu!"
 	done
 
 _MagnetText::
-	text "Cet aimant semble"
-	line "être traversé par"
-	cont "de puissantes"
-	cont "ondes électro-"
-	cont "magnétiques."
+	text "Cet aimant est"
+	line "traversé par de"
+	cont "puissantes ondes"
+	cont "électromagnétiques"
 	prompt
 
 _MagnetMagnemiteText::
@@ -66,12 +63,11 @@ _MagnetMagnemiteText::
 	line "capable de"
 	cont "supporter un"
 	cont "magnétisme aussi"
-	cont "élevé."
+	cont "fort."
 	done
 
 _MagnetFloatingMagnetonText::
-	text "Il est déjà"
-	line "suralimenté."
+	text "Déjà suralimenté."
 	done
 
 _PowerPlantComputer1::
@@ -118,15 +114,13 @@ _MagnetMagnetonText3::
 	line "plus haut."
 	para "@"
 	text_ram_namebuffer
-	text " est à"
-	line "présent immunisé"
-	cont "aux attaques de"
-	cont "type SOL!"
+	text " est"
+	line "immunisé aux"
+	cont "attaques SOL!"
 	done
 
 _PowerPlantRoofSignText::
 	text "ATTENTION AUX"
 	line "TRANSFORMATEURS"
 	cont "HAUTE TENSION"
-	cont "SUR LE TOIT"
 	done

@@ -17,9 +17,8 @@ _FightingDojoMasterJustATest2::
 	line "cache derrière"
 	cont "ces parchemins!"
 	para "Pour y entrer,"
-	line "tu dois accomplir"
-	cont "un dernier"
-	cont "exploit."
+	line "tu dois réussir"
+	cont "une épreuve."
 	para "Battre le maître"
 	line "ninja KOGA à"
 	cont "PARMANIE!"
@@ -45,10 +44,10 @@ _FightingDojoExpertRulesSign::
 	para "UN ENTRAINEMENT"
 	line "ULTRA-INTENSIF!"
 _FightingDojoExpertRulesSignJump:	
-	para "Il suffit de leur"
-	line "faire porter nos"
-	cont "poids d'entraîne-"
-	cont "ment spéciaux!"
+	para "Faites-leur porter"
+	line "nos poids"
+	cont "d'entraînement"
+	cont "spéciaux!"
 	para "Les #MON de"
 	line "niveau inférieur"
 	cont "à 45 gagnent le"
@@ -140,7 +139,7 @@ _FightingDojoOpponentFistFighterIntro2::
 
 _FightingDojoOpponentFistFighterIntro3::
 	text "Tu as du gel pour"
-	line "les cheveux?"
+	line "cheveux?"
 	done
 
 _FightingDojoOpponentFistFighterIntro4::

@@ -8,8 +8,7 @@ _Route5BattleText1::
 	text "Je pratique la"
 	line "pensée positive."
 	para "Tu sais quoi?"
-	para "Je vais te battre,"
-	line "c'est sûr!"
+	para "Je vais te battre!"
 	done
 
 _Route5EndBattleText1::
@@ -33,9 +32,8 @@ _Route5BattleText2::
 	line "psychologie"
 	cont "inversé."
 	para "T'as l'air coriace."
-	para "Il y a de fortes"
-	line "chances que je"
-	cont "perde contre toi!"
+	para "Je vais perdre"
+	line "contre toi!"
 	done
 
 _Route5EndBattleText2::
@@ -47,7 +45,7 @@ _Route5AfterBattleText2::
 	text "Quand on s'attend"
 	line "à perdre, la"
 	cont "défaite n'est pas"
-	cont "si terrible."
+	cont "une fatalité."
 	para "La pensée positive"
 	line "et negative"
 	cont "peuvent être"
@@ -55,10 +53,10 @@ _Route5AfterBattleText2::
 	done
 
 _Route5CharmeleonLearnset::
-	text "Voici les aspects"
-	line "positifs liés à"
-	cont "l'entraînement"
-	cont "d'un @"
+	text "Voici les"
+	line "avantages à"
+	cont "entraîner un"
+	cont "@"
 	text_ram_namebuffer
 	text ":"
 	prompt
@@ -66,7 +64,7 @@ _Route5CharmeleonLearnset::
 _Route5BattleText3::
 	text "Tu es déjà allé"
 	line "à la PENSION?"
-	para "J'y vais."
+	para "J'y vais là."
 	done
 
 _Route5EndBattleText3::
@@ -75,10 +73,9 @@ _Route5EndBattleText3::
 	prompt
 
 _Route5AfterBattleText3::
-	text "La PENSION peut"
-	line "t'aider à élever"
-	cont "un #MON"
-	cont "supplémentaire."
+	text "La PENSION t'aide"
+	line "à élever un"
+	cont "#MON."
 	para "Reviens plus tard,"
 	line "il sera plus fort!"
 	done
@@ -110,6 +107,5 @@ _Route5AfterBattleText4::
 	cont "la recherche de"
 	cont "nouveaux #MON"
 	cont "à apprivoiser!"
-	para "C'est ma propre"
-	line "quête!"
+	para "C'est ma quête!"
 	done

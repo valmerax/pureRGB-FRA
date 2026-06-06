@@ -126,7 +126,7 @@ _GenericOHKOText::
 	next "mais rate souvent."
 
 	bage "Ne marche pas sur"
-	next "les ennemis ayant"
+	next "les <ennemi>s ayant"
 	next "une VIT supérieure"
 	dex
 
@@ -1002,7 +1002,7 @@ _PsychicDexEntry::
 	next "déchaîne et frappe"
 	next "l'<ennemi>."
 
-	bage "Peu d'ennemis"
+	bage "Peu d'<ennemi>s"
 	next "resistent à cette"
 	next "attaque PSY.@"
 

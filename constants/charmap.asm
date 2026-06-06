@@ -7,7 +7,7 @@
 	charmap "que",       $3F ; PureRGBnote: ADDED: single byte version of "que"
 	charmap "est",       $40 ; PureRGBnote: ADDED: single byte version of "est"
 	charmap "ent",       $41 ; PureRGBnote: ADDED: single byte version of "ent"
-	charmap "ion",       $42 ; PureRGBnote: ADDED: single byte version of "ion"
+	charmap "les",       $42 ; PureRGBnote: ADDED: single byte version of "les"
 	charmap "<ennemi>",  $43 ; PureRGBnote: ADDED: single byte version of "ennemi"
 	charmap "<lanceur>", $44 ; PureRGBnote: ADDED: single byte version of "lanceur"
 	charmap "#MON",      $45 ; POKéMON
@@ -18,7 +18,7 @@
 	charmap "<PKMN>",    $4a ; "<PK><MN>"
 	charmap "<_CONT>",   $4b ; implements "<CONT>"
 	charmap "<SCROLL>",  $4c
-	charmap "de",        $4d ; PureRGBnote: ADDED: single byte version of "de"
+	charmap " de",        $4d ; PureRGBnote: ADDED: single byte version of " de"
 	charmap "<NEXT>",    $4e
 	charmap "<LINE>",    $4f
 	charmap "@",         $50 ; string terminator

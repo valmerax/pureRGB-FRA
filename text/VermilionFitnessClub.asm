@@ -9,8 +9,8 @@ _VermilionFitnessClubClerkIntroText::
 	text "Tu viens d'attraper"
 	line "un nouveau"
 	cont "#MON?"
-	para "Il a besoin d'un"
-	line "peu d'exercice?"
+	para "Il a besoin"
+	line "d'exercice?"
 	para "Tu es au bon"
 	line "endroit!"
 	para "Nous avons des"
@@ -26,9 +26,8 @@ _VermilionFitnessClubClerkIntroText::
 	prompt
 
 _VermilionFitnessClubClerkBattleText::
-	text "Tes #MON"
-	line "sont-ils prêts"
-	cont "à transpirer?"
+	text "Tes #MON sont"
+	line "prêts à suer?"
 	done
 
 _VermilionFitnessClubClerkBattleStartText::
@@ -39,9 +38,8 @@ _VermilionFitnessClubClerkBattleStartText::
 _VermilionFitnessClubSign::
 	text "CLUB FITNESS DE"
 	line "CARMIN SUR MER"
-	para "Nous sommes"
-	line "spécialisés dans"
-	cont "les entraînements"
+	para "Spécialistes des"
+	line "entraînements"
 	cont "légers des"
 	cont "#MON!"
 	para "Faites combattre"
@@ -56,10 +54,9 @@ _VermilionFitnessClubSign::
 	done
 
 _FitnessClubClerkSelectLevelText::
-	text "Choisissez le"
-	line "niveau des"
-	cont "#MON de votre"
-	cont "adversaire."
+	text "Choisis le niveau"
+	line "des #MON de"
+	cont "ton adversaire."
 	done
 
 _FitnessClubClerkSelectMonAmountText::
@@ -110,8 +107,7 @@ _VermilionFitnessClubMuscular2::
 	text "Les filles adorent"
 	line "cet endroit!"
 	para "Je crois que"
-	line "celle-là là-bas"
-	cont "me mate!"
+	line "celle-là me mate!"
 	done
 
 _VermilionFitnessClubGirl2::
@@ -136,7 +132,7 @@ _VermilionFitnessClubGirl1::
 
 _VermilionFitnessClubFitnessGirlOpponentIntro1::
 	text "Hé! Arrête de me"
-	line "fixer!"
+	line "mater!"
 	para "Donne-moi un"
 	line "combat intense!"
 	done
@@ -161,10 +157,9 @@ _VermilionFitnessClubFitnessGirlOpponentIntro4::
 	done
 
 _VermilionFitnessClubSprinterOpponentIntro1::
-	text "Je viens de"
-	line "recevoir de nouv-"
-	cont "elles chaussures"
-	cont "de course!"
+	text "J'ai des nouvelles"
+	line "chaussures de"
+	cont "course!"
 	done
 
 _VermilionFitnessClubSprinterOpponentIntro2::
@@ -180,7 +175,7 @@ _VermilionFitnessClubSprinterOpponentIntro3::
 	done
 
 _VermilionFitnessClubSprinterOpponentIntro4::
-	text "Laisse moi me"
+	text "Laisse-moi me"
 	line "concentrer sur"
 	cont "cette bataille!"
 	done

@@ -31,8 +31,8 @@ _UndergroundPathWestEastEndBattleText2::
  
 _UndergroundPathWestEastAfterBattleText2::
 	text "Après la réunion,"
-	line "je vais aller"
-	cont "jouer au CASINO!"
+	line "je pars jouer au"
+	cont "CASINO!"
 	para "Youpi!"
 	done
 

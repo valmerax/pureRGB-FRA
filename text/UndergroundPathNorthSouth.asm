@@ -15,7 +15,7 @@ _UndergroundPathNorthSouthAfterBattleText1::
 	cont "SUR MER depuis"
 	cont "des années."
 	para "La marche est un"
-	line "super exercice!"
+	line "bon exercice!"
 	done
 
 _UndergroundPathNorthSouthBattleText2::
@@ -31,7 +31,7 @@ _UndergroundPathNorthSouthEndBattleText2::
 _UndergroundPathNorthSouthAfterBattleText2::
 	text "Combattre dans la"
 	line "pénombre, c'est"
-	cont "vraiment génial!"
+	cont "génial!"
 	para "Tu ne trouves pas?"
 	done
 
@@ -43,13 +43,13 @@ _UndergroundPathNorthSouthBattleText3::
 	done
 
 _UndergroundPathNorthSouthEndBattleText3::
-	text "Tu es doué!"
+	text "T'es doué!"
 	prompt
 
 _UndergroundPathNorthSouthAfterBattleText3::
 	text "Nous recherchons"
 	line "des dresseurs"
-	cont "balères pour"
+	cont "balèzes pour"
 	cont "rejoindre notre"
 	cont "club."
 	para "T'es partant"
@@ -61,6 +61,6 @@ _LearnsetKrabbyKid::
 	text_ram_namebuffer
 	text " adore"
 	line "se battre!"
-	para "Quel super petit"
+	para "Quel super p'tit"
 	line "gars!"
 	prompt
