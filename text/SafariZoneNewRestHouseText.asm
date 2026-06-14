@@ -22,8 +22,8 @@ _SafariZoneRestHouse2TextFreeRoam::
 	done
 
 _SafariZoneRestHouse2TextRangerHunt2::
-	text "Le RANGER numéro 4"
-	line "est difficile à"
+	text "Le RANGER 4 est"
+	line "difficile à"
 	cont "trouver!"
 	para "La plupart des"
 	line "dresseurs ont du"

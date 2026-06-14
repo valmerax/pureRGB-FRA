@@ -11,7 +11,7 @@ _SafariZoneCenterTrainerTipsSignText::
 	done
 
 _SafariZoneCenterRangerText::
-	text "RANGER numéro 1!"
+	text "RANGER 1!"
 	line "A ton service!"
 	done
 

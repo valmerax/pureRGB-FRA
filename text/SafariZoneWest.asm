@@ -33,49 +33,44 @@ _SafariZoneWestSignText::
 
 _SafariZoneWestRanger0Text::
 	text "C'est exact."
-	line "Je suis un RANGER"
 
-	para "RANGER numéro 4,"
-	line "pour être précis."
+	para "Je suis le"
+	line "RANGER 4."
 
 	para "Un autre dresseur,"
 	line "un autre combat."
 	done
 
 _SafariZoneWestRanger0EndBattleText::
-	text "(Baille)<...>"
-	line "J’ai juste envie"
-	cont "de me la couler"
-	cont "douce."
+	text "(Baille)!"
+	line "J’ai envie de me"
+	cont "la couler douce."
 	prompt
 
 _SafariZoneWestRanger0AfterBattleText::
-	text "Je vais te révéler"
-	line "un secret à"
-	cont "propos du prix."
+	text "Voici un secret à"
+	line "propos du prix."
 
-	para "C'est une #"
-	line "BALL qui capture"
-	cont "à coup sûr les"
-	cont "#MON s'ils ont"
-	cont "peu de PV."
+	para "C'est une BALL qui"
+	line "capture à coup"
+	cont "sûr les #MON"
+	cont "avec peu de PV."
 
 	para "Une belle"
 	line "récompense."
 
-	para "Ne gâche pas ta"
-	line "victoire."
+	para "Ne gâche pas"
+	line "ta victoire."
 	done
 
 _SafariZoneWestRanger1Text::
-	text "RANGER Numéro 5!"
+	text "RANGER 5!"
 
 	para "On m'appelle le"
 	line "ROI RANGER!"
 
-	para "Cette falaise"
-	line "rocheuse est mon"
-	cont "royaume!"
+	para "Cette falaise est"
+	line "mon royaume!"
 	done
 
 _SafariZoneWestRanger1EndBattleText::
@@ -83,18 +78,17 @@ _SafariZoneWestRanger1EndBattleText::
 	prompt
 
 _SafariZoneWestRanger1AfterBattleText::
-	text "Ce n'est pas facile"
-	line "de porter cette"
+	text "Pas facile de"
+	line "porter cette"
 	cont "couronne!"
 
-	para "Mais il faut bien"
-	line "que quelqu'un s'en"
-	cont "charge!"
+	para "Mais quelqu'un"
+	line "doit le faire!"
 
 	para "Va-t'en, paysan!"
 
 	para "Je plaisante!"
-	line "Tu es sympa."
+	line "T'es sympa."
 	done
 
 _SafariZoneWestBurglarText::
@@ -116,36 +110,31 @@ _SafariZoneWestBurglarAfterBattleText::
 	cont "programme!"
 
 	para "Je dois attraper"
-	line "suffisamment de"
-	cont "#MON pour ma"
-	cont "classe!"
+	line "des #MON pour"
+	cont "ma classe!"
 
 	para "Même si j'ai l'air"
 	line "ridicule avec ce"
-	cont "gros sac sur le"
-	cont "dos!"
+	cont "gros sac à dos!"
 	done
 
 _SafariZoneWestManiacText::
 	text "Cible acquise."
-	line "Activation de la"
-	cont "séquence de"
+	line "Séquence de"
 	cont "lancement de la"
-	cont "# BALL."
+	cont "# BALL activé."
 	done
 
 _SafariZoneWestManiacEndBattleText::
-	text "Erreur fatale,"
+	text "Erreur,"
 	line "interruption!"
-	cont "Interruption!"
 	prompt
 
 _SafariZoneWestManiacAfterBattleText::
-	text "Mode analyse après"
+	text "Analyse après"
 	line "échec activé."
 
-	para "Analyse du combat"
-	line "en cours."
+	para "Analyse en cours."
 
 	para "."
 
@@ -162,20 +151,17 @@ _SafariZoneWestManiacAfterBattleText::
 _SafariZoneWestRockerText::
 	text "On va transformer"
 	line "cette maison en"
-	cont "notre repaire"
-	cont "secret!"
+	cont "base secrète!"
 	done
 
 _SafariZoneWestRockerEndBattleText::
-	text "Tu veux te joindre"
+	text "Tu te joins"
 	line "à nous?"
 	prompt
 
 _SafariZoneWestRockerAfterBattleText::
-	text "Tout le monde sait"
-	line "que les bases"
-	cont "secrètes, c'est"
-	cont "génial."
+	text "Les bases secrètes"
+	line "c'est génial."
 
 	para "Tout groupe d'amis"
 	line "devrait en avoir"
@@ -184,9 +170,7 @@ _SafariZoneWestRockerAfterBattleText::
 
 _SafariZoneWestJugglerText::
 	text "Il nous faut des"
-	line "passages secrets"
-	cont "pour sortir de"
-	cont "notre base!"
+	line "passages secrets!"
 	done
 
 _SafariZoneWestJugglerEndBattleText::
@@ -195,35 +179,30 @@ _SafariZoneWestJugglerEndBattleText::
 
 _SafariZoneWestJugglerAfterBattleText::
 	text "Une base secrète"
-	line "ne serait pas une"
-	cont "base secrète sans"
-	cont "passages secrets."
+	line "sans passages"
+	cont "secrets n'en est"
+	cont "pas une."
 
 	para "Tu sais que j'ai"
 	line "raison!"
 	done
 
 _SafariZoneWestPsychicText::
-	text "Il est évident que"
-	line "c'est moi le"
-	cont "cerveau de cette"
-	cont "opération!"
+	text "Je suis le cerveau"
+	line "du groupe!"
 	done
 
 _SafariZoneWestPsychicEndBattleText::
 	text "Leurs bavardages"
-	line "incessants m'ont"
-	cont "déconcentré!"
+	line "m'ont déconcentré!"
 	prompt
 
 _SafariZoneWestPsychicAfterBattleText::
 	text "Ils ont plein"
-	line "d'idées pour notre"
+	line "d'idées pour la"
 	cont "base secrète."
 
-	para "Mais c'est toujours"
-	line "moi qui doit"
-	cont "trouver comment"
-	cont "les mettre en"
-	cont "oeuvre!"
+	para "Mais c'est moi qui"
+	line "doit trouver les"
+	cont "solutions!"
 	done

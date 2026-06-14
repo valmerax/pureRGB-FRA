@@ -1,14 +1,13 @@
 _ProspectorsHousePaperText1::
-	text "C'est un message."
+	text "Un message."
 	para "Je suis parti"
 	line "creuser sur la"
 	cont "ROUTE 8!"
 	done
 
 _ProspectorsHouseBoomboxText1::
-	text "Il ne faut pas y"
-	line "toucher sans"
-	cont "permission!"
+	text "Ne pas toucher"
+	line "sans permission!"
 	done
 
 _ProspectorsHouseBoomboxText2::
@@ -30,39 +29,33 @@ _ProspectorsHousePaperText2::
 	cont "avec des lignes"
 	cont "tracées entre les"
 	cont "villes."
-	para "Il est écrit"
+	para "C'est écrit"
 	line "CARTE DES TUNNELS."
 	done
 
 _ProspectorsHouseProspectorText1::
-	text "Regarde qui voilà!"
+	text "Te voilà!"
 	para "Merci encore,"
 	cont "petit!"
 	para "Tu m'as bien aidé"
-	line "à creuser pour"
-	cont "dénicher ces"
+	line "à dénicher ces"
 	cont "diamants!"
 	done
 
 _ProspectorsHouseProspectorText2::
-	text "Je vois que tu"
-	line "peux voler entre"
-	cont "les villes à"
-	cont "présent!"
-	para "Crois-le ou non,"
-	line "tu peux aussi te"
-	cont "déplacer entre"
-	cont "les villes avec"
-	cont "TUNNEL!"
-	para "On a un tout un"
-	line "réseau de tunnels"
-	cont "sous la région!"
+	text "Tu peux voler"
+	line "entre les villes!"
+	para "Sache que tu peux"
+	line "aussi te déplacer"
+	cont "avec TUNNEL!"
+	para "Un réseau de"
+	line "tunnels parcourt"
+	cont "la région!"
 	para "Le tunnel reliant"
 	line "CELADOPOLE part"
 	cont "d'ici! Hahaha!"
-	para "Laisse-moi"
-	line "t'apprendre à"
-	cont "utiliser les"
+	para "Je vais t'apprendre"
+	line "à utiliser les"
 	cont "tunnels."
 	prompt
 
@@ -85,13 +78,11 @@ _ProspectorsHouseBookcase1Text::
 
 _ProspectorsHouseBookcase1Text2::
 	text "<PARA>Les TAUPIQUEUR"
-	line "vivent souvent"
-	cont "dans des tunnels"
-	cont "creusés par les"
-	cont "ONIX."
+	line "vivent dans des"
+	cont "tunnels creusés"
+	cont "par les ONIX."
 	para "Les TAUPIQUEUR"
-	line "ont tendance à"
-	cont "creuser des"
+	line "creusent des"
 	cont "galeries à la"
 	cont "recherche de"
 	cont "racines d'arbres"
@@ -116,12 +107,8 @@ _ProspectorsHouseBookcase3Text2::
 	cont "refroidissement"
 	cont "rapide de la"
 	cont "lave."
-	para "On trouve parfois"
-	line "des gisements à"
-	cont "proximité des"
-	cont "lieux où des"
-	cont "MAGMAR mâles"
-	cont "s'affrontent pour"
-	cont "assurer leur"
-	cont "suprématie."
+	para "On trouve des"
+	line "gisements là où"
+	cont "s'affrontent des"
+	cont "MAGMAR mâles."
 	done

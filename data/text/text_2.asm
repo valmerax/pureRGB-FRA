@@ -324,7 +324,7 @@ _GameOverText::
 
 _RangerHuntSuccessText::
 	text "Haut-parleur:"
-	line "<PLAYER> a vaincu"
+	line "<PLAYER> a battu"
 	cont "les 5 RANGERs!!"
 
 	para "Félicitations!"
@@ -522,7 +522,7 @@ _ViridianSchoolHeyDontLookAtNotes::
 	text_end
 
 _ViridianSchoolNotebookTextGus::
-	text "GUS@"
+	text "MAX@"
 	text_jump _ViridianSchoolHeyDontLookAtNotes
 
 _ViridianSchoolNotebookText1::
@@ -642,6 +642,7 @@ _LinkCableHelpText1::
 	prompt
 
 _LinkCableHelpText2::
+_ViridianSchoolBlackboardText2::
 	text "Quel chapitre"
 	line "voulez-vous lire?"
 	done
@@ -674,11 +675,6 @@ _ViridianSchoolBlackboardText1::
 	cont "#MON pendant"
 	cont "un combat."
 	prompt
-
-_ViridianSchoolBlackboardText2::
-	text "Quel chapitre"
-	line "voulez-vous lire?"
-	done
 
 _ViridianBlackboardSleepText::
 	text "Un #MON ne"
@@ -821,12 +817,6 @@ _HiddenItemBagFullText::
 	done
 
 _FoundHiddenCoinsText::
-	text "<PLAYER> trouve"
-	line "@"
-	text_bcd hCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
-	text " jetons!@"
-	text_end
-
 _FoundHiddenCoins2Text::
 	text "<PLAYER> trouve"
 	line "@"
@@ -1351,13 +1341,7 @@ _PlayerMon2Text::
 	text_end
 
 _EnoughText::
-	text "!@"
-	text_end
-
 _OKExclamationText::
-	text "!@"
-	text_end
-
 _GoodText::
 	text "!@"
 	text_end
@@ -1553,6 +1537,8 @@ _DepositHowManyToPCText::
 	done
 
 _DepositHowManyText::
+_WithdrawHowManyText::
+_TossHowManyText::
 	text "Combien?"
 	done
 
@@ -1579,10 +1565,6 @@ _WhatToWithdrawText::
 	line "retirer?"
 	done
 
-_WithdrawHowManyText::
-	text "Combien?"
-	done
-
 _WithdrewItemText::
 	text "Retrait de:"
 	line "@"
@@ -1604,10 +1586,6 @@ _CantCarryMoreText::
 _WhatToTossText::
 	text "Que désirez-vous"
 	line "jeter?"
-	done
-
-_TossHowManyText::
-	text "Combien?"
 	done
 
 _AccessedHoFPCText::
@@ -1887,19 +1865,16 @@ _ContCharText::
 	text_end
 
 _CantDepositSSTicketText::
-	text "Vous avez besoin"
-	line "de ce ticket à"
-	cont "bord de L'OCEANE!"
+	text "Vous devez garder"
+	line "ce PASSE à bord"
+	cont "de L'OCEANE!"
 	prompt
 
 _CantDepositBikeText::
-	text "You're riding it!"
-	line "Can't deposit now!"
+	text "Vous l'utilisez!"
+	line "Impossible de le"
+	cont "stocker!"
 	prompt
-
-_SpiritAppearedFirstLine::
-	db "Esprit@"
-	done
 
 _SpiritAppearedNextLine::
 	text "@"
@@ -1915,50 +1890,39 @@ _SpiritAppeared::
 	prompt
 
 _TorchedAppeared::
-	text "@"
-	text_call _SpiritAppearedFirstLine
-	text " flamboyant"
+	text "Esprit flamboyant"
 	line "@"
 	text_jump _SpiritAppeared
 
 _ChunkyAppeared::
-	text "@"
-	text_call _SpiritAppearedFirstLine
-	text " affamé@"
+	text "Esprit affamé"
 	line "@"
 	text_jump _SpiritAppeared
 
 _PainlessAppeared::
-	text "@"
-	text_call _SpiritAppearedFirstLine
-	text " blessé@"
+	text "Esprit blessé"
 	line "@"
 	text_jump _SpiritAppearedNextLine
 
 _IrradiatedAppeared::
-	text "@"
-	text_call _SpiritAppearedFirstLine
-	text " irradié@"
+	text "Esprit irradié"
 	line "@"
 	text_jump _SpiritAppeared
 
 _TheMawAppeared::
-	text "@"
-	text_call _SpiritAppearedFirstLine
-	text " sombre@"
+	text "Esprit sombre"
 	line "@"
 	text_jump _SpiritAppeared
 
 _SaveFileUpdateText::
 	text "Cette sauvegarde"
-	line "semble provenir"
-	cont "d'une ancienne"
-	cont "version du jeu."
+	line "vient d'une"
+	cont "ancienne version"
+	cont "du jeu."
 	prompt
 
 _SaveFileUpdateText2::
-	text "De quelle version"
-	line "provient-elle?"
+	text "Quelle version?"
 	done
 
 _SaveFileUpdateTextConfirm::
@@ -1972,18 +1936,13 @@ _SaveFileUpdating::
 	done
 
 _SaveFileUpdateCompleteText::
-	text "Votre sauvegarde a"
-	line "été mise à jour."
+	text "Sauvegarde mise"
+	line "à jour."
 	done
 
 _SaveFileUpdateWarpText::
-	text "Si vous vous"
-	line "téléportez à"
-	cont "BOURG PALETTE,"
-	cont "cela réduira les"
-	cont "bugs liés au"
-	cont "changement de"
-	cont "version."
-	para "Se téléporter à"
-	line "BOURG PALETTE?"
+	text "Se téléporter à"
+	line "BOURG PALETTE"
+	cont "pour réduire les"
+	cont "bugs de version?"
 	done

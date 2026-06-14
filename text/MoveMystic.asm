@@ -3,22 +3,19 @@ _MoveMysticIntro::
 	line "MYSTIQUE DES"
 	cont "CAPACITES!"
 	para "Certains #MON"
-	line "possèdent des"
-	cont "talents cachés!"
-	para "Je peux percer"
-	line "leurs secrets"
-	cont "grâce à ma boule"
-	cont "de cristal!"
+	line "ont des talents"
+	cont "cachés!"
+	para "Je perce leurs"
+	line "secrets avec ma"
+	cont "boule de cristal!"
 	para "Mais seulement"
-	line "si tu as déjà"
-	cont "rencontré le"
-	cont "#MON!"
+	line "pour les #MON"
+	cont "déjà vus!"
 	prompt
 
 _MoveMysticAgain::
-	text "Tu es revenu"
-	line "auprès du"
-	cont "MYSTIQUE DES"
+	text "Tu es revenu vers"
+	line "le MYSTIQUE DES"
 	cont "CAPACITES!"
 	prompt
 
@@ -29,9 +26,8 @@ _MoveMysticQuestion::
 	prompt
 
 _MoveMysticLookDeep::
-	text "Regarde au plus"
-	line "profond de ma"
-	cont "boule de cristal!"
+	text "Regarde dans ma"
+	line "boule de cristal!"
 	prompt
 
 _MoveMysticAhYes::
@@ -152,7 +148,7 @@ _GolduckMoveMysticText::
 _DewgongMoveMysticText::
 	text_start
 	line "la splendide"
-	cont "sceau."
+	cont "otarie."
 	prompt
 
 _ArcanineMoveMysticText::
@@ -191,11 +187,10 @@ _MoveMysticLovesMoveText::
 
 _MoveMysticBeedrillText::
 	text "Ses dards mortels"
-	line "sont utiles à"
-	cont "bien des égards!"
+	line "sont redoutables!"
 	para "La puissance de"
-	line "DARD-VENIN triple"
-	cont "et monte à 45!"
+	line "DARD-VENIN monte"
+	cont "à 45!"
 	para "Et la puissance de"
 	line "DOUBLE-DARD monte"
 	cont "à 65!"
@@ -227,25 +222,18 @@ _GenericMovePowerIncreasesText::
 
 _MoveMysticInfoText::
 	text "Si option sur ON,"
-	line "une nouvelle"
-	cont "maison sera"
-	cont "disponible à"
+	line "la maison du"
+	cont "MYSTIQUE DES"
+	cont "CAPACITES sera à"
 	cont "SAFRANIA."
-	para "Le MYSTIQUE DES"
-	line "CAPACITES qui s'y"
-	cont "trouve vous"
-	cont "renseignera sur"
-	cont "les CAPACITES"
+	para "Il dévoile"
+	line "les CAPACITES"
 	cont "SIGNATURE des"
 	cont "#MON."
-	para "Certains #MON"
-	line "bénéficieront"
-	cont "d'un bonus de"
-	cont "puissance ou de"
-	cont "précision lors de"
-	cont "l'utilisation de"
-	cont "certaines"
-	cont "capacités."
+	para "Certaines attaques"
+	line "gagneront en"
+	cont "puissance ou en"
+	cont "précision."
 	para "Si option sur OFF,"
 	line "ces bonus seront"
 	cont "désactivés."

@@ -46,7 +46,7 @@ _SafariZoneNorthTrainerTips3Text::
 
 _SafariZoneNorthRangerText::
 	text "Me voilà!"
-	line "RANGER numéro 3!"
+	line "RANGER 3!"
 	cont "C'est parti!"
 	done
 

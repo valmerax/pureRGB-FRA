@@ -20,9 +20,9 @@ _SafariZoneEastRangerText::
 	line "On dirait que tu"
 	cont "m'as trouvé!"
 
-	para "Je suis le RANGER"
-	line "numéro 2! Je"
-	cont "t'attendais."
+	para "Je suis la"
+	line "RANGER 2!"
+	cont "Je t'attendais."
 	done
 
 _SafariZoneEastRangerEndBattleText::
@@ -119,9 +119,8 @@ _SafariZoneEastCooltrainerMEndBattleText::
 	prompt
 
 _SafariZoneEastCooltrainerMAfterBattleText::
-	text "La RANGER numéro 2"
-	line "est la plus"
-	cont "mignonne."
+	text "La RANGER 2 est la"
+	line "plus mignonne."
 
 	para "Quelle jolie"
 	line "fille<...>"

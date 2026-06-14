@@ -1,6 +1,6 @@
 _PokemonCenterChampText::
-	text "Oh mon Dieu! C'est"
-	line "le CHAMPION!"
+	text "Oh!"
+	line "Le CHAMPION!"
 	para "C'est un honneur"
 	line "de soigner vos"
 	cont "#MON."
@@ -18,13 +18,13 @@ _PokemonCenterFarewellChamp1Text::
 
 _PokemonCenterFarewellChamp2Text::
 	text "Mes amis vont être"
-	line "tellement jaloux!"
+	line "jaloux!"
 	done
 
 _PokemonCenterFarewellChamp3Text::
-	text "C'est vrai que"
-	line "vous avez battu"
-	cont "la <TEAM><ROCKET>?"
+	text "Vous avez vraiment"
+	line "battu la <TEAM>"
+	cont "<ROCKET>?"
 	done
 
 _PokemonCenterFarewellChamp4Text::
@@ -50,7 +50,7 @@ _PokemonCenterFarewellChamp7Text::
 	text "Dites à @"
 	text_ram wRivalName
 	text "<LINE>que je le trouve"
-	cont "génial!"
+	cont "cool!"
 	done
 
 _PokemonCenterFarewellChamp8Text::

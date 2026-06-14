@@ -11,21 +11,19 @@ _MoveTutorInfoText::
 	prompt
 
 _CeladonSoftboiledGuysHousePaper2Text::
-	text "Apprenez dès"
-	line "aujourd'hui des"
-	cont "capacités <PK><MN>"
+	text "Apprenez des"
+	line "capacités <PK><MN>"
 	cont "cultes!"
 	done
 
 _CeladonSoftboiledGuysHouseEggStatueText::
 	text "Une statue d'oeuf"
 	line "en marbre!"
-	para "“Un vrai ami pense"
+	para "“Un vrai ami sait"
 	line "que vous êtes"
 	cont "un brave oeuf,"
-	para "même s'il sait que"
-	line "vous êtes un peu"
-	cont "fêlé.”"
+	para "même si vous êtes"
+	line "un peu fêlé.”"
 	done
 
 _CeladonSoftboiledGuysHouseBookcaseText::
@@ -40,8 +38,7 @@ _CeladonSoftboiledGuysHouseBookcaseText::
 _CeladonSoftboiledGuysHouseBookcase2Text::
 	text "<PARA>LEVEINARD utilise"
 	line "BOMB'OEUF pour"
-	cont "sortir un homme"
-	cont "piégé dans"
-	cont "une voiture"
-	cont "accidentée!"
+	cont "libérer un homme"
+	cont "piégé dans sa"
+	cont "voiture!"
 	done

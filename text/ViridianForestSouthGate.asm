@@ -17,7 +17,6 @@ _ViridianForestSouthGateLittleGirlText::
 _ViridianForestSouthGateLittleGirl2Text::
 	text "Tu l'as fait?!"
 	para "Bravo!"
-	para "Tu es sur la bonne"
-	line "voie pour devenir"
-	cont "un pro!"
+	para "Tu vas devenir un"
+	line "pro!"
 	done

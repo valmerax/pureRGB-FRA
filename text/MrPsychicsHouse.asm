@@ -8,11 +8,10 @@ _MrPsychicsHouseMrPsychicYouWantedThisText::
 _MrPsychicsHouseMrPsychicTM29ExplanationText::
 	text "CT29: PSYKO!"
 
-	para "Elle utilise de"
+	para "Envoie de"
 	line "puissantes ondes"
-	cont "psychiques pour"
-	cont "infliger des"
-	cont "dégâts!"
+	cont "psychiques sur"
+	cont "l'<ennemi>!"
 
 	para "Cette attaque"
 	line "diminue le"
@@ -31,28 +30,22 @@ _MrPsychicsHouseBookText::
 	text_end
 
 _MrPsychicsHouseBookText2::
-	text "<PARA>La puissante aura"
-	line "PSYCHIQUE de"
-	cont "KADABRA cause"
+	text "<PARA>L'aura PSYCHIQUE"
+	line "de KADABRA cause"
 	cont "d'étranges ombres"
-	cont "sur les écrans de"
-	cont "télévision et"
-	cont "d'ordinateur."
-	para "Si vous voyez l'une"
-	line "de ces ombres,"
-	cont "cela porte"
-	cont "malheur."
+	cont "sur les écrans."
+	para "Voir ces ombres"
+	line "porte malheur."
 	done
 
 _MrPsychicsHouseIKnowWhatYouWantText::
 	text "Je sais ce que tu"
 	line "veux!"
-	para "Mais d'abord, fait"
-	line "ceci pour moi:"
-	para "Va malmener les"
-	line "dresseurs du"
-	cont "DOJO KARATE!"
-	para "C'est du côté nord"
-	line "de la ville."
+	para "Mais d'abord,"
+	line "fais ça pour moi:"
+	para "Bats les dresseurs"
+	line "du DOJO KARATE!"
+	para "C'est au nord de"
+	line "la ville."
 	done
 
