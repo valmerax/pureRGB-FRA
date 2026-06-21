@@ -116,7 +116,7 @@ _CeruleanBadgeHouseGarbageText::
 
 _CeruleanBadgeHouseLeftPaperText::
 	text "Si vous avez un"
-	line "MOVEDEX,"
+	line "CAPADEX,"
 	cont "vous pouvez"
 	cont "enregistrer les"
 	cont "capacités des"

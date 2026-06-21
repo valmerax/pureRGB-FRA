@@ -1008,7 +1008,7 @@ INCLUDE "data/moves/movedex_order.asm"
 INCLUDE "data/moves/movedex_entries.asm"
 
 MovedexText:
-	db "MOVEDEX@"
+	db "CAPADEX@"
 
 MoveTypeText:
 	db "TYPE/@"

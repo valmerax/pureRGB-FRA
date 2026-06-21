@@ -216,7 +216,7 @@ _LearnsetsInfoText::
 	text "Si option sur ON"
 	line "et que vous"
 	cont "possédez le"
-	cont "MOVEDEX,"
+	cont "CAPADEX,"
 	para "vous pouvez"
 	line "débloquer les"
 	cont "informations des"

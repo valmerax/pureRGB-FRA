@@ -47,7 +47,7 @@ _SchoolB1FLeftTeacherFirst::
 	cont "des #MON!"
 	para "C'est brillant!"
 	para "Je l'appelle le"
-	line "MOVEDEX!"
+	line "CAPADEX!"
 	para "C'est vraiment"
 	line "utile!"
 	para "Tu en veux un?"
@@ -78,7 +78,7 @@ _SchoolB1FLeftTeacherYes::
 	para "Un score parfait"
 	line "te permettra de"
 	cont "remporter le"
-	cont "MOVEDEX!"
+	cont "CAPADEX!"
 	para "C'est parti!"
 	done
 
@@ -164,13 +164,13 @@ _SchoolB1FLeftTeacherQuizFinish::
 	para "Tu as réussi!"
 	para "Tu as répondu aux"
 	line "5 questions!"
-	para "Le MOVEDEX est à"
+	para "Le CAPADEX est à"
 	line "toi!"
 	prompt
 
 _ReceivedMovedexText::
 	text "<PLAYER> obtient"
-	line "le MOVEDEX!"
+	line "le CAPADEX!"
 	done
 
 
@@ -180,7 +180,7 @@ _SchoolB1FLeftTeacherQuizFinalInfo::
 	cont "utiliser une"
 	cont "nouvelle capacité"
 	cont "elle apparaîtra"
-	cont "dans le MOVEDEX!"
+	cont "dans le CAPADEX!"
 	para "Il suffit d'ouvrir"
 	line "ton #DEX et"
 	cont "d'appuyer sur"
