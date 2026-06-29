@@ -16,10 +16,8 @@ _FuchsiaMartCooltrainerFText::
 	done
 
 _FuchsiaMartTMKidFlavor::
-	text "<PARA>J'ai entendu dire"
-	line "que quelqu'un a"
-	cont "fait don d'un"
-	cont "#MON préhisto-"
-	cont "rique au zoo"
-	cont "d'ici! Cool!@"
+	text "<PARA>Quelqu'un a fait"
+	line "don d'un #MON"
+	cont "préhistorique au"
+	cont "zoo! Cool!@"
 	text_end

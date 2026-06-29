@@ -19,21 +19,18 @@ _SafariZoneGateSafariZoneWorker1ThatllBe500PleaseText::
 	prompt
 
 _SafariZoneEntranceWhatGame::
-	text "Quel jeu Safari tu"
-	line "préfères?@"
+	text "Quel jeu SAFARI?@"
 	text_end
 
 _SafariZoneClassic::
 	text "Pars à la chasse"
 	line "aux #MON en"
-	cont "utilisant des"
-	cont "appâts et des"
-	cont "pierres!"
+	cont "utilisant appâts"
+	cont "et cailloux!"
 
 	para "Trouve la CABANE"
 	line "SECRETE avant la"
-	cont "fin du temps"
-	cont "imparti!"
+	cont "fin!"
 	cont "Bonne chance!"
 	prompt
 
@@ -48,11 +45,9 @@ _SafariZoneEntranceSafariBallsReceived::
 
 _SafariZoneRangerHunt::
 	text "Trouve et bats les"
-	line "5 RANGERs avant"
-	cont "la fin du temps"
-	cont "imparti pour"
-	cont "remporter un"
-	cont "super prix!"
+	line "5 RANGER avant la"
+	cont "fin pour gagner"
+	cont "un super prix!"
 
 	para "Utilise tes"
 	line "#MON à ta"
@@ -64,8 +59,8 @@ _SafariZoneRangerHunt::
 
 _SafariZoneFreeRoam::
 	text "Explore le PARC"
-	line "SAFARI autant que"
-	cont "tu le souhaites!"
+	line "SAFARI comme tu"
+	cont "le souhaites!"
 
 	para "Utilise tes"
 	line "#MON à ta"
@@ -74,25 +69,28 @@ _SafariZoneFreeRoam::
 	para "Pas de limite de"
 	line "temps et plein de"
 	cont "dresseurs à"
-	cont "rencontrer!"
+	cont "affronter!"
 
 	para "Amuse-toi bien!@"
 	text_end
 
-
-_SafariZoneEntranceText_75360::
-	text "J'utiliserai le"
+_SafariZonePATextIntro::
+	db "J'utiliserai le"
 	line "HAUT-PARLEUR"
 	cont "lorsque ton temps"
+	done
+
+_SafariZoneEntranceText_75360::
+	text "@"
+	text_call _SafariZonePATextIntro
 	cont "ou tes SAFARI"
 	cont "BALL seront"
 	cont "épuisés!"
 	done
 
 _SafariZonePATextNoBalls::
-	text "J'utiliserai le"
-	line "HAUT-PARLEUR"
-	cont "lorsque ton temps"
+	text "@"
+	text_call _SafariZonePATextIntro
 	cont "sera épuisé!"
 	done
 
@@ -129,9 +127,9 @@ _SafariZoneGateSafariZoneWorker1GoodHaulComeAgainText::
 	done
 
 _RangerHuntDoneFailText::
-	text "Oh, si près!"
+	text "Oh, si proche!"
 	para "Tu n'as pas trouvé"
-	line "tous les RANGERs?"
+	line "tous les RANGER?"
 
 	para "Ce sera pour la"
 	line "prochaine fois!"
@@ -141,7 +139,7 @@ _RangerHuntDoneFailText::
 
 _RangerHuntDoneSuccessText::
 	text "Tu as battu tous"
-	line "les RANGERs!"
+	line "les RANGER!"
 	para "Viens par ici!"
 	done
 

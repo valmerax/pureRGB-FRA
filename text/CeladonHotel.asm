@@ -22,20 +22,17 @@ _CeladonHotelSuperNerdText::
 	done
 
 _CeladonChannelerIntro::
-	text "Mon travail est"
-	line "de chasser les"
-	cont "mauvais esprits."
-	para "Je suis ici pour"
-	line "un ordinateur"
-	cont "hanté."
-	para "En avez-vous vu"
-	line "un?"
+	text "Je chasse les"
+	line "mauvais esprits."
+	para "Je suis là pour un"
+	line "ordinateur hanté."
+	para "Tu en a vu un?"
 	done
 
 _CeladonChannelerNo1::
-	text "Ouvrez l'oeil!"
+	text "Ouvre l'oeil!"
 	para "Il pourrait être"
-	line "n'importe où ici!"
+	line "n'importe où!"
 	done
 
 _CeladonChannelerQ2::

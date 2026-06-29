@@ -70,13 +70,16 @@ _CeladonGymRainbowBadgeInfoText::
 _TM21ExplanationText::
 	text_start
 
-	para "CT21: "
-	line "MEGA-SANGSUE."
+	para "@"
+	text_ram_stringbuffer
+	text ": "
+	line "TRANCH'HERBE."
 
-	para "La moitié des"
-	line "dégâts infligés"
-	cont "soigneront ton"
-	cont "#MON!"
+	para "Une puissante"
+	line "attaque PLANTE"
+	cont "qui inflige"
+	cont "souvent des"
+	cont "coups critiques!"
 	done
 
 _CeladonGymTM21NoRoomText::
@@ -103,11 +106,10 @@ _CeladonGymAfterBattleText2::
 	done
 
 _CeladonGymAfterBattleText2GymDefeated::
-	text "Ouah!?"
-	line "Tu as battu ERIKA!"
-	para "Tu es plus cool"
-	line "que je ne le"
-	cont "pensais!"
+	text "Quoi!?"
+	line "T'as battu ERIKA!"
+	para "T'es plus cool que"
+	line "je ne le pensais!"
 	done
 
 _CeladonGymBattleText3::

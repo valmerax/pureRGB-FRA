@@ -73,11 +73,10 @@ _WardensHouseWardenHM03AlreadyText::
 	cont "dans le PARC"
 	cont "SAFARI?"
 
-	para "Félicitations!"
+	para "Bien joué!"
 	
 	para "Amuse-toi bien"
-	line "avec cette CS"
-	cont "SURF!"
+	line "avec la CS SURF!"
 	done
 
 _WardensHouseWardenHM04NoRoomText::
@@ -97,8 +96,7 @@ _WardensHouseDisplayMerchandiseText::
 	done
 
 _WardensHouseDeskPapersText::
-	text "Un document"
-	line "intitulé:"
-	para "DEMANDE D'IMPLANTS"
+	text "Un document:"
+	para "DEVIS IMPLANTS"
 	line "DENTAIRES"
 	done

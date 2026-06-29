@@ -54,13 +54,11 @@ _CeladonMansion1FBookCaseRightText::
 	text_end
 
 _CeladonMansion1FBookCaseRight2Text::
-	text "<PARA>Deux des têtes de"
+	text "<PARA>Deux têtes de"
 	line "DODRIO ignorent"
-	cont "la troisième, qui"
+	cont "la troisième qui"
 	cont "plaisante."
-	para "Il s'avère que c'est"
-	line "l'idée de cette"
-	cont "tête drôle qui a"
-	cont "permis de sauver"
-	cont "le troupeau."
+	para "Pourtant, c'est"
+	line "son idée qui a"
+	cont "sauvé le troupeau."
 	done

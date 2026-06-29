@@ -9,8 +9,8 @@ _CeladonMart1FReceptionistText::
 	cont "différents rayons"
 	cont "du magasin."
 
-	para "Je serais ravi de"
-	line "vous aider aussi!"
+	para "Ravi de vous"
+	line "aider!"
 	done
 
 _CeladonMart1FReceptionistText2::
@@ -50,39 +50,39 @@ _CeladonMartRoofCurrentFloorSignText::
 	done
 
 _CeladonMart1FCurrentFloorClerkText::
-	text "Where I work!"
-	line "You're here now!"
+	text "Je travaille ici!"
+	line "Vous y êtes!"
 	done
 
 _CeladonMart2FDirectoryClerkText::
-	text "So many great TMs!"
-	line "What a steal!"
+	text "Des superbes CT!"
+	line "Quelle aubaine!"
 	done
 
 _CeladonMart3FCurrentFloorClerkText::
-	text "The floor for"
-	line "video game lovers!"
+	text "L'étage des fans"
+	line "de jeux vidéo!"
 	done
 
 _CeladonMart4FDirectoryClerkText::
-	text "Buy a gift for"
-	line "your sweetie here!"
+	text "Achetez un cadeau"
+	line "pour votre copine!"
 	done
 
 _CeladonMart5FCurrentFloorClerkText::
-	text "Vitamins for your"
-	line "cute #MON here!"
+	text "Des vitamines pour"
+	line "vos #MON!"
 	done
 
 _CeladonMartRoofCurrentFloorClerkText::
-	text "Relax seeing the"
-	line "CELADON skyline!"
+	text "Admirez la vue sur"
+	line "CELADOPOLE!"
 	done
 
 _CeladonMartUsePhoneText::
 	text "Utiliser la cabine"
 	line "téléphonique?"
-	line "Ca coûte 25¥."
+	line "C'est 25¥."
 	done
 
 _GenericForgetItText::
@@ -95,8 +95,7 @@ _CeladonMartCallWhoText::
 	done
 
 _CeladonMartCallStartText::
-	text "C'est parti!"
-	line "Appel en cours<...>"
+	text "Appel en cours<...>"
 	done
 
 _CeladonMartUsePhoneCallEnd::
@@ -106,16 +105,15 @@ _CeladonMartUsePhoneCallEnd::
 _CeladonMartCallMomText::
 	text "MAMAN: <PLAYER>?!"
 	para "C'est toi??"
-	para "Tu me manques"
-	line "tellement!"
-	para "Comment vas-tu?"
+	para "Tu me manques!"
+	para "Tu vas bien?"
 	prompt
 
 _CeladonMartCallMomGreatText::
-	text "Bien sûr que oui!"
+	text "Bien sûr!"
 	para "Tu as toujours été"
 	line "déterminé."
-	para "Mon fils s'en sors"
+	para "Mon fils s'en sort"
 	line "bien dans son"
 	cont "aventure #MON."
 	para "Prends soin de toi"
@@ -127,37 +125,33 @@ _CeladonMartCallMomBoredText::
 	line "combats?"
 	para "Eh bien, tu es à"
 	line "CELADOPOLE<...>"
-	para "Il paraît qu'il y"
-	line "a une SALLE DE"
-	cont "JEUX là-bas."
+	para "Il y a une SALLE"
+	line "DE JEUX là-bas."
 	para "Je sais que tu"
-	line "adores les jeux!"
+	line "adores jouer!"
 	para "Tu t'y amuserais"
-	line "sûrement bien."
+	line "bien."
 	prompt
 
 _CeladonMartCallMomGoodIdeaText::
 	text "Parfait!"
 	para "N'oublie pas"
-	line "d'économiser"
-	cont "la moitié de ce"
-	cont "que tu gagne."
+	line "d'économiser."
 	para "C'est une bonne"
-	line "règle de vie!"
+	line "habitude!"
 	para "Une autre consiste"
 	line "à porter des sous"
 	cont "vêtements propres"
 	cont "tous les jours."
 	para "Tu ferais bien de"
-	line "suivre celle-là"
-	cont "aussi!"
+	line "la suivre aussi!"
 	prompt
 
 _CeladonMartCallMomGamblingText::
 	text "Quoi??"
 	para "Mon fils, jouer à"
 	line "des jeux d'argent?"
-	para "Mauvaise idée!"
+	para "Pas question!"
 	para "Tu va devoir aller"
 	line "ailleurs!"
 	para "Pourquoi pas la"
@@ -170,8 +164,8 @@ _CeladonMartCallMomGamblingText::
 	line "mignon!"
 	para "Tu tombais sans"
 	line "arrêt, mais tu"
-	cont "essayais encore!"
-	para "Quelle ténacité!"
+	cont "insistais!"
+	para "Quel têtu!"
 	prompt
 
 _CeladonMartCallMomHomesickText::
@@ -179,27 +173,24 @@ _CeladonMartCallMomHomesickText::
 	para "Ta MAMAN te manque"
 	line "je m'en doutais!"
 	para "Passe au BOURG"
-	line "PALETTE quand tu"
-	cont "veux!"
+	line "PALETTE!"
 	para "Je te préparerai à"
 	line "manger."
 	para "@"
 	; fall through
 _WhatWouldYouLikeText::
-	text "Qu'est-ce que tu"
-	line "aimerais?"
+	text "Tu aimerais quoi?"
 	prompt
 
 _CeladonMartCallMomRiceBallsText::
 	text "D'accord!"
 	para "Je vais préparer"
 	line "des boulettes de"
-	cont "riz pour ton"
-	cont "goûter."
+	cont "riz."
 	para "Certaines avec du"
-	line "thon à l'intérieur"
-	cont "et d'autres avec"
-	cont "des oeufs durs!"
+	line "thon et d'autres"
+	cont "avec des oeufs"
+	cont "durs!"
 	para "Je sais que tu"
 	line "adores ça."
 	para "Passe les prendre!"
@@ -218,9 +209,9 @@ _CeladonMartCallMomJellyDonutsText::
 	prompt
 
 _CeladonMartCallMomBrisketText::
-	text "Un peu de poitrine"
-	line "de boeuf mijoté"
-	cont "par papa?"
+	text "De la poitrine de"
+	line "boeuf mijoté par"
+	cont "par PAPA?"
 	para "Super idée!"
 	prompt
 
@@ -228,15 +219,14 @@ _CeladonMartCallMomBrisketText2::
 	text "Il n'est pas là"
 	line "pour le moment,"
 	cont "mais j'utiliserai"
-	cont "la recette qu'il a"
-	cont "notée."
+	cont "sa recette."
 	prompt
 
 _CeladonMartDadBrisketText::
-	text "Chérie! <PLAYER>"
+	text "Chéri! <PLAYER>"
 	line "veut de la"
-	cont "poitrine de boeuf"
-	cont "pour le dîner!"
+	cont "poitrine de"
+	cont "boeuf!"
 	para "OK, il s'en"
 	line "occupe. Super!"
 	prompt
@@ -244,13 +234,12 @@ _CeladonMartDadBrisketText::
 _CeladonMartCallMomBrisketText3::
 	text "J'en voudrais bien"
 	line "aussi."
-	para "Passe le prendre!"
+	para "Passe la prendre!"
 	prompt
 
 _CeladonMartCallMomLasagnaText::
-	text "Oh, tu adores les"
-	line "lasagnes maison"
-	cont "de ta MAMAN!"
+	text "Oh, tu adores mes"
+	line "lasagnes!"
 	para "Je vais y mettre"
 	line "plus de fromage,"
 	cont "comme tu aimes!"
@@ -263,16 +252,15 @@ _CeladonMartCallMomLasagnaText::
 	prompt
 
 _CeladonMartCallMomGoodbyeText::
-	text "Au revoir <PLAYER>!"
+	text "A bientôt <PLAYER>!"
 	line "Je t'aime!"
 	prompt
 	
 _CeladonMartCallMomGoodbyeSweetSon::
 	text "Oh, mon fils est"
 	line "si adorable."
-	cont "Au revoir!"
-	prompt
-
+	para "@"
+	; fall through
 _CeladonMartCallMomGoodbyeComplete::
-	text "Au revoir!"
+	text "A bientôt!"
 	prompt

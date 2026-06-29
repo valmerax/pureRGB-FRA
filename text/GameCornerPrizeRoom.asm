@@ -17,13 +17,10 @@ _GameCornerPrizeRoomPrizeMasterText::
 	line "@"
 	text_ram wTrainerName
 	text "!"
-	para "J'ai acheté tous"
+	para "Je possède tous"
 	line "les prix!"
-	para "C'est pour ça"
-	line "qu'ils m'ont"
-	cont "offert cette"
-	cont "couronne commémo-"
-	cont "rative en papier!"
+	para "Alors on m'a offert"
+	line "cette couronne!"
 	para "Jaloux?"
 	prompt
 
@@ -39,8 +36,8 @@ _GameCornerPrizeRoomInfoText::
 	line "#MON à gagner!"
 	para "Je t'expliquerai"
 	line "tout!"
-	para "Alors, tu as un"
-	line "prix #MON à me"
+	para "Tu as un prix"
+	line "#MON à me"
 	cont "montrer?"
 	done
 
@@ -52,19 +49,18 @@ _GameCornerPrizeRoomLetsSeeText::
 _JynxPrizeKingText::
 	text "@"
 	text_ram_namebuffer
-	text " est un"
-	line "#MON puissant"
-	cont "et rapide, doué"
-	cont "avec les attaques"
+	text " est"
+	line "rapide et"
+	cont "puissante avec"
+	cont "les attaques"
 	cont "SPECIALES!"
 	done
 
 _ElectabuzzPrizeKingText::
 	text "@"
 	text_ram_namebuffer
-	text " peut"
-	line "lancer aussi bien"
-	cont "des puissantes"
+	text " lance"
+	line "de puissantes"
 	cont "attaques PHYS."
 	cont "ou SPECIALES!"
 	para "Il peut se soigner"
@@ -74,13 +70,11 @@ _ElectabuzzPrizeKingText::
 _TangelaPrizeKingText::
 	text "@"
 	text_ram_namebuffer
-	text " a"
-	line "une DEFENSE"
-	cont "incroyable!"
+	text " est top"
+	line "en DEFENSE!"
 	para "Il apprend SPORE"
 	line "et DEVOREVE!"
-	para "Et en plus,"
-	line "BOUL'ARMURE!"
+	para "Et BOUL'ARMURE!"
 	para "Que demander de"
 	line "plus?!"
 	done
@@ -91,41 +85,35 @@ _DratiniPrizeKingText::
 	text " est un"
 	line "#MON DRAGON"
 	cont "rare."
-	para "Il peut paraître"
-	para "faible, mais si"
-	line "tu le fais"
-	cont "évoluer, il"
-	cont "sera imbattable!"
+	para "Il paraît faible."
+	para "Mais s'il évolue,"
+	line "il sera imparable!"
 	done
 
 _DittoPrizeKingText::
 	text "@"
 	text_ram_namebuffer
-	text " ne sait"
-	line "faire qu'une seule"
-	cont "chose:"
+	text " ne fait"
+	line "qu'une chose:"
 	para "Se transformer en"
-	line "une copie de son"
-	cont "<ennemi>!"
+	line "son <ennemi>!"
 	done
 
 _PorygonPrizeKingText::
 	text "@"
 	text_ram_namebuffer
 	text ", hein."
-	para "Alors, toi aussi"
-	line "tu as réussi à en"
-	cont "avoir un."
+	para "Alors toi aussi"
+	line "tu l'a eu."
 	para "Ca fait seulement"
-	line "deux personnes au"
-	cont "total!"
+	line "deux personnes!"
 	para "@"
 	text_ram_namebuffer
 	text " a des"
 	line "attaques de fou!"
-	para "TRIPLATTAQUE"
-	line "et ADAPTATION"
-	cont "sont dingues!"
+	para "TRIPLATTAQUE et"
+	line "ADAPTATION sont"
+	cont "dingues!"
 	done
 
 _PrizeKingGotAnotherText::

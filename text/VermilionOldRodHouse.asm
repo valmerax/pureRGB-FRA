@@ -29,16 +29,12 @@ _VermilionOldRodHouseFishingGuruHowAreTheFishBitingText::
 	text_end
 
 _VermilionOldRodHouseGoodRodInfo::
-	text "<PARA>Cette SUPER CANNE I"
-	line "que je t'ai donnée"
-	cont "est très fiable!"
+	text "<PARA>La SUPER CANNE"
+	line "est fiable!"
 
-	para "Essaie de l'utili-"
-	line "ser dans les lacs"
-	cont "ou en mer."
+	para "Utilise-la en mer"
+	line "ou dans les lacs."
 
-	para "Elle permet"
-	line "d'attraper plein"
-	cont "de #MON"
-	cont "différents!"
+	para "Tu vas attraper"
+	line "plein de #MON!"
 	done

@@ -10,19 +10,15 @@ _CeladonMart3FClerkTM18PreReceiveText::
 
 _CeladonMart3FClerkTM18ExplanationText::
 	text "<CT>35: HATE!"
-	para "Utilise la VITESSE"
-	line "à ton avantage!"
-	para "Si tu attaque en"
-	line "premier, tu peux"
-	cont "facilement gérer"
-	cont "le déroulement du"
-	cont "combat!"
+	para "Exploite la"
+	line "VITESSE!"
+	para "Si tu attaques en"
+	line "premier, tu mènes"
+	cont "le combat!"
 	para "Crois-moi, je sais"
-	line "comment sa"
-	cont "marche!"
+	line "de quoi je parle!"
 	para "C'est pour ça que"
-	line "je suis derrière"
-	cont "ce comptoir!"
+	line "je suis ici!"
 	done
 
 _CeladonMart3FClerkTM18NoRoomText::
@@ -103,62 +99,47 @@ _CeladonMart3FPokemonPosterText::
 	done
 
 _CeladonMartTMKidFlavor::
-	text "Mon père s'est fait"
-	line "expulser de"
-	cont "l'arène de"
-	cont "CELADOPOLE!"
+	text "Mon père a été"
+	line "expulsé de l'arène"
+	cont "de CELADOPOLE!"
 
-	para "Elles ont dit que"
-	line "les hommes"
-	cont "n'avaient pas le"
-	cont "droit de traîner"
-	cont "à l'intérieur!"
+	para "Les hommes ne sont"
+	line "pas admis!"
 
 	para "Maintenant, il"
 	line "traîne au CASINO."
 
-	para "Pour une fois, la"
-	line "BOUTIQUE d'ici a"
-	cont "des <CT>, donc je"
-	cont "ne vends pas les"
-	cont "miens!"
+	para "La BOUTIQUE d'ici"
+	line "vend des <CT>, donc"
+	cont "je ne vends pas!"
 
-	para "Je pense utiliser"
-	line "une partie de"
-	cont "l'argent que j'ai"
-	cont "gagné en vendant"
-	cont "des <CT> pour"
-	cont "m'acheter une"
+	para "Avec l'argent que"
+	line "j'ai gagné, je"
+	cont "vais m'acheter une"
 	cont "GAME BOY COLOR."
 	
-	para "J'ai entendu dire"
-	line "que WARIO LAND 3"
-	cont "est le meilleur"
-	cont "jeu!"
+	para "WARIO LAND 3 est"
+	line "le meilleur jeu!"
 	
-	para "A plus tard!"
+	para "A plus!"
 	done
 
 _CeladonMart3FPartyGameText::
-	text "Une pub télé pour"
-	line "un nouveau jeu de"
-	cont "société!"
+	text "Une pub pour un"
+	line "jeu de société!"
 	para "Ca a l'air super"
 	line "avec des copains!"
-	para "Plein de gamins"
-	line "appuient"
-	cont "frénétiquement"
-	cont "sur des boutons"
-	cont "en faisant des"
-	cont "grimaces."
+	para "Des gamins"
+	line "appuient sur des"
+	cont "boutons en"
+	cont "grimaçant."
 	done
 
 _CeladonMart3FPlatformerGameText::
-	text "Une pub télé pour"
-	line "un nouveau jeu de"
-	cont "plateforme!"
-	para "Woah! C'est en"
-	line "3D, génial!"
+	text "Une pub d'un jeu de"
+	line "plateforme!"
+	para "Woah! C'est en 3D,"
+	line "génial!"
 	para "Les joueurs font"
 	line "sauter MARIO dans"
 	cont "tous les sens."

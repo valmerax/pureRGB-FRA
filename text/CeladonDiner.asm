@@ -44,9 +44,7 @@ _CeladonDinerCoinCaseGuyImFlatOutBustedText::
 
 _CeladonDinerCoinCaseGuyReceivedCoinCaseText::
 	text "<PLAYER> reçoit"
-	line "@"
-	text_ram wStringBuffer
-	text "!@"
+	line "BOITE JETON!@"
 	text_end
 	
 ;_CeladonDinerCoinCaseGuyCoinCaseNoRoomText::
@@ -61,6 +59,6 @@ _CeladonDinerCoinCaseGuyWinItBackText::
 
 _CeladonDinerOpenText::
 	text "Bienvenue au"
-	line "CELADOPOLE DINER!"
+	line "CELADON DINER!"
 	cont "Envie d'un verre?"
 	done

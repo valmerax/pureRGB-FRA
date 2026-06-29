@@ -10,16 +10,14 @@ _FuchsiaTreeDeleterText1::
 
 	para "Je peux abattre"
 	line "définitivement"
-	cont "les arbres les"
-	cont "plus gênants pour"
-	cont "toi!"
+	cont "les arbres"
+	cont "gênants pour toi!"
 
 	prompt
 
 _FuchsiaTreeDeleterText2::
 	text "Quel arbre veux-tu"
-	line "que j'abatte"
-	cont "définitivement?@"
+	line "que j'abatte?@"
 	text_end
 
 _FuchsiaTreeDeleterRoute2::
@@ -36,18 +34,17 @@ _FuchsiaTreeDeleterRoute2::
 	cont "pourras éviter la"
 	cont "FORET DE JADE."
 
-	para "Ca te coûtera"
-	line "8000¥. Ca te va?@"
+	para "Ca fera 8000¥."
+	line "Marché conclu?@"
 	text_end
 
 _FuchsiaTreeDeleterCerulean::
-	text "Cet arbre à"
-	line "l'extrémité sud"
-	cont "d'AZURIA?"
+	text "L'arbre au sud"
+	line "d'AZURIA?"
 
 	para "Bien sûr."
-	line "Ca te reviendra à"
-	cont "4000¥. Ca te va?@"
+	line "Ca fera 4000¥."
+	cont "Marché conclu?@"
 	text_end
 
 _FuchsiaTreeDeleterRoute9::
@@ -56,8 +53,8 @@ _FuchsiaTreeDeleterRoute9::
 	cont "à la GROTTE?"
 
 	para "Facile!"
-	line "Ca te fera 4000¥."
-	cont "Ca te va?@"
+	line "Ca fera 4000¥."
+	cont "Marché conclu?@"
 	text_end
 
 _FuchsiaTreeDeleterFuchsiaCity::
@@ -66,16 +63,13 @@ _FuchsiaTreeDeleterFuchsiaCity::
 	cont "être coupés à"
 	cont "PARMANIE?"
 
-	para "C'est un sacré"
-	line "boulot! Mais"
-	cont "j'aime les défis."
-
-	para "Le tarif est de"
-	line "10000¥. Ca te va?"
+	para "Un sacré boulot!"
+	line "Ca fera 10000¥."
+	cont "Marché conclu?"
 	done
 
 _FuchsiaTreeDeleterAlreadyDeletedText::
-	text "C'est déjà fait!"
+	text "Déjà fait!"
 	prompt
 
 _FuchsiaTreeDeleterTreeDelete::
@@ -83,10 +77,7 @@ _FuchsiaTreeDeleterTreeDelete::
 	prompt
 
 _FuchsiaTreeDeleterDoneText::
-	text "Je suis à ton"
-	line "service pour"
-	cont "abattre les"
-	cont "arbres gênants!"
+	text "A ton service!"
 	done
 
 _FuchsiaTreeDeleterFinalText::
@@ -100,16 +91,14 @@ _FuchsiaTreeDeleterFinalText::
 	text_end
 
 _FuchsiaTreeDeleterFinalText2::
-	text "Comme tu peux le"
-	line "voir, j'ai plein"
-	cont "d'arbres en pot."
+	text "J'ai plein d'arbres"
+	cont "en pot ici."
 
 	para "C'est là que je"
-	line "garde les arbres"
-	cont "que j'ai retirés"
-	cont "en attendant que"
-	cont "quelqu'un les"
-	cont "achète!"
+	line "garde ceux que"
+	cont "j'ai retirés en"
+	cont "attendant de les"
+	cont "vendre!"
 
 	para "RONFLEX adore les"
 	line "renverser quand"

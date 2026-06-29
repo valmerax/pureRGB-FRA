@@ -110,16 +110,14 @@ _GameCornerGymGuideChampInMakingText::
 	done
 
 _CeladonGameCornerText_gymguide::
-	text "J'ai entendu dire"
-	line "que tu as battu"
-	cont "ERIKA!"
+	text "Il paraît que tu"
+	line "as battu ERIKA!"
 	prompt
 
 _CeladonGameCornerGymGuideApexChipGrassText::
 	text "Pour les #MON"
 	line "plante, une PUCE"
-	cont "APEX fera"
-	cont "apparaître une"
+	cont "APEX simulera une"
 	cont "forêt ou une"
 	cont "jungle verdoyante"
 	cont "au feuillage"
@@ -128,16 +126,16 @@ _CeladonGameCornerGymGuideApexChipGrassText::
 	prompt
 
 _GameCornerGymGuideTheyOfferRarePokemonText::
-	text "Que penses-tu de"
-	line "ce CASINO?"
+	text "Tu penses quoi du"
+	line "CASINO?"
 
-	text "De très rares"
-	line "#MON sont à"
-	cont "échanger contre"
-	cont "des jetons."
+	para "Tu peux échanger"
+	line "des #MON rares"
+	cont "contre des"
+	cont "jetons."
 
 	para "Mais c'est trop"
-	line "dur de gagner!"
+	line "dur d'en gagner!"
 	done
 
 _GameCornerGamblerText::

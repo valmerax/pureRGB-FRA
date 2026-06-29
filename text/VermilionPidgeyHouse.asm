@@ -9,12 +9,10 @@ _VermilionPidgeyHouseYoungsterLearnset::
 	text "@"
 	text_ram_namebuffer
 	text " est un"
-	line "facteur très"
-	cont "efficace."
+	line "super facteur."
 	para "Avec un sacré sens"
 	line "de l'orientation!"
-	para "Tellement"
-	line "pratique."
+	para "Très pratique."
 	para "Envie d'en savoir"
 	line "plus?"
 	para "Assieds-toi!"
@@ -27,7 +25,7 @@ _VermilionPidgeyHousePidgeyText::
 _VermilionPidgeyHouseLetterText::
 	text "Cher JULIO,"
 	line "j'espère te voir"
-	cont "très bientôt."
+	cont "bientôt."
 
 	para "On raconte que"
 	line "SAFRANIA a des"

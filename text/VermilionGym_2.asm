@@ -157,19 +157,17 @@ _VermilionGymGymGuideBeatLTSurgeText::
 _VermilionGymGuideApexChipElectricText::
 	text "Pour les #MON"
 	line "électriques,"
-	cont "une PUCE APEX"
+	cont "la PUCE APEX"
 	cont "simulera une"
-	cont "vaste prairie"
-	cont "herbeuse où les"
-	cont "orages, les"
-	cont "éclairs et le"
+	cont "prairie où les"
+	cont "orages et le"
 	cont "tonnerre sont"
 	cont "fréquents!"
 	prompt
 
 _VermilionGymGentlemanAfterLocksText::
 	text "Et voilà."
-	para "Les portes se sont"
+	para "Les portes sont"
 	line "ouvertes! Bravo!"
 	done
 
