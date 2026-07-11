@@ -122,21 +122,16 @@ _CeruleanCitySuperNerd1Text::
 	done
 
 _CeruleanCitySuperNerd1_AfterTreeDelete::
-	text "Un taré avec des"
-	line "lunettes de"
-	cont "soleil a débarqué"
-	cont "comme une"
-	cont "tornade!"
-	para "Et là son RONFLEX"
-	line "a carrément"
-	cont "déraciné l'arbre"
-	cont "qui se trouvait"
-	cont "devant le"
-	cont "magasin!"
-	para "Puis ils sont"
-	line "repartis aussi"
-	cont "vite qu'ils sont"
-	cont "arrivés!"
+	text "Un taré à lunettes"
+	line "a déboulé comme"
+	cont "une tornade!"
+	para "Son RONFLEX a"
+	line "déraciné l'arbre"
+	cont "devant la"
+	cont "boutique!"
+	para "Ils sont repartis"
+	line "aussi vite qu'ils"
+	cont "sont arrivés!"
 	para "Quel spectacle!"
 	done
 
@@ -264,36 +259,31 @@ _OakBattleStartText::
 	line "<PLAYER>!"
 
 	para "Comment avance ton"
-	line "POKéDEX?"
+	line "#DEX?"
 
-	para "Qu'est-ce que je"
-	line "fais ici?"
+	para "Je fais quoi ici?"
 
-	para "Je m'entraîne,"
-	line "bien sûr!"
+	para "Je m'entraîne là"
+	line "chaque semaine"
+	cont "depuis que j'ai"
+	cont "ton âge!"
 
-	para "Je viens"
-	line "m'entraîner ici"
-	cont "une fois par"
-	cont "semaine depuis"
-	cont "que j'ai ton âge!"
-
-	para "Au sujet du"
-	line "#MON resté"
-	cont "dans mon labo:"
+	para "A propos du"
+	line "#MON resté au"
+	cont "labo:"
 
 	para "Je l'élève depuis"
 	line "que vous êtes"
 	cont "partis, toi et"
 	cont "<RIVAL>."
 
-	para "Il est devenu un"
+	para "C'est devenu un"
 	line "grand combattant!"
 
 	para "Je vais te montrer"
-	line "comment on comba-"
-	cont "ttait les #MON"
-	cont "à mon époque!"
+	line "ce qu'était un"
+	cont "combat #MON à"
+	cont "mon époque!"
 	done
 
 _OakBattleWinText::
@@ -302,40 +292,33 @@ _OakBattleWinText::
 	prompt
 
 _OakBattleLoseText::
-	text "On dirait que je"
-	line "n'ai pas perdu la"
-	cont "main!"
+	text "Je n'ai pas perdu"
+	line "la main!"
 	prompt
 
 _OakBeatenText::
 	text "Le travail d'un"
 	line "dresseur n'est"
-	cont "jamais terminé!"
+	cont "jamais fini!"
 
 	para "Toi et ton #MON"
 	line "devez toujours"
-	cont "chercher à vous"
-	cont "améliorer!"
+	cont "progresser!"
 
 	para "Viens t'entraîner"
-	line "avec moi un de"
-	cont "ces jours."
+	line "avec moi un jour."
 
-	para "J'ai plein"
-	line "d'histoires"
-	cont "géniales à"
+	para "J'ai des histoires"
+	line "géniales à te"
 	cont "raconter!"
 	done
 
 _OakFirstLoseText::
 	text "Super combat!"
-	para "Comme on pouvait"
-	line "s'y attendre de la"
-	cont "part du CHAMPION!"
+	para "Digne d'un"
+	line "CHAMPION!"
 	para "Je tiens à te"
-	line "récompenser d'une"
-	cont "manière ou d'une"
-	cont "autre."
+	line "récompenser."
 	para "Ah, que dirais-tu"
 	line "de ça?"
 	para "Apporte ce message"

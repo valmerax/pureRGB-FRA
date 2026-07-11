@@ -7,9 +7,8 @@ _FuchsiaCityYoungster1Text::
 	done
 
 _FuchsiaCityYoungster1TextColor::
-	text "Beaucoup ont aussi"
-	line "des couleurs"
-	cont "uniques!"
+	text "Beaucoup ont des"
+	line "couleurs uniques!"
 	done
 
 _FuchsiaCityGamblerText::
@@ -129,7 +128,6 @@ _FuchsiaCityFossilSignUndeterminedText::
 _FuchsiaCityFossilFanText::
 	text "Ce #MON fossile"
 	line "est très timide."
-	cont "shy."
 
 	para "Il reste dans sa"
 	line "coquille toute la"
@@ -138,10 +136,9 @@ _FuchsiaCityFossilFanText::
 
 _FuchsiaCityFossilFanText2::
 	text "Mais si tu attends"
-	line "silencieusement,"
-	cont "il jette parfois"
-	cont "un coup d'oeil"
-	cont "dehors!"
+	line "en silence, il"
+	cont "jette parfois un"
+	cont "coup d'oeil dehors!"
 	done
 
 _FuchsiaCityFossilFanText3::
@@ -153,7 +150,6 @@ _FuchsiaCitySoMuchInfo::
 	line "@"
 	text_ram_namebuffer
 	text "!"
-	para "Son écologie,"
-	line "sa physiologie,"
-	cont "son anatomie<...>"
+	para "Sa physiologie,"
+	line "son anatomie<...>"
 	done

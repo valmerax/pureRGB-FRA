@@ -45,7 +45,7 @@ _VermilionCity1OhItsYouText::
 	text "Oh! <PLAYER>!"
 	para "T'es un ami du"
 	line "CAPITAINE!"
-	para "Entre donc!"
+	para "Entre!"
 	done
 
 _VermilionCitySailor1YouNeedATicketText::
@@ -143,14 +143,13 @@ _VermilionCityText15::
 	line "retour!"
 	
 	para "Après un long"
-	line "voyage, il est de"
-	cont "retour au port."
+	line "voyage, il est"
+	cont "revenu au port."
 	done
 
 _VermilionCityDockBeautyGreeting::
-	text "Aïe!! Tu as trouvé"
-	line "mon coin bronzage"
-	cont "top secret!"
+	text "Aïe! T'as trouvé"
+	line "mon coin secret!"
 	para "Ne dis à personne"
 	line "que je suis là!"
 	para "Prends ça!"
@@ -158,29 +157,24 @@ _VermilionCityDockBeautyGreeting::
 
 _VermilionCityDockBeautyEndText::
 	text "C'est ici que je"
-	line "viens me détendre"
-	cont "et bronzer!"
+	line "viens bronzer!"
 	para "J'adore le calme"
-	line "et le doux"
-	cont "murmure des"
+	line "et le murmure des"
 	cont "vagues."
 	done
 
 _VermilionCityTradeHouseGameboyKidText::
 	text "Echanger mon"
 	line "CANARTICHO?"
-	para "Pourquoi je ferais"
-	line "ça?!"
+	para "Pourquoi?"
 	para "JULIO est mon"
 	line "meilleur #MON!"
-	para "Va attraper le"
-	line "tien."
+	para "Attrape le tien."
 	done
 
 _VermilionCityTradeHouseGameboyKidLearnsetText::
-	text "Hé! Tu ne vois pas"
-	line "que je suis"
-	cont "occupé?"
+	text "Tu vois pas que"
+	line "je suis occupé!?"
 	para "Tiens!"
 	para "Prends mes notes"
 	line "d'entraînement de"
@@ -194,14 +188,12 @@ _VermilionCityTradeHouseDUXText::
 _VermilionCityTradeHouseDUX2Text::
 	text "Il vous tend un"
 	line "brin d'oignon."
-	para "On dirait qu'il"
-	line "en a encore!"
+	para "Il en a d'autres!"
 	done
 
 _VermilionCityTradeHouseClipboardText::
-	text "Astuces secrètes"
-	line "pour le jeu vidéo"
-	cont "auquel il joue."
+	text "Des astuces pour"
+	line "un jeu vidéo."
 	para "Il a dû appeler la"
 	line "HOTLINE NINTENDO!"
 	done

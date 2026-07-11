@@ -39,11 +39,10 @@ _PalletTownFisherText::
 	cont "#MON via <PC>!"
 
 	para "On peut aussi sto-"
-	line "cker des objets à"
-	cont "tout moment en"
-	cont "appuyant sur"
-	cont "START dans le"
-	cont "menu des objets!"
+	line "cker des objets"
+	cont "en appuyant sur"
+	cont "START depuis le"
+	cont "menu OBJET!"
 	done
 
 _PalletTownOaksLabSignText::

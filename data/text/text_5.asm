@@ -46,7 +46,7 @@ _FlashLightsAreaText::
 	prompt
 
 _EscapeText::
-	text "Prendre la fuite@"
+	text "Fuir@"
 	text_end
 
 _WarpText::
@@ -54,52 +54,47 @@ _WarpText::
 	text_end
 
 _ToLastPkmnCenterText::
-	text_start
-	line "au dernier CENTRE"
+	text " au"
+	line "dernier CENTRE"
 	cont "#MON visité?"
 	prompt
 
 _PocketAbraFlavorText1::
 	text_ram wPocketAbraNick
-	text_start
-	line "attrape vite"
-	cont "votre main par"
-	cont "anticipation."
+	text " saisit"
+	line "votre main."
 	prompt
 
 _PocketAbraFlavorText2::
 	text_ram wPocketAbraNick
-	text_start
-	line "a l'air très"
-	cont "excité!"
+	text " a l'air"
+	line "très excité!"
 	prompt
 
 _PocketAbraFlavorText3::
 	text_ram wPocketAbraNick
-	text_start
-	line "s'est assoupi"
-	cont "dans votre sac."
+	text " s'est"
+	line "assoupi dans"
+	cont "votre sac."
 	prompt
 
 _PocketAbraFlavorText4::
 	text_ram wPocketAbraNick
-	text_start
-	line "s'est installé"
-	cont "comfortablement"
-	cont "sur votre épaule."
+	text " s'est"
+	line "installé sur"
+	cont "votre épaule."
 	prompt
 
 _PocketAbraFlavorText5::
 	text_ram wPocketAbraNick
-	text_start
-	line "se concentre de"
-	cont "toutes ses forces!"
+	text " se"
+	line "concentre à fond!"
 	prompt
 
 _PocketAbraNo::
 	text_ram wPocketAbraNick
-	text_start
-	line "semble déçu<...>"
+	text " semble"
+	line "déçu<...>"
 	prompt
 
 _WarpToLastPokemonCenterText::
@@ -129,16 +124,15 @@ _CannotDigHereText::
 
 _CannotDigWhileSurfingText::
 	text "Impossible de"
-	line "CREUSER en"
-	cont "SURFANT sur l'eau!"
+	line "CREUSER pendant"
+	cont "le SURF!"
 	prompt
 
 _NoWhereToDigDown::
-	text "Tu vas atteindre"
-	line "de l'eau si tu"
-	cont "creuse ici."
+	text "Impossible de"
+	line "CREUSER ici."
 	para "Trouve un sol"
-	line "plus stable."
+	line "stable."
 	prompt
 
 _NotHealthyEnoughText::
@@ -147,8 +141,8 @@ _NotHealthyEnoughText::
 	prompt
 
 _AlreadyBrightText::
-	text "C'est déjà assez"
-	line "lumineux."
+	text "C'est déjà"
+	line "éclairé."
 	prompt
 
 _NewBadgeRequiredText::

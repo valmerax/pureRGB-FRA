@@ -14,8 +14,8 @@ _CeladonCityLittleGirlText2::
 	done
 
 _CeladonCityLittleGirlText3::
-	text "Haha, c'est plutôt"
-	line "cool finalement!"
+	text "Haha, c'est cool"
+	line "en fait!"
 	done
 
 _KoffingLearnsetText::
@@ -70,39 +70,34 @@ _CeladonCityGramps3Text::
 	para "Enfin tu viens"
 	line "me parler!"
 
-	para "Veux-tu que je te"
+	para "Veux-tu une"
 	line "récompense pour"
 	cont "ta visite?"
 
 	para "Hmm<...>"
 	line "Je sais!"
 
-	para "Je suis un"
-	line "professeur à"
-	cont "la retraite."
+	para "Je suis un prof à"
+	line "la retraite."
 
-	para "J'en sais beaucoup"
-	line "sur les capacités"
-	cont "#MON peu"
-	cont "connues!"
+	para "Je connais des"
+	line "capacités #MON"
+	cont "hors du commun!"
 
-	para "Je vais donc"
-	line "enseigner à"
-	cont "ton #MON!"
+	para "Je peux enseigner"
+	line "à ton #MON!"
 	prompt
 
 _CeladonCityGramps3Text2::
-	text "Bonjour à nouveau!"
-	para "Votre #MON"
-	line "souhaite-t-il"
-	cont "apprendre?"
+	text "Bonjour!"
+	para "Ton #MON veut"
+	line "apprendre?"
 	prompt
 
 _CeladonPoolGrampsAfterTeachText::
 	text "Un déménagement,"
-	line "c'est toujours"
-	cont "excitant!"
-	para "Profitez-en bien!"
+	line "c'est excitant!"
+	para "Profite bien!"
 	done
 
 _GenericPlayerReceivedText::
@@ -113,24 +108,18 @@ _CeladonGymReceivedTM21Text::
 _CeladonMart3FClerkReceivedTM18Text::
 _CeladonMartRoofLittleGirlReceivedTM13Text::
 _CeladonMartRoofLittleGirlReceivedTM48Text::
-_FuchsiaGymKogaReceivedTM06Text::
-_WardensHouseWardenReceivedHM04Text::
-_CinnabarLabMetronomeRoomScientist1ReceivedTM35Text::
-_ViridianCityFisherReceivedTM42Text::
-_ViridianGymGiovanniReceivedTM27Text::
-	text "<PLAYER> reçoit:"
-	line "@"
-	text_ram_stringbuffer
-	text "!@"
-	text_end
-
 _CopycatsHouse2FCopycatReceivedTM31Text::
 _MrPsychicsHouseMrPsychicReceivedTM29Text::
 _SaffronGymSabrinaReceivedTM46Text::
+_FuchsiaGymKogaReceivedTM06Text::
+_WardensHouseWardenReceivedHM04Text::
 _SafariZoneSecretHouseFishingGuruReceivedHM03Text::
 _CinnabarGymBlaineReceivedTM38Text::
+_CinnabarLabMetronomeRoomScientist1ReceivedTM35Text::
+_ViridianCityFisherReceivedTM42Text::
+_ViridianGymGiovanniReceivedTM27Text::
 _Route12Gate2FBrunetteGirlReceivedTM39Text::
-	text "<PLAYER> obtient:"
+	text "<PLAYER> reçoit:"
 	line "@"
 	text_ram_stringbuffer
 	text "!@"
@@ -267,12 +256,11 @@ _CeladonCityGameCornerSignText::
 
 _CeladonCityText19::
 	text "<ASTUCE>"
-	para "Ouvrez le menu"
-	line "et faites défiler"
-	cont "jusqu'à l'option"
-	cont "SAUVER."
+	para "Ouvrez le menu et"
+	line "défilez jusqu'à"
+	cont "l'option SAUVER."
 	para "Appuyez ensuite"
 	line "sur SELECT pour"
 	cont "gérer vos BOITES"
-	cont "<PC> à votre guise!"
+	cont "<PC>!"
 	done

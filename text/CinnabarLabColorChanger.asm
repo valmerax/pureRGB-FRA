@@ -10,8 +10,8 @@ _LabColorChangerGreeting::
 	line "les couleurs d'un"
 	cont "#MON!"
 	para "Formidable!"
-	para "Tu parle"
-	line "l'Allemand?@"
+	para "Tu parles"
+	line "Allemand?@"
 	text_end
 
 _LabColorChangerGreetingYes::
@@ -20,7 +20,7 @@ _LabColorChangerGreetingYes::
 	prompt
 	
 _LabColorChangerGreetingNo::
-	text "Ze n'est pas grave!"
+	text "Z'est pas grave!"
 	prompt
 
 _LabColorChangerStart::
@@ -29,10 +29,15 @@ _LabColorChangerStart::
 	cont "#MON, z'est za?@"
 	text_end
 
-_LabColorChangerNext::
-	text "1 changement tous"
+_LabColorChanger1Per10Caught::
+	db "1 changement tous"
 	line "les 10 #MON"
 	cont "capturés!"
+	done
+
+_LabColorChangerNext::
+	text "@"
+	text_call _LabColorChanger1Per10Caught
 	para "A utilizer"
 	line "judizieuzement!"
 	prompt
@@ -54,25 +59,22 @@ _LabColorChangerGoodbye::
 
 _LabColorChangerStartColorChange::
 	text "Attenzion!"
-	line "On commenze"
-	cont "tout de zuite!"
-	cont "Tu nous aides!"
+	para "On z'y met"
+	line "maintenant!"
 	prompt
 
 _LabColorChangerColorChangeDone::
 	text "Z'est parfait!"
 	para "Le changement de"
-	line "couleur est"
-	cont "terminé!@"
+	line "couleur est fini!@"
 	text_end
 
 _LabColorChangerNoChangesLeft::
-	text "Tu n'as plus de"
+	text "T'as plus de"
 	line "changements de"
 	cont "couleur!"
-	para "1 changement tous"
-	line "les 10 #MON"
-	cont "capturés!"
+	para "@"
+	text_call _LabColorChanger1Per10Caught
 	prompt
 
 _LabColorChangerVasIsDas::
@@ -80,18 +82,17 @@ _LabColorChangerVasIsDas::
 	para "Un mezzage de mon"
 	line "collègue?!"
 	para "Ouah!"
-	para "Tu es un protégé"
+	para "T'es un protégé"
 	line "du PROF. CHEN?!"
-	para "Incroyable!"
-	para "Tu as droit à 10"
+	para "Dingue!"
+	para "T'as droit à 10"
 	line "changements de"
 	cont "couleurs en plus!@"
 	text_end
 
 _LabColorChangerResearchingColors::
-	text "Je fais des"
-	line "recherches sur la"
-	cont "fazon de changer"
+	text "Je recherche les"
+	line "fazons de changer"
 	cont "les couleurs des"
 	cont "#MON!"
 	done
@@ -100,43 +101,34 @@ _LabColorChangerResearchingColors::
 _CinnabarLabMetronomeRoomScientist3Text::
 	text "Je suis"
 	line "ornithologue!"
-	para "Un expert en"
-	line "oiseaux."
-	para "J'ai une équipe"
-	line "qui tente de"
-	cont "localiser les"
-	cont "3 oiseaux"
+	para "Mon équipe cherche"
+	line "les 3 oiseaux"
 	cont "légendaires."
-	para "Quand vont-ils me"
-	line "donner leurs"
-	cont "résultats?"
-	para "Je commence à"
-	line "m'impatienter<...>"
+	para "Quand aurai-je"
+	line "leurs résultats?"
+	para "Je m'impatiente<...>"
 	done
 
 _CinnabarLabMetronomeRoomScientist3Text2::
 	text "Merci de m'avoir"
 	line "montré ton oiseau"
-	cont "légendaire!!"
-	para "Cet acte généreux"
-	line "m'a beaucoup aidé"
-	cont "dans mes"
-	cont "recherches!"
+	cont "légendaire!"
+	para "Ca m'a bien aidé!"
 	done
 
 _CinnabarLabTradeRoomSuperNerdText::
 	text "Salut!"
 	line "C'est toi!"
-	para "On s'est rencontrés"
-	line "au MONT SELENITE!"
+	para "On s'est vu au"
+	line "MONT SELENITE!"
 	para "Je visite le"
 	line "LABO #MON"
 	cont "de CRAMOIS'ILE."
 	para "On fait revivre"
 	line "des #MON"
 	cont "préhistoriques"
-	cont "rares à partir"
-	cont "de fossiles!"
+	cont "à partir de"
+	cont "fossiles!"
 	para "Apporte-les aux"
 	line "gars au bout du"
 	cont "couloir!"

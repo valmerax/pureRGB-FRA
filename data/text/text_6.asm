@@ -32,34 +32,38 @@ _ItemUseBallText05::
 	cont "capturé!@"
 	text_end
 
-_ItemUseBallText07::
+_ItemUseBallTextIntro::
 	text_ram wBoxMonNicks
 	text " est"
 	line "transféré au <PC>"
+	done
+
+_ItemUseBallText07::
+	text "@"
+	text_call _ItemUseBallTextIntro
 	cont "de LEO!"
 	prompt
 
 _ItemUseBallText08::
-	text_ram wBoxMonNicks
-	text " est"
-	line "transféré au <PC>"
+	text "@"
+	text_call _ItemUseBallTextIntro
 	cont "inconnu!"
 	prompt
 
 _NoBoxSlotsLeftText::
 	text "La BOITE @"
 	text_ram wBoxNumString
-	text " est à"
-	line "présent pleine."
-	para "Il est temps de"
-	line "changer de boîte!@"
+	text " est"
+	line "pleine."
+	para "Activez une autre"
+	line "BOITE!@"
 	text_end
 
 _BoxSlotsLeftText::
+	text "Il reste @"
 	text_ram w2CharStringBuffer
-	text " emplacements"
-	line "restants dans" 
-	cont "la BOITE @"
+	text " places"
+	line "dans la BOITE @"
 	text_ram wBoxNumString
 	text ".@"
 	text_end
@@ -91,9 +95,9 @@ _LavaSurfingText::
 	prompt
 
 _ApexChipPutOnPokeballText::
-	text "Vous avez installé"
-	line "la PUCE APEX sur"
-	para "la Poké Ball de"
+	text "Vous installez la"
+	line "PUCE APEX sur"
+	para "la # BALL de"
 	line "@"
 	text_ram_namebuffer
 	text ".@"
@@ -114,16 +118,16 @@ _ApexChipDVsMaxedText::
 	text "Le potentiel de"
 	line "@"
 	text_ram_namebuffer
-	text_start
-	cont "est maximisé!"
-	para "Les DV sont au"
+	text " est"
+	cont "maximisé!"
+	para "Ses DV sont au"
 	line "max!"
 	prompt
 
 _ApexChipAlreadyUsedText::
 	text "Une PUCE APEX est"
-	line "déjà installée sur"
-	para "la Poké Ball de"
+	line "déjà en place sur"
+	para "la # BALL de"
 	line "@"
 	text_ram_namebuffer
 	text "."
@@ -133,11 +137,10 @@ _BoosterChipInstalledText::
 	text "Vous avez inséré"
 	line "la PUCE EXP dans"
 	cont "votre ceinture"
-	cont "POKéBALL."
+	cont "# BALLs."
 
-	para "Tout les #MON"
-	line "gagneront plus"
-	cont "d'EXP!@"
+	para "Vos #MON gagne-"
+	line "ront plus d'EXP!@"
 	text_end
 
 _VitaminStatRoseText::
@@ -155,8 +158,7 @@ _VitaminNoEffectText::
 
 _ItemUseNoEffectText::
 _RareCandyNoEffectText::
-	text "Cela n'aura aucun"
-	line "effet."
+	text "Sans effet."
 	prompt
 
 _ThrewBaitText::
@@ -283,39 +285,34 @@ _ItemUseNotTimeText::
 	prompt
 
 _ItemUseValuableText::
-	text "Ca a l'air de"
-	line "valoir cher!"
-	para "Le vendre serait"
-	line "une bonne idée."
+	text "Ca vaut cher!"
+	para "Tu devrais le"
+	line "vendre."
 	prompt
 
 _TopSecretKeyText::
 	text "Cette clé"
 	line "ressemble à la"
 	cont "CLE SECRETE."
-	para "Elle est cependant"
-	line "beaucoup plus"
-	cont "usée."
-	para "Provient-elle du"
-	line "même bâtiment?"
+	para "Mais elle est"
+	line "usée."
+	para "Vient-elle du même"
+	line "bâtiment?"
 	prompt
 
 _ItemUseFossilText::
 	text "Ce fossile est"
-	line "agréable à"
-	cont "regarder!"
-	para "Peut-être le"
+	line "magnifique!"
+	para "Mieux vaut le"
 	line "mettre dans le <PC>"
 	cont "en attendant de"
-	cont "lui trouver une"
-	cont "utilité."
+	cont "s'en servir."
 	prompt
 
 _ItemUseInBattleText::
-	text "Cet objet ne peut"
-	line "être utilisé que"
-	cont "pendant un combat"
-	cont "#MON."
+	text "Ne peut être"
+	line "utilisé qu'en"
+	cont "combat #MON."
 	prompt
 
 _ItemUseNotYoursToUseText::
@@ -350,7 +347,6 @@ _BoxFullCannotThrowBallText::
 	prompt
 
 _ItemUseCameraInBattleText::
-	text "Pas le temps de"
-	line "prendre une photo"
-	cont "en plein combat!"
+	text "Pas de photo en"
+	line "plein combat!"
 	prompt

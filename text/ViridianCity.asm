@@ -92,10 +92,9 @@ _ViridianCityFisherTM42ExplanationText::
 
 _ViridianCityFisherGastlyLearnset::
 	text "Hmm?"
-	para "Que je te décrive"
-	line "le rêve que j'ai"
-	cont "fait en détail?"
-	para "Il s'agissait d'un"
+	para "Tu veux que je te"
+	line "raconte mon rêve?"
+	para "Il y avait un"
 	line "@"
 	text_ram_namebuffer
 	text " géant."

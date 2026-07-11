@@ -1,30 +1,29 @@
 _CeladonLaprasGuyIntro::
-	text "Je travaille à la"
+	text "Je bosse pour la"
 	line "SYLPHE SARL."
-	para "Je suis ici en"
-	line "voyage d'affaires."
+	para "Je suis en voyage"
+	line "d'affaires."
 	para "Je vais présenter"
 	line "les résultats de"
 	cont "nos recherches"
 	cont "sur un #MON"
 	cont "rare!"
-	para "Mais j'ai peur de"
-	line "montrer ce"
+	para "Mais j'ai peur"
+	line "de montrer ce"
 	cont "#MON alors que"
 	cont "la <TEAM><ROCKET>"
 	cont "rôde dans le coin."
 	done
 
 _CeladonLaprasGuyReady::
-	text "C'est donc toi qui" 
-	line "as botté le train"
-	cont "de la <TEAM><ROCKET>"
+	text "C'est toi qui as" 
+	line "botté le train de"
+	cont "la <TEAM><ROCKET>"
 	cont "dans leur"
 	cont "repaire?"
 
-	para "Ils sont tous bien"
-	line "déprimés à"
-	cont "présent. Ha!"
+	para "Ils sont déprimés"
+	line "à présent. Ha!"
 
 	para "Ca leur apprendra!"
 	
@@ -34,31 +33,28 @@ _CeladonLaprasGuyReady::
 
 	para "Je veux te donner"
 	line "ce #MON pour"
-	cont "m'avoir aidé!"
+	cont "te remercier!"
 	prompt
 
 _CeladonLaprasGuyAfter::
 	text "Bon, je retourne"
-	line "à la SYLPHE SARL"
-	cont "maintenant!"
+	line "à la SYLPHE SARL!"
 
 	para "Merci encore!"
 	done
 
 _SwitchPCBoxesFirst::
 	text "Plus de place dans"
-	line "cette BOITE <PC>."
-	para "Choississez-en une"
-	line "autre!"
+	line "la BOITE <PC>."
+	para "Activez une autre"
+	line "BOITE!"
 	done
 
 _LaprasGuySilphCoAlreadyText::
 	text "Salut! C'est toi!"
-	line "Comment va"
-	cont "LOKHLASS?"
-	para "On dirait que tu"
-	line "vas encore nous"
-	cont "sauver de la"
+	line "LOKHLASS va bien?"
+	para "Tu vas encore nous"
+	line "sauver de la"
 	cont "<TEAM><ROCKET>,"
 	cont "hein?"
 	para "On est entre de"
