@@ -138,7 +138,6 @@ INCLUDE "text/Route21.asm"
 INCLUDE "text/Route22.asm"
 INCLUDE "text/Route23.asm"
 INCLUDE "text/Route24.asm"
-INCLUDE "text/ViridianSchoolHouseQuiz.asm"
 INCLUDE "text/CinnabarLabTradeRoom.asm"
 INCLUDE "text/FuchsiaMeetingRoom.asm"
 INCLUDE "text/SSAnneKitchen.asm"
@@ -292,6 +291,7 @@ SECTION "Text 12", ROMX
 INCLUDE "text/TypeGuysHouse.asm"
 INCLUDE "text/ChampArena.asm"
 INCLUDE "text/DiamondMine.asm"
+INCLUDE "text/ViridianSchoolHouseQuiz.asm"
 
 SECTION "Text 13", ROMX
 INCLUDE "text/PokemonTowerCatacombs.asm"

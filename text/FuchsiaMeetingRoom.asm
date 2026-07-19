@@ -31,22 +31,20 @@ _FuchsiaMeetingRoomSafariZoneWorker3::
 	done
 
 _FuchsiaMeetingRoomPoster::
-	text "Une photo de"
-	line "paysage prise"
-	cont "depuis un"
+	text "Une photo d'un"
+	line "paysage vu d'un"
 	cont "hélicoptère."
-	para "Toute la SAFARI"
-	line "ZONE est visible!"
+	para "On voit tout le"
+	line "PARC SAFARI!"
 	done
 
 _FuchsiaMeetingRoomDeskPapers::
-	text "Une observation"
-	line "intéressante"
-	cont "concernant la"
-	cont "captivité au zoo:"
+	text "Une note à propos"
+	line "de la captivité"
+	cont "au zoo:"
 	para "Notre VOLTORBE"
-	line "explose beaucoup"
-	cont "moins souvent"
-	cont "lorsqu'il est"
-	cont "entouré de gens."
+	line "explose moins"
+	cont "souvent quand il"
+	cont "est entouré de"
+	cont "gens."
 	done

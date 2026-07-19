@@ -170,15 +170,12 @@ _Route13CooltrainerM3AfterBattleText::
 _FearowLearnset::
 	text "Ah, être un oiseau"
 	line "dans le ciel!"
-	para "Je vais devoir me"
-	line "contenter de"
-	cont "monter sur"
-	cont "RAPASDEPIC à la"
-	cont "place!"
+	para "Je me contente"
+	line "de monter sur"
+	cont "RAPASDEPIC!"
 	para "La vue d'en haut"
-	line "est absolument"
-	cont "époustouflante!"
-	para "Je suis fier d'être"
+	line "est sublime!"
+	para "Fier d'être"
 	line "ORNITHOLOGUE!"
 	prompt
 
@@ -196,16 +193,13 @@ _Route13TrainerTips2Text::
 	line "pour organiser"
 	cont "votre inventaire!"
 
-	para "Même chose pendant"
-	line "les combats, avec"
-	cont "les attaques des"
-	cont "#MON!"
+	para "Idem en combat,"
+	line "avec les attaques"
+	cont "des #MON!"
 
-	para "Ca marche aussi"
-	line "pour changer"
-	cont "l'ordre des"
-	cont "<PK><MN>, essaie"
-	cont "donc!"
+	para "Mais aussi pour"
+	line "changer l'ordre"
+	cont "des <PK><MN>!"
 	done
 
 _Route13SignText::

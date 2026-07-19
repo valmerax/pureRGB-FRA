@@ -33,9 +33,8 @@ _Route18CooltrainerM2AfterBattleText::
 	done
 
 _Route18AerodactylLearnsetText::
-	text "Je parie que tu ne"
-	line "t'attendais pas à"
-	cont "ce que j'aie un"
+	text "Tu ne pensais pas"
+	line "que j'avais un"
 	cont "@"
 	text_ram_namebuffer
 	text "!"
@@ -62,9 +61,8 @@ _Route18CooltrainerM3AfterBattleText::
 
 _Route18BattleText4::
 	text "Pousse-toi d'là!!"
-	para "Comment je fais"
-	line "pour arrêter ce"
-	cont "truc?!"
+	para "Comment j'arrête"
+	line "ce truc?!"
 	done
 
 _Route18EndBattleText4::
@@ -83,8 +81,8 @@ _Route18AfterBattleText4::
 _Route18BattleText5::
 	text "Fonce comme le"
 	line "vent!"
-	para "La vitesse, c'est"
-	line "tout c'qui compte!"
+	para "Seule la vitesse"
+	line "compte!"
 	para "Le rock, c'est la"
 	line "vie!"
 	done
@@ -95,8 +93,7 @@ _Route18EndBattleText5::
 
 _Route18AfterBattleText5::
 	text "Vivre à fond et"
-	line "perdre sans"
-	cont "regret."
+	line "sans regret."
 	para "C'est ce que j'dis"
 	line "toujours!"
 	done
@@ -115,18 +112,13 @@ _Route18CyclingRoadSignText::
 
 _Route18TipsSign::
 	text "<ASTUCE>"
-	para "Appuyez sur SELECT"
-	line "lorsque vous con-"
-	cont "sultez les stats"
-	cont "d'un #MON pour"
-	cont "voir ses STAT"
-	cont "EXP (EV)!"
-	para "Les STAT EXP"
-	line "augmentent en"
-	cont "combattant et en"
-	cont "utilisant des"
-	cont "vitamines!"
+	para "Appuyer sur SELECT"
+	line "sur les stats d'un"
+	cont "#MON pour voir"
+	cont "sa STAT EXP (EV)!"
+	para "La STAT EXP monte"
+	line "grâce aux combats"
+	cont "et vitamines!"
 	para "Plus d'EXP signifie"
-	line "une STAT plus"
-	cont "élevée!"
+	line "STAT plus élevées!"
 	done

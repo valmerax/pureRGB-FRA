@@ -1,5 +1,5 @@
 _Route16Biker1BattleText::
-	text "Kess t'as ta?"
+	text "Kess t'as toi?"
 	done
 
 _Route16Biker1EndBattleText::

@@ -13,12 +13,9 @@ _Route14CooltrainerM1EndBattleText::
 
 _Route14CooltrainerM1AfterBattleText::
 	text "Tu as des CS?"
-	para "Les capacités CS"
-	line "peuvent également"
-	cont "être remplacées"
-	cont "si besoin,"
-	cont "n'importe quand,"
-	cont "n'importe où!"
+	line "Les #MON"
+	cont "peuvent les"
+	cont "oublier."
 	para "Pas de souci!"
 	done
 
@@ -106,13 +103,12 @@ _LegendaryBirdLearnsetA::
 
 _LegendaryBirdLearnset::
 	text "T'es une légende!"
-	para "C'est l'un des"
-	line "oiseaux"
-	cont "légendaires!"
+	para "C'est un oiseau"
+	line "légendaire!"
 	para "Je peux le voir?!"
 	para "Je vais te dire"
 	line "tout ce que je"
-	cont "sais à son sujet!"
+	cont "sais sur lui!"
 	done
 
 _Route14CooltrainerM6BattleText::
@@ -210,15 +206,14 @@ _Route14EndBattleText11::
 	prompt
 
 _Route14AfterBattleText11::
-	text "On dirait qu'on en"
-	line "a perdu un autre,"
-	cont "les gars."
+	text "On en a perdu un"
+	line "autre, les gars."
 	done
 
 _Route14BattleText12::
-	text "Il y a pas mal de"
-	line "motards costauds"
-	cont "ici, non?"
+	text "Les MOTARDS d'ici"
+	line "sont costauds,"
+	cont "non?"
 	done
 
 _Route14EndBattleText12::
@@ -227,12 +222,10 @@ _Route14EndBattleText12::
 
 _Route14AfterBattleText12::
 	text "J'ai déjà vu ces"
-	line "MOTARDs dans le"
-	cont "coin."
+	line "MOTARDS."
 	para "Ils ont l'air"
-	line "intimidants, mais"
-	cont "en fait ce sont"
-	cont "des gars sympa."
+	line "méchants, mais ce"
+	cont "sont de bons gars."
 	done	
 
 _Route14SignText::
@@ -246,6 +239,6 @@ _Route14Text12::
 	para "Appuyez sur SELECT"
 	line "pour utiliser"
 	cont "votre BICYCLETTE."
-	para "Gardez-le bien"
+	para "Gardez-la bien"
 	line "dans votre sac."
 	done

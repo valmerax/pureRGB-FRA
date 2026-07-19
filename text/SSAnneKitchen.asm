@@ -82,12 +82,10 @@ _SSAnneKitchenWaiter::
 	done
 
 _SSAnneKitchenWaiterHaveSeat::
-	text "Alors, assieds-toi"
-	line "ici."
+	text "Assieds-toi ici."
 	done
 
 _SSAnneKitchenWaiterComingRightUp::
 	text "Excellent choix!"
-	para "Ca arrive tout de"
-	line "suite!"
+	para "Ca arrive vite!"
 	done

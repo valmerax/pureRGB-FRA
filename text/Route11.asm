@@ -32,13 +32,12 @@ _Route11Gambler2AfterBattleText::
 	done
 
 _LearnsetBellsprout::
-	text "Il faut être"
-	line "souple, comme mon"
-	cont "@"
+	text "Sois souple, comme"
+	line "mon @"
 	text_ram_namebuffer
 	text "!"
-	para "Bouge, balance-toi"
-	line "et adapte-toi!"
+	para "Bouge, balance et"
+	line "adapte-toi!"
 	prompt
 
 _Route11Youngster1BattleText::
@@ -80,11 +79,10 @@ _LearnsetMagneton::
 	text_ram_namebuffer
 	text " se"
 	line "regroupent dans"
-	cont "des lieux très"
+	cont "des lieux"
 	cont "énergivores."
 	para "Ils peuvent causer"
-	line "de graves pannes"
-	cont "de courant!"
+	line "des courts-jus!"
 	para "@"
 	text_end
 
@@ -162,7 +160,7 @@ _LearnsetStaryu::
 	text_ram_namebuffer
 	text "!"
 	para "Il a une forme"
-	line "très étrange."
+	line "étrange."
 	para "Il me fait penser"
 	line "à l'espace!"
 	para "@"
@@ -174,12 +172,10 @@ _Route11SuperNerd2BattleText::
 	done
 
 _LearnsetVulpixLuckyNumber::
-	text "Le six est mon"
-	line "chiffre porte-"
-	cont "bonheur!"
+	text "Le chiffre 6 me"
+	line "porte chance!"
 	para "C'est pour ça que"
-	line "j'ai élevé un"
-	cont "@"
+	line "j'ai un @"
 	text_ram_namebuffer
 	text "!"
 	prompt

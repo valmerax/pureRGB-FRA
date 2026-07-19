@@ -85,9 +85,8 @@ _Route17Biker5AfterBattleText::
 	done
 
 _LearnsetElectrode::
-	text "Ce n'était pas"
-	line "facile d'en"
-	cont "attraper un avant"
+	text "Pas facile d'en"
+	line "attraper un avant"
 	cont "qu'il n'utilise"
 	cont "EXPLOSION."
 	para "J'ai dû utiliser"

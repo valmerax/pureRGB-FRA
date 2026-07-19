@@ -121,7 +121,6 @@ _Route22PokemonLeagueSignText::
 
 _Route22TrainerTipsText::
 	text "<ASTUCE>"
-	para "Maintenez B"
-	line "enfoncé pour"
-	cont "courir."
+	para "Maintenez B pour"
+	line "courir."
 	done

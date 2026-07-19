@@ -32,35 +32,31 @@ _SchoolB1FLeftTeacherLater::
 	done
 
 _SchoolB1FLeftTeacherFirst::
-	text "Bienvenue dans mon"
+	text "Bienvenue à mon"
 	line "cours sur les"
 	cont "capacités des"
 	cont "#MON!"
-	para "Je suis assez"
-	line "satisfait en ce"
-	cont "moment!"
+	para "Je suis ravi en"
+	line "ce moment!"
 	para "J'ai créé un outil"
 	line "pour enregistrer"
-	cont "numériquement"
-	cont "toutes les infos"
-	cont "sur les capacités"
-	cont "des #MON!"
+	cont "les infos sur les"
+	cont "capacités des"
+	cont "#MON!"
 	para "C'est brillant!"
 	para "Je l'appelle le"
 	line "CAPADEX!"
-	para "C'est vraiment"
-	line "utile!"
+	para "C'est très utile!"
 	para "Tu en veux un?"
 	done
 
 _SchoolB1FLeftTeacherNo::
-	text "Ne fais pas"
-	line "l'insolent!"
-	para "On ne va pas"
-	line "tourner autour du"
-	cont "pot!"
-	para "Reviens me parler"
-	line "si ça t'intéresse!"
+	text "Ne sois pas"
+	line "insolent!"
+	para "Allons droit"
+	line "au but!"
+	para "Reviens me voir si"
+	line "ça t'intéresse!"
 	done
 
 _SchoolB1FLeftTeacherYes::
@@ -72,9 +68,8 @@ _SchoolB1FLeftTeacherYes::
 	cont "apprendre plein"
 	cont "de choses."
 	para "Je te ferai passer"
-	line "un petit quiz"
-	cont "pour voir ce que"
-	cont "tu as retenu!"
+	line "un quiz pour voir"
+	cont "ce que tu sais!"
 	para "Un score parfait"
 	line "te permettra de"
 	cont "remporter le"
@@ -115,8 +110,8 @@ _SchoolB1FLeftTeacherQuizQuestion2::
 _SchoolB1FLeftTeacherQuizQuickAttack::
 	text "Ah, VIVE-ATTAQUE."
 	para "Une capacité"
-	line "plutôt classique,"
-	cont "n'est-ce pas?"
+	line "classique, n'est-"
+	cont "ce pas?"
 	para "Mais terriblement"
 	line "utile!"
 	prompt
@@ -140,7 +135,7 @@ _SchoolB1FLeftTeacherQuizQuestion5::
 	para "Quelle capacité"
 	line "inflige des"
 	cont "dégâts supplémen-"
-	cont "taires lorsqu'elle"
+	cont "taires quand elle"
 	cont "est utilisée par"
 	cont "CARAPUCE?"
 	prompt
@@ -224,7 +219,7 @@ _SchoolB1FLeftBookcaseA2::
 
 _SchoolB1FLeftBookcaseB::
 	text "DEUX ANS AVEC"
-	line "LE MELOFEE@"
+	line "MELOFEE@"
 	text_end
 _SchoolB1FLeftBookcaseB2::
 	text "<PARA>Jour 234, j'ai vu"
@@ -245,8 +240,8 @@ _SchoolB1FRightBookcaseA2::
 	cont "dans les maisons"
 	cont "pour chiper de la"
 	cont "nourriture, des"
-	cont "tissus douillets,"
-	cont "voire du bois à"
+	cont "tissus douillets"
+	cont "ou du bois à"
 	cont "ronger!"
 	done
 
@@ -257,11 +252,9 @@ _SchoolB1FRightBookcaseB::
 _SchoolB1FRightBookcaseB2::
 	text "<PARA>Pas besoin"
 	line "d'outils!"
-	para "Apprenez simple-"
-	line "ment à un #MON"
-	cont "l'attaque COUPE"
-	cont "et laissez-le"
-	cont "faire son oeuvre!"
+	para "Apprenez COUPE à"
+	line "un #MON et"
+	cont "laissez-le faire!"
 	para "Regardez ces"
 	line "hautes herbes"
 	cont "disparaître!"

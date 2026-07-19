@@ -36,12 +36,10 @@ _Route12Fisher1AfterBattleText::
 	done
 
 _LearnsetGoldeen::
-	text "J'ai l'habitude de"
-	line "voir @"
 	text_ram_namebuffer
-	text_start
-	cont "utiliser ULTRASON"
-	cont "pour se dégager."
+	text " utilise"
+	line "ULTRASON pour se"
+	cont "dégager."
 	para "J'adore"
 	line "@"
 	text_ram_namebuffer
@@ -132,11 +130,10 @@ _Route12Fisher3AfterBattleText::
 	done
 
 _SeadraLearnset::
-	text "On ne rencontre"
-	line "pas tous les"
-	cont "jours quelqu'un"
-	cont "capable d'attraper"
-	cont "un @"
+	text "On voit rarement"
+	line "quelqu'un capable"
+	cont "d'attraper un"
+	cont "@"
 	text_ram_namebuffer
 	text "!"
 	para "Ils vivent dans"
@@ -183,7 +180,7 @@ _Route12Fisher5AfterBattleText::
 
 _Route12BattleText8::
 	text "Les PECHEURS d'ici"
-	line "m'ont raconté des"
+	line "racontent des"
 	cont "légendes sur des"
 	cont "monstres marins!"
 	done
@@ -202,14 +199,11 @@ _Route12AfterBattleText8::
 	done
 
 _ShellderLearnset::
-	text "J'ai entendu dire"
-	line "que KOKIYAS"
-	cont "évolue en un"
-	cont "#MON aux stats"
+	text "KOKIYAS évolue en"
+	line "#MON aux stats"
 	cont "exceptionnelles!"
 	para "C'est pour ça que"
-	line "j'en ai attrapé"
-	cont "un!"
+	line "j'en ai un!"
 	para "@"
 	text_end
 
@@ -228,11 +222,10 @@ _Route12EndBattleText9::
 _Route12AfterBattleText9::
 	text "Respirer sous"
 	line "l'eau<...>"
-	para "J'adorerais"
-	line "pouvoir faire ça!"
-	para "Pour l'instant, je"
-	line "me contente de la"
-	cont "plongée sous-"
+	para "J'aimerais pouvoir"
+	line "faire ça!"
+	para "Je me contente de"
+	line "la plongée sous-"
 	cont "marine!"
 	done
 
@@ -246,21 +239,19 @@ _Route12SportFishingSignText::
 	done
 
 _SnorlaxWentBackToSleepText::
-	text "Il a l'air de"
-	line "s'ennuyer, RONFLEX"
-	cont "s'est rendormi."
+	text "RONFLEX s'est"
+	line "rendormi."
 	done
 
 _Route12MetronomeGamblerText::
-	text "Je vais te montrer"
-	line "le pouvoir de ma"
-	cont "chance!"
+	text "Admire le pouvoir"
+	line "de ma chance!"
 	done
 
 _Route12MetronomeGamblerEndBattleText::
-	text "Ma chance a perdu"
-	line "face au talent!"
-	para "Salut, mon pote!"
+	text "Aucune chance face"
+	line "au talent!"
+	para "Hé, l'ami!"
 	para "Et si j'apprenais"
 	line "METRONOME à ton"
 	cont "#MON?"
@@ -268,23 +259,20 @@ _Route12MetronomeGamblerEndBattleText::
 	prompt
 
 _Route12MetronomeGamblerMetronomeTeachText::
-	text "Un simple coup de"
-	line "dés peut changer"
-	cont "une vie!"
-	para "Alors, qu'en"
-	line "dis-tu?"
+	text "Un lancé de dés"
+	line "peut changer une"
+	cont "vie!"
+	para "Qu'en dis-tu?"
 	para "Je dois apprendre"
 	line "METRONOME à un"
 	cont "#MON?"
 	done
 
 _Route12MetronomeGamblerMetronomeTeach2Text::
-	text "Va semer le chaos"
-	line "du METRONOME!"
-	para "Et reviens si tu"
-	line "veux que je te"
-	cont "l'apprendre à"
-	cont "nouveau!"
+	text "Sème le chaos avec"
+	line "METRONOME!"
+	para "Reviens si tu veux"
+	line "l'apprendre encore!"
 	done
 
 _Route12MetronomeGamblerNoDitto::
