@@ -25,8 +25,7 @@ _SaffronAbandonedBuildingRocket1Sprocket::
 
 _SaffronAbandonedBuildingRocket1Dennis::
 	text "N'utilise pas mon"
-	line "vrai nom,"
-	cont "imbécile!"
+	line "vrai nom, idiot!"
 	para "Reviens avec le"
 	line "mot de passe!"
 	prompt
@@ -36,9 +35,8 @@ _SaffronAbandonedBuildingRocket1GetOut::
 	done
 
 _SaffronAbandonedBuildingRocket1Guess::
-	text "On dirait qu'on"
-	line "recrute des"
-	cont "p'tits morveux"
+	text "On recrute des"
+	line "p'tits morveux"
 	cont "maintenant!"
 	done
 
@@ -76,15 +74,14 @@ _SaffronAbandonedBuildingStairs::
 _SaffronAbandonedBuildingSteamPipe::
 	text "Du gaz s'échappe"
 	line "de ce tuyau."
-	para "Il est écrit"
-	line "HELIUM sur le"
-	cont "côté."
+	para "C'est écrit HELIUM"
+	line "sur le côté."
 	prompt
 
 _SaffronAbandonedBuildingKoffing::
-	text "Il n'est pas encore"
-	line "prêt à recevoir"
-	cont "autant de gaz."
+	text "Il n'est pas prêt"
+	line "à recevoir autant"
+	cont "de gaz."
 	done
 
 _SaffronAbandonedBuildingAlready::
@@ -102,6 +99,5 @@ _SaffronAbandonedBuildingWeezing::
 _SaffronAbandonedBuildingWeezing2::
 	text_ram_namebuffer
 	text " est"
-	line "rempli d'HELIUM"
-	cont "ultra-léger!"
+	line "rempli d'HELIUM!"
 	done

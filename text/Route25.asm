@@ -162,11 +162,11 @@ _Route25Hiker3AfterBattleText::
 	done
 
 _MankeyLearnsetText::
-	text "@"
+	text "Avec @"
 	text_ram_namebuffer
-	text " et moi,"
-	line "on part en rando"
-	cont "tous les jours!"
+	text ","
+	line "on part souvent"
+	cont "en rando!"
 	para "@"
 	text_ram_namebuffer
 	text " déborde"
@@ -181,13 +181,10 @@ _Route25BillSignText::
 
 _Route25Text12::
 	text "<ASTUCE>"
-	para "Maintenez les"
-	line "boutons A et B" 
-	cont "enfoncés tout en"
-	cont "restant immobile."
+	para "Maintenez A + B en" 
+	line "restant immobile."
 	para "Appuyez ensuite" 
-	line "sur n'importe" 
-	cont "quelle direction"
+	line "sur une flèche" 
 	cont "de la croix"
 	cont "directionnelle"
 	cont "pour changer de"

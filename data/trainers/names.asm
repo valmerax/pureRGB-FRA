@@ -52,7 +52,7 @@ TrainerNames::
 	li "RECRUE"
 	li "SOLDAT"
 	li "CHIEF"
-	li "GUIDE ARENE"
+	li "GUIDE"
 	li "PRO FITNESS"
 	li "SPRINTER"
 	li "BOXEUR"

@@ -48,7 +48,7 @@ _Museum2FMoonStoneSignText::
 	done
 
 _Museum2FWalletKid1::
-	text "C'est quoi ça?"
+	text "C'est quoi?"
 	line "Un portefeuille?"
 	cont "Hein! Celui qui"
 	cont "l'a perdu était"
@@ -67,9 +67,8 @@ _Museum2FWalletKidBattle::
 	line "que c'est ton"
 	cont "portefeuille?"
 
-	para "Ecoute, si tu me"
-	line "bats au combat,"
-	cont "il est à toi."
+	para "Ecoute, il est à"
+	line "toi si tu me bats."
 	done
 
 _Museum2FWalletKidBattleAfter::
@@ -78,11 +77,11 @@ _Museum2FWalletKidBattleAfter::
 	prompt
 
 _Museum2FWalletKidWalletGive::
-	text "D'accord, d'accord!"
+	text "D'accord!"
 	line "Prends-le!"
 
 	para "J'aimerais être"
-	line "assez vieux pour"
+	line "plus âgé pour"
 	cont "avoir un de ces"
 	cont "#MON de départ!@"
 	text_end
@@ -96,17 +95,13 @@ _Museum2FReceivedLostWalletText::
 	done
 
 _Museum2FWalletKidEnd::
-	text "De toute façon, ma"
-	line "mère ne m'aurait"
-	cont "pas laissé garder"
-	cont "le portefeuille"
-	cont "de quelqu'un"
-	cont "d'autre."
+	text "Ma mère ne m'aurait"
+	line "pas laissé garder"
+	cont "ce portefeuille."
 
 	para "Mais je me suis"
 	line "bien battu."
 
-	para "Je considère donc"
-	line "cette aventure"
-	cont "comme un succès!"
+	para "Cette aventure est"
+	line "donc un succès!"
 	done

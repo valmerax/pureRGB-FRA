@@ -161,7 +161,6 @@ INCLUDE "text/ViridianGym.asm"
 INCLUDE "text/Museum1F.asm"
 INCLUDE "text/Museum2F.asm"
 INCLUDE "text/PewterGym.asm"
-INCLUDE "text/SaffronAbandonedBuilding.asm"
 
 
 SECTION "Text 7", ROMX
@@ -292,6 +291,7 @@ INCLUDE "text/TypeGuysHouse.asm"
 INCLUDE "text/ChampArena.asm"
 INCLUDE "text/DiamondMine.asm"
 INCLUDE "text/ViridianSchoolHouseQuiz.asm"
+INCLUDE "text/SaffronAbandonedBuilding.asm"
 
 SECTION "Text 13", ROMX
 INCLUDE "text/PokemonTowerCatacombs.asm"

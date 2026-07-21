@@ -35,14 +35,11 @@ _ViridianMartCooltrainerMText::
 	done
 
 _ViridianMartTMKid::
-	text "Yo! Tu te rends"
-	line "compte qu'ils ne"
-	cont "vendent pas de"
-	cont "<CT>?" 
+	text "Yo! Ils ne vendent"
+	line "pas de <CT>?"
 
 	para "Comment font les"
-	line "dresseurs pour"
-	cont "s'en sortir sans"
+	line "dresseurs sans"
 	cont "attaques de"
 	cont "qualité pour"
 	cont "leurs #MON?"
@@ -54,15 +51,11 @@ _TMKidStockingUp::
 	cont "moment."
 
 	para "Je vérifie juste"
-	line "si la concurrence"
-	cont "suivi la mode!"
-
-	para "Pas encore!"
+	line "la concurrence!"
 	
 	para "Retrouve-moi dans"
-	line "une autre"
-	cont "BOUTIQUE, j'aurais"
-	cont "plein de <CT>!" 
+	line "d'autres BOUTIQUE,"
+	cont "j'aurais des <CT>!"
 	done
 
 _TMKidBigStockIndigo::
@@ -75,11 +68,10 @@ _TMKidBigStockIndigo::
 	line "voir au PLATEAU"
 	cont "INDIGO."
 
-	para "Je suis en train"
-	line "de constituer le"
-	cont "meilleur stock de"
-	cont "<CT> jamais vu!"
+	para "J'y rassemble le"
+	line "meilleur stock de"
+	cont "<CT> qui soit!"
 
 	para "Je t'attends!"
-	line "A plus tard!"
+	line "A plus!"
 	done

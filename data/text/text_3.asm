@@ -112,7 +112,7 @@ _LearnsetUnlockedText::
 	line "@"
 	text_ram_namebuffer
 	text " sont"
-	line "enregistrées!"
+	cont "enregistrées!"
 	done
 
 _FellAsleepText::
@@ -158,12 +158,13 @@ _MonsStatsRoseText::
 	text "@"
 	text_end
 
-_GreatlyFellText::
 _GreatlyRoseText::
+_GreatlyFellText::
 	text "<SCROLL>à fond@"
 	text_end
 
 _RoseText::
+_FellText::
 	text "!"
 	prompt
 
@@ -173,10 +174,6 @@ _MonsStatsFellText::
 	text_ram wStringBuffer
 	text "@"
 	text_end
-
-_FellText::
-	text "!"
-	prompt
 
 _TeleportedAway::
 	text "<USER>"
@@ -323,10 +320,9 @@ _StatusChangesEliminatedText::
 	prompt
 
 _ImmuneToPsychicText::
-	text "<USER>"
-	line "est maintenant"
-	cont "immunisé au type"
-	cont "PSY!"
+	text "<USER> est"
+	line "immunisé au"
+	cont "type PSY!"
 	prompt
 
 _StartedSleepingEffect::
@@ -409,13 +405,13 @@ _AllDamageHalvedText::
 
 _SiphonSnagHealedUserText::
 	text "<USER>"
-	line "puise de l'énergie"
+	line "puise l'énergie"
 	cont "et se soigne!"
 	prompt
 
 _SiphonSnagHealedPartyText::
 	text "<USER>"
-	line "puise de l'énergie"
+	line "puise l'énergie"
 	para "et soigne"
 	line "@"
 	text_ram_namebuffer
@@ -435,7 +431,6 @@ _ScreechesPreventedSleepText::
 
 _LetOutAScreechText::
 	text "Mais soudain!"
-	line "Au dernier moment,"
-	para "<TARGET> pousse"
+	para "<TARGET> émet"
 	line "un GRINCEMENT!"
 	prompt

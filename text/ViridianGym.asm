@@ -81,9 +81,8 @@ _ViridianGymGiovanniTM27ExplanationText::
 	para "@"
 	text_ram_stringbuffer
 	text ": SEISME!"
-	line "Une attaque de"
-	cont "type SOL fiable"
-	cont "et extrêmement"
+	line "Une attaque SOL"
+	cont "fiable et"
 	cont "puissante!"
 
 	para "Je l'ai inventée"
@@ -256,13 +255,13 @@ _ViridianGymGuidePostBattleText::
 
 _ViridianGymGuideApexChipGroundText::
 	text "Pour les #MON"
-	line "sol, la PUCE APEX"
+	line "SOL, la PUCE APEX"
 	cont "simule un terrain"
-	cont "sablonneux et"
-	cont "arides aux colli-"
-	cont "nes vallonnées"
-	cont "avec de la terre"
-	cont "meuble en dessous."
+	cont "sec et sablonneux"
+	cont "aux collines"
+	cont "vallonnées avec"
+	cont "de la terre"
+	cont "meuble."
 	prompt 
 
 _ViridianGymGuideSeeAtPokemonLeagueText::

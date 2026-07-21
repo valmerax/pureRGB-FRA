@@ -20,11 +20,9 @@ _PewterGymBrockPreBattleText::
 	done
 
 _PewterGymGuideCallOverText::
-	text "GUIDE ARENE:"
-	line "Hé petit!"
-	cont "T'as gagné!"
+	text "GUIDE: Hé petit,"
+	line "t'as gagné!"
 	para "C'était un combat"
 	line "acharné!"
-	para "Viens par ici une"
-	line "seconde."
+	para "Viens par ici."
 	done

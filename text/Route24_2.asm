@@ -51,8 +51,8 @@ _Route24Youngster1EndBattleText::
 	line "Tu m'as écrasé!"
 	prompt
 
-_Route24CooltrainerF2AfterBattleText::
 _Route24Youngster1AfterBattleText::
+_Route24CooltrainerF2AfterBattleText::
 	text "J'ai fait de mon"
 	line "mieux!"
 	done

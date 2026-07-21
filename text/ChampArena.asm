@@ -434,13 +434,13 @@ _AgathaWonText::
 
 _GymGuideIntroText::
 	text "Quelle surprise!"
-	para "Le GUIDE ARENE"
-	line "veut affronter"
-	cont "le CHAMPION?"
+	para "Le GUIDE veut"
+	line "affronter le"
+	cont "CHAMPION?"
 	prompt
 
 _GymGuideIntroText2::
-	text "GUIDE ARENE: Yo!"
+	text "GUIDE: Yo!"
 	line "CHAMPION!"
 	para "J'ai remarqué qu'il"
 	line "y avait pas mal"

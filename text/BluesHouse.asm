@@ -13,16 +13,13 @@ _BluesHouseDaisyOfferMapText::
 
 _GotMapText::
 	text "<PLAYER> obtient:"
-	line "@"
-	text_ram wStringBuffer
-	text "!@"
+	line "CARTE!@"
 	text_end
 
 _MapHelpText::
 	text "Appuyez sur SELECT"
-	line "en consultant le"
-	cont "#DEX pour"
-	cont "afficher la"
+	line "depuis le #DEX"
+	cont "pour afficher la"
 	cont "CARTE. Facile!"
 	done
 

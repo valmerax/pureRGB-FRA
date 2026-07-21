@@ -40,15 +40,13 @@ _RedsHouse1FTVWrongSideText::
 
 _DadHealText1::
 	text "PAPA: <PLAYER>!"
-	line "Assieds-toi et"
-	cont "discutons tout en"
-	cont "jouant à la SNES."
+	line "Repose-toi et"
+	cont "jouons à la SNES."
 	prompt
 
 _DadHealText2::
-	text "PAPA: Tu sembles"
-	line "prêt à repartir!"
-	cont "C'est bien."
+	text "PAPA: Tu est prêt"
+	line "à repartir!"
 	para "Retourne sur le"
 	line "terrain, fiston!"
 	done

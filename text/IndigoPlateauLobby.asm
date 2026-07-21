@@ -82,8 +82,7 @@ _IndigoPlateauApexChipsAfterChamp::
 _IndigoPlateauGymGuideSonText::
 	text "C'est moi! Le"
 	line "Pirate <CT> et"
-	cont "GUIDE D'ARENE en"
-	cont "devenir!"
+	cont "GUIDE en devenir!"
 	prompt
 
 _IndigoPlateauGymGuideSonChampText::
@@ -91,8 +90,7 @@ _IndigoPlateauGymGuideSonChampText::
 
 	para "C'est moi! Le"
 	line "Pirate <CT> et"
-	cont "GUIDE D'ARENE en"
-	cont "devenir!"
+	cont "GUIDE en devenir!"
 	prompt
 
 _IndigoPlateauGymGuideSonIntro::

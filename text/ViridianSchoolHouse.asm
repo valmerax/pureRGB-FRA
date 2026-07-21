@@ -13,9 +13,8 @@ _ViridianSchoolHouseCooltrainerFText::
 	done
 
 _SchoolText3::
-	text "Pfff!"
-	line "La retenue semble"
-	cont "interminable!"
+	text "Pff! Cette retenue"
+	line "est interminable!"
 	done
 
 _SchoolText4::
@@ -30,13 +29,12 @@ _SchoolB1FGuyNearStairs::
 	cont "sont au sous-sol?"
 
 	para "Eh bien, on adore"
-	line "les #MON de"
-	cont "type SOL à"
+	line "les #MON SOL à"
 	cont "JADIELLE!"
 
-	para "Alors, c'est tout"
-	line "naturel d'étudier"
-	cont "sous terre!"
+	para "C'est donc naturel"
+	line "d'étudier sous"
+	cont "terre!"
 	done
 
 _SchoolB1FCornerGameboyKid::
@@ -44,22 +42,19 @@ _SchoolB1FCornerGameboyKid::
 	line "personne que je"
 	cont "me cache ici."
 
-	para "De toute façon, je"
-	line "connais déjà tout"
-	cont "le manuel par"
-	cont "coeur."
+	para "Je connais déjà le"
+	line "manuel par coeur."
 	
-	para "Je dois finir"
-	line "ce jeu vidéo!"
+	para "Et je dois finir"
+	line "ce jeu!"
 	
 	para "C'est quoi?"
 	line "Ca s'appelle:"
 	
-	para "THE FROG FOR WHOM"
-	line "THE BELL TOLLS"
+	para "POUR LA GRENOUILLE"
+	line "SONNE LE GLAS"
 	
-	para "Je suis totalement"
-	line "accro!"
+	para "Je suis accro!"
 	done
 
 
@@ -72,37 +67,33 @@ _SchoolB1FLittleGirlProdigy::
 	
 	para "Tu le savais?"
 	
-	para "Une attaque qui a"
-	line "le même type que"
+	para "Une attaque du"
+	line "même type que"
 	cont "le #MON qui"
 	cont "l'utilise inflige"
 	cont "plus de dégâts!"
 	
-	para "Je trouve ça"
-	line "fascinant!"
+	para "C'est fascinant!"
 	done
 
 
 _SchoolB1FNerd::
-	text "Ahh! Ne me"
+	text "Ah! Ne me"
 	line "déconcentre pas!"
 	
 	para "Je ne laisserai"
 	line "pas cette gamine"
 	cont "insulter mon"
-	cont "intelligence"
-	cont "supérieure!"
+	cont "intelligence!"
 	
 	para "Voici un aperçu de"
-	line "la vaste base de"
-	cont "données qu'est mon"
-	cont "cerveau:"
+	line "mon génie:"
 	
-	para "Les #MON de"
-	line "type PSY sont"
-	cont "quasi invincibles"
-	cont "car ils n'ont"
-	cont "aucune faiblesse!"
+	para "Les #MON PSY"
+	line "sont presque"
+	cont "invincibles car"
+	cont "ils n'ont aucune"
+	cont "faiblesse!"
 	prompt
 
 _SchoolB1FLittleGirlRetort::
@@ -113,9 +104,9 @@ _SchoolB1FLittleGirlRetort::
 
 _SchoolB1FLittleGirlRetort2::
 	text "En fait, ils sont"
-	line "vulnérables au"
-	cont "type INSECTE et"
-	cont "au type SPECTRE."
+	line "vulnérables aux"
+	cont "types INSECTE et"
+	cont "SPECTRE."
 	prompt
 
 _SchoolB1FNerdSilence::
@@ -125,9 +116,9 @@ _SchoolB1FNerdSilence::
 _SchoolB1FLittleGirlBro::
 	text "N'oublie pas de"
 	line "manger les"
-	cont "légumes verts que"
-	cont "maman t'a donnés"
-	cont "au déjeuner,"
+	cont "légumes que maman"
+	cont "t'a donnés au"
+	cont "déjeuner,"
 	cont "grand frère!"
 	prompt
 
@@ -140,33 +131,28 @@ _SchoolB1FRocker::
 	line "L'école, c'est"
 	cont "pour les nuls."
 	para "Les gens cools"
-	line "apprennent sur"
-	cont "les #MON en"
-	cont "faisant combattre"
-	cont "les leurs!"
+	line "apprennent en"
+	cont "combattant avec"
+	cont "leurs #MON!"
 	para "J'ai pas raison?"
 	done
 
 _SchoolB1FRockerYes::
-	text "Les gagnants comme"
-	line "nous pensent"
-	cont "pareil!"
+	text "Les gagnants"
+	line "pensent pareil!"
 	para "Tu me motives,"
 	line "mec!@"
 	text_jump _SchoolB1FRockerBattleNow
 
 _SchoolB1FRockerNo::
-	text "Maintenant, je"
-	line "suis furieux!"
-	para "Les crétins comme"
-	line "toi doivent être"
-	cont "remis à leur"
-	cont "place!"
+	text "Je suis furieux!"
+	para "Un crétin comme"
+	line "toi doit être"
+	cont "maté!"
 	; fall through
 _SchoolB1FRockerBattleNow::
 	para "C'est parti pour"
-	line "un combat, ici et"
-	cont "maintenant!!"
+	line "un combat!!"
 	done
 
 _SchoolB1FDetentionText::
@@ -182,25 +168,23 @@ _SchoolB1FDetentionText::
 _SchoolB1FStudentTeacher::	
 	text "Je suis professeur"
 	line "stagiaire."
-	para "Je donne un coup"
-	line "de main à cette"
-	cont "classe!"
+	para "J'aide cette"
+	line "classe!"
 	para "Tu le savais?"
 	para "Il existe une"
 	line "attaque qui"
-	cont "combine trois"
-	cont "types d'élément:"
+	cont "combine 3 types"
+	cont "d'éléments:"
 	para "FEU, GLACE et"
 	line "ELECTRIK!"
-	para "Elle s'appelle"
+	para "Il s'agit de"
 	line "TRIPLATTAQUE!"
 	done
 
 _SchoolB1FBrunetteGirl::
 	text "LEA: Psst!"
-	para "C'est quoi la"
-	line "réponse à la"
-	cont "question 3?"
+	para "T'as la réponse à"
+	line "la question 3?"
 	done
 
 _SchoolB1FDetention2Text::
@@ -218,31 +202,32 @@ _SchoolB1FNotAgainText::
 	done
 
 _SchoolB1FTutorText::
-	text "Vous devez connaî-"
-	line "tre les 15 types"
-	cont "des #MON!"
-	para "Pas seulement la"
+	text "Apprenez les"
+	line "15 types des"
+	cont "#MON!"
+	para "Pas juste la"
 	line "moitié!"
-	para "Vous m'avez demandé"
-	line "de vous donner"
-	cont "des cours"
+	para "Vous vouliez"
+	line "des cours"
 	cont "particuliers,"
 	cont "après tout!"
 	done
 
-_SchoolB1FLeftTuteeText::
-	text "J'adore les"
-	line "attaques brutes"
-	cont "qui infligent des"
-	cont "dégâts physiques!"
-	para "Elles utilisent"
-	line "les stats"
-	cont "d'ATTAQUE et de"
-	cont "DEFENSE pour"
-	cont "déterminer leurs"
-	cont "dégâts."
+_ItAllDependsOnMoveType::
 	para "Tout dépend du"
-	line "type de l'attaque!"
+	line "type d'attaque!"
+	done
+
+_SchoolB1FLeftTuteeText::
+	text "J'adore les atta-"
+	line "ques physiques"
+	cont "brutes!"
+	para "Elles utilisent"
+	line "les stats ATTAQUE"
+	cont "et DEFENSE pour"
+	cont "déterminer leurs"
+	cont "dégâts.@"
+	text_call _ItAllDependsOnMoveType
 	para "J'ai noté les"
 	line "types physiques"
 	cont "dans mon carnet."
@@ -253,21 +238,24 @@ _SchoolB1FRightTuteeText::
 	line "ques spéciales"
 	cont "spectaculaires!"
 	para "Elles utilisent"
-	line "la stat de"
-	cont "SPECIAL pour"
-	cont "déterminer leurs"
-	cont "dégâts."
-	para "Tout dépend du"
-	line "type de l'attaque!"
-	para "Ma tutrice a noté"
-	line "tous les types"
+	line "la stat SPECIAL"
+	cont "pour déterminer"
+	cont "leurs dégâts.@"
+	text_call _ItAllDependsOnMoveType
+	para "Ma tutrice a"
+	line "noté les types"
 	cont "spéciaux dans"
 	cont "son carnet."
 	done
 
-_SchoolB1FLeftTuteeNotebook::
-	text "Liste des types"
+_MoveTypesList::
+	db "Liste des types"
 	line "des capacités"
+	done
+
+_SchoolB1FLeftTuteeNotebook::
+	text "@"
+	text_call _MoveTypesList
 	cont "physiques:"
 	para "NORMAL, COMBAT,"
 	line "INSECTE, ROCHE," 
@@ -275,8 +263,8 @@ _SchoolB1FLeftTuteeNotebook::
 	done
 
 _SchoolB1FTutorNotebook::
-	text "Liste des types"
-	line "des capacités"
+	text "@"
+	text_call _MoveTypesList
 	cont "spéciales:"
 	para "FEU, EAU, GLACE" 
 	line "PLANTE, ELECTRIK" 
@@ -284,13 +272,12 @@ _SchoolB1FTutorNotebook::
 	done
 
 _SchoolB1FBottomLeftNotebook::
-	text "Au combat, certai-"
-	line "nes attaques sont"
-	cont "prioritaires!"
-	para "VIVE-ATTAQUE,"
-	line "POING COMETE, et"
-	cont "CRU-AILE sont des"
-	cont "exemples."
+	text "Certaines attaques"
+	line "ont la priorité!"
+	para "C'est le cas de"
+	line "VIVE-ATTAQUE,"
+	cont "POING COMETE et"
+	cont "CRU-AILE."
 	done
 
 _SchoolB1FRightBlackboard::
@@ -304,8 +291,8 @@ _SchoolB1FRightBlackboard::
 
 _SchoolB1FBottomRightNotebook::
 	text "WOW!"
-	para "Les #MON de"
-	line "type SPECTRE sont"
+	para "Les #MON"
+	line "SPECTRE sont"
 	para "immunisés contre"
 	line "les attaques de"
 	cont "type COMBAT et"
@@ -357,8 +344,8 @@ _SchoolB1FNerdNotebookSpeed::
 	cont "premier."
 	para "Celui qui a la"
 	line "VITESSE la plus"
-	cont "élevée attaque"
-	cont "en premier."
+	cont "élevée aura la"
+	cont "priorité."
 	prompt
 
 _SchoolB1FNerdNotebookSpecial::
@@ -368,8 +355,8 @@ _SchoolB1FNerdNotebookSpecial::
 	cont "spéciales d'un"
 	cont "#MON, ainsi"
 	cont "que les dégâts"
-	cont "qu'il subira lors"
-	cont "d'attaques"
+	cont "subis par des"
+	cont "attaques"
 	cont "spéciales."
 	prompt
 
@@ -382,9 +369,9 @@ _SchoolB1FRightTeacher::
 	cont "mémorisation!"
 	para "Mais si tu te"
 	line "lances dans une"
-	cont "grande aventure"
-	cont "#MON, tu vas"
-	cont "vite apprendre!"
+	cont "aventure #MON,"
+	cont "tu vas vite"
+	cont "apprendre!"
 	para "Amuse-toi bien!"
 	done
 
@@ -392,10 +379,9 @@ _SchoolB1FRockerNotebook::
 	text "Des gribouillis"
 	line "très détaillés."
 	para "Une caricature du"
-	line "prof qui est"
-	cont "attaquée par une"
-	cont "horde de PIAFABEC"
-	cont "en colère."
+	line "prof attaquée par"
+	cont "une horde de"
+	cont "PIAFABEC."
 	done
 
 _SchoolB1FBrunetteGirlNotebook::
@@ -410,20 +396,19 @@ _SchoolB1FBrunetteGirlNotebook::
 
 _SchoolB1FBottomCenterNotebook::
 	text "Certaines attaques"
-	line "provoquent la"
-	cont "confusion."
+	line "rendent confus."
 	para "Lorsqu'un #MON"
 	line "est confus, il"
-	cont "peut se blesser"
-	cont "accidentellement"
-	cont "quand il attaque."
+	cont "risque de se"
+	cont "blesser quand"
+	cont "il attaque."
 	para "Cette confusion"
 	line "dure 2 à 5 tours."
 	para "Elle disparaît en"
-	line "changeant de"
-	cont "#MON ou"
-	cont "lorsque le combat"
-	cont "prend fin."
+	line "rappelant le"
+	cont "#MON ou quand"
+	cont "le combat prend"
+	cont "fin."
 	done
 
 _SchoolB1FLeftClassroomSign::
@@ -438,11 +423,9 @@ _SchoolB1FRightClassroomSign::
 
 _SchoolB1FRightPoster::
 	text "Une magnifique"
-	line "illustration d'un"
-	cont "paysage de"
+	line "illustration de"
 	cont "JADIELLE."
-	para "On peut y lire en"
-	line "grosses lettres:"
+	para "C'est écrit:"
 	para "LE MERVEILLEUX"
 	line "MONDE DES #MON"
 	para "-Tout commence par"
@@ -452,9 +435,8 @@ _SchoolB1FRightPoster::
 _SchoolB1FLeftPoster::
 	text "Un tableau des 15"
 	line "types de #MON"
-	cont "sous forme"
-	cont "d'icônes rondes"
-	cont "colorées."
+	cont "avec des icônes"
+	cont "rondes colorées."
 	para "En arrière-plan,"
 	line "une photo d'un"
 	cont "coucher de soleil"
