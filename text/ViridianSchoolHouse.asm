@@ -78,7 +78,7 @@ _SchoolB1FLittleGirlProdigy::
 
 
 _SchoolB1FNerd::
-	text "Ah! Ne me"
+	text "Ahh! Ne me"
 	line "déconcentre pas!"
 	
 	para "Je ne laisserai"
@@ -152,7 +152,7 @@ _SchoolB1FRockerNo::
 	; fall through
 _SchoolB1FRockerBattleNow::
 	para "C'est parti pour"
-	line "un combat!!"
+	line "un combat!"
 	done
 
 _SchoolB1FDetentionText::
