@@ -29,7 +29,7 @@ _ProspectorsHousePaperText2::
 	cont "avec des lignes"
 	cont "tracées entre les"
 	cont "villes."
-	para "C'est écrit"
+	para "C'est écrit:"
 	line "CARTE DES TUNNELS."
 	done
 
