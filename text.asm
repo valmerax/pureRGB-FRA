@@ -23,7 +23,6 @@ INCLUDE "text/RocketHideoutElevator.asm"
 INCLUDE "text/SilphCo2F.asm"
 INCLUDE "text/SilphCo3F.asm"
 INCLUDE "text/SilphCo4F.asm"
-INCLUDE "text/CinnabarVolcano.asm"
 
 
 SECTION "Text 2", ROMX
@@ -292,6 +291,7 @@ INCLUDE "text/ChampArena.asm"
 INCLUDE "text/DiamondMine.asm"
 INCLUDE "text/ViridianSchoolHouseQuiz.asm"
 INCLUDE "text/SaffronAbandonedBuilding.asm"
+INCLUDE "text/CinnabarVolcano.asm"
 
 SECTION "Text 13", ROMX
 INCLUDE "text/PokemonTowerCatacombs.asm"

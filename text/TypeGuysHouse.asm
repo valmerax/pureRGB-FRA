@@ -10,15 +10,14 @@ _TypeGuysHouseTypeGuyAwakeText::
 	text "Pourquoi t'as"
 	line "allumé la"
 	cont "lumière?!"
-	para "On peut pas dormir"
-	line "tranquille ici?"
+	para "On peut pas"
+	line "dormir?"
 	para "Je suis un Maître"
 	line "#MON, tu sais!"
 	para "Depuis plus de"
 	line "25 ans!"
-	para "A mon époque,"
-	line "SABELETTE était"
-	cont "simplement de"
+	para "Jadis, SABELETTE"
+	line "était juste de"
 	cont "type SOL."
 	para "Pas ces absurdités"
 	line "de SOL / NORMAL!"
@@ -26,14 +25,12 @@ _TypeGuysHouseTypeGuyAwakeText::
 
 _TypeGuysHouseTypeGuyAwakeText2::
 	text "Les gens ont la"
-	line "facile de nos"
+	line "vie facile de nos"
 	cont "jours!"
-	para "Mais rien que pour"
-	line "toi, je peux"
-	cont "remettre les"
-	cont "types à leur"
-	cont "version d'origine!"
-	para "Tu as des"
+	para "Mais pour toi, je"
+	line "peux rétablir les"
+	cont "types d'origine!"
+	para "T'as des"
 	line "préférences?"
 	para " "
 	done
@@ -46,24 +43,22 @@ _TypeGuysHouseTypeGuyDoneText::
 
 _TypeGuysHouseTypeGuyFineText::
 	text "Pfff! Très bien."
-	para "Garde tes fichus"
-	line "types dernier cri!"
+	para "Garde tes types"
+	line "dernier cri!"
 	done
 
 _TypeGuysHouseTooDarkText::
 	text "Il fait trop"
-	line "sombre pour voir"
-	cont "quoi que ce soit!"
+	line "sombre ici!"
 	done
 
 _TypeGuysHouseShortBookCaseSideText::
 	text "Il y a un grand"
 	line "autocollant sur"
 	cont "le côté."
-	para "C'est une grande"
-	line "image d'un"
-	cont "SABELETTE."
-	para "On peut y lire"
+	para "C'est une image"
+	line "d'un SABELETTE."
+	para "C'est écrit:"
 	line "LES MONOTYPES,"
 	cont "C'EST LE TOP!"
 	done
@@ -78,15 +73,13 @@ _TypeGuysHouseShortBookCaseText2::
 	cont "perpétuent la"
 	cont "tradition et"
 	cont "aident les"
-	cont "nouveaux venus."
+	cont "nouveaux."
 	para "Cela permet de"
 	line "transmettre le"
-	cont "savoir-faire que"
-	cont "les puristes ont"
-	cont "souvent."
-	para "Cependant, l'excès"
+	cont "savoir-faire."
+	para "Mais l'excès"
 	line "d'autorité peut"
-	cont "étouffer la"
+	cont "freiner la"
 	cont "créativité."
 	done
 
@@ -97,8 +90,7 @@ _TypeGuysHouseSculptureText::
 	line "prestigieux!"
 	para "Oh!"
 	para "Il est recouvert"
-	line "d'une couche de"
-	cont "poussière."
+	line "de poussière."
 	done
 
 _TypeGuysHouseRightTallBookcaseText::
@@ -107,12 +99,10 @@ _TypeGuysHouseRightTallBookcaseText::
 	text_end
 _TypeGuysHouseRightTallBookcaseText2::
 	text "<PARA>Les CHAMPIONS,"
-	line "même anciens,"
-	cont "ont droit au gîte"
-	cont "et au couvert au"
-	cont "sein de la LIGUE"
-	cont "#MON s'il le"
-	cont "souhaitent."
+	line "même anciens, ont"
+	cont "droit au gîte et"
+	cont "au couvert à la"
+	cont "LIGUE #MON."
 	done
 
 _TypeGuysHouseLeftTallBookcaseText::
@@ -122,14 +112,12 @@ _TypeGuysHouseLeftTallBookcaseText::
 _TypeGuysHouseLeftTallBookcaseText2::
 	text "<PARA>Les vieux"
 	line "RACAILLOU ont un"
-	cont "corps très lisse."
-	para "Cela est dû à de"
-	line "longues années"
-	cont "d'usure."
+	cont "corps lisse."
+	para "Cela est dû à des"
+	line "années d'usure."
 	para "Plus le RACAILLOU"
-	line "est lisse, plus"
-	para "son comportement"
-	line "est calme."
+	line "est lisse,"
+	para "plus il est calme."
 	done
 
 _TypeGuysHouseTypeGuysComputerText::

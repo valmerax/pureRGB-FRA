@@ -10,31 +10,29 @@ _ChampArenaAssistantTrainersWaitingToBattle::
 	prompt
 
 _ChampArenaAssistantWelcome2::
-	text "Il en reste encore"
-	line "@"
+	text "Encore @"
 	text_ram w2CharStringBuffer
-	text " dans la file!"
-	cont "Prêts à y aller?"
+	text " dans la"
+	line "file! Tu es prêt?"
 	done
 
 _ChampArenaAssistantWelcome3::
 	text "Il n'en reste qu'un!"
-	line "Prêts à y aller?"
+	line "Tu es prêt?"
 	done
 
 _ChampArenaAssistantSeeYa::
 	text "Reviens vite!"
 	para "Ne faisons pas"
 	line "attendre les"
-	cont "prétendants!"
+	cont "adversaires!"
 	done
 
 _ChampArenaAssistantInviteIn::
 	text "Parfait!"
 	para "Invitons un autre"
 	line "adversaire!"
-	para "C'est tellement"
-	line "excitant!"
+	para "C'est si excitant!"
 	done
 
 _ChampArenaAssistantStartBattle::
@@ -43,10 +41,9 @@ _ChampArenaAssistantStartBattle::
 	cont "PLATEAU INDIGO!"
 	para "Mesdames et"
 	line "messieurs!"
-	para "Nous avons un"
-	line "nouveau prétendant"
-	cont "pour notre "
-	cont "CHAMPION en titre!"
+	para "Voici un nouvel"
+	line "adversaire pour"
+	cont "notre CHAMPION!"
 	done
 
 _ErikaIntroText::
@@ -58,13 +55,13 @@ _ErikaIntroText::
 _ErikaIntroText2::
 	text "ERIKA: Oh! Je suis"
 	line "surprise que tu"
-	cont "sois devenu un"
-	cont "dresseur aussi"
-	cont "doué, mon vieux!"
-	para "Je dois justement"
-	line "voir comment mes"
+	cont "sois devenu un si"
+	cont "bon dresseur,"
+	cont "mon vieux!"
+	para "Je vais voir"
+	line "comment mes"
 	cont "#MON PLANTE"
-	cont "se défendent!"
+	cont "s'en sortent!"
 	prompt
 
 _ErikaLostText::
@@ -90,8 +87,8 @@ _BlaineIntroText2::
 	line "d'être arrivé"
 	cont "jusqu'ici!"
 	para "Ca se passe bien"
-	line "là-haut, sur le"
-	cont "trône du CHAMPION?"
+	line "sur le trône du"
+	cont "CHAMPION?"
 	prompt
 
 _BlaineLostText::
@@ -115,13 +112,12 @@ _SurgeIntroText2::
 	text "MAJOR BOB: Ca fait"
 	line "un bail,"
 	cont "p'tit gars!"
-	para "Ou devrais-je"
-	line "dire, CHAMPION!"
-	para "T'as plus de"
-	line "cran que je ne"
-	cont "le pensais!"
+	para "Ou plutôt,"
+	line "CHAMPION!"
+	para "T'as plus de cran"
+	line "que prévu!"
 	para "Mais j'y allais"
-	line "mollo avec toi à"
+	line "mollo à"
 	cont "CARMIN SUR MER!"
 	prompt
 
@@ -136,39 +132,34 @@ _SurgeWonText::
 	prompt
 
 _SabrinaIntroText::
-	text "La maîtresse"
-	line "des forces"
-	cont "psychiques,"
+	text "La maîtresse des"
+	line "forces psychiques"
 	cont "MORGANE!"
 	prompt
 
 _SabrinaIntroText2::
 	text "MORGANE: Après"
 	line "notre combat à"
-	cont "SAFRANIA, il"
-	cont "était tout à fait"
-	cont "naturel que tu"
-	cont "atteignes les"
-	cont "sommets."
-	para "Ma défaite face à"
-	line "toi m'a donné"
-	cont "envie de te com-"
-	cont "battre à nouveau."
+	cont "SAFRANIA, j'étais"
+	cont "sûre que tu irais"
+	cont "loin."
+	para "Ma défaite contre"
+	line "toi m'a motivée"
+	cont "à prendre ma"
+	cont "revanche."
 	para "Oh, je t'en prie."
-	line "Ne sois pas comme"
-	cont "ça."
+	para "Ne fais pas cette"
+	line "tête."
 	para "Je sais ce que tu"
-	line "vas dire, et je"
-	cont "ne peux pas dire"
-	cont "que ça me"
-	cont "surprenne."
+	line "penses, et ça ne"
+	cont "m'étonne pas."
 	prompt
 
 _SabrinaLostText::
-	text "Je dois voir tes"
-	line "combats pour y"
-	cont "croire vraiment!"
-	para "Epoustouflant!"
+	text "Je dois le voir"
+	line "pour y croire!"
+	para "Tu es"
+	line "époustouflant!"
 	prompt
 
 _SabrinaWonText::
@@ -187,13 +178,12 @@ _BrunoIntroText2::
 	para "Je suis parti"
 	line "m'entraîner en"
 	cont "pleine nature!"
-	para "Rien ne vaut"
-	line "une séance de"
-	cont "musculation avec"
-	cont "ses #MON sous"
-	cont "une cascade!"
+	para "Rien ne vaut une"
+	line "séance de muscu"
+	cont "avec ses #MON"
+	cont "sous une cascade!"
 	para "On est devenus"
-	line "bien plus forts!"
+	line "plus forts!"
 	prompt
 
 _BrunoLostText::
@@ -215,8 +205,8 @@ _MistyIntroText::
 _MistyIntroText2::
 	text "ONDINE: Hé, c'est"
 	line "quoi ce délire?"
-	para "Je ne suis pas du"
-	line "tout une peste!"
+	para "Je ne suis pas une"
+	line "peste!"
 	para "J'aime bien le"
 	line "côté sirène,"
 	cont "par contre!"
@@ -225,12 +215,11 @@ _MistyIntroText2::
 _MistyIntroText3::
 	text "Bon, je suis là"
 	line "pour te donner un"
-	cont "avant gout de"
+	cont "avant-goût de"
 	cont "mes #MON"
 	cont "aquatiques."
-	para "N'oublie pas de"
-	line "retenir ta"
-	cont "respiration!"
+	para "Retiens bien ta"
+	line "respiration!"
 	prompt
 
 _MistyLostText::
@@ -254,14 +243,12 @@ _LanceIntroText::
 _LanceIntroText2::
 	text "PETER: Tu es trop"
 	line "décontracté pour"
-	cont "garder le titre"
-	cont "de CHAMPION."
+	cont "rester CHAMPION."
 	para "Mes dragons et"
 	line "moi, on mérite la"
 	cont "première place!"
-	para "Que ce soit toi ou"
-	line "<RIVAL>, vous"
-	cont "ne pourrez plus"
+	para "Toi et <RIVAL>,"
+	line "ne pourrez plus"
 	cont "m'empêcher de"
 	cont "prendre ce titre!"
 	prompt
@@ -293,10 +280,9 @@ _KogaIntroText2::
 	line "des meilleurs"
 	cont "dresseurs au"
 	cont "monde!"
-	para "Mais je vais"
-	line "te montrer ce"
-	cont "qu'est la vraie"
-	cont "discipline!"
+	para "Mais je vais te"
+	line "montrer ce qu'est"
+	cont "la discipline!"
 	prompt
 
 _KogaLostText::
@@ -318,8 +304,7 @@ _LoreleiIntroText::
 
 _LoreleiIntroText2::
 	text "OLGA: Tu m'as"
-	line "battu à plate"
-	cont "couture il n'y a"
+	line "battue il n'y a"
 	cont "pas zi longtemps."
 	para "ONDINE t'en veut"
 	line "vraiment."
@@ -327,29 +312,26 @@ _LoreleiIntroText2::
 	line "des drezzeurs qui"
 	cont "arrivent à me"
 	cont "battre!"
-	para "Bon, je zuis un"
-	line "peu mieux préparé"
-	cont "maintenant."
+	para "Bon, je me zuis"
+	line "mieux préparée."
 	para "Allonz-y!"
 	para "Tout le monde"
 	line "devrait ze"
 	cont "couvrir, il va"
-	cont "faire très froid"
-	cont "par izi!"
+	cont "faire très froid!"
 	prompt
 
 _LoreleiLostText::
-	text "Tu as une vraie"
-	line "pazzion dans ton"
-	cont "coeur!"
+	text "Tu es un vrai"
+	line "pazzionné!"
 	para "J'aime za!"
 	prompt
 
 _LoreleiWonText::
 	text "Mes nouvelles"
 	line "tactiques ont"
-	cont "fonczionné"
-	cont "comme prévu!"
+	cont "fonczionné comme"
+	cont "prévu!"
 	prompt
 
 _BrockIntroText::
@@ -360,20 +342,17 @@ _BrockIntroText::
 
 _BrockIntroText2::
 	text "PIERRE: Tu sais,"
-	line "je dois y aller"
-	cont "doucement avec"
+	line "je dois ménager"
 	cont "les nouveaux"
 	cont "dresseurs à"
 	cont "ARGENTA!"
-	para "Mais c'est rare"
-	line "que je puisse me"
-	cont "donner à fond!"
+	para "C'est rare que je"
+	line "me donne à fond!"
 	para "Je me suis"
 	line "entraîné avec"
 	cont "ALDO pour qu'on"
 	cont "soit assez forts"
-	cont "pour vraiment"
-	cont "tester tes"
+	cont "et tester tes"
 	cont "limites!"
 	para "Je vais t'écraser,"
 	line "<PLAYER>!"
@@ -391,8 +370,7 @@ _BrockLostText::
 
 _BrockWonText::
 	text "Je crois que je"
-	line "viens de te"
-	cont "bouleverser!"
+	line "t'ai bouleversé!"
 	prompt
 
 _AgathaIntroText::
@@ -408,8 +386,8 @@ _AgathaIntroText2::
 	cont "intro sans me"
 	cont "traiter de"
 	cont "vieille bique!"
-	para "Je suis impress-"
-	line "ionnée, mon petit!"
+	para "Impressionnant,"
+	line "mon petit!"
 	prompt
 
 _AgathaIntroText3::
@@ -442,15 +420,12 @@ _GymGuideIntroText::
 _GymGuideIntroText2::
 	text "GUIDE: Yo!"
 	line "CHAMPION!"
-	para "J'ai remarqué qu'il"
-	line "y avait pas mal"
-	cont "de combats par"
-	cont "ici, alors j'ai"
-	cont "voulu jeter un"
-	cont "coup d'oeil!"
-	para "Voyons voir"
-	line "comment mes"
-	cont "#MON s'en"
+	para "J'ai vu des"
+	line "combats par ici,"
+	cont "alors j'ai voulu"
+	cont "jeter un oeil!"
+	para "Voyons comment mes"
+	line "#MON s'en"
 	cont "sortent face"
 	cont "aux tiens!"
 	prompt
@@ -460,12 +435,12 @@ _ChampArenaGymGuideSonText::
 	line "aussi je suis là!"
 	para "Notre équipe de"
 	line "#MON a appris"
-	cont "plein de super"
+	cont "plein de bonnes"
 	cont "<CT>!"
 	para "OK papa, je vais"
 	line "t'aider à élaborer"
-	cont "une stratégie"
-	cont "pour le combat!"
+	cont "une stratégie de"
+	cont "combat!"
 	prompt
 
 _GymGuideLostText::
@@ -498,7 +473,7 @@ _RivalIntroText2::
 	cont "pour toutes!"
 	para "J'aurai toujours"
 	line "une longueur"
-	cont "d'avance!"
+	cont "d'avance, minable!"
 	prompt
 
 _RivalLostText::
@@ -542,15 +517,15 @@ _ChampArenaAssistantStillOpponentsLeft::
 	prompt
 
 _ChampArenaAssistantDefeatedAllTrainers::
-	text "Woah! <PLAYER>"
-	line "a vaincu tous ses"
+	text "Woah! <PLAYER> a"
+	line "vaincu tous ses"
 	cont "adversaires!"
 	para "Félicitations!@"
 	text_end
 
 _ChampArenaAssistantCallInChallengers::
-	text "Si tu le veux,"
-	line "tu peux rappeler"
+	text "Si tu veux, tu"
+	line "peux rappeler"
 	cont "les anciens"
 	cont "adversaires."
 	prompt
@@ -603,20 +578,18 @@ _ChampArenaErikaBeforeLeaves::
 
 _ChampArenaBlaineBeforeLeaves::
 	text_ram wTrainerName
-	text ": Quand"
-	line "tu mets le feu,"
+	text ": Quand tu"
+	line "mets le feu,"
 	para "personne ne peut"
 	line "te suivre!"
-	para "Je crois que je"
-	line "vais aller me"
-	cont "jeter dans un lac!"
+	para "Je vais me jeter"
+	line "dans un lac!"
 	done
 
 _ChampArenaSurgeBeforeLeaves::
 	text_ram wTrainerName
 	text ": Bon."
-	line "T'as vraiment"
-	cont "gagné!"
+	line "T'as gagné!"
 	para "Je dois 500 pompes"
 	line "à mon CHEF!"
 	done
@@ -624,9 +597,9 @@ _ChampArenaSurgeBeforeLeaves::
 _ChampArenaSabrinaBeforeLeaves::
 	text_ram wTrainerName
 	text ": Je"
-	line "cherche déjà à"
-	cont "entrevoir notre"
-	cont "prochain combat."
+	line "perçois déjà"
+	cont "notre prochain"
+	cont "combat."
 	para "J'ai hâte d'y être!"
 	done
 
@@ -646,7 +619,7 @@ _ChampArenaMistyBeforeLeaves::
 	para "Tu as l'air"
 	line "ridicule avec ta"
 	cont "casquette et ton"
-	cont "sac à dos trempés."
+	cont "sac à dos trempé."
 	done
 
 _ChampArenaLanceBeforeLeaves::
@@ -660,8 +633,7 @@ _ChampArenaLanceBeforeLeaves::
 _ChampArenaKogaBeforeLeaves::
 	text_ram wTrainerName
 	text ": Ton équipe"
-	line "est sacrément"
-	cont "robuste."
+	line "est robuste."
 	para "Survivre à un tel"
 	line "combat n'est pas"
 	cont "une mince affaire."
@@ -686,8 +658,7 @@ _ChampArenaBrockBeforeLeaves::
 	para "Je dois revoir"
 	line "ma stratégie."
 	para "Mais d'abord,"
-	line "direction"
-	cont "l'infirmière du"
+	line "direction le"
 	cont "CENTRE #MON!"
 	done
 
@@ -698,8 +669,8 @@ _ChampArenaAgathaBeforeLeaves::
 	cont "mon petit!"
 	para "Ne les ménage"
 	line "jamais au combat!"
-	para "Mais il semble que"
-	line "tu le savais déjà!"
+	para "Mais ça, tu le"
+	line "savais déjà!"
 	done
 
 _ChampArenaGymGuideBeforeLeaves::
@@ -718,7 +689,8 @@ _ChampArenaGymGuideBeforeLeaves::
 _ChampArenaRivalBeforeLeaves::
 	text "<RIVAL>: Pfff!"
 	line "Ne prends pas la"
-	cont "grosse tête."
+	cont "grosse tête,"
+	cont "minable!"
 	done
 
 _IndigoPlateauArenaAssistantOnlyEliteFourAllowed::
@@ -735,7 +707,7 @@ _IndigoPlateauArenaAssistantOnlyEliteFourAllowed::
 	done
 
 _IndigoPlateauArenaAssistantChampAttained::
-	text "Oh mon Dieu!"
+	text "Hé!"
 	para "Te voilà,"
 	line "CHAMPION!"
 	para "On te cherchait!"

@@ -37,7 +37,7 @@ _SaffronAbandonedBuildingRocket1GetOut::
 _SaffronAbandonedBuildingRocket1Guess::
 	text "On recrute des"
 	line "p'tits morveux"
-	cont "maintenant!"
+	cont "maintenant?!"
 	done
 
 _SaffronAbandonedBuildingRocket2::
@@ -59,8 +59,7 @@ _SaffronAbandonedBuildingRocket3::
 	cont "coup de génie!"
 	para "On a désormais un"
 	line "passage secret"
-	cont "qui mène tout"
-	cont "droit au coeur"
+	cont "qui mène au coeur"
 	cont "de SAFRANIA!"
 	done
 

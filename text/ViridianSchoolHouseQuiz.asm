@@ -27,8 +27,8 @@ _SchoolB1FLeftTeacherNoPokedex::
 
 _SchoolB1FLeftTeacherLater::
 	text "Viens me parler"
-	line "plus tard, tu"
-	cont "veux bien?"
+	line "plus tard,"
+	cont "tu veux bien?"
 	done
 
 _SchoolB1FLeftTeacherFirst::
@@ -79,8 +79,8 @@ _SchoolB1FLeftTeacherYes::
 
 _SchoolB1FLeftTeacherReadyStart::
 	text "Nous y voilà!"
-	para "Alors, ça va?"
-	para "Prêt pour le quiz?"
+	para "Alors, prêt pour"
+	line "le quiz?"
 	done
 
 _SchoolB1FLeftTeacherReadyNo::
@@ -110,8 +110,8 @@ _SchoolB1FLeftTeacherQuizQuestion2::
 _SchoolB1FLeftTeacherQuizQuickAttack::
 	text "Ah, VIVE-ATTAQUE."
 	para "Une capacité"
-	line "classique, n'est-"
-	cont "ce pas?"
+	line "classique,"
+	cont "n'est-ce pas?"
 	para "Mais terriblement"
 	line "utile!"
 	prompt
@@ -133,9 +133,8 @@ _SchoolB1FLeftTeacherQuizQuestion4::
 _SchoolB1FLeftTeacherQuizQuestion5::
 	text "Question 5:"
 	para "Quelle capacité"
-	line "inflige des"
-	cont "dégâts supplémen-"
-	cont "taires quand elle"
+	line "inflige plus de"
+	cont "dégâts quand elle"
 	cont "est utilisée par"
 	cont "CARAPUCE?"
 	prompt
@@ -186,13 +185,12 @@ _SchoolB1FLeftTeacherEnd::
 	text "C'est donc ça!"
 	para "Tu es en pleine"
 	line "aventure #MON,"
-	cont "c'est bien ça?"
+	cont "n'est-ce pas?"
 	para "Direction la"
 	line "FORET DE JADE,"
 	cont "je suppose?"
-	para "Prends la"
-	line "direction nord"
-	cont "en quittant la"
+	para "C'est au nord en"
+	cont "quittant la"
 	cont "ville!"
 	para "Bonne chance!"
 	done
@@ -208,9 +206,8 @@ _FlippedToARandomPage::
 _SchoolB1FLeftBookcaseA2::
 	text "<PARA>PHENOMENES"
 	line "INEXPLIQUES"
-	para "De nombreux"
-	line "dresseurs ont"
-	cont "signalé d'étranges"
+	para "Des dresseurs ont"
+	line "signalé d'étranges"
 	cont "hallucinations"
 	cont "inquiétantes le"
 	cont "long de la côte"

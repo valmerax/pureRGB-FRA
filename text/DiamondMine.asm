@@ -9,25 +9,24 @@ _DiamondMineProspectorText::
 	done
 
 _DiamondMineProspectorHelp::
-	text "J'aime ton style!"
-	para "Les NOSFERAPTI du"
-	line "coin deviennent"
-	cont "vraiment pénible!"
+	text "J't'aime bien!"
+	para "Les NOSFERAPTI"
+	line "du coin sont"
+	cont "pénibles!"
 	para "Je dois porter des"
 	line "bouchons d'oreille"
 	cont "pour ne plus"
 	cont "entendre leurs"
 	cont "cris stridents!"
 	para "Je préfère creuser"
-	line "plutôt que de"
-	para "chasser les"
-	line "NOSFERAPTI!"
+	line "et non chasser"
+	cont "les NOSFERAPTI!"
 	para "Il me faut 10"
 	line "REPOUSSE!"
 	done
 
 _DiamondProspectorRepels::
-	text "Tu as déjà pris"
+	text "T'as déjà pris"
 	line "les 10 REPOUSSE?"
 	done
 
@@ -50,20 +49,19 @@ _DiamondMineProspectorHelp2::
 	line "suite."
 	para "Ma radio est à"
 	line "plat!"
-	para "Et si tu lui"
+	para "Tu peux lui"
 	line "redonner un coup"
 	cont "d'jus avec un"
-	cont "#MON ELECTRIK"
-	cont "pour la rallumer?"
+	cont "#MON ELECTRIK?"
 	para "Ou un #MON avec"
 	line "CAGE-ECLAIR."
-	para "J'ai besoin de ma"
+	para "Il me faut ma"
 	line "musique préférée"
 	cont "pour creuser!"
 	done
 
 _DiamondMineProspectorHelp3::
-	text "Ca, c'est mon son!"
+	text "C'est mon son!"
 	line "Oh ouais!"
 	para "Là, c'est reparti!"
 	para "Allez, au boulot!"
@@ -80,18 +78,18 @@ _DiamondMineProspectorHelp4::
 	line "#MON capable"
 	cont "de briser la"
 	cont "roche!"
-	para "Tu as un ONIX?"
+	para "T'as un ONIX?"
 	done
 
 _DiamondMineBoomboxInitial::
 	text "C'est une radio"
 	line "portable!"
-	para "Elle ne semble pas"
-	line "s'allumer."
+	para "Elle ne s'allume"
+	line "pas."
 	done
 
 _DiamondMineBoomboxZap::
-	text "Lui donner un"
+	text "Lui redonner un"
 	line "coup d'jus?"
 	done
 
@@ -112,17 +110,15 @@ _DiamondMineBoomboxZapProc2::
 
 _DiamondMineBoomboxFunctional::
 	text "La radio diffuse"
-	line "un air plutôt"
-	cont "entraînant."
+	line "un air entraînant."
 	done
 
 _DiamondMinePickedOnix::
 	text "Bon @"
 	text_ram_namebuffer
 	text ","
-	line "c'est maintenant"
-	cont "que les choses"
-	cont "sérieuses"
+	line "maintenant les"
+	cont "choses sérieuses"
 	cont "commencent!"
 	prompt
 
@@ -140,7 +136,7 @@ _DiamondMineWeeksOfWork::
 	text_ram_namebuffer
 	text " ont"
 	cont "passé des semaines"
-	cont "à creuser dans la"
+	cont "à creuser la"
 	cont "roche."
 	para "Bientôt, seul"
 	line "@"
@@ -157,9 +153,8 @@ _DiamondMineFinished::
 	line "@"
 	text_ram_namebuffer
 	text "!"
-	para "On dirait que son"
-	line "corps rocheux"
-	cont "s'est durci à"
+	para "Son corps rocheux"
+	line "s'est durci à"
 	cont "force de creuser!"
 	para "Il est désormais"
 	line "aussi dur que le"
@@ -182,9 +177,8 @@ _DiamondMineFinished3::
 	para "Son ATTAQUE de"
 	line "base à augmenté!"
 	cont "25→85"
-	para "Il subira aussi"
-	line "moins de dégâts"
-	cont "des attaques EAU,"
+	para "Il résistera mieux"
+	line "aux attaques EAU,"
 	cont "GLACE et PLANTE!"
 	done
 
@@ -192,15 +186,13 @@ _DiamondMineEndText::
 	text "Eh bien, petit!"
 	para "Il va falloir"
 	line "du temps pour"
-	cont "transporter tout"
+	cont "transporter tous"
 	cont "ces diamants!"
-	para "J'étais vraiment"
-	line "dans la galère et"
-	cont "tu m'as sauvé la"
-	cont "mise!"
-	para "Passe me dire"
-	line "bonjour chez moi"
-	cont "à CELADOPOLE un"
+	para "J'étais dans la"
+	line "galère et tu m'as"
+	cont "sauvé la mise!"
+	para "Passe chez moi"
+	line "à CELADOPOLE un"
 	cont "de ces jours!"
 	done
 
@@ -211,7 +203,7 @@ _DiamondMineMoreOnix::
 	done
 
 _DiamondMineMoreOnix2::
-	text "J'adorerais ça!"
+	text "Carrément!"
 	line "On y va!"
 	prompt
 
