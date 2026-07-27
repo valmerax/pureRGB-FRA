@@ -183,15 +183,13 @@ _OaksAideNoRoomText::
 	done
 
 _ConversionEnteredAttackModeText::
-	text "<USER>"
-	line "est passé en mode"
-	cont "ATTAQUE!"
+	text "<USER> est"
+	line "en mode ATTAQUE!"
 	prompt
 
 _ConversionEnteredDefenseModeText::
-	text "<USER>"
-	line "est passé en mode"
-	cont "DEFENSE!"
+	text "<USER> est"
+	line "en mode DEFENSE!"
 	prompt
 
 _ConversionAlreadyDefenseModeText::
@@ -231,17 +229,17 @@ _FuchsiaMeetingRoomOaksAideEnough::
 	text "@"
 	text_decimal wNumSetBits, 1, 3
 	text "? Fantastique!"
-	line "On va améliorer la"
-	cont "CARTE!"
+	line "On va améliorer"
+	cont "la CARTE!"
 	para "Une fonctionnalité"
 	line "va être ajoutée."
-	para "Elle affichera"
+	para "Tu pourra voir"
 	line "les données des"
 	cont "#MON sauvages"
 	cont "par zone!"
 	para "Appuie simplement"
-	line "sur A sur une zone"
-	cont "à examiner."
+	line "sur A sur une"
+	cont "zone à examiner."
 	para "Bien, montre-moi"
 	line "ta CARTE<...>"
 	done
@@ -251,9 +249,9 @@ _FuchsiaMeetingRoomOaksAideNoTownmap::
 	text "Quoi?!"
 	para "Tu n'as pas de"
 	line "CARTE?"
-	para "Retourne à BOURG"
-	line "PALETTE et demande"
-	cont "autour de toi!"
+	para "Va à BOURG PALETTE"
+	line "et demande autour"
+	cont "de toi!"
 	para "Je suis sûr que"
 	line "quelqu'un te"
 	cont "donnera une CARTE!"
