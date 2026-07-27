@@ -184,12 +184,14 @@ _OaksAideNoRoomText::
 
 _ConversionEnteredAttackModeText::
 	text "<USER> est"
-	line "en mode ATTAQUE!"
+	line "passé en mode"
+	cont "ATTAQUE!"
 	prompt
 
 _ConversionEnteredDefenseModeText::
 	text "<USER> est"
-	line "en mode DEFENSE!"
+	line "passé en mode"
+	cont "DEFENSE!"
 	prompt
 
 _ConversionAlreadyDefenseModeText::
