@@ -248,14 +248,14 @@ _SchoolB1FRightTuteeText::
 	cont "son carnet."
 	done
 
-_MoveTypesList::
+_SchoolB1FMoveTypesList::
 	db "Liste des types"
 	line "des capacités"
 	done
 
 _SchoolB1FLeftTuteeNotebook::
 	text "@"
-	text_call _MoveTypesList
+	text_call _SchoolB1FMoveTypesList
 	cont "physiques:"
 	para "NORMAL, COMBAT,"
 	line "INSECTE, ROCHE," 
@@ -264,7 +264,7 @@ _SchoolB1FLeftTuteeNotebook::
 
 _SchoolB1FTutorNotebook::
 	text "@"
-	text_call _MoveTypesList
+	text_call _SchoolB1FMoveTypesList
 	cont "spéciales:"
 	para "FEU, EAU, GLACE" 
 	line "PLANTE, ELECTRIK" 
