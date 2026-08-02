@@ -30,13 +30,12 @@ _MomFoodRiceBallsText::
 	para "Elles ont toutes"
 	line "une garniture"
 	cont "différente et"
-	cont "délicieuse."
+	cont "savoureuse."
 	prompt
 
 _MomFoodJellyDonutsText::
-	text "Rien ne vaut la"
-	line "douceur des déli-"
-	cont "cieux beignets"
+	text "Rien ne vaut les"
+	line "doux beignets"
 	cont "fourrés à la"
 	cont "confiture de"
 	cont "MAMAN."
@@ -46,9 +45,8 @@ _MomFoodBrisketText::
 	text "La poitrine de"
 	line "boeuf préparée"
 	cont "selon la recette"
-	cont "de PAPA est"
-	cont "absolument"
-	cont "délicieuse!"
+	cont "de PAPA est un"
+	cont "délice!"
 	prompt
 
 _DadFoodBrisketText::
@@ -56,8 +54,7 @@ _DadFoodBrisketText::
 	line "poitrine de boeuf"
 	cont "cuite lentement"
 	cont "au barbecue."
-	para "C'est absolument"
-	line "délicieux!"
+	para "C'est délicieux!"
 	prompt
 
 _MomFoodBrisketText2::
@@ -69,13 +66,13 @@ _MomFoodLasagnaText::
 	text "Les lasagnes au"
 	line "fromage de MAMAN"
 	cont "sont imbattables."
-	para "<PLAYER> mange tout"
-	line "jusqu'à la"
+	para "<PLAYER> mange"
+	line "tout jusqu'à la"
 	cont "dernière miette."
 	prompt
 
 _DadChowedDownText::
-	text "PAPA englouti son"
+	text "PAPA engloutit son"
 	line "repas avec"
 	cont "appétit."
 	prompt
@@ -115,27 +112,24 @@ _DaisyTeaEventNo::
 	done
 
 _DaisyTeaPeppermint::
-	text "Le thé d'aujourd'hui"
+	text "Le thé du jour"
 	line "est à la menthe"
 	cont "poivrée."
-	para "Son délicieux"
-	line "arôme t'aide à te"
-	cont "réveiller le"
-	cont "matin."
-	para "Il facilite aussi"
-	line "la digestion"
-	cont "après le repas."
+	para "Son arôme t'aide"
+	line "à te réveiller"
+	cont "le matin."
+	para "Et il facilite la"
+	line "digestion après"
+	cont "le repas."
 	prompt
 
 _DaisyTeaBarley::
 	text "Aujourd'hui, j'ai"
-	line "préparé du thé"
-	cont "d'orge."
+	line "du thé d'orge."
 	para "On le sert froid"
-	line "et c'est un vrai"
-	cont "délice par une"
-	cont "chaude journée"
-	cont "d'été."
+	line "et c'est délice"
+	cont "lors d'une chaude"
+	cont "journée d'été."
 	prompt
 
 _DaisyTeaChai::
@@ -146,24 +140,22 @@ _DaisyTeaChai::
 	line "infusé avec du"
 	cont "lait."
 	para "On y ajoute des"
-	line "épices, notamment"
-	cont "du gingembre, de"
-	cont "la cardamome"
-	cont "verte, de la noix"
-	cont "de muscade, de la"
+	line "épices, comme du"
+	cont "gingembre, de la"
+	cont "cardamome verte,"
+	cont "de la noix de"
+	cont "muscade, de la"
 	cont "cannelle et du"
 	cont "sucre roux."
-	para "Son goût est"
-	line "vraiment riche"
-	cont "et puissant."
-	para "C'est une"
-	line "alternative"
-	cont "courante au café."
+	para "Son goût est riche"
+	line "et puissant."
+	para "C'est une alterna-"
+	line "tive au café."
 	prompt
 
 _DaisyTeaSitDown::
 	text "D'accord!"
-	line "Mais avant tout,"
+	line "Mais avant,"
 	cont "assieds-toi!"
 	done
 
@@ -176,8 +168,8 @@ _TeaReaction::
 	text "Ca a un effet"
 	line "apaisant très"
 	cont "agréable!"
-	para "C'est tellement"
-	line "revitalisant!"
+	para "C'est si"
+	line "réconfortant!"
 	para "@"
 	text_ram_namebuffer
 	text " "
@@ -189,9 +181,8 @@ _TeaReaction::
 	done
 
 _DaisyTeaEnd::
-	text "Je serai là si"
-	line "jamais tu as"
-	cont "envie d'un thé."
+	text "Je serai là si tu"
+	line "as envie d'un thé."
 	para "Merci d'être venu,"
 	line "à plus!"
 	done

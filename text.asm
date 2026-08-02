@@ -23,6 +23,7 @@ INCLUDE "text/RocketHideoutElevator.asm"
 INCLUDE "text/SilphCo2F.asm"
 INCLUDE "text/SilphCo3F.asm"
 INCLUDE "text/SilphCo4F.asm"
+INCLUDE "text/SilphCo5F.asm"
 
 
 SECTION "Text 2", ROMX
@@ -141,6 +142,7 @@ INCLUDE "text/CinnabarLabTradeRoom.asm"
 INCLUDE "text/FuchsiaMeetingRoom.asm"
 INCLUDE "text/SSAnneKitchen.asm"
 
+
 SECTION "Text 6", ROMX
 
 INCLUDE "text/Route24_2.asm"
@@ -227,6 +229,7 @@ INCLUDE "text/WardensHouse.asm"
 INCLUDE "text/SafariZoneGate.asm"
 INCLUDE "text/FuchsiaGym.asm"
 
+
 SECTION "Text 9", ROMX
 
 INCLUDE "text/FuchsiaGym_2.asm"
@@ -283,7 +286,7 @@ INCLUDE "text/CeladonMart1FPhoneCalls.asm"
 INCLUDE "text/PalletPhoneResultEvents.asm"
 INCLUDE "text/BillsGarden.asm"
 INCLUDE "text/SecretLab.asm"
-INCLUDE "text/SilphCo5F.asm"
+
 
 SECTION "Text 12", ROMX
 INCLUDE "text/TypeGuysHouse.asm"
@@ -293,6 +296,7 @@ INCLUDE "text/ViridianSchoolHouseQuiz.asm"
 INCLUDE "text/SaffronAbandonedBuilding.asm"
 INCLUDE "text/CinnabarVolcano.asm"
 
+
 SECTION "Text 13", ROMX
 INCLUDE "text/PokemonTowerCatacombs.asm"
 INCLUDE "text/ErikAndSara.asm"
@@ -301,19 +305,23 @@ INCLUDE "text/VermilionFitnessClub.asm"
 INCLUDE "text/CeladonBackAlley.asm"
 INCLUDE "text/FightingDojoExpertClub.asm"
 
+
 SECTION "Text 14", ROMX
 INCLUDE "text/CeruleanBallDesigner.asm"
 INCLUDE "text/CameraEvents.asm"
 INCLUDE "text/OptionsInfoText.asm"
 INCLUDE "text/FightingBrosHouse.asm"
 
+
 SECTION "Pokédex Text", ROMX
 
 INCLUDE "data/pokemon/dex_text.asm"
 
+
 SECTION "Move Names", ROMX
 
 INCLUDE "data/moves/names.asm"
+
 
 SECTION "Movedex Text", ROMX
 

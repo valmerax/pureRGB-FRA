@@ -1,9 +1,8 @@
 _SecretLabBattleText1::
-	text "Que fais-tu ici,"
+	text "Tu fais quoi ici,"
 	line "gamin?"
-	para "Cette zone est"
-	line "sous juridiction"
-	cont "militaire!"
+	para "C'est une zone"
+	line "militaire!"
 	done
 
 _SecretLabEndBattleText1::
@@ -13,18 +12,16 @@ _SecretLabEndBattleText1::
 
 _SecretLabAfterBattleText1::
 	text "Le commandement va"
-	line "adorer entendre"
-	cont "ça!"
+	line "adorer ça!"
 	done
 
 _SecretLabBattleText2::
-	text "Stop! Cette zone"
+	text "Halte! Cette zone"
 	line "est réservée aux"
-	cont "aux personnes"
-	cont "disposant d'une"
-	cont "habilitation de"
-	cont "sécurité de"
-	cont "niveau top secret!"
+	cont "personnes ayant"
+	cont "une habilitation"
+	cont "de niveau top"
+	cont "secret!"
 	done
 
 _SecretLabEndBattleText2::
@@ -39,22 +36,20 @@ _SecretLabAfterBattleText2::
 	done
 
 _SecretLabBattleText3::
-	text "CHEF: Comment tu"
-	line "t'es introduit"
-	cont "ici?"
+	text "CHEF: Comment t'es"
+	line "arrivé ici?"
 	para "<PLAYER>, hein?"
 	para "T'es le CHAMPION,"
 	line "c'est ça?"
-	para "Ce titre civil ne"
-	line "m'impressionne pas"
-	cont "du tout."
+	para "Ce titre ne"
+	line "m'impressionne"
+	cont "pas."
 	para "C'est une zone"
-	line "d'investigation"
-	cont "militaire top"
+	line "militaire top"
 	cont "secrète."
 	para "Je ne te laisserai"
-	line "pas y mettre le"
-	cont "nez!"
+	line "pas y mettre les"
+	cont "pieds!"
 	done
 
 _SecretLabEndBattleText3::
@@ -66,11 +61,10 @@ _SecretLabAfterBattleText3::
 	text "Le MAJOR BOB ne"
 	line "mentait pas quand"
 	cont "il a dit que tu"
-	cont "avais du"
-	cont "potentiel!"
-	para "Il a toujours eu"
-	line "le don de repérer"
-	cont "les bons soldats."
+	cont "avais du talent!"
+	para "Il a un don pour"
+	line "repérer les bons"
+	cont "soldats."
 	para "C'est pour ça que"
 	line "je l'ai promu"
 	cont "lieutenant!"
@@ -79,9 +73,8 @@ _SecretLabAfterBattleText3::
 	para "On n'a pas encore"
 	line "ouvert cette"
 	cont "porte."
-	para "Peut-être que tu"
-	line "trouveras la"
-	cont "solution."
+	para "Tu trouveras peut-"
+	line "être la solution."
 	done
 
 _SecretLabFailedClone1Text::
@@ -91,9 +84,8 @@ _SecretLabFailedClone1Text::
 	line "psychiques ont"
 	cont "atteint une"
 	cont "taille massive."
-	para "Cependant,"
-	line "les fonctions"
-	cont "cérébrales ne"
+	para "Mais les fonctions"
+	line "cérébrales ne"
 	cont "se sont pas"
 	cont "développées."
 	done
@@ -106,15 +98,15 @@ _SecretLabFailedClone2Text::
 	cont "développement d'un"
 	cont "troisième oeil."
 	para "La gestation s'est"
-	line "arrêtée au bout"
-	cont "de 12 semaines."
+	line "arrêtée après"
+	cont "12 semaines."
 	done
 
 _SecretLabFailedClone3Text::
 	text "STATUT DU SUJET"
 	line "GAMMA: TERMINAL"
-	para "La mutation a été"
-	line "évité avec ce"
+	para "La mutation n'a pas"
+	line "eu lieu sur ce"
 	cont "clone,"
 	para "mais la gestation"
 	line "semble tout de"
@@ -124,15 +116,13 @@ _SecretLabFailedClone3Text::
 _SecretLabFailedClone4Text::
 	text "STATUT DU SUJET"
 	line "DELTA: TERMINAL"
-	para "Pour la première"
-	line "fois, des membres"
-	cont "mobiles ont"
-	cont "commencé à se"
-	cont "former."
-	para "Cependant, de"
-	line "graves lacéra-"
-	cont "tions se sont"
-	cont "produites."
+	para "Cette fois, des"
+	line "membres mobiles"
+	cont "ont commencé"
+	cont "à se former."
+	para "Mais de graves"
+	line "lacérations se"
+	cont "sont produites."
 	done
 
 _SecretLabFailedClone5Text::
@@ -142,11 +132,11 @@ _SecretLabFailedClone5Text::
 	line "gestation a été"
 	cont "plus longue que"
 	cont "d'habitude."
-	para "Il en résulte un"
-	line "développement"
-	cont "très prometteur."
-	para "La formation du"
-	line "coeur est encore"
+	para "Le développement"
+	line "est très"
+	cont "prometteur."
+	para "Mais la formation"
+	line "du coeur est"
 	cont "incomplète."
 	done
 
@@ -157,9 +147,9 @@ _SecretLabFailedClone6Text::
 	line "avancé avec"
 	cont "présence de"
 	cont "mutations."
-	para "Cependant, le"
-	line "système immuni-"
-	cont "taire s'est révélé"
+	para "Mais le système"
+	line "immunitaire"
+	cont "s'est révélé"
 	cont "insuffisant."
 	done
 
@@ -167,10 +157,9 @@ _SecretLabFailedClone7Text::
 	text "STATUT DU SUJET"
 	line "IOTA: TERMINAL"
 	para "Grave mutation"
-	line "cérébrale suite"
-	cont "à un mauvais lot"
-	cont "de fluide"
-	cont "nutritif."
+	line "cérébrale suite à"
+	cont "un mauvais lot de"
+	cont "fluide nutritif."
 	done
 
 _SecretLabFailedClone8Text::
@@ -178,12 +167,12 @@ _SecretLabFailedClone8Text::
 	line "LAMBDA: COMATEUX"
 	para "Signes vitaux"
 	line "présents, mais"
-	cont "très faibles."
-	para "Si tout se passe"
-	line "bien, peut-être"
-	cont "que le prochain"
-	cont "sujet, MU, sera"
-	cont "une réussite."
+	cont "faibles."
+	para "Si tout va bien,"
+	line "peut-être que le"
+	cont "prochain sujet,"
+	cont "MU, sera une"
+	cont "réussite."
 	done
 
 _SecretLabComputer1Text::
@@ -202,11 +191,10 @@ _SecretLabComputer2Text::
 _SecretLabComputer3Text::
 	text "STATUT DU SUJET"
 	line "MU: DISPARU"
-	para "L'écran du pc"
-	line "affiche beaucoup"
-	cont "d'infos sur une"
-	cont "étrange créature"
-	cont "bipède."
+	para "L'écran affiche"
+	line "des tas d'infos"
+	cont "sur une étrange"
+	cont "créature bipède."
 	done
 
 _SecretLabComputer3BText::
@@ -230,8 +218,7 @@ _SecretLabMewMachineText::
 	cont "la machine de"
 	cont "droite."
 	para "On dirait qu'elle"
-	line "a été désactivé"
-	cont "définitivement."
+	line "a été désactivé."
 	done
 
 _SecretLabMewReactionText::
@@ -244,13 +231,12 @@ _SecretLabMewReactionText::
 	done
 
 _SecretLabMewtwoMachineText::
-	text "Cette machine a"
-	line "l'air assez grande"
-	cont "pour qu'une"
-	cont "personne puisse"
-	cont "y entrer."
-	para "Elle a encore un"
-	line "peu d'énergie."
+	text "Cette machine est"
+	line "assez grande pour"
+	cont "qu'une personne"
+	cont "puisse y entrer."
+	para "Elle a encore de"
+	line "l'énergie."
 	para "On peut voir une"
 	line "silhouette sombre"
 	cont "à travers la"
@@ -266,9 +252,8 @@ _SecretLabMewtwoReactionText::
 	prompt
 
 _SecretLabMewtwoReactionText3::
-	text "Mais il faut"
-	line "d'abord ouvrir la"
-	cont "trappe d'accès."
+	text "Il faut d'abord"
+	line "ouvrir la trappe."
 	done
 
 _GenericWrongMonText::
@@ -278,9 +263,8 @@ _SecretLabMewtwoReactionText4::
 
 _SecretLabMewtwoHereWeGoText::
 	text "MEWTWO est entré."
-	para "Il est temps de"
-	line "mettre ce truc"
-	cont "sous tension!"
+	para "Il faut mettre ce"
+	line "truc sous tension!"
 	done
 
 _SecretLabMewtwoTransformText::

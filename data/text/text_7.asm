@@ -207,14 +207,13 @@ _UsedCutText::
 	prompt
 
 _ItemUseWildMonText::
-	text "Cet objet ne peut"
-	line "être utilisé que"
-	cont "sur des #MON"
-	cont "sauvages."
+	text "Cet objet est"
+	line "réservé aux"
+	cont "#MON sauvages."
 	prompt
 
 _NoPokeDollsOnSpiritsText::
-	text "Une # DOLL ne"
-	line "distraira pas cet"
-	cont "esprit violent!"
+	text "Une # DOLL"
+	line "n'apaisera pas"
+	cont "cet esprit!"
 	prompt

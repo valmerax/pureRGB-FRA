@@ -1,11 +1,10 @@
 _CeruleanRocketHouse1FRocketText::
 	text "Hé!"
-	para "Tu ne m'as pas déjà"
+	para "Tu ne m'as pas"
 	line "causé assez"
-	cont "d'ennuis comme ça?"
+	cont "d'ennuis?"
 	para "Cette porte est"
-	line "condamnée pour"
-	cont "une bonne raison!"
+	line "condamnée!"
 	para "Il n'y a rien à"
 	line "voir ici!"
 	para "Dégage!"
@@ -15,12 +14,11 @@ _RocketSNESText::
 	text "Quelle cartouche"
 	line "est dans la SNES?"
 	para "Ah!"
-	para "C'est une copie de"
+	para "C'est"
 	line "TERRANIGMA."
 	para "Quelqu'un est"
-	line "encore bloqué au"
-	cont "château de"
-	cont "Sylvain!"
+	line "bloqué au château"
+	cont "de Sylvain!"
 	done
 
 _CeruleanRocketHouse1FBookCaseText::
@@ -34,14 +32,13 @@ _CeruleanRocketHouse1FBookCase2Text::
 	text "<PARA>SOPORIFIK prend"
 	line "une pose détendue"
 	cont "face à EXCELANGUE"
-	cont "avant un combat"
-	cont "stylé."
+	cont "avant un combat."
 	done
 
 _CeruleanRocketHouseB1FEntranceDoorSignText::
 	text "RAPPEL"
 	para "Gardez la trappe"
-	line "de surface FERMEE!"
+	line "FERMEE!"
 	done
 
 _CeruleanRocketHouseB1FBottomDoorSignText::
@@ -54,30 +51,29 @@ _CeruleanRocketHouseB1FTopDoorSignText::
 	text "SORTIE DE SECOURS"
 	done
 
+_CeruleanRocketHouseStatusReportTextJump::
+	para "-RAPPORT DE"
+	line "SITUATION-"
+	done
+
 _CeruleanRocketHouseB1FLeftComputerText::
 	text "OPERATION"
 	line "MAIN TENDUE"
-	para "-RAPPORT DE"
-	line "SITUATION-"
-	prompt
+	text_jump _CeruleanRocketHouseStatusReportTextJump
 
 _CeruleanRocketHouseB1FLeftComputerText2::
-	text "Une première étude"
+	text "La première étude"
 	line "sur les effets"
 	cont "des ondes radio"
 	cont "sur les #MON"
-	cont "s'est avérée"
-	cont "utile."
-	para "Pour l'instant,"
-	line "“l'automatisation”"
-	cont "n'a été obtenue"
-	cont "qu'avec des"
-	cont "#MON dotés de"
+	cont "est prometteuse."
+	para "“L'automatisation”"
+	line "ne marche qu'avec"
+	cont "des #MON aux"
 	cont "schémas cérébraux"
-	cont "très basiques."
+	cont "basiques."
 	para "-CENSURE- s'avère"
-	line "particulièrement"
-	cont "sensible."
+	line "très sensible."
 	para "CONCLUSION:"
 	para "APPROFONDIR LES"
 	line "RECHERCHES"
@@ -86,43 +82,35 @@ _CeruleanRocketHouseB1FLeftComputerText2::
 _CeruleanRocketHouseB1FCenterComputerText::
 	text "OPERATION"
 	line "DERNIERE MACHINE"
-	para "-RAPPORT DE"
-	line "SITUATION-"
-	prompt
+	text_jump _CeruleanRocketHouseStatusReportTextJump
 
 _CeruleanRocketHouseB1FCenterComputerText2::
-	text "Les progrès ont"
-	line "été phénoménaux."
-	para "Mais ce à quoi"
-	line "nous assistons"
-	cont "aujourd’hui va"
-	cont "rapidement"
-	cont "dépasser toute"
+	text "Les progrès sont"
+	line "phénoménaux."
+	para "Mais ce qui arrive"
+	line "va dépasser toute"
 	cont "compréhension."
 	para "Nous ignorons ce"
 	line "qui va se passer"
 	cont "chaque fois que"
-	cont "nous allumerons"
-	cont "la machine."
-	para "Je sais que la"
-	line "situation va"
-	cont "bientôt devenir"
+	cont "nous allumons la"
+	cont "machine."
+	para "La situation va"
+	line "bientôt devenir"
 	cont "incontrôlable."
 	para "PORYGON était"
 	line "simple."
 	para "MEWTWO, presque"
 	line "impossible."
-	para "Nous sommes"
-	line "désormais bien"
-	cont "au-delà."
+	para "Nous sommes allés"
+	line "bien au-delà."
 	para "Ce qui pourrait"
 	line "émerger de cette"
 	cont "machine nous"
-	cont "effraie rien que"
-	cont "d'y penser."
+	cont "terrifie."
 	para "Le contrôle de"
 	line "l'entité est"
-	cont "totalement exclu."
+	cont "exclu."
 
 	para "CONCLUSION:"
 	line "AUTORISEZ LE"
@@ -134,15 +122,12 @@ _CeruleanRocketHouseB1FRightComputerText::
 	text "OPERATION"
 	line "ASCENSION"
 	cont "ANTEDILUVIENNE"
-	para "-RAPPORT DE"
-	line "SITUATION-"
-	prompt
+	text_jump _CeruleanRocketHouseStatusReportTextJump
 
 _CeruleanRocketHouseB1FRightComputerText2::
 	text "L'exploration des"
 	line "catacombes de la"
 	cont "TOUR #MON est"
-	cont "pour l'instant"
 	cont "infructueuse."
 	para "Le fantôme appelé"
 	line "BROUILLARD NOIR"
@@ -153,10 +138,10 @@ _CeruleanRocketHouseB1FRightComputerText2::
 	cont "équipes de"
 	cont "reconnaissance de"
 	cont "la SCOPE SYLPHE."
-	para "L'ENORMO-BALL"
-	line "X1 est prête à"
-	cont "être utilisée au"
-	cont "camp de base des"
+	para "L'ENORMO-BALL X1"
+	line "est prête à être"
+	cont "utilisée au camp"
+	cont "de base des"
 	cont "catacombes."
 	para "Le plongeur des"
 	line "catacombes Zéro"
@@ -167,9 +152,7 @@ _CeruleanRocketHouseB1FRightComputerText2::
 	line "subitement."
 	para "Zéro Gamma s'est"
 	line "enfoncé plus loin"
-	cont "dans les"
-	cont "profondeurs que"
-	cont "quiconque"
+	cont "que quiconque"
 	cont "auparavant."
 
 	para "CONCLUSION:"
@@ -179,9 +162,8 @@ _CeruleanRocketHouseB1FRightComputerText2::
 	done
 
 _CeruleanRocketHouseB1FMachineText::
-	text "Mais qu'est-ce donc"
-	line "que cette énorme"
-	cont "machine?"
+	text "C'est quoi cette"
+	line "énorme machine?"
 	para "Elle émet un"
 	line "bourdonnement"
 	cont "inquiétant."
@@ -192,10 +174,9 @@ _CeruleanRocketHouseB1FMapText::
 	line "bâtiment de la"
 	cont "SYLPHE SARL."
 	para "C'est officiel!!"
-	para "De nombreuses"
-	line "annotations ont"
-	cont "été ajoutées dans"
-	cont "les marges."
+	para "Des annotations"
+	line "ont été ajoutées"
+	cont "dans les marges."
 	done
 
 _CeruleanRocketHouseB1FOptionalText::
@@ -208,22 +189,19 @@ _CeruleanRocketHouseB1FOptionalTextNo::
 	done
 
 _CeruleanRocketHouseB1FLeftPaperText::
-	text "Ce bureau est"
-	line "étrangement"
-	cont "propre."
+	text "Ce bureau est bien"
+	line "trop propre."
 	para "La poubelle en"
-	line "dessous déborde"
-	cont "de papiers"
-	cont "déchiquetés."
+	line "bas déborde de"
+	cont "papiers déchirés."
 	done
 
 _CeruleanRocketHouseB1FRightPaperText::
 	text "Un inventaire des"
 	line "uniformes de la"
 	cont "<TEAM><ROCKET>."
-	para "Apparemment, une"
-	line "grosse commande"
-	cont "d'uniformes"
+	para "Une commande"
+	line "d'uniformes"
 	cont "féminins a été"
 	cont "passée récemment."
 	done
@@ -231,8 +209,7 @@ _CeruleanRocketHouseB1FRightPaperText::
 _CeruleanRocketHouseB1FBeforeTradeText::
 	text "Soupir<...>"
 	para "Je n'ai jamais vu"
-	line "cet endroit aussi"
-	cont "désert."
+	line "cet endroit vide."
 	para "Tout le monde est"
 	line "parti."
 	para "Hé<...>"
@@ -245,15 +222,16 @@ _CeruleanRocketHouseB1FAfterTradeText::
 	line "demandé à"
 	cont "GIOVANNI quels"
 	cont "étaient ses"
-	cont "objectifs avec la"
+	cont "plans pour la"
 	cont "<TEAM><ROCKET>."
-	para "Je me souviens"
-	line "exactement de sa"
-	cont "réponse:"
+
+	para "Je me souviens de"
+	line "sa réponse:"
 
 	para "La <TEAM><ROCKET>"
-	line "n'est qu'un rouage"
-	cont "dans ma poche!"
+	line "n'est qu'un des"
+	cont "rouages de mon"
+	cont "organisation!"
 	
 	para "Ca m'a vraiment"
 	line "marqué."
@@ -262,11 +240,10 @@ _CeruleanRocketHouseB1FAfterTradeText::
 	line "là aujourd'hui."
 	
 	para "Il est donc temps"
-	line "que je prenne ce"
-	cont "rouage dans ma"
-	cont "propre poche et"
-	cont "que je le fasse"
-	cont "prospérer."
+	line "que je reprenne"
+	cont "le flambeau en"
+	cont "attendant son"
+	cont "retour."
 	done
 
 _CeruleanRocketHouseB1FCodeText::
