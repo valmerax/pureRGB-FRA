@@ -484,7 +484,7 @@ _RivalLostText::
 
 _RivalWonText::
 	text "Bien fait!"
-	para "T’es fichu,"
+	para "T'es fichu,"
 	line "<PLAYER>!"
 	prompt
 

@@ -38,7 +38,7 @@ _CinnabarVolcanoProspectorGreetingMetText::
 _CinnabarVolcanoProspectorStrongMonsText::
 	text "Il fait trop chaud"
 	line "dans le VOLCAN"
-	cont "CRAMOIS’ILE pour"
+	cont "CRAMOIS'ILE pour"
 	cont "un explorateur"
 	cont "lambda."
 	para "Tu pourrais nous"

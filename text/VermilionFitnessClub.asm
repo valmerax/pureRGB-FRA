@@ -182,7 +182,7 @@ _VermilionFitnessClubSprinterOpponentIntro4::
 
 _VermilionFitnessClubSailorOpponentIntro1::
 	text "Espèce de marin"
-	line "d’eau douce!"
+	line "d'eau douce!"
 	para "A toi de jouer!"
 	done
 
@@ -206,7 +206,7 @@ _VermilionFitnessClubSailorOpponentIntro4::
 
 _VermilionFitnessClubBeautyOpponentIntro1::
 	text "Ca fera mon cardio"
-	line "pour aujourd’hui!"
+	line "pour aujourd'hui!"
 	done
 
 _VermilionFitnessClubBeautyOpponentIntro2::

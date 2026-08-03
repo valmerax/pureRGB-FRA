@@ -37,7 +37,7 @@ _Mansion1AfterBattleText2::
 _Mansion1BattleText3::
 	text "Ce bâtiment est"
 	line "interdit d'accès!"
-	para "Ne m’oblige pas à"
+	para "Ne m'oblige pas à"
 	line "te mettre dehors!"
 	done
 

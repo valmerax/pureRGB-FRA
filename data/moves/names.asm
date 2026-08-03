@@ -240,7 +240,7 @@ BODYSLAMName:
 WRAPName:
 	db "LIGOTAGE@"
 TAKEDOWNName:
-	db "COUP D’CHAUD@" ; changed from TAKE DOWN
+	db "COUP D'CHAUD@" ; changed from TAKE DOWN
 THRASHName:
 	db "MANIA@"
 DOUBLEEDGEName:

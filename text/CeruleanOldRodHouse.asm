@@ -32,7 +32,7 @@ _CeruleanOldRodHouseFoodText::
 
 _CeruleanOldRodHouseFoodText2::
 	text "Que dire de plus!"
-	para "J’aime autant"
+	para "J'aime autant"
 	line "cuisiner le"
 	cont "poisson que le"
 	cont "pêcher!"

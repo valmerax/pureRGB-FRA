@@ -19,8 +19,8 @@ _PokemonTower7FMrFujiCaughtText::
 
 	para "Son âme errera à"
 	line "jamais dans ce"
-	cont "monde jusqu’à ce"
-	cont "que tu l’aides à"
+	cont "monde jusqu'à ce"
+	cont "que tu l'aides à"
 	cont "se venger."
 
 	para "Une tâche funeste,"

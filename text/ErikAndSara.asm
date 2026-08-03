@@ -351,7 +351,7 @@ _SaraSeafoamExplanationText::
 	line "ECUME se trouvent"
 	cont "à l'ouest d'ici,"
 	cont "sur la ROUTE 20."
-	para "C’est un réseau"
+	para "C'est un réseau"
 	line "de grottes."
 	para "Depuis les"
 	line "profondeurs,"

@@ -43,7 +43,7 @@ _SafariZoneWestRanger0Text::
 
 _SafariZoneWestRanger0EndBattleText::
 	text "(Baille)!"
-	line "J’ai envie de me"
+	line "J'ai envie de me"
 	cont "la couler douce."
 	prompt
 

@@ -215,7 +215,7 @@ _CeruleanBallDesignerDesignerGotCamera::
 	text "Tu as mon nouvel"
 	line "APP. PHOTO?"
 	para "Super!"
-	para "J’ai noté quelques"
+	para "J'ai noté quelques"
 	line "idées qui pourr-"
 	cont "aient m'inspirer"
 	cont "sur ce carnet!"

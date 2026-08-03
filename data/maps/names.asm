@@ -53,5 +53,5 @@ CeruleanCaveName:    db "GROTTE INCONNUE@"
 PowerPlantName:      db "CENTRALE@"
 BillsGardenName:     db "CAP D'AZURIA@"
 DiamondMineName:     db "MINE DE DIAMANT@"
-CinnabarVolcanoName: db "VOLCAN CRAMOIS’ILE@"
+CinnabarVolcanoName: db "VOLCAN CRAMOIS'ILE@"
 
