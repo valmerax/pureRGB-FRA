@@ -157,7 +157,7 @@ DisplayAmountLeftBox:
 	jp EnableTextDelay
 
 AmountLeftString:
-	db "× Reste@"
+	db "× Restant@"
 
 DoBuySellQuitMenu:
 	call DisableTextDelay
