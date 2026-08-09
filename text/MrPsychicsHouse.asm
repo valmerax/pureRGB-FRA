@@ -41,8 +41,7 @@ _MrPsychicsHouseBookText2::
 _MrPsychicsHouseIKnowWhatYouWantText::
 	text "Je sais ce que tu"
 	line "veux!"
-	para "Mais d'abord,"
-	line "fais ça pour moi:"
+	para "Mais d'abord<...>"
 	para "Bats les dresseurs"
 	line "du DOJO KARATE!"
 	para "C'est au nord de"

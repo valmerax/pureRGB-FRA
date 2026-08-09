@@ -314,20 +314,31 @@ _StrengthsAndWeaknessesText::
 	cont "élément."
 	done
 
+_GenericPAHeyText::
+	db "Haut-parleur: Hé!"
+	done
+
 _TimesUpText::
-	text "Haut-parleur: Hé!"
+	text "@"
+	text_call _GenericPAHeyText
 
 	para "C'est fini!"
 	prompt
 
+_GenericPAText::
+	db "Haut-parleur:"
+	done
+
 _GameOverText::
-	text "Haut-parleur:"
+	text "@"
+	text_call _GenericPAText
 	line "Le SAFARI est"
 	cont "terminé!"
 	done
 
 _RangerHuntSuccessText::
-	text "Haut-parleur:"
+	text "@"
+	text_call _GenericPAText
 	line "<PLAYER> a battu"
 	cont "les 5 RANGERs!!"
 
@@ -880,7 +891,8 @@ _PokemonStuffText::
 	done
 
 _OutOfSafariBallsText::
-	text "Haut-parleur: Hé!"
+	text "@"
+	text_call _GenericPAHeyText
 
 	para "Vous n'avez plus"
 	line "de SAFARI BALL!"

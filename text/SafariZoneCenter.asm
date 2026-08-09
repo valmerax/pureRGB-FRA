@@ -56,7 +56,7 @@ _SafariZoneCenterEngineerAfterBattleText::
 	cont "monsieur pour son"
 	cont "déjeuner!"
 	para "C'est l'infirmière"
-	line "au CENTRE #MON."
+	line "du CENTRE #MON."
 	done
 
 _SafariZoneCenterRockerText::
@@ -74,8 +74,8 @@ _SafariZoneCenterRockerEndBattleText::
 _SafariZoneCenterRockerAfterBattleText::
 	text "Quoi? Tu ne"
 	line "t'attendais pas à"
-	cont "ce qu'un ROCKER"
-	cont "soit aussi doux?"
+	cont "un ROCKER aussi"
+	cont "doux?"
 	done	
 
 _SafariZoneCenterJugglerText::

@@ -8,7 +8,7 @@ _PokemonCenterChampText::
 
 _PokemonCenterFastChampText::
 	text "CHAMPION! Admirez"
-	line "ce soin rapide!"
+	line "ce soin express!"
 	done
 
 _PokemonCenterFarewellChamp1Text::
