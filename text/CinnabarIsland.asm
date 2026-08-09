@@ -31,11 +31,7 @@ _CinnabarIslandPokemonLabSignText::
 	done
 
 _CinnabarIslandGymSignText::
-	text "CRAMOIS'ILE"
-	line "ARENE #MON"
-	cont "CHAMPION: AUGUSTE"
-
-	para "Le cerveau!"
+	text "Le cerveau!"
 	line "Chaud! Chaud!"
 	done
 

@@ -170,8 +170,7 @@ CeruleanCityFaceRivalScript:
 	jp SetSpriteFacingDirectionAndDelay ; face object
 
 CeruleanCityRivalBattleScript:
-	ld a, [wStatusFlags5]
-	bit BIT_SCRIPTED_NPC_MOVEMENT, a
+	call IsNPCAutoMoving
 	ret nz
 	; reset rival's sprite movement facing byte otherwise he can look around weirdly after battle for a moment
 	ld hl, wMapSpriteData + ((CERULEANCITY_RIVAL - 1) * 2)
@@ -258,8 +257,7 @@ CeruleanCityMovement4:
 	db -1 ; end
 
 CeruleanCityRivalCleanupScript:
-	ld a, [wStatusFlags5]
-	bit BIT_SCRIPTED_NPC_MOVEMENT, a
+	call IsNPCAutoMoving
 	ret nz
 	ld c, TOGGLE_CERULEAN_RIVAL
 	call HideObject
@@ -502,5 +500,7 @@ CeruleanCityBikeShopSign:
 	text_end
 
 CeruleanCityGymSign:
-	text_far _CeruleanCityGymSign
-	text_end
+	text_asm
+	ld c, CERULEAN_GYM
+	ld de, CeruleanGymOutsideSign
+	jpfar GymOutsideSignTextScript

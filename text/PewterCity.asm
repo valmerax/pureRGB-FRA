@@ -111,11 +111,7 @@ _PewterCityMuseumSignText::
 	done
 
 _PewterCityGymSignText::
-	text "ARENE #MON"
-	line "d'ARGENTA"
-	cont "CHAMPION: PIERRE"
-
-	para "L'dresseur dur"
+	text "L'dresseur dur"
 	line "comme la pierre!"
 	cont "Bonne blague."
 	done

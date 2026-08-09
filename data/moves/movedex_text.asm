@@ -1,5 +1,12 @@
 ; PureRGBnote: ADDED: text pointers for the descriptions that show up in the movedex.
 
+; input de = which text below to print
+PrintMovedexText::
+	ld h, d
+	ld l, e
+	bccoord 1, 11
+	jp TextCommandProcessor
+
 _PoundDexEntry::
 	text "Ecrase l'<ennemi>"
 	next "avec les pattes"
@@ -82,11 +89,9 @@ _Generic10PercentBurnText::
 _IcePunchDexEntry::
 	text "Frappe l'<ennemi>"
 	next "avec un poing"
-	next "glacé."
+	next "glacé.@"
 
-	bage "10% de chance de"
-	next "geler l'<ennemi>"
-	dex
+	text_jump _Generic10PercentFreezeText
 
 _ThunderPunchDexEntry::
 	text "Frappe l'<ennemi>"
@@ -607,6 +612,7 @@ _IceBeamDexEntry::
 	next "est projeté sur"
 	next "l'<ennemi>."
 
+_Generic10PercentFreezeText::
 	bage "10% de chances de"
 	next "geler l'<ennemi>"
 	dex
@@ -616,10 +622,11 @@ _BlizzardDexEntry::
 	next "une forte tempête"
 	next "hivernale qui"
 
-	bage "terrasse l'<ennemi>."
-	next "10% de chances de"
-	next "geler l'<ennemi>"
-	dex
+	bage "terrasse l'<ennemi>"
+	next "avec des éclats"
+	next "de glace.@"
+
+	text_jump _Generic10PercentFreezeText
 
 _PsybeamDexEntry::
 	text "Le pouvoir psy"
@@ -1517,11 +1524,9 @@ _KinesisDexEntry::
 
 _SoftboiledDexEntry::
 	text "Un délicieux oeuf"
-	next "soigne le <lanceur>."
+	next "soigne le <lanceur>.@"
 
-	bage "Restaure la moitié"
-	next "des PV max du"
-	next "<lanceur>."
+	text_call _GenericHealsHalfText
 
 	bage "Utilisable hors"
 	next "combat pour guérir"
@@ -1564,12 +1569,10 @@ _DreamEaterDexEntry::
 _PoisonGasDexEntry::
 	text "Libère un nuage de"
 	next "gaz corrosif et"
-	next "suffocant."
+	next "suffocant.@"
 
-	bage "Inflige souvent"
-	next "des coups"
-	next "critiques.@"
-
+	text_call _GenericOftenLandsCriticalHitsText
+	text_end
 	text_jump _Generic20PercentPoisonText
 
 _BarrageDexEntry::

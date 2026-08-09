@@ -132,15 +132,19 @@ _DexRatingText::
 	text "Eval. #DEX<COLON>"
 	done
 
-_GymStatueText::
+_GymSignGenericCallText::
+	db "@"
+_GymSignGenericText::
 	text_ram_stringbuffer
 	text_start
 	line "ARENE #MON"
 	cont "CHAMPION: @"
 	text_ram_namebuffer
-	text_start
+	text_end
 
-	para "VAINQUEURS: @"
+_GymStatueText::
+	text_call _GymSignGenericCallText
+	text "<PARA>VAINQUEURS: @"
 	text_end
 
 _GymStatueRival::
@@ -1946,3 +1950,8 @@ _SaveFileUpdateWarpText::
 	cont "pour réduire les"
 	cont "bugs de version?"
 	done
+
+_MimicNoPointText::
+	text "Inutile d'imiter"
+	line "MIMIQUE!"
+	prompt

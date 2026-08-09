@@ -125,12 +125,7 @@ _VermilionCityPokemonFanClubSignText::
 	done
 
 _VermilionCityGymSignText::
-	text "CARMIN SUR MER"
-	line "ARENE #MON"
-	cont "CHAMPION:"
-	cont "MAJOR BOB"
-
-	para "Le Ricain"
+	text "Le Ricain"
 	line "Survolté!"
 	done
 

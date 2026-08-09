@@ -18,8 +18,7 @@ FuchsiaCityDefaultScript:
 	CheckEventHL EVENT_ERIK_LEAVING
 	ret z
 	call DisableAllJoypad
-	ld a, [wStatusFlags5]
-	bit BIT_SCRIPTED_NPC_MOVEMENT, a
+	call IsNPCAutoMoving
 	ret nz
 	ResetEventReuseHL EVENT_ERIK_LEAVING
 	call EnableAllJoypad
@@ -254,11 +253,28 @@ FuchsiaCitySafariZoneSignText:
 	text_end
 
 FuchsiaCityGymSignText:
-	text_far _FuchsiaCityGymSignText
-	text_end
+	text_asm
+	ld c, FUCHSIA_GYM
+	ld de, FuchsiaGymOutsideSign
+	jpfar GymOutsideSignTextScript
 
 FuchsiaCitySoMuchInfoText:
 	text_far _FuchsiaCitySoMuchInfo
+	text_end
+
+FuchsiaCityPrintMonNameText:
+	ld [wNamedObjectIndex], a
+	push af
+	push hl
+	call GetMonName
+	ld hl, .text
+	rst _PrintText
+	pop hl
+	rst _PrintText
+	pop af
+	jp DisplayPokedex
+.text
+	text_far _GenericFuchsiaZooNameText
 	text_end
 
 LearnsetFuchsiaZoo:
@@ -276,13 +292,11 @@ LearnsetFuchsiaZoo:
 .done
 	rst TextScriptEnd
 
-
 FuchsiaCityChanseySignText:
 	text_asm
-	ld hl, .Text
-	rst _PrintText
 	ld a, CHANSEY
-	call DisplayPokedex
+	ld hl, .Text
+	call FuchsiaCityPrintMonNameText
 	CheckEvent FLAG_CHANSEY_LEARNSET
 	jr nz, .done
 	ld a, CHANSEY
@@ -294,12 +308,12 @@ FuchsiaCityChanseySignText:
 	text_far _FuchsiaCityChanseySignText
 	text_end
 
+
 FuchsiaCityVoltorbSignText:
 	text_asm
-	ld hl, .Text
-	rst _PrintText
 	ld a, VOLTORB
-	call DisplayPokedex
+	ld hl, .Text
+	call FuchsiaCityPrintMonNameText
 	CheckEvent FLAG_ELECTRODE_FAMILY_LEARNSET
 	jr nz, .done
 	ld a, VOLTORB
@@ -314,10 +328,9 @@ FuchsiaCityVoltorbSignText:
 
 FuchsiaCityKangaskhanSignText:
 	text_asm
-	ld hl, .Text
-	rst _PrintText
 	ld a, KANGASKHAN
-	call DisplayPokedex
+	ld hl, .Text
+	call FuchsiaCityPrintMonNameText
 	CheckEvent FLAG_KANGASKHAN_LEARNSET
 	jr nz, .done
 	ld a, KANGASKHAN
@@ -332,10 +345,9 @@ FuchsiaCityKangaskhanSignText:
 
 FuchsiaCitySlowpokeSignText:
 	text_asm
-	ld hl, .Text
-	rst _PrintText
 	ld a, SLOWPOKE
-	call DisplayPokedex
+	ld hl, .Text
+	call FuchsiaCityPrintMonNameText
 	CheckEvent FLAG_SLOWBRO_FAMILY_LEARNSET
 	jr nz, .done
 	ld a, SLOWPOKE
@@ -350,10 +362,9 @@ FuchsiaCitySlowpokeSignText:
 
 FuchsiaCityLaprasSignText:
 	text_asm
-	ld hl, .Text
-	rst _PrintText
 	ld a, LAPRAS
-	call DisplayPokedex
+	ld hl, .Text
+	call FuchsiaCityPrintMonNameText
 	CheckEvent FLAG_LAPRAS_LEARNSET
 	jr nz, .done
 	ld a, LAPRAS
@@ -376,20 +387,16 @@ FuchsiaCityFossilSignText:
 	rst _PrintText
 	rst TextScriptEnd
 .got_dome_fossil
-	ld hl, .OmanyteText
-	rst _PrintText
 	ld a, OMANYTE
-	call DisplayPokedex
+	call .fossilIntroText
 	CheckEvent FLAG_OMASTAR_FAMILY_LEARNSET
 	jr nz, .done
 	ld a, OMANYTE
 	ld d, DEX_OMANYTE
 	jr .learnset
 .got_helix_fossil
-	ld hl, .KabutoText
-	rst _PrintText
 	ld a, KABUTO
-	call DisplayPokedex
+	call .fossilIntroText
 	CheckEvent FLAG_KABUTOPS_FAMILY_LEARNSET
 	jr nz, .done
 	ld a, KABUTO
@@ -399,12 +406,12 @@ FuchsiaCityFossilSignText:
 .done
 	rst TextScriptEnd
 
-.OmanyteText:
-	text_far _FuchsiaCityFossilSignOmanyteText
-	text_end
+.fossilIntroText
+	ld hl, .fossilText
+	jp FuchsiaCityPrintMonNameText
 
-.KabutoText:
-	text_far _FuchsiaCityFossilSignKabutoText
+.fossilText:
+	text_far _FuchsiaCityFossilSignText
 	text_end
 
 .UndeterminedText:

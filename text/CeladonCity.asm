@@ -207,11 +207,7 @@ _CeladonCitySignText::
 	done
 
 _CeladonCityGymSignText::
-	text "CELADOPOLE"
-	line "ARENE #MON"
-	cont "CHAMPION: ERIKA"
-
-	para "Le combat par"
+	text "Le combat par"
 	line "les plantes!"
 	done
 

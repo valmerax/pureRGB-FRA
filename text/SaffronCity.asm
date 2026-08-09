@@ -111,11 +111,7 @@ _SaffronCityFightingDojoSignText::
 	done
 
 _SaffronCityGymSignText::
-	text "SAFRANIA"
-	line "ARENE #MON"
-	cont "CHAMPION: MORGANE"
-
-	para "Maîtresse des"
+	text "Maîtresse des"
 	line "forces psychiques"
 	done
 

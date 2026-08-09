@@ -246,11 +246,7 @@ _CeruleanCityBikeShopSign::
 	done
 
 _CeruleanCityGymSign::
-	text "AZURIA"
-	line "ARENE #MON"
-	cont "CHAMPION: ONDINE"
-
-	para "La petite pest<...>"
+	text "La petite pest<...>"
 	line "Heu<...>sirène!"
 	done
 

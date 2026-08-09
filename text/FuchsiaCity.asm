@@ -61,62 +61,44 @@ _FuchsiaCitySafariZoneSignText::
 	done
 
 _FuchsiaCityGymSignText::
-	text "PARMANIE"
-	line "ARENE #MON"
-	cont "CHAMPION: KOGA"
-
-	para "Le Ninja aux"
+	text "Le Ninja aux"
 	line "poisons infinis"
 	done
 
-_FuchsiaCityChanseySignText::
-	text "Nom: LEVEINARD"
+_GenericFuchsiaZooNameText::
+	text "Nom: @"
+	text_ram_namebuffer
+	text "<PROMPT>"
+	text_end
 
-	para "Il faut un bol"
+_FuchsiaCityChanseySignText::
+	text "Il faut un bol"
 	line "d'enfer pour en"
 	cont "capturer un."
 	prompt
 
 _FuchsiaCityVoltorbSignText::
-	text "Nom: VOLTORBE"
-
-	para "Portrait craché"
+	text "Portrait craché"
 	line "d'une # BALL."
 	prompt
 
 _FuchsiaCityKangaskhanSignText::
-	text "Nom: KANGOUREX"
-
-	para "Ce #MON élève"
+	text "Ce #MON élève"
 	line "son petit dans sa"
 	cont "poche ventrale."
 	prompt
 
 _FuchsiaCitySlowpokeSignText::
-	text "Nom: RAMOLOSS"
-
-	para "Sympa mais<...>"
+	text "Sympa mais<...>"
 	line "Méga-lent!"
 	prompt
 
 _FuchsiaCityLaprasSignText::
-	text "Nom: LOKHLASS"
-
-	para "Le roi des mers."
+	text "Le roi des mers."
 	prompt
 
-_FuchsiaCityFossilSignOmanyteText::
-	text "Nom: AMONITA"
-
-	para "Un #MON créé"
-	line "à partir d'un"
-	cont "fossile."
-	prompt
-
-_FuchsiaCityFossilSignKabutoText::
-	text "Nom: KABUTO"
-
-	para "Un #MON créé"
+_FuchsiaCityFossilSignText::
+	text "Un #MON créé"
 	line "à partir d'un"
 	cont "fossile."
 	prompt
