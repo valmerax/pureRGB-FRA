@@ -45,7 +45,7 @@ SECTION "rst20", ROM0[$0020]
 _CopyData::
 	jp CopyData
 
-AvecText::        db "a", "vec@"
+IenText::         db "i", "en@"
 
 SECTION "rst28", ROM0[$0028]
 _PrintText::
@@ -62,7 +62,7 @@ SECTION "rst30", ROM0[$0030]
 _PlaySound::
 	jp PlaySound
 
-CommeText::       db "c", "omme@"
+SuisText::       db "s", "uis@"
 
 SECTION "rst38", ROM0[$0038]
 ; PureRGBnote: MOVED: We save a lot of space by moving TextScriptEnd here and using rst TextScriptEnd to jump to it instead
@@ -81,7 +81,7 @@ PlacePKMNText::   db "<PK><MN>@"
 SECTION "vblank", ROM0[$0040]
 	jp VBlank
 
-OirText::         db "o", "ir@"
+HaveText::         db "h", "ave@"
 
 SECTION "lcd", ROM0[$0048]
 ; this interrupt is disabled on init, so this is a free 8 bytes to use unless we turn it on

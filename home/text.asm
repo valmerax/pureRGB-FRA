@@ -321,16 +321,16 @@ DEF TEXT_CODE_CMD_MARKER EQU $8000
 ; since ROM space addresses never goes above $8000 address, 
 ; we can use the highest bit of these words as an indicator of what function to run for each.
 TextShortcutCommandJumpTable:
-	dw CommeText
+	dw SuisText
 	dw UnSpaceText
-	dw ToiText
+	dw YouText
 	dw EsSpaceText
-	dw AvecText
+	dw IenText
 	dw SpaceASpaceText
 	dw SpaceLaText
-	dw OirText
+	dw HaveText
 	dw UnText
-	dw IciText
+	dw PlusText
 	dw DeSpaceText
 	dw SpaceDeText
 	dw LesText
@@ -386,9 +386,9 @@ DeSpaceText::     db "d", "e @"
 UnSpaceText::     db "u", "n @"
 SpaceASpaceText:: db " ", "à @"
 EsSpaceText::     db "e", "s @"
-ToiText::         db "t", "oi@"
+YouText::         db "Y", "ou@"
 UneText::         db "u", "ne@"
-IciText::         db "i", "ci@"
+PlusText::        db "p", "lus@"
 
 TextCommand_LOW::
 ; write text at (1,16)

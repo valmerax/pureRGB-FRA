@@ -4,16 +4,16 @@
 
 	charmap "<NULL>",    $00
 	DEF FIRST_TEXT_SHORTCUT_ID EQU $33
-	charmap "comme",     $33 ; PureRGBnote: ADDED: single byte version of "comme"
+	charmap "suis",      $33 ; PureRGBnote: ADDED: single byte version of "suis"
 	charmap "une",       $34 ; PureRGBnote: ADDED: single byte version of "une"
 	charmap "You",       $35 ; PureRGBnote: ADDED: single byte version of "You"
 	charmap "es ",       $36 ; PureRGBnote: ADDED: single byte version of "es "
-	charmap "avec",      $37 ; PureRGBnote: ADDED: single byte version of "avec"
+	charmap "ien",       $37 ; PureRGBnote: ADDED: single byte version of "ien"
 	charmap " à ",       $38 ; PureRGBnote: ADDED: single byte version of " à "
 	charmap " la",       $39 ; PureRGBnote: ADDED: single byte version of " la"
 	charmap "have",      $3A ; PureRGBnote: ADDED: single byte version of "have"
 	charmap "un ",       $3B ; PureRGBnote: ADDED: single byte version of "un "
-	charmap "ici",       $3C ; PureRGBnote: ADDED: single byte version of "ici"
+	charmap "plus",      $3C ; PureRGBnote: ADDED: single byte version of "plus"
 	charmap "de ",       $3D ; PureRGBnote: ADDED: single byte version of "de "
 	charmap " de",       $3E ; PureRGBnote: ADDED: single byte version of " de"
 	charmap "que",       $3F ; PureRGBnote: ADDED: single byte version of "que"
