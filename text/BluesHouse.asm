@@ -14,6 +14,7 @@ _BluesHouseDaisyOfferMapText::
 _GotMapText::
 	text "<PLAYER> obtient:"
 	line "CARTE!@"
+	sound_get_key_item
 	text_end
 
 _MapHelpText::

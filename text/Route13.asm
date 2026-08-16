@@ -188,18 +188,15 @@ _Route13TrainerTips1Text::
 
 _Route13TrainerTips2Text::
 	text "<ASTUCE>"
-
-	para "Utilisez SELECT"
-	line "pour organiser"
-	cont "votre inventaire!"
-
-	para "Idem en combat,"
-	line "avec les attaques"
-	cont "des #MON!"
-
-	para "Mais aussi pour"
-	line "changer l'ordre"
-	cont "des <PK><MN>!"
+	para "Appuyer sur SELECT"
+	line "sur les stats d'un"
+	cont "#MON pour voir"
+	cont "sa STAT EXP (EV)!"
+	para "La STAT EXP monte"
+	line "grâce aux combats"
+	cont "et vitamines!"
+	para "Plus d'EXP signifie"
+	line "STAT plus élevées!"
 	done
 
 _Route13SignText::

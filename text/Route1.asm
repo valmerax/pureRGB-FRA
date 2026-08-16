@@ -15,11 +15,19 @@ _Route1Youngster1MartSampleText::
 
 _SilphCo2FSilphWorkerFReceivedTM50Text::
 _Route1Youngster1GotPotionText::
-	text "<PLAYER> obtient:"
-	line "@"
-	text_ram wStringBuffer
-	text "!@"
+	text_call _GenericPlayerGotTextEntry
+	text "@"
+	sound_get_item_1
 	text_end
+
+_GenericPlayerGotText::
+	text
+_GenericPlayerGotTextEntry::
+	db "<PLAYER> obtient:"
+	line "@"
+	text_ram_stringbuffer
+	text "!"
+	done
 
 _Route1Youngster1AlsoGotPokeballsText::
 	text "Nous avons aussi"

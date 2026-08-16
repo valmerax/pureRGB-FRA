@@ -90,9 +90,10 @@ _MomFoodPokemonChowedDownText::
 	prompt
 
 _MomFoodPokemonShowText::
-	text "MAMAN à l'air"
-	line "vraiment heureuse!"
-	done
+	text "MAMAN à l'air très"
+	line "heureuse!@"
+	sound_get_item_1
+	text_end
 
 _MomFoodDone::
 	text "Tu ferais mieux"

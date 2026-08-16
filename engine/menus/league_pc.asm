@@ -135,5 +135,4 @@ HallOfFameNoText:
 	db " CELEBRITE No.    @"
 
 AccessedHoFPCText:
-	text_far _AccessedHoFPCText
-	text_end
+	text_far_end _AccessedHoFPCText

@@ -156,14 +156,14 @@ _GymStatueRivalPlayer::
 	cont "<PLAYER>"
 	done
 
-_ViridianCityPokecenterGuyText::
+_ViridianPokecenterBenchGuyText::
 	text "Les CENTRES"
 	line "#MON soignent"
 	cont "tous les #MON"
 	cont "blessés ou K.O.!"
 	done
 
-_PewterCityPokecenterGuyText::
+PewterPokecenterBenchGuyText::
 	text "(Baille)!"
 
 	para "Lorsque RONDOUDOU"
@@ -175,7 +175,7 @@ _PewterCityPokecenterGuyText::
 	line "(Pionce)<...>"
 	done
 
-_CeruleanPokecenterGuyText::
+_CeruleanPokecenterBenchGuyText::
 	text "LEO a une sacrée"
 	line "collection de"
 	cont "#MON!"
@@ -184,7 +184,7 @@ _CeruleanPokecenterGuyText::
 	line "plus<...>"
 	done
 
-_LavenderPokecenterGuyText::
+_LavenderPokecenterBenchGuyText::
 	text "Les OSSELAIT"
 	line "portent un crâne,"
 	cont "non?"
@@ -200,7 +200,7 @@ _MtMoonPokecenterBenchGuyText::
 	cont "trop via un <PC>!"
 	done
 
-_RockTunnelPokecenterGuyText::
+_RockTunnelPokecenterBenchGuyText::
 	text "On m'a dit qu'il"
 	line "y a des SPECTRES"
 	cont "à LAVANVILLE!"
@@ -219,7 +219,7 @@ _SafariZoneTiredGuyText::
 ;	cont "SAFARI."
 ;	done
 
-_VermilionPokecenterGuyText::
+_VermilionPokecenterBenchGuyText::
 	text "C'est vrai qu'un"
 	line "#MON de haut"
 	cont "niveau est très"
@@ -235,14 +235,14 @@ _VermilionPokecenterGuyText::
 	cont "la mort qui tue."
 	done
 
-_CeladonCityPokecenterGuyText::
+_CeladonPokecenterBenchGuyText::
 	text "Si j'avais une"
 	line "BICYCLETTE,"
 	cont "j'irais sur la"
 	cont "PISTE CYCLABLE!"
 	done
 
-_FuchsiaCityPokecenterGuyText::
+_FuchsiaPokecenterBenchGuyText::
 	text "LE PARC SAFARI"
 	line "regorge de"
 	cont "#MON."
@@ -251,7 +251,7 @@ _FuchsiaCityPokecenterGuyText::
 	line "de très rares!"
 	done
 
-_CinnabarPokecenterGuyText::
+_CinnabarPokecenterBenchGuyText::
 	text "Les #MON"
 	line "peuvent apprendre"
 	cont "des techniques"
@@ -281,7 +281,7 @@ _SaffronCityPokecenterGuyText2::
 	cont "Youpi!"
 	done
 
-_CeladonCityHotelText::
+_CeladonHotelBenchGuyText::
 	text "Je suis en"
 	line "vacances avec ma"
 	cont "soeur<...> "
@@ -341,9 +341,10 @@ _RangerHuntSuccessText::
 	text_call _GenericPAText
 	line "<PLAYER> a battu"
 	cont "les 5 RANGERs!!"
-
-	para "Félicitations!"
-	done
+	para "@"
+	text_far _GenericCongratulationsText
+	sound_get_item_2
+	text_end
 
 _CinnabarGymQuizStartText::
 	text "Quiz #MON!"
@@ -832,15 +833,16 @@ _HiddenItemBagFullText::
 	done
 
 _FoundHiddenCoinsText::
-_FoundHiddenCoins2Text::
 	text "<PLAYER> trouve"
 	line "@"
 	text_bcd hCoins, 2 | LEADING_ZEROES | LEFT_ALIGN
 	text " jetons!@"
+	sound_get_item_2
 	text_end
 
 _DroppedHiddenCoinsText::
 	text_start
+
 	para "Oups! Des jetons"
 	line "sont tombés!"
 	done
@@ -1285,6 +1287,7 @@ _GrewLevelText::
 	line "au niveau @"
 	text_decimal wCurEnemyLevel, 1, 3
 	text "!@"
+	sound_level_up
 	text_end
 
 _WildMonAppearedText::
@@ -1419,7 +1422,19 @@ _PartyMenuNormalText::
 	done
 
 _PartyMenuItemUseText::
-	text "Sur quel #MON?"
+	text "Utiliser"
+	line "@"
+	text_ram_namebuffer
+	text_start
+	cont "sur quel <PK><MN>?"
+	done
+
+_PartyMenuItemUseBattleText::
+	text "Utiliser"
+	line "@"
+	text_ram_namebuffer
+	text_start
+	cont "sur quel #MON?"
 	done
 
 _PartyMenuBattleText::
@@ -1497,6 +1512,8 @@ _RareCandyText::
 	line "au niveau @"
 	text_decimal wCurEnemyLevel, $1,$3
 	text "!@"
+	sound_get_item_1 ; probably supposed to play SFX_LEVEL_UP but the wrong music bank is loaded
+	text_promptbutton
 	text_end
 
 _TurnedOnPC1Text::
@@ -1621,15 +1638,11 @@ _WhatText::
 	text "Que faire?"
 	done
 
-_ViewModeText::
-	text "Mode aperçu de"
-	line "boîte actif."
-	done
-
-_DepositWhichMonText::
-	text "Stocker quel"
-	line "#MON?"
-	done
+; PureRGBnote: unused text
+;_DepositWhichMonText::
+;	text "Stocker quel"
+;	line "#MON?"
+;	done
 
 _MonWasStoredText::
 	text_ram wStringBuffer
@@ -1673,10 +1686,11 @@ _CantTakeMonText::
 	line "un #MON."
 	prompt
 
-_ReleaseWhichMonText::
-	text "Relâcher quel"
-	line "#MON?"
-	done
+; PureRGBnote: CHANGED: now unused text
+;_ReleaseWhichMonText::
+;	text "Relâcher quel"
+;	line "#MON?"
+;	done
 
 _OnceReleasedText::
 	text_ram wStringBuffer
@@ -1699,6 +1713,7 @@ _PressStartToReleaseText::
 _RequireCoinCaseText::
 	text "Vous n'avez pas"
 	line "de BOITE JETON!@"
+	text_waitbutton
 	text_end
 
 _ExchangeCoinsForPrizesText::
@@ -1717,8 +1732,9 @@ _HereYouGoText::
 	text_end
 
 _GoodChoice::
-	text "Bon choix!"
-	done
+	text "Bon choix!@"
+	text_waitbutton
+	text_end
 
 _SoYouWantPrizeText::
 	text_ram wNameBuffer
@@ -1728,15 +1744,18 @@ _SoYouWantPrizeText::
 _SorryNeedMoreCoinsText::
 	text "Vous n'avez pas"
 	line "assez de jetons.@"
+	text_waitbutton
 	text_end
 
 _OopsYouDontHaveEnoughRoomText::
 	text "Votre inventaire"
 	line "est plein.@"
+	text_waitbutton
 	text_end
 
 _OhFineThenText::
 	text "Bon. Très bien.@"
+	text_waitbutton
 	text_end
 
 _GetDexRatedText::
@@ -1748,6 +1767,7 @@ _GetDexRatedText::
 _ClosedOaksPCText::
 	text "<PC> du PROF. CHEN,"
 	line "Déconnexion<...>@"
+	text_waitbutton
 	text_end
 
 _AccessedOaksPCText::
@@ -1875,10 +1895,6 @@ _WillBeTradedText::
 ;	text_decimal hTextID,1,2
 ;	text " ERREUR."
 ;	done
-
-_ContCharText::
-	text "<_CONT>@"
-	text_end
 
 _CantDepositSSTicketText::
 	text "Vous devez garder"

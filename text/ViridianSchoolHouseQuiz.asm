@@ -164,9 +164,9 @@ _SchoolB1FLeftTeacherQuizFinish::
 
 _ReceivedMovedexText::
 	text "<PLAYER> obtient"
-	line "le CAPADEX!"
-	done
-
+	line "le CAPADEX!@"
+	sound_get_item_2
+	prompt
 
 _SchoolB1FLeftTeacherQuizFinalInfo::
 	text "Chaque fois que tu"

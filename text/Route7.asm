@@ -15,11 +15,15 @@ _Route7EndBattleText1::
 	prompt
 
 _Route7AfterBattleText1::
-	text "N'écoute pas ce"
-	line "que dit l'autre."
+	text "N'écoute pas ce@"
+	text_call _Route7OtherGuyText
 	para "J'étais CROUPIER"
 	line "quand lui était"
 	cont "bébé!"
+	done
+
+_Route7OtherGuyText:
+	db "<LINE>que dit l'autre."
 	done
 
 _Route7BattleText2::
@@ -34,8 +38,8 @@ _Route7EndBattleText2::
 	prompt
 
 _Route7AfterBattleText2::
-	text "Ne crois pas ce"
-	line "que dit l'autre."
+	text "Ne crois pas ce@"
+	text_call _Route7OtherGuyText
 	para "CELADOPOLE ne"
 	line "serait plus la"
 	cont "même sans mes"

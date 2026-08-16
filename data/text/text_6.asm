@@ -106,12 +106,12 @@ _ApexChipPutOnPokeballText::
 	rst _PlaySound
 	call WaitForSoundToFinish
 	ld c, 50
-	rst _DelayFrames
+	rst DelayFrames
 	ld a, SFX_TRADE_MACHINE
 	rst _PlaySound
 	call WaitForSoundToFinish
 	ld c, 50
-	rst _DelayFrames
+	rst DelayFrames
 	rst TextScriptEnd
 
 _ApexChipDVsMaxedText::
@@ -211,8 +211,8 @@ _ItemfinderFoundNothingText::
 	prompt
 
 _RaisePPWhichTechniqueText::
-	text "Monter les PP de"
-	line "quelle attaque?"
+	text "Monter les PP max"
+	line "de quelle attaque?"
 	done
 
 _RestorePPWhichTechniqueText::
@@ -224,7 +224,7 @@ _PPMaxedOutText::
 	text "PP de @"
 	text_ram wStringBuffer
 	text_start
-	line "sont au max."
+	line "sont déjà au max."
 	prompt
 
 _PPIncreasedText::

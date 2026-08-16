@@ -31,6 +31,7 @@ _BikeShopExchangedVoucherText::
 	text "<PLAYER> échange"
 	line "le BON contre"
 	cont "une BICYCLETTE.@"
+	sound_get_key_item
 	text_end
 
 _BikeShopComeAgainText::

@@ -18,7 +18,9 @@ _IndigoPlateauLobbyGymGuideText::
 
 _IndigoPlateauGymGuideChampGreeting::
 	text "Yo! Champion!!"
-	line "Félicitations!"
+	line "@"
+	text_far _GenericCongratulationsText
+	text_start
 
 	para "J'ai vu une flamme"
 	line "dans tes yeux à"

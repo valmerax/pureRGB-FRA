@@ -45,6 +45,7 @@ _CeladonDinerCoinCaseGuyImFlatOutBustedText::
 _CeladonDinerCoinCaseGuyReceivedCoinCaseText::
 	text "<PLAYER> reçoit"
 	line "BOITE JETON!@"
+	sound_get_key_item
 	text_end
 	
 ;_CeladonDinerCoinCaseGuyCoinCaseNoRoomText::

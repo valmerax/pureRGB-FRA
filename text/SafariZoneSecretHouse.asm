@@ -9,7 +9,9 @@ _SafariZoneSecretHouseFishingGuruYouHaveWonText::
 	line "personne ne gagne"
 	cont "notre prix."
 
-	para "Félicitations!"
+	para "@"
+	text_far _GenericCongratulationsText
+	text_start
 	line "Tu as gagné!"
 	prompt
 

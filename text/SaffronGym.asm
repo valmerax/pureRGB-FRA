@@ -34,6 +34,8 @@ _SaffronGymSabrinaReceivedMarshBadgeText::
 
 	para "Tu gagnes le"
 	line "BADGE MARAIS!@"
+	sound_get_key_item ; actually plays the second channel of SFX_BALL_POOF due to the wrong music bank being loaded
+	text_promptbutton
 	text_end
 
 _SaffronGymSabrinaPostBattleAdviceText::

@@ -91,6 +91,26 @@ _PocketAbraFlavorText5::
 	line "concentre à fond!"
 	prompt
 
+_PocketAbraFlavorText6::
+	text_ram wPocketAbraNick
+	text " prend"
+	line "une pose héroïque!"
+	prompt
+
+_PocketAbraFlavorText7::
+	text_ram wPocketAbraNick
+	text_start
+	line "grignote ta"
+	cont "nourriture!"
+	prompt
+
+_PocketAbraFlavorText8::
+	text_ram wPocketAbraNick
+	text_start
+	line "consulte ton"
+	cont "#DEX!"
+	prompt
+
 _PocketAbraNo::
 	text_ram wPocketAbraNick
 	text " semble"

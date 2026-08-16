@@ -109,16 +109,3 @@ _Route18CyclingRoadSignText::
 	line "Interdite aux"
 	cont "piétons!"
 	done
-
-_Route18TipsSign::
-	text "<ASTUCE>"
-	para "Appuyer sur SELECT"
-	line "sur les stats d'un"
-	cont "#MON pour voir"
-	cont "sa STAT EXP (EV)!"
-	para "La STAT EXP monte"
-	line "grâce aux combats"
-	cont "et vitamines!"
-	para "Plus d'EXP signifie"
-	line "STAT plus élevées!"
-	done

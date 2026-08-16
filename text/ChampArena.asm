@@ -520,7 +520,10 @@ _ChampArenaAssistantDefeatedAllTrainers::
 	text "Woah! <PLAYER> a"
 	line "vaincu tous ses"
 	cont "adversaires!"
-	para "Félicitations!@"
+	para "@"
+	text_far _GenericCongratulationsText
+	sound_get_item_2
+	text_promptbutton
 	text_end
 
 _ChampArenaAssistantCallInChallengers::

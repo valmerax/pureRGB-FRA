@@ -165,18 +165,19 @@ _Route6UndergroundPathSignText::
 	cont "CARMIN SUR MER"
 	done
 
+; PureRGBnote: CHANGED: this trainer tips text to be on route 13, but it's pretty useful info, so moved it earlier in the game.
 _Route6TrainerTipsText::
 	text "<ASTUCE>"
-	para "Dans le <PC>,"
-	line "allez sur RETIRER"
-	cont "puis appuyez sur"
-	cont "SELECT."
-	para "Vous pouvez voir"
-	line "les infos des"
-	cont "#MON de la"
-	cont "boîte actuelle."
-	para "C'est possible"
-	line "même si votre"
-	cont "équipe est au"
-	cont "complet!"
+
+	para "Utilisez SELECT"
+	line "pour organiser"
+	cont "votre inventaire!"
+
+	para "Idem en combat,"
+	line "avec les attaques"
+	cont "des #MON!"
+
+	para "Mais aussi pour"
+	line "changer l'ordre"
+	cont "des <PK><MN>!"
 	done

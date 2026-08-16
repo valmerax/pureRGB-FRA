@@ -67,6 +67,8 @@ _LabColorChangerColorChangeDone::
 	text "Z'est parfait!"
 	para "Le changement de"
 	line "couleur est fini!@"
+	sound_get_item_2
+	text_promptbutton
 	text_end
 
 _LabColorChangerNoChangesLeft::
@@ -88,6 +90,8 @@ _LabColorChangerVasIsDas::
 	para "T'as droit à 10"
 	line "changements de"
 	cont "couleurs en plus!@"
+	sound_get_item_2
+	text_promptbutton
 	text_end
 
 _LabColorChangerResearchingColors::

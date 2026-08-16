@@ -157,6 +157,7 @@ _PewterGymGuideApexChipText::
 _ReceivedApexChipsText::
 	text "<PLAYER> reçoit"
 	line "2 PUCE APEX!@"
+	sound_get_item_1
 	text_end
 
 _ApexChipExplanationText::

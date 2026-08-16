@@ -329,4 +329,5 @@ _OakFirstLoseText::
 	para "<...>"
 	para "Le PROF. CHEN t'a"
 	line "écrit un message!@"
+	sound_pokedex_rating
 	text_end

@@ -10,6 +10,10 @@ DisplayLinkBattleVersusTextBox:
 	hlcoord 4, 10
 	ld de, wLinkEnemyTrainerName
 	call PlaceString
+	ld hl, vChars2 tile $69
+	ld de, LinkBattleVSText
+	lb bc, BANK(LinkBattleVSText), 2
+	call CopyVideoDataHBlankDouble
 ; place bold "CONTRE" tiles between the names
 	hlcoord 7, 8
 	ld_hli_a_string "CONTRE"

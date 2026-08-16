@@ -3,7 +3,19 @@
 ; Control characters (see home/text.asm)
 
 	charmap "<NULL>",    $00
-	DEF FIRST_TEXT_SHORCUT_ID EQU $3F
+	DEF FIRST_TEXT_SHORTCUT_ID EQU $33
+	charmap "comme",     $33 ; PureRGBnote: ADDED: single byte version of "comme"
+	charmap "une",       $34 ; PureRGBnote: ADDED: single byte version of "une"
+	charmap "You",       $35 ; PureRGBnote: ADDED: single byte version of "You"
+	charmap "es ",       $36 ; PureRGBnote: ADDED: single byte version of "es "
+	charmap "avec",      $37 ; PureRGBnote: ADDED: single byte version of "avec"
+	charmap " à ",       $38 ; PureRGBnote: ADDED: single byte version of " à "
+	charmap " la",       $39 ; PureRGBnote: ADDED: single byte version of " la"
+	charmap "have",      $3A ; PureRGBnote: ADDED: single byte version of "have"
+	charmap "un ",       $3B ; PureRGBnote: ADDED: single byte version of "un "
+	charmap "ici",       $3C ; PureRGBnote: ADDED: single byte version of "ici"
+	charmap "de ",       $3D ; PureRGBnote: ADDED: single byte version of "de "
+	charmap " de",       $3E ; PureRGBnote: ADDED: single byte version of " de"
 	charmap "que",       $3F ; PureRGBnote: ADDED: single byte version of "que"
 	charmap "est",       $40 ; PureRGBnote: ADDED: single byte version of "est"
 	charmap "ent",       $41 ; PureRGBnote: ADDED: single byte version of "ent"
@@ -18,7 +30,7 @@
 	charmap "<PKMN>",    $4a ; "<PK><MN>"
 	charmap "<_CONT>",   $4b ; implements "<CONT>"
 	charmap "<SCROLL>",  $4c
-	charmap " de",        $4d ; PureRGBnote: ADDED: single byte version of " de"
+	charmap "ais",       $4d ; PureRGBnote: ADDED: single byte version of "ais"
 	charmap "<NEXT>",    $4e
 	charmap "<LINE>",    $4f
 	charmap "@",         $50 ; string terminator

@@ -67,8 +67,9 @@ _ProspectorsHouseProspectorText3::
 _ProspectorsHouseProspectorText4::
 	text "<PLAYER> apprend à"
 	line "utiliser TUNNEL"
-	cont "entre les villes!"
-	done
+	cont "entre les villes!@"
+	sound_get_item_2
+	text_end
 
 _ProspectorsHouseBookcase1Text::
 	text "HABITATS"

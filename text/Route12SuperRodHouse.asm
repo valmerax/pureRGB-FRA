@@ -29,6 +29,8 @@ _Route12GuruColor::
 _LastTwoGurusFishingGuideReceived::
 	text "<PLAYER> reçoit un"
 	line "GUIDE DE PECHE!@"
+	sound_get_item_2
+	text_promptbutton
 	text_end
 
 _LastTwoGurusFishingGuideInfo::

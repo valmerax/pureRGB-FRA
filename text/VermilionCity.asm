@@ -80,6 +80,7 @@ _VermilionCityMachopText::
 
 _VermilionCityMachopStompingTheLandFlatText::
 	text_start
+
 	para "Un MACHOC"
 	line "pilonne le sol."
 	done

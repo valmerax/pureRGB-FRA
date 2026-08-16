@@ -1,11 +1,8 @@
-_MtMoonB2FDomeFossilYouWantText::
+_MtMoonB2FFossilYouWantText::
 	text "Tu veux le"
-	line "fossile DOME?"
-	done
-
-_MtMoonB2FHelixFossilYouWantText::
-	text "Tu veux le"
-	line "fossile NAUTILE?"
+	line "@"
+	text_ram_namebuffer
+	text "?"
 	done
 
 _MtMoonB2FReceivedFossilText::
@@ -13,12 +10,15 @@ _MtMoonB2FReceivedFossilText::
 	line "@"
 	text_ram wStringBuffer
 	text "!@"
+	sound_get_key_item
+	text_waitbutton
 	text_end
 
 _MtMoonB2FYouHaveNoRoomText::
 	text "Attends, ton"
 	line "inventaire est"
 	cont "plein!@"
+	text_waitbutton
 	text_end
 
 _MtMoonB2FSuperNerdTheyreBothMineText::
@@ -77,17 +77,20 @@ _MtMoon3TextSuperNerdNoFossil::
 	cont "Va le chercher!"
 	done	
 
+; TODO: parameterize
 _MtMoon3TextSuperNerdGaveHelix::
 	text "<PLAYER> donne le"
 	line "FOSSILE NAUTILE à"
-	cont "l'INTELLO!"
-	done
+	cont "l'INTELLO!@"
+	sound_get_item_1
+	text_end
 
 _MtMoon3TextSuperNerdGaveDome::
 	text "<PLAYER> donne le"
 	line "FOSSILE DOME à"
-	cont "l'INTELLO!"
-	done
+	cont "l'INTELLO!@"
+	sound_get_item_1
+	text_end
 
 _MtMoon3TextSuperNerdGaveFossil::
 	text "Super! Je vais"
@@ -126,6 +129,7 @@ _MtMoon3TextSuperNerdLookingForMoreFossils::
 _MtMoonB2FSuperNerdThenThisIsMineText::
 	text "OK, je prends"
 	line "celui-ci!@"
+	sound_get_key_item
 	text_end
 
 _MtMoonB2FRocket1BattleText::

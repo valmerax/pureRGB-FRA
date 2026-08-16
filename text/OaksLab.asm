@@ -54,6 +54,7 @@ _OaksLabReceivedMonText::
 	line "@"
 	text_ram wNameBuffer
 	text "!@"
+	sound_get_key_item
 	text_end
 
 _OaksLabLastMonText::
@@ -138,6 +139,7 @@ _OaksLabOak1ReceivedPokeballsText::
 
 _OaksLabGivePokeballsExplanationText::
 	text_start
+
 	para "Quand un #MON"
 	line "sauvage apparaît,"
 	cont "il faut jouer"
@@ -262,6 +264,7 @@ _OaksLabRivalReceivedMonText::
 	line "un @"
 	text_ram wNameBuffer
 	text "!@"
+	sound_get_key_item
 	text_end
 
 _OaksLabRivalIllTakeYouOnText::
@@ -334,6 +337,7 @@ _OaksLabOakGotPokedexText::
 
 	para "<PLAYER> obtient"
 	line "le #DEX!@"
+	sound_get_key_item
 	text_end
 
 _OaksLabOakThatWasMyDreamText::

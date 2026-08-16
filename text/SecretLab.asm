@@ -287,13 +287,15 @@ _SecretLabMewtwoTransformNormalText::
 _SecretLabMewtwoGotArmorText::
 	text "La machine a"
 	line "équipé MEWTWO"
-	cont "d'une armure!"
-	done
+	cont "d'une armure!@"
+	sound_get_item_2
+	text_end
 
 _SecretLabMewtwoRemovedArmorText::
 	text "L'armure de MEWTWO"
-	line "a été retirée!"
-	done
+	line "a été retirée!@"
+	sound_get_item_1
+	text_end
 
 _SecretLabMewtwoTransformCompleteText::
 	text "PROCESSUS"

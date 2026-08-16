@@ -114,5 +114,6 @@ _DexRatingText_Own140To149::
 _DexRatingText_Own150To151::
 	text "Ton #DEX est"
 	line "complet!"
-	cont "Félicitations!"
+	cont "@"
+	text_far _GenericCongratulationsText
 	done

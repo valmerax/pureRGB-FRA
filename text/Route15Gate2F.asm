@@ -42,4 +42,5 @@ _Route15GateUpstairsRemoveBoosterText::
 _Route15GateUpstairsDoneText::
 	text "C'est fait! Voici"
 	line "la PUCE EXP!@"
+	sound_get_item_1
 	text_end

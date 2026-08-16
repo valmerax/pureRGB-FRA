@@ -59,13 +59,9 @@ Ceci est une amélioration puriste de Pokemon Rouge/Bleu/Vert. L'objectif est d'
   - Un PNJ qui vous donnera LOKHLASS un peu plus tôt dans le jeu.
   - Un PNJ qui vous enseignera comment utiliser TUNNEL entre les villes tout comme vous pouvez utiliser VOL entre les villes.
 
-![blue gb](/screenshots/blue_title_gb_no_color.png?raw=true) ![blue gbc default](/screenshots/blue_title_default_gbc_color.png?raw=true) ![blue sgb colors](/screenshots/blue_title_sgb_colors_on_gbc.png?raw=true) ![blue sgb2 colors](/screenshots/blue_title_sgb2_colors_on_gbc.png?raw=true) ![blue gbc colors](/screenshots/blue_title_gbc_colors_on_gbc.png?raw=true)
+![titles](/screenshots/title_screens.png?raw=true)
 
-![red gb](/screenshots/red_title_gb_no_color.png?raw=true) ![red gbc default](/screenshots/red_title_default_gbc_color.png?raw=true) ![red sgb colors](/screenshots/red_title_sgb_colors_on_gbc.png?raw=true) ![red sgb2 colors](/screenshots/red_title_sgb2_colors_on_gbc.png?raw=true) ![red gbc colors](/screenshots/red_title_gbc_colors_on_gbc.png?raw=true)
-
-![green gb](/screenshots/green_title_gb_no_color.png?raw=true) ![green gbc default](/screenshots/green_title_default_gbc_color.png?raw=true) ![green sgb colors](/screenshots/green_title_sgb_colors_on_gbc.png?raw=true) ![green sgb2 colors](/screenshots/green_title_sgb2_colors_on_gbc.png?raw=true) ![green gbc colors](/screenshots/green_title_gbc_colors_on_gbc.png?raw=true)
-
-Illustrations : GB Monochrome, Couleurs originales GBC, Couleurs SGB, Couleurs SGB alternatives, Couleurs GBC (possibilité de choisir parmi les 4 options de couleur sur GBC en jeu).
+Lignes de haut en bas : Monochrome (GB), Couleurs originales (GBC), Couleurs SGB, Couleurs SGB alternatives, Couleurs GBC brutes, Couleurs GBC à l'écran (choix possible entre ces options de couleur en jeu sur GBC).
 
 ## Contacter le créateur
 
@@ -89,5 +85,7 @@ Mechanicalpen - code des icônes de menu améliorées.
 LJSTAR - La majeure partie du travail de création des icônes de type utilisées dans le movedex.
 
 Mord - La majeure partie du travail de création des sprites de Major Bob et Erika.
+
+NarishmaGB - Informations sur la façon de réduire les données de bordure SGB pour économiser 900 octets.
 
 pret discord et pret en général pour leur travail de décompilation sur Rouge / Bleu.

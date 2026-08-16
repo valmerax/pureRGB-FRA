@@ -41,6 +41,7 @@ _SafariZoneEntranceSafariBallsReceived::
 
 	para "<PLAYER> reçoit"
 	line "30 SAFARI BALL!@"
+	sound_get_item_1
 	text_end
 
 _SafariZoneRangerHunt::

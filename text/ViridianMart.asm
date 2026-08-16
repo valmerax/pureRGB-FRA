@@ -20,6 +20,7 @@ _ViridianMartClerkParcelQuestText::
 
 	para "<PLAYER> obtient"
 	line "le COLIS DE CHEN!@"
+	sound_get_key_item
 	text_end
 
 _ViridianMartYoungsterText::

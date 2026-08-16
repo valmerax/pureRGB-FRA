@@ -96,7 +96,9 @@ _ChampionsRoomOakText::
 
 _ChampionsRoomOakCongratulatesPlayerText::
 	text "CHEN: Tu as gagné!"
-	line "Félicitations!"
+	line "@"
+	text_far _GenericCongratulationsText
+	text_start
 	cont "Tu es le nouveau"
 	cont "champion de la"
 	cont "LIGUE #MON!"
