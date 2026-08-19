@@ -1429,7 +1429,7 @@ _PartyMenuItemUseText::
 	cont "sur quel <PK><MN>?"
 	done
 
-_PartyMenuItemUseBattleText::
+_PartyMenuItemUseFullText::
 	text "Utiliser"
 	line "@"
 	text_ram_namebuffer
