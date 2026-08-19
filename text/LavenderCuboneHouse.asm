@@ -38,19 +38,18 @@ _LavenderCuboneLearnset::
 _LightChannelerGreeting::
 	text "Je suis l'EXORCISTE"
 	line "DE LUMIERE."
-	para "J'adore les"
-	line "charmes, la"
-	cont "divination, les"
+	para "J'adore la"
+	line "divination, les"
 	cont "enchantements et"
 	cont "surtout les"
 	cont "purifications!"
 	para "Je peux lever"
 	line "n'importe quelle"
 	cont "malédiction."
-	para "Si tu pense qu'un"
-	line "de tes #MON"
-	cont "est maudit,"
-	cont "vient me voir."
+	para "Si un de tes"
+	line "#MON est"
+	cont "maudit, viens me"
+	cont "voir."
 	done
 
 _LightChannelerHaunter::
@@ -60,19 +59,17 @@ _LightChannelerHaunter::
 	para "Tu veux que je"
 	line "lève cette"
 	cont "malédiction?"
-	para "Il devrait retrou-"
-	line "ver l'apparence"
-	cont "d'un ECTOPLASMA."
+	para "Il retrouvera"
+	line "l'apparence d'un"
+	cont "ECTOPLASMA."
 	done
 
 _LightChannelerHaunterNo::
-	text "Il ne faut pas"
-	line "prendre les"
-	cont "malédictions à la"
+	text "Ne prends pas les"
+	line "malédictions à la"
 	cont "légère."
-	para "Viens me parler"
-	line "quand tu voudras"
-	cont "lever la"
+	para "Viens me parler si"
+	line "tu veux lever la"
 	cont "malédiction."
 	done
 

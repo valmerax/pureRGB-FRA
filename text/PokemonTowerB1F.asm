@@ -1,6 +1,6 @@
 _DarkChannelerGreeting::
-	text "Je suis l'EXORCISTE"
-	line "SOMBRE."
+	text "Je suis"
+	line "l'EXORCISTE SOMBRE."
 	prompt
 
 _DarkChannelerGreeting2::
@@ -8,13 +8,11 @@ _DarkChannelerGreeting2::
 	line "des catacombes de"
 	cont "la TOUR #MON."
 	para "Crois-moi, tu ne"
-	line "veux surtout pas"
-	cont "y descendre."
+	line "veux pas y aller."
 	para "C'est terrifiant!"
 	para "Seuls les"
 	line "EXORCISTES"
-	cont "peuvent y"
-	cont "descendre."
+	cont "peuvent s'y rendre."
 	prompt
 
 _DarkChannelerBackToMyself::
@@ -24,10 +22,9 @@ _DarkChannelerBackToMyself::
 
 _DarkChannelerGreeting3::
 	text "J'adore les"
-	line "malédictions, les"
-	cont "incantations, les"
+	line "envoûtements, les"
 	cont "sorts et surtout"
-	cont "les envoûtements!"
+	cont "les malédictions!"
 	para "D'ailleurs, j'ai"
 	line "une malédiction"
 	cont "parfaite pour un"
@@ -43,10 +40,9 @@ _DarkChannelerGengar::
 	text "Ah, bravo!"
 	line "C'est malin!"
 	para "Tu as amené un"
-	line "ECTOPLASMA avec"
-	cont "toi!!"
-	para "Je sens une terri-"
-	line "ble malédiction"
+	line "ECTOPLASMA!!"
+	para "Je sens une"
+	line "malédiction"
 	cont "monter en moi!"
 	para "Fais gaffe!"
 	prompt
@@ -63,7 +59,7 @@ _DarkChannelerGengarCurseTime::
 	done
 
 _DarkChannelerCurseComplete::
-	text "Kekekekeke!"
+	text "Kekeke!"
 	para "Ton ECTOPLASMA"
 	line "est maudit!!"
 	para "Il a repris"
@@ -71,12 +67,11 @@ _DarkChannelerCurseComplete::
 	cont "SPECTRUM!"
 	para "<...>"
 	para "<...>"
-	para "Mais à part ça,"
-	line "c'est toujours"
-	cont "un ECTOPLASMA."
+	para "Mais c'est toujours"
+	line "un ECTOPLASMA."
 	para "Même ses stats!"
 	para "Pas mal comme"
 	line "malédiction, non?"
-	para "Tu as les genoux"
-	line "qui tremblent?"
+	para "Tes genoux"
+	line "tremblent?"
 	done

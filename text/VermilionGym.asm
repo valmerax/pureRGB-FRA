@@ -26,17 +26,16 @@ _VermilionGymLTSurgePreBattleText::
 	done
 
 _VermilionGymGarbageNearSurgeText::
-	text "Une canette vide "
+	text "Une canette vide"
 	line "dans la poubelle."
-	para "RATION DE COMBAT"
-	line "FROMAGE CHEDDAR"
-	cont "est écrit dessus."
+	para "C'est écrit:"
+	line "RATION DE COMBAT"
+	cont "FROMAGE CHEDDAR"
 	done
 
 _VermilionGymBookshelfText::
-	text "Une collection de"
-	line "livres sur des"
-	cont "thèmes militaires."
+	text "Des livres"
+	line "militaires."
 	para "L'HISTOIRE D'UNE"
 	line "RECRUE #MON,"
 	para "RECONNAISSANCE"

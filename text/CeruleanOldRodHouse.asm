@@ -26,8 +26,7 @@ _CeruleanOldRodHouseOldRodInfo::
 
 _CeruleanOldRodHouseFoodText::
 	text "Woah! Un plat de"
-	line "poisson vraiment"
-	cont "raffiné!"
+	line "poisson raffiné!"
 	prompt
 
 _CeruleanOldRodHouseFoodText2::

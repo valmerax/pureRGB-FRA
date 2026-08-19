@@ -326,9 +326,9 @@ _GrimerEventGirlText::
 ; SPOOKY BALL
 
 _GastlyCameraText::
-	text "FILLE: Oh, tu veux"
-	line "me prendre en"
-	cont "photo?"
+	text "FILLETTE: Oh, tu"
+	line "veux me prendre"
+	cont "en photo?"
 	para "Hihihi. D'accord!"
 	para "Mais ne t'affole"
 	line "pas!"
@@ -339,7 +339,7 @@ _GastlyYikesText::
 	para "Il y a un"
 	line "FANTOMINUS devant"
 	cont "l'APP. PHOTO!"
-	para "FILLE: Hahaha!"
+	para "FILLETTE: Hihihi!"
 	para "Mon FANTOMINUS t'a"
 	line "fait peur?"
 	para "Il était caché!"

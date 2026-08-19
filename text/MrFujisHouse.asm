@@ -36,11 +36,11 @@ _MrFujisHousePsyduckText::
 	text_end
 
 _MrFujisHousePsyduck2Text::
-	text "FILLE: Notre"
+	text "FILLETTE: Notre"
 	line "PSYKOKWAK"
 	cont "s'appelle COUAC."
-	para "Il est un peu tête"
-	line "en l'air."
+	para "Il est tête en"
+	line "l'air."
 	para "Il est tombé dans"
 	line "un puits."
 	para "On l'a sorti avec"
@@ -56,14 +56,14 @@ _MrFujisHouseNidorinoText::
 	done
 
 _MrFujisHouseNidorino2Text::
-	text "Voici notre"
+	text "C'est notre"
 	line "NIDORINO."
 	para "Il s'appelle PIKO."
 	para "Nous l'avons sauvé!"
 	para "Il avait une patte"
-	line "blessée suite à"
-	cont "un éboulement sur"
-	cont "la ROUTE 10."
+	line "blessée après un"
+	cont "éboulement sur la"
+	cont "ROUTE 10."
 	para "Maintenant, il est"
 	line "fort et en pleine"
 	cont "forme!"

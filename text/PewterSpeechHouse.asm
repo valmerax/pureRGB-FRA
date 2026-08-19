@@ -29,18 +29,16 @@ _PewterHouse2Text3Intro::
 	text "Mon mari a perdu"
 	line "son portefeuille!"
 
-	para "Il est tellement"
-	line "distrait! Il ne"
-	cont "s'en soucie même"
-	cont "pas!"
+	para "Il est distrait!"
+	line "Et ne s'en soucie"
+	cont "même pas!"
 
 	para "Je récompenserai"
 	line "la personne qui"
 	cont "le retrouvera!"
 
-	para "Il l'a sûrement"
-	line "oublié au"
-	cont "MUSEE d'ARGENTA."
+	para "Il a dû l'oublier"
+	line "au MUSEE d'ARGENTA."
 	done
 
 _PewterHouse2Text3Found::
@@ -51,8 +49,7 @@ _PewterHouse2Text3Found::
 	line "étaient dedans!"
 
 	para "On part bientôt"
-	line "en croisière"
-	cont "sur l'océan!"
+	line "en croisière!"
 
 	para "Je suis styliste"
 	line "et éleveuse de"
@@ -85,10 +82,10 @@ _PewterHouse2Text3Found::
 	cont "veux!"
 
 	para "Mon tout premier!"
-	line "L'ABRA POCKET!"
+	line "Le ABRA POCKET!"
 
 	para "Il tient dans ton"
-	line "et peut te"
+	line "sac et peut te"
 	cont "téléporter chez"
 	cont "toi quand tu"
 	cont "veux! Pratique!"

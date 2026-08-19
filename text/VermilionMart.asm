@@ -29,9 +29,9 @@ _VermilionMartCooltrainerFText::
 	done
 
 _VermilionMartTMKidFlavor::
-	text "<PARA>Le vendeur ici"
-	line "pense que copier"
-	cont "et vendre des <CT>"
+	text "<PARA>Ce vendeur pense"
+	line "que copier et"
+	cont "vendre des <CT>"
 	cont "est mal!"
 
 	para "Il ignore que mon"

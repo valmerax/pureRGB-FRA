@@ -177,7 +177,6 @@ INCLUDE "text/CeruleanGym.asm"
 INCLUDE "text/BikeShop.asm"
 INCLUDE "text/CeruleanMart.asm"
 INCLUDE "text/CeruleanBadgeHouse.asm"
-INCLUDE "text/CeruleanOldRodHouse.asm"
 INCLUDE "text/LavenderPokecenter.asm"
 INCLUDE "text/PokemonTower1F.asm"
 INCLUDE "text/PokemonTower2F.asm"
@@ -194,8 +193,6 @@ INCLUDE "text/VermilionPokecenter.asm"
 INCLUDE "text/PokemonFanClub.asm"
 INCLUDE "text/VermilionMart.asm"
 INCLUDE "text/VermilionGym.asm"
-
-INCLUDE "text/PokemonTowerB1F.asm"
 
 
 SECTION "Text 8", ROMX
@@ -281,6 +278,7 @@ INCLUDE "text/SafariZoneNewRestHouseText.asm"
 SECTION "Text 11", ROMX
 
 INCLUDE "data/text/text_7.asm"
+INCLUDE "text/CeruleanOldRodHouse.asm"
 INCLUDE "text/CeruleanRocketHouse.asm"
 INCLUDE "text/CeladonMart1FPhoneCalls.asm"
 INCLUDE "text/PalletPhoneResultEvents.asm"
@@ -295,6 +293,7 @@ INCLUDE "text/DiamondMine.asm"
 INCLUDE "text/ViridianSchoolHouseQuiz.asm"
 INCLUDE "text/SaffronAbandonedBuilding.asm"
 INCLUDE "text/CinnabarVolcano.asm"
+INCLUDE "text/PokemonTowerB1F.asm"
 
 
 SECTION "Text 13", ROMX

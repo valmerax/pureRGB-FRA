@@ -150,8 +150,7 @@ _PewterGymGuidePostBattleText::
 	prompt
 
 _PewterGymGuideApexChipText::
-	text "Je veux que tu les"
-	line "prennes!"
+	text "Prends ça!"
 	prompt
 
 _ReceivedApexChipsText::
@@ -164,7 +163,7 @@ _ApexChipExplanationText::
 	text_start
 
 	para "La PUCE APEX est"
-	line "une puce spéciale"
+	line "une technologie"
 	cont "que j'ai mise au"
 	cont "point."
 	
@@ -172,15 +171,14 @@ _ApexChipExplanationText::
 	line "la # BALL d'un"
 	cont "#MON."
 
-	para "Elle simule"
-	line "l'environnement"
-	cont "sauvage naturel"
+	para "Elle simule l'envi-"
+	line "ronnement naturel"
 	cont "du #MON à"
-	cont "l'intérieur de sa"
-	cont "# BALL!"
+	cont "l'intérieur de"
+	cont "sa # BALL!"
 
 	para "Elle rend les"
-	line "#MON heureux,"
+	line "#MON heureux"
 	para "et les aide à"
 	line "atteindre leur"
 	cont "plein potentiel!"
@@ -193,17 +191,14 @@ _ApexChipExplanationText::
 	line "de type ROCHE, la"
 	cont "PUCE APEX simule"
 	cont "une crête acérée"
-	cont "et accidentée"
 	cont "avec des réseaux"
 	cont "de grottes et un"
-	cont "relief montagneux"
-	cont "abrupt."
+	cont "relief montagneux."
 	prompt
 
 _AlreadyReceivedApexChipsText::
-	text "Viens me parler"
-	line "à la prochaine"
-	cont "ARENE!"
+	text "Retrouve-moi à la"
+	line "prochaine ARENE!"
 	para "Si tu bats le"
 	line "CHAMPION,"
 	para "je te donnerai"

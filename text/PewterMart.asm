@@ -25,12 +25,13 @@ _PewterMartTMKid::
 	cont "BOUTIQUES <PKMN>"
 	cont "sont si nulles?"
 
-	para "Il faut que je"
-	line "fasse quelque"
-	cont "chose. J'espère"
-	cont "qu'ils ne seront"
-	cont "pas contre un peu"
-	cont "de concurrence!"
+	para "Il faut faire"
+	line "quelque chose."
+
+	para "J'espère qu'ils ne"
+	line "seront pas contre"
+	cont "un peu de"
+	cont "concurrence!"
 
 	para "Quand papa et moi"
 	line "arriverons à la"
@@ -41,6 +42,6 @@ _PewterMartTMKid::
 	para "Il me faut aussi"
 	line "un nom cool!"
 	cont "Voyons voir<...>"
-	cont "le gamin <CT>?"
+	cont "le GAMIN <CT>?"
 	cont "Non<...>pas ça<...>"
 	done

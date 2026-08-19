@@ -531,7 +531,7 @@ _TurnPageText::
 	done
 
 _ViridianSchoolNotebookText5::
-	text "FILLE" ; fall through
+	text "FILLETTE" ; fall through
 _ViridianSchoolHeyDontLookAtNotes::
 	db ": Hé! Ne lis"
 	line "pas mon journal!@"

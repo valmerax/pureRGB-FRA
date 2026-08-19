@@ -41,12 +41,11 @@ _LavenderMartTMKidFlavor::
 	cont "intoxication"
 	cont "alimentaire!"
 	
-	para "Tu te rends"
-	line "compte?"
+	para "Tu crois ça?"
 	
 	para "Ca doit être le"
 	line "pâté d'anguilles"
-	cont "qu'il a mangée à"
+	cont "qu'il a mangé à"
 	cont "bord de L'OCEANE."
 
 	para "Il se remet à"

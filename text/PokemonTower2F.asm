@@ -70,14 +70,14 @@ _PokemonTower2FChannelerText2::
 	done
 
 _PokemonTower2FChannelerText3::
-	text "Merci pour toute"
-	line "ton aide!"
+	text "Merci pour ton"
+	line "aide!"
 	done
 
 _PokemonTower2FChannelerTextBorrowSilphScope::
 	text "Avant de partir,"
-	line "tu pourrais peut-"
-	cont "être me prêter ce"
+	line "tu pourrais me"
+	cont "prêter ce"
 	cont "@"
 	text_ram_namebuffer
 	text "?"
