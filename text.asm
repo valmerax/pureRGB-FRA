@@ -247,7 +247,6 @@ INCLUDE "text/SaffronPidgeyHouse.asm"
 INCLUDE "text/SaffronMart.asm"
 INCLUDE "text/SilphCo1F.asm"
 INCLUDE "text/SaffronPokecenter.asm"
-INCLUDE "text/FossilGuysHouse.asm"
 INCLUDE "text/CeladonChiefHouse.asm"
 
 INCLUDE "data/text/text_4.asm"
@@ -310,6 +309,7 @@ INCLUDE "text/CeruleanBallDesigner.asm"
 INCLUDE "text/CameraEvents.asm"
 INCLUDE "text/OptionsInfoText.asm"
 INCLUDE "text/FightingBrosHouse.asm"
+INCLUDE "text/FossilGuysHouse.asm"
 
 
 SECTION "Pokédex Text", ROMX
