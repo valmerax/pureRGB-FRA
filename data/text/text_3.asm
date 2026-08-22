@@ -315,9 +315,9 @@ _HitWithRecoilText::
 	cont "frappant!"
 	prompt
 
-_ConvertedTypeText::
-	text "Son élément"
-	line "s'adapte!"
+_ConversionChooseModeText::
+	text "S'adapter vers"
+	line "quel mode?"
 	prompt
 
 _StatusChangesEliminatedText::

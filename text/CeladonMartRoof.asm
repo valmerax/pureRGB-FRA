@@ -3,7 +3,7 @@ _CeladonMartRoofLittleGirlGiveHerWhichDrinkText::
 	line "lui offrir?"
 	done
 
-_CeladonMartRoofLittleGirlYayFreshWaterText::
+_CeladonMartRoofLittleGirlYayText::
 	text "Ouais ouais!"
 
 	para "DE L'EAU!"

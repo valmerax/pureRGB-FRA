@@ -163,7 +163,7 @@ _ViridianPokecenterBenchGuyText::
 	cont "blessés ou K.O.!"
 	done
 
-PewterPokecenterBenchGuyText::
+_PewterPokecenterBenchGuyText::
 	text "(Baille)!"
 
 	para "Lorsque RONDOUDOU"

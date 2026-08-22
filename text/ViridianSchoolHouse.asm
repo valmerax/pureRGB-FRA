@@ -32,7 +32,7 @@ _SchoolB1FGuyNearStairs::
 	line "les #MON SOL à"
 	cont "JADIELLE!"
 
-	para "C'est donc naturel"
+	para "C'est logique"
 	line "d'étudier sous"
 	cont "terre!"
 	done
