@@ -144,11 +144,11 @@ PlaceMoveUsersName::
 	ld de, wBattleMonNick
 	jr z, PlaceCommandCharacter
 .enemy
-	ld de, EnemyText
+	ld de, wEnemyMonNick
 	call PlaceString
 	ld h, b
 	ld l, c
-	ld de, wEnemyMonNick
+	ld de, EnemyText
 	jr PlaceCommandCharacter
 
 LineChar::
@@ -368,6 +368,7 @@ TextShortcutCommandJumpTable:
 	dw PlaceDexEnd | TEXT_CODE_CMD_MARKER
 
 TrainerCharText:: db "DRES.@"
+EnemyText::       db " ennemi@"
 TeamCharText::    db "TEAM @"
 RocketCharText::  db "ROCKET@"
 ThreeDotsText::   db "...@"
