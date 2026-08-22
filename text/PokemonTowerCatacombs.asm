@@ -72,8 +72,7 @@ _PokemonTowerCatacombsChunkyAfterText::
 	para "Elle me donnait"
 	line "plein de bonnes"
 	cont "choses à manger!"
-	para "Mais je crois que"
-	line "j'ai abusé!"
+	para "Mais j'ai abusé!"
 	para "Oups!"
 	para "Tu as quelque"
 	line "chose à manger?"
@@ -108,10 +107,10 @@ _PokemonTowerCatacombsPainlessGraveText2::
 _PokemonTowerCatacombsPainlessAfterText::
 	text ""
 	para "Mon dresseur m'a"
-	line "fait combattre si"
-	cont "fort que j'ai subi"
-	cont "des lésions"
-	cont "irréversibles!"
+	line "fait combattre au"
+	cont "fort que j'ai"
+	cont "eu de graves"
+	cont "lésions!"
 	para "Je voulais lui"
 	line "faire plaisir!"
 	para "On aurait dû"
@@ -143,8 +142,7 @@ _PokemonTowerCatacombsIrradiatedAfterText::
 	para "Mon dresseur et"
 	line "moi avons péri"
 	cont "dans une grotte"
-	cont "interdite au"
-	cont "public!"
+	cont "fermée au public!"
 	para "On ne savait pas"
 	line "que c'était un"
 	cont "site de stockage"
@@ -167,7 +165,7 @@ _PokemonTowerCatacombsDarkChannelerTextYes::
 _GhostMarowakAfterGiovanniText::
 	text "<PLAYER>!"
 	para "C'est le SPECTRE"
-	line "d'OSSATUEUR qui"
+	line "de OSSATUEUR qui"
 	cont "te parle via le"
 	cont "ROI du KARATE."
 	para "Merci d'avoir"
@@ -177,9 +175,8 @@ _GhostMarowakAfterGiovanniText::
 	line "souhait était de"
 	cont "contribuer à leur"
 	cont "chute."
-	para "Si tu le peux,"
-	line "emmène-moi au"
-	cont "sous-sol de la"
+	para "Emmène-moi au"
+	line "sous-sol de la"
 	cont "TOUR #MON."
 	para "Là-bas, je pourrai"
 	line "enfin reposer en"
@@ -189,7 +186,7 @@ _GhostMarowakAfterGiovanniText::
 _ViridianGymHiker3WhatText::
 	text "Hein??"
 	para "Que s'est-il passé?"
-	para "Comment suis-je"
+	para "Comment je suis"
 	line "arrivé ici?"
 	done
 
@@ -199,13 +196,12 @@ _DarkChannelerGoDownText::
 	cont "#MON."
 	para "Hoho! La mère"
 	line "OSSATUEUR?"
-	para "Elle souhaite"
-	line "reposer en paix"
-	cont "dans sa tombe,"
-	cont "c'est bien ça?"
+	para "Elle veut reposer"
+	line "en paix dans sa"
+	cont "tombe, c'est ça?"
 	para "C'est en bas, dans"
 	line "les catacombes."
-	para "Je vais te laisser"
+	para "Je te laisse"
 	line "descendre, juste"
 	cont "pour cette fois."
 	para "Tu veux y aller?"
@@ -215,10 +211,9 @@ _DarkChannelerCatacombsIntroText::
 	text "Suis le chemin"
 	line "jusqu'à la tombe"
 	cont "de OSSATUEUR!"
-	para "Mais tu risque"
+	para "Mais tu risques"
 	line "de croiser des"
-	cont "esprits errants"
-	cont "en chemin."
+	cont "esprits errants."
 	para "Tiens! Utilise mon"
 	line "BATON d'EXORCISTE."
 	para "Il révèle et"
@@ -250,15 +245,14 @@ _PainlessBattleInitText::
 
 _IrradiatedBattleInitText::
 	text "Des radiations se"
-	line "répandent partout!"
+	line "répandent!"
 	prompt
 
 _IrradiatedGrowsLarger::
 	text "IRRADIE se tord et"
 	line "se contorsionne,"
 	para "son corps se"
-	line "métamorphose"
-	cont "bizarrement!"
+	line "métamorphose!"
 	prompt
 
 _CatacombsCuboneText::
@@ -271,19 +265,17 @@ _CatacombsMarowakTouchedText::
 	text "@"
 	text_ram_namebuffer
 	text " a l'air"
-	line "vraiment heureux!"
+	line "vraiment heureuse!"
 	done
 
 _DarkChannelerReunionText::
-	text "Quelles"
-	line "retrouvailles"
-	cont "émouvantes!"
+	text "Quelles émouvantes"
+	line "retrouvailles!"
 	para "Mais @"
 	text_ram_namebuffer
-	text ""
-	line "ne peut pas"
-	cont "encore reposer"
-	cont "en paix!"
+	text " ne"
+	line "peut pas encore"
+	cont "reposer en paix!"
 	para "Une présence"
 	line "maléfique rôde"
 	cont "dans les parages!"
@@ -297,9 +289,8 @@ _PokemonTowerCatacombsTheMawGraveText::
 	line "NOSFERALTO CONNU"
 	para "Ce NOSFERALTO a"
 	line "tué son dresseur"
-	cont "et a ensuite"
-	cont "commis des crimes"
-	cont "violents."
+	cont "et commis d'autres"
+	cont "actes violents."
 	para "On ignore s'il"
 	line "avait un surnom.@"
 	text_jump _PokemonTowerCatacombsWavedStaff
@@ -317,16 +308,15 @@ _PokemonTowerB1FTheMawUsedHyperBeamText::
 _PokemonTowerB1FMarowakBlockedHyperBeamText::
 	text "@"
 	text_ram_namebuffer
-	text " empêche"
-	line "ULTRALASER"
-	cont "d'atteindre"
-	cont "OSSELAIT!"
+	text " bloque"
+	line "ULTRALASER pour"
+	cont "sauver OSSELAIT!"
 	para "Mais le rayon est"
 	line "trop puissant!"
 	para "@"
 	text_ram_namebuffer
 	text " ne peut"
-	line "plus maintenir sa"
+	line "plus garder sa"
 	cont "forme physique!"
 	done
 
@@ -377,8 +367,8 @@ _GhostMarowakOneLastTime::
 	text_ram wTrainerName
 	text " puise"
 	line "dans ses forces"
-	cont "restantes pour se"
-	cont "montrer une toute"
+	cont "restantes pour"
+	cont "se montrer une"
 	cont "dernière fois."
 	prompt
 
@@ -389,9 +379,8 @@ _PokemonTowerGhostMarowakAfterText::
 	line "reposer en paix!"
 	para "Je t'aime,"
 	line "OSSELAIT!"
-	para "Mais il est temps"
-	line "pour maman de"
-	cont "partir."
+	para "Il est temps pour"
+	line "maman de partir."
 	para "Ne sois pas"
 	line "triste."
 	para "Profite de la vie"

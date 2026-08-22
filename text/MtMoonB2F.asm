@@ -1,3 +1,4 @@
+; TODO: rollback text
 _MtMoonB2FFossilYouWantText::
 	text "Tu veux le"
 	line "@"
@@ -53,29 +54,26 @@ _MtMoonB2FSuperNerdTheresAPokemonLabText::
 	done
 
 _MtMoon3TextSuperNerdGiveFossil::
-	text "J'ai l'intention"
-	line "d'y emmener mon"
-	cont "fossile!"
+	text "Je vais y emmener"
+	line "mon fossile!"
 
-	para "Je te propose ça:"
+	para "J'ai une idée:"
 
-	para "Si tu me donnes"
-	line "ton fossile, je"
-	cont "peux l'apporter au"
-	cont "labo et voir s'il"
-	cont "peut être"
+	para "Donne-moi ton"
+	line "fossile et je"
+	cont "l'apporterai au"
+	cont "labo pour voir"
+	cont "s'il peut être"
 	cont "régénéré!"
 
 	para "Qu'en dis-tu?@"
 	text_end
 
 _MtMoon3TextSuperNerdNoFossil::
-	text "On dirait que tu"
-	line "n'as pas ton"
-	cont "fossile dans ton"
-	cont "sac."
-	cont "Va le chercher!"
-	done	
+	text "Tu n'as pas ton"
+	line "fossile avec toi."
+	cont "Récupère-le!"
+	done
 
 ; TODO: parameterize
 _MtMoon3TextSuperNerdGaveHelix::
@@ -94,15 +92,15 @@ _MtMoon3TextSuperNerdGaveDome::
 
 _MtMoon3TextSuperNerdGaveFossil::
 	text "Super! Je vais"
-	line "essayer de faire"
+	line "tenter de faire"
 	cont "revivre les deux"
 	cont "fossiles."
 	prompt
 
 _MtMoon3TextSuperNerdKeptFossil::
-	text "Pas de soucis!"
-	para "C'est ton fossile"
-	line "après tout."
+	text "OK, c'est ton"
+	line "fossile après"
+	cont "tout."
 	done
 
 _MtMoon3TextSuperNerdGaveFossilEnd::
@@ -119,7 +117,6 @@ _MtMoon3TextSuperNerdLookingForMoreFossils::
 
 	para "Je n'en ai pas"
 	line "encore trouvé!"
-	cont "Tant pis."
 
 	para "Je vis pour la"
 	line "chasse aux"
@@ -134,9 +131,9 @@ _MtMoonB2FSuperNerdThenThisIsMineText::
 
 _MtMoonB2FRocket1BattleText::
 	text "La <TEAM><ROCKET>"
-	line "trouvera les "
+	line "trouvera les"
 	cont "fossiles et fera"
-	cont "fortune en les "
+	cont "fortune en les"
 	cont "vendant!"
 	done
 

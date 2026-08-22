@@ -18,20 +18,19 @@ _CinnabarVolcanoBombRocksTextDone::
 	done
 
 _CinnabarVolcanoProspectorGreetingNotMetText::
-	text "Hé, petit!"
-	para "Cet endroit est"
-	line "dangereux!"
-	para "Tu fais quoi ici?"
-	para "Tiens! Tu as des"
+	text "Hé, p'tit!"
+	para "C'est dangereux"
+	line "ici!"
+	para "Tu fais quoi là?"
+	para "Tiens! T'as des"
 	line "#MON costauds!"
 	prompt
 
 _CinnabarVolcanoProspectorGreetingMetText::
 	text "PROSPECTEUR:"
-	line "Salut, petit!"
-	para "Te revoilà!"
+	line "Te revoilà, p'tit!"
 	para "Tu tombes à pic!"
-	para "Tu as des #MON"
+	para "T'as des #MON"
 	line "bien costauds!"
 	prompt
 
@@ -63,7 +62,7 @@ _CinnabarVolcanoProspectorLetsGo::
 	done
 
 _CinnabarVolcanoProspectorHeresProblem::
-	text "Bon petit, voilà"
+	text "Bon p'tit, voilà"
 	line "le problème<...>"
 	prompt
 
@@ -92,15 +91,16 @@ _CinnabarVolcanoProspectorBlowRocks::
 	line "fais-les sauter,"
 	para "brise-les, fais-"
 	line "les fondre<...>"
-	para "Bref, détruis-les!"
+	para "Bref,"
+	line "détruis-les!"
 	prompt
 
 _CinnabarVolcanoGiveDrill::
 	text "Tu devras creuser"
-	line "plus profond dans"
+	line "profondément dans"
 	cont "le volcan!"
-	para "Il n'y a pas encore"
-	line "de chemin pour"
+	para "Il n'y a pas de"
+	line "chemin pour"
 	cont "descendre, alors"
 	cont "prends la FOREUSE!"
 	prompt
@@ -114,8 +114,8 @@ _CinnabarVolcanoDrill::
 	text "Appuie sur SELECT"
 	line "pour utiliser la"
 	cont "FOREUSE."
-	para "Tu peux percer là"
-	line "où tu vois des"
+	para "Tu peux percer"
+	line "au niveau des"
 	cont "fissures!"
 	para "Mais ça consomme"
 	line "du carburant."
@@ -199,10 +199,9 @@ _RocksGoneText::
 	done
 
 _WhereRubiesText::
-	text "Il faut trouver"
-	line "des RUBIS pour"
-	cont "la FOREUSE!"
-	para "Ils devraient être"
+	text "Il faut des RUBIS"
+	line "pour la FOREUSE!"
+	para "Il doit y en avoir"
 	line "à cet étage!"
 	done
 
@@ -228,9 +227,8 @@ _RubyGotAllOfThemText::
 _RubyGoodToGo::
 	text "La FOREUSE est"
 	line "en marche!"
-	para "Il est temps de"
-	line "creuser jusqu'à"
-	cont "l'étage suivant!"
+	para "Creuse jusqu'à"
+	line "l'étage suivant!"
 	done
 
 _ItsRhydon::
@@ -263,8 +261,7 @@ _ItsGraveler::
 	para "Il profite d'un"
 	line "massage grâce au"
 	cont "flux de lave."
-	para "Il a l'air d'avoir"
-	line "faim."
+	para "Il a l'air affamé."
 	done
 
 _GiveGravelerRockSalts::
@@ -276,8 +273,7 @@ _GravelerMunching::
 	text "GRAVALANCH"
 	line "grignote les"
 	cont "SELS MINERAUX."
-	para "Il a l'air"
-	line "satisfait!"
+	para "Il a l'air ravi!"
 	done
 
 _ItsSickRhydon::
@@ -295,8 +291,8 @@ _GiveRhydonLimestone::
 	done
 
 _RhydonGrinded::
-	text "<PLAYER> réduit le"
-	line "CALCAIRE en fine"
+	text "<PLAYER> réduit"
+	line "le CALCAIRE en"
 	cont "poudre avec la"
 	cont "FOREUSE."
 	done
@@ -389,9 +385,8 @@ _VolcanoBlockagesGone::
 
 _VolcanoGoBackMainFloor::
 	text_start
-	para "Voyons voir"
-	line "comment ça se"
-	cont "passe en haut."
+	para "Voyons comment ça"
+	line "se passe en haut."
 	done
 
 _VolcanoBlaineJoinUs::
@@ -412,7 +407,7 @@ _VolcanoProspectorDone2::
 	text "Bon, ça va stopper"
 	line "l'éruption!"
 	para "Fichons le camp"
-	line "d'ici, petit!"
+	line "d'ici, p'tit!"
 	para "Je transpire comme"
 	line "un MYSTHERBE"
 	cont "devant un buffet"
@@ -436,25 +431,21 @@ _VolcanoProspectorRightBlaine::
 	prompt
 
 _VolcanoBlaineMessage1::
-	text "AUGUSTE: Bon, ça"
-	line "va calmer"
-	cont "l'éruption."
-	para "Cette chaleur est"
-	line "dingue!"
+	text "AUGUSTE: OK, ça va"
+	line "calmer l'éruption."
+	para "Quelle chaleur!"
 	para "J'espérais revoir"
 	line "cet oiseau de feu"
-	cont "que j'avais aperçu"
+	cont "que j'avais vu"
 	cont "jadis."
 	para "Tant pis!"
-	para "Peut-être que je"
-	line "le reverrai un"
-	cont "jour!"
+	para "Je le reverrai"
+	line "peut-être un jour!"
 	prompt
 
 _VolcanoBlaineMessageNotDone::
-	text "<PLAYER> c'est bien"
-	line "ça?"
-	para "Super boulot!"
+	text "<PLAYER> c'est ça?"
+	para "Bon travail!"
 	para "J'espère que tu"
 	line "viendras me"
 	cont "défier à l'ARENE"
@@ -470,7 +461,7 @@ _VolcanoBlaineMessageGymDone::
 	line "des 2 dresseurs"
 	cont "qui m'ont battu à"
 	cont "l'ARENE récemment!"
-	para "Continue comme ça!@"
+	para "Continue ainsi!@"
 	text_jump _VolcanoBlaineUntilNextTimeTextJump
 
 _VolcanoBlaineUntilNextTimeTextJump::
@@ -483,12 +474,11 @@ _VolcanoProspectorAfterMessage::
 	line "pour faire ce que"
 	cont "je fais de mieux:"
 	para "Prospecter!"
-	para "Tu as vu tous ces"
+	para "T'as vu tous ces"
 	line "RUBIS!"
-	para "Tu peux utiliser"
-	line "cette COMBI. LAVE"
-	cont "quand tu veux,"
-	cont "petit!"
+	para "Utilise cette"
+	line "COMBI. LAVE quand"
+	cont "tu veux, p'tit!"
 	done
 
 _VolcanoAvoidWestSide::
@@ -502,8 +492,7 @@ _VolcanoAvoidWestSide::
 
 _VolcanoGetToIt::
 	text "Je vais surveiller"
-	line "la quantité de"
-	cont "lave par ici."
+	line "la lave par ici."
 	para "Je me joindrais"
 	line "bien à toi, mais"
 	cont "je n'ai pas de"
@@ -511,35 +500,34 @@ _VolcanoGetToIt::
 	prompt
 
 _VolcanoNeedSomeInfo::
-	text "Hmm<...>tu as besoin"
+	text "Hmm<...> t'as besoin"
 	line "de plus d'infos?"
 	done
 
 _VolcanoGetToIt2::
-	text "Au boulot, petit!"
+	text "Au boulot, p'tit!"
 	done
 
 _FailedDrillFloorText::
-	text "La FOREUSE n'a plus"
-	line "de carburant!"
+	text "La FOREUSE est à"
+	line "sec!"
 	para "Trouve 3 RUBIS"
 	line "pour la"
 	cont "ravitailler!"
 	done
 
 _CinnabarVolcanoFloor2WarpTilesText::
-	text "Woah! C'est quoi,"
+	text "Wow! C'est quoi,"
 	line "ça?"
-	para "On dirait que la"
-	line "coulée de lave a"
-	cont "creusé le sol"
+	para "La coulée de lave"
+	line "a creusé le sol"
 	cont "là-bas!"
 	done
 
 _CinnabarVolcanoWestMagmar1Text::
-	text "De nombreux MAGMAR"
-	line "se détendent dans"
-	cont "la coulée de lave."
+	text "Des MAGMAR se"
+	line "détendent dans la"
+	cont "coulée de lave."
 	done
 
 _CinnabarVolcanoWestMagmar1QuestionText::
@@ -600,16 +588,15 @@ _CinnabarVolcanoWestMagmarTransformText4::
 	para "@"
 	text_ram_namebuffer
 	text " est"
-	line "immunisé contre"
-	cont "les attaques de"
-	cont "type EAU et FEU!"
+	line "immunisé aux"
+	cont "attaques EAU et"
+	cont "FEU!"
 	para "La puissance"
 	line "tectonique du"
 	cont "volcan le"
 	cont "traverse!"
-	para "Les attaques"
-	line "de type SOL"
-	cont "infligent plus"
+	para "Les attaques SOL"
+	line "infligent plus"
 	cont "de dégâts!"
 	done
 

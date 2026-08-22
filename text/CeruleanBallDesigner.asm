@@ -103,7 +103,7 @@ _CeruleanBallDesignerCameraText::
 	text "C'est un"
 	line "APP. PHOTO"
 	cont "instantané!"
-	para "Elle peut imprimer"
+	para "Il peut imprimer"
 	line "une photo juste"
 	cont "après l'avoir"
 	cont "prise!"
@@ -126,8 +126,7 @@ _CeruleanBallDesignerDarkRoomSignText::
 
 _CeruleanBallDesignerBallDisplayText::
 	text "Une # BALL en"
-	line "argent massif"
-	cont "est exposé!"
+	line "argent massif!"
 	para "La gravure dit:"
 	para "MERCI POUR VOTRE"
 	line "EXCELLENT TRAVAIL"
@@ -155,11 +154,10 @@ _CeruleanBallDesignerPosterText::
 	cont "nageuse rouge et"
 	cont "siffle."
 	para "Elle tend une"
-	line "nouvelle SUPER"
-	cont "BALL vers le"
-	cont "spectateur."
+	line "SUPER BALL vers"
+	cont "le spectateur."
 	para "“Pas besoin d'être"
-	line "sauvé-"
+	line "sauvé<...>"
 	para "quand vous avez"
 	line "une SUPER BALL!”"
 	para "-SYLPHE SARL"
@@ -167,7 +165,7 @@ _CeruleanBallDesignerPosterText::
 
 _CeruleanBallDesignerDesignerGreeting::
 	text "Je suis DESIGNER"
-	line "DE # BALL!"
+	line "de # BALL!"
 	para "La SYLPHE SARL"
 	line "crée des techno-"
 	cont "logies de capture"
@@ -175,14 +173,13 @@ _CeruleanBallDesignerDesignerGreeting::
 	cont "du design!"
 	para "Découvre ma"
 	line "création finale:"
-	para "Dans toute sa"
-	line "splendeur bleue!"
+	para "Dans sa splendeur"
+	line "bleue!"
 	prompt
 
 _CeruleanBallDesignerDesignerSecondTime::
-	text "Je note toutes mes"
-	line "nouvelles idées"
-	cont "sur ce carnet."
+	text "Je note mes idées"
+	line "sur ce carnet."
 	para "Idées de design"
 	line "pour # BALL!"
 	para "Argh, je ne trouve"
@@ -201,9 +198,8 @@ _CeruleanBallDesignerDesignerBecameAssistant::
 	text_end
 
 _CeruleanBallDesignerGoGetCamera::
-	text "Va dans ma CHAMBRE"
-	line "NOIRE là-bas et"
-	cont "récupère"
+	text "Va dans la CHAMBRE"
+	line "NOIRE et récupère"
 	cont "l'APP. PHOTO."
 
 	para "Prends des photos"
@@ -215,10 +211,10 @@ _CeruleanBallDesignerDesignerGotCamera::
 	text "Tu as mon nouvel"
 	line "APP. PHOTO?"
 	para "Super!"
-	para "J'ai noté quelques"
-	line "idées qui pourr-"
-	cont "aient m'inspirer"
-	cont "sur ce carnet!"
+	para "J'ai noté des"
+	line "idées pour"
+	cont "m'inspirer sur"
+	cont "ce carnet!"
 	para "Jette un oeil!"
 	done
 

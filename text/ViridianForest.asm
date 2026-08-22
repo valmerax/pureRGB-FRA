@@ -76,18 +76,16 @@ _ViridianForestEndBattleTextPikaGirl::
 	prompt
 
 _ViridianForestAfterBattleTextPikaGirl::
-	text "J'ai entendu dire"
-	line "qu'il y a des"
-	cont "PIKACHU sauvages"
-	cont "par ici!"
+	text "Il paraît qu'il y"
+	line "a des PIKACHU"
+	cont "sauvages par ici!"
 	para "Tu en as vu?"
 	done
 
 _ViridianForestBattleTextSamurai::
-	text "Je serai le"
-	line "meilleur. Tu ne"
-	cont "pourras pas me"
-	cont "battre!"
+	text "Je suis le plus"
+	line "fort. Tu ne peux"
+	cont "pas me battre!"
 	done
 
 _ViridianForestEndBattleTextSamurai::

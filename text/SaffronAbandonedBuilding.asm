@@ -36,8 +36,7 @@ _SaffronAbandonedBuildingRocket1GetOut::
 
 _SaffronAbandonedBuildingRocket1Guess::
 	text "On recrute des"
-	line "p'tits morveux"
-	cont "maintenant?!"
+	line "p'tits morveux?!"
 	done
 
 _SaffronAbandonedBuildingRocket2::

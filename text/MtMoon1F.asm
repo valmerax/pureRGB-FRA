@@ -120,12 +120,11 @@ _MtMoon1FYoungster3AfterBattleText::
 	done
 
 _MtMoon1FBewareZubatSign::
-	text "Fais gaffe! Les"
+	text "Attention! Les"
 	line "NOSFERAPTI sont"
 	cont "des vampires!"
 	para "Le panneau donne"
-	line "beaucoup d'infos"
-	cont "sur l'écologie et"
-	cont "la physiologie de"
+	line "des infos sur la"
+	cont "biologie de"
 	cont "NOSFERAPTI."
 	done

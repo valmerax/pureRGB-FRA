@@ -322,21 +322,21 @@ DEF TEXT_CODE_CMD_MARKER EQU $8000
 ; we can use the highest bit of these words as an indicator of what function to run for each.
 TextShortcutCommandJumpTable:
 	dw SuisText
-	dw UnSpaceText
+	dw UneText
 	dw YouText
 	dw EsSpaceText
 	dw IenText
 	dw SpaceASpaceText
 	dw SpaceLaText
 	dw HaveText
-	dw UnText
+	dw UnSpaceText
 	dw PlusText
 	dw DeSpaceText
 	dw SpaceDeText
-	dw LesText
-	dw EntText
 	dw QueText
 	dw EstText
+	dw EntText
+	dw LesText
 	dw OpponentText
 	dw UserText
 	dw PlaceMonText
@@ -376,19 +376,19 @@ OpponentText::    db "adversaire@"
 UserText::        db "<lanceur>@"
 PCCharText::      db "<PC>@"
 ; these have to be separated by a comma in order to not re-trigger the charmap macro that sets them up to be used automatically
+UneText::         db "u", "ne@"
+YouText::         db "Y", "ou@"
+EsSpaceText::     db "e", "s @"
+SpaceASpaceText:: db " ", "à @"
+UnSpaceText::     db "u", "n @"
+PlusText::        db "p", "lus@"
+DeSpaceText::     db "d", "e @"
+SpaceDeText::     db " ","de@"
 QueText::         db "q","ue@"
 EstText::         db "e","st@"
 EntText::         db "e","nt@"
 LesText::         db "l","es@"
-AisText::          db "a","is@"
-SpaceDeText::     db " ","de@"
-DeSpaceText::     db "d", "e @"
-UnSpaceText::     db "u", "n @"
-SpaceASpaceText:: db " ", "à @"
-EsSpaceText::     db "e", "s @"
-YouText::         db "Y", "ou@"
-UneText::         db "u", "ne@"
-PlusText::        db "p", "lus@"
+AisText::         db "a","is@"
 
 TextCommand_LOW::
 ; write text at (1,16)

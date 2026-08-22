@@ -54,13 +54,19 @@ _SkippedForever::
 	line "s'affichera plus."
 	prompt
 
+_ChooseAText::
+	db "Choisissez une"
+	done
+
 _ChooseABoxText::
-	text "Choisissez une"
+	text "@"
+	text_call _ChooseAText
 	line "BOITE <PKMN>.@"
 	text_end
 
 _ChooseABoxDataWillSaveText::
-	text "Choisissez une"
+	text "@"
+	text_call _ChooseAText
 	line "BOITE <PKMN>."
 
 	para "La partie sera"
@@ -386,8 +392,8 @@ _TradeCenterOpponentText::
 	done
 
 _GuardedAgainstSuperEffectiveMovesText::
-	text "<USER>"
-	line "est protégé contre"
+	text "<USER> est"
+	line "protégé contre"
 	para "les attaques"
 	line "super efficaces!"
 	prompt
@@ -403,15 +409,19 @@ _AllDamageHalvedText::
 	cont "moitié!"
 	prompt
 
-_SiphonSnagHealedUserText::
-	text "<USER>"
+_DrawsEnergy::
 	line "puise l'énergie"
+	done
+
+_SiphonSnagHealedUserText::
+	text "<USER>@"
+	text_call _DrawsEnergy
 	cont "et se soigne!"
 	prompt
 
 _SiphonSnagHealedPartyText::
-	text "<USER>"
-	line "puise l'énergie"
+	text "<USER>@"
+	text_call _DrawsEnergy
 	para "et soigne"
 	line "@"
 	text_ram_namebuffer

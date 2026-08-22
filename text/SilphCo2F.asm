@@ -12,25 +12,22 @@ _SilphCo2FSilphWorkerFTM50ExplanationText::
 	text "Voici la <CT>50:"
 	line "CLONAGE!"
 
-	para "Un leurre prendra"
+	para "Un leurre prend"
 	line "la place de ton"
 	cont "#MON."
-	para "Il subira les"
-	line "dégâts à sa"
-	cont "place!"
-	para "Un peu comme un"
-	line "imposteur<...>"
+	para "Il prend les"
+	line "dégâts pour lui!"
+	para "Un genre"
+	line "d'imposteur<...>"
 
-	para "Beaucoup de"
+	para "Comme certains"
 	line "membres de la"
-	cont "SYLPHE sont des"
-	cont "imposteurs!"
+	cont "SYLPHE!"
 	
 	para "Ce sont des"
 	line "espions <ROCKET>!"
-	cont "Ces serpents!"
 
-	para "Fait attention."
+	para "Sois prudent."
 	done
 
 _SilphCo2FSilphWorkerFTM50NoRoomText::

@@ -41,7 +41,7 @@ _CeladonMartCallDadCharmanderText::
 	prompt
 
 _CeladonMartCallOakText::
-	text "Professeur CHEN,"
+	text "PROF. CHEN,"
 	line "qu'y a-t-il?"
 	para "Ah, <PLAYER>?"
 	para "C'est rare de"
@@ -104,9 +104,9 @@ _CeladonMartCallOakTextHowsDaisy::
 	para "Parfois, elle"
 	line "donne un coup de"
 	cont "main au labo."
-	para "Je vais lui propo-"
-	line "ser une formation"
-	cont "pour devenir"
+	para "Je vais lui"
+	line "proposer de"
+	cont "devenir mon"
 	cont "assistante."
 	para "Les #MON sont"
 	line "plus détendus en"

@@ -6,13 +6,13 @@ _CeruleanOldRodHouseImTheFishingGuruText::
 _CeruleanOldRodHouseFishingIsAWayOfLifeText::
 	text_start
 
-	para "La pêche, c'est un"
+	para "La pêche est un"
 	line "art de vivre!"
 
 	para "De la mer aux"
 	line "rivières, sors et"
 	cont "attrape le gros"
-	cont "poisson, petit!"
+	cont "poisson, p'tit!"
 	done
 
 _CeruleanOldRodHouseOldRodInfo::

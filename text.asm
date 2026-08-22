@@ -23,7 +23,7 @@ INCLUDE "text/RocketHideoutElevator.asm"
 INCLUDE "text/SilphCo2F.asm"
 INCLUDE "text/SilphCo3F.asm"
 INCLUDE "text/SilphCo4F.asm"
-INCLUDE "text/SilphCo5F.asm"
+INCLUDE "text/CinnabarVolcano.asm"
 
 
 SECTION "Text 2", ROMX
@@ -138,6 +138,7 @@ INCLUDE "text/Route21.asm"
 INCLUDE "text/Route22.asm"
 INCLUDE "text/Route23.asm"
 INCLUDE "text/Route24.asm"
+INCLUDE "text/ViridianSchoolHouseQuiz.asm"
 INCLUDE "text/CinnabarLabTradeRoom.asm"
 INCLUDE "text/FuchsiaMeetingRoom.asm"
 INCLUDE "text/SSAnneKitchen.asm"
@@ -162,6 +163,7 @@ INCLUDE "text/ViridianGym.asm"
 INCLUDE "text/Museum1F.asm"
 INCLUDE "text/Museum2F.asm"
 INCLUDE "text/PewterGym.asm"
+INCLUDE "text/SaffronAbandonedBuilding.asm"
 
 
 SECTION "Text 7", ROMX
@@ -283,16 +285,13 @@ INCLUDE "text/CeladonMart1FPhoneCalls.asm"
 INCLUDE "text/PalletPhoneResultEvents.asm"
 INCLUDE "text/BillsGarden.asm"
 INCLUDE "text/SecretLab.asm"
+INCLUDE "text/SilphCo5F.asm"
 
 
 SECTION "Text 12", ROMX
 INCLUDE "text/TypeGuysHouse.asm"
 INCLUDE "text/ChampArena.asm"
 INCLUDE "text/DiamondMine.asm"
-INCLUDE "text/ViridianSchoolHouseQuiz.asm"
-INCLUDE "text/SaffronAbandonedBuilding.asm"
-INCLUDE "text/CinnabarVolcano.asm"
-INCLUDE "text/PokemonTowerB1F.asm"
 
 
 SECTION "Text 13", ROMX
@@ -310,6 +309,7 @@ INCLUDE "text/CameraEvents.asm"
 INCLUDE "text/OptionsInfoText.asm"
 INCLUDE "text/FightingBrosHouse.asm"
 INCLUDE "text/FossilGuysHouse.asm"
+INCLUDE "text/PokemonTowerB1F.asm"
 
 
 SECTION "Pokédex Text", ROMX

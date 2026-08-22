@@ -46,8 +46,7 @@ _FightingDojoExpertRulesSign::
 _FightingDojoExpertRulesSignJump:	
 	para "Faites-leur porter"
 	line "nos poids"
-	cont "d'entraînement"
-	cont "spéciaux!"
+	cont "d'entraînement!"
 	para "Les #MON de"
 	line "niveau inférieur"
 	cont "à 45 gagnent le"
@@ -92,8 +91,7 @@ _FightingDojoExpertClubClerkIntroText::
 	text "C'est l'endroit"
 	line "idéal pour un"
 	cont "entraînement"
-	cont "intensif de"
-	cont "#MON!@"
+	cont "#MON intensif!@"
 	text_jump _FightingDojoExpertRulesSignJump
 
 _FightingDojoExpertClubClerkBattleText::
@@ -138,7 +136,7 @@ _FightingDojoOpponentFistFighterIntro2::
 	done
 
 _FightingDojoOpponentFistFighterIntro3::
-	text "Tu as du gel pour"
+	text "T'as du gel pour"
 	line "cheveux?"
 	done
 

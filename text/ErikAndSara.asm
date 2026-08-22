@@ -56,20 +56,17 @@ _ErikReunitedText::
 
 _ShouldntLookNoOneHome::
 	text "Il n'y a personne"
-	line "à la maison,"
-	cont "alors c'est pas"
-	cont "bien de fouiner."
+	line "à la maison, c'est"
+	cont "mal de fouiner."
 	done
 
 _PeriscopeInitialText::
-	text "On dirait un"
-	line "périscope qui"
-	cont "traverse le sol"
+	text "Un périscope qui"
+	line "traverse le sol"
 	cont "en verre."
 	para "Il permet de voir"
 	line "sous l'eau?"
-	para "Il semble éteint"
-	line "pour l'instant."
+	para "Il semble éteint."
 	done
 
 _ErikSarasHouseNoteNotHomeText::
@@ -86,23 +83,21 @@ _ErikSarasHouseNoteHomeText::
 	line "rejoint les eaux"
 	cont "douces du PARC"
 	cont "SAFARI depuis le"
-	cont "nord de la voie"
-	cont "maritime de"
-	cont "CARMIN SUR MER."
+	cont "nord de CARMIN"
+	cont "SUR MER."
 	para "C'est peut-être là"
 	line "que les juvéniles"
 	cont "se réfugient pour"
-	cont "se mettre en"
-	cont "sécurité?"
+	cont "être à l'abri?"
 	done
 
 _ErikSarasHousePhoneText::
 	text "Un téléphone à"
 	line "cadran bleu vif!"
-	para "LIGNE D'AIDE"
-	para "DES OBSERVATIONS"
-	line "MARITIMES est"
-	cont "écrit dessus."
+	para "C'est écrit:"
+	line "LIGNE D'AIDE DES"
+	cont "OBSERVATIONS"
+	cont "MARITIMES."
 	done
 
 _ErikSarasHouseDragonairEmailText::
@@ -143,12 +138,11 @@ _ErikSarasHouseCenterBookText2::
 	line "VOLCANIQUES"
 	cont "DES GRANDS FONDS"
 	para "Un habitat idéal"
-	line "pour la vie dans"
-	cont "les profondeurs."
+	line "pour la vie"
+	cont "sous-marine."
 	para "Des colonies de"
-	line "#MON se"
-	cont "prélassent dans"
-	cont "la chaleur"
+	line "#MON profitent"
+	cont "de la chaleur"
 	cont "volcanique."
 	done
 
@@ -186,7 +180,6 @@ _ErikSarasHouseSouthGarbageText::
 	line "scandaleuse!"
 	para "ERIKA AURAIT-ELLE"
 	line "TROUVE L'AMOUR?!"
-	cont "SCANDALEUX!"
 	para "<...>"
 	para "TOP 5 DES TENUES"
 	line "INSPIREES DES"
@@ -197,9 +190,8 @@ _ErikSarasHouseSouthGarbageText::
 	cont "ON A DEMANDE A"
 	cont "MORGANE!"
 	para "<...>"
-	para "WOW! MAJOR BOB"
-	line "SURPRIS EN PLEIN"
-	cont "ENTRAINEMENT A LA"
+	para "MAJOR BOB EN PLEIN"
+	line "ENTRAINEMENT A LA"
 	cont "PLAGE!"
 	para "C'EST TORRIDE!"
 	done
@@ -214,12 +206,10 @@ _ErikSarasHouseBookText::
 
 _ErikSarasHousePeriscopeExplanation::
 	text "NICO: Ce sont des"
-	line "périscopes"
-	cont "marins."
+	line "périscopes."
 	para "Ils sont reliés à"
 	line "des câbles vidéo"
-	cont "qui passent sous"
-	cont "l'eau."
+	cont "sous-marins."
 	para "Je les ai allumés"
 	line "tout à l'heure!"
 	para "Jette un oeil!"
@@ -269,9 +259,8 @@ _DeepSeaCameraTentacruel::
 
 _DeepSeaCameraGyarados::
 	text "Whoa! Un LEVIATOR"
-	line "dévore la"
-	cont "carapace d'un"
-	cont "CRUSTABRI!"
+	line "mord la carapace"
+	cont "d'un CRUSTABRI!"
 	para "Quelle férocité!"
 	done
 
@@ -288,9 +277,9 @@ _CoralReefCameraStaryu::
 
 _CoralReefCameraHorsea::
 	text "Des HYPOTREMPE se"
-	line "faufilent à"
-	cont "travers des"
-	cont "algues au loin!"
+	line "faufilent dans"
+	cont "les algues au"
+	cont "loin!"
 	done
 
 _CoralReefCameraKrabby::
@@ -312,8 +301,8 @@ _CoralReefCameraGoldeen::
 	done
 
 _SaraHouseIntroText::
-	text "JULIA: Regarde qui"
-	line "voilà! Entre!"
+	text "JULIA: Te voilà!"
+	line "Entre!"
 	para "C'est notre coin"
 	line "de paradis!"
 	done
@@ -378,12 +367,11 @@ _ErikDragonairResearch::
 	cont "DRACO se rassem-"
 	cont "blent là-bas."
 	para "JULIA: Beaucoup"
-	line "ont des niveaux"
+	line "ont un niveau"
 	cont "anormalement"
-	cont "élevés!"
-	para "Des niveaux où ils"
-	cont "auraient dû"
-	cont "évoluer!"
+	cont "élevé!"
+	para "Ils auraient dû"
+	line "évoluer!"
 	para "Nous essayons"
 	line "de comprendre"
 	cont "pourquoi ils"
@@ -393,8 +381,8 @@ _ErikDragonairResearch::
 _ErikWantsDragonairText::
 	text "NICO: Si seulement"
 	line "on avait un DRACO"
-	cont "de haut niveau à"
-	cont "emmener sur les"
+	cont "de haut niveau"
+	cont "à emmener aux"
 	cont "ILES<...>"
 	para "JULIA: Je regrette"
 	line "notre promesse de"
@@ -404,9 +392,8 @@ _ErikWantsDragonairText::
 
 _ShowedDragonairLowLevelText::
 	text "NICO: Un DRACO!"
-	line "<...>Mais son"
-	cont "niveau est trop"
-	cont "bas."
+	line "<...>Son niveau"
+	cont "est trop bas."
 	para "Essaie de le"
 	line "monter au moins"
 	cont "au niveau 45."
@@ -431,12 +418,12 @@ _ShowedDragonairLetsDoThis::
 	para "NICO!"
 	para "Va chercher le"
 	line "matos de plongée!"
-	para "C'est parti!"
+	para "On y va!"
 	done
 
 _SeafoamIslandsB4FDragonairEventStartText::
-	text "JULIA: Ok! Voilà"
-	line "le plan!"
+	text "JULIA: OK!"
+	line "Voilà le plan!"
 	para "On va plonger avec"
 	line "@"
 	text_ram_namebuffer
@@ -473,18 +460,17 @@ _DragonairEventErikText::
 
 _DragonairEventSaraText::
 	text "JULIA: Fascinant!"
-	para "Les DRACO"
-	line "essaient-ils de"
-	cont "développer une"
-	cont "résistance aux"
-	cont "températures"
+	para "Les DRACO tentent-"
+	line "ils de développer"
+	cont "une résistance"
+	cont "aux températures"
 	cont "glaciales?"
 	done
 
 _DragonairEventCloysterText::
-	text "On dirait que ce"
-	line "CRUSTABRI défend"
-	cont "son territoire."
+	text "Ce CRUSTABRI"
+	line "défend son"
+	cont "territoire."
 	done
 
 _DragonairEventCloysterText2::
@@ -561,11 +547,11 @@ _DragonairEventEnd::
 	cont "ILES ECUME pour"
 	cont "s'acclimater au"
 	cont "froid."
-	para "NICO: Et ce"
-	line "faisant, ils ont"
-	cont "développé de"
-	cont "nouveaux pouvoirs"
-	cont "liés à la glace!"
+	para "NICO: Cela leur"
+	line "a permis de"
+	cont "développer des"
+	cont "pouvoirs liés à"
+	cont "la glace!"
 	para "JULIA: D'habitude,"
 	line "ils évoluent en"
 	cont "DRACOLOSSE, qui"
@@ -573,11 +559,10 @@ _DragonairEventEnd::
 	para "NICO: La splendeur"
 	line "glaciale de tous"
 	cont "ces DRACO était"
-	cont "tellement belle!"
+	cont "magnifique!"
 	para "Hé, <PLAYER>!"
-	para "Jette un oeil à"
-	line "mon pc si tu"
-	cont "veux vérifier"
+	para "Regarde mon pc"
+	line "si tu veux voir"
 	cont "les nouvelles"
 	cont "capacités de"
 	cont "ton DRACO!"
@@ -597,14 +582,12 @@ _ErikSarasHouseComputerAfterText::
 	done
 
 _ErikSarasHouseGoBackErikText::
-	text "NICO: Alors, que"
-	line "penses-tu de"
-	cont "l'analyse de"
-	cont "DRACO?"
-	para "Ou devrait-on y"
-	line "retourner pour"
-	cont "approfondir les"
-	cont "recherches?"
+	text "NICO: Que penses-"
+	line "tu de l'analyse"
+	cont "de DRACO?"
+	para "Doit-on y revenir"
+	line "pour approfondir"
+	cont "nos recherches?"
 	prompt
 
 _ErikSarasHouseGoBackSaraText::
@@ -615,9 +598,9 @@ _ErikSarasHouseGoBackSaraText::
 	prompt
 
 _ErikSarasHouseGoBackQuestionText::
-	text "Avez-vous un autre"
-	line "DRACO à apporter"
-	cont "à ILES ECUME?"
+	text "Tu as un autre"
+	line "DRACO à emmener"
+	cont "aux ILES ECUME?"
 	prompt
 
 _DragonairEventLeaveText::
@@ -635,9 +618,8 @@ _DragonairEventHealText::
 	para "Pourquoi ce"
 	line "CRUSTABRI ne veut"
 	cont "pas se pousser?!"
-	para "Tiens, laisse-moi"
-	line "soigner tes"
-	cont "#MON!"
+	para "Laisse-moi soigner"
+	line "tes #MON!"
 	prompt
 
 _DragonairEventSaraReturnText::
@@ -654,7 +636,7 @@ _DragonairEventErikReturnText::
 	line "une grande"
 	cont "sérénité quand je"
 	cont "nage avec ces"
-	cont "magnifiques DRACO."
+	cont "superbes DRACO."
 	done
 
 _ErikSarasHouseSecondNoteText::

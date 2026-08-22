@@ -45,10 +45,10 @@ _SSAnneCaptainsRoomCaptainNotSickAnymoreText::
 
 _SSAnneCaptainsRoomCaptainFeelingABitBetter::
 	text "CAPITAINE: Quoi?!"
-	para "Tu me dis que tu"
-	line "as battu ce gamin"
-	cont "<RIVAL> dans un"
-	cont "combat #MON?!"
+	para "Tu as battu ce"
+	line "gamin <RIVAL>"
+	cont "dans un combat"
+	cont "#MON?!"
 
 	para "Il ne voulait pas"
 	line "me lâcher!"
@@ -71,14 +71,13 @@ _SSAnneCaptainCutYourTicket::
 	line "utilisé COUPE sur"
 	cont "votre PASSE"
 	cont "BATEAU!"
-	para "Il l'a COUPE en"
+	para "Il l'a coupé en"
 	line "lambeaux!"
 	prompt
 
 _SSAnneWontBeNeedingThatAnymore::
-	text "CAPITAINE: Tu n'as"
-	line "plus besoin de ce"
-	cont "passe!"
+	text "CAPITAINE: Plus"
+	line "besoin du PASSE!"
 	para "Tu es toujours le"
 	line "bienvenu sur"
 	cont "L'OCEANE!"
@@ -111,16 +110,13 @@ _SSAnneCaptainsRoomCutBookText::
 	text_end
 
 _SSAnneCaptainsRoomCutBookText2::
-	text "<PARA>Les randonneurs en"
-	line "pleine nature"
-	cont "découvrent par"
-	cont "moments des zones"
-	cont "forestières"
-	cont "rasées de manière"
-	cont "inexplicable."
+	text "<PARA>Les randonneurs"
+	line "trouvent parfois"
+	cont "des forêts rasées"
+	cont "sans raison."
 	para "Si vous tombez sur"
-	line "une telle zone,"
-	cont "vous êtes entré"
-	cont "sur le territoire"
-	cont "d'un INSECATEUR."
+	line "une tel endroit,"
+	cont "vous êtes sur le"
+	cont "territoire d'un"
+	cont "INSECATEUR."
 	done

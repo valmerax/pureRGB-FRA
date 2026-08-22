@@ -4,8 +4,7 @@ _Route2JigglypuffText::
 	text "Un RONDOUDOU est"
 	line "assis sur une"
 	cont "branche d'arbre"
-	cont "et chante"
-	cont "doucement."
+	cont "et chante."
 	done
 
 _Route2JigglypuffCameraText::
@@ -22,21 +21,21 @@ _Route2JigglypuffPeacefulText::
 ; FOREST BALL event
 
 _Route5BugCatcherText::
-	text "Je ne suis qu'un"
-	line "simple SCOUT qui"
-	cont "garde un champ!"
+	text "Je suis juste un"
+	line "SCOUT qui garde"
+	cont "un champ!"
 	para "Rien de tel qu'un"
 	line "chapeau de paille"
 	cont "et une bonne"
 	cont "journée de"
-	cont "travail!"
-	para "Je travaille pour"
-	line "la PENSION."
+	cont "boulot!"
+	para "Je bosse pour la"
+	line "PENSION."
 	done
 
 _Route5BugCatcherCameraText::
-	text "Woah! c'est un"
-	line "super APP. PHOTO!"
+	text "Woah! c'est un bel"
+	line "APP. PHOTO!"
 	para "Tu peux me prendre"
 	line "en photo?"
 	para "Prends aussi ce"
@@ -85,17 +84,16 @@ _PhotoOpText::
 	prompt
 
 _Route6ShadowText::
-	text "Il y a un #MON"
-	line "qui nage sous"
-	cont "l'eau."
+	text "Un #MON nage"
+	line "sous l'eau."
 	done
 
 _Route6CameraText::
-	text "Il va falloir"
-	line "attendre un peu"
-	cont "pour prendre une"
+	text "Il faut patienter"
+	line "pour prendre une"
 	cont "photo de ce"
-	cont "#MON qui nage!"
+	cont "#MON en train"
+	cont "de nager!"
 	prompt
 
 _Route6PsyduckText::
@@ -107,8 +105,7 @@ _Route6PsyduckText::
 _Route6Psyduck2Text::
 	text "Incroyable!"
 	para "Il contemple son"
-	line "reflet dans l'eau"
-	cont "de l'étang!"
+	line "reflet dans l'eau!"
 	prompt
 
 _Route8JolteonCameraText::
@@ -118,7 +115,7 @@ _Route8JolteonCameraText::
 	prompt
 
 _Route8JolteonText::
-	text "Un JOLTEON trône"
+	text "Un VOLTALI trône"
 	line "au sommet de la"
 	cont "porte de SAFRANIA."
 	done
@@ -148,10 +145,10 @@ _Route10FlareonText::
 	done
 
 _Route10FlareonCameraText::
-	text "J'ai trouvé un bon"
-	line "angle pour"
-	cont "prendre la photo"
-	cont "du PYROLI!"
+	text "C'est l'angle"
+	line "parfait pour"
+	cont "prendre PYROLI"
+	cont "en photo!"
 	prompt
 
 _Route10FlareonPoseText::
@@ -177,9 +174,9 @@ _PorygonNothingMuch::
 
 _PorygonOnScreen::
 	text "Hein?!"
-	para "Un PORYGON est"
-	line "soudainement"
-	cont "apparu à l'écran!"
+	para "Un PORYGON surgit"
+	line "soudainement à"
+	cont "l'écran!"
 	para "A-t-il voyagé via"
 	line "le cyberespace?"
 	done
@@ -214,9 +211,8 @@ _MysteriousFossilsText::
 ; SUBZERO BALL events
 
 _UseCameraArticunoDragonair::
-	text "Wow! Il faut que"
-	line "je prenne une"
-	cont "photo de ce"
+	text "Wow! Il faut"
+	line "photographier ce"
 	cont "#MON rare!"
 	prompt
 
@@ -232,8 +228,8 @@ _UseCameraArticunoDragonairAurora::
 _UseCameraSurfing::
 	text "Impossible de"
 	line "tenir l'APP. PHOTO"
-	cont "droit en faisant"
-	cont "du SURF!"
+	cont "en faisant du"
+	cont "SURF!"
 	prompt
 
 _SeafoamIslandsB4FDragonairText::
@@ -287,9 +283,8 @@ _UseCameraPidgeotText::
 _PidgeotPlumageText::
 	text "Génial! ROUCARNAGE"
 	line "a pris son envol!"
-	para "Regarde ce"
-	line "magnifique"
-	cont "plumage!"
+	para "Quel magnifique"
+	line "plumage!"
 	prompt
 
 ; VENOM BALL events

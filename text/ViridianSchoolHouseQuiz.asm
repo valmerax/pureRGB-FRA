@@ -1,32 +1,28 @@
 _SchoolB1FLeftTeacherInit::
 	text "Allons donc! Nous"
-	line "avons un visiteur"
-	cont "dans la classe!"
+	line "avons un visiteur!"
 	prompt
 
 _SchoolB1FLeftTeacherNoParcel::
-	text "Ainsi donc?"
+	text "Ainsi?"
 	para "Tu viens de"
 	line "BOURG PALETTE?"
 	para "J'ai entendu dire"
 	line "qu'on cherchait"
-	cont "un jeune homme de"
-	cont "BOURG PALETTE à"
+	cont "un jeune homme à"
 	cont "la BOUTIQUE."
-	para "Jette donc un oeil"
-	line "là-bas!"
+	para "Va donc les voir!"
 	prompt
 
 _SchoolB1FLeftTeacherNoPokedex::
 	text "Eh bien! Un COLIS!"
 	para "C'est pour moi?"
-	para "Non? Alors va le"
-	line "livrer, mon"
-	cont "garçon!"
+	para "Non? Alors livre-"
+	line "le, mon garçon!"
 	prompt
 
 _SchoolB1FLeftTeacherLater::
-	text "Viens me parler"
+	text "Reviens me parler"
 	line "plus tard,"
 	cont "tu veux bien?"
 	done
@@ -36,8 +32,7 @@ _SchoolB1FLeftTeacherFirst::
 	line "cours sur les"
 	cont "capacités des"
 	cont "#MON!"
-	para "Je suis ravi en"
-	line "ce moment!"
+	para "Je suis ravi!"
 	para "J'ai créé un outil"
 	line "pour enregistrer"
 	cont "les infos sur les"
@@ -53,8 +48,6 @@ _SchoolB1FLeftTeacherFirst::
 _SchoolB1FLeftTeacherNo::
 	text "Ne sois pas"
 	line "insolent!"
-	para "Allons droit"
-	line "au but!"
 	para "Reviens me voir si"
 	line "ça t'intéresse!"
 	done
@@ -63,10 +56,9 @@ _SchoolB1FLeftTeacherYes::
 	text "Elémentaire!"
 	para "Ecoute, mon"
 	line "garçon:"
-	para "Fais un tour dans"
-	line "l'école pour"
-	cont "apprendre plein"
-	cont "de choses."
+	para "Visite l'école et"
+	line "apprends plein de"
+	cont "choses."
 	para "Je te ferai passer"
 	line "un quiz pour voir"
 	cont "ce que tu sais!"
@@ -109,11 +101,10 @@ _SchoolB1FLeftTeacherQuizQuestion2::
 
 _SchoolB1FLeftTeacherQuizQuickAttack::
 	text "Ah, VIVE-ATTAQUE."
-	para "Une capacité"
-	line "classique,"
-	cont "n'est-ce pas?"
+	para "Une valeur sûre,"
+	line "n'est-ce pas?"
 	para "Mais terriblement"
-	line "utile!"
+	line "efficace!"
 	prompt
 
 _SchoolB1FLeftTeacherQuizQuestion3::
@@ -125,7 +116,7 @@ _SchoolB1FLeftTeacherQuizQuestion3::
 _SchoolB1FLeftTeacherQuizQuestion4::
 	text "Question 4:"
 	para "Quelle capacité"
-	line "possède des"
+	line "possède les"
 	cont "propriétés de"
 	cont "plusieurs TYPES?"
 	prompt
@@ -146,8 +137,7 @@ _SchoolB1FLeftTeacherQuizCorrect::
 
 _SchoolB1FLeftTeacherQuizWrong::
 	text "Je crains que tu"
-	line "te sois trompé"
-	cont "sur celle-là!"
+	line "te sois trompé!"
 	para "Diantre!"
 	para "Travaille plus et"
 	line "essaie encore!"
@@ -155,7 +145,6 @@ _SchoolB1FLeftTeacherQuizWrong::
 
 _SchoolB1FLeftTeacherQuizFinish::
 	text "Formidable!"
-	para "Tu as réussi!"
 	para "Tu as répondu aux"
 	line "5 questions!"
 	para "Le CAPADEX est à"
@@ -169,15 +158,13 @@ _ReceivedMovedexText::
 	prompt
 
 _SchoolB1FLeftTeacherQuizFinalInfo::
-	text "Chaque fois que tu"
-	line "vois un #MON"
-	cont "utiliser une"
-	cont "nouvelle capacité"
-	cont "elle apparaîtra"
-	cont "dans le CAPADEX!"
-	para "Il suffit d'ouvrir"
-	line "ton #DEX et"
-	cont "d'appuyer sur"
+	text "Lorsqu'un #MON"
+	line "utilise une"
+	cont "capacité, elle"
+	cont "apparaît dans le"
+	cont "CAPADEX!"
+	para "Ouvre ton #DEX"
+	line "et appuie sur"
 	cont "START!"
 	done
 
@@ -189,9 +176,8 @@ _SchoolB1FLeftTeacherEnd::
 	para "Direction la"
 	line "FORET DE JADE,"
 	cont "je suppose?"
-	para "C'est au nord en"
-	cont "quittant la"
-	cont "ville!"
+	para "C'est au nord de"
+	line "la ville!"
 	para "Bonne chance!"
 	done
 
@@ -201,15 +187,14 @@ _SchoolB1FLeftBookcaseA::
 	text_end
 _FlippedToARandomPage::
 	text "<PARA>Ouverture d'une"
-	line "page au hasard<...>@"
+	line "page<...>@"
 	text_end
 _SchoolB1FLeftBookcaseA2::
 	text "<PARA>PHENOMENES"
 	line "INEXPLIQUES"
 	para "Des dresseurs ont"
 	line "signalé d'étranges"
-	cont "hallucinations"
-	cont "inquiétantes le"
+	cont "hallucinations le"
 	cont "long de la côte"
 	cont "de la CRAMOIS'ILE."
 	done
@@ -219,12 +204,11 @@ _SchoolB1FLeftBookcaseB::
 	line "MELOFEE@"
 	text_end
 _SchoolB1FLeftBookcaseB2::
-	text "<PARA>Jour 234, j'ai vu"
-	line "de nombreux"
-	cont "MELOFEE danser"
+	text "<PARA>Jour 234, des"
+	line "MELOFEE dansent"
 	cont "autour d'une"
 	cont "énorme pierre"
-	cont "scintillante."
+	cont "étincelante."
 	done
 
 _SchoolB1FRightBookcaseA::
@@ -232,10 +216,10 @@ _SchoolB1FRightBookcaseA::
 	line "DE RATTATA@"
 	text_end
 _SchoolB1FRightBookcaseA2::
-	text "<PARA>Les RATTATA se"
-	line "faufilent souvent"
-	cont "dans les maisons"
-	cont "pour chiper de la"
+	text "<PARA>Les RATTATA aiment"
+	line "se faufiler dans"
+	cont "les maisons pour"
+	cont "chiper de la"
 	cont "nourriture, des"
 	cont "tissus douillets"
 	cont "ou du bois à"

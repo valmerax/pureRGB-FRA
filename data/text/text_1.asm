@@ -15,15 +15,14 @@ _CardKeyFailText::
 
 _CardKeyDoneText::
 	text "Toutes les portes"
-	line "à CARTE MAGN. ont"
-	cont "été ouvertes!"
+	line "à CARTE MAGN."
+	cont "sont ouvertes!"
 	
 	para "Plus besoin de"
 	line "cette CARTE MAGN."
 
 	para "<PLAYER> l'a"
-	line "laissée dans le"
-	cont "lecteur de carte!"
+	line "laissée sur place!"
 	done
 
 _TrainerNameText::
@@ -188,15 +187,13 @@ _OaksAideNoRoomText::
 	done
 
 _ConversionEnteredAttackModeText::
-	text "<USER> est"
-	line "passé en mode"
-	cont "ATTAQUE!"
+	text "<USER> passe"
+	line "en mode ATTAQUE!"
 	prompt
 
 _ConversionEnteredDefenseModeText::
-	text "<USER> est"
-	line "passé en mode"
-	cont "DEFENSE!"
+	text "<USER> passe"
+	line "en mode DEFENSE!"
 	prompt
 
 _ConversionAlreadyDefenseModeText::
@@ -208,9 +205,8 @@ _ConversionAlreadyDefenseModeText::
 _FuchsiaMeetingRoomOaksAideGreeting::
 	text "Hé, <PLAYER>!"
 	line "Comment ça va?"
-	para "Je suis l'un des"
-	line "assistants du"
-	cont "PROF. CHEN!"
+	para "Je suis l'assistant"
+	line "du PROF. CHEN!"
 	para "Si tu as attrapé"
 	line "au moins 50"
 	cont "#MON,"
@@ -228,8 +224,7 @@ _FuchsiaMeetingRoomOaksAideNotEnough::
 	text_decimal wNumSetBits, 1, 3
 	text "? Pas assez!"
 	line "Allez, courage!"
-	para "Je crois en toi,"
-	line "tu peux le faire!"
+	para "Tu peux le faire!"
 	done
 
 _FuchsiaMeetingRoomOaksAideEnough::
@@ -237,16 +232,14 @@ _FuchsiaMeetingRoomOaksAideEnough::
 	text_decimal wNumSetBits, 1, 3
 	text "? Fantastique!"
 	line "On va améliorer"
-	cont "la CARTE!"
-	para "Une fonctionnalité"
-	line "va être ajoutée."
+	cont "ta CARTE!"
 	para "Tu pourra voir"
 	line "les données des"
 	cont "#MON sauvages"
 	cont "par zone!"
-	para "Appuie simplement"
-	line "sur A sur une"
-	cont "zone à examiner."
+	para "Appuie juste sur A"
+	line "sur une zone à"
+	cont "examiner."
 	para "Bien, montre-moi"
 	line "ta CARTE<...>"
 	done
@@ -259,9 +252,9 @@ _FuchsiaMeetingRoomOaksAideNoTownmap::
 	para "Va à BOURG PALETTE"
 	line "et demande autour"
 	cont "de toi!"
-	para "Je suis sûr que"
-	line "quelqu'un te"
-	cont "donnera une CARTE!"
+	para "Je suis sûr qu'on"
+	line "te donnera une"
+	cont "CARTE!"
 	done
 
 _FuchsiaMeetingRoomOaksAideGoodLuck::
