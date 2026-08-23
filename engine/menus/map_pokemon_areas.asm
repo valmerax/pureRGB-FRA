@@ -89,9 +89,9 @@ DrawMonAreaButtonPrompt:
 	cp STATE_SUPER_ROD_AREAS
 	jr z, .superRodState
 .grassCaveState
-	hlcoord 13, 17
+	hlcoord 12, 17
 	ld a, $C0
-	ld b, 6
+	ld b, 7
 	call DrawPrompt
 	jr .drawArrows
 .waterState
@@ -102,33 +102,29 @@ DrawMonAreaButtonPrompt:
 	hlcoord 14, 17
 	jr .drawArrows
 .oldRodState
-	hlcoord 15, 17
-	ld a, $CC
-	ld b, 4
+	hlcoord 16, 17
+	ld a, $CD
+	ld b, 3
 	call DrawPrompt
-	hlcoord 14, 17
+	hlcoord 15, 17
 	jr .drawArrows
 .goodRodState
-	hlcoord 14, 17
-	ld a, $C9
-	ld b, 3
-	call DrawPrompt
-	hlcoord 17, 17
-	ld a, $CE
-	ld b, 2
-	call DrawPrompt
 	hlcoord 13, 17
+	ld a, $CA
+	ld b, 6
+	call DrawPrompt
+	hlcoord 12, 17
 	jr .drawArrows
 .superRodState
-	hlcoord 14, 17
-	ld a, $C6
+	hlcoord 13, 17
+	ld a, $C7
 	ld b, 3
 	call DrawPrompt
-	hlcoord 17, 17
-	ld a, $CE
-	ld b, 2
+	hlcoord 16, 17
+	ld a, $CD
+	ld b, 3
 	call DrawPrompt
-	hlcoord 13, 17
+	hlcoord 12, 17
 .drawArrows ; assumes hl will be pointing to the location the left arrow should be at (if there needs to be one)
 	call FindPrevMonAreaState
 	jr z, .nextArrow
