@@ -495,10 +495,11 @@ GameCornerDrawCoinBox:
 	ld de, GameCornerMoneyText
 	call PlaceString
 	hlcoord 12, 3
-	call .clearLine
+	ld de, GameCornerBlankText1
+	call PlaceString
 	hlcoord 12, 3
 	ld de, wPlayerMoney
-	ld c, 3 | MONEY_SIGN | LEADING_ZEROES
+	ld c, LEADING_ZEROES | 3
 	call PrintBCDNumber
 	hlcoord 12, 4
 	ld de, GameCornerCoinText
@@ -519,6 +520,9 @@ GameCornerMoneyText:
 
 GameCornerCoinText:
 	db "JETONS@"
+
+GameCornerBlankText1:
+	db "      ¥@"
 
 Has9990Coins:
 	ld a, $99

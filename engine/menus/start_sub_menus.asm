@@ -370,7 +370,7 @@ StartMenu_Item::
 	ld hl, wTopMenuItemY
 	ld a, 11
 	ld [hli], a ; top menu item Y
-	ld a, 14
+	ld a, 13
 	ld [hli], a ; top menu item X
 	xor a
 	ld [hli], a ; current menu item ID
@@ -604,9 +604,10 @@ DrawTrainerInfo:
 	call PlaceString
 	hlcoord 8, 4
 	ld de, wPlayerMoney
-	ld c, 3 | LEADING_ZEROES | LEFT_ALIGN | MONEY_SIGN
+	ld c, 3 | LEADING_ZEROES | LEFT_ALIGN
 	call PrintBCDNumber
-	hlcoord 7, 6
+	ld [hl], '¥'
+	hlcoord 9, 6
 	ld de, wPlayTimeHours
 	lb bc, LEFT_ALIGN | 2, 5
 	call PrintNumber

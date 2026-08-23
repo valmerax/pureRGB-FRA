@@ -46,9 +46,9 @@ CheckDrawItemCount::
 	jr nz, .noLoadTextBox2
 	call .loadTextBox
 	hlcoord 5, 1
-	ld [hl], 'P'
+	ld [hl], '<BOLD_P2>'
 	inc hl
-	ld [hl], 'C'
+	ld [hl], '<BOLD_C>'
 	hlcoord 8, 1
 	ld de, ItemsText
 	call PlaceString
@@ -83,4 +83,4 @@ CheckDrawItemCount::
 	jp TextBoxBorderUpdateSprites
 
 ItemsText:
-	db"OBJETS@"
+	db"<BOLD_O><BOLD_B><BOLD_J><BOLD_E><BOLD_T>@"

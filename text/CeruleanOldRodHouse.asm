@@ -16,9 +16,8 @@ _CeruleanOldRodHouseFishingIsAWayOfLifeText::
 	done
 
 _CeruleanOldRodHouseOldRodInfo::
-	text "<PARA>Ma fidèle"
-	line "VIEILLE CANNE est"
-	cont "parfaite pour"
+	text "<PARA>Ma fidèle CANNE"
+	line "est parfaite pour"
 	cont "attraper des"
 	cont "MAGICARPE et des"
 	cont "POISSIRENE!"

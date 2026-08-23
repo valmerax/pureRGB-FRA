@@ -4,8 +4,8 @@ LowerCaseAlphabet:
 	db "jklmnopqr"
 	db "stuvwxyz "
 	db "123456789"
-	db "0+%×→'s'dé<ED>"
-	db "UPPER CASE@"
+	db "0+%×→'éè<ED>"
+	db "MAJUSCULES@"
 
 UpperCaseAlphabet:
 	db "ABCDEFGHI"
@@ -13,4 +13,4 @@ UpperCaseAlphabet:
 	db "STUVWXYZ "
 	db "/():;“”<PK><MN>"
 	db "-?!♂♀<DOT>',<ED>"
-	db "lower case@"
+	db "minuscules@"

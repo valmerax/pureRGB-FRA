@@ -1814,9 +1814,7 @@ _OakSpeechText2A::
 	text_end
 
 _OakSpeechText2B::
-	text_start
-
-	para "Pour certains,"
+	text "Pour certains,"
 	line "les #MON sont"
 	cont "des animaux"
 	cont "domestiques, pour"

@@ -130,8 +130,11 @@ DisplayMoneyBox:
 	lb bc, 1, 6
 	call ClearScreenArea
 	hlcoord 12, 1
+	ld de, CurrencyString
+	call PlaceString
+	hlcoord 12, 1
 	ld de, wPlayerMoney
-	ld c, 3 | LEADING_ZEROES | MONEY_SIGN
+	ld c, 3 | LEADING_ZEROES
 	call PrintBCDNumber
 	jp EnableTextDelay
 

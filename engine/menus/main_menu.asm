@@ -414,13 +414,13 @@ CableClubOptionsText:
 VersionText:
 db " "
 IF DEF(_RED)
-	db "PureRed"
+	db "RougePur"
 ENDC
 IF DEF(_BLUE)
-	db "PureBlue"
+	db "BleuPur"
 ENDC
 IF DEF(_GREEN)
-	db "PureGreen"
+	db "VertPur"
 ENDC
 db " v"
 INCLUDE "version_number.asm"

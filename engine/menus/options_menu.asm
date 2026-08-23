@@ -16,7 +16,7 @@ ArrowYcoordXVariableOffsetList:
 	db PAGE_CONTROLS_Y_COORD, MAX_OPTIONS_PER_PAGE
 
 OptionsNextBackText::
-	db " SUIV.  PREC. @"
+	db "  SUIV  PREC  @"
 
 OptionsDoNothing:
 	ret
@@ -420,7 +420,7 @@ GetYCoordAndXVariable:
 
 TextSpeedOptionText:
 	db   "VIT. TEXTE"
-	next " 3     2      1   @"
+	next " INSTANT RAPI LENT@"
 
 BattleAnimationOptionText:
 	db   "ANIMATION COMBAT"

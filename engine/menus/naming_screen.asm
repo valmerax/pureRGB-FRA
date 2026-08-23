@@ -479,10 +479,10 @@ PrintNamingText:
 	jr z, .nameBox
 	ld de, YourTextString
 	and a
-	jr z, .notNickname
+	jr z, .placeString
 	ld de, RivalsTextString
 	dec a
-	jr z, .notNickname
+	jr z, .placeString
 	dec a
 	ld a, [wCurPartySpecies]
 	jr z, .pokemon

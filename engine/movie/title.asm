@@ -626,27 +626,15 @@ CopyrightTextString:
 
 INCLUDE "data/pokemon/title_mons.asm"
 
-; prints version text (red, blue)
+; prints version text (green, red, blue)
 PrintGameVersionOnTitleScreen:
-	IF DEF(_GREEN) ; PureRGBnote: GREENBUILD: version text needs to be slightly moved to the left due to the larger length
-		hlcoord 6, 8 
-	ELSE
-		hlcoord 7, 8
-	ENDC
+	hlcoord 6, 8
 	ld de, VersionOnTitleScreenText
 	jp PlaceString
 
 ; these point to special tiles specifically loaded for that purpose and are not usual text
 VersionOnTitleScreenText:
-IF DEF(_RED)
-	db $E0,$E1,$7F,$E5,$E6,$E7,$E8,$E9,"@" ; "Red Version"
-ENDC
-IF DEF(_BLUE)
-	db $E0,$E1,$E2,$E3,$E4,$E5,$E6,$E7,"@" ; "Blue Version"
-ENDC
-IF DEF(_GREEN) ; PureRGBnote: GREENBUILD: different title screen subtitle text for green version
-	db $E2,$E3,$E4,$7F,$E5,$E6,$E7,$E8,$E9,"@" ; "Green Version"
-ENDC
+	db $E0,$E1,$E2,$E3,$E4,$E5,$E6,$E7,$E8,$E9,"@" ; "Version Verte" or "Version Rouge" or "Version Bleue"
 
 ; In the PureRGB title screen, we will make the player's image only partially a sprite to free up space in OAM
 ; This prevents sliding pokemon across the screen behind the player at the moment (may change later)
@@ -692,7 +680,7 @@ IF DEF(_RED)
 	rst _DelayFrame
 	inc b
 	ld a, b
-	cp 59 ; 56 frames of movement
+	cp 65 ; 62 frames of movement
 	jr nz, .loopAnimateFire
 	call PureTitleClearNonPlayerOAM
 	ld c, 22
@@ -921,7 +909,7 @@ ENDC
 PureTitleDrawNextVersionLogoColumn:
 	push bc
 	push de
-IF DEF(_GREEN)
+IF (DEF(_RED) || DEF(_GREEN))
 	ld b, $E8
 ELSE
 	ld b, $E7
@@ -946,7 +934,7 @@ ENDC
 	sbc d
 	ld h, a
 	ld a, b
-IF DEF(_GREEN)
+IF (DEF(_RED) || DEF(_GREEN))
 	sub 8
 ELSE
 	sub 7
@@ -965,10 +953,10 @@ PureTitleShineGoesAcrossVersion:
 	ld bc, 8
 	rst _CopyData
 IF DEF(_RED)
-	ld b, 98 ; x value where shine disappears
+	ld b, 104 ; x value where shine disappears
 ENDC
 IF DEF(_BLUE)
-	ld b, 100 ; x value where shine disappears
+	ld b, 98 ; x value where shine disappears
 ENDC
 IF DEF(_GREEN)
 	ld b, 102 ; x value where shine disappears

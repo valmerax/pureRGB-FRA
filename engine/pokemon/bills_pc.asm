@@ -14,15 +14,15 @@ DisplayPCMainMenu::
 	and a
 	jr nz, .leaguePCAvailable
 	hlcoord 0, 0
-	lb bc, 8, 14
+	lb bc, 8, 15
 	jr .next
 .noOaksPC
 	hlcoord 0, 0
-	lb bc, 6, 14
+	lb bc, 6, 15
 	jr .next
 .leaguePCAvailable
 	hlcoord 0, 0
-	lb bc, 10, 14
+	lb bc, 10, 15
 .next
 	call TextBoxBorderUpdateSprites
 	ld a, 3
@@ -38,11 +38,11 @@ DisplayPCMainMenu::
 .next2
 	call PlaceString
 	hlcoord 2, 4
-	ld de, wPlayerName
+	ld de, PlayersPCText
 	call PlaceString
 	ld l, c
 	ld h, b
-	ld de, PlayersPCText
+	ld de, wPlayerName
 	call PlaceString
 	CheckEvent EVENT_GOT_POKEDEX
 	jr z, .noOaksPC2
@@ -114,7 +114,7 @@ BillsPCMenu:
 	ResetFlag FLAG_VIEW_PC_PKMN
 	call LoadScreenTilesFromBuffer2DisableBGTransfer
 	hlcoord 0, 0
-	lb bc, 10, 12
+	lb bc, 10, 14
 	call TextBoxBorder
 	hlcoord 2, 2
 	ld de, BillsPCMenuText
