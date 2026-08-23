@@ -159,8 +159,6 @@ DisplayWildLocations:
 	hlcoord 8, 0
 	call PlaceString
 	hlcoord 1, 0
-	ld h, b
-	ld l, c
 	ld de, MonsNestText
 	call PlaceString
 
