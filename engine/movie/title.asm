@@ -837,7 +837,7 @@ IF DEF(_GREEN)
 	rst _DelayFrame
 	inc b
 	ld a, b
-	cp 65
+	cp 59
 	jr nz, .loopMoveEnergy
 	call PureTitleClearNonPlayerOAM
 	ld c, 12
@@ -909,7 +909,7 @@ ENDC
 PureTitleDrawNextVersionLogoColumn:
 	push bc
 	push de
-IF (DEF(_RED) || DEF(_GREEN))
+IF DEF(_RED)
 	ld b, $E8
 ELSE
 	ld b, $E7
@@ -934,7 +934,7 @@ ENDC
 	sbc d
 	ld h, a
 	ld a, b
-IF (DEF(_RED) || DEF(_GREEN))
+IF DEF(_RED)
 	sub 8
 ELSE
 	sub 7
@@ -959,7 +959,7 @@ IF DEF(_BLUE)
 	ld b, 98 ; x value where shine disappears
 ENDC
 IF DEF(_GREEN)
-	ld b, 102 ; x value where shine disappears
+	ld b, 100 ; x value where shine disappears
 ENDC
 	ld c, 0
 	ld hl, wShadowOAMSprite00XCoord
