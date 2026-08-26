@@ -18,7 +18,7 @@ _GotMapText::
 	text_end
 
 _MapHelpText::
-	text "Appuyez sur SELECT"
+	text "Appuie sur SELECT"
 	line "depuis le #DEX"
 	cont "pour afficher la"
 	cont "CARTE. Facile!"
