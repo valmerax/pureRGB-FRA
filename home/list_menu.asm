@@ -217,6 +217,8 @@ DisplayChooseQuantityMenuMinQuantity::
 	ld a, [wListMenuID]
 	cp PRICEDITEMLISTMENU
 	jr nz, .printInitialQuantity
+	ld a,'¥'
+	ld [wTileMap + 218],a
 	hlcoord 8, 10
 .printInitialQuantity
 	ld de, InitialQuantityText
