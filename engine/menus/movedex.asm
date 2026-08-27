@@ -91,7 +91,9 @@ HandleMovedexListMenu:
 	xor a
 	ldh [hAutoBGTransferEnabled], a
 	hlcoord 1, 17
-	ld a, $C0 ; tile in VRAM that this prompt starts at, it's 5 tiles horizontally across
+	ld a, $C0 ; tile in VRAM that this prompt starts at, it's 6 tiles horizontally across
+	ld [hli], a
+	inc a
 	ld [hli], a
 	inc a
 	ld [hli], a
@@ -103,7 +105,7 @@ HandleMovedexListMenu:
 	ld [hl], a
 .pokedexPrompt
 	hlcoord 7, 17
-	ld a, $C5
+	ld a, $C6
 	ld [hli], a
 	inc a
 	ld [hli], a
@@ -293,9 +295,9 @@ HandleMovedexListMenu:
 ; ABC or 123 depending on sorting state
 DrawMovedexSortPrompt:
 	CheckFlag FLAG_MOVEDEX_SORTING_MODE
-	ld a, $CC ; 123
+	ld a, $CD ; 123
 	jr z, .gotSortState
-	ld a, $CE ; ABC
+	ld a, $CF ; ABC
 .gotSortState
 	hlcoord 17, 17
 	ld [hli], a
@@ -349,7 +351,7 @@ ShowMoveDataExternal:
 	call PlaceString
 
 	ld de, MovePPText
-	hlcoord 13, 6
+	hlcoord 14, 6
 	call PlaceString
 	ld de, MovePowerText
 	hlcoord 1, 6
@@ -358,7 +360,7 @@ ShowMoveDataExternal:
 	hlcoord 1, 8
 	call PlaceString
 	ld de, MovePercentText
-	hlcoord 13, 8
+	hlcoord 14, 8
 	call PlaceString
 
 	hlcoord 10, 16 ; where the text down arrow should end up flashing at
@@ -438,7 +440,7 @@ ShowNextMoveData:
 	ld e, l ; de = coordinate to print the type at
 	callfar FarPrintType ; print the move type
 
-	hlcoord 7, 6 ; location we will print power number
+	hlcoord 11, 6 ; location we will print power number
 
 	ld a, [wPlayerMovePower]
 	and a
@@ -495,12 +497,12 @@ ShowNextMoveData:
 	inc_a_nc
 	ld de, wSum
 	ld [de], a
-	hlcoord 10, 8
+	hlcoord 11, 8
 	lb bc, 1, 3
 	call PrintNumber ; print the numeric value for accuracy
 
 	ld de, wPlayerMoveMaxPP
-	hlcoord 16, 6
+	hlcoord 17, 6
 	lb bc, LEFT_ALIGN | 1, 2
 	call PrintNumber ; print the numeric value for PP
 
@@ -729,13 +731,13 @@ ClearBasicMoveData:
 	hlcoord 3, 4
 	lb bc, 1, 16
 	call ClearScreenArea
-	hlcoord 7, 6
+	hlcoord 11, 6
 	lb bc, 1, 3
 	call ClearScreenArea
-	hlcoord 16, 6
+	hlcoord 17, 6
 	lb bc, 1, 2
 	call ClearScreenArea
-	hlcoord 10, 8
+	hlcoord 11, 8
 	lb bc, 1, 3
 	call ClearScreenArea
 	hlcoord 1, 11

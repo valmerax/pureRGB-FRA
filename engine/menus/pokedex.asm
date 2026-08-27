@@ -234,13 +234,13 @@ HandlePokedexListMenu:
 	CheckEvent EVENT_GOT_TOWN_MAP
 	jr z, .movedexPrompt
 	hlcoord 1, 17
-	lb bc, $C0, 5
+	lb bc, $C0, 6
 	call DrawTileLineIncrement
 .movedexPrompt
 	CheckEvent EVENT_GOT_MOVEDEX
 	jr z, .noSelectPrompt
 	hlcoord 7, 17
-	lb bc, $C5, 7
+	lb bc, $C6, 7
 	call DrawTileLineIncrement
 .noSelectPrompt
 ;;;;;;;;;;;
