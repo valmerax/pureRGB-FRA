@@ -374,7 +374,7 @@ RocketCharText::  db "ROCKET@"
 ThreeDotsText::   db "...@"
 TrainerTipsText:: db "ASTUCE@"
 OpponentText::    db "ennemi@"
-UserText::        db "<lanceur>@"
+UserText::        db "lanceur@"
 PCCharText::      db "PC@"
 ; these have to be separated by a comma in order to not re-trigger the charmap macro that sets them up to be used automatically
 UneText::         db "u", "ne@"
