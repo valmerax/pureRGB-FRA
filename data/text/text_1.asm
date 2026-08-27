@@ -87,9 +87,9 @@ _FoundItemText::
 _FoundMultipleItemText::
 	text "<PLAYER> obtient<...>"
 	line "@"
-	text_ram_stringbuffer
-	text " ×@"
 	text_ram wTempStore1
+	text "× @"
+	text_ram_stringbuffer
 	text "!@"
 	sound_get_item_1
 	text_end
@@ -105,7 +105,7 @@ _OaksAideHiText::
 	cont "suis l'assistant"
 	cont "du Prof. Chen!"
 
-	para "Si tu attrapes "
+	para "Si tu attrapes"
 	line "@"
 	text_decimal hOaksAideRequirement, 1, 3
 	text " #MON"

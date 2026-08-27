@@ -97,7 +97,7 @@ _TypeMatchupText::
 	cont "contre le TYPE"
 	cont "de droite."
 	para "0×: pas d'effet"
-	line "0.5×: pas très ef"
+	line "0.5×:pas très eff"
 	para "1×: normal"
 	line "2×: très efficace"
 	prompt
@@ -157,8 +157,7 @@ _IconsOptionText::
 	cont "du jeu."
 	para "Active aussi de"
 	line "nouveaux sprites"
-	cont "uniques à"
-	cont "certains"
+	cont "uniques pour des"
 	cont "champions d'arêne."
 	para "Il s'agit de petits"
 	line "sprites en 16×16."

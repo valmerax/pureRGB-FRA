@@ -88,7 +88,7 @@ _SchoolB1FLeftTeacherReadyYes::
 _SchoolB1FLeftTeacherQuizQuestion1::
 	text "Question 1:"
 	para "Quel TYPE est très"
-	cont "efficace contre"
+	line "efficace contre"
 	cont "les #MON EAU?"
 	prompt
 
@@ -132,7 +132,7 @@ _SchoolB1FLeftTeacherQuizQuestion5::
 
 _SchoolB1FLeftTeacherQuizCorrect::
 	text "Bonne réponse!"
-	line "Excellent travail!"
+	line "C'est excellent!"
 	prompt
 
 _SchoolB1FLeftTeacherQuizWrong::

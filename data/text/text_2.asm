@@ -820,9 +820,9 @@ _FoundHiddenItemText::
 _FoundHiddenItemMultiText::
 	text "<PLAYER> trouve:"
 	line "@"
-	text_ram_namebuffer
-	text " ×@"
 	text_ram wTempStore1
+	text "× @"
+	text_ram_namebuffer
 	text "!@"
 	text_end
 
