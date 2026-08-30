@@ -155,7 +155,8 @@ _ReceivedMovedexText::
 	text "<PLAYER> obtient"
 	line "le CAPADEX!@"
 	sound_get_item_2
-	prompt
+	text_promptbutton
+	text_end
 
 _SchoolB1FLeftTeacherQuizFinalInfo::
 	text "Lorsqu'un #MON"
