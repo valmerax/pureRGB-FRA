@@ -420,7 +420,7 @@ GetYCoordAndXVariable:
 
 TextSpeedOptionText:
 	db   "VIT. TEXTE"
-	next " INSTANT RAPI LENT@"
+	next " INSTANT VITE LENT@"
 
 BattleAnimationOptionText:
 	db   "ANIMATION COMBAT"

@@ -6,7 +6,7 @@ _TextSpeedInfoText::
 	prompt
 
 _BattleAnimationInfoText::
-	text "Si option sur OFF,"
+	text "Si option sur NON,"
 	line "les animations"
 	cont "des attaques"
 	cont "sont désactivés."
