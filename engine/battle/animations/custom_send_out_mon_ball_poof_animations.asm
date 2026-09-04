@@ -1930,7 +1930,7 @@ LoadPoofOAM4Times:
 	ret
 
 FirstFrameTileIDOrder:
-	db $50, $56, $55, $DF
+	db $50, $56, $55, $E4
 
 FourTimesFourPoofCoords:
 	db 84, 36
@@ -1961,7 +1961,7 @@ ThirdFramePixelDifferentials:
 	db  4, 4
 
 FourthFrameTileIDOrder:
-	db $52, $DF, $57, $51
+	db $52, $E4, $57, $51
 
 ExplodePoofAnim:
 	ld hl, vSprites tile $4D
@@ -1997,7 +1997,7 @@ ExplodePoofAnim:
 	ret
 
 ExplodeFirstFrameTileIDOrder:
-	db $DF, $52, $DF, $DF
+	db $E4, $52, $E4, $E4
 
 ExplodeSecondFrameTileIDOrder:
 	db $4E, $55, $51, $4D
