@@ -34,9 +34,15 @@ ShowMovedexMenu:
 	call RunPaletteCommandWithoutGBCDelay
 	callfar LoadPokedexTilePatterns
 
+	; Load main Movedex prompt graphics
 	ld de, MovedexPromptGraphics
 	ld hl, vChars1 tile $40
-	lb bc, BANK(MovedexPromptGraphics), (MovedexPromptGraphicsEnd - MovedexPromptGraphics) / $10
+	lb bc, BANK(MovedexPromptGraphics), 15
+	call CopyVideoDataHBlank
+	; Load last 2 tiles separately (ABC prompt)
+	ld de, MovedexPromptGraphics + $F0
+	ld hl, vChars1 tile $64
+	lb bc, BANK(MovedexPromptGraphics), 2
 	call CopyVideoDataHBlank
 
 .stayOnMenu
@@ -134,7 +140,7 @@ HandleMovedexListMenu:
 	hlcoord 16, 2
 	lb bc, 1, 3
 	call PrintNumber ; print number of seen moves
-	hlcoord 15, 1
+	hlcoord 16, 1
 	ld de, PokedexSeenText
 	call PlaceString
 	hlcoord 1, 1
@@ -297,7 +303,7 @@ DrawMovedexSortPrompt:
 	CheckFlag FLAG_MOVEDEX_SORTING_MODE
 	ld a, $CD ; 123
 	jr z, .gotSortState
-	ld a, $CF ; ABC
+	ld a, $E4 ; ABC
 .gotSortState
 	hlcoord 17, 17
 	ld [hli], a
@@ -340,7 +346,7 @@ ShowMoveDataExternal:
 
 	; load movedex data page UI tiles
 	ld de, MovedexUI
-	lb bc, BANK(MovedexUI), 21
+	lb bc, BANK(MovedexUI), 18
 	ld hl, vChars1 tile $44
 	call CopyVideoDataHBlankDouble
 
@@ -408,13 +414,13 @@ ShowNextMoveData:
 .needsMarker
 	ld a, [wPlayerMoveType]
 	cp GHOST
-	ld b, $D5
+	ld b, $D2
 	jr z, .copyMarker
 	cp SPECIAL
-	ld b, $CD
+	ld b, $CA
 	jr nc, .copyMarker
 	; physical
-	ld b, $D1
+	ld b, $CE
 .copyMarker
 	ld c, 4
 	ld de, 1
@@ -676,22 +682,12 @@ DrawBottomDataBorder: ; can change if there's no previous or next move
 	ld [hli], a
 	inc a
 	ld [hl], a
-	add 4
-	hlcoord 1, 16 ; now we do the top line of each's little box
-	ld [hli], a
-	inc a
-	ld [hli], a
-	inc a
-	ld [hl], a
 	jr .nextButton
 .noPrev
 	hlcoord 1, 17
 	ld de, 1
 	lb bc, $6f, 3
 	call DrawTileLine ; obscure prev button
-	hlcoord 1, 16
-	lb bc, 1, 3
-	call ClearScreenArea ; remove line above it
 .nextButton
 	ld a, [wPokedexDataFlags]
 	bit 3, a
@@ -707,22 +703,12 @@ DrawBottomDataBorder: ; can change if there's no previous or next move
 	ld [hli], a
 	inc a
 	ld [hl], a
-	inc a
-	hlcoord 16, 16
-	ld [hli], a
-	inc a
-	ld [hli], a
-	inc a
-	ld [hl], a
 	ret
 .noNext
 	hlcoord 16, 17
 	ld de, 1
 	lb bc, $6f, 3
 	call DrawTileLine ; obscure next button
-	hlcoord 16, 16
-	lb bc, 1, 3
-	jp ClearScreenArea ; remove line above it
 
 ClearBasicMoveData:
 	hlcoord 1, 1

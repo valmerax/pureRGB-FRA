@@ -1,16 +1,16 @@
 LoadBillsPCExtraTiles::
 	; 5 frames to load all these
-	ld hl, vChars1 tile $55
+	ld hl, vChars1 tile $64
 	ld de, PokeballTileGraphics ; pokeball tile
 	lb bc, BANK(PokeballTileGraphics), 1
 	call CopyVideoDataHBlank
-	ld hl, vChars1 tile $56
+	ld hl, vChars1 tile $65
 	ld de, PokeballTileGraphics tile 2 ; pokeball with x tile
 	lb bc, BANK(PokeballTileGraphics), 1
 	call CopyVideoDataHBlank
 	ld de, ExtraMenuBorderConnectors
 	ld hl, vChars1 tile $40
-	lb bc, BANK(ExtraMenuBorderConnectors), 21
+	lb bc, BANK(ExtraMenuBorderConnectors), 19
 	jp CopyVideoDataHBlankDouble
 
 ; PureRGBnote: MOVED: moved from save.asm to here since it didn't rely on much from the other file
@@ -52,10 +52,10 @@ DisplayChangeBoxMenu:
 	ldcoord_a 6, 4 
 	ldcoord_a 6, 12
 	ld de, 1
-	lb bc, $C8, 3 ; start of FROM prompt
+	lb bc, $C8, 2 ; start of FROM prompt
 	hlcoord 1, 0
 	call DrawTileLineIncrement
-	lb bc, $CB, 2 ; start of TO prompt
+	lb bc, $CA, 1 ; start of TO prompt
 	hlcoord 7, 0
 	call DrawTileLineIncrement
 
@@ -106,7 +106,7 @@ DisplayChangeBoxMenu:
 	jr z, .boxEmpty ; don't print anything beside it
 	push af
 	cp MONS_PER_BOX
-	ld a, $D5 ; pokeball tile
+	ld a, $E4 ; pokeball tile
 	jr nz, .placeBallTile
 	inc a ; ball tile with X on top
 .placeBallTile
@@ -175,7 +175,7 @@ DrawCurrentBoxPrompt::
 	call BoxDisableSRAM
 	inc_hl_ycoord
 	push hl
-	ld a, $CD ; "No" tile
+	ld a, $CB ; "No" tile
 	ld [hli], a
 	ld a, '.'
 	ld [hli], a
@@ -200,7 +200,7 @@ DrawCurrentBoxPrompt::
 	and a
 	jr z, .noBallTile
 	cp 20
-	ld a, $D5 ; normal pokeball tile
+	ld a, $E4 ; normal pokeball tile
 	jr nz, .loadBallTile
 	inc a ; x over pokeball tile
 .loadBallTile
@@ -237,7 +237,7 @@ InitializeBoxNamesInSRAM:
 .loopCopyNames
 	push hl
 	push de
-	ld de, BoxText
+	ld de, ShortBoxText
 	call CopyString
 	pop de
 	dec hl
@@ -277,6 +277,8 @@ BoxEnableSRAM:
 
 BoxText:
 	db "BOITE@"
+ShortBoxText:
+	db $76, $77, $78, "@"
 BoxOutOf20:
 	db "/20@"
 

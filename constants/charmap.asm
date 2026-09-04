@@ -182,21 +182,21 @@
 	charmap "è",         $bb
 	charmap "é",         $bc
 	charmap "ù",         $bd
-	charmap "ß",         $be
+	charmap "ï",         $be
 	charmap "ç",         $bf
-	charmap "Ä",         $c0
-	charmap "Ö",         $c1
-	charmap "Ü",         $c2
-	charmap "ä",         $c3
-	charmap "ö",         $c4
-	charmap "ü",         $c5
-	charmap "ë",         $c6
-	charmap "ï",         $c7
-	charmap "â",         $c8
-	charmap "ô",         $c9
-	charmap "û",         $ca
-	charmap "ê",         $cb
-	charmap "î",         $cc
+	charmap "ß",         $c7 ; unused
+	charmap "Ä",         $c8 ; unused
+	charmap "Ö",         $c9 ; unused
+	charmap "Ü",         $ca ; unused
+	charmap "ä",         $cb ; unused
+	charmap "ö",         $cc ; unused
+	charmap "ü",         $cd ; unused
+	charmap "ë",         $ce ; unused
+	charmap "â",         $cf
+	charmap "ô",         $d0
+	charmap "û",         $d1
+	charmap "ê",         $d2
+	charmap "î",         $d3
 	charmap "c'",        $d4
 	charmap "d'",        $d5
 	charmap "j'",        $d6
@@ -214,14 +214,13 @@
 	charmap "<PK>",      $e1
 	charmap "<MN>",      $e2
 	charmap "-",         $e3
-	charmap "+",         $e4
 
 	charmap "?",         $e6
 	charmap "!",         $e7
 	charmap ".",         $e8
 
 	charmap "→",         $e9 ; PureRGBnote: ADDED: right facing arrow character
-	charmap "ゥ",         $ea ; katakana small u, unused
+	charmap "+",         $ea ; PureRGBnote: ADDED: plus sign
 	charmap "%",         $eb ; PureRGBnote: ADDED: percent sign
 
 	charmap "▷",         $ec

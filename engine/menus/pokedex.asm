@@ -19,10 +19,15 @@ ShowPokedexMenu:
 	call RunPaletteCommandWithoutGBCDelay
 	callfar LoadPokedexTilePatterns
 ;;;;;;;;;;; PureRGBnote: ADDED: load these new button prompt graphics into VRAM
-	call CheckLoadMetricGraphics
+	; Load main Pokedex prompt graphics
 	ld de, PokedexPromptGraphics
 	ld hl, vChars1 tile $40
-	lb bc, BANK(PokedexPromptGraphics), (PokedexPromptGraphicsEnd - PokedexPromptGraphics) / $10
+	lb bc, BANK(PokedexPromptGraphics), 13
+	call CopyVideoDataHBlank
+	; Load last tile separately (pokeball)
+	ld de, PokedexPromptGraphics + $D0
+	ld hl, vChars1 tile $64
+	lb bc, BANK(PokedexPromptGraphics), 1
 	call CopyVideoDataHBlank
 ;;;;;;;;;;
 .doPokemonListMenu
@@ -389,7 +394,7 @@ HandlePokedexListMenu:
 	pop hl
 	push hl
 	dec hl
-	ld [hl], $CC ; mark learnset unlocked if flag set and pokemon is seen
+	ld [hl], $E4 ; mark learnset unlocked if flag set and pokemon is seen
 .skipLearnsetIcon
 	call PokedexToIndex
 	call GetMonName
@@ -564,7 +569,7 @@ ShowPokedexDataInternal:
 	; load pokedex data page UI tiles (left + right arrows)
 	ld de, PokedexDataUI
 	lb bc, BANK(PokedexDataUI), 2
-	ld hl, vChars1 tile $4D
+	ld hl, vChars1 tile $64
 	call CopyVideoDataHBlankDouble
 
 	ld a, PAD_B
@@ -690,7 +695,7 @@ ShowNextPokemonData:
 	ld b, a
 	ld a, [wPokedexNum]
 	cp b
-	ld a, $CD ; < prompt
+	ld a, $E4 ; < prompt
 	jr nz, .loadLeftPrompt
 	ld a, $6f ; border tile instead
 .loadLeftPrompt
@@ -701,7 +706,7 @@ ShowNextPokemonData:
 	ld b, a
 	ld a, [wPokedexNum]
 	cp b
-	ld a, $CE ; > prompt
+	ld a, $E5 ; > prompt
 	jr nz, .loadRightPrompt
 	ld a, $6f ; border tile instead
 .loadRightPrompt

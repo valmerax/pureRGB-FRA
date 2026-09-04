@@ -299,10 +299,10 @@ GetBillsPCMenuPrompt:
 
 
 BillsPCBoxNamePrompt:
-	db $60, $69, $6A, $CF, $D0, $D1, '@'
+	db $60, $69, $6A, $CD, $CE, $CF, '@'
 
 BillsPCBoxViewPrompt:
-	db $60, $69, $6A, $D2, $D3, $D4, '@'
+	db $60, $69, $6A, $D0, $D1, $D2, '@'
 
 GetWithdrawPCMenuPrompt:
 	hlcoord 0, 13
