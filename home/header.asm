@@ -81,7 +81,7 @@ PlacePKMNText::   db "<PK><MN>@"
 SECTION "vblank", ROM0[$0040]
 	jp VBlank
 
-HaveText::         db "h", "ave@"
+LaSpaceText::         db "l", "a @"
 
 SECTION "lcd", ROM0[$0048]
 ; this interrupt is disabled on init, so this is a free 8 bytes to use unless we turn it on

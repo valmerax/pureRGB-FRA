@@ -323,12 +323,12 @@ DEF TEXT_CODE_CMD_MARKER EQU $8000
 TextShortcutCommandJumpTable:
 	dw SuisText
 	dw UneText
-	dw YouText
+	dw QuiText
 	dw EsSpaceText
 	dw IenText
 	dw SpaceASpaceText
 	dw SpaceLaText
-	dw HaveText
+	dw LaSpaceText
 	dw UnSpaceText
 	dw PlusText
 	dw DeSpaceText
@@ -378,7 +378,7 @@ UserText::        db "lanceur@"
 PCCharText::      db "PC@"
 ; these have to be separated by a comma in order to not re-trigger the charmap macro that sets them up to be used automatically
 UneText::         db "u", "ne@"
-YouText::         db "Y", "ou@"
+QuiText::         db "q", "ui@"
 EsSpaceText::     db "e", "s @"
 SpaceASpaceText:: db " ", "à @"
 UnSpaceText::     db "u", "n @"
