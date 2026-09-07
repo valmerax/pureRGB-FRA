@@ -331,8 +331,8 @@ _SchoolB1FNerdNotebookAttack::
 _SchoolB1FNerdNotebookDefense::
 	text "Détermine les"
 	line "dégâts subis par"
-	cont "un #MON lorsqu'il"
-	cont "est touché par"
+	cont "un #MON quand"
+	cont "il est touché par"
 	cont "des attaques"
 	cont "physiques."
 	prompt

@@ -3939,7 +3939,7 @@ InsteadText:
 	text_far _UsedInsteadText
 PrintMoveName:
 	text_far _MoveNameText
-	text_far_end _ExclamationPointText
+	text_far_end _EndUsedMoveText
 
 ;;;;;;;;;;
 

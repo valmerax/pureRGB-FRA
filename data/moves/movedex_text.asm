@@ -301,7 +301,7 @@ _SandAttackDexEntry::
 _GenericLowerAccuracyText::
 	bage "Baisse la"
 	next "PRECISION de"
-	next "l'<ennemi>. (-1 PRE)"
+	next "l'<ennemi> (-1 PRE)"
 	dex
 
 _HeadbuttDexEntry::
@@ -462,8 +462,7 @@ _GrowlDexEntry::
 	next "moins méfiant."
 
 	bage "Baisse l'ATTAQUE de"
-	next "l'<ennemi>."
-	next "(-1 FOR)"
+	next "l'<ennemi> (-1 FOR)"
 	dex
 
 _RoarDexEntry::
@@ -474,7 +473,7 @@ _RoarDexEntry::
 _Generic33PercentLowerAttackText::
 	bage "33% de chances de"
 	next "baisser l'ATTAQUE"
-	next "ennemie. (-1 FOR)"
+	next "<ennemi>e (-1 FOR)"
 	dex
 
 _SingDexEntry::
@@ -649,7 +648,7 @@ _BubblebeamDexEntry::
 _Generic33PercentLowerSpeedText::
 	bage "33% de chances de"
 	next "baisser la VITESSE"
-	next "ennemie. (-1 VIT)"
+	next "<ennemi>e (-1 VIT)"
 	dex
 
 _AuroraBeamDexEntry::
@@ -809,7 +808,7 @@ _GrowthDexEntry::
 
 	bage "Soigne 33% des PV"
 	next "max et augmente le"
-	next "SPECIAL. (+1 SPE)"
+	next "SPECIAL (+1 SPE)"
 
 	bage "Ne fait rien si"
 	next "les PV sont au max"
@@ -1033,7 +1032,7 @@ _MeditateDexEntry::
 
 	bage "Augmente l'ATTAQUE,"
 	next "le SPECIAL, et"
-	next "la VITESSE. (+1)"
+	next "la VITESSE (+1)"
 	dex
 
 _AgilityDexEntry::
@@ -1201,10 +1200,11 @@ _WithdrawDexEntry::
 
 	bage "Soigne 33% des PV"
 	next "max et augmente la"
-	next "DEFENSE. (+1 DEF)"
+	next "DEFENSE (+1 DEF)."
 
 	bage "Ne fait rien si"
-	next "les PV sont au max"
+	next "les PV sont au"
+	next "max"
 	dex
 
 _DefenseCurlDexEntry::
@@ -1494,7 +1494,7 @@ _AmnesiaDexEntry::
 
 	bage "Augmente beaucoup"
 	next "le SPECIAL du"
-	next "<lanceur>. (+2 SPE)"
+	next "<lanceur> (+2 SPE)"
 	dex
 
 _KinesisDexEntry::
@@ -1624,7 +1624,7 @@ _TransformDexEntry::
 
 	bage "Toutes les stats"
 	next "et capacités sont"
-	next "copiées. (Sauf PV)"
+	next "copiées (sauf PV)."
 
 	bage "Dure jusqu'à la"
 	next "fin du combat.@"
@@ -1678,7 +1678,7 @@ _PsywaveDexEntry::
 _Generic33PercentLowerSpecialText::
 	bage "33% de chances de"
 	next "baisser le"
-	next "SPECIAL. (-1 SPE)"
+	next "SPECIAL (-1 SPE)"
 	dex
 
 _SplashDexEntry::
@@ -1699,8 +1699,8 @@ _AcidArmorDexEntry::
 	next "protection."
 
 	bage "Réduit de moitié"
-	next "tous les dégâts"
-	next "(physique/spécial)"
+	next "tous types de"
+	next "dégâts (FOR/SPE)"
 	dex
 	
 _CrabhammerDexEntry::

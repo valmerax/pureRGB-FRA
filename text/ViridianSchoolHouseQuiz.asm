@@ -1,6 +1,6 @@
 _SchoolB1FLeftTeacherInit::
-	text "Allons donc! Nous"
-	line "avons un visiteur!"
+	text "Tiens donc!"
+	line "Un visiteur!"
 	prompt
 
 _SchoolB1FLeftTeacherNoParcel::
@@ -15,7 +15,8 @@ _SchoolB1FLeftTeacherNoParcel::
 	prompt
 
 _SchoolB1FLeftTeacherNoPokedex::
-	text "Eh bien! Un COLIS!"
+	text "Eh bien!"
+	line "Un COLIS!"
 	para "C'est pour moi?"
 	para "Non? Alors livre-"
 	line "le, mon garçon!"

@@ -89,8 +89,9 @@ _ViridianForestBattleTextSamurai::
 	done
 
 _ViridianForestEndBattleTextSamurai::
-	text "Après tout ce que"
-	line "j'ai fait<...>"
+	text "Après tout"
+	line "ce que j'ai"
+	cont "fait<...>"
 	prompt
 
 _ViridianForestAfterBattleTextSamurai::

@@ -533,8 +533,9 @@ _TurnPageText::
 _ViridianSchoolNotebookText5::
 	text "FILLETTE" ; fall through
 _ViridianSchoolHeyDontLookAtNotes::
-	db ": Hé! Ne lis"
-	line "pas mon journal!@"
+	db ": Hé! Ne"
+	line "lis pas mon"
+	cont "journal!@"
 	text_end
 
 _ViridianSchoolNotebookTextGus::
@@ -1160,13 +1161,17 @@ _UsedMoveText::
 	text_end
 
 _UsedInsteadText::
-	text "à la place de,"
+	text "à la place:"
 	cont "@"
 	text_end
 
 _MoveNameText::
 	text_ram_stringbuffer
 	text "@"
+
+_EndUsedMoveText::
+	text_start
+	done
 
 _ExclamationPointText::
 	text "!"
