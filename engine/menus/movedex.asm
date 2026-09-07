@@ -34,7 +34,7 @@ ShowMovedexMenu:
 	call RunPaletteCommandWithoutGBCDelay
 	callfar LoadPokedexTilePatterns
 
-	; Load main Movedex prompt graphics
+	; Load Movedex prompt graphics
 	ld de, MovedexPromptGraphics
 	ld hl, vChars1 tile $40
 	lb bc, BANK(MovedexPromptGraphics), 15
@@ -345,9 +345,25 @@ ShowMoveDataExternal:
 	ldh [hTileAnimations], a
 
 	; load movedex data page UI tiles
+	; PREC button
 	ld de, MovedexUI
-	lb bc, BANK(MovedexUI), 18
+	lb bc, BANK(MovedexUI), 3
 	ld hl, vChars1 tile $44
+	call CopyVideoDataHBlankDouble
+	; SUIV button
+	ld de, MovedexUI + $18
+	lb bc, BANK(MovedexUI), 3
+	ld hl, vChars2 tile $60
+	call CopyVideoDataHBlankDouble
+	; SPECIAL marker
+	ld de, MovedexUI + $30
+	lb bc, BANK(MovedexUI), 4
+	ld hl, vChars2 tile $70
+	call CopyVideoDataHBlankDouble
+	; PHYSIQUE and DYNAMIC markers
+	ld de, MovedexUI + $50
+	lb bc, BANK(MovedexUI), 8
+	ld hl, vChars2 tile $75
 	call CopyVideoDataHBlankDouble
 
 	call DrawDataBorder
@@ -414,13 +430,13 @@ ShowNextMoveData:
 .needsMarker
 	ld a, [wPlayerMoveType]
 	cp GHOST
-	ld b, $D2
+	ld b, $79
 	jr z, .copyMarker
 	cp SPECIAL
-	ld b, $CA
+	ld b, $70
 	jr nc, .copyMarker
 	; physical
-	ld b, $CE
+	ld b, $75
 .copyMarker
 	ld c, 4
 	ld de, 1
@@ -697,7 +713,7 @@ DrawBottomDataBorder: ; can change if there's no previous or next move
 	cp b
 	jr z, .noNext
 	hlcoord 16, 17 ; now we do the next> prompt
-	ld a, $C7 ; start of <prev prompt
+	ld a, $60 ; start of next> prompt
 	ld [hli], a
 	inc a
 	ld [hli], a
