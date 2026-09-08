@@ -44,35 +44,35 @@ _DexRatingText_Own30To39::
 	done
 
 _DexRatingText_Own40To49::
-	text "C'est pas mal!"
-	line "Va voir mon"
-	cont "ASSISTANT quand"
-	cont "tu en auras 50!"
-	done
-
-_DexRatingText_Own50To59::
-	text "Ah! Tu en as"
-	line "enfin 50!"
-	cont "Mon ASSISTANT te"
-	cont "donnera un"
-	cont "MULTI EXP!"
-	done
-
-_DexRatingText_Own60To69::
-	text "Oh! C'est de"
-	line "mieux en mieux!"
-	done
-
-_DexRatingText_Own70To79::
 	text "Excellent!"
 	line "Va pêcher des"
 	cont "#MON marins!"
 	done
 
-_DexRatingText_Own80To89::
+_DexRatingText_Own50To59::
+	text "Oh! C'est de"
+	line "mieux en mieux!"
+	done
+
+_DexRatingText_Own60To69::
 	text "Magnifique!"
 	line "T'es un vrai"
 	cont "collectionneur!"
+	done
+
+_DexRatingText_Own70To79::
+	text "C'est pas mal!"
+	line "Va voir mon"
+	cont "ASSISTANT quand"
+	cont "tu en auras 80!"
+	done
+
+_DexRatingText_Own80To89::
+	text "Ah! Tu en as"
+	line "enfin 80!"
+	cont "Mon ASSISTANT te"
+	cont "donnera une"
+	cont "PUCE EXP!"
 	done
 
 _DexRatingText_Own90To99::
@@ -82,9 +82,9 @@ _DexRatingText_Own90To99::
 	done
 
 _DexRatingText_Own100To109::
-	text "Tu en as 100!"
-	cont "Tu es vraiment"
-	cont "très doué!"
+	text "Tu es vraiment"
+	line "très doué!"
+	para "Tu en as 100!"
 	done
 
 _DexRatingText_Own110To119::
@@ -112,8 +112,9 @@ _DexRatingText_Own140To149::
 	done
 
 _DexRatingText_Own150To151::
-	text "Ton #DEX est"
-	line "complet!"
-	cont "@"
+	text "@"
 	text_far _GenericCongratulationsText
+	text_start
+	para "Ton #DEX est"
+	line "complet!"
 	done

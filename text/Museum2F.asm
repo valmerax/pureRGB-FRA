@@ -54,9 +54,9 @@ _Museum2FWalletKid1::
 	cont "l'a perdu était"
 	cont "blindé!"
 
-	para "Je pourrais"
-	line "m'acheter un"
-	cont "MAGICARPE avec ça!@"
+	para "Je peux m'acheter"
+	line "un MAGICARPE avec"
+	cont "ça!@"
 	text_end
 
 _Museum2FWalletKidBattle::
