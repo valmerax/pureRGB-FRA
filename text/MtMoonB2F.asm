@@ -1,9 +1,11 @@
-; TODO: rollback text
-_MtMoonB2FFossilYouWantText::
+_MtMoonB2FDomeFossilYouWantText::
 	text "Tu veux le"
-	line "@"
-	text_ram_namebuffer
-	text "?"
+	line "fossile DOME?"
+	done
+
+_MtMoonB2FHelixFossilYouWantText::
+	text "Tu veux le"
+	line "fossile NAUTILE?"
 	done
 
 _MtMoonB2FReceivedFossilText::
