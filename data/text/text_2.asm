@@ -1427,19 +1427,17 @@ _PartyMenuNormalText::
 	done
 
 _PartyMenuItemUseText::
-	text "Utiliser"
-	line "@"
+	text "@"
 	text_ram_namebuffer
 	text_start
-	cont "sur quel <PK><MN>?"
+	line "sur quel <PK><MN>?"
 	done
 
 _PartyMenuItemUseFullText::
-	text "Utiliser"
-	line "@"
+	text "@"
 	text_ram_namebuffer
 	text_start
-	cont "sur quel #MON?"
+	line "sur quel #MON?"
 	done
 
 _PartyMenuBattleText::
