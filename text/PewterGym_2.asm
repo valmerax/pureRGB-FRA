@@ -193,7 +193,7 @@ _ApexChipExplanationText::
 	cont "une crête acérée"
 	cont "avec des réseaux"
 	cont "de grottes et un"
-	cont "relief montagneux."
+	cont "relief escarpé."
 	prompt
 
 _AlreadyReceivedApexChipsText::
