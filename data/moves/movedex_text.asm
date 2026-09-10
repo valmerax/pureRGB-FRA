@@ -53,8 +53,8 @@ _CometPunchDexEntry::
 	next "coups de poing."
 	; fall through
 _GenericAlwaysGoesFirstText::
-	bage "Toujours en"
-	next "premier"
+	bage "Attaque toujours"
+	next "en premier"
 	dex
 
 _MegaPunchDexEntry::
@@ -152,8 +152,7 @@ _SwordsDanceDexEntry::
 	next "l'esprit combatif."
 
 	bage "Booste l'ATTAQUE du"
-	next "<lanceur>."
-	next "(+2 FOR)"
+	next "<lanceur> (+2 FOR)"
 	dex
 
 _CutDexEntry::
@@ -295,7 +294,7 @@ _SandAttackDexEntry::
 
 	bage "Les #MON de"
 	next "type vol ne sont"
-	next "pas affectés."
+	next "pas affectés"
 	dex
 	; fall through
 _GenericLowerAccuracyText::
@@ -381,7 +380,7 @@ _ThrashDexEntry::
 _GenericThrashEffectText::
 	bage "Dure 2-3 tours."
 	next "Le <lanceur> est"
-	next "ensuite confus."
+	next "ensuite confus"
 	dex
 
 _DoubleEdgeDexEntry::
@@ -405,7 +404,7 @@ _TailWhipDexEntry::
 	; fall through
 _GenericLowersDefense1StageText::
 	bage "Baisse la DEFENSE"
-	next "de l'<ennemi>."
+	next "de l'<ennemi>"
 	next "(-1 DEF)"
 	dex
 
@@ -514,13 +513,13 @@ _DisableDexEntry::
 	next "mentalement une"
 	next "attaque ennemie."
 
-	bage "Désactive la"
-	next "dernière attaque"
-	next "utilisée pendant"
+	bage "Bloque la dernière"
+	next "attaque utilisée"
+	next "pendant 2-8 tours,"
 
-	bage "2-8 tours, ou une"
-	next "attaque aléatoire"
-	next "si aucune utilisée"
+	bage "ou une attaque au"
+	next "hasard si aucune"
+	next "n'a été lancée"
 	dex
 
 _AcidDexEntry::
@@ -574,7 +573,7 @@ _MistDexEntry::
 
 	bage "RUGISSEMENT,"
 	next "GRINCEMENT,"
-	next "BROUILLARD, etc."
+	next "BROUILLARD, etc"
 	dex
 
 _WaterGunDexEntry::
@@ -703,7 +702,7 @@ _SubmissionDexEntry::
 	; fall through
 _GenericRaisesAttack1StageText::
 	bage "Augmente l'ATTAQUE"
-	next "du <lanceur>."
+	next "du <lanceur>"
 	next "(+1 FOR)"
 	dex
 
@@ -875,7 +874,7 @@ _StringShotDexEntry::
 	next "soie collants."
 
 	bage "Baisse la VITESSE"
-	next "de l'<ennemi>."
+	next "de l'<ennemi>"
 	next "(-1 VIT)"
 	dex
 
@@ -1045,7 +1044,7 @@ _AgilityDexEntry::
 	next "une vitesse folle."
 
 	bage "Monte la VITESSE"
-	next "du <lanceur> à fond."
+	next "du <lanceur> à fond"
 	next "(+2 VIT)"
 	dex
 
@@ -1116,8 +1115,8 @@ _ScreechDexEntry::
 	next "strident."
 
 	bage "Baisse la DEFENSE"
-	next "de l'<ennemi> à fond."
-	next "(-2 DEF)"
+	next "de l'<ennemi> à fond"
+	next "(-2 DEF)."
 
 	bage "Ce cri étrange"
 	next "résonnera jusqu'à"
@@ -1145,7 +1144,7 @@ _DoubleTeamDexEntry::
 	; fall through
 _GenericRaisesEvasion1StageText::	
 	bage "Augmente l'ESQUIVE"
-	next "du <lanceur>."
+	next "du <lanceur>"
 	next "(+1 ESQ)"
 	dex
 
@@ -1157,11 +1156,12 @@ _RecoverDexEntry::
 	text_jump _GenericHealsHalfText
 
 _HardenDexEntry::
-	text "L'extérieur du"
-	next "<lanceur> se durcit."
+	text "L'enveloppe extér-"
+	next "ieure du <lanceur>"
+	next "se durcit."
 
 	bage "Monte la DEFENSE"
-	next "du <lanceur>."
+	next "du <lanceur>"
 	next "(+1 DEF)"
 	dex
 
@@ -1223,7 +1223,7 @@ _BarrierDexEntry::
 	next "énergétique."
 
 	bage "Monte la DEFENSE"
-	next "du <lanceur> à fond."
+	next "du <lanceur> à fond"
 	next "(+2 DEF)"
 	dex
 
@@ -1293,12 +1293,12 @@ _FocusEnergyDexEntry::
 	dex
 
 _BideDexEntry::
-	text "Se prépare"
-	next "mentalement pour"
-	next "augmenter sa force."
+	text "Le <lanceur> se"
+	next "prépare afin de"
+	next "se renforcer."
 
 	bage "Augmente l'ATTAQUE"
-	next "et la DEFENSE."
+	next "et la DEFENSE"
 	next "(+1 FOR, +1 DEF)"
 	dex
 
@@ -1309,7 +1309,7 @@ _MetronomeDexEntry::
 
 	bage "provoque"
 	next "soudainement une"
-	next "attaque aléatoire."
+	next "attaque aléatoire"
 	dex
 
 _MirrorMoveDexEntry::
@@ -1716,10 +1716,10 @@ _CrabhammerDexEntry::
 _ExplosionDexEntry::
 	text "Le <lanceur> explose"
 	next "comme une bombe"
-	next "géante qui lance"
+	next "géante et projète"
 
 	bage "des éclats rocheux"
-	next "à vitesse "
+	next "à une vitesse"
 	next "supersonique.@"
 
 	text_jump _GenericExplodeDexEntry
@@ -1779,7 +1779,7 @@ _SharpenDexEntry::
 	next "ses facettes."
 
 	bage "Augmente l'ATTAQUE"
-	next "et la PRECISION."
+	next "et la PRECISION"
 	next "(+1 FOR, +1 PRE)"
 	dex
 
@@ -1806,7 +1806,7 @@ _ConversionDexEntry::
 
 	bage "Mode DEFENSE: les"
 	next "dégâts subis sont"
-	next "réduits de moitié."
+	next "réduits de moitié"
 	dex
 
 _TriAttackDexEntry::

@@ -7,7 +7,7 @@ _SharpenDexEntry::
 	next "ses facettes."
 
 	bage "Augmente l'ATTAQUE"
-	next "et la PRECISION."
+	next "et la PRECISION"
 	next "(+1 FOR, +1 PRE)"
 	dex
 
@@ -21,7 +21,7 @@ _ConversionDexEntry::
 	next "vaincre en combat."
 
 	bage "Booste le SPECIAL"
-	next "du <lanceur> à fond."
+	next "du <lanceur> à fond"
 	next "(+2 SPE)"
 	dex
 
