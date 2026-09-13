@@ -7,7 +7,7 @@ LoadLearnsetTiles:
 	ld [wCurSpecies], a
 	push af
 	call GetMonHeader
-	ld de, vChars1 tile $57
+	ld de, vChars1 tile $46
 	ld a, [wPokedexNum]
 	ld c, a
 	callfar FarLoadPartyMonSpriteIntoVRAM
@@ -18,33 +18,36 @@ LoadLearnsetTiles:
 	pop af
 	ld [wPokedexNum], a
 	; load menu graphics
+	; First part
 	ld de, LearnsetMenuUI2BPP
-	ld hl, vChars1 tile $40
-	lb bc, BANK(LearnsetMenuUI2BPP), 23
+	ld hl, vChars2 tile $60
+	lb bc, BANK(LearnsetMenuUI2BPP), 10
+	call CopyVideoDataHBlank
+	; Second part
+	ld de, LearnsetMenuUI2BPP + $A0
+	ld hl, vChars2 tile $6C
+	lb bc, BANK(LearnsetMenuUI2BPP), 13
 	call CopyVideoDataHBlank
 	ld de, LearnsetMenuUI1BPP
-	ld hl, vChars2 tile $75
+	ld hl, vChars1 tile $40
 	lb bc, BANK(LearnsetMenuUI1BPP), 6
 	call CopyVideoDataHBlankDouble
 	; draw basic border tiles that will stay the same regardless of page
 	hlcoord 0, 4
-	lb bc, $CC, 7 
+	lb bc, $6E, 7 
 	ld de, 1
 	call DrawTileLine
 	hlcoord 19, 4
-	ld [hl], $CD
+	ld [hl], $6F
 	hlcoord 19, 5
-	lb bc, $D3, 13
+	lb bc, $75, 13
 	ld de, SCREEN_WIDTH
 	call DrawTileLine
-	; draw "(POKEMON)'s"
+	; draw "(POKEMON)"
 	call GetMonName
 	hlcoord 1, 1
 	ld de, wNameBuffer
 	call PlaceString
-	call FindFirstBlankTile
-	; put 's in this blank tile next to the pokemon's name
-	ld [hl], '\'s'
 	ret
 
 ShowMonLearnsetMenu:
@@ -72,8 +75,8 @@ ShowMonLearnsetMenu:
 	; clear the page text description tiles
 	hlcoord 11, 2
 	ld [hl], ' '
-	hlcoord 12, 1
-	lb bc, 2, 8
+	hlcoord 11, 1
+	lb bc, 2, 9
 	call ClearScreenArea
 	xor a
 	ld [wListScrollOffset], a
@@ -174,17 +177,17 @@ ShowLevelUpLearnset:
 	call DrawNonCurrentLearnsetTab
 	hlcoord 15, 3
 	call DrawNonCurrentLearnsetTab
-	hlcoord 11, 1
+	hlcoord 10, 1
 	ld a, [hli]
 	cp ' '
 	jr z, .notLongName
 	inc hl
 .notLongName
-	ld de, LevelUpText
-	call PlaceString
-	ld bc, SCREEN_WIDTH - 1
-	add hl, bc
 	ld de, LearnsetText
+	call PlaceString
+	ld bc, SCREEN_WIDTH + 1
+	add hl, bc
+	ld de, LevelUpText
 	call PlaceString
 	ld a, PAL_CERULEAN
 	ld [wGenericPaletteOverride], a
@@ -203,7 +206,7 @@ ShowLevelUpLearnset:
 ;;;; page specific code starts
 	ld de, LvText
 	push af
-	call PlaceString ; Place "Lv" text
+	call PlaceString ; Place "Nv" text
 	pop af
 	inc hl
 	inc hl
@@ -324,16 +327,16 @@ ShowLevelUpLearnset:
 	ret
 
 LvText:
-	db "Niv@"
+	db "Nv@"
 
 LevelUpText:
-	db "Niveau sup@"
+	db "Niveaux@"
 
 LearnsetText:
 	db "Capacités@"
 
 TMPlusHMText:
-	db "<CT>+CS@"
+	db "CT+CS@"
 
 TMLearnsetListPrint:
 	push hl
@@ -359,17 +362,17 @@ ShowTMLearnset:
 	call DrawLearnsetTab
 	hlcoord 15, 3
 	call DrawNonCurrentLearnsetTab
-	hlcoord 11, 1
+	hlcoord 10, 1
 	ld a, [hli]
 	cp ' '
 	jr z, .notLongName
 	inc hl
 .notLongName
-	ld de, TMPlusHMText
-	call PlaceString
-	ld bc, SCREEN_WIDTH - 1
-	add hl, bc
 	ld de, LearnsetText
+	call PlaceString
+	ld bc, SCREEN_WIDTH + 2
+	add hl, bc
+	ld de, TMPlusHMText
 	call PlaceString
 	ld a, PAL_CINNABAR
 	ld [wGenericPaletteOverride], a
@@ -502,14 +505,14 @@ CheckPageLeftRight:
 	and a
 	ret
 
-WaysToText:
-	db "Comment@"
+WaysText:
+	db "Moyens@"
 
 EvolveText:
-	db "Evolution@"
+	db "Evolue@"
 
 WithItemText:
-	db "avec l'objet:@"
+	db "via l'objet:@"
 
 TradeText:
 	db "par échange@"
@@ -517,11 +520,14 @@ TradeText:
 AtLevelText:
 	db "au Niv@"
 
-DoesNotText:
-	db "Ne pas @"
+DoesText:
+	db "N'@"
+
+NotText:
+	db "Pas@"
 
 NoneText:
-	db "Aucun@"
+	db "Aucune@"
 
 IntoLearnsetText:
 	db "en @"
@@ -537,16 +543,21 @@ ShowEvolutions:
 	hlcoord 15, 3
 	ld de, EvoTabTiles
 	call DrawLearnsetTab
-	hlcoord 11, 1
+	hlcoord 12, 1
 	ld a, [hli]
 	cp ' '
 	jr z, .notLongName
 	inc hl
 .notLongName
-	ld de, WaysToText
+	ld de, WaysText
 	call PlaceString
-	hlcoord 13, 2
+	hlcoord 12, 2
+	call FindFirstBlankTile
+	ld [hl], 'd\''
+	inc hl
 	call .printEvolveText
+	call FindFirstBlankTile
+	ld [hl], 'r'
 	ld a, PAL_LAVENDER
 	ld [wGenericPaletteOverride], a
 	ld d, SET_PAL_GENERIC
@@ -568,8 +579,6 @@ ShowEvolutions:
 	push de
 	call .printEvolveText
 	call FindFirstBlankTile
-	ld [hl], 's'
-	inc hl
 	inc hl
 	pop de
 	ld a, [de]
@@ -620,7 +629,7 @@ ShowEvolutions:
 	call .nextLine
 	ld de, IntoLearnsetText
 	call PlaceString
-	ld bc, 5
+	ld bc, 3
 	add hl, bc
 	pop de
 	inc de
@@ -647,7 +656,7 @@ ShowEvolutions:
 .skipGetName
 	pop hl
 .doneEvoEntryGoToNext
-	ld bc, SCREEN_WIDTH - 9
+	ld bc, SCREEN_WIDTH - 6
 	add hl, bc
 	call .drawSeparator
 	pop de
@@ -669,10 +678,13 @@ ShowEvolutions:
 	jp CheckPageLeftRight
 .doesNotEvolve
 	hlcoord 1, 6
-	ld de, DoesNotText
+	ld de, DoesText
 	call PlaceString
-	hlcoord 10, 6
+	hlcoord 3, 6
 	call .printEvolveText
+	hlcoord 10, 6
+	ld de, NotText
+	call PlaceString
 	jr .waitForButtonPress
 .nextLine
 	ld bc, SCREEN_WIDTH
@@ -692,20 +704,20 @@ ShowEvolutions:
 
 
 NonCurrentLearnsetTabTiles:
-	db $D0, $D1, $D1, $D2
-	db $D5, $D6, $D6, $CA
+	db $72, $73, $73, $74
+	db $77, $78, $78, $6C
 
 LevelUpLearnsetTabTiles:
-	db $C0, $C1, $C2, $C3
-	db $CB, $75, $76, $CE
+	db $60, $61, $62, $63
+	db $6D, $C0, $C1, $70
 
 TMLearnsetTabTiles:
-	db $C4, $C5, $C6, $C3
-	db $CF, $77, $78, $CE
+	db $64, $65, $66, $63
+	db $71, $C2, $C3, $70
 
 EvoTabTiles:
-	db $C4, $C7, $C8, $C9
-	db $CF, $79, $7A, $D4
+	db $64, $67, $68, $69
+	db $71, $C4, $C5, $76
 
 DrawNonCurrentLearnsetTab:
 	ld de, NonCurrentLearnsetTabTiles
@@ -742,15 +754,15 @@ FindFirstBlankTile:
 	ret
 
 LearnsetMonIconsOAM:
-	db 32,16,$D7,$00
-	db 32,24,$D8,$00
-	db 40,16,$DB,$00
-	db 40,24,$DC,$00
+	db 32,16,$C6,$00
+	db 32,24,$C7,$00
+	db 40,16,$CA,$00
+	db 40,24,$CB,$00
 
-	db 32,40,$D9,$00
-	db 32,48,$DA,$00
-	db 40,40,$DD,$00
-	db 40,48,$DE,$00
+	db 32,40,$C8,$00
+	db 32,48,$C9,$00
+	db 40,40,$CC,$00
+	db 40,48,$CD,$00
 
 ConvertTMItemIDToMove:
 	; convert item ID to tm or hm index (HMs come after TMs in the index whereas they come before them in item IDs)

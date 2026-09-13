@@ -344,6 +344,8 @@ ShowMoveDataExternal:
 	xor a
 	ldh [hTileAnimations], a
 
+	callfar LoadPokedexTilePatterns ; load pokedex tiles
+
 	; load movedex data page UI tiles
 	; PREC button
 	ld de, MovedexUI

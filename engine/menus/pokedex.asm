@@ -535,17 +535,16 @@ PokedexOwnText:
 PokedexContentsText:
 	db "SOMMAIRE@"
 
-
 PokedexDataText:
 	db  "INFO@"
 
 PokedexMoveText:
-	db  "ATQ@"
+	db  "CAPA@"
 
 PokedexMenuItemsText:
-	db   "CRI"
+	db   "CRI "
 	next "ZONE"
-	next "RET@"
+	next "RET @"
 
 ; tests if a pokemon's bit is set in the seen or owned pokemon bit fields
 ; INPUT:
