@@ -39,8 +39,8 @@ ShowMovedexMenu:
 	ld hl, vChars1 tile $40
 	lb bc, BANK(MovedexPromptGraphics), 15
 	call CopyVideoDataHBlank
-	; Load last 2 tiles separately (ABC prompt)
-	ld de, MovedexPromptGraphics + $F0
+	; Load ABC prompt
+	ld de, MovedexPromptGraphics tile 15
 	ld hl, vChars1 tile $64
 	lb bc, BANK(MovedexPromptGraphics), 2
 	call CopyVideoDataHBlank
@@ -353,17 +353,17 @@ ShowMoveDataExternal:
 	ld hl, vChars1 tile $44
 	call CopyVideoDataHBlankDouble
 	; SUIV button
-	ld de, MovedexUI + $18
+	ld de, MovedexUI tile 1 + TILE_SIZE / 2
 	lb bc, BANK(MovedexUI), 3
 	ld hl, vChars2 tile $60
 	call CopyVideoDataHBlankDouble
 	; SPECIAL marker
-	ld de, MovedexUI + $30
+	ld de, MovedexUI tile 3
 	lb bc, BANK(MovedexUI), 4
 	ld hl, vChars2 tile $70
 	call CopyVideoDataHBlankDouble
 	; PHYSIQUE and DYNAMIC markers
-	ld de, MovedexUI + $50
+	ld de, MovedexUI tile 5
 	lb bc, BANK(MovedexUI), 8
 	ld hl, vChars2 tile $75
 	call CopyVideoDataHBlankDouble

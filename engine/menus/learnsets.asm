@@ -24,7 +24,7 @@ LoadLearnsetTiles:
 	lb bc, BANK(LearnsetMenuUI2BPP), 10
 	call CopyVideoDataHBlank
 	; Second part
-	ld de, LearnsetMenuUI2BPP + $A0
+	ld de, LearnsetMenuUI2BPP tile 10
 	ld hl, vChars2 tile $6C
 	lb bc, BANK(LearnsetMenuUI2BPP), 13
 	call CopyVideoDataHBlank
@@ -45,7 +45,7 @@ LoadLearnsetTiles:
 	call DrawTileLine
 	; draw "(POKEMON)"
 	call GetMonName
-	hlcoord 1, 1
+	hlcoord 0, 1
 	ld de, wNameBuffer
 	call PlaceString
 	ret

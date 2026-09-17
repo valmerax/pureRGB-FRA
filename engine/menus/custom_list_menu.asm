@@ -271,10 +271,10 @@ DrawSortPromptInPC::
 	ret
 
 StartSaveBoxPrompt:
-	db $60, $69, $6A, $70, $71, $72
+	db $6A, $6B, $6C, $70, $71, $72
 
 StartItemSortPrompt:
-	db $60, $69, $6A, $6B, $6E, $6F
+	db $6A, $6B, $6C, $6D, $6E, $6F
 
 GetBillsPCMenuPrompt:
 	ld a, [wCurrentMenuItem]
@@ -299,10 +299,10 @@ GetBillsPCMenuPrompt:
 
 
 BillsPCBoxNamePrompt:
-	db $60, $69, $6A, $CD, $CE, $CF, '@'
+	db $6A, $6B, $6C, $6D, $6E, $6F, '@'
 
 BillsPCBoxViewPrompt:
-	db $60, $69, $6A, $D0, $D1, $D2, '@'
+	db $6A, $6B, $6C, $70, $71, $72, '@'
 
 GetWithdrawPCMenuPrompt:
 	hlcoord 0, 13
@@ -319,7 +319,7 @@ GetWithdrawPCMenuPrompt:
 	push bc
 	call GetMonName
 	pop bc
-	ld de, vChars1 tile $5C
+	ld de, vChars1 tile $46
 	callfar FarLoadSinglePartyMonSpriteIntoVRAM
 	hlcoord 1, 14
 	ld de, wNameBuffer
@@ -341,7 +341,7 @@ LoadPCMonMenuSprite::
 
 PCPokemonSpriteOAM:
 ; x tile, y tile, x pixel, y pixel, vtile offset, attributes
-	dbsprite 2, 17, 0, 0, $DC, 0
-	dbsprite 3, 17, 0, 0, $DD, 0
-	dbsprite 2, 18, 0, 0, $DE, 0
-	dbsprite 3, 18, 0, 0, $DF, 0
+	dbsprite 2, 17, 0, 0, $C6, 0
+	dbsprite 3, 17, 0, 0, $C7, 0
+	dbsprite 2, 18, 0, 0, $C8, 0
+	dbsprite 3, 18, 0, 0, $C9, 0

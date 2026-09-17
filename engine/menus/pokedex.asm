@@ -19,13 +19,14 @@ ShowPokedexMenu:
 	call RunPaletteCommandWithoutGBCDelay
 	callfar LoadPokedexTilePatterns
 ;;;;;;;;;;; PureRGBnote: ADDED: load these new button prompt graphics into VRAM
+	call CheckLoadMetricGraphics
 	; Load Pokedex prompt graphics
 	ld de, PokedexPromptGraphics
 	ld hl, vChars1 tile $40
 	lb bc, BANK(PokedexPromptGraphics), 13
 	call CopyVideoDataHBlank
-	; Load last tile separately (pokeball)
-	ld de, PokedexPromptGraphics + $D0
+	; Load learnset pokeball
+	ld de, PokedexPromptGraphics tile 13
 	ld hl, vChars1 tile $64
 	lb bc, BANK(PokedexPromptGraphics), 1
 	call CopyVideoDataHBlank

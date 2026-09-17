@@ -73,9 +73,9 @@ CheckDrawItemCount::
 	inc de
 	call PrintNumber
 	hlcoord  4, 2
-	ld [hl], $65
+	ld [hl], $77
 	hlcoord 19, 2
-	ld [hl], $66
+	ld [hl], $78
 	ret
 .loadTextBox
 	hlcoord 4, 0
