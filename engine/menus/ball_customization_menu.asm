@@ -945,9 +945,9 @@ BallSFXCustomizationMenu:
 	jp IsCustomBallMenuItemUnlocked
 
 BallSpecialCustomizationMenuText::
-	db "Invert Color@"
-	db "Dark Screen@"
-	db "Light Screen@"
+	db "Inverser Couleurs@"
+	db "Ecran Sombre@"
+	db "Ecran Clair@"
 
 BallSpecialCustomizationMenu:
 	ld a, [wCurrentMenuItem]
