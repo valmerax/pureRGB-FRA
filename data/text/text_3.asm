@@ -326,8 +326,8 @@ _StatusChangesEliminatedText::
 	prompt
 
 _ImmuneToPsychicText::
-	text "<USER> est"
-	line "immunisé au"
+	text "<USER>"
+	line "est immunisé au"
 	cont "type PSY!"
 	prompt
 
@@ -392,10 +392,11 @@ _TradeCenterOpponentText::
 	done
 
 _GuardedAgainstSuperEffectiveMovesText::
-	text "<USER> est"
-	line "protégé contre"
-	para "les attaques"
-	line "super efficaces!"
+	text "<USER>"
+	line "est protégé"
+	cont "contre les"
+	cont "attaques très"
+	cont "efficaces!"
 	prompt
 
 _AcidArmorLiquifiedText::
@@ -416,13 +417,13 @@ _DrawsEnergy::
 _SiphonSnagHealedUserText::
 	text "<USER>@"
 	text_call _DrawsEnergy
-	cont "et se soigne!"
+	cont "et régénère!"
 	prompt
 
 _SiphonSnagHealedPartyText::
 	text "<USER>@"
 	text_call _DrawsEnergy
-	para "et soigne"
+	para "et régénère"
 	line "@"
 	text_ram_namebuffer
 	text "!"

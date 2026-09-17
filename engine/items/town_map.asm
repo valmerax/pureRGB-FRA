@@ -310,7 +310,7 @@ LoadTownMap_Fly_Common:
 	jr .pressedDown
 
 ToText:
-	db " ‘@"
+	db " '@"
 
 BuildFlyLocationsList:
 	ld hl, wFlyAnimUsingCoordList

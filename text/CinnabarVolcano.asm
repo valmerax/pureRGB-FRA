@@ -166,21 +166,17 @@ _ToBlowUpTheRocksTextJump::
 	cont "rochers!"
 	done
 
-_SmashedTheRocksWith::
+_ShatteredRocksSkullBashText::
 	text_ram_namebuffer
 	text " brise"
 	line "les rochers avec"
-	done
-
-_ShatteredRocksSkullBashText::
-	text "@"
-	text_call _SmashedTheRocksWith
 	cont "COUD'KRANE!"
 	done
 
 _ShatteredRocksText::
-	text "@"
-	text_call _SmashedTheRocksWith
+	text_ram_namebuffer
+	text " brise"
+	line "les rochers avec"
 	cont "un puissant coup!"
 	done
 

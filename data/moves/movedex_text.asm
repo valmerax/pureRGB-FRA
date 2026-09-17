@@ -1214,7 +1214,7 @@ _DefenseCurlDexEntry::
 
 	bage "Le <lanceur> est"
 	next "immunisé aux coups"
-	next "super efficaces"
+	next "très efficaces"
 	dex
 
 _BarrierDexEntry::

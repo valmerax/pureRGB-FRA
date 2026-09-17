@@ -32,21 +32,17 @@ _ItemUseBallText05::
 	cont "capturé!@"
 	text_end
 
-_ItemUseBallTextIntro::
+_ItemUseBallText07::
 	text_ram wBoxMonNicks
 	text " est"
 	line "transféré au <PC>"
-	done
-
-_ItemUseBallText07::
-	text "@"
-	text_call _ItemUseBallTextIntro
 	cont "de LEO!"
 	prompt
 
 _ItemUseBallText08::
-	text "@"
-	text_call _ItemUseBallTextIntro
+	text_ram wBoxMonNicks
+	text " est"
+	line "transféré au <PC>"
 	cont "inconnu!"
 	prompt
 

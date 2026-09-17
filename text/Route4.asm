@@ -86,7 +86,8 @@ _Route4BattleText4::
 	done
 
 _Route4EndBattleText4::
-	text "J'y étais presque!"
+	text "J'y"
+	line "étais presque!"
 	prompt
 
 _Route4AfterBattleText4::
