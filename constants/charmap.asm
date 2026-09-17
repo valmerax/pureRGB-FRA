@@ -53,31 +53,18 @@
 
 ; Actual characters (from gfx/font/font_extra.png)
 
-	charmap "<BOLD_A>",  $60 ; unused
-	charmap "<BOLD_P2>", $61
-	charmap "<BOLD_C>",  $62
-	charmap "<BOLD_T>",  $63
+	charmap "<BOLD_P2>", $60
+	charmap "<BOLD_C>",  $61
+	charmap "<BOLD_O>",  $62
+	charmap "<BOLD_B>",  $63
 	charmap "<BOLD_J>",  $64
-	charmap "<BOLD_F>",  $65 ; unused
-	charmap "<BOLD_G>",  $66 ; unused
-	charmap "<BOLD_B>",  $67
-	charmap "<BOLD_O>",  $68
-	charmap "<BOLD_V>",  $69 ; unused
-	charmap "<BOLD_S>",  $6a ; unused
-	charmap "<BOLD_L>",  $6b ; unused
-	charmap "<BOLD_E>",  $6c
-	charmap "<COLON>",   $6d ; colon with tinier dots than ":"
-	charmap "ぃ",         $6e ; hiragana small i, unused
-	charmap "ぅ",         $6f ; hiragana small u, unused
-	charmap "‘",         $70 ; opening single quote
-	charmap "’",         $71 ; closing single quote
-	charmap "<EXTRAOPENQUOTE>",         $72 ; opening quote ; PureRGBnote: CHANGED: crappier quotation mark (unused)
-	charmap "<EXTRACLOSEQUOTE>",         $73 ; closing quote ; PureRGBnote: CHANGED: crappier quotation mark 2 (unused)
+	charmap "<BOLD_E>",  $65
+	charmap "<BOLD_T>",  $66
+
+	charmap "<EXTRACLOSEQUOTE>", $73 ; closing quote ; PureRGBnote: CHANGED: crappier quotation mark 2 (unused)
 	charmap "·",         $74 ; middle dot
 	charmap "…",         $75 ; ellipsis
-	charmap "ぁ",         $76 ; hiragana small a, unused
-	charmap "ぇ",         $77 ; hiragana small e, unused
-	charmap "ぉ",         $78 ; hiragana small o, unused
+	charmap "<COLON>",   $76 ; colon with tinier dots than ":"
 
 	charmap "┌",         $79
 	charmap "─",         $7a
