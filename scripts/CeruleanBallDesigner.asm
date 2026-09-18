@@ -531,13 +531,13 @@ CeruleanBallDesignerSwitchBallMenu:
 	pop af
 	jp c, TextScriptEndNoButtonPress
 	call DisableTextDelay
-	hlcoord 3, 3
-	lb bc, 7, 15
+	hlcoord 1, 3
+	lb bc, 7, 17
 	call TextBoxBorder
-	hlcoord 3, 0
-	lb bc, 1, 15
+	hlcoord 1, 0
+	lb bc, 1, 17
 	call TextBoxBorder
-	hlcoord 4, 1
+	hlcoord 2, 1
 	ld de, .chooseNewBall
 	call PlaceString
 	CheckEvent EVENT_UNLOCKED_AT_LEAST_ONE_CUSTOM_BALL
@@ -592,9 +592,9 @@ CeruleanBallDesignerSwitchBallMenu:
 	rst _PrintText
 	pop bc
 	CheckEvent EVENT_UNLOCKED_AT_LEAST_ONE_CUSTOM_BALL
-	decoord 5, 5
+	decoord 3, 5
 	jr nz, .gotMenuBaseCoord
-	decoord 5, 4
+	decoord 3, 4
 .gotMenuBaseCoord
 	ld hl, BallItemsToCheck
 .loopAddBallNames
@@ -649,7 +649,7 @@ CeruleanBallDesignerSwitchBallMenu:
 	ld [wMenuWatchedKeys], a
 	ld a, 4
 	ld [wTopMenuItemY], a
-	ld a, 4
+	ld a, 2
 	ld [wTopMenuItemX], a
 	CheckEvent EVENT_UNLOCKED_AT_LEAST_ONE_CUSTOM_BALL
 	ld b, -1
