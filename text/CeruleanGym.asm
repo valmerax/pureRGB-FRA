@@ -133,7 +133,7 @@ _CeruleanGymGymGuideBeatMistyText::
 
 	para "Toi et moi, on"
 	line "forme une super"
-	cont "équipe!"
+	cont "équipe!@"
 	text_end
 
 _GymGuideMoreApexChipText::

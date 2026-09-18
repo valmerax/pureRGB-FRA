@@ -22,7 +22,7 @@ _CurrentlyInABall::
 	text_end
 
 _AlreadyInThatBall::
-	text "C'est déjà dans ce"
+	text "Déjà placé dans ce"
 	line "type de BALL."
 	done
 
@@ -92,17 +92,15 @@ _ChangeOutOfWarning::
 	done
 
 _CeruleanBallDesignerBlankPokeballText::
-	text "C'est une"
-	line "# BALL blanche"
-	cont "basique!"
+	text "Une # BALL"
+	line "blanche basique!"
 	para "Prête pour un"
 	line "design cool!"
 	done
 
 _CeruleanBallDesignerCameraText::
-	text "C'est un"
-	line "APP. PHOTO"
-	cont "instantané!"
+	text "Un APP. PHOTO"
+	line "instantané!"
 	para "Il peut imprimer"
 	line "une photo juste"
 	cont "après l'avoir"

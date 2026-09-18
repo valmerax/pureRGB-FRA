@@ -131,7 +131,7 @@ _ErikSarasHouseLeftBookText2::
 
 _ErikSarasHouseCenterBookText::
 	text "LA VIE MARINE"
-	line "DES ABYSSES"
+	line "DES ABYSSES@"
 	text_end
 _ErikSarasHouseCenterBookText2::
 	text "<PARA>CHEMINEES"

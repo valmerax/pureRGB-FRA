@@ -151,7 +151,7 @@ _VermilionGymGymGuideChampInMakingText::
 
 _VermilionGymGymGuideBeatLTSurgeText::
 	text "Wouh! Ce match"
-	line "était survolté!"
+	line "était survolté!@"
 	text_end
 
 _VermilionGymGuideApexChipElectricText::

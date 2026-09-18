@@ -12,7 +12,7 @@ _Route12GuruEnd::
 	line "CANNE, tu vas"
 	cont "vider les océans"
 	cont "de tous les"
-	cont "#MON."
+	cont "#MON.@"
 	text_end
 
 _Route12GuruColor::

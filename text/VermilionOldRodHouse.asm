@@ -1,7 +1,7 @@
 _VermilionOldRodHouseFishingGuruDoYouLikeToFishText::
 	text "Je suis le<...>"
 	line "grand frère"
-	cont "MAITRE PECHEUR!"
+	cont "MAITRE PECHEUR!@"
 	text_end
 
 _VermilionOldRodHouseISimplyLoveFishing::
@@ -17,7 +17,7 @@ _VermilionOldRodHouseFishingGuruTakeThisText::
 	line "j't'aime bien!"
 
 	para "Prends ça et<...>"
-	line "Pêche! Pêche!<PARA>"
+	line "Pêche! Pêche!<PARA>@"
 	text_end
 
 _VermilionOldRodHouseFishingGuruHowAreTheFishBitingText::
@@ -25,12 +25,13 @@ _VermilionOldRodHouseFishingGuruHowAreTheFishBitingText::
 	line "<PLAYER>!"
 
 	para "Ca mord?"
-	line "Hein? Hein?"
+	line "Hein? Hein?@"
 	text_end
 
 _VermilionOldRodHouseGoodRodInfo::
 	text "<PARA>La SUPER CANNE"
-	line "est fiable!"
+	line "que je t'ai donné"
+	cont "est fiable!"
 
 	para "Utilise-la en mer"
 	line "ou dans les lacs."

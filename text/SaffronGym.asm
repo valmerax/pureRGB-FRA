@@ -110,7 +110,7 @@ _SaffronGymGuideBeatSabrinaText::
 	line "Hmmm<...>"
 
 	para "Si j'en avais, je"
-	line "gagnerais!"
+	line "gagnerais!@"
 	text_end
 
 _SaffronGymGuideApexChipPsychicText::

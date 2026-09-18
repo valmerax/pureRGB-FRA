@@ -250,7 +250,7 @@ _ViridianGymGuidePostBattleText::
 	text "Quoi?! C'était"
 	line "GIOVANNI le"
 	cont "CHAMPION?"
-	cont "Ben ça alors!"
+	cont "Ben ça alors!@"
 	text_end
 
 _ViridianGymGuideApexChipGroundText::

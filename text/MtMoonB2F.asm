@@ -53,7 +53,7 @@ _MtMoonB2FSuperNerdTheresAPokemonLabText::
 	line "régénérer des"
 	cont "fossiles de"
 	cont "#MON."
-	done
+	prompt
 
 _MtMoon3TextSuperNerdGiveFossil::
 	text "Je vais y emmener"

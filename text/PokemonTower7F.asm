@@ -10,7 +10,7 @@ _PokemonTower7FMrFujiRescueText::
 	para "Je voulais"
 	line "apaiser l'esprit"
 	cont "de la mère de"
-	cont "OSSELAIT."
+	cont "OSSELAIT.@"
 	text_end
 
 _PokemonTower7FMrFujiCaughtText::

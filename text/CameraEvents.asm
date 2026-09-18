@@ -56,15 +56,15 @@ _PerfectPhotoText::
 	done
 
 _PerfectPhotoBallDesignerText::
-	text "Le DESIGNER"
+	text "La DESIGNER de"
 	line "# BALL voudra"
 	cont "voir sa!"
 	prompt
 
 _NoPhotosText::
-	text "Il n'y a rien"
-	line "d'intéressant à"
-	cont "photographier ici."
+	text "Rien d'intéressant"
+	line "à photographier"
+	cont "par ici."
 	prompt
 
 _PhotosToTurnIn::
@@ -80,7 +80,8 @@ _PhotoOpText::
 	text "On dirait qu'il y"
 	line "a quelque chose"
 	cont "d'intéressant à"
-	cont "photographier ici!"
+	cont "photographier"
+	cont "par ici!"
 	prompt
 
 _Route6ShadowText::
