@@ -560,7 +560,7 @@ DrawTrainerInfo:
 	ld a, BANK(GymLeaderFaceAndBadgeTileGraphics)
 	call FarCopyData2
 	ld hl, TextBoxGraphics
-	ld de, 13 tiles
+	ld de, 22 tiles
 	add hl, de ; hl = colon tile pattern
 	ld de, vChars1 tile $56
 	ld bc, TILE_SIZE
