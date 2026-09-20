@@ -75,3 +75,7 @@ CinnabarLabMetronomeRoomScientist3Text:
 
 ResearcherLadyName:
 	db "CHERCHEUSE@"
+
+CinnabarLabMetronomeRoomPCText::
+	text_far _EmailHereText
+	text_far_end _CinnabarLabMetronomeRoomPCText

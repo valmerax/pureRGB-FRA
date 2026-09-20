@@ -40,11 +40,7 @@ _CinnabarLabMetronomeRoomScientist2Text::
 	done
 
 _CinnabarLabMetronomeRoomPCText::
-	text "Il y a un e-mail!"
-
-	para "<...>"
-
-	para "Les 3 #MON"
+	text "<PARA>Les 3 #MON"
 	line "légendaires sont:"
 	cont "ARTIKODIN,"
 	cont "ELECTHOR et"

@@ -446,17 +446,12 @@ _BillsHousePokemonListText2::
 	done
 
 _EmailHereText::
-	text "Il y a un e-mail"
-	line "ici!"
+	text "Il y a un e-mail!"
 	para "<...>@"
 	text_end
 
 _OakLabEmailText::
-	text "Il y a un e-mail!"
-
-	para "<...>"
-
-	para "Avis à tous les"
+	text "<PARA>Avis à tous les"
 	line "dresseurs de"
 	cont "#MON!"
 
