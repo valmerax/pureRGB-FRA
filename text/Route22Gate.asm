@@ -15,7 +15,7 @@ _Route22GateGuardICantLetYouPassText::
 	para "La loi est dure,"
 	line "mais c'est la"
 	cont "loi! Tu ne peux"
-	cont "pas passer"
+	cont "pas passer."
 	done
 
 _Route22GateGuardGoRightAheadText::

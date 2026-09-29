@@ -39,11 +39,11 @@ _TM34ExplanationText::
 	text " contient"
 	line "PATIENCE!"
 
-	para "Ton #MON"
-	line "absorbera les"
-	cont "dégâts pour"
-	cont "ensuite infliger"
-	cont "le double!"
+	para "Ton #MON se"
+	line "renforcera pour"
+	cont "augmenter son"
+	cont "ATTAQUE et sa"
+	cont "DEFENCE!"
 	done
 
 _GenericNoRoomText::
