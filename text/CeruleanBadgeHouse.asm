@@ -84,7 +84,7 @@ _CeruleanBadgeHouseUpToLevel::
 	done
 
 _CeruleanBadgeHouseIncreasesALittleBit::
-	text " de"
+	text "de"
 	line "tous tes #MON"
 	cont "sera un peu"
 	cont "augmentée."

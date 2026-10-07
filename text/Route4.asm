@@ -45,8 +45,8 @@ _Route4BattleText2::
 	done
 
 _Route4EndBattleText2::
-	text "J'ai vu trop"
-	line "grand!"
+	text "J'ai vu"
+	line "trop grand!"
 	prompt
 
 _Route4AfterBattleText2::
@@ -64,8 +64,8 @@ _Route4BattleText3::
 	done
 
 _Route4EndBattleText3::
-	text "Tu es sur ma"
-	line "liste!"
+	text "Tu es sur"
+	line "ma liste!"
 	prompt
 
 _Route4AfterBattleText3::
